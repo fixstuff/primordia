@@ -1,0 +1,48 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r6_evo",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "mineral"
+  }
+ ],
+ "brain": {
+  "hidden": 3
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.2
+ }
+}

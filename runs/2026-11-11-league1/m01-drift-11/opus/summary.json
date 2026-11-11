@@ -1,0 +1,153 @@
+{
+ "model": "claude-opus-5-5",
+ "exit": 0,
+ "seconds": 3287,
+ "final_tick": 10000,
+ "tool_calls": [
+  "catalog",
+  "submit_genome",
+  "submit_genome",
+  "observe",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "end_turn",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "end_turn",
+  "report",
+  "submit_genome!",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn",
+  "end_turn"
+ ],
+ "genomes": [
+  {
+   "n": 1,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/01.json",
+   "name": "trackA",
+   "tick": 0,
+   "eval_mean_population": 526.3333333333334
+  },
+  {
+   "n": 2,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/02.json",
+   "name": "trackB",
+   "tick": 0,
+   "eval_mean_population": 200.33333333333334
+  },
+  {
+   "n": 3,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/03.json",
+   "name": "trackBig",
+   "tick": 500,
+   "eval_mean_population": 349.0
+  },
+  {
+   "n": 4,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/04.json",
+   "name": "trackHuge",
+   "tick": 1000,
+   "eval_mean_population": 241.66666666666666
+  },
+  {
+   "n": 5,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/05.json",
+   "name": "track5",
+   "tick": 2000,
+   "eval_mean_population": 497.3333333333333
+  },
+  {
+   "n": 6,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/06.json",
+   "name": "lean",
+   "tick": 3000,
+   "eval_mean_population": 707.0
+  },
+  {
+   "n": 7,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/07.json",
+   "name": "lean2",
+   "tick": 3500,
+   "eval_mean_population": 594.3333333333334
+  },
+  {
+   "n": 8,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/08.json",
+   "name": "cheap3",
+   "tick": 4000,
+   "eval_mean_population": 1062.3333333333333
+  },
+  {
+   "n": 9,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/09.json",
+   "name": "cheap5",
+   "tick": 4500,
+   "eval_mean_population": 811.3333333333334
+  },
+  {
+   "n": 10,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/10.json",
+   "name": "mouthy",
+   "tick": 5000,
+   "eval_mean_population": 595.3333333333334
+  },
+  {
+   "n": 11,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/opus/genomes/11.json",
+   "name": "mouthy8",
+   "tick": 5500,
+   "eval_mean_population": 399.0
+  }
+ ],
+ "cost_usd": 0.7009202,
+ "result_subtype": "success",
+ "num_turns": 63,
+ "last_text": "The match is over and I finished 1st with a score of 2964. claude-fable-5-2 was 2nd at 1898, deepseek-v4-pro 3rd at 1123 and scripted-bot 4th at 287.\n\nThe win came from the first few thousand ticks, and my lineage was extinct by the end:\n\n- **What worked:** my first design (trackA, radius 4) steered toward sugar and minerals and slowed down near food. It peaked at about 640 cells and 9,000 biomass by tick 500, which banked a large lead.\n- **The decline:** from tick 3000, fable's swarm of small, cheap cells ate the sugar down to levels mine couldn't live on. My population fell steadily and was down to 2 organisms (16 biomass) by tick 9500, and none at the end.\n- **What failed:** none of my later founders took hold. I tried larger bodies (radius 7 and 10), lean low-upkeep cells, and versions with 4 or 8 mouths, then re-released trackA and the 4-mouth version until near the end. Founders land at random and mostly starved before finding a vent, and the few that did found vents already crowded. The 4-mouth version ate the most of any of them but still lost energy every tick.\n\nThe lead held only because fable's biomass shrank after about tick 7000. If it had kept growing, fable could have caught me."
+}

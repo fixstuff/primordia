@@ -1,0 +1,75 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "M5_6m_s4m2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "mineral"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4.0,
+   -4.0,
+   2.0,
+   -2.0,
+   0.0,
+   0.0,
+   0.0,
+   2.0,
+   -4.0,
+   0.0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.1
+ }
+}

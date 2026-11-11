@@ -1,0 +1,162 @@
+{
+ "model": "claude-fable-5-2",
+ "exit": 1,
+ "seconds": 1622,
+ "final_tick": 5000,
+ "tool_calls": [
+  "catalog",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome"
+ ],
+ "genomes": [
+  {
+   "n": 1,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/01.json",
+   "name": "A10",
+   "tick": 500,
+   "eval_mean_population": 229.66666666666666
+  },
+  {
+   "n": 2,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/02.json",
+   "name": "A10m",
+   "tick": 500,
+   "eval_mean_population": 21.333333333333332
+  },
+  {
+   "n": 3,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/03.json",
+   "name": "S6",
+   "tick": 500,
+   "eval_mean_population": 376.6666666666667
+  },
+  {
+   "n": 4,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/04.json",
+   "name": "S6m",
+   "tick": 500,
+   "eval_mean_population": 26.0
+  },
+  {
+   "n": 5,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/05.json",
+   "name": "B10",
+   "tick": 1000,
+   "eval_mean_population": 192.0
+  },
+  {
+   "n": 6,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/06.json",
+   "name": "B7",
+   "tick": 1000,
+   "eval_mean_population": 259.6666666666667
+  },
+  {
+   "n": 7,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/07.json",
+   "name": "T2",
+   "tick": 1500,
+   "eval_mean_population": 1061.6666666666667
+  },
+  {
+   "n": 8,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/08.json",
+   "name": "T3",
+   "tick": 1500,
+   "eval_mean_population": 806.3333333333334
+  },
+  {
+   "n": 9,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/09.json",
+   "name": "U3",
+   "tick": 3000,
+   "eval_mean_population": 1151.6666666666667
+  },
+  {
+   "n": 10,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/10.json",
+   "name": "U4",
+   "tick": 3000,
+   "eval_mean_population": 946.6666666666666
+  },
+  {
+   "n": 11,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/11.json",
+   "name": "T4",
+   "tick": 3500,
+   "eval_mean_population": 576.6666666666666
+  },
+  {
+   "n": 12,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/12.json",
+   "name": "V35",
+   "tick": 4000,
+   "eval_mean_population": 1148.6666666666667
+  },
+  {
+   "n": 13,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/13.json",
+   "name": "T3z",
+   "tick": 4500,
+   "eval_mean_population": 838.6666666666666
+  },
+  {
+   "n": 14,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m01-drift-11/fable/genomes/14.json",
+   "name": "Sit5",
+   "tick": 5000,
+   "eval_mean_population": 525.0
+  }
+ ],
+ "cost_usd": 6.4184966,
+ "result_subtype": "error_max_budget_usd",
+ "num_turns": 50,
+ "last_text": ""
+}

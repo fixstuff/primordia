@@ -1,0 +1,23 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "g2m2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.0
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

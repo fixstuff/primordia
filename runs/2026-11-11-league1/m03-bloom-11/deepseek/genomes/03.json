@@ -1,0 +1,46 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "g15",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 15
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1.0
+  },
+  {
+   "part": "cilia",
+   "power": 0.4
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "mineral"
+  }
+ ],
+ "brain": {
+  "hidden": 2
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

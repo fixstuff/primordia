@@ -1,0 +1,86 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/01.json",
+  "name": "fast5",
+  "species": 4,
+  "tick": 500
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/02.json",
+  "name": "fast5b",
+  "species": 7,
+  "tick": 1000
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/03.json",
+  "name": "big10",
+  "species": 8,
+  "tick": 1500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/04.json",
+  "name": "big8",
+  "species": 13,
+  "tick": 3000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/05.json",
+  "name": "big10s",
+  "species": 17,
+  "tick": 3500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/06.json",
+  "name": "mid6",
+  "species": 19,
+  "tick": 4000
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/07.json",
+  "name": "fast4",
+  "species": 24,
+  "tick": 5000
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/08.json",
+  "name": "big8b",
+  "species": 27,
+  "tick": 6000
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/09.json",
+  "name": "fast4c",
+  "species": 28,
+  "tick": 6500
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/10.json",
+  "name": "r6f3",
+  "species": 29,
+  "tick": 7000
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/11.json",
+  "name": "r5m6",
+  "species": 30,
+  "tick": 7500
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/deepseek/genomes/12.json",
+  "name": "r5m11",
+  "species": 31,
+  "tick": 8000
+ }
+]

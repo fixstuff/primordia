@@ -1,0 +1,143 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Sit5",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "part": "cilia",
+   "power": 0.3
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 180
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -90
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 11,
+  "weights": [
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   -1,
+   4,
+   4,
+   4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -3.2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   0,
+   -1.6,
+   0.8,
+   1.8,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   0,
+   0,
+   2,
+   0,
+   0,
+   1.52
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

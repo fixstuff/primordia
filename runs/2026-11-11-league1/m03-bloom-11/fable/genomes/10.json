@@ -1,0 +1,56 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "campK",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   -4,
+   0,
+   0.72,
+   -4,
+   0,
+   0.72,
+   -4,
+   0,
+   0.72,
+   -4,
+   0,
+   0.72,
+   4,
+   4,
+   4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

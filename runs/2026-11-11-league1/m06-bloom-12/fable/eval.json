@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m06-bloom-12/fable/genomes/01.json",
+      "mean_biomass": 4893.0,
+      "mean_population": 543.6666666666666,
+      "name": "grazer3",
+      "per_seed": [
+        552,
+        548,
+        531
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m06-bloom-12/fable/genomes/02.json",
+      "mean_biomass": 12000.0,
+      "mean_population": 480.0,
+      "name": "grazer5",
+      "per_seed": [
+        475,
+        471,
+        494
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m06-bloom-12/fable/genomes/03.json",
+      "mean_biomass": 10061.333333333334,
+      "mean_population": 2515.3333333333335,
+      "name": "creeper2",
+      "per_seed": [
+        2865,
+        2148,
+        2533
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m06-bloom-12/fable/genomes/04.json",
+      "mean_biomass": 7493.333333333333,
+      "mean_population": 1873.3333333333333,
+      "name": "creeper2e",
+      "per_seed": [
+        2010,
+        1684,
+        1926
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m06-bloom-12/fable/genomes/05.json",
+      "mean_biomass": 8101.333333333333,
+      "mean_population": 2025.3333333333333,
+      "name": "creeper2slow",
+      "per_seed": [
+        2251,
+        1812,
+        2013
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m06-bloom-12/fable/genomes/06.json",
+      "mean_biomass": 18576.0,
+      "mean_population": 1161.0,
+      "name": "parker4",
+      "per_seed": [
+        1179,
+        1120,
+        1184
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m06-bloom-12/fable/genomes/07.json",
+      "mean_biomass": 12097.333333333334,
+      "mean_population": 3024.3333333333335,
+      "name": "factory2",
+      "per_seed": [
+        3108,
+        2938,
+        3027
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m06-bloom-12/fable/genomes/08.json",
+      "mean_biomass": 7488.0,
+      "mean_population": 1872.0,
+      "name": "taxisPlus",
+      "per_seed": [
+        1854,
+        1897,
+        1865
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m06-bloom-12/fable/genomes/09.json",
+      "mean_biomass": 5937.333333333333,
+      "mean_population": 1484.3333333333333,
+      "name": "taxisMinus",
+      "per_seed": [
+        1557,
+        1373,
+        1523
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

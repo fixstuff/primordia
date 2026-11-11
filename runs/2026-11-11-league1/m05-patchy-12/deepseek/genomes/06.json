@@ -1,0 +1,42 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r6_straight",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   1,
+   0,
+   0,
+   -3,
+   2,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

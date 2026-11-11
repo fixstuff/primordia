@@ -1,0 +1,32 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "creeper2slow",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.08
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   1,
+   -0.33,
+   2.5,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.05
+ }
+}

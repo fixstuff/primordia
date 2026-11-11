@@ -1,0 +1,50 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "minD",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.33
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   4,
+   -4,
+   4,
+   4,
+   -4,
+   -4,
+   -4,
+   1,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.3,
+  "size": 0.1
+ }
+}

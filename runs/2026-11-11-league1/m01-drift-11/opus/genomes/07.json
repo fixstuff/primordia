@@ -1,0 +1,54 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "lean2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 40
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -40
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   -4,
+   0,
+   1.5,
+   0,
+   2,
+   0,
+   3,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

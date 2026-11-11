@@ -2,7 +2,7 @@
 
 > The game is **LifeAPI** (D-5). The project folder is still `SporeAI`; that
 > name stays off the game, because "Spore" is EA's trademark.
-> Status: DRAFT 9, 2026-11-10. M0–M4 built (§10–§15); two arena matches played. Still owed: the droplet run of the golden hash, and
+> Status: DRAFT 10, 2026-11-11. M0–M4 built (§10–§16); two arena matches and a 6-match league played. Still owed: the droplet run of the golden hash, and
 > M2's watch from a second machine. Draft 1's claims were checked
 > by a fresh-context reviewer, and its findings are folded in. Open decisions are marked **D-n**
 > and collected at the end. They're yours to rule on.
@@ -816,4 +816,65 @@ So match 2 doesn't cleanly show "who held the pool".
 
 This section was checked by a fresh-context reviewer, which re-derived
 every number; its corrections are folded in.
+
+## 16. League 1 (2026-11-11)
+
+`tools/league.py` → `runs/2026-11-11-league1/` (`LEAGUE.md`, `league.json`,
+one folder per match).
+- **Matches:** 6, from worlds drift, patchy and bloom × seeds 11 and 12,
+  run 3 at a time.
+- **Players:** the same four as before.
+- **Rules:** a founder starts with r² energy (half its body's 2r²; vacuoles
+  start empty), and the score counts only organisms born in the pool,
+  averaged over 10 000 ticks.
+- **Caps per match:** Fable $6, Opus $2 (the command line was `tools/league.py
+  --fable-usd 6 --opus-usd 2`; the Opus cap isn't recorded in the run
+  folder).
+- **Elo:** each match counts as every pair of players playing one game,
+  with K = 32/(n−1), applied in schedule order.
+
+| Rank | Player | Elo | Wins | Mean rank | Mean share of top score | Anthropic cost |
+|---|---|---|---|---|---|---|
+| 1 | Fable 5.2 | 1565 | 4/6 | 1.33 | 86 % | $31.25 |
+| 2 | Opus 5.5 | 1528 | 2/6 | 2.00 | 70 % | $4.15 |
+| 3 | DeepSeek V4 Pro | 1470 | 0/6 | 3.00 | 39 % | — |
+| 4 | scripted bot | 1437 | 0/6 | 3.67 | 8 % | — |
+
+**By world:**
+- **Opus won both `drift` matches** (2 964 vs Fable 1 898; 5 452 vs 2 802).
+- **Fable won all four `patchy` and `bloom` matches.**
+
+**Confounder: Fable's spending cap.** Fable hit its $6 cap in 3 of the 6
+matches, finishing at `error_max_budget_usd`. Its lineages played on
+without it:
+
+| Match | Fable stopped at | Result |
+|---|---|---|
+| drift-11 | tick 5 000 | lost to Opus |
+| bloom-11 | tick 4 500 | still won |
+| bloom-12 | tick 6 500 | still won |
+
+- **drift-12 is the clean drift result:** Fable played it to the end and
+  still lost to Opus.
+- **Opus never neared its cap:** $0.58–0.79 a match.
+
+So the ranking partly measures the cap. A fair league needs equal
+budgets: the same dollars, or the same thinking time per window.
+
+**DeepSeek finished below the scripted bot twice** (drift-12: 48;
+patchy-12: 200). Its runner didn't crash (no relaunches or errors in its
+logs). It missed 3 and 4 windows in those two matches (1–4 across the
+league), so those scores are mostly its own play.
+
+**Limits.**
+- 6 matches is still a small sample, and Elo depends on match order. The
+  order-free columns (wins, mean rank, share) agree with it.
+- Fable's cost ($31) is about 7.5× Opus's ($4) for an Elo lead of about 38.
+- **A second handicap: thinking time.** Fable missed the opening window in
+  all 6 matches, and DeepSeek in 5. Opus and the bot never missed a
+  window. That includes the "clean" drift-12.
+
+This section was checked by a fresh-context reviewer. It recomputed every
+rating, and the ranking holds under all 720 match orders (the Fable–Opus
+gap ranges 30–44). Its wording fixes are folded in.
 

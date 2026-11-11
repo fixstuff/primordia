@@ -1,0 +1,110 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m05-patchy-12/fable/genomes/01.json",
+      "mean_biomass": 18146.333333333332,
+      "mean_population": 370.3333333333333,
+      "name": "chemoA",
+      "per_seed": [
+        381,
+        367,
+        363
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m05-patchy-12/fable/genomes/02.json",
+      "mean_biomass": 5667.666666666667,
+      "mean_population": 115.66666666666667,
+      "name": "chemoB",
+      "per_seed": [
+        93,
+        115,
+        139
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m05-patchy-12/fable/genomes/03.json",
+      "mean_biomass": 10883.333333333334,
+      "mean_population": 435.3333333333333,
+      "name": "chemoC",
+      "per_seed": [
+        436,
+        447,
+        423
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m05-patchy-12/fable/genomes/04.json",
+      "mean_biomass": 18554.666666666668,
+      "mean_population": 378.6666666666667,
+      "name": "chemoD7",
+      "per_seed": [
+        373,
+        394,
+        369
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m05-patchy-12/fable/genomes/05.json",
+      "mean_biomass": 16104.0,
+      "mean_population": 447.3333333333333,
+      "name": "chemoE6",
+      "per_seed": [
+        450,
+        444,
+        448
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m05-patchy-12/fable/genomes/06.json",
+      "mean_biomass": 6321.0,
+      "mean_population": 702.3333333333334,
+      "name": "swarmF3",
+      "per_seed": [
+        692,
+        728,
+        687
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m05-patchy-12/fable/genomes/07.json",
+      "mean_biomass": 11722.666666666666,
+      "mean_population": 732.6666666666666,
+      "name": "swarmG4",
+      "per_seed": [
+        748,
+        722,
+        728
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m05-patchy-12/fable/genomes/08.json",
+      "mean_biomass": 6588.0,
+      "mean_population": 1647.0,
+      "name": "miteH2",
+      "per_seed": [
+        1589,
+        1670,
+        1682
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

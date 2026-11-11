@@ -1,0 +1,86 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r17_B",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 17
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   0,
+   0,
+   0,
+   1,
+   4,
+   -4,
+   0,
+   0,
+   2,
+   0,
+   1,
+   0,
+   4,
+   0.1
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.1
+ }
+}

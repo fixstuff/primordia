@@ -1,0 +1,36 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "turn_test",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   1,
+   2,
+   0,
+   1,
+   1
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r5_stop2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 180,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   2,
+   2,
+   0,
+   0,
+   -3,
+   2,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

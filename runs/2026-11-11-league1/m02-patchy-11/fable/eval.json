@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/fable/genomes/01.json",
+      "mean_biomass": 15082.666666666666,
+      "mean_population": 235.66666666666666,
+      "name": "seekA",
+      "per_seed": [
+        244,
+        237,
+        226
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/fable/genomes/02.json",
+      "mean_biomass": 853.3333333333334,
+      "mean_population": 13.333333333333334,
+      "name": "seekB",
+      "per_seed": [
+        23,
+        5,
+        12
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/fable/genomes/03.json",
+      "mean_biomass": 13997.666666666666,
+      "mean_population": 285.6666666666667,
+      "name": "parker",
+      "per_seed": [
+        294,
+        281,
+        282
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/fable/genomes/04.json",
+      "mean_biomass": 8592.0,
+      "mean_population": 537.0,
+      "name": "parkerlite",
+      "per_seed": [
+        531,
+        537,
+        543
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/fable/genomes/05.json",
+      "mean_biomass": 14916.0,
+      "mean_population": 414.3333333333333,
+      "name": "parker6",
+      "per_seed": [
+        430,
+        411,
+        402
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/fable/genomes/06.json",
+      "mean_biomass": 16021.333333333334,
+      "mean_population": 250.33333333333334,
+      "name": "hog8",
+      "per_seed": [
+        238,
+        260,
+        253
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/fable/genomes/07.json",
+      "mean_biomass": 13106.100316429098,
+      "mean_population": 210.0,
+      "name": "hog8f",
+      "per_seed": [
+        207,
+        215,
+        208
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/fable/genomes/08.json",
+      "mean_biomass": 12456.0,
+      "mean_population": 346.0,
+      "name": "hog6",
+      "per_seed": [
+        339,
+        356,
+        343
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m02-patchy-11/fable/genomes/09.json",
+      "mean_biomass": 10388.25,
+      "mean_population": 513.0,
+      "name": "parker45",
+      "per_seed": [
+        521,
+        509,
+        509
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,130 @@
+{
+ "model": "claude-opus-5-5",
+ "exit": 0,
+ "seconds": 2160,
+ "final_tick": 10000,
+ "tool_calls": [
+  "catalog",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome!",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "submit_genome",
+  "report",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn",
+  "report",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn"
+ ],
+ "genomes": [
+  {
+   "n": 1,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m04-drift-12/opus/genomes/01.json",
+   "name": "trackA",
+   "tick": 0,
+   "eval_mean_population": 466.3333333333333
+  },
+  {
+   "n": 2,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m04-drift-12/opus/genomes/02.json",
+   "name": "trackB",
+   "tick": 0,
+   "eval_mean_population": 150.0
+  },
+  {
+   "n": 3,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m04-drift-12/opus/genomes/03.json",
+   "name": "trackA8",
+   "tick": 500,
+   "eval_mean_population": 286.6666666666667
+  },
+  {
+   "n": 4,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m04-drift-12/opus/genomes/04.json",
+   "name": "stop6",
+   "tick": 1000,
+   "eval_mean_population": 438.6666666666667
+  },
+  {
+   "n": 5,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m04-drift-12/opus/genomes/05.json",
+   "name": "stop4",
+   "tick": 1000,
+   "eval_mean_population": 526.6666666666666
+  },
+  {
+   "n": 6,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m04-drift-12/opus/genomes/06.json",
+   "name": "cheap4",
+   "tick": 1500,
+   "eval_mean_population": 775.0
+  },
+  {
+   "n": 7,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m04-drift-12/opus/genomes/07.json",
+   "name": "cheapstop4",
+   "tick": 2000,
+   "eval_mean_population": 759.0
+  },
+  {
+   "n": 8,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m04-drift-12/opus/genomes/08.json",
+   "name": "stop5b",
+   "tick": 3000,
+   "eval_mean_population": 504.3333333333333
+  },
+  {
+   "n": 9,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league1/m04-drift-12/opus/genomes/09.json",
+   "name": "sit4",
+   "tick": 3500,
+   "eval_mean_population": 619.6666666666666
+  }
+ ],
+ "cost_usd": 0.6340819999999999,
+ "result_subtype": "success",
+ "num_turns": 54,
+ "last_text": "I won the match, finishing 1st with a score of **5452**. claude-fable-5-2 was 2nd with about 2802, scripted-bot 3rd with 309 and deepseek-v4-pro 4th with 48. At the end I had 415 organisms alive, with a total biomass of 6640.\n\n- **What scored:** almost all my score came from one lineage, \"stop4\". These were radius-4 cells that steer toward sugar and mineral using sensors on each side, and are meant to slow down where sugar is dense. In practice they rarely stopped and kept moving at about 1.2. That lineage evolved in the pool and grew from 16 to about 290 by tick 5000. Total population then held at about 400\u2013430 until the end.\n- **What failed:** every other design died out or stayed tiny. That includes the larger radius 5, 6 and 8 cells, the stripped-down cheaper cells and a version tuned to stop at lower sugar. A copy of the first tracker with its sensors swapped left-for-right died out by tick 1000, which told me which way the turn signal points.\n- **Fresh founders didn't help:** new releases of stop4 kept doing worse than the evolved lineage, because founders start with the original brain weights and I had no way to copy the evolved ones. They also don't count toward the score, so after tick 4500 I stopped releasing. That left 552 budget unspent at the end.\n- **Fable's swing:** fable's biomass passed mine around tick 2000\u20134500, peaking at about 7300 against my 2100\u20133400. Their population then fell from about 200 to about 50, and I stayed ahead on the time-averaged score th"
+}

@@ -1,0 +1,61 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r5_chemoL",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   -3,
+   1.5,
+   1,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

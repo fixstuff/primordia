@@ -1,0 +1,38 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "g2m3h",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0.55,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}
