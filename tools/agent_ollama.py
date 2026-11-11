@@ -14,6 +14,18 @@ so "did it improve?" is a number, not the model's say-so.
 """
 import argparse, json, pathlib, subprocess, sys, time, urllib.request
 
+ARENA_GOAL = (
+    "THIS IS AN ARENA MATCH against other AI players in the same world. Your SCORE is your biomass "
+    "(sum of radius^2 over your living organisms) AVERAGED OVER EVERY TICK of the match, which ends at tick "
+    "{target}; the highest score wins. Every tick counts the same, so what you hold all match matters, not a "
+    "last-minute surge. Founders cost 5 x (radius/5)^2 budget each (radius 20 = 80). "
+    "The server owns the clock: time moves in windows. In each window, make your moves (catalog, report, "
+    "submit_genome, release, observe), then call end_turn. end_turn returns when the next window opens, with "
+    "the scoreboard (everyone's alive count and biomass, your rank, ticks left, match_over). If you take too "
+    "long, the window closes without your moves. step and subscribe are refused. Call catalog first: it "
+    "describes this world. Keep playing until end_turn says match_over is true. Always act by calling tools; "
+    "keep your text short.")
+
 def mcp_start(binary, addr, name):
     p = subprocess.Popen([binary, "--addr", addr, "--name", name],
                          stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, bufsize=1)
@@ -40,12 +52,27 @@ def ollama_chat(url, model, messages, tools, think):
 
 def openai_chat(base, key, model, messages, tools):
     """OpenAI-style /chat/completions (DeepSeek and others). Returns a reply
-    shaped like Ollama's, so the loop below handles both."""
+    shaped like Ollama's, so the loop below handles both. Retries transient
+    network and 5xx/429 errors with backoff (arena match 2's first attempt
+    lost its DeepSeek player to one "connection reset by peer")."""
     body = {"model": model, "messages": messages, "tools": tools, "temperature": 0.4}
-    req = urllib.request.Request(base.rstrip("/") + "/chat/completions", data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json", "Authorization": "Bearer " + key})
-    with urllib.request.urlopen(req, timeout=600) as r:
-        d = json.loads(r.read())
+    data = json.dumps(body).encode()
+    for attempt in range(6):
+        req = urllib.request.Request(base.rstrip("/") + "/chat/completions", data=data,
+                                     headers={"Content-Type": "application/json", "Authorization": "Bearer " + key})
+        try:
+            with urllib.request.urlopen(req, timeout=600) as r:
+                d = json.loads(r.read())
+            break
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or attempt == 5:
+                raise
+            print(f"  (HTTP {e.code}; retrying in {2 ** attempt}s)", flush=True)
+        except (ConnectionError, TimeoutError, urllib.error.URLError, OSError) as e:
+            if attempt == 5:
+                raise
+            print(f"  ({type(e).__name__}; retrying in {2 ** attempt}s)", flush=True)
+        time.sleep(2 ** attempt)
     m = d["choices"][0]["message"]
     calls = []
     for c in m.get("tool_calls") or []:
@@ -109,6 +136,7 @@ def main():
     ap.add_argument("--base-url", default="https://api.deepseek.com/v1")
     ap.add_argument("--key-file", help="file with a NAME=value line (never printed)")
     ap.add_argument("--key-name", default="DEEPSEEK_API_KEY")
+    ap.add_argument("--arena", action="store_true", help="play an arena match (end_turn) until match_over")
     a = ap.parse_args()
     key = load_key(a.key_file, a.key_name) if a.provider == "openai" else None
 
@@ -122,7 +150,7 @@ def main():
     proc, rpc, instructions, mcp_tools = mcp_start(a.mcp, a.addr, a.model)
     tools = [{"type": "function", "function": {"name": t["name"], "description": t["description"],
                                                "parameters": t["inputSchema"]}} for t in mcp_tools]
-    system = (instructions + "\n\n"
+    system = instructions + "\n\n" + (ARENA_GOAL.format(target=a.target_tick) if a.arena else
               f"YOUR GOAL: have as many of your organisms alive as possible when the world reaches tick "
               f"{a.target_tick}. Work in rounds. Round 1: call catalog, design a genome, submit it, release "
               "about 50, subscribe to the tick 2000 ticks ahead, step. Every later round: call report, read its "
@@ -133,7 +161,7 @@ def main():
                 {"role": "user", "content": "Begin. The world is at tick 0."}]
     note("start", model=a.model, target=a.target_tick, system=system)
 
-    tick, genomes, t0 = 0, [], time.time()
+    tick, genomes, t0, match_over = 0, [], time.time(), False
     for turn in range(1, a.max_turns + 1):
         if a.provider == "openai":
             resp = openai_chat(a.base_url, key, a.model, messages, tools)
@@ -165,6 +193,8 @@ def main():
             try:
                 v = json.loads(text)
                 tick = v.get("tick", tick) if isinstance(v, dict) else tick
+                if isinstance(v, dict) and v.get("match_over"):
+                    match_over = True
             except ValueError:
                 v = None
             if name == "submit_genome" and not is_err:
@@ -189,7 +219,7 @@ def main():
             while tail and tail[0]["role"] == "tool":
                 tail = tail[1:]
             messages = messages[:2] + tail
-        if tick >= a.target_tick:
+        if match_over or (not a.arena and tick >= a.target_tick):
             break
     proc.kill()
     note("end", tick=tick, turns=turn, genomes=genomes, seconds=round(time.time() - t0))

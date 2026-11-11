@@ -1,0 +1,32 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |     20s] '' calls=['observe']
+Traceback (most recent call last):
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 225, in <module>
+    main()
+    ~~~~^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 152, in main
+    resp = openai_chat(a.base_url, key, a.model, messages, tools)
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 60, in openai_chat
+    d = json.loads(r.read())
+                   ~~~~~~^^
+  File "/usr/lib/python3.14/http/client.py", line 478, in read
+    return self._read_chunked(amt)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/http/client.py", line 602, in _read_chunked
+    while (chunk_left := self._get_chunk_left()) is not None:
+                         ~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/client.py", line 584, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+  File "/usr/lib/python3.14/http/client.py", line 544, in _read_next_chunk_size
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/usr/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.14/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+exit 1

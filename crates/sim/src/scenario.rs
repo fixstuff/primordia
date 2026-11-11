@@ -1,8 +1,9 @@
 //! Fixed scenarios. `golden` is the determinism reference and `bench` the
 //! performance one: change either and the committed numbers mean nothing.
 
+use crate::det;
 use crate::genome::Genome;
-use crate::world::{Config, Vent, World};
+use crate::world::{Config, Dynamics, Vent, World};
 
 /// The default founder: one flagellum, cilia, a mouth, two sugar sensors.
 pub const FOUNDER: &str = r#"{
@@ -37,6 +38,7 @@ pub fn base_config(seed: u64, grid_w: usize, grid_h: usize) -> Config {
         max_speed: 1.0,
         split_frac: 0.8,
         material_cap: 20.0,
+        dynamics: Dynamics::default(),
     }
 }
 
@@ -51,12 +53,21 @@ pub fn sandbox(cfg: Config, sugar_vents: usize, mineral_vents: usize, founders: 
 
 /// An empty pool: chemical field and vents, no species, no organisms.
 /// Draws from the world's RNG in the same order `sandbox` always did.
-pub fn pool(mut cfg: Config, sugar_vents: usize, mineral_vents: usize) -> World {
+pub fn pool(cfg: Config, sugar_vents: usize, mineral_vents: usize) -> World {
+    pool_with(cfg, sugar_vents, mineral_vents, 3.0, 1.0)
+}
+
+/// `pool` with chosen vent strengths (sugar, mineral per vent per tick).
+pub fn pool_with(mut cfg: Config, sugar_vents: usize, mineral_vents: usize, sugar_rate: f32, mineral_rate: f32) -> World {
     let mut w = World::new(cfg.clone()).expect("scenario config is valid");
     let (ww, wh) = (w.grid.world_w(), w.grid.world_h());
     for k in 0..sugar_vents + mineral_vents {
-        let (chem, rate) = if k < sugar_vents { (0, 3.0) } else { (1, 1.0) };
-        cfg.vents.push(Vent { x: w.rng.range(0.0, ww), y: w.rng.range(0.0, wh), chem, rate });
+        let (chem, rate) = if k < sugar_vents { (0, sugar_rate) } else { (1, mineral_rate) };
+        // heading/phase from the index (golden angle), not the RNG, so the
+        // static sandbox draws exactly what it always did.
+        let (x, y) = (w.rng.range(0.0, ww), w.rng.range(0.0, wh));
+        let spread = k as f32 * 2.399_963;
+        cfg.vents.push(Vent { x, y, chem, rate, heading: det::wrap_angle(spread), phase: det::wrap_angle(spread * 1.7) });
     }
     w.cfg.vents = cfg.vents;
     for i in 0..w.grid.chem[0].len() {

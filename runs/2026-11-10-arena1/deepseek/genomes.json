@@ -1,0 +1,149 @@
+[
+ {
+  "n": 1,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/01.json",
+  "name": "trackA",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/02.json",
+  "name": "trackB",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/03.json",
+  "name": "r10_fast",
+  "species": 10,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/04.json",
+  "name": "r10_smart",
+  "species": 11,
+  "tick": 500
+ },
+ {
+  "n": 5,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/05.json",
+  "name": "r6_k05",
+  "species": 12,
+  "tick": 1000
+ },
+ {
+  "n": 6,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/06.json",
+  "name": "r6_k15",
+  "species": 13,
+  "tick": 1000
+ },
+ {
+  "n": 7,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/07.json",
+  "name": "r14_nc2s",
+  "species": 16,
+  "tick": 1500
+ },
+ {
+  "n": 8,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/08.json",
+  "name": "r10_nc2s",
+  "species": 17,
+  "tick": 1500
+ },
+ {
+  "n": 9,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/09.json",
+  "name": "turntest",
+  "species": 18,
+  "tick": 2000
+ },
+ {
+  "n": 10,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/10.json",
+  "name": "v1_f03k05",
+  "species": 19,
+  "tick": 2000
+ },
+ {
+  "n": 11,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/11.json",
+  "name": "v2_f03k10",
+  "species": 20,
+  "tick": 2000
+ },
+ {
+  "n": 12,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/12.json",
+  "name": "v3_f03c0k20",
+  "species": 21,
+  "tick": 2000
+ },
+ {
+  "n": 13,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/13.json",
+  "name": "v4_f1k02",
+  "species": 22,
+  "tick": 2000
+ },
+ {
+  "n": 14,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/14.json",
+  "name": "r2_m10",
+  "species": 25,
+  "tick": 2500
+ },
+ {
+  "n": 15,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/15.json",
+  "name": "r2_1s12",
+  "species": 26,
+  "tick": 3000
+ },
+ {
+  "n": 16,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/16.json",
+  "name": "r2_2s11nc",
+  "species": 27,
+  "tick": 3000
+ },
+ {
+  "n": 17,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/17.json",
+  "name": "turntest2",
+  "species": 28,
+  "tick": 3500
+ },
+ {
+  "n": 18,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/18.json",
+  "name": "r2_s11v100_g4_a90",
+  "species": 29,
+  "tick": 4500
+ },
+ {
+  "n": 19,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/19.json",
+  "name": "r3_s11v100_g4",
+  "species": 33,
+  "tick": 5500
+ },
+ {
+  "n": 20,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/20.json",
+  "name": "r4_s11v100_g4",
+  "species": 34,
+  "tick": 5500
+ },
+ {
+  "n": 21,
+  "file": "runs/2026-11-10-arena1/deepseek/genomes/21.json",
+  "name": "hib_r20v100",
+  "species": 35,
+  "tick": 5500
+ }
+]

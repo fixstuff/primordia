@@ -1,7 +1,10 @@
 //! The objective judge.
 //!
-//!   lifeapi-eval [--ticks 5000] [--founders 60] [--seeds 1,2,3]
+//!   lifeapi-eval [--ticks 5000] [--founders 60] [--seeds 1,2,3] [--world NAME|FILE]
 //!                [--together | --round-robin] GENOME.json...
+//!
+//! --world: a preset (calm, drift, seasons, patchy, desert, bloom, random)
+//! or a WorldSpec JSON file. Default calm. `random` is rolled per seed.
 //!
 //! Modes, all on a fresh sandbox pool (128x128 cells, 8 sugar and 4 mineral
 //! vents) per seed:
@@ -19,8 +22,11 @@
 //! {"genome": {...}} as the API takes it.
 
 use lifeapi_sim::genome::Genome;
-use lifeapi_sim::scenario;
+use lifeapi_sim::worlds;
 use lifeapi_sim::World;
+
+/// --world: a preset name or a WorldSpec JSON path (default calm).
+static WORLD: std::sync::OnceLock<String> = std::sync::OnceLock::new();
 use serde_json::{json, Value};
 
 #[derive(PartialEq)]
@@ -38,7 +44,9 @@ struct Entry {
 /// Release each genome as its own lineage (in the given order), run, and
 /// return (population, biomass) per entry.
 fn run(seed: u64, ticks: u64, founders: usize, gs: &[&Genome]) -> Vec<(u64, f64)> {
-    let mut w: World = scenario::pool(scenario::base_config(seed, 128, 128), 8, 4);
+    let world = WORLD.get().map(String::as_str).unwrap_or("calm");
+    let spec = worlds::load(world, seed).unwrap_or_else(|e| panic!("{e}"));
+    let mut w: World = spec.build(seed).unwrap_or_else(|e| panic!("{e}"));
     let mut lineages = Vec::new();
     for g in gs {
         let sp = w.add_species((*g).clone()).expect("expressed when loaded");
@@ -81,6 +89,11 @@ fn main() {
             "--seeds" => {
                 seeds = args.next().expect("--seeds 1,2,3").split(',').map(|s| s.parse().expect("seed")).collect()
             }
+            "--world" => {
+                let w = args.next().expect("--world NAME|FILE");
+                worlds::load(&w, 0).unwrap_or_else(|e| panic!("{e}"));
+                WORLD.set(w).expect("--world given once");
+            }
             "--together" => mode = Mode::Together,
             "--round-robin" => mode = Mode::RoundRobin,
             _ => files.push(a),
@@ -109,7 +122,8 @@ fn main() {
         }
     }
 
-    let header = json!({"ticks": ticks, "founders": founders, "seeds": seeds, "rejected": rejected});
+    let header = json!({"ticks": ticks, "founders": founders, "seeds": seeds, "rejected": rejected,
+                        "world": WORLD.get().cloned().unwrap_or_else(|| "calm".into())});
     let out = match mode {
         Mode::Solo => {
             let rows: Vec<Value> = entries

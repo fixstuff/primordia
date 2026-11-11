@@ -1,0 +1,181 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "park20",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 20
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 180,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 13,
+  "weights": [
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   4,
+   4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   -2,
+   2,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

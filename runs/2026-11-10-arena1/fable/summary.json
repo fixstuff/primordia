@@ -1,0 +1,142 @@
+{
+ "model": "claude-fable-5-2",
+ "exit": 0,
+ "seconds": 1704,
+ "final_tick": 10000,
+ "tool_calls": [
+  "catalog",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "observe",
+  "end_turn",
+  "report",
+  "observe",
+  "release",
+  "end_turn",
+  "report",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "submit_genome",
+  "submit_genome",
+  "report",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn",
+  "release",
+  "report",
+  "end_turn",
+  "release",
+  "end_turn",
+  "release",
+  "end_turn"
+ ],
+ "genomes": [
+  {
+   "n": 1,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/01.json",
+   "name": "blob20",
+   "tick": 0,
+   "eval_mean_population": 0.0
+  },
+  {
+   "n": 2,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/02.json",
+   "name": "blob20v",
+   "tick": 0,
+   "eval_mean_population": 0.0
+  },
+  {
+   "n": 3,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/03.json",
+   "name": "trk14p",
+   "tick": 0,
+   "eval_mean_population": 153.66666666666666
+  },
+  {
+   "n": 4,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/04.json",
+   "name": "trk14n",
+   "tick": 0,
+   "eval_mean_population": 3.0
+  },
+  {
+   "n": 5,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/05.json",
+   "name": "trk14v2",
+   "tick": 5500,
+   "eval_mean_population": 131.66666666666666
+  },
+  {
+   "n": 6,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/06.json",
+   "name": "tank20",
+   "tick": 5500,
+   "eval_mean_population": 42.333333333333336
+  },
+  {
+   "n": 7,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/07.json",
+   "name": "park14",
+   "tick": 6000,
+   "eval_mean_population": 127.33333333333333
+  },
+  {
+   "n": 8,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/08.json",
+   "name": "park20",
+   "tick": 6000,
+   "eval_mean_population": 49.0
+  },
+  {
+   "n": 9,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/09.json",
+   "name": "scrubv",
+   "tick": 6500,
+   "eval_mean_population": 904.0
+  },
+  {
+   "n": 10,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/10.json",
+   "name": "scrublean",
+   "tick": 6500,
+   "eval_mean_population": 1177.0
+  }
+ ],
+ "cost_usd": 3.6091881999999993,
+ "result_subtype": "success",
+ "num_turns": 59,
+ "last_text": "The match is over and I finished first with 96,196 biomass, ahead of claude-opus-5-5 (55,475), deepseek-v4-pro (16,004) and scripted-bot (0).\n\n- **Late founders:** Almost all of the score came from 230 non-eating radius-20 founders (400 biomass each) released from tick 8000 onward, late enough to outlive the final tick on their starting energy. Budget caps at 1000 and refills 50 per window, so I held it at the cap and spent only the overflow until the tick-9000 dump.\n- **Small eaters:** A colony of radius-2 eaters, seeded from tick 6500, grew to about 1,000 organisms and added roughly 4,000 biomass. Over the same period the opus colony shrank from about 400 small organisms to about 20, probably out-competed for sugar.\n- **What failed:** Every large tracker design I tried (radius 14 and 20) starved, eating almost nothing."
+}

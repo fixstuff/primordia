@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/opus/genomes/01.json",
+      "mean_biomass": 11216.666666666666,
+      "mean_population": 448.6666666666667,
+      "name": "trackA",
+      "per_seed": [
+        448,
+        468,
+        430
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/opus/genomes/02.json",
+      "mean_biomass": 2358.3333333333335,
+      "mean_population": 94.33333333333333,
+      "name": "trackB",
+      "per_seed": [
+        106,
+        137,
+        40
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/opus/genomes/03.json",
+      "mean_biomass": 19548.0,
+      "mean_population": 241.33333333333334,
+      "name": "bigA",
+      "per_seed": [
+        244,
+        243,
+        237
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/opus/genomes/04.json",
+      "mean_biomass": 11558.333333333334,
+      "mean_population": 462.3333333333333,
+      "name": "parkC",
+      "per_seed": [
+        463,
+        441,
+        483
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/opus/genomes/05.json",
+      "mean_biomass": 19925.333333333332,
+      "mean_population": 311.3333333333333,
+      "name": "parkD",
+      "per_seed": [
+        325,
+        308,
+        301
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/opus/genomes/06.json",
+      "mean_biomass": 19566.666666666668,
+      "mean_population": 195.66666666666666,
+      "name": "gulpE",
+      "per_seed": [
+        191,
+        204,
+        192
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/opus/genomes/07.json",
+      "mean_biomass": 19733.333333333332,
+      "mean_population": 197.33333333333334,
+      "name": "gulpE2",
+      "per_seed": [
+        205,
+        201,
+        186
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/opus/genomes/08.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "blob",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/opus/genomes/09.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "vblob",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

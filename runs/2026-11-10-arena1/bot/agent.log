@@ -1,0 +1,22 @@
+window 1 tick 500 you {"alive":120,"biomass":3000.0,"name":"scripted-bot","player":0,"rank":3}
+window 2 tick 1000 you {"alive":101,"biomass":2525.0,"name":"scripted-bot","player":0,"rank":3}
+window 3 tick 1500 you {"alive":28,"biomass":700.0,"name":"scripted-bot","player":0,"rank":4}
+window 4 tick 2000 you {"alive":2,"biomass":50.0,"name":"scripted-bot","player":0,"rank":4}
+window 5 tick 2500 you {"alive":30,"biomass":750.0,"name":"scripted-bot","player":0,"rank":3}
+window 6 tick 3000 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":3}
+window 7 tick 3500 you {"alive":30,"biomass":750.0,"name":"scripted-bot","player":0,"rank":2}
+window 8 tick 4000 you {"alive":1,"biomass":25.0,"name":"scripted-bot","player":0,"rank":3}
+window 9 tick 4500 you {"alive":30,"biomass":750.0,"name":"scripted-bot","player":0,"rank":2}
+window 10 tick 5000 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":3}
+window 11 tick 5500 you {"alive":30,"biomass":750.0,"name":"scripted-bot","player":0,"rank":2}
+window 12 tick 6000 you {"alive":1,"biomass":25.0,"name":"scripted-bot","player":0,"rank":4}
+window 13 tick 6500 you {"alive":30,"biomass":750.0,"name":"scripted-bot","player":0,"rank":3}
+window 14 tick 7000 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":4}
+window 15 tick 7500 you {"alive":30,"biomass":750.0,"name":"scripted-bot","player":0,"rank":3}
+window 16 tick 8000 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":4}
+window 17 tick 8500 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":4}
+window 18 tick 9000 you {"alive":30,"biomass":750.0,"name":"scripted-bot","player":0,"rank":4}
+window 19 tick 9500 you {"alive":2,"biomass":50.0,"name":"scripted-bot","player":0,"rank":4}
+window 20 tick 10000 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":4}
+final standings: [{"alive":1279,"biomass":96196.0,"name":"claude-fable-5-2","player":2,"rank":1},{"alive":149,"biomass":55475.0,"name":"claude-opus-5-5","player":1,"rank":2},{"alive":41,"biomass":16004.0,"name":"deepseek-v4-pro","player":3,"rank":3},{"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":4}]
+exit 0

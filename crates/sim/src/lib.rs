@@ -8,5 +8,6 @@ pub mod grid;
 pub mod rng;
 pub mod scenario;
 pub mod world;
+pub mod worlds;
 
 pub use world::World;

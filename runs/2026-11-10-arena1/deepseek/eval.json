@@ -1,0 +1,266 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/01.json",
+      "mean_biomass": 849.3333333333334,
+      "mean_population": 4.333333333333333,
+      "name": "trackA",
+      "per_seed": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/02.json",
+      "mean_biomass": 29857.333333333332,
+      "mean_population": 152.33333333333334,
+      "name": "trackB",
+      "per_seed": [
+        167,
+        142,
+        148
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/03.json",
+      "mean_biomass": 24866.666666666668,
+      "mean_population": 248.66666666666666,
+      "name": "r10_fast",
+      "per_seed": [
+        269,
+        233,
+        244
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/04.json",
+      "mean_biomass": 25200.0,
+      "mean_population": 252.0,
+      "name": "r10_smart",
+      "per_seed": [
+        268,
+        242,
+        246
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/05.json",
+      "mean_biomass": 14484.0,
+      "mean_population": 402.3333333333333,
+      "name": "r6_k05",
+      "per_seed": [
+        403,
+        411,
+        393
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/06.json",
+      "mean_biomass": 14964.0,
+      "mean_population": 415.6666666666667,
+      "name": "r6_k15",
+      "per_seed": [
+        413,
+        423,
+        411
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/07.json",
+      "mean_biomass": 30510.666666666668,
+      "mean_population": 155.66666666666666,
+      "name": "r14_nc2s",
+      "per_seed": [
+        171,
+        140,
+        156
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/08.json",
+      "mean_biomass": 28700.0,
+      "mean_population": 287.0,
+      "name": "r10_nc2s",
+      "per_seed": [
+        290,
+        294,
+        277
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/09.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "turntest",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/10.json",
+      "mean_biomass": 17460.0,
+      "mean_population": 485.0,
+      "name": "v1_f03k05",
+      "per_seed": [
+        517,
+        446,
+        492
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/11.json",
+      "mean_biomass": 17340.0,
+      "mean_population": 481.6666666666667,
+      "name": "v2_f03k10",
+      "per_seed": [
+        511,
+        460,
+        474
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/12.json",
+      "mean_biomass": 19812.0,
+      "mean_population": 550.3333333333334,
+      "name": "v3_f03c0k20",
+      "per_seed": [
+        592,
+        510,
+        549
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/13.json",
+      "mean_biomass": 13992.0,
+      "mean_population": 388.6666666666667,
+      "name": "v4_f1k02",
+      "per_seed": [
+        390,
+        397,
+        379
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/14.json",
+      "mean_biomass": 1345.3333333333333,
+      "mean_population": 336.3333333333333,
+      "name": "r2_m10",
+      "per_seed": [
+        329,
+        323,
+        357
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/15.json",
+      "mean_biomass": 1409.3333333333333,
+      "mean_population": 352.3333333333333,
+      "name": "r2_1s12",
+      "per_seed": [
+        351,
+        359,
+        347
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/16.json",
+      "mean_biomass": 1473.3333333333333,
+      "mean_population": 368.3333333333333,
+      "name": "r2_2s11nc",
+      "per_seed": [
+        371,
+        373,
+        361
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/17.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "turntest2",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/18.json",
+      "mean_biomass": 1245.3333333333333,
+      "mean_population": 311.3333333333333,
+      "name": "r2_s11v100_g4_a90",
+      "per_seed": [
+        307,
+        312,
+        315
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/19.json",
+      "mean_biomass": 2811.0,
+      "mean_population": 312.3333333333333,
+      "name": "r3_s11v100_g4",
+      "per_seed": [
+        316,
+        304,
+        317
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/20.json",
+      "mean_biomass": 4821.333333333333,
+      "mean_population": 301.3333333333333,
+      "name": "r4_s11v100_g4",
+      "per_seed": [
+        298,
+        300,
+        306
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "runs/2026-11-10-arena1/deepseek/genomes/21.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "hib_r20v100",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

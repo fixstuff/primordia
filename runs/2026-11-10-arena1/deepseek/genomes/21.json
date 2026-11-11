@@ -1,0 +1,29 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "hib_r20v100",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 20
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

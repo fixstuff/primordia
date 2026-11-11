@@ -13,7 +13,7 @@ the model submits is saved and judged by lifeapi-eval at the end.
 import argparse, json, os, pathlib, subprocess, sys, time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from agent_ollama import saved_genome  # one rule for what an accepted genome was
+from agent_ollama import saved_genome, ARENA_GOAL  # one rule each, shared by both runners
 
 GOAL = ("YOUR GOAL: have as many of your organisms alive as possible when the world reaches tick {target}. "
         "Work in rounds. Round 1: call catalog, design a genome, submit it, release about 50, subscribe to the "
@@ -40,6 +40,7 @@ def main():
     ap.add_argument("--key-file", default=os.path.expanduser("~/.config/controlforge/anthropic.env"))
     ap.add_argument("--timeout-s", type=int, default=3600)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--arena", action="store_true", help="play an arena match (end_turn) until match_over")
     a = ap.parse_args()
 
     out = pathlib.Path(a.out).resolve()
@@ -47,8 +48,10 @@ def main():
     cfg = {"mcpServers": {"lifeapi": {"command": str(pathlib.Path(a.mcp).resolve()),
                                       "args": ["--addr", a.addr, "--name", a.model]}}}
     (out / "mcp.json").write_text(json.dumps(cfg, indent=1))
-    env = dict(os.environ, ANTHROPIC_API_KEY=load_key(a.key_file))
-    prompt = GOAL.format(target=a.target_tick) + " The world is at tick 0. Begin."
+    # end_turn blocks until the next arena window opens, so allow long tool calls.
+    env = dict(os.environ, ANTHROPIC_API_KEY=load_key(a.key_file), MCP_TOOL_TIMEOUT="900000")
+    goal = ARENA_GOAL if a.arena else GOAL
+    prompt = goal.format(target=a.target_tick) + " Begin."
     cmd = ["claude", "--bare", "-p", prompt, "--model", a.model,
            "--mcp-config", str(out / "mcp.json"), "--strict-mcp-config",
            "--allowedTools", "mcp__lifeapi__*",

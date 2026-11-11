@@ -1,0 +1,134 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/01.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "blob20",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/02.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "blob20v",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/03.json",
+      "mean_biomass": 30118.666666666668,
+      "mean_population": 153.66666666666666,
+      "name": "trk14p",
+      "per_seed": [
+        149,
+        178,
+        134
+      ]
+    },
+    {
+      "extinct": 1,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/04.json",
+      "mean_biomass": 588.0,
+      "mean_population": 3.0,
+      "name": "trk14n",
+      "per_seed": [
+        7,
+        0,
+        2
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/05.json",
+      "mean_biomass": 25806.666666666668,
+      "mean_population": 131.66666666666666,
+      "name": "trk14v2",
+      "per_seed": [
+        142,
+        122,
+        131
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/06.json",
+      "mean_biomass": 16933.333333333332,
+      "mean_population": 42.333333333333336,
+      "name": "tank20",
+      "per_seed": [
+        44,
+        42,
+        41
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/07.json",
+      "mean_biomass": 24957.333333333332,
+      "mean_population": 127.33333333333333,
+      "name": "park14",
+      "per_seed": [
+        130,
+        127,
+        125
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/08.json",
+      "mean_biomass": 19600.0,
+      "mean_population": 49.0,
+      "name": "park20",
+      "per_seed": [
+        53,
+        47,
+        47
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/09.json",
+      "mean_biomass": 3616.0,
+      "mean_population": 904.0,
+      "name": "scrubv",
+      "per_seed": [
+        907,
+        909,
+        896
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena1/fable/genomes/10.json",
+      "mean_biomass": 4708.0,
+      "mean_population": 1177.0,
+      "name": "scrublean",
+      "per_seed": [
+        1135,
+        1213,
+        1183
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

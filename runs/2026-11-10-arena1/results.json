@@ -1,0 +1,58 @@
+{
+  "rules": {
+    "how": "act (catalog, report, submit_genome, release, observe), then call end_turn; it returns when the next window opens, with the scoreboard. step and subscribe are refused.",
+    "match_ticks": 10000,
+    "players": 4,
+    "score": "total biomass = sum of radius^2 over your living organisms, at the final tick",
+    "window_seconds": 180.0,
+    "window_ticks": 500
+  },
+  "standings": [
+    {
+      "alive": 1279,
+      "biomass": 96196.0,
+      "name": "claude-fable-5-2",
+      "player": 2,
+      "rank": 1
+    },
+    {
+      "alive": 149,
+      "biomass": 55475.0,
+      "name": "claude-opus-5-5",
+      "player": 1,
+      "rank": 2
+    },
+    {
+      "alive": 41,
+      "biomass": 16004.0,
+      "name": "deepseek-v4-pro",
+      "player": 3,
+      "rank": 3
+    },
+    {
+      "alive": 0,
+      "biomass": 0.0,
+      "name": "scripted-bot",
+      "player": 0,
+      "rank": 4
+    }
+  ],
+  "tick": 10000,
+  "world": {
+    "background_sugar": 0.0,
+    "decay": 0.0005000000237487257,
+    "description": "Vents wander about 0.25 units a tick. Sitting still starves; trackers win.",
+    "diffusion": 0.10000000149011612,
+    "drift": 0.25,
+    "grid": 128,
+    "max_population": 4000,
+    "mineral_rate": 1.0,
+    "mineral_vents": 4,
+    "name": "drift",
+    "pulse_depth": 0.0,
+    "pulse_period": 0,
+    "relocate_chance": 0.0,
+    "sugar_rate": 3.0,
+    "sugar_vents": 8
+  }
+}

@@ -14,8 +14,34 @@ pub struct Vent {
     pub x: f32,
     pub y: f32,
     pub chem: usize,
-    /// Added to the vent's cell every tick.
+    /// Added to the vent's cell every tick (the mean, when it pulses).
     pub rate: f32,
+    /// Direction of drift, and offset of the pulse cycle. Set from the
+    /// vent's index, never from the RNG, so static worlds draw nothing.
+    pub heading: f32,
+    pub phase: f32,
+}
+
+/// How the food supply changes over time. All zero = a static world
+/// (no RNG draws, no change from the original sandbox).
+#[derive(Clone, Debug, Default, PartialEq)]
+pub struct Dynamics {
+    /// World units a vent moves per tick (it wanders: small random turns).
+    pub drift: f32,
+    /// Ticks per boom-and-bust cycle; 0 = no pulse.
+    pub pulse_period: u32,
+    /// 0..=1: the rate swings between (1-depth) and (1+depth) times the mean.
+    pub pulse_depth: f32,
+    /// Chance per vent per tick that it dies and reappears elsewhere.
+    pub relocate_chance: f32,
+    /// Sugar added to every cell every tick ("sunlight").
+    pub background_sugar: f32,
+}
+
+impl Dynamics {
+    pub fn is_static(&self) -> bool {
+        *self == Dynamics::default()
+    }
 }
 
 #[derive(Clone, Debug)]
@@ -40,6 +66,7 @@ pub struct Config {
     /// Split when energy >= this fraction of capacity (and material allows).
     pub split_frac: f32,
     pub material_cap: f32,
+    pub dynamics: Dynamics,
 }
 
 #[derive(Clone, Debug)]
@@ -196,10 +223,32 @@ impl World {
     }
 
     pub fn step_grid(&mut self) {
-        for v in &self.cfg.vents {
-            self.grid.add(v.x, v.y, v.chem, v.rate);
+        let World { cfg, grid, rng, tick, .. } = self;
+        let d = &cfg.dynamics;
+        let (ww, wh) = (grid.world_w(), grid.world_h());
+        for v in cfg.vents.iter_mut() {
+            let mut rate = v.rate;
+            if d.pulse_period > 0 {
+                let t = (*tick % d.pulse_period as u64) as f32 / d.pulse_period as f32;
+                rate = det::max(rate * (1.0 + d.pulse_depth * det::sin(det::TAU * t + v.phase)), 0.0);
+            }
+            grid.add(v.x, v.y, v.chem, rate);
+            if d.drift > 0.0 {
+                v.heading = det::wrap_angle(v.heading + rng.range(-0.05, 0.05));
+                v.x = det::wrap(v.x + det::cos(v.heading) * d.drift, ww);
+                v.y = det::wrap(v.y + det::sin(v.heading) * d.drift, wh);
+            }
+            if d.relocate_chance > 0.0 && rng.next_f32() < d.relocate_chance {
+                v.x = rng.range(0.0, ww);
+                v.y = rng.range(0.0, wh);
+            }
         }
-        self.grid.diffuse(self.cfg.diffusion, self.cfg.decay);
+        if d.background_sugar > 0.0 {
+            for c in grid.chem[0].iter_mut() {
+                *c += d.background_sugar;
+            }
+        }
+        grid.diffuse(cfg.diffusion, cfg.decay);
     }
 
     pub fn step_organisms(&mut self) {
@@ -386,6 +435,15 @@ impl World {
         }
         h.update(self.stats.births.to_le_bytes());
         h.update(self.stats.deaths.to_le_bytes());
+        // Moving vents are state. Static worlds leave them out, so the
+        // original golden hash is unchanged.
+        if !self.cfg.dynamics.is_static() {
+            for v in &self.cfg.vents {
+                for f in [v.x, v.y, v.heading] {
+                    h.update(f.to_bits().to_le_bytes());
+                }
+            }
+        }
         h.finalize().iter().map(|b| format!("{b:02x}")).collect()
     }
 }

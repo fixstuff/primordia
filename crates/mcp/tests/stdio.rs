@@ -73,7 +73,7 @@ fn handshake_list_and_a_short_game() {
 
     let r = m.rpc("tools/list", json!({}));
     let names: Vec<&str> = r["result"]["tools"].as_array().unwrap().iter().map(|t| t["name"].as_str().unwrap()).collect();
-    assert_eq!(names, ["catalog", "submit_genome", "release", "observe", "step", "report", "subscribe", "unsubscribe"]);
+    assert_eq!(names, ["catalog", "submit_genome", "release", "observe", "step", "report", "subscribe", "unsubscribe", "end_turn"]);
     for t in r["result"]["tools"].as_array().unwrap() {
         assert_eq!(t["inputSchema"]["type"], "object", "{t}");
     }

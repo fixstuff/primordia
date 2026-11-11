@@ -44,7 +44,7 @@ fn tools() -> Value {
          "inputSchema": {"type": "object", "properties": {}}},
         {"name": "submit_genome", "description": "Check and register a genome as a new species you own. Returns its id and derived phenotype (capacity, upkeep, brain size), or the exact rule it broke.",
          "inputSchema": {"type": "object", "properties": {"genome": genome_schema}, "required": ["genome"]}},
-        {"name": "release", "description": "Release `count` founders of one of your species as a new lineage at random places. Costs budget (5 each).",
+        {"name": "release", "description": "Release `count` founders of one of your species as a new lineage at random places. Costs budget: 5 x (radius/5)^2 per founder (radius 2 = 0.8, 5 = 5, 20 = 80).",
          "inputSchema": {"type": "object", "properties": {
              "species": {"type": "integer", "minimum": 0}, "count": {"type": "integer", "minimum": 1, "maximum": 200}},
              "required": ["species", "count"]}},
@@ -60,7 +60,9 @@ fn tools() -> Value {
              "lineage": {"type": "integer"}, "value": {"type": "integer"}},
              "required": ["event"]}},
         {"name": "unsubscribe", "description": "Remove a subscription by id.",
-         "inputSchema": {"type": "object", "properties": {"id": {"type": "integer"}}, "required": ["id"]}}
+         "inputSchema": {"type": "object", "properties": {"id": {"type": "integer"}}, "required": ["id"]}},
+        {"name": "end_turn", "description": "ARENA MATCHES ONLY: you are done for this window. Returns when the server opens the next window (may take up to the window's time), with the scoreboard: every player's score (biomass averaged over the match so far, out of the whole match), biomass now, alive count, your rank, ticks left, and match_over. In an arena, step and subscribe are refused.",
+         "inputSchema": {"type": "object", "properties": {}}}
     ])
 }
 

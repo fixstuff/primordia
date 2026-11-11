@@ -254,9 +254,38 @@ function niceCeil(v) {
 
 function renderLineages() {
   const ul = $("lineages");
-  const ls = [...(S.meta?.lineages || [])].sort((a, b) => b.alive - a.alive || a.lineage - b.lineage);
+  const all = S.meta?.lineages || [];
+  // Arenas create dozens of lineages: group by player (most alive first),
+  // and fold extinct ones away behind a toggle.
+  const alive = new Map();
+  for (const l of all) alive.set(l.owner || "", (alive.get(l.owner || "") || 0) + l.alive);
+  const extinct = all.filter((l) => l.alive === 0).length;
+  const ls = all
+    .filter((l) => S.showExtinct || l.alive > 0)
+    .sort((a, b) => (alive.get(b.owner || "") - alive.get(a.owner || "")) ||
+      (a.owner || "").localeCompare(b.owner || "") || b.alive - a.alive || a.lineage - b.lineage);
+  const rows = [];
+  let owner = null;
+  for (const l of ls) {
+    if ((l.owner || "") !== owner) {
+      owner = l.owner || "";
+      const h = document.createElement("li");
+      h.className = "owner";
+      h.textContent = `${owner || "unowned"} · ${alive.get(owner).toLocaleString()} alive`;
+      rows.push(h);
+    }
+    rows.push(l);
+  }
+  if (extinct) {
+    const t = document.createElement("li");
+    t.className = "owner toggle";
+    t.textContent = S.showExtinct ? `Hide ${extinct} extinct` : `Show ${extinct} extinct`;
+    t.onclick = () => { S.showExtinct = !S.showExtinct; renderLineages(); };
+    rows.push(t);
+  }
   ul.replaceChildren(
-    ...ls.map((l) => {
+    ...rows.map((l) => {
+      if (l instanceof HTMLElement) return l;
       const li = document.createElement("li");
       li.className = (S.follow === l.lineage ? "on " : "") + (l.alive === 0 ? "dead" : "");
       li.title = l.alive === 0 ? "extinct" : "follow this lineage";

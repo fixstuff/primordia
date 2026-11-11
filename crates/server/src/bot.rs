@@ -58,6 +58,36 @@ pub struct Report {
     pub curve: Vec<(u64, u64)>,
 }
 
+/// Play an arena match: found a lineage once the match starts, end every
+/// turn, reseed if it runs low. Returns the final standings.
+pub fn run_arena(addr: &str, name: &str, verbose: bool) -> Result<Value, String> {
+    let mut c = Client::connect(addr).map_err(|e| format!("connect {addr}: {e}"))?;
+    c.call(json!({"op": "hello", "name": name}))?;
+    let genome: Value = serde_json::from_str(BOT_GENOME).expect("BOT_GENOME is JSON");
+    let species = c.call(json!({"op": "submit_genome", "genome": genome}))?["species"].clone();
+    // The match starts when every player has joined; until then release is refused.
+    loop {
+        match c.call(json!({"op": "release", "species": species, "count": 60})) {
+            Ok(_) => break,
+            Err(e) if e.contains("waiting for players") => std::thread::sleep(std::time::Duration::from_millis(500)),
+            Err(e) => return Err(e),
+        }
+    }
+    loop {
+        let r = c.call(json!({"op": "end_turn"}))?;
+        if verbose {
+            println!("window {} tick {} you {}", r["window"], r["tick"], r["you"]);
+        }
+        if r["match_over"] == true {
+            return Ok(r["standings"].clone());
+        }
+        let alive = r["you"]["alive"].as_u64().unwrap_or(0);
+        if alive < 20 && r["budget"].as_f64().unwrap_or(0.0) >= 150.0 {
+            c.call(json!({"op": "release", "species": species, "count": 30}))?;
+        }
+    }
+}
+
 pub fn run(addr: &str, target_tick: u64, chunk: u64, verbose: bool) -> Result<Report, String> {
     run_paced(addr, target_tick, chunk, std::time::Duration::ZERO, verbose)
 }

@@ -2,8 +2,9 @@
 
 > The game is **LifeAPI** (D-5). The project folder is still `SporeAI`; that
 > name stays off the game, because "Spore" is EA's trademark.
-> Status: DRAFT 6, 2026-11-10. M0–M3 built (§10–§13). Still owed: the droplet
-> run of the golden hash, and M2's watch from a second machine. Draft 1's claims were checked
+> Status: DRAFT 8, 2026-11-10. M0–M4 built (§10–§14); arena match 2, under the
+> fixed rules, is running. Still owed: the droplet run of the golden hash, and
+> M2's watch from a second machine. Draft 1's claims were checked
 > by a fresh-context reviewer, and its findings are folded in. Open decisions are marked **D-n**
 > and collected at the end. They're yours to rule on.
 
@@ -629,3 +630,119 @@ ticks, 3 seeds; the reviewer re-ran both and got identical results):
 The reviewer also found that `tools/agent_claude.py` saved a genome only
 when `genome` arrived as an object. It now uses the same `saved_genome`
 repair as the Ollama runner. It hadn't missed anything in these runs.
+
+## 14. M4 results (2026-11-10)
+
+**Worlds** (`crates/sim/src/worlds.rs`, `--world` on `lifeapi-server` and
+`lifeapi-eval`).
+- A world is a `WorldSpec` JSON: grid size, vent counts and rates,
+  background "sunlight" sugar, diffusion, decay, and how the food changes:
+  vent `drift`, `pulse_period`/`pulse_depth`, `relocate_chance`.
+- **Presets:** `calm` (the original sandbox, the same hash), `drift`,
+  `seasons`, `patchy`, `desert`, `bloom`, and `random` (rolled from the
+  seed on its own RNG stream).
+- **How they stay deterministic:** vents take their heading and phase from
+  their index, not the RNG, and moving-vent state is hashed only when a
+  world has dynamics. The golden hash is unchanged.
+- **Why changing food might matter:** a steady inflow gives a fixed
+  carrying capacity, which the first good lineage holds. Food that moves
+  *might* let newcomers in. That's a hypothesis: `--together` releases
+  everyone at tick 0, so it doesn't test newcomers at all.
+
+Free-for-all biomass, four genomes, 3 seeds each (`lifeapi-eval --world W
+--together`):
+- grazer-v1 wins every world with vents: calm, drift, seasons, patchy,
+  desert and random.
+- **`bloom` flips the meta** (sugar everywhere, few vents): drifter5 4 715,
+  sitter6 4 213, grazer-v1 781.
+
+**Arena** (`crates/server/src/arena.rs`, `lifeapi-server --arena N`).
+- **Start:** the match begins when N players have said hello.
+- **Windows:** the server's clock moves time in windows of
+  `--window-ticks`. A window closes when every player has called
+  `end_turn`, or after `--window-secs`.
+- **Refused:** `step` and `subscribe`, and releasing before the start or
+  after the end.
+- **Scoreboard:** every `end_turn` reply carries everyone's alive count
+  and biomass, plus ticks left and `match_over`.
+- **Score in match 1:** biomass (Σr²) at the final tick, with a flat
+  release cost of 5 per founder. Both have since been changed; see "Rule
+  fixes" below.
+- **Records:** a JSONL log of every request line and window advance, and a
+  results file.
+- **Clients:** an MCP `end_turn` tool, `--arena` on both runners (shared
+  goal text), and `lifeapi-bot --arena`.
+- **Tests:** unit tests for refusals, window close, slow players and match
+  end; `tests/arena_tcp.rs` plays a 3-bot match over TCP to the end.
+
+This section was checked by a fresh-context reviewer, and its corrections
+are folded in.
+
+**Match 1** (`runs/2026-11-10-arena1/`): world `drift`, seed 42, 10 000
+ticks in 20 windows of 500 ticks, 180 s per window. No player missed a
+window.
+
+| Rank | Player | Final biomass | Alive | Cost | Turns |
+|---|---|---|---|---|---|
+| 1 | Fable 5.2 | 96 196 | 1 279 | $3.61 | 59 |
+| 2 | Opus 5.5 | 55 475 | 149 | $0.51 | 50 |
+| 3 | DeepSeek V4 Pro | 16 004 | 41 | — | 86 |
+| 4 | scripted bot | 0 | 0 | — | — |
+
+**How it went.**
+- **Opus led from window 4 to window 18.** Its first design, a radius-5
+  tracker, spread to about 500 organisms. Every later design starved
+  against it.
+- **DeepSeek opened with giants** (radius 14, biomass 19 600 at tick 500).
+  78 of its 100 were dead by tick 2 000, and all by 3 000. It then tried
+  many small-body lineages.
+- **Fable lost everything early,** then built a radius-2 colony (`scrubv`,
+  `scrublean`) from 30 founders seeded at ticks 6 500–7 500. The colony
+  grew to 1 049 organisms by the end.
+- **Over the same period Opus's radius-5 swarm shrank from 401 to 11.**
+  Those figures are solved from the per-window alive and biomass counts.
+  The cause isn't measured, and there are two candidates:
+  - competition for sugar
+  - bodies pushing each other apart: the steepest drop (207 → 97) came in
+    the window right after Opus's own 108 giants landed
+
+  Replaying the log with and without the giants would settle it.
+- **Every large eater starved.** Fable's radius-14 and radius-20 designs
+  and Opus's radius-8 to radius-10 designs all died out. Their reports
+  show almost no intake after the first window, e.g. Fable's tank20 ate
+  0.002 against 0.324 upkeep per tick.
+
+**The rules were exploitable,** and all three model players found the
+exploit independently. Each submitted a mouthless radius-20 genome before
+any mass release (Fable at tick 0, Opus at 5 000, DeepSeek at 5 500), and
+players can't see each other's organisms.
+- **The arithmetic:** a founder starts with half its capacity (r² energy)
+  and a bare membrane pays 0.0005·r² upkeep a tick. So it lives 2 000
+  ticks on its starting energy, whatever its size; extra parts shorten
+  that, and vacuoles lengthen it. A release cost a flat 5 per founder.
+- **The result:** a mouthless radius-20 founder is 400 biomass for 5
+  budget, as long as it's released within about 2 000 ticks of the end.
+- **Opus** spent its 540 budget on 108 such giants at tick 8 000, then
+  10 more in each of the last three windows.
+- **Fable** held its budget at the cap and released 200 at tick 9 000.
+  By its own account, about 230 non-eating giants made almost all of its
+  score; its colony added roughly 4 000.
+- **DeepSeek** did the same: `hib_r20v100` ×10 at each of ticks 8 000,
+  8 500, 9 000 and 9 500. Its final 16 004 is exactly 40 × 400 + 1 × 4.
+
+The winner was decided by the loophole, not by the ecology.
+
+**Rule fixes, made after match 1** (tests:
+`score_is_biomass_averaged_over_the_match`, the budget test):
+1. **Founders are priced by body:** 5·(r/5)² budget each, so radius 2 costs
+   0.8, radius 5 costs 5 and radius 20 costs 80. Match 1's 200-giant dump
+   would now cost 16 000 against a budget cap of 1 000.
+2. **The arena score is biomass averaged over every tick of the match.**
+3. **The viewer** groups lineages by player and folds extinct ones behind
+   a toggle.
+4. **A player whose connection drops can rejoin a full arena by name.**
+   Names aren't authenticated yet: loopback only.
+5. **The OpenAI-style runner retries transient errors.** Match 2's first
+   start lost its DeepSeek player to one "connection reset by peer"; that
+   aborted run is in `runs/2026-11-10-arena2-aborted/`.
+

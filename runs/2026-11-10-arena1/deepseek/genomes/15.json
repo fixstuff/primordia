@@ -1,0 +1,75 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_1s12",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.3
+  },
+  {
+   "part": "vacuole",
+   "capacity": 20
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -1,
+   0,
+   1,
+   0,
+   2.0,
+   3.0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.02
+ }
+}

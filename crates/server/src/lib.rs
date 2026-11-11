@@ -8,6 +8,7 @@
 //! so every command is applied in one total order, the order it arrived in.
 //! That order is what a future replay log records.
 
+pub mod arena;
 pub mod bot;
 pub mod snapshot;
 pub mod web;
@@ -31,6 +32,14 @@ pub const BUDGET_CAP: f64 = 1000.0;
 pub const BUDGET_PER_TICK: f64 = 0.1;
 pub const RELEASE_COST_EACH: f64 = 5.0;
 
+/// Budget per founder: 5 for a radius-5 body, scaling with body area, so
+/// biomass can't be bought cheaply (arena match 1: a radius-20 founder for a
+/// flat 5 was 400 biomass that lived ~2000 ticks on its starting energy).
+pub fn founder_cost(radius: f32) -> f64 {
+    let r = radius as f64;
+    RELEASE_COST_EACH * (r / 5.0) * (r / 5.0)
+}
+
 #[derive(Deserialize, Debug)]
 #[serde(tag = "op", rename_all = "snake_case", deny_unknown_fields)]
 enum Request {
@@ -52,6 +61,8 @@ enum Request {
         value: Option<u64>,
     },
     Unsubscribe { id: u64 },
+    /// Arena only: done for this window; the reply comes when the next opens.
+    EndTurn,
 }
 
 #[derive(Deserialize, Debug, Clone, Copy, PartialEq, serde::Serialize)]
@@ -111,6 +122,9 @@ pub struct Game {
     history: Vec<HistPoint>,
     hist_every: u64,
     next_sub: u64,
+    arena: Option<arena::Arena>,
+    /// What `catalog` says about the world (name, description, spec).
+    world_info: Value,
 }
 
 impl Game {
@@ -125,6 +139,8 @@ impl Game {
             history: Vec::new(),
             hist_every: 50,
             next_sub: 0,
+            arena: None,
+            world_info: json!({"name": "calm"}),
         };
         g.sample_history();
         g
@@ -186,6 +202,28 @@ impl Game {
     /// Apply one request line from a connection. Returns the reply line and
     /// the connection's player afterwards (set by `hello`).
     pub fn handle(&mut self, player: Option<usize>, line: &str) -> (String, Option<usize>) {
+        let (reply, p) = self.handle_deferrable(player, line);
+        (reply.unwrap_or_default(), p)
+    }
+
+    /// Describe the world in `catalog` (set by whoever built the world).
+    pub fn set_world_info(&mut self, info: Value) {
+        self.world_info = info;
+    }
+
+    /// As `handle`, but an arena `end_turn` returns None: its reply is sent
+    /// later, by `arena_poll`, when the next window opens.
+    pub fn handle_deferrable(&mut self, player: Option<usize>, line: &str) -> (Option<String>, Option<usize>) {
+        if let (Some(a), Some(p)) = (self.arena.as_mut(), player) {
+            a.log_line(p, self.world.tick, line);
+        }
+        if let Ok(Request::EndTurn) = serde_json::from_str::<Request>(line) {
+            return match (player, self.arena.is_some()) {
+                (None, _) => (Some(self.err("say hello first".into())), player),
+                (_, false) => (Some(self.err("end_turn is for arena matches; in a sandbox, use step".into())), player),
+                (Some(p), true) => (self.arena_end_turn(p), player),
+            };
+        }
         let mut player = player;
         let reply = match serde_json::from_str::<Request>(line) {
             Err(e) => self.err(format!(
@@ -198,6 +236,20 @@ impl Game {
                     self.err("hello: this connection already has a player".into())
                 } else if name.is_empty() || name.len() > 64 {
                     self.err("hello: name must be 1..=64 bytes".into())
+                } else if self.arena.as_ref().is_some_and(|a| self.players.len() >= a.cfg.players) {
+                    // A full arena lets a player whose connection dropped come
+                    // back by name and take its slot again (a crashed agent
+                    // runner must not stall every later window). Names are not
+                    // authenticated yet: loopback only, like everything else.
+                    match self.players.iter().position(|pl| pl.name == name) {
+                        Some(id) => {
+                            player = Some(id);
+                            let budget = self.players[id].budget;
+                            self.ok(json!({"player": id, "rejoined": true, "protocol": PROTOCOL, "budget": budget,
+                                           "arena": self.arena.as_ref().map(|a| a.rules())}))
+                        }
+                        None => self.err("hello: this arena match is full".into()),
+                    }
                 } else {
                     self.players.push(Player {
                         name,
@@ -208,7 +260,9 @@ impl Game {
                     });
                     let id = self.players.len() - 1;
                     player = Some(id);
+                    let arena = self.arena_joined();
                     self.ok(json!({
+                        "arena": arena,
                         "player": id,
                         "protocol": PROTOCOL,
                         "budget": BUDGET_START,
@@ -219,26 +273,31 @@ impl Game {
                             "max_observe": MAX_OBSERVE,
                             "budget_cap": BUDGET_CAP,
                             "budget_per_tick": BUDGET_PER_TICK,
-                            "release_cost_each": RELEASE_COST_EACH,
+                            "release_cost_each": "5 * (radius/5)^2 per founder: radius 2 = 0.8, 5 = 5, 10 = 20, 20 = 80",
                         },
                     }))
                 }
             }
             Ok(req) => match player {
                 None => self.err("say hello first: {\"op\":\"hello\",\"name\":\"...\"}".into()),
-                Some(p) => self.handle_player(p, req),
+                Some(p) => match self.arena_refuses(&req) {
+                    Some(e) => self.err(e),
+                    None => self.handle_player(p, req),
+                },
             },
         };
-        (reply, player)
+        (Some(reply), player)
     }
 
     fn handle_player(&mut self, p: usize, req: Request) -> String {
         match req {
-            Request::Hello { .. } => unreachable!("handled above"),
+            Request::Hello { .. } | Request::EndTurn => unreachable!("handled above"),
             Request::Catalog => {
                 let c = &self.world.cfg;
                 self.ok(json!({
                     "genome": genome::catalog(),
+                    "world_spec": self.world_info,
+                    "arena": self.arena.as_ref().map(|a| a.rules()),
                     "world": {
                         "width": self.world.grid.world_w(),
                         "height": self.world.grid.world_h(),
@@ -292,10 +351,11 @@ impl Game {
                 if count > room {
                     return self.err(format!("release: the pool has room for {room} more organisms"));
                 }
-                let cost = count as f64 * RELEASE_COST_EACH;
+                let each = founder_cost(self.world.species[species as usize].phen.radius);
+                let cost = count as f64 * each;
                 if self.players[p].budget < cost {
                     return self.err(format!(
-                        "release: costs {cost} ({RELEASE_COST_EACH} each), budget is {:.1}",
+                        "release: costs {cost:.1} ({each:.1} each = 5 x (radius/5)^2), budget is {:.1}",
                         self.players[p].budget
                     ));
                 }
@@ -677,11 +737,45 @@ pub fn serve_with_viewer(api: TcpListener, viewer: Option<TcpListener>, game: Ga
 }
 
 fn sim_thread(mut game: Game, rx: mpsc::Receiver<Msg>) {
-    while let Ok(msg) = rx.recv() {
+    // Arena end_turn replies wait here until their window closes.
+    let mut waiting: Vec<(usize, mpsc::Sender<(String, Option<usize>)>)> = Vec::new();
+    loop {
+        let msg = match game.arena_deadline() {
+            Some(d) => match rx.recv_timeout(d.saturating_duration_since(std::time::Instant::now())) {
+                Ok(m) => Some(m),
+                Err(mpsc::RecvTimeoutError::Timeout) => None,
+                Err(mpsc::RecvTimeoutError::Disconnected) => break,
+            },
+            None => match rx.recv() {
+                Ok(m) => Some(m),
+                Err(_) => break,
+            },
+        };
+        if let Some(msg) = msg {
+            handle_msg(&mut game, msg, &mut waiting);
+        }
+        for (p, reply) in game.arena_poll(std::time::Instant::now()) {
+            waiting.retain(|(wp, tx)| {
+                if *wp == p {
+                    let _ = tx.send((reply.clone(), Some(p)));
+                    false
+                } else {
+                    true
+                }
+            });
+        }
+    }
+}
+
+fn handle_msg(game: &mut Game, msg: Msg, waiting: &mut Vec<(usize, mpsc::Sender<(String, Option<usize>)>)>) {
+    {
         match msg {
-            Msg::Line { player, line, reply } => {
-                let _ = reply.send(game.handle(player, &line));
-            }
+            Msg::Line { player, line, reply } => match game.handle_deferrable(player, &line) {
+                (Some(out), p) => {
+                    let _ = reply.send((out, p));
+                }
+                (None, p) => waiting.push((p.expect("deferred replies have a player"), reply)),
+            },
             Msg::Snapshot { since_version, history_after, reply } => {
                 let snap = if since_version == Some(game.version()) {
                     None
@@ -790,10 +884,13 @@ mod tests {
         let (_, a) = call(&mut g, None, r#"{"op":"hello","name":"a"}"#);
         let (r, _) = call(&mut g, a, &format!(r#"{{"op":"submit_genome","genome":{}}}"#, scenario::FOUNDER));
         let sp = r["species"].as_u64().unwrap();
-        let (r, _) = call(&mut g, a, &format!(r#"{{"op":"release","species":{sp},"count":100}}"#));
-        assert_eq!(r["budget"], 0.0, "{r}");
+        // FOUNDER is radius 6: 5 x (6/5)^2 = 7.2 each. 69 of them = 496.8 of 500.
+        let (r, _) = call(&mut g, a, &format!(r#"{{"op":"release","species":{sp},"count":69}}"#));
+        assert!((r["budget"].as_f64().unwrap() - 3.2).abs() < 1e-6, "{r}");
         let (r, _) = call(&mut g, a, &format!(r#"{{"op":"release","species":{sp},"count":1}}"#));
         assert!(r["error"].as_str().unwrap().contains("budget"), "{r}");
+        // A radius-20 body costs 80 per founder: no cheap biomass.
+        assert!((founder_cost(20.0) - 80.0).abs() < 1e-9 && (founder_cost(5.0) - 5.0).abs() < 1e-9);
         call(&mut g, a, r#"{"op":"step","ticks":50}"#);
         let (r, _) = call(&mut g, a, &format!(r#"{{"op":"release","species":{sp},"count":1}}"#));
         assert_eq!(r["ok"], true, "{r}");
