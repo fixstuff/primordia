@@ -42,7 +42,16 @@ pub fn base_config(seed: u64, grid_w: usize, grid_h: usize) -> Config {
 
 /// A pool with a seeded chemical field and vents, plus `founders` organisms
 /// of the default genome.
-pub fn sandbox(mut cfg: Config, sugar_vents: usize, mineral_vents: usize, founders: usize) -> World {
+pub fn sandbox(cfg: Config, sugar_vents: usize, mineral_vents: usize, founders: usize) -> World {
+    let mut w = pool(cfg, sugar_vents, mineral_vents);
+    let sp = w.add_species(Genome::from_json(FOUNDER).expect("FOUNDER parses")).expect("FOUNDER expresses");
+    w.release(sp, founders).expect("species exists");
+    w
+}
+
+/// An empty pool: chemical field and vents, no species, no organisms.
+/// Draws from the world's RNG in the same order `sandbox` always did.
+pub fn pool(mut cfg: Config, sugar_vents: usize, mineral_vents: usize) -> World {
     let mut w = World::new(cfg.clone()).expect("scenario config is valid");
     let (ww, wh) = (w.grid.world_w(), w.grid.world_h());
     for k in 0..sugar_vents + mineral_vents {
@@ -54,8 +63,6 @@ pub fn sandbox(mut cfg: Config, sugar_vents: usize, mineral_vents: usize, founde
         w.grid.chem[0][i] = 0.5 + 0.5 * w.rng.next_f32();
         w.grid.chem[1][i] = 0.3;
     }
-    let sp = w.add_species(Genome::from_json(FOUNDER).expect("FOUNDER parses")).expect("FOUNDER expresses");
-    w.release(sp, founders).expect("species exists");
     w
 }
 

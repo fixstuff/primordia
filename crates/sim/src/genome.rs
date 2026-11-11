@@ -204,6 +204,47 @@ impl Genome {
     }
 }
 
+/// What a player needs to write a genome, from the same constants
+/// `express` enforces. The costs are given as the formulas in `express`.
+pub fn catalog() -> serde_json::Value {
+    serde_json::json!({
+        "schema": SCHEMA,
+        "limits": {
+            "max_parts": MAX_PARTS,
+            "max_sensors": MAX_SENSORS,
+            "max_hidden": MAX_HIDDEN,
+            "radius": [MIN_RADIUS, MAX_RADIUS],
+            "brain_weight": [-4.0, 4.0],
+            "mutation_rate": [0.0, 1.0],
+            "mutation_size": [0.0, 1.0],
+        },
+        "parts": [
+            {"part": "membrane", "fields": {"radius": "number, the body; exactly one"}},
+            {"part": "flagellum", "fields": {"power": "0..=1, forward thrust"}},
+            {"part": "cilia", "fields": {"power": "0..=1, turning"}},
+            {"part": "mouth", "fields": {}, "note": "eats sugar (energy) and mineral (material for children) from the cell under the body"},
+            {"part": "chemo_sensor", "fields": {"angle": "-180..=180 degrees off the heading", "chemical": "sugar | mineral"}},
+            {"part": "vacuole", "fields": {"capacity": "0..=100 extra energy storage"}},
+        ],
+        "chemicals": ["sugar", "mineral"],
+        "brain": {
+            "inputs": "one per chemo_sensor (reading v as v/(v+1)), then own energy/capacity, then a bias of 1",
+            "outputs": ["thrust (negative = stop)", "turn"],
+            "activation": "tanh",
+            "weight_layout": "hidden rows [hidden][inputs], then output rows [2][hidden+1] with the output bias last",
+            "n_weights": "inputs*hidden + (hidden+1)*2",
+        },
+        "phenotype": {
+            "capacity": "2*r^2 + sum(vacuole.capacity)",
+            "upkeep_per_tick": "0.0005*r^2 + 0.01*thrust + 0.006*cilia + 0.004*mouths + 0.002*sensors + 0.0002*vacuole",
+            "turn_rad_per_tick": "0.05 + 0.15*sum(cilia.power)",
+            "speed": "max_speed * max(thrust_out,0) * sum(flagellum.power) * 6/r",
+            "child_material": "0.1*r^2",
+            "divides_when": "energy >= split_frac*capacity and material >= child_material; the child gets half the energy and a mutated brain",
+        },
+    })
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

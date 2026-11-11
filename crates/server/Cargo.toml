@@ -1,0 +1,10 @@
+[package]
+name = "lifeapi-server"
+version = "0.1.0"
+edition = "2021"
+description = "LifeAPI server: newline JSON over TCP, one simulation thread."
+
+[dependencies]
+lifeapi-sim = { path = "../sim" }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["float_roundtrip"] }

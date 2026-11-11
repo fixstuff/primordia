@@ -2,8 +2,8 @@
 
 > The game is **LifeAPI** (D-5). The project folder is still `SporeAI`; that
 > name stays off the game, because "Spore" is EA's trademark.
-> Status: DRAFT 3, 2026-11-10. M0 built (§10); the droplet run of the
-> golden hash is still owed. Draft 1's claims were checked
+> Status: DRAFT 4, 2026-11-10. M0 and M1 built (§10, §11). The droplet run of
+> the golden hash is still owed. Draft 1's claims were checked
 > by a fresh-context reviewer, and its findings are folded in. Open decisions are marked **D-n**
 > and collected at the end. They're yours to rule on.
 
@@ -360,3 +360,53 @@ Code: `crates/sim` (`lifeapi-sim`). Run: `cargo test --release`, then
 
   Both beat the 60 ticks/s target. At 1024², the chemical grid is
   two-thirds of each tick, as §8 predicted.
+
+## 11. M1 results (2026-11-10)
+
+Code: `crates/server` (`lifeapi-server`). Run `lifeapi-server` (it listens
+on 127.0.0.1:4343), then `lifeapi-bot`.
+
+**What's built.** Protocol 1 implements the sandbox subset of §6:
+- **Operations:** `hello`, `catalog`, `submit_genome`, `release`,
+  `observe`, `step`.
+- **Limits:** at most 10 000 ticks per step, 200 founders per release and
+  256 organisms per observe. Lines are capped at 1 MiB.
+- **Budget:** starts at 500, refills 0.1 per tick up to a cap of 1000, and a
+  release costs 5 per founder.
+- **Ownership:** species and lineages have owners, and `observe` shows only
+  your own organisms (fog of war).
+- **Refusals** name the exact rule, as do unknown fields and unknown ops.
+- **Loopback only:** a non-loopback address is refused at startup.
+
+Deferred to later milestones: `report`, `subscribe`, `edit_lineage`,
+`replay`, the event log, WebSocket and MCP.
+
+**Threading.** One simulation thread owns the World, and connection threads
+pass lines to it over a channel. Every command applies in one total order,
+which is what a replay log will record. It's std threads only: no async
+runtime and no new dependencies.
+
+**Proof.**
+- `tests/bot_survives.rs` starts a real server on an ephemeral loopback
+  port. Over real TCP, the scripted bot's lineage must be alive at tick
+  10 000, must have grown past its 60 founders, and may reseed at most
+  twice.
+- It passes in release (9.7 s) and debug (58 s).
+- Six unit tests cover:
+  - `hello` coming first
+  - refusals by name
+  - genome rules
+  - ownership and fog of war
+  - budget refill
+  - that time moves only on `step`
+  - the loopback refusal
+- **The real binaries:** the bot's lineage went from 60 founders to about
+  690, then held near 610 at tick 10 000 with **0 reseeds**.
+- `pool()` was split out of `sandbox()` with the same RNG draw order, and
+  the golden hash is unchanged.
+
+**Known limits, on purpose for the sandbox.**
+- Any player can `step` the shared world. Fair time is the arena's job (M4).
+- The budget is f64 on the server, outside the hashed sim state. When the
+  replay log comes, budgets have to be replayed from it too.
+
