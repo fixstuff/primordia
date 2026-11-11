@@ -9,6 +9,8 @@
 //! That order is what a future replay log records.
 
 pub mod bot;
+pub mod snapshot;
+pub mod web;
 
 use lifeapi_sim::genome::{self, Genome};
 use lifeapi_sim::World;
@@ -48,6 +50,17 @@ struct Player {
     budget: f64,
 }
 
+/// One point of the population graph.
+#[derive(Clone, Debug, serde::Serialize)]
+pub struct HistPoint {
+    pub tick: u64,
+    pub total: u32,
+    /// (lineage, alive), lineages with at least one organism.
+    pub lineages: Vec<(u32, u32)>,
+}
+
+pub const HISTORY_MAX: usize = 2000;
+
 /// The server's whole state; lives on the simulation thread only.
 pub struct Game {
     world: World,
@@ -56,12 +69,76 @@ pub struct Game {
     species_owner: Vec<usize>,
     /// lineage id -> owning player (lineage ids start at 1; index 0 unused)
     lineage_owner: Vec<Option<usize>>,
+    /// Bumped by every command that changes the world, so spectators know
+    /// when there's something new to send.
+    version: u64,
+    history: Vec<HistPoint>,
+    hist_every: u64,
 }
 
 impl Game {
     pub fn new(world: World) -> Game {
         let n = world.species.len();
-        Game { world, players: Vec::new(), species_owner: vec![usize::MAX; n], lineage_owner: vec![None] }
+        let mut g = Game {
+            world,
+            players: Vec::new(),
+            species_owner: vec![usize::MAX; n],
+            lineage_owner: vec![None],
+            version: 0,
+            history: Vec::new(),
+            hist_every: 50,
+        };
+        g.sample_history();
+        g
+    }
+
+    pub fn version(&self) -> u64 {
+        self.version
+    }
+
+    pub fn history(&self) -> &[HistPoint] {
+        &self.history
+    }
+
+    /// Live organisms per lineage id (index = lineage id).
+    pub fn lineage_counts(&self) -> Vec<u32> {
+        let mut counts = vec![0u32; self.lineage_owner.len().max(1)];
+        for o in &self.world.orgs {
+            let l = o.lineage as usize;
+            if l >= counts.len() {
+                counts.resize(l + 1, 0);
+            }
+            counts[l] += 1;
+        }
+        counts
+    }
+
+    fn sample_history(&mut self) {
+        let counts = self.lineage_counts();
+        let lineages = counts
+            .iter()
+            .enumerate()
+            .filter(|(_, &c)| c > 0)
+            .map(|(l, &c)| (l as u32, c))
+            .collect();
+        self.history.push(HistPoint { tick: self.world.tick, total: self.world.orgs.len() as u32, lineages });
+        if self.history.len() > HISTORY_MAX {
+            // Halve the resolution: keep every other point, sample half as often.
+            let mut i = 0;
+            self.history.retain(|_| {
+                i += 1;
+                i % 2 == 1
+            });
+            self.hist_every *= 2;
+        }
+    }
+
+    pub fn owner_name(&self, lineage: u32) -> Option<&str> {
+        self.lineage_owner
+            .get(lineage as usize)
+            .copied()
+            .flatten()
+            .map(|p| self.players[p].name.as_str())
     }
 
     pub fn world(&self) -> &World {
@@ -141,6 +218,7 @@ impl Game {
                     Err(rule) => self.err(format!("submit_genome: {rule}")),
                     Ok(id) => {
                         self.species_owner.push(p);
+                        self.version += 1;
                         let ph = &self.world.species[id as usize].phen;
                         let reply = json!({
                             "species": id,
@@ -182,6 +260,7 @@ impl Game {
                     self.lineage_owner.resize(lineage as usize + 1, None);
                 }
                 self.lineage_owner[lineage as usize] = Some(p);
+                self.version += 1;
                 let budget = self.players[p].budget;
                 self.ok(json!({"lineage": lineage, "cost": cost, "budget": budget}))
             }
@@ -239,7 +318,11 @@ impl Game {
                 }
                 for _ in 0..ticks {
                     self.world.tick();
+                    if self.world.tick % self.hist_every == 0 {
+                        self.sample_history();
+                    }
                 }
+                self.version += 1;
                 for pl in self.players.iter_mut() {
                     pl.budget = (pl.budget + BUDGET_PER_TICK * ticks as f64).min(BUDGET_CAP);
                 }
@@ -263,10 +346,22 @@ impl Game {
     }
 }
 
-struct Cmd {
-    player: Option<usize>,
-    line: String,
-    reply: mpsc::Sender<(String, Option<usize>)>,
+/// What connection threads send the simulation thread.
+pub(crate) enum Msg {
+    /// One API request line from a player connection.
+    Line {
+        player: Option<usize>,
+        line: String,
+        reply: mpsc::Sender<(String, Option<usize>)>,
+    },
+    /// A spectator asking for the current view, if it changed since
+    /// `since_version`. `history_after`: send history points after this tick
+    /// (None = the whole history, as on a fresh connection).
+    Snapshot {
+        since_version: Option<u64>,
+        history_after: Option<u64>,
+        reply: mpsc::Sender<Option<snapshot::Snapshot>>,
+    },
 }
 
 fn is_loopback(addr: &SocketAddr) -> bool {
@@ -288,11 +383,21 @@ pub fn bind(addr: &str) -> std::io::Result<TcpListener> {
     Ok(l)
 }
 
-/// Run the server on an already-bound listener. Blocks forever.
+/// Run the API server on an already-bound listener. Blocks forever.
 pub fn serve(listener: TcpListener, game: Game) {
-    let (tx, rx) = mpsc::channel::<Cmd>();
+    serve_with_viewer(listener, None, game)
+}
+
+/// The API server plus, optionally, the viewer (HTTP page + spectator
+/// WebSocket) on a second listener. Blocks forever.
+pub fn serve_with_viewer(api: TcpListener, viewer: Option<TcpListener>, game: Game) {
+    let (tx, rx) = mpsc::channel::<Msg>();
     thread::spawn(move || sim_thread(game, rx));
-    for stream in listener.incoming() {
+    if let Some(v) = viewer {
+        let tx = tx.clone();
+        thread::spawn(move || web::serve(v, tx));
+    }
+    for stream in api.incoming() {
         let Ok(stream) = stream else { continue };
         let tx = tx.clone();
         thread::spawn(move || {
@@ -301,14 +406,25 @@ pub fn serve(listener: TcpListener, game: Game) {
     }
 }
 
-fn sim_thread(mut game: Game, rx: mpsc::Receiver<Cmd>) {
-    while let Ok(cmd) = rx.recv() {
-        let out = game.handle(cmd.player, &cmd.line);
-        let _ = cmd.reply.send(out);
+fn sim_thread(mut game: Game, rx: mpsc::Receiver<Msg>) {
+    while let Ok(msg) = rx.recv() {
+        match msg {
+            Msg::Line { player, line, reply } => {
+                let _ = reply.send(game.handle(player, &line));
+            }
+            Msg::Snapshot { since_version, history_after, reply } => {
+                let snap = if since_version == Some(game.version()) {
+                    None
+                } else {
+                    Some(snapshot::build(&game, history_after))
+                };
+                let _ = reply.send(snap);
+            }
+        }
     }
 }
 
-fn connection(stream: TcpStream, tx: mpsc::Sender<Cmd>) -> std::io::Result<()> {
+fn connection(stream: TcpStream, tx: mpsc::Sender<Msg>) -> std::io::Result<()> {
     let mut writer = stream.try_clone()?;
     let mut reader = BufReader::new(stream);
     let mut player = None;
@@ -328,7 +444,7 @@ fn connection(stream: TcpStream, tx: mpsc::Sender<Cmd>) -> std::io::Result<()> {
         if line.is_empty() {
             continue;
         }
-        if tx.send(Cmd { player, line: line.to_string(), reply: rtx.clone() }).is_err() {
+        if tx.send(Msg::Line { player, line: line.to_string(), reply: rtx.clone() }).is_err() {
             return Ok(());
         }
         let Ok((reply, p)) = rrx.recv() else { return Ok(()) };

@@ -2,8 +2,8 @@
 
 > The game is **LifeAPI** (D-5). The project folder is still `SporeAI`; that
 > name stays off the game, because "Spore" is EA's trademark.
-> Status: DRAFT 4, 2026-11-10. M0 and M1 built (§10, §11). The droplet run of
-> the golden hash is still owed. Draft 1's claims were checked
+> Status: DRAFT 5, 2026-11-10. M0, M1 and M2 built (§10–§12). Still owed: the
+> droplet run of the golden hash, and M2's watch from a second machine. Draft 1's claims were checked
 > by a fresh-context reviewer, and its findings are folded in. Open decisions are marked **D-n**
 > and collected at the end. They're yours to rule on.
 
@@ -409,4 +409,68 @@ runtime and no new dependencies.
 - Any player can `step` the shared world. Fair time is the arena's job (M4).
 - The budget is f64 on the server, outside the hashed sim state. When the
   replay log comes, budgets have to be replayed from it too.
+
+## 12. M2 results (2026-11-10)
+
+`lifeapi-server` now also serves the viewer at http://127.0.0.1:4380/ (set
+the address with `--http`, or turn it off with `--no-viewer`). It's loopback
+only, like the API. From another machine, use a tunnel:
+`ssh -L 4380:127.0.0.1:4380 <user>@<host>`, then open http://localhost:4380/.
+
+**What's built.**
+- **`web.rs`:** a hand-written HTTP/1.1 responder for the page and the
+  script, plus an RFC 6455 WebSocket at `/ws`. It's GET only, with no
+  keep-alive. The handshake uses the cached `sha1` and `base64` crates. No
+  new downloads.
+- **Spectator stream:** read-only. About every 100 ms the connection asks
+  the simulation thread for the view, and gets one only if a command has
+  changed the world since. Each update is a JSON *meta* message (tick,
+  stats, lineages with owners, and the population history since the last
+  update) plus a binary *frame*: the chemical field downsampled to at most
+  256², and 20 bytes per organism. The layout is documented in
+  `snapshot.rs`.
+- **Population history:** sampled every 50 ticks, up to 2 000 points. When
+  it's full, every other point is dropped and the sampling interval doubles.
+- **The page** (`crates/server/web/`, plain JS, no libraries):
+  - the wrap-around pool with the chemical field drawn on it
+  - organisms coloured by lineage, with heading ticks and brightness for
+    energy
+  - follow a lineage: the camera centres on it (a circular mean on the
+    torus) and the others dim
+  - zoom 1×/2×/4×, and the chemical layer can be turned off
+  - a population graph per lineage
+  - reconnects by itself
+  - link parameters: `?follow=N&zoom=2&chem=0`
+- **`lifeapi-bot --pace-ms`** slows the bot down so a person can watch:
+  `--chunk 5 --pace-ms 50`.
+
+**Proof.**
+- Unit tests:
+  - the accept key matches the example in RFC 6455 §1.3
+  - frame lengths at 125, 126, 65 535 and 65 536 bytes
+  - the binary frame matches its documented layout byte for byte
+  - large grids are downsampled to 256
+  - history is sent only after the last tick a spectator has
+- `tests/viewer.rs`, over real TCP:
+  - the page and the script are served, and an unknown path gets 404
+  - the WebSocket handshake returns the correct accept key
+  - a spectator gets tick 0, then sees another player's release and its
+    step to tick 120, with owner and species names
+- All of it passes in release and debug.
+- **Checked by eye:** headless Chrome 150 screenshots at 1400×1000 (full
+  view, and following at 2×) and at 390×844 phone width. One flaw was
+  found and fixed: lineage hues ran through green, so a green lineage
+  disappeared into the sugar vents. The palette now avoids green and blue.
+- **What the screenshots showed:** with two players, the bot's 3-sensor
+  Sweeper outcompeted a 2-sensor Driftwhip, about 600 to 48 by tick 3 000.
+
+**Not done:** the watch from a second machine over an SSH tunnel, M2's
+own done-condition. It needs James at another machine.
+
+**Known limits.**
+- The spectator stream shows the whole pool. That's right for the
+  sandbox. Arena matches must close it to their players (§6).
+- A web page in your own browser can open the loopback WebSocket and read
+  the sandbox. It's read-only and loopback only; an Origin check is due
+  before anything leaves loopback.
 

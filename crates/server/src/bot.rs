@@ -59,6 +59,17 @@ pub struct Report {
 }
 
 pub fn run(addr: &str, target_tick: u64, chunk: u64, verbose: bool) -> Result<Report, String> {
+    run_paced(addr, target_tick, chunk, std::time::Duration::ZERO, verbose)
+}
+
+/// As `run`, sleeping `pace` after every step so a person can watch.
+pub fn run_paced(
+    addr: &str,
+    target_tick: u64,
+    chunk: u64,
+    pace: std::time::Duration,
+    verbose: bool,
+) -> Result<Report, String> {
     let mut c = Client::connect(addr).map_err(|e| format!("connect {addr}: {e}"))?;
     c.call(json!({"op": "hello", "name": "scripted-bot"}))?;
     let cat = c.call(json!({"op": "catalog"}))?;
@@ -85,7 +96,10 @@ pub fn run(addr: &str, target_tick: u64, chunk: u64, verbose: bool) -> Result<Re
             .and_then(|l| l["alive"].as_u64())
             .unwrap_or(0);
         curve.push((tick, alive));
-        if verbose {
+        if !pace.is_zero() {
+            std::thread::sleep(pace);
+        }
+        if verbose && (pace.is_zero() || tick % 500 < n) {
             println!(
                 "tick {tick:>6}  alive {alive:>4}  budget {:>6.1}  pool {}",
                 obs["budget"].as_f64().unwrap_or(0.0),

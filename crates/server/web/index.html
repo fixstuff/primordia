@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LifeAPI Viewer</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --raise: #1f2630; --text: #e6edf3;
+    --muted: #8b949e; --line: #30363d; --accent: #58a6ff; --bad: #f85149; --good: #3fb950;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: baseline;
+    padding: 10px 16px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 16px; margin: 0 8px 0 0; letter-spacing: .02em; }
+  .stat { color: var(--muted); white-space: nowrap; }
+  .stat b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+  #conn { margin-left: auto; font-size: 12px; padding: 2px 8px; border-radius: 99px;
+    border: 1px solid var(--line); color: var(--muted); }
+  #conn.live { color: var(--good); border-color: color-mix(in srgb, var(--good) 50%, transparent); }
+  #conn.down { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 50%, transparent); }
+  main { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 14px; padding: 14px 16px; }
+  .stage { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+  #poolwrap { position: relative; width: 100%; max-width: min(100%, calc(100vh - 290px));
+    aspect-ratio: 1; margin: 0 auto; }
+  #pool { width: 100%; height: 100%; display: block; border-radius: 8px; background: #000; }
+  #empty { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted);
+    text-align: center; padding: 24px; pointer-events: none; }
+  .graphcard { padding: 10px 12px 6px; }
+  .graphcard h2, aside h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); margin: 0 0 6px; font-weight: 600; }
+  #graph { width: 100%; height: 170px; display: block; }
+  aside { padding: 12px; display: flex; flex-direction: column; gap: 14px; align-self: start;
+    max-height: calc(100vh - 80px); overflow: auto; }
+  .controls { display: flex; flex-wrap: wrap; gap: 6px; }
+  button { font: inherit; font-size: 13px; color: var(--text); background: var(--raise);
+    border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+  button:hover { border-color: var(--muted); }
+  button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+  #lineages { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+  #lineages li { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: center;
+    padding: 6px 8px; border-radius: 6px; border: 1px solid transparent; cursor: pointer; }
+  #lineages li:hover { background: var(--raise); }
+  #lineages li.on { border-color: var(--accent); background: var(--raise); }
+  #lineages li.dead { opacity: .5; }
+  .sw { width: 12px; height: 12px; border-radius: 50%; }
+  .ln { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ln small { color: var(--muted); }
+  .n { font-variant-numeric: tabular-nums; color: var(--muted); }
+  .hint { color: var(--muted); font-size: 12px; margin: 0; }
+  @media (max-width: 820px) {
+    main { grid-template-columns: 1fr; padding: 12px 16px; }
+    #poolwrap { max-width: 100%; }
+    aside { max-height: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>LifeAPI</h1>
+  <span class="stat">tick <b id="tick">–</b></span>
+  <span class="stat">population <b id="pop">–</b></span>
+  <span class="stat">births <b id="births">–</b></span>
+  <span class="stat">deaths <b id="deaths">–</b></span>
+  <span id="conn">connecting…</span>
+</header>
+<main>
+  <div class="stage">
+    <div id="poolwrap" class="card">
+      <canvas id="pool" aria-label="The pool: chemicals and organisms"></canvas>
+      <div id="empty">Waiting for the server…</div>
+    </div>
+    <div class="card graphcard">
+      <h2>Population</h2>
+      <canvas id="graph" aria-label="Population over time, per lineage"></canvas>
+    </div>
+  </div>
+  <aside class="card">
+    <section>
+      <h2>View</h2>
+      <div class="controls">
+        <button data-zoom="1" aria-pressed="true">1×</button>
+        <button data-zoom="2" aria-pressed="false">2×</button>
+        <button data-zoom="4" aria-pressed="false">4×</button>
+        <button id="chem" aria-pressed="true">Chemicals</button>
+      </div>
+    </section>
+    <section>
+      <h2>Lineages</h2>
+      <ul id="lineages"></ul>
+      <p class="hint" id="followhint">Click a lineage to follow it. Click again to stop.</p>
+    </section>
+    <section>
+      <h2>Key</h2>
+      <p class="hint">Green: sugar (energy). Blue: mineral (material for children).
+        Each dot is an organism, coloured by lineage; the tick shows its heading,
+        and brightness its energy.</p>
+    </section>
+  </aside>
+</main>
+<script src="viewer.js"></script>
+</body>
+</html>

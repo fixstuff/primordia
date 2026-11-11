@@ -8,3 +8,6 @@ description = "LifeAPI server: newline JSON over TCP, one simulation thread."
 lifeapi-sim = { path = "../sim" }
 serde = { version = "1", features = ["derive"] }
 serde_json = { version = "1", features = ["float_roundtrip"] }
+# The WebSocket handshake (RFC 6455 §4.2.2). Both from the local cache.
+sha1 = "0.11"
+base64 = "0.22"
