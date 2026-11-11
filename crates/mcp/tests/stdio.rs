@@ -1,8 +1,8 @@
 //! The MCP server as a client sees it: the real binary over stdio, talking
-//! to a real lifeapi-server on an ephemeral loopback port.
+//! to a real primordia-server on an ephemeral loopback port.
 
-use lifeapi_server::{bind, serve, Game};
-use lifeapi_sim::scenario;
+use primordia_server::{bind, serve, Game};
+use primordia_sim::scenario;
 use serde_json::{json, Value};
 use std::io::{BufRead, BufReader, Write};
 use std::process::{Command, Stdio};
@@ -16,7 +16,7 @@ struct Mcp {
 
 impl Mcp {
     fn start(addr: &str) -> Mcp {
-        let mut child = Command::new(env!("CARGO_BIN_EXE_lifeapi-mcp"))
+        let mut child = Command::new(env!("CARGO_BIN_EXE_primordia-mcp"))
             .args(["--addr", addr, "--name", "test-agent"])
             .stdin(Stdio::piped())
             .stdout(Stdio::piped())

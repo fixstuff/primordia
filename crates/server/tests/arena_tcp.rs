@@ -2,9 +2,9 @@
 //! server whose clock owns time; the match starts when the third joins,
 //! runs its windows, and every bot receives the same final standings.
 
-use lifeapi_server::arena::ArenaConfig;
-use lifeapi_server::{bind, bot, serve, Game};
-use lifeapi_sim::worlds;
+use primordia_server::arena::ArenaConfig;
+use primordia_server::{bind, bot, serve, Game};
+use primordia_sim::worlds;
 use std::thread;
 use std::time::Duration;
 

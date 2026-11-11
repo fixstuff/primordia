@@ -1,6 +1,6 @@
 //! The objective judge.
 //!
-//!   lifeapi-eval [--ticks 5000] [--founders 60] [--seeds 1,2,3] [--world NAME|FILE]
+//!   primordia-eval [--ticks 5000] [--founders 60] [--seeds 1,2,3] [--world NAME|FILE]
 //!                [--together | --round-robin] GENOME.json...
 //!
 //! --world: a preset (calm, drift, seasons, patchy, desert, bloom, random)
@@ -21,13 +21,13 @@
 //! print the same numbers. A genome file may hold one genome object, or
 //! {"genome": {...}} as the API takes it.
 
-use lifeapi_sim::genome::Genome;
-use lifeapi_sim::worlds;
-use lifeapi_sim::World;
+use primordia_sim::genome::Genome;
+use primordia_sim::worlds;
+use primordia_sim::World;
 
 /// --world: a preset name or a WorldSpec JSON path (default calm).
 static WORLD: std::sync::OnceLock<String> = std::sync::OnceLock::new();
-static COMBAT: std::sync::OnceLock<lifeapi_sim::world::CombatMode> = std::sync::OnceLock::new();
+static COMBAT: std::sync::OnceLock<primordia_sim::world::CombatMode> = std::sync::OnceLock::new();
 static EVOLVE: std::sync::OnceLock<f32> = std::sync::OnceLock::new();
 use serde_json::{json, Value};
 
@@ -106,7 +106,7 @@ fn main() {
             }
             "--combat" => {
                 let c = args.next().expect("--combat off|colony|individual");
-                COMBAT.set(lifeapi_sim::world::CombatMode::parse(&c).unwrap_or_else(|e| panic!("{e}"))).unwrap();
+                COMBAT.set(primordia_sim::world::CombatMode::parse(&c).unwrap_or_else(|e| panic!("{e}"))).unwrap();
             }
             "--evolve-bodies" => {
                 EVOLVE.set(args.next().expect("--evolve-bodies RATE").parse().expect("number")).unwrap();
@@ -118,7 +118,7 @@ fn main() {
     }
     if files.is_empty() {
         eprintln!(
-            "usage: lifeapi-eval [--ticks N] [--founders N] [--seeds 1,2,3] [--together | --round-robin] GENOME.json..."
+            "usage: primordia-eval [--ticks N] [--founders N] [--seeds 1,2,3] [--together | --round-robin] GENOME.json..."
         );
         std::process::exit(2);
     }

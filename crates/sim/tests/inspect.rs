@@ -1,6 +1,6 @@
 //! `World::inspect` must predict what the next tick does, and change nothing.
 
-use lifeapi_sim::{det, scenario};
+use primordia_sim::{det, scenario};
 
 #[test]
 fn inspect_predicts_the_next_heading_and_changes_nothing() {

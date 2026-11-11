@@ -1,11 +1,15 @@
 [package]
-name = "lifeapi-server"
+name = "primordia-server"
 version = "0.1.0"
 edition = "2021"
+authors = ["James (fixstuff)", "Claude (Anthropic)"]
+license = "MIT"
+repository = "https://github.com/fixstuff/primordia"
+homepage = "https://primordia.tools"
 description = "LifeAPI server: newline JSON over TCP, one simulation thread."
 
 [dependencies]
-lifeapi-sim = { path = "../sim" }
+primordia-sim = { path = "../sim" }
 serde = { version = "1", features = ["derive"] }
 serde_json = { version = "1", features = ["float_roundtrip"] }
 # The WebSocket handshake (RFC 6455 §4.2.2). Both from the local cache.

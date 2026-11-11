@@ -1,7 +1,7 @@
-//! lifeapi-mcp [--addr 127.0.0.1:4343] [--name NAME]
+//! primordia-mcp [--addr 127.0.0.1:4343] [--name NAME]
 //!
 //! An MCP server over stdio (JSON-RPC 2.0, one message per line) that plays
-//! LifeAPI on a running lifeapi-server. Each tool is one API op; the reply is
+//! LifeAPI on a running primordia-server. Each tool is one API op; the reply is
 //! the server's JSON. A refusal comes back as a tool error that names the
 //! rule, so a model can correct itself. The connection (and its `hello`) is
 //! made on the first tool call and remade if it drops.
@@ -9,7 +9,7 @@
 //! Hand-written (no MCP crate in the local cache): initialize, ping,
 //! tools/list, tools/call. Notifications are accepted and ignored.
 
-use lifeapi_server::bot::Client;
+use primordia_server::bot::Client;
 use serde_json::{json, Value};
 use std::io::{BufRead, Write};
 
@@ -162,7 +162,7 @@ impl Game {
         }
         if self.client.is_none() {
             let mut c = Client::connect(&self.addr)
-                .map_err(|e| format!("cannot reach lifeapi-server at {}: {e}", self.addr))?;
+                .map_err(|e| format!("cannot reach primordia-server at {}: {e}", self.addr))?;
             c.call(json!({"op": "hello", "name": self.name}))?;
             self.client = Some(c);
         }
@@ -253,7 +253,7 @@ fn main() {
             "--addr" => addr = args.next().expect("--addr HOST:PORT"),
             "--name" => name = args.next().expect("--name NAME"),
             other => {
-                eprintln!("unknown argument {other}; usage: lifeapi-mcp [--addr HOST:PORT] [--name NAME]");
+                eprintln!("unknown argument {other}; usage: primordia-mcp [--addr HOST:PORT] [--name NAME]");
                 std::process::exit(2);
             }
         }

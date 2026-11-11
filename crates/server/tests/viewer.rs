@@ -3,8 +3,8 @@
 //! a spectator receives a meta message and a binary frame that follow a
 //! player's step.
 
-use lifeapi_server::{bind, serve_with_viewer, web, Game};
-use lifeapi_sim::scenario;
+use primordia_server::{bind, serve_with_viewer, web, Game};
+use primordia_sim::scenario;
 use std::io::{BufRead, BufReader, Read, Write};
 use std::net::TcpStream;
 use std::thread;
@@ -109,7 +109,7 @@ fn spectator_sees_meta_and_frame_and_follows_a_step() {
     let mut c = (s.try_clone().unwrap(), BufReader::new(s));
     api_call(&mut c, r#"{"op":"hello","name":"p"}"#);
     // One request per line: the genome must go out as single-line JSON.
-    let genome: serde_json::Value = serde_json::from_str(lifeapi_sim::scenario::FOUNDER).unwrap();
+    let genome: serde_json::Value = serde_json::from_str(primordia_sim::scenario::FOUNDER).unwrap();
     let sp = api_call(&mut c, &format!(r#"{{"op":"submit_genome","genome":{genome}}}"#))["species"].clone();
     api_call(&mut c, &format!(r#"{{"op":"release","species":{sp},"count":12}}"#));
     api_call(&mut c, r#"{"op":"step","ticks":120}"#);

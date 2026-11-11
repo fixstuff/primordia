@@ -1,5 +1,5 @@
-//! lifeapi-bot [--addr 127.0.0.1:4343] [--ticks 10000] [--chunk 500] [--pace-ms 0]
-//! lifeapi-bot --arena [--addr ...] [--name scripted-bot]
+//! primordia-bot [--addr 127.0.0.1:4343] [--ticks 10000] [--chunk 500] [--pace-ms 0]
+//! primordia-bot --arena [--addr ...] [--name scripted-bot]
 //! Founds a lineage on a running server. In a sandbox it steps to the target
 //! tick; with --arena it plays the match turn by turn to the end.
 //! To watch a sandbox run in the viewer: --chunk 5 --pace-ms 50.
@@ -30,16 +30,16 @@ fn main() {
         }
     }
     if arena {
-        match lifeapi_server::bot::run_arena(&addr, &name, true) {
+        match primordia_server::bot::run_arena(&addr, &name, true) {
             Ok(s) => println!("final standings: {s}"),
             Err(e) => {
-                eprintln!("lifeapi-bot: {e}");
+                eprintln!("primordia-bot: {e}");
                 std::process::exit(1);
             }
         }
         return;
     }
-    match lifeapi_server::bot::run_paced(&addr, ticks, chunk, Duration::from_millis(pace), true) {
+    match primordia_server::bot::run_paced(&addr, ticks, chunk, Duration::from_millis(pace), true) {
         Ok(r) => {
             println!(
                 "lineage {} at tick {}: {} alive, {} reseeds -> {}",
@@ -52,7 +52,7 @@ fn main() {
             std::process::exit(if r.alive > 0 { 0 } else { 1 });
         }
         Err(e) => {
-            eprintln!("lifeapi-bot: {e}");
+            eprintln!("primordia-bot: {e}");
             std::process::exit(1);
         }
     }

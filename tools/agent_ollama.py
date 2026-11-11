@@ -2,14 +2,14 @@
 """A local LLM plays LifeAPI through the MCP server.
 
     python3 tools/agent_ollama.py --model qwen3.5:4b --addr 127.0.0.1:4343 \
-        --mcp target/release/lifeapi-mcp --eval target/release/lifeapi-eval \
+        --mcp target/release/primordia-mcp --eval target/release/primordia-eval \
         --target-tick 12000 --out runs/<name>
 
-Standard library only. It starts lifeapi-mcp as a subprocess (MCP over
+Standard library only. It starts primordia-mcp as a subprocess (MCP over
 stdio), turns the MCP tool list into Ollama tools, and loops: model -> tool
 calls -> MCP -> results back to the model, until the world reaches the target
 tick or the turn limit. Every genome the model submits is saved, and at the
-end each one is judged by lifeapi-eval (alone in a fresh pool, fixed seeds),
+end each one is judged by primordia-eval (alone in a fresh pool, fixed seeds),
 so "did it improve?" is a number, not the model's say-so.
 """
 import argparse, json, pathlib, subprocess, sys, time, urllib.request
@@ -156,9 +156,9 @@ def responses_chat(base, key, model, messages, tools, effort):
             "cached_tokens": (u.get("input_tokens_details") or {}).get("cached_tokens") or 0}
 
 def saved_genome(args):
-    """The genome as the server accepted it: the same repairs lifeapi-mcp
+    """The genome as the server accepted it: the same repairs primordia-mcp
     makes (fields beside `genome` moved in, JSON strings parsed), so the
-    saved file is what lifeapi-eval should judge."""
+    saved file is what primordia-eval should judge."""
     def unstring(x):
         if isinstance(x, str) and x.strip()[:1] in "[{":
             try: return json.loads(x)
@@ -190,8 +190,8 @@ def main():
     ap.add_argument("--model", default="qwen3.5:4b")
     ap.add_argument("--ollama", default="http://127.0.0.1:11434")
     ap.add_argument("--addr", default="127.0.0.1:4343")
-    ap.add_argument("--mcp", default="target/release/lifeapi-mcp")
-    ap.add_argument("--eval", default="target/release/lifeapi-eval")
+    ap.add_argument("--mcp", default="target/release/primordia-mcp")
+    ap.add_argument("--eval", default="target/release/primordia-eval")
     ap.add_argument("--target-tick", type=int, default=12000)
     ap.add_argument("--max-turns", type=int, default=60)
     ap.add_argument("--think", action="store_true")
@@ -312,7 +312,7 @@ def main():
     if genomes:
         r = subprocess.run([a.eval, *[g["file"] for g in genomes]], capture_output=True, text=True)
         (out / "eval.json").write_text(r.stdout)
-        print("\nlifeapi-eval (each genome alone, fixed seeds):")
+        print("\nprimordia-eval (each genome alone, fixed seeds):")
         try:
             for g, row in zip(genomes, json.loads(r.stdout)["results"]):
                 print(f"  #{g['n']:>2} {str(g['name'])[:24]:<24} submitted at tick {g['tick']:>6}: "

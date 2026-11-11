@@ -1,7 +1,11 @@
 [package]
-name = "lifeapi-sim"
+name = "primordia-sim"
 version = "0.1.0"
 edition = "2021"
+authors = ["James (fixstuff)", "Claude (Anthropic)"]
+license = "MIT"
+repository = "https://github.com/fixstuff/primordia"
+homepage = "https://primordia.tools"
 description = "LifeAPI simulation core: pure, single-threaded, deterministic, tick-stepped."
 
 [dependencies]

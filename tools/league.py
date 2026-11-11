@@ -70,7 +70,7 @@ def launch(match_dir, port, http, world, seed, a):
     rel = lambda p: str(p)
     procs = {}
     procs["server"] = subprocess.Popen(
-        [rel(ROOT / "target/release/lifeapi-server"), "--addr", addr, "--http", f"127.0.0.1:{http}",
+        [rel(ROOT / "target/release/primordia-server"), "--addr", addr, "--http", f"127.0.0.1:{http}",
          "--world", world, "--seed", str(seed), "--combat", a.combat, "--evolve-bodies", str(a.evolve_bodies), "--arena", str(len(PLAYERS)), "--window-ticks", str(a.window_ticks),
          "--window-secs", str(a.window_secs), "--first-window-secs", str(a.first_window_secs), *(["--realtime"] if a.realtime else []), "--match-ticks", str(a.match_ticks),
          "--log", rel(d / "match-log.jsonl"), "--results", rel(d / "results.json")],
@@ -118,7 +118,7 @@ def launch(match_dir, port, http, world, seed, a):
         procs[m] = subprocess.Popen(["bash", "-c", oa], stdout=open(d / m / "agent.log", "a"),
                                     stderr=subprocess.STDOUT, cwd=ROOT)
     procs["bot"] = subprocess.Popen(
-        [rel(ROOT / "target/release/lifeapi-bot"), "--arena", "--addr", addr, "--name", "scripted-bot"],
+        [rel(ROOT / "target/release/primordia-bot"), "--arena", "--addr", addr, "--name", "scripted-bot"],
         stdout=open(d / "bot/agent.log", "w"), stderr=subprocess.STDOUT, cwd=ROOT)
     return procs
 

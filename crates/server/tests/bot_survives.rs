@@ -3,8 +3,8 @@
 //! The bot may reseed from its budget; the test also requires the lineage
 //! to have sustained itself (not be living on reseeds alone).
 
-use lifeapi_server::{bind, bot, serve, Game};
-use lifeapi_sim::scenario;
+use primordia_server::{bind, bot, serve, Game};
+use primordia_sim::scenario;
 use std::thread;
 
 #[test]

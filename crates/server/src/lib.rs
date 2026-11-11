@@ -13,8 +13,8 @@ pub mod bot;
 pub mod snapshot;
 pub mod web;
 
-use lifeapi_sim::genome::{self, Genome};
-use lifeapi_sim::World;
+use primordia_sim::genome::{self, Genome};
+use primordia_sim::World;
 use serde::Deserialize;
 use serde_json::{json, Value};
 use std::io::{BufRead, BufReader, Read, Write};
@@ -90,7 +90,7 @@ struct Player {
     name: String,
     budget: f64,
     /// Lineage counters at the last `report`, to report the difference.
-    last_report: Vec<(u32, lifeapi_sim::world::LineageStats)>,
+    last_report: Vec<(u32, primordia_sim::world::LineageStats)>,
     last_report_tick: u64,
     subs: Vec<Sub>,
 }
@@ -189,7 +189,7 @@ impl Game {
 
     /// This match's combat setting, told to every player at hello.
     pub fn combat_rules(&self) -> Value {
-        use lifeapi_sim::world::CombatMode;
+        use primordia_sim::world::CombatMode;
         let mode = self.world.cfg.combat;
         json!({
             "mode": mode.name(),
@@ -363,7 +363,7 @@ impl Game {
                     Ok(g) => g,
                     Err(e) => return self.err(format!("submit_genome: not a valid {} document: {e}", genome::SCHEMA)),
                 };
-                if self.world.cfg.combat == lifeapi_sim::world::CombatMode::Off {
+                if self.world.cfg.combat == primordia_sim::world::CombatMode::Off {
                     if let Some(i) = g.body.iter().position(|p| {
                         matches!(
                             p,
@@ -918,7 +918,7 @@ fn connection(stream: TcpStream, tx: mpsc::Sender<Msg>) -> std::io::Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use lifeapi_sim::scenario;
+    use primordia_sim::scenario;
 
     fn game() -> Game {
         Game::new(scenario::pool(scenario::base_config(1, 64, 64), 4, 2))

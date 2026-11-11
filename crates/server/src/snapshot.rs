@@ -117,7 +117,7 @@ pub fn build(game: &Game, history_after: Option<u64>) -> Snapshot {
 }
 
 /// How many different bodies (species) a lineage has alive.
-fn bodies_in(w: &lifeapi_sim::world::World, lineage: u32) -> usize {
+fn bodies_in(w: &primordia_sim::world::World, lineage: u32) -> usize {
     let mut ss: Vec<u32> = w.orgs.iter().filter(|x| x.lineage == lineage).map(|x| x.species).collect();
     ss.sort_unstable();
     ss.dedup();
@@ -135,7 +135,7 @@ pub fn inspect(game: &Game, id: u64) -> Option<String> {
         .sensors
         .iter()
         .map(|&(ang, c, v)| (ang, ["sugar", "mineral", "organism"][std::cmp::min(c, 2)], v))
-        .map(|(ang, chem, v)| json!({"angle_deg": (ang / lifeapi_sim::det::DEG).round(),
+        .map(|(ang, chem, v)| json!({"angle_deg": (ang / primordia_sim::det::DEG).round(),
                                    "chemical": chem,
                                    "reading": v, "input": v / (v + 1.0)}))
         .collect();
@@ -143,7 +143,7 @@ pub fn inspect(game: &Game, id: u64) -> Option<String> {
         json!({
             "id": i.id, "lineage": i.lineage, "species": i.name, "owner": game.owner_name(i.lineage),
             "generation": i.generation, "age": i.age, "tick": w.tick,
-            "x": i.x, "y": i.y, "heading_deg": (i.heading / lifeapi_sim::det::DEG).round(),
+            "x": i.x, "y": i.y, "heading_deg": (i.heading / primordia_sim::det::DEG).round(),
             "energy": i.energy, "capacity": i.capacity, "split_energy": i.split_energy,
             "material": i.material, "child_material": i.child_material, "upkeep": i.upkeep,
             "mouths": i.mouths, "sugar_here": i.sugar_here, "mineral_here": i.mineral_here,
@@ -151,7 +151,7 @@ pub fn inspect(game: &Game, id: u64) -> Option<String> {
             "brain": {"thrust": i.thrust_out, "turn": i.turn_out},
             "fight": {"target": i.fight.target, "dealt": i.fight.dealt, "attacker": i.fight.attacker,
                       "taken": i.fight.taken, "hurt": i.fight.hurt},
-            "next": {"speed": i.speed, "turn_deg": (i.turn_rate / lifeapi_sim::det::DEG * 10.0).round() / 10.0},
+            "next": {"speed": i.speed, "turn_deg": (i.turn_rate / primordia_sim::det::DEG * 10.0).round() / 10.0},
         })
         .to_string(),
     )
@@ -160,8 +160,8 @@ pub fn inspect(game: &Game, id: u64) -> Option<String> {
 /// The parts the viewer draws: flagella (power each), cilia (power each),
 /// mouths, sensors ([angle in degrees, chemical]), vacuoles (capacity each),
 /// and the combat parts (summed power, capped at 1 as the sim uses them).
-fn body_plan(g: &lifeapi_sim::genome::Genome) -> serde_json::Value {
-    use lifeapi_sim::genome::{Chemical, Part};
+fn body_plan(g: &primordia_sim::genome::Genome) -> serde_json::Value {
+    use primordia_sim::genome::{Chemical, Part};
     let (mut flagella, mut cilia, mut sensors, mut vacuoles, mut mouths) = (vec![], vec![], vec![], vec![], 0);
     let (mut jaw, mut stinger, mut shell, mut spikes, mut toxin, mut camouflage) = (0f32, 0f32, 0f32, 0f32, 0f32, false);
     for part in &g.body {
@@ -240,7 +240,7 @@ fn encode_frame(game: &Game) -> Vec<u8> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use lifeapi_sim::scenario;
+    use primordia_sim::scenario;
 
     fn u32_at(b: &[u8], o: usize) -> u32 {
         u32::from_le_bytes(b[o..o + 4].try_into().unwrap())

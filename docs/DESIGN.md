@@ -55,7 +55,7 @@ wider zoom, with a bigger set of actions. It's not five separate mini-games.
 ## 3. Architecture
 
 ```
-            ┌──────────────────────────── lifeapi-server (Rust, headless) ───┐
+            ┌──────────────────────────── primordia-server (Rust, headless) ───┐
  agents ──► │  API layer: newline JSON over TCP  ·  WebSocket  ·  MCP server │
  (LLMs,     │        │                                                       │
  scripts)   │        ▼                                                       │
@@ -335,7 +335,7 @@ Still open:
 
 ## 10. M0 results (2026-11-10)
 
-Code: `crates/sim` (`lifeapi-sim`). Run: `cargo test --release`, then
+Code: `crates/sim` (`primordia-sim`). Run: `cargo test --release`, then
 `cargo run --release --bin pool`, then `taskset -c 2 target/release/bench`.
 
 - **The pool lives.** Golden scenario: seed 42, 128² cells, 200 founders.
@@ -363,8 +363,8 @@ Code: `crates/sim` (`lifeapi-sim`). Run: `cargo test --release`, then
 
 ## 11. M1 results (2026-11-10)
 
-Code: `crates/server` (`lifeapi-server`). Run `lifeapi-server` (it listens
-on 127.0.0.1:4343), then `lifeapi-bot`.
+Code: `crates/server` (`primordia-server`). Run `primordia-server` (it listens
+on 127.0.0.1:4343), then `primordia-bot`.
 
 **What's built.** Protocol 1 implements the sandbox subset of §6:
 - **Operations:** `hello`, `catalog`, `submit_genome`, `release`,
@@ -412,7 +412,7 @@ runtime and no new dependencies.
 
 ## 12. M2 results (2026-11-10)
 
-`lifeapi-server` now also serves the viewer at http://127.0.0.1:4380/ (set
+`primordia-server` now also serves the viewer at http://127.0.0.1:4380/ (set
 the address with `--http`, or turn it off with `--no-viewer`). It's loopback
 only, like the API. From another machine, use a tunnel:
 `ssh -L 4380:127.0.0.1:4380 <user>@<host>`, then open http://localhost:4380/.
@@ -441,7 +441,7 @@ only, like the API. From another machine, use a tunnel:
   - a population graph per lineage
   - reconnects by itself
   - link parameters: `?follow=N&zoom=2&chem=0`
-- **`lifeapi-bot --pace-ms`** slows the bot down so a person can watch:
+- **`primordia-bot --pace-ms`** slows the bot down so a person can watch:
   `--chunk 5 --pace-ms 50`.
 
 **Proof.**
@@ -495,7 +495,7 @@ evaluation. Every number reproduced. Its corrections are folded in below.
 - **`subscribe` / `unsubscribe`:** one-shot triggers that end a `step`
   early, with `woke` saying which fired. Events: `population_below`,
   `population_above`, `extinct`, `tick`.
-- **`lifeapi-mcp`:** an MCP server over stdio. It handles initialize,
+- **`primordia-mcp`:** an MCP server over stdio. It handles initialize,
   ping, tools/list and tools/call, with eight tools, one for each player
   op; `hello` is sent implicitly on connect.
   - **It repairs formatting slips in `submit_genome`:** genome fields
@@ -507,7 +507,7 @@ evaluation. Every number reproduced. Its corrections are folded in below.
   - The server's rules are untouched. A refusal comes back as a tool
     error that names the rule; `submit_genome` refusals also include a
     complete example call.
-- **`lifeapi-eval`:** the judge. Modes:
+- **`primordia-eval`:** the judge. Modes:
   - solo
   - `--together`: a free-for-all
   - `--round-robin`: every pair, decided by biomass. Release order
@@ -632,8 +632,8 @@ repair as the Ollama runner. It hadn't missed anything in these runs.
 
 ## 14. M4 results (2026-11-10)
 
-**Worlds** (`crates/sim/src/worlds.rs`, `--world` on `lifeapi-server` and
-`lifeapi-eval`).
+**Worlds** (`crates/sim/src/worlds.rs`, `--world` on `primordia-server` and
+`primordia-eval`).
 - A world is a `WorldSpec` JSON: grid size, vent counts and rates,
   background "sunlight" sugar, diffusion, decay, and how the food changes:
   vent `drift`, `pulse_period`/`pulse_depth`, `relocate_chance`.
@@ -648,14 +648,14 @@ repair as the Ollama runner. It hadn't missed anything in these runs.
   *might* let newcomers in. That's a hypothesis: `--together` releases
   everyone at tick 0, so it doesn't test newcomers at all.
 
-Free-for-all biomass, four genomes, 3 seeds each (`lifeapi-eval --world W
+Free-for-all biomass, four genomes, 3 seeds each (`primordia-eval --world W
 --together`):
 - grazer-v1 wins every world with vents: calm, drift, seasons, patchy,
   desert and random.
 - **`bloom` flips the meta** (sugar everywhere, few vents): drifter5 4 715,
   sitter6 4 213, grazer-v1 781.
 
-**Arena** (`crates/server/src/arena.rs`, `lifeapi-server --arena N`).
+**Arena** (`crates/server/src/arena.rs`, `primordia-server --arena N`).
 - **Start:** the match begins when N players have said hello.
 - **Windows:** the server's clock moves time in windows of
   `--window-ticks`. A window closes when every player has called
@@ -670,7 +670,7 @@ Free-for-all biomass, four genomes, 3 seeds each (`lifeapi-eval --world W
 - **Records:** a JSONL log of every request line and window advance, and a
   results file.
 - **Clients:** an MCP `end_turn` tool, `--arena` on both runners (shared
-  goal text), and `lifeapi-bot --arena`.
+  goal text), and `primordia-bot --arena`.
 - **Tests:** unit tests for refusals, window close, slow players and match
   end; `tests/arena_tcp.rs` plays a 3-bot match over TCP to the end.
 

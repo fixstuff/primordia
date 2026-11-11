@@ -1,4 +1,4 @@
-//! lifeapi-server [--addr 127.0.0.1:4343] [--http 127.0.0.1:4380 | --no-viewer]
+//! primordia-server [--addr 127.0.0.1:4343] [--http 127.0.0.1:4380 | --no-viewer]
 //!                [--seed 42] [--world NAME|FILE]
 //!                [--arena PLAYERS [--window-ticks 500] [--window-secs 120]
 //!                 [--match-ticks 10000] [--log FILE] [--results FILE]]
@@ -10,9 +10,9 @@
 //! WorldSpec JSON file. The viewer is at http://<--http>/; watch from
 //! another machine through an SSH tunnel.
 
-use lifeapi_server::arena::ArenaConfig;
-use lifeapi_server::{bind, serve_with_viewer, Game};
-use lifeapi_sim::worlds;
+use primordia_server::arena::ArenaConfig;
+use primordia_server::{bind, serve_with_viewer, Game};
+use primordia_sim::worlds;
 use std::time::Duration;
 
 fn main() {
@@ -28,7 +28,7 @@ fn main() {
     let mut evolve: f32 = 0.0;
     let mut realtime = false;
     let mut args = std::env::args().skip(1);
-    let usage = "usage: lifeapi-server [--addr HOST:PORT] [--http HOST:PORT | --no-viewer] [--seed N] \
+    let usage = "usage: primordia-server [--addr HOST:PORT] [--http HOST:PORT | --no-viewer] [--seed N] \
                  [--world NAME|FILE] [--combat off|colony|individual] [--evolve-bodies RATE] [--arena PLAYERS [--window-ticks N] [--window-secs S] [--first-window-secs S] [--realtime] [--match-ticks N] \
                  [--log FILE] [--results FILE]]";
     while let Some(a) = args.next() {
@@ -67,25 +67,25 @@ fn main() {
         }
     }
     let spec = worlds::load(&world, seed).unwrap_or_else(|e| {
-        eprintln!("lifeapi-server: {e}");
+        eprintln!("primordia-server: {e}");
         std::process::exit(2);
     });
     let mut w = spec.build(seed).unwrap_or_else(|e| {
-        eprintln!("lifeapi-server: {e}");
+        eprintln!("primordia-server: {e}");
         std::process::exit(2);
     });
     if let Some(c) = combat.as_deref() {
-        w.cfg.combat = lifeapi_sim::world::CombatMode::parse(c).unwrap_or_else(|e| {
-            eprintln!("lifeapi-server: {e}");
+        w.cfg.combat = primordia_sim::world::CombatMode::parse(c).unwrap_or_else(|e| {
+            eprintln!("primordia-server: {e}");
             std::process::exit(2);
         });
     }
     w.cfg.body_mutation = evolve;
-    eprintln!("lifeapi-server: combat {}, body evolution {}", w.cfg.combat.name(), evolve);
+    eprintln!("primordia-server: combat {}, body evolution {}", w.cfg.combat.name(), evolve);
     let open = |a: &str| match bind(a) {
         Ok(l) => l,
         Err(e) => {
-            eprintln!("lifeapi-server: {a}: {e}");
+            eprintln!("primordia-server: {a}: {e}");
             std::process::exit(1);
         }
     };
@@ -101,7 +101,7 @@ fn main() {
             cfg.log = log;
             cfg.results = results;
             eprintln!(
-                "lifeapi-server: ARENA for {} players, {} ticks in windows of {} ticks / {}s",
+                "primordia-server: ARENA for {} players, {} ticks in windows of {} ticks / {}s",
                 cfg.players, match_ticks, window_ticks, window_secs
             );
             Game::with_arena(w, cfg)
@@ -109,9 +109,9 @@ fn main() {
         None => Game::new(w),
     };
     game.set_world_info(serde_json::to_value(&spec).unwrap());
-    eprintln!("lifeapi-server: world {} seed {seed}, API on {}", spec.name, api.local_addr().unwrap());
+    eprintln!("primordia-server: world {} seed {seed}, API on {}", spec.name, api.local_addr().unwrap());
     if let Some(v) = &viewer {
-        eprintln!("lifeapi-server: viewer on http://{}/", v.local_addr().unwrap());
+        eprintln!("primordia-server: viewer on http://{}/", v.local_addr().unwrap());
     }
     serve_with_viewer(api, viewer, game);
 }

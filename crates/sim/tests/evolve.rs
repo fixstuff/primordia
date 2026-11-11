@@ -1,8 +1,8 @@
 //! Body evolution: a setting. Off, nothing changes; on, children's bodies
 //! drift into new species that stay valid, on the parent's team and lineage.
 
-use lifeapi_sim::scenario;
-use lifeapi_sim::world::{CombatMode, World};
+use primordia_sim::scenario;
+use primordia_sim::world::{CombatMode, World};
 
 fn run(rate: f32, combat: CombatMode, seed: u64) -> World {
     let mut cfg = scenario::base_config(seed, 64, 64);

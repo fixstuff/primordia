@@ -8,7 +8,7 @@ Runs `claude --bare -p` (no hooks, no CLAUDE.md, API-key auth only) with only
 the lifeapi MCP server and only its tools allowed, a hard --max-budget-usd
 cap, and the same goal text as tools/agent_ollama.py. The API key is read
 from --key-file into the child's environment and never printed. Every genome
-the model submits is saved and judged by lifeapi-eval at the end.
+the model submits is saved and judged by primordia-eval at the end.
 """
 import argparse, json, os, pathlib, subprocess, sys, time
 
@@ -33,8 +33,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True)
     ap.add_argument("--addr", required=True)
-    ap.add_argument("--mcp", default="target/release/lifeapi-mcp")
-    ap.add_argument("--eval", default="target/release/lifeapi-eval")
+    ap.add_argument("--mcp", default="target/release/primordia-mcp")
+    ap.add_argument("--eval", default="target/release/primordia-eval")
     ap.add_argument("--target-tick", type=int, default=12000)
     ap.add_argument("--budget-usd", type=float, required=True)
     ap.add_argument("--key-file", default=os.path.expanduser("~/.config/controlforge/anthropic.env"))

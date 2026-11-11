@@ -3,7 +3,7 @@
 //! Pin it for a quieter number: taskset -c 2 target/release/bench
 //! (on this laptop, cores 4-5 belong to ControlForge's real-time threads)
 
-use lifeapi_sim::scenario;
+use primordia_sim::scenario;
 use std::time::{Duration, Instant};
 
 fn main() {

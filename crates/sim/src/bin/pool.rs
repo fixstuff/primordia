@@ -1,7 +1,7 @@
 //! Run the golden scenario and print the population every N ticks, so a
 //! person can see whether the pool is alive. Usage: pool [ticks] [every]
 
-use lifeapi_sim::scenario;
+use primordia_sim::scenario;
 
 fn main() {
     let mut args = std::env::args().skip(1);

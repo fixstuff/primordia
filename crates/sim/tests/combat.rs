@@ -2,9 +2,9 @@
 //! touching so contact is certain. Bodies have no flagella (they can't move)
 //! and no mouths (sugar never confuses the energy books).
 
-use lifeapi_sim::genome::Genome;
-use lifeapi_sim::scenario;
-use lifeapi_sim::world::{World, JAW_KEEP, JAW_RATE, SHELL_BLOCK, SPIKE_RATE, STING_KEEP, STING_RATE};
+use primordia_sim::genome::Genome;
+use primordia_sim::scenario;
+use primordia_sim::world::{World, JAW_KEEP, JAW_RATE, SHELL_BLOCK, SPIKE_RATE, STING_KEEP, STING_RATE};
 
 fn genome(name: &str, radius: f32, extra: &str) -> Genome {
     let extra = if extra.is_empty() { String::new() } else { format!(",{extra}") };
@@ -136,7 +136,7 @@ fn combat_worlds_are_deterministic_and_team_zero_never_fights() {
     assert_eq!(k0, 0, "everyone on team 0: no combat");
 }
 
-use lifeapi_sim::world::CombatMode;
+use primordia_sim::world::CombatMode;
 
 /// Two organisms of the SAME team (one player), predator bigger, touching.
 fn kin_duel(mode: CombatMode, parent_a: u64, parent_b: u64, b_child_of_a: bool) -> f32 {

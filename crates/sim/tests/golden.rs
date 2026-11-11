@@ -4,15 +4,15 @@
 //! the committed file is what catches drift between machines and builds.
 //!
 //! To re-bless after an INTENDED change to the simulation:
-//!   LIFEAPI_BLESS=1 cargo test --release -p lifeapi-sim --test golden
+//!   LIFEAPI_BLESS=1 cargo test --release -p primordia-sim --test golden
 //! and say why in the commit.
 
-use lifeapi_sim::scenario;
+use primordia_sim::scenario;
 
 const GOLDEN_TICKS: u64 = 10_000;
 const GOLDEN_FILE: &str = concat!(env!("CARGO_MANIFEST_DIR"), "/tests/golden_hash.txt");
 
-fn run(ticks: u64) -> lifeapi_sim::World {
+fn run(ticks: u64) -> primordia_sim::World {
     let mut w = scenario::golden();
     for _ in 0..ticks {
         w.tick();

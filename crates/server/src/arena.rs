@@ -110,7 +110,7 @@ impl Arena {
 
 impl Game {
     /// A game that runs as an arena match.
-    pub fn with_arena(world: lifeapi_sim::World, cfg: ArenaConfig) -> Game {
+    pub fn with_arena(world: primordia_sim::World, cfg: ArenaConfig) -> Game {
         let mut g = Game::new(world);
         g.arena = Some(Arena::new(cfg));
         g
@@ -323,7 +323,7 @@ impl Game {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use lifeapi_sim::scenario;
+    use primordia_sim::scenario;
 
     fn arena(players: usize, window_ms: u64) -> Game {
         Game::with_arena(
