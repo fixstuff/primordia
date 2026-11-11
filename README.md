@@ -86,3 +86,6 @@ is `lifeapi.genome/1`, and the viewer's binary frames start with `LAPI`.
 ## License
 
 MIT. See [LICENSE](LICENSE). Copyright (c) 2026 the Primordia contributors.
+
+Free to use, fork and build on. The project does not accept contributions,
+pull requests or issues: see [CONTRIBUTING.md](CONTRIBUTING.md).

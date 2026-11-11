@@ -1,0 +1,25 @@
+# Primordia does not take contributions. Any pull request from someone other
+# than the owner is closed with a note. Uses only the gh CLI that GitHub's
+# runners ship with, and never checks out or runs the pull request's code
+# (which is what makes pull_request_target safe here).
+name: Close pull requests
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  close:
+    if: github.event.pull_request.user.login != github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close with a note
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh pr close "$PR" --repo "$REPO" --comment "Thanks for your interest. Primordia isn't accepting pull requests or contributions. You're welcome to fork it and use it under the MIT license."
