@@ -1,0 +1,15 @@
+[package]
+name = "lifeapi-sim"
+version = "0.1.0"
+edition = "2021"
+description = "LifeAPI simulation core: pure, single-threaded, deterministic, tick-stepped."
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+# float_roundtrip: the default parser can read a float back one ulp off what
+# was written (the lesson Genesis learned, minecraftAI/Cargo.toml).
+serde_json = { version = "1", features = ["float_roundtrip"] }
+sha2 = "0.10"
+# Software maths: the same bits on every machine. std's f32 transcendentals
+# are documented as platform- and version-dependent (see src/det.rs).
+libm = "0.2"
