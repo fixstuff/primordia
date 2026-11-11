@@ -4,8 +4,10 @@
     python3 tools/league.py --out runs/league-1 --worlds drift,patchy,bloom --seeds 11,12 \
         --parallel 3 --fable-usd 6 --opus-usd 2
 
-Every match is the same four players (Fable, Opus, DeepSeek, the scripted
-bot) on a fresh arena server with its own ports. Matches run --parallel at a
+Every match is the same players (Fable, Opus, DeepSeek, the scripted bot,
+and each --openai model) on a fresh arena server with its own
+ports. A match whose results.json already exists is not run again, so a
+league can be continued (League 2 added GPT-5.5 from match 4). Matches run --parallel at a
 time. When a match ends, its results.json is read and the league table is
 rebuilt:
 
@@ -21,20 +23,26 @@ import argparse, itertools, json, pathlib, subprocess, sys, time
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PLAYERS = ["claude-fable-5-2", "claude-opus-5-5", "deepseek-v4-pro", "scripted-bot"]
+# Runner subfolder for each player whose summary.json carries cost_usd.
+COSTED = {"fable": "claude-fable-5-2", "opus": "claude-opus-5-5"}
+# OpenAI list prices from third-party sources, NOT checked against OpenAI's own
+# page: input, cached input, output USD per million tokens; and whether the
+# model needs the Responses API for function tools with reasoning on.
+OPENAI = {"gpt-5.5": ("5,0.5,30", False), "gpt-6-astra": ("10,1,50", True)}
 
 
 def launch(match_dir, port, http, world, seed, a):
     """Start a server and the four players for one match. Returns the processes."""
     d = match_dir
-    for sub in ("fable", "opus", "deepseek", "bot"):
+    for sub in ("fable", "opus", "deepseek", "bot") + tuple(a.openai):
         (d / sub).mkdir(parents=True, exist_ok=True)
     addr = f"127.0.0.1:{port}"
     rel = lambda p: str(p)
     procs = {}
     procs["server"] = subprocess.Popen(
         [rel(ROOT / "target/release/lifeapi-server"), "--addr", addr, "--http", f"127.0.0.1:{http}",
-         "--world", world, "--seed", str(seed), "--arena", "4", "--window-ticks", str(a.window_ticks),
-         "--window-secs", str(a.window_secs), "--match-ticks", str(a.match_ticks),
+         "--world", world, "--seed", str(seed), "--arena", str(len(PLAYERS)), "--window-ticks", str(a.window_ticks),
+         "--window-secs", str(a.window_secs), "--first-window-secs", str(a.first_window_secs), "--match-ticks", str(a.match_ticks),
          "--log", rel(d / "match-log.jsonl"), "--results", rel(d / "results.json")],
         stdout=open(d / "server.log", "w"), stderr=subprocess.STDOUT, cwd=ROOT)
     time.sleep(0.5)
@@ -57,6 +65,16 @@ def launch(match_dir, port, http, world, seed, a):
           f"test -f {d / 'results.json'} && break; echo relaunch $i; done")
     procs["deepseek"] = subprocess.Popen(["bash", "-c", ds], stdout=open(d / "deepseek/agent.log", "a"),
                                          stderr=subprocess.STDOUT, cwd=ROOT)
+    for m in a.openai:
+        price, responses = OPENAI[m]
+        oa = (f"for i in 1 2 3; do {sys.executable} -I tools/agent_ollama.py --arena --provider openai "
+              f"--base-url https://api.openai.com/v1 --model {m} {'--responses-api ' if responses else ''}"
+              f"--key-file ~/.config/lifeapi/openai.env --key-name OPENAI_API_KEY --addr {addr} "
+              f"--target-tick {a.match_ticks} --max-turns 200 --budget-usd {a.openai_usd} "
+              f"--usd-per-mtok {price} --out {d / m} && break; "
+              f"test -f {d / 'results.json'} && break; echo relaunch $i; done")
+        procs[m] = subprocess.Popen(["bash", "-c", oa], stdout=open(d / m / "agent.log", "a"),
+                                    stderr=subprocess.STDOUT, cwd=ROOT)
     procs["bot"] = subprocess.Popen(
         [rel(ROOT / "target/release/lifeapi-bot"), "--arena", "--addr", addr, "--name", "scripted-bot"],
         stdout=open(d / "bot/agent.log", "w"), stderr=subprocess.STDOUT, cwd=ROOT)
@@ -65,7 +83,7 @@ def launch(match_dir, port, http, world, seed, a):
 
 def finish(procs, match_dir, deadline):
     """Wait for the players to finish (or the deadline), then stop the server."""
-    for k in ("fable", "opus", "deepseek", "bot"):
+    for k in [k for k in procs if k != "server"]:
         left = max(1, deadline - time.time())
         try:
             procs[k].wait(timeout=left)
@@ -90,9 +108,10 @@ def table(out, schedule):
         st = json.loads(f.read_text())["standings"]
         score = {s["name"]: s["score"] for s in st}
         top = max(score.values()) or 1.0
-        k = 32.0 / (len(PLAYERS) - 1)
+        present = [p for p in PLAYERS if p in score]
+        k = 32.0 / (len(present) - 1)  # by THIS match's field (League 2 changed field size mid-league)
         before = dict(rating)
-        for a, b in itertools.combinations([p for p in PLAYERS if p in score], 2):
+        for a, b in itertools.combinations(present, 2):
             ea = 1 / (1 + 10 ** ((before[b] - before[a]) / 400))
             sa = 1.0 if score[a] > score[b] else 0.0 if score[a] < score[b] else 0.5
             rating[a] += k * (sa - ea)
@@ -105,7 +124,7 @@ def table(out, schedule):
             stats[p]["wins"] += s["rank"] == 1
             stats[p]["rank_sum"] += s["rank"]
             stats[p]["share_sum"] += score[p] / top
-        for sub, p in (("fable", "claude-fable-5-2"), ("opus", "claude-opus-5-5")):
+        for sub, p in COSTED.items():
             sf = out / m["name"] / sub / "summary.json"
             if sf.exists():
                 stats[p]["cost"] += json.loads(sf.read_text()).get("cost_usd") or 0.0
@@ -114,16 +133,21 @@ def table(out, schedule):
     ranked = sorted(PLAYERS, key=lambda p: -rating[p])
     league = {"ratings": {p: round(rating[p], 1) for p in ranked}, "stats": stats, "matches": rows}
     (out / "league.json").write_text(json.dumps(league, indent=1))
-    md = ["# LifeAPI league", "", f"{len(rows)} of {len(schedule)} matches played.", "",
-          "| Rank | Player | Elo | Wins | Mean rank | Mean share of top score | Anthropic cost |",
+    md = ["# LifeAPI league", "", f"{len(rows)} of {len(schedule)} matches played. Elo is applied in schedule "
+          "order (it depends on order); a player is rated only in matches it played; K = 32/(players in the "
+          "match - 1). Mean rank and share mix field sizes when the field changes. Costs: Anthropic as "
+          "reported, OpenAI estimated from tokens, DeepSeek not priced.", "",
+          "| Rank | Player | Elo | Wins | Mean rank | Mean share of top score | API cost (est. for OpenAI) |",
           "|---|---|---|---|---|---|---|"]
     for i, p in enumerate(ranked, 1):
         s = stats[p]
         n = max(1, s["matches"])
-        cost = f"${s['cost']:.2f}" if p.startswith("claude") else "—"
+        cost = f"${s['cost']:.2f}" if p in COSTED.values() else "—"
         md.append(f"| {i} | {p} | {rating[p]:.0f} | {s['wins']}/{s['matches']} | {s['rank_sum'] / n:.2f} | "
                   f"{100 * s['share_sum'] / n:.0f}% | {cost} |")
-    md += ["", "| Match | World | Seed | 1st | 2nd | 3rd | 4th |", "|---|---|---|---|---|---|---|"]
+    width = max([len(r["standings"]) for r in rows] or [len(PLAYERS)])
+    places = ["1st", "2nd", "3rd"] + [f"{i}th" for i in range(4, width + 1)]
+    md += ["", "| Match | World | Seed | " + " | ".join(places[:width]) + " |", "|---|---|---|" + "---|" * width]
     for r in rows:
         cells = [f"{n} ({sc})" for _, n, sc in sorted(r["standings"])]
         md.append(f"| {r['match']} | {r['world']} | {r['seed']} | " + " | ".join(cells) + " |")
@@ -139,24 +163,33 @@ def main():
     ap.add_argument("--parallel", type=int, default=3)
     ap.add_argument("--fable-usd", type=float, default=6)
     ap.add_argument("--opus-usd", type=float, default=2)
+    ap.add_argument("--openai", action="append", default=[], choices=sorted(OPENAI),
+                    help="add an OpenAI player (repeatable)")
+    ap.add_argument("--openai-usd", type=float, default=4)
     ap.add_argument("--window-ticks", type=int, default=500)
     ap.add_argument("--window-secs", type=float, default=180)
+    ap.add_argument("--first-window-secs", type=float, default=600,
+                    help="longer first window: League 1 saw Fable miss window 1 in 6/6 matches at 180 s")
     ap.add_argument("--match-ticks", type=int, default=10000)
     ap.add_argument("--base-port", type=int, default=4400)
     a = ap.parse_args()
+    for m in a.openai:
+        PLAYERS.append(m)
+        COSTED[m] = m
     out = (ROOT / a.out).resolve()
     out.mkdir(parents=True, exist_ok=True)
     schedule = [{"name": f"m{i + 1:02d}-{w}-{s}", "world": w, "seed": int(s)}
                 for i, (s, w) in enumerate(itertools.product(a.seeds.split(","), a.worlds.split(",")))]
     (out / "schedule.json").write_text(json.dumps(schedule, indent=1))
-    for start in range(0, len(schedule), a.parallel):
-        batch = schedule[start:start + a.parallel]
+    todo = [m for m in schedule if not (out / m["name"] / "results.json").exists()]
+    for start in range(0, len(todo), a.parallel):
+        batch = todo[start:start + a.parallel]
         running = []
         for j, m in enumerate(batch):
             port = a.base_port + 10 * (start + j)
             print(f"start {m['name']} on :{port} (viewer :{port + 1})", flush=True)
             running.append((m, launch(out / m["name"], port, port + 1, m["world"], m["seed"], a)))
-        deadline = time.time() + 20 * a.window_secs * (a.match_ticks / a.window_ticks / 20) + 900
+        deadline = time.time() + 20 * a.window_secs * (a.match_ticks / a.window_ticks / 20) + a.first_window_secs + 900
         for m, procs in running:
             finish(procs, out / m["name"], deadline)
             ok = (out / m["name"] / "results.json").exists()

@@ -1,0 +1,113 @@
+{
+ "model": "claude-fable-5-2",
+ "exit": 0,
+ "seconds": 1803,
+ "final_tick": 10000,
+ "tool_calls": [
+  "catalog",
+  "observe",
+  "report",
+  "submit_genome",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "release",
+  "release",
+  "report",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "report",
+  "end_turn",
+  "observe",
+  "end_turn",
+  "report",
+  "end_turn",
+  "end_turn",
+  "report",
+  "end_turn",
+  "end_turn",
+  "report",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn",
+  "end_turn"
+ ],
+ "genomes": [
+  {
+   "n": 1,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/01.json",
+   "name": "rush",
+   "tick": 0,
+   "eval_mean_population": 357.0
+  },
+  {
+   "n": 2,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/02.json",
+   "name": "lean",
+   "tick": 0,
+   "eval_mean_population": 373.3333333333333
+  },
+  {
+   "n": 3,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/03.json",
+   "name": "vent",
+   "tick": 0,
+   "eval_mean_population": 340.3333333333333
+  },
+  {
+   "n": 4,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/04.json",
+   "name": "creep2",
+   "tick": 500,
+   "eval_mean_population": 3095.0
+  },
+  {
+   "n": 5,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/05.json",
+   "name": "creep2m3",
+   "tick": 1000,
+   "eval_mean_population": 1547.3333333333333
+  },
+  {
+   "n": 6,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/06.json",
+   "name": "stroll2",
+   "tick": 1000,
+   "eval_mean_population": 2335.0
+  },
+  {
+   "n": 7,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/07.json",
+   "name": "creep3",
+   "tick": 1000,
+   "eval_mean_population": 1964.0
+  }
+ ],
+ "cost_usd": 4.437777600000002,
+ "result_subtype": "success",
+ "num_turns": 51,
+ "last_text": "The match is over and I finished first with a score of 3851.97, ahead of claude-opus-5-5 (2014.99), deepseek-v4-pro (1464.75) and the scripted bot (75.62).\n\n- **What won it:** radius-2, one-mouth organisms that barely move. Moving costs about 0.04 energy per cell crossed, so my opening fast swimmers and large vent-seekers starved; near-stationary grazers fed by diffusion did not.\n- **Where it peaked:** my biomass topped out around 6,000 at tick 4500\u20135000, once the world saturated.\n- **The late decline:** from tick 5000 my population shrank steadily to 3,748 biomass at the end, while claude-opus-5-5 kept growing and nearly matched my final biomass (3,609). My organisms were running a slight energy deficit at the saturated food level and theirs were not.\n- **Unspent budget:** I ended with 750 budget unused. I held it deliberately from tick 3000 on, because new founders don't score and would have taken food from my scoring descendants. I also overran the second window while designing, so that release landed at tick 1000 instead of 500."
+}

@@ -1,0 +1,100 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/01.json",
+  "name": "r2_dual_chemotax_A",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/02.json",
+  "name": "r2_sugar_hunter_B",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/03.json",
+  "name": "r2_slow_grazer_C",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/04.json",
+  "name": "r2_slow_grazer_D6mouth",
+  "species": 14,
+  "tick": 500
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/05.json",
+  "name": "r2_eff_grazer_E4m",
+  "species": 22,
+  "tick": 1000
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/06.json",
+  "name": "r3_patch_grazer_F5m",
+  "species": 32,
+  "tick": 2000
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/07.json",
+  "name": "r2_ultra_eff_G4m_lowturn",
+  "species": 39,
+  "tick": 2500
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/08.json",
+  "name": "r4_patch_dual_bigscore_H",
+  "species": 47,
+  "tick": 3500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/09.json",
+  "name": "r2_chemotax_5mouth_J",
+  "species": 53,
+  "tick": 4500
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/10.json",
+  "name": "r2_lowcost_dual_lr_K",
+  "species": 56,
+  "tick": 5000
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/11.json",
+  "name": "r4_patch_biomass_L",
+  "species": 60,
+  "tick": 5500
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/12.json",
+  "name": "r2_energy_gated_grazer_M2",
+  "species": 64,
+  "tick": 6500
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/13.json",
+  "name": "r2_vent_spore_15mouth_N",
+  "species": 66,
+  "tick": 7000
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-5.5/genomes/14.json",
+  "name": "r2_A_fast4mouth_clone_O",
+  "species": 68,
+  "tick": 7500
+ }
+]

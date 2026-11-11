@@ -1,0 +1,86 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/01.json",
+  "name": "drift_dual_tracker_R_v1",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/02.json",
+  "name": "drift_rand_explorer_v1",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/03.json",
+  "name": "drift_sugar_first_v1",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/04.json",
+  "name": "drift_slow_dual_tracker_v2",
+  "species": 15,
+  "tick": 500
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/05.json",
+  "name": "drift_dual_center_tracker_v3",
+  "species": 28,
+  "tick": 2000
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/06.json",
+  "name": "drift_r3_dual_tracker_v1",
+  "species": 38,
+  "tick": 3000
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/07.json",
+  "name": "drift_loiter_dual_R_v2",
+  "species": 43,
+  "tick": 3500
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/08.json",
+  "name": "drift_balanced_4s2m_v2",
+  "species": 51,
+  "tick": 4500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/09.json",
+  "name": "drift_cruise_chem_4s2m_v1",
+  "species": 55,
+  "tick": 5000
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/10.json",
+  "name": "drift_gradient_mirror_A_v1",
+  "species": 59,
+  "tick": 5500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/11.json",
+  "name": "drift_vent_sitter_r2_4mouth_v1b",
+  "species": 67,
+  "tick": 7000
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-5.5/genomes/12.json",
+  "name": "drift_fast_dual_tracker_random_v1",
+  "species": 70,
+  "tick": 7500
+ }
+]

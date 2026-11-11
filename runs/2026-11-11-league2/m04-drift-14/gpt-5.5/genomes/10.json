@@ -1,0 +1,87 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "drift_gradient_mirror_A_v1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.9
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   -2,
+   2,
+   -1,
+   1,
+   0,
+   0,
+   2,
+   -2,
+   1,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   0.7,
+   0.7,
+   -0.4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   2,
+   1.5,
+   1.2,
+   0,
+   2,
+   -2,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.25
+ }
+}

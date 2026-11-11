@@ -1,0 +1,88 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |      4s] '' calls=['observe']
+[turn  3 | tick      0 |     25s] '' calls=['submit_genome']
+[turn  4 | tick      0 |     38s] '' calls=['release']
+[turn  5 | tick      0 |     45s] '' calls=['release']
+[turn  6 | tick      0 |     51s] '' calls=['submit_genome']
+[turn  7 | tick      0 |     53s] '' calls=['release']
+[turn  8 | tick      0 |     54s] '' calls=['end_turn']
+[turn  9 | tick    500 |    411s] '' calls=['report']
+[turn 10 | tick    500 |    419s] '' calls=['submit_genome']
+[turn 11 | tick    500 |    421s] '' calls=['release']
+[turn 12 | tick    500 |    424s] '' calls=['end_turn']
+[turn 13 | tick   1000 |    578s] '' calls=['report']
+[turn 14 | tick   1000 |    584s] '' calls=['submit_genome']
+[turn 15 | tick   1000 |    586s] '' calls=['release']
+[turn 16 | tick   1000 |    589s] '' calls=['end_turn']
+[turn 17 | tick   1500 |    681s] '' calls=['report']
+[turn 18 | tick   1500 |    688s] '' calls=['submit_genome']
+[turn 19 | tick   1500 |    689s] '' calls=['release']
+[turn 20 | tick   1500 |    691s] '' calls=['end_turn']
+[turn 21 | tick   2000 |    767s] '' calls=['catalog']
+[turn 22 | tick   2000 |    776s] '' calls=['submit_genome']
+[turn 23 | tick   2000 |    778s] '' calls=['release']
+[turn 24 | tick   2000 |    782s] '' calls=['end_turn']
+[turn 25 | tick   2500 |    880s] '' calls=['submit_genome']
+[turn 26 | tick   2500 |    882s] '' calls=['release']
+[turn 27 | tick   2500 |    885s] '' calls=['end_turn']
+[turn 28 | tick   3000 |   1033s] '' calls=['submit_genome']
+[turn 29 | tick   3000 |   1035s] '' calls=['release']
+[turn 30 | tick   3000 |   1037s] '' calls=['end_turn']
+[turn 31 | tick   3500 |   1203s] '' calls=['report']
+[turn 32 | tick   3500 |   1210s] '' calls=['submit_genome']
+[turn 33 | tick   3500 |   1213s] '' calls=['release']
+[turn 34 | tick   3500 |   1214s] '' calls=['end_turn']
+[turn 35 | tick   4000 |   1346s] '' calls=['submit_genome']
+[turn 36 | tick   4000 |   1348s] '' calls=['release']
+[turn 37 | tick   4000 |   1350s] '' calls=['end_turn']
+[turn 38 | tick   4500 |   1395s] '' calls=['submit_genome']
+[turn 39 | tick   4500 |   1397s] '' calls=['release']
+[turn 40 | tick   4500 |   1399s] '' calls=['end_turn']
+[turn 41 | tick   5000 |   1456s] '' calls=['catalog']
+[turn 42 | tick   5000 |   1464s] '' calls=['submit_genome']
+[turn 43 | tick   5000 |   1467s] '' calls=['release']
+[turn 44 | tick   5000 |   1469s] '' calls=['end_turn']
+[turn 45 | tick   5500 |   1521s] '' calls=['observe']
+[turn 46 | tick   5500 |   1527s] '' calls=['submit_genome']
+[turn 47 | tick   5500 |   1530s] '' calls=['release']
+[turn 48 | tick   5500 |   1532s] '' calls=['end_turn']
+[turn 49 | tick   6000 |   1538s] '' calls=['report']
+[turn 50 | tick   6000 |   1544s] '' calls=['release']
+[turn 51 | tick   6000 |   1546s] '' calls=['end_turn']
+[turn 52 | tick   6500 |   1558s] '' calls=['submit_genome']
+[turn 53 | tick   6500 |   1559s] '' calls=['release']
+[turn 54 | tick   6500 |   1561s] '' calls=['end_turn']
+[turn 55 | tick   7000 |   1595s] '' calls=['submit_genome']
+[turn 56 | tick   7000 |   1598s] '' calls=['release']
+[turn 57 | tick   7000 |   1600s] '' calls=['end_turn']
+[turn 58 | tick   7500 |   1666s] '' calls=['release']
+[turn 59 | tick   7500 |   1668s] '' calls=['end_turn']
+[turn 60 | tick   8000 |   1762s] '' calls=['submit_genome']
+[turn 61 | tick   8000 |   1765s] '' calls=['release']
+[turn 62 | tick   8000 |   1766s] '' calls=['end_turn']
+[turn 63 | tick   8500 |   1801s] '' calls=['release']
+[turn 64 | tick   8500 |   1803s] '' calls=['end_turn']
+[turn 65 | tick   9000 |   1981s] '' calls=['release']
+[turn 66 | tick   9000 |   1982s] '' calls=['end_turn']
+[turn 67 | tick   9500 |   2085s] '' calls=['release']
+[turn 68 | tick   9500 |   2086s] '' calls=['end_turn']
+
+ended at tick 10000 after 68 turns, 16 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 Vent scout               submitted at tick      0: 2070.6666666666665
+  # 2 Long-lived gatherer      submitted at tick      0: 1403.0
+  # 3 Frugal drifter           submitted at tick    500: 2095.6666666666665
+  # 4 Patch keeper             submitted at tick   1000: 2165.6666666666665
+  # 5 Reservoir grazer         submitted at tick   1500: 1151.3333333333333
+  # 6 Mobile reservoir         submitted at tick   2000: 913.0
+  # 7 Straight vent colonist   submitted at tick   2500: 785.6666666666666
+  # 8 Persistent spores        submitted at tick   3000: 1336.3333333333333
+  # 9 Sensitive patch finder   submitted at tick   3500: 1948.3333333333333
+  #10 Patient patch explorer   submitted at tick   4000: 1167.3333333333333
+  #11 Gradient tracker         submitted at tick   4500: 1341.6666666666667
+  #12 Vent navigator           submitted at tick   5000: 842.3333333333334
+  #13 Persistent gradient swim submitted at tick   5500: 720.0
+  #14 Dormant vent colonies    submitted at tick   6500: 3353.6666666666665
+  #15 Reverse gradient colonis submitted at tick   7000: 1762.3333333333333
+  #16 Wide gradient grazer     submitted at tick   8000: 999.0

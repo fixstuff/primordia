@@ -56,7 +56,9 @@ def openai_chat(base, key, model, messages, tools):
     shaped like Ollama's, so the loop below handles both. Retries transient
     network and 5xx/429 errors with backoff (arena match 2's first attempt
     lost its DeepSeek player to one "connection reset by peer")."""
-    body = {"model": model, "messages": messages, "tools": tools, "temperature": 0.4}
+    body = {"model": model, "messages": messages, "tools": tools}
+    if "api.openai.com" not in base:
+        body["temperature"] = 0.4  # OpenAI's reasoning models accept only the default
     data = json.dumps(body).encode()
     for attempt in range(6):
         req = urllib.request.Request(base.rstrip("/") + "/chat/completions", data=data,
@@ -89,7 +91,69 @@ def openai_chat(base, key, model, messages, tools):
            "tool_calls": m.get("tool_calls") or None}
     return {"message": {"role": "assistant", "content": m.get("content") or "", "tool_calls": calls},
             "raw_message": raw, "eval_count": u.get("completion_tokens"),
-            "prompt_eval_count": u.get("prompt_tokens")}
+            "prompt_eval_count": u.get("prompt_tokens"),
+            "cached_tokens": (u.get("prompt_tokens_details") or {}).get("cached_tokens") or 0}
+
+def responses_chat(base, key, model, messages, tools, effort):
+    """OpenAI's /v1/responses, for models that take function tools only there
+    with reasoning on (gpt-6-astra). The chat-shaped history is converted
+    each call (stateless: reasoning items are not carried between turns).
+    Returns the same shape as openai_chat."""
+    items, instructions = [], None
+    for m in messages:
+        if m["role"] == "system":
+            instructions = m["content"]
+        elif m["role"] == "user":
+            items.append({"role": "user", "content": m["content"]})
+        elif m["role"] == "assistant":
+            if m.get("content"):
+                items.append({"role": "assistant", "content": m["content"]})
+            for c in m.get("tool_calls") or []:
+                items.append({"type": "function_call", "call_id": c["id"], "name": c["function"]["name"],
+                              "arguments": c["function"]["arguments"]})
+        elif m["role"] == "tool":
+            items.append({"type": "function_call_output", "call_id": m["tool_call_id"], "output": m["content"]})
+    body = {"model": model, "input": items, "instructions": instructions, "store": False,
+            "tools": [{"type": "function", "name": t["function"]["name"], "description": t["function"]["description"],
+                       "parameters": t["function"]["parameters"]} for t in tools]}
+    if effort:
+        body["reasoning"] = {"effort": effort}
+    data = json.dumps(body).encode()
+    for attempt in range(6):
+        req = urllib.request.Request(base.rstrip("/") + "/responses", data=data,
+                                     headers={"Content-Type": "application/json", "Authorization": "Bearer " + key})
+        try:
+            with urllib.request.urlopen(req, timeout=900) as r:
+                d = json.loads(r.read())
+            break
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or attempt == 5:
+                print(f"  (HTTP {e.code}: {e.read()[:500]!r})", flush=True)
+                raise
+            print(f"  (HTTP {e.code}; retrying in {2 ** attempt}s)", flush=True)
+        except (ConnectionError, TimeoutError, urllib.error.URLError, OSError) as e:
+            if attempt == 5:
+                raise
+            print(f"  ({type(e).__name__}; retrying in {2 ** attempt}s)", flush=True)
+        time.sleep(2 ** attempt)
+    text, calls, raw_calls = "", [], []
+    for it in d.get("output") or []:
+        if it.get("type") == "message":
+            text += "".join(c.get("text", "") for c in it.get("content") or [] if c.get("type") == "output_text")
+        elif it.get("type") == "function_call":
+            a = it.get("arguments") or "{}"
+            try:
+                args = json.loads(a)
+            except ValueError:
+                args = {}
+            calls.append({"id": it["call_id"], "function": {"name": it["name"], "arguments": args}})
+            raw_calls.append({"id": it["call_id"], "type": "function",
+                              "function": {"name": it["name"], "arguments": a}})
+    u = d.get("usage") or {}
+    raw = {"role": "assistant", "content": text, "tool_calls": raw_calls or None}
+    return {"message": {"role": "assistant", "content": text, "tool_calls": calls}, "raw_message": raw,
+            "eval_count": u.get("output_tokens"), "prompt_eval_count": u.get("input_tokens"),
+            "cached_tokens": (u.get("input_tokens_details") or {}).get("cached_tokens") or 0}
 
 def saved_genome(args):
     """The genome as the server accepted it: the same repairs lifeapi-mcp
@@ -138,6 +202,12 @@ def main():
     ap.add_argument("--key-file", help="file with a NAME=value line (never printed)")
     ap.add_argument("--key-name", default="DEEPSEEK_API_KEY")
     ap.add_argument("--arena", action="store_true", help="play an arena match (end_turn) until match_over")
+    ap.add_argument("--responses-api", action="store_true",
+                    help="use OpenAI's /v1/responses (gpt-6-astra takes tools with reasoning only there)")
+    ap.add_argument("--reasoning-effort", help="with --responses-api: low | medium | high")
+    ap.add_argument("--budget-usd", type=float, help="stop once the estimated spend reaches this")
+    ap.add_argument("--usd-per-mtok", default="0,0,0",
+                    help="input,cached input,output USD per million tokens, for the estimate")
     a = ap.parse_args()
     key = load_key(a.key_file, a.key_name) if a.provider == "openai" else None
 
@@ -163,9 +233,22 @@ def main():
     note("start", model=a.model, target=a.target_tick, system=system)
 
     tick, genomes, t0, match_over = 0, [], time.time(), False
+    p_in, p_cached, p_out = (float(x) for x in a.usd_per_mtok.split(","))
+    usage = {"prompt_tokens": 0, "cached_tokens": 0, "completion_tokens": 0, "cost_usd": 0.0}
     for turn in range(1, a.max_turns + 1):
+        if a.budget_usd is not None and usage["cost_usd"] >= a.budget_usd:
+            print(f"budget reached: ${usage['cost_usd']:.2f} of ${a.budget_usd:.2f}", flush=True)
+            note("budget", **usage)
+            break
         if a.provider == "openai":
-            resp = openai_chat(a.base_url, key, a.model, messages, tools)
+            resp = (responses_chat(a.base_url, key, a.model, messages, tools, a.reasoning_effort)
+                    if a.responses_api else openai_chat(a.base_url, key, a.model, messages, tools))
+            pt, ct, ca = resp.get("prompt_eval_count") or 0, resp.get("eval_count") or 0, resp.get("cached_tokens", 0)
+            usage["prompt_tokens"] += pt
+            usage["cached_tokens"] += ca
+            usage["completion_tokens"] += ct
+            usage["cost_usd"] += ((pt - ca) * p_in + ca * p_cached + ct * p_out) / 1e6
+            (out / "summary.json").write_text(json.dumps({"model": a.model, **usage}, indent=1))
             messages.append({k: v for k, v in resp["raw_message"].items() if v is not None})
         else:
             resp = ollama_chat(a.ollama, a.model, messages, tools, a.think)

@@ -1,0 +1,104 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Efficient9",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 9
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "mineral"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 5,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -1.6,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   1.6,
+   0,
+   0,
+   4,
+   -4,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   -4,
+   4,
+   4,
+   4,
+   0,
+   0,
+   0,
+   -3,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1.3,
+   4,
+   4,
+   4,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

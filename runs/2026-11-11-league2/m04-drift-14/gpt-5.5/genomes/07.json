@@ -1,0 +1,105 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "drift_loiter_dual_R_v2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   -0.5,
+   -2,
+   2,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   0,
+   -0.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   2,
+   -1.2,
+   0,
+   0.5,
+   1.2,
+   0.4,
+   0,
+   2,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.15
+ }
+}

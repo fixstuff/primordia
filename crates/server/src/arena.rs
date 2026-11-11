@@ -29,6 +29,10 @@ pub struct ArenaConfig {
     pub players: usize,
     pub window_ticks: u64,
     pub window: Duration,
+    /// The first window's limit, if longer: every player reads the catalog
+    /// and designs from nothing then (League 1: Fable missed window 1 in all
+    /// six matches, DeepSeek in five, at 180 s). None = `window`.
+    pub first_window: Option<Duration>,
     pub match_ticks: u64,
     pub log: Option<PathBuf>,
     pub results: Option<PathBuf>,
@@ -66,6 +70,7 @@ impl Arena {
             "players": self.cfg.players,
             "window_ticks": self.cfg.window_ticks,
             "window_seconds": self.cfg.window.as_secs_f64(),
+            "first_window_seconds": self.cfg.first_window.unwrap_or(self.cfg.window).as_secs_f64(),
             "match_ticks": self.cfg.match_ticks,
             "how": "act (catalog, report, submit_genome, release, observe), then call end_turn; \
                     it returns when the next window opens, with the scoreboard. step and subscribe are refused.",
@@ -106,7 +111,7 @@ impl Game {
         a.ended.resize(n, false);
         if !a.started && n >= a.cfg.players {
             a.started = true;
-            a.deadline = Some(Instant::now() + a.cfg.window);
+            a.deadline = Some(Instant::now() + a.cfg.first_window.unwrap_or(a.cfg.window));
             a.log_event(json!({"event": "start", "tick": 0, "players": n}));
         }
         Some(json!({"started": a.started, "joined": n, "rules": a.rules()}))
@@ -269,7 +274,7 @@ mod tests {
         Game::with_arena(
             scenario::pool(scenario::base_config(1, 64, 64), 4, 2),
             ArenaConfig { players, window_ticks: 100, window: Duration::from_millis(window_ms),
-                          match_ticks: 300, log: None, results: None },
+                          first_window: None, match_ticks: 300, log: None, results: None },
         )
     }
 
@@ -284,6 +289,20 @@ mod tests {
         let sp = r.unwrap()["species"].clone();
         let _ = call(g, p, &format!(r#"{{"op":"release","species":{sp},"count":20}}"#));
         p
+    }
+
+    /// The first window can be longer; later windows use the normal limit.
+    #[test]
+    fn first_window_is_longer() {
+        let mut g = arena(1, 1_000);
+        g.arena.as_mut().unwrap().cfg.first_window = Some(Duration::from_secs(600));
+        let p = join_and_release(&mut g, "a");
+        let left = g.arena_deadline().unwrap() - Instant::now();
+        assert!(left > Duration::from_secs(500), "{left:?}");
+        assert!(call(&mut g, p, r#"{"op":"end_turn"}"#).0.is_none());
+        assert_eq!(g.arena_poll(Instant::now()).len(), 1);
+        let left = g.arena_deadline().unwrap() - Instant::now();
+        assert!(left <= Duration::from_secs(1), "{left:?}");
     }
 
     #[test]

@@ -1,0 +1,184 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/01.json",
+  "name": "test_zero",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/02.json",
+  "name": "trackA",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/03.json",
+  "name": "trackB",
+  "species": 10,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/04.json",
+  "name": "trackC",
+  "species": 16,
+  "tick": 500
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/05.json",
+  "name": "trackD",
+  "species": 17,
+  "tick": 500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/06.json",
+  "name": "sugarG",
+  "species": 22,
+  "tick": 1500
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/07.json",
+  "name": "sugarH",
+  "species": 23,
+  "tick": 1500
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/08.json",
+  "name": "gateI",
+  "species": 29,
+  "tick": 2000
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/09.json",
+  "name": "gateJ",
+  "species": 30,
+  "tick": 2000
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/10.json",
+  "name": "cycleK",
+  "species": 35,
+  "tick": 2500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/11.json",
+  "name": "cycleL",
+  "species": 36,
+  "tick": 2500
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/12.json",
+  "name": "cycleM",
+  "species": 40,
+  "tick": 3000
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/13.json",
+  "name": "cycleN",
+  "species": 41,
+  "tick": 3000
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/14.json",
+  "name": "cycleP",
+  "species": 45,
+  "tick": 3500
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/15.json",
+  "name": "cycleQ",
+  "species": 46,
+  "tick": 3500
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/16.json",
+  "name": "cycleR",
+  "species": 47,
+  "tick": 4000
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/17.json",
+  "name": "cycleS",
+  "species": 48,
+  "tick": 4000
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/18.json",
+  "name": "sugarR4",
+  "species": 53,
+  "tick": 4500
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/19.json",
+  "name": "sugarR3",
+  "species": 57,
+  "tick": 5000
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/20.json",
+  "name": "sugarI",
+  "species": 60,
+  "tick": 5500
+ },
+ {
+  "n": 21,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/21.json",
+  "name": "sugarR3c",
+  "species": 61,
+  "tick": 5500
+ },
+ {
+  "n": 22,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/22.json",
+  "name": "sugarM",
+  "species": 63,
+  "tick": 6000
+ },
+ {
+  "n": 23,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/23.json",
+  "name": "cruiseR2",
+  "species": 68,
+  "tick": 7000
+ },
+ {
+  "n": 24,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/24.json",
+  "name": "cruiseR3",
+  "species": 69,
+  "tick": 7000
+ },
+ {
+  "n": 25,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/25.json",
+  "name": "sugarI2",
+  "species": 71,
+  "tick": 7500
+ },
+ {
+  "n": 26,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/26.json",
+  "name": "sugarR3i",
+  "species": 73,
+  "tick": 8500
+ }
+]

@@ -1,0 +1,110 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/opus/genomes/01.json",
+      "mean_biomass": 5973.0,
+      "mean_population": 663.6666666666666,
+      "name": "grazerL",
+      "per_seed": [
+        663,
+        652,
+        676
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/opus/genomes/02.json",
+      "mean_biomass": 5634.0,
+      "mean_population": 626.0,
+      "name": "grazerR",
+      "per_seed": [
+        635,
+        612,
+        631
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/opus/genomes/03.json",
+      "mean_biomass": 3742.6666666666665,
+      "mean_population": 935.6666666666666,
+      "name": "miniL",
+      "per_seed": [
+        964,
+        831,
+        1012
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/opus/genomes/04.json",
+      "mean_biomass": 9840.0,
+      "mean_population": 273.3333333333333,
+      "name": "big6",
+      "per_seed": [
+        284,
+        263,
+        273
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/opus/genomes/05.json",
+      "mean_biomass": 17433.333333333332,
+      "mean_population": 174.33333333333334,
+      "name": "big10",
+      "per_seed": [
+        190,
+        159,
+        174
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/opus/genomes/06.json",
+      "mean_biomass": 13416.0,
+      "mean_population": 3354.0,
+      "name": "sitter",
+      "per_seed": [
+        3502,
+        3212,
+        3348
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/opus/genomes/07.json",
+      "mean_biomass": 8982.666666666666,
+      "mean_population": 2245.6666666666665,
+      "name": "drifter",
+      "per_seed": [
+        2249,
+        2289,
+        2199
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/opus/genomes/08.json",
+      "mean_biomass": 15996.0,
+      "mean_population": 1777.3333333333333,
+      "name": "drifter3",
+      "per_seed": [
+        1769,
+        1756,
+        1807
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

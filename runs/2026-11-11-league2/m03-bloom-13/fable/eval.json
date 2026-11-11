@@ -1,0 +1,98 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/01.json",
+      "mean_biomass": 1428.0,
+      "mean_population": 357.0,
+      "name": "rush",
+      "per_seed": [
+        348,
+        373,
+        350
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/02.json",
+      "mean_biomass": 1493.3333333333333,
+      "mean_population": 373.3333333333333,
+      "name": "lean",
+      "per_seed": [
+        381,
+        353,
+        386
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/03.json",
+      "mean_biomass": 12252.0,
+      "mean_population": 340.3333333333333,
+      "name": "vent",
+      "per_seed": [
+        393,
+        323,
+        305
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/04.json",
+      "mean_biomass": 12380.0,
+      "mean_population": 3095.0,
+      "name": "creep2",
+      "per_seed": [
+        3272,
+        3001,
+        3012
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/05.json",
+      "mean_biomass": 6189.333333333333,
+      "mean_population": 1547.3333333333333,
+      "name": "creep2m3",
+      "per_seed": [
+        1567,
+        1539,
+        1536
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/06.json",
+      "mean_biomass": 9340.0,
+      "mean_population": 2335.0,
+      "name": "stroll2",
+      "per_seed": [
+        2378,
+        2267,
+        2360
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m03-bloom-13/fable/genomes/07.json",
+      "mean_biomass": 17676.0,
+      "mean_population": 1964.0,
+      "name": "creep3",
+      "per_seed": [
+        2069,
+        1890,
+        1933
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

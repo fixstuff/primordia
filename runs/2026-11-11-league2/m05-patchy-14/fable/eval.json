@@ -1,0 +1,170 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/01.json",
+      "mean_biomass": 12204.0,
+      "mean_population": 339.0,
+      "name": "shuttleP",
+      "per_seed": [
+        347,
+        332,
+        338
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/02.json",
+      "mean_biomass": 4332.0,
+      "mean_population": 120.33333333333333,
+      "name": "shuttleN",
+      "per_seed": [
+        173,
+        98,
+        90
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/03.json",
+      "mean_biomass": 19966.666666666668,
+      "mean_population": 199.66666666666666,
+      "name": "sitter10",
+      "per_seed": [
+        214,
+        195,
+        190
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/04.json",
+      "mean_biomass": 12480.0,
+      "mean_population": 346.6666666666667,
+      "name": "shuttleP2",
+      "per_seed": [
+        343,
+        349,
+        348
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/05.json",
+      "mean_biomass": 8304.0,
+      "mean_population": 230.66666666666666,
+      "name": "shuttleP3",
+      "per_seed": [
+        223,
+        232,
+        237
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/06.json",
+      "mean_biomass": 12384.0,
+      "mean_population": 344.0,
+      "name": "yoyo1",
+      "per_seed": [
+        347,
+        345,
+        340
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/07.json",
+      "mean_biomass": 15000.0,
+      "mean_population": 416.6666666666667,
+      "name": "loop1",
+      "per_seed": [
+        418,
+        424,
+        408
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/08.json",
+      "mean_biomass": 13841.666666666666,
+      "mean_population": 553.6666666666666,
+      "name": "lean5",
+      "per_seed": [
+        560,
+        553,
+        548
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/09.json",
+      "mean_biomass": 13158.333333333334,
+      "mean_population": 526.3333333333334,
+      "name": "creep5",
+      "per_seed": [
+        530,
+        536,
+        513
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/10.json",
+      "mean_biomass": 10633.333333333334,
+      "mean_population": 425.3333333333333,
+      "name": "creep5m5",
+      "per_seed": [
+        423,
+        436,
+        417
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/11.json",
+      "mean_biomass": 13000.0,
+      "mean_population": 520.0,
+      "name": "lean5c",
+      "per_seed": [
+        527,
+        521,
+        512
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/12.json",
+      "mean_biomass": 6966.0,
+      "mean_population": 774.0,
+      "name": "mini3",
+      "per_seed": [
+        783,
+        758,
+        781
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/fable/genomes/13.json",
+      "mean_biomass": 3556.0,
+      "mean_population": 889.0,
+      "name": "mini2",
+      "per_seed": [
+        931,
+        874,
+        862
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

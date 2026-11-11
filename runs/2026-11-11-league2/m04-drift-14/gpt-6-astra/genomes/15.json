@@ -1,0 +1,84 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Balanced large forager",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.25
+  },
+  {
+   "part": "cilia",
+   "power": 0.4
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   4,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   2,
+   4,
+   -4,
+   4,
+   -4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

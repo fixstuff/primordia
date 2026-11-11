@@ -1,0 +1,98 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/opus/genomes/01.json",
+      "mean_biomass": 9893.333333333334,
+      "mean_population": 618.3333333333334,
+      "name": "seekA",
+      "per_seed": [
+        610,
+        619,
+        626
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/opus/genomes/02.json",
+      "mean_biomass": 4357.333333333333,
+      "mean_population": 272.3333333333333,
+      "name": "seekB",
+      "per_seed": [
+        468,
+        183,
+        166
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/opus/genomes/03.json",
+      "mean_biomass": 17852.333333333332,
+      "mean_population": 364.3333333333333,
+      "name": "bigA",
+      "per_seed": [
+        384,
+        348,
+        361
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/opus/genomes/04.json",
+      "mean_biomass": 11664.0,
+      "mean_population": 729.0,
+      "name": "lean",
+      "per_seed": [
+        737,
+        722,
+        728
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/opus/genomes/05.json",
+      "mean_biomass": 12986.666666666666,
+      "mean_population": 811.6666666666666,
+      "name": "sitter",
+      "per_seed": [
+        806,
+        826,
+        803
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/opus/genomes/06.json",
+      "mean_biomass": 18924.0,
+      "mean_population": 525.6666666666666,
+      "name": "lean6",
+      "per_seed": [
+        531,
+        516,
+        530
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/opus/genomes/07.json",
+      "mean_biomass": 13194.666666666666,
+      "mean_population": 824.6666666666666,
+      "name": "slow",
+      "per_seed": [
+        835,
+        823,
+        816
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

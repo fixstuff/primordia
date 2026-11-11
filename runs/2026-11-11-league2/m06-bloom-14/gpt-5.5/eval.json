@@ -1,0 +1,50 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-5.5/genomes/01.json",
+      "mean_biomass": 2249.3333333333335,
+      "mean_population": 562.3333333333334,
+      "name": "MineralSeek-r2-v1",
+      "per_seed": [
+        525,
+        603,
+        559
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-5.5/genomes/02.json",
+      "mean_biomass": 13440.0,
+      "mean_population": 3360.0,
+      "name": "Grazer-r2-static",
+      "per_seed": [
+        3518,
+        3240,
+        3322
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-5.5/genomes/03.json",
+      "mean_biomass": 8909.333333333334,
+      "mean_population": 2227.3333333333335,
+      "name": "Grazer-r2-2mouth",
+      "per_seed": [
+        2279,
+        2192,
+        2211
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,198 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/01.json",
+  "name": "r14m4_A",
+  "species": 7,
+  "tick": 500
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/02.json",
+  "name": "r14m4_B",
+  "species": 8,
+  "tick": 500
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/03.json",
+  "name": "r3m4_A",
+  "species": 9,
+  "tick": 1000
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/04.json",
+  "name": "r3m4_B",
+  "species": 10,
+  "tick": 1000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/05.json",
+  "name": "r10m2_B",
+  "species": 16,
+  "tick": 2000
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/06.json",
+  "name": "r5m4_2f_B",
+  "species": 18,
+  "tick": 2500
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/07.json",
+  "name": "r8m4_2f_B",
+  "species": 19,
+  "tick": 2500
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/08.json",
+  "name": "r6m4_2f_robB",
+  "species": 22,
+  "tick": 3000
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/09.json",
+  "name": "r4m4_B",
+  "species": 24,
+  "tick": 3500
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/10.json",
+  "name": "r3m8_B",
+  "species": 27,
+  "tick": 4000
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/11.json",
+  "name": "r3_min_sug",
+  "species": 29,
+  "tick": 4500
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/12.json",
+  "name": "r4_min_sug",
+  "species": 30,
+  "tick": 4500
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/13.json",
+  "name": "r4_m2c1_sug",
+  "species": 32,
+  "tick": 5000
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/14.json",
+  "name": "r3_m2c1_sug",
+  "species": 33,
+  "tick": 5000
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/15.json",
+  "name": "r3m4_05c1_B",
+  "species": 34,
+  "tick": 5500
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/16.json",
+  "name": "r4_linger_m2",
+  "species": 35,
+  "tick": 6000
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/17.json",
+  "name": "r3_linger_m2",
+  "species": 36,
+  "tick": 6000
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/18.json",
+  "name": "r3_m4_linger",
+  "species": 37,
+  "tick": 6500
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/19.json",
+  "name": "r2_m4_linger",
+  "species": 38,
+  "tick": 6500
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/20.json",
+  "name": "r4_m4_linger",
+  "species": 39,
+  "tick": 7000
+ },
+ {
+  "n": 21,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/21.json",
+  "name": "r4_m4_linger_f1",
+  "species": 40,
+  "tick": 7500
+ },
+ {
+  "n": 22,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/22.json",
+  "name": "r3_m4_3s_track",
+  "species": 41,
+  "tick": 8000
+ },
+ {
+  "n": 23,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/23.json",
+  "name": "r3_m2_3s_track",
+  "species": 42,
+  "tick": 8000
+ },
+ {
+  "n": 24,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/24.json",
+  "name": "r3_m8_3s_track",
+  "species": 43,
+  "tick": 8500
+ },
+ {
+  "n": 25,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/25.json",
+  "name": "r3_m10_3s_track",
+  "species": 44,
+  "tick": 8500
+ },
+ {
+  "n": 26,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/26.json",
+  "name": "r4_m8_diag",
+  "species": 45,
+  "tick": 9000
+ },
+ {
+  "n": 27,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/27.json",
+  "name": "r4_m10_diag",
+  "species": 46,
+  "tick": 9000
+ },
+ {
+  "n": 28,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/deepseek/genomes/28.json",
+  "name": "r4_m8_lat",
+  "species": 47,
+  "tick": 9000
+ }
+]

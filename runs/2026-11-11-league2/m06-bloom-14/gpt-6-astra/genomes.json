@@ -1,0 +1,65 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/01.json",
+  "name": "Sunseed",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/02.json",
+  "name": "Dawn grazer",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/03.json",
+  "name": "Economy grazer",
+  "species": 13,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/04.json",
+  "name": "Longrange grazer",
+  "species": 18,
+  "tick": 1000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/05.json",
+  "name": "Slow meadow",
+  "species": 25,
+  "tick": 2500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/06.json",
+  "name": "Fine grazer",
+  "species": 31,
+  "tick": 4000
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/07.json",
+  "name": "Sun carpet",
+  "species": 32,
+  "tick": 5000
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/08.json",
+  "name": "Lean wanderer",
+  "species": 33,
+  "tick": 5500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/09.json",
+  "name": "Slow sunlight",
+  "species": 38,
+  "tick": 6500
+ }
+]

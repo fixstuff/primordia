@@ -1,0 +1,79 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/01.json",
+  "name": "graz_r2_sessile",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/02.json",
+  "name": "graz_r5_sessile",
+  "species": 10,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/03.json",
+  "name": "seek_r2",
+  "species": 11,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/04.json",
+  "name": "graz_r2_m2",
+  "species": 19,
+  "tick": 1000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/05.json",
+  "name": "cruiser_r2",
+  "species": 23,
+  "tick": 1500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/06.json",
+  "name": "semi_cruiser",
+  "species": 29,
+  "tick": 3000
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/07.json",
+  "name": "sugar_hunter",
+  "species": 34,
+  "tick": 5500
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/08.json",
+  "name": "sugar_stopper",
+  "species": 37,
+  "tick": 6000
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/09.json",
+  "name": "grazer_A",
+  "species": 39,
+  "tick": 7000
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/10.json",
+  "name": "grazer_B",
+  "species": 40,
+  "tick": 7000
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/deepseek/genomes/11.json",
+  "name": "grazer_2m",
+  "species": 41,
+  "tick": 9000
+ }
+]

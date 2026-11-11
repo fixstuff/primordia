@@ -1,0 +1,134 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/01.json",
+      "mean_biomass": 3661.3333333333335,
+      "mean_population": 915.3333333333334,
+      "name": "cruiser2",
+      "per_seed": [
+        915,
+        924,
+        907
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/02.json",
+      "mean_biomass": 9136.0,
+      "mean_population": 571.0,
+      "name": "cruiser4",
+      "per_seed": [
+        575,
+        571,
+        567
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/03.json",
+      "mean_biomass": 11004.0,
+      "mean_population": 2751.0,
+      "name": "drifter2",
+      "per_seed": [
+        2919,
+        2588,
+        2746
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/04.json",
+      "mean_biomass": 13381.333333333334,
+      "mean_population": 3345.3333333333335,
+      "name": "sitter2",
+      "per_seed": [
+        3509,
+        3198,
+        3329
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/05.json",
+      "mean_biomass": 6169.333333333333,
+      "mean_population": 1542.3333333333333,
+      "name": "orbiter2",
+      "per_seed": [
+        1539,
+        1517,
+        1571
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/06.json",
+      "mean_biomass": 4541.333333333333,
+      "mean_population": 1135.3333333333333,
+      "name": "taxiA",
+      "per_seed": [
+        1181,
+        1122,
+        1103
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/07.json",
+      "mean_biomass": 3426.6666666666665,
+      "mean_population": 856.6666666666666,
+      "name": "taxiB",
+      "per_seed": [
+        902,
+        823,
+        845
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/08.json",
+      "mean_biomass": 8688.0,
+      "mean_population": 2172.0,
+      "name": "orbiter3",
+      "per_seed": [
+        2155,
+        2190,
+        2171
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/09.json",
+      "mean_biomass": 9269.333333333334,
+      "mean_population": 2317.3333333333335,
+      "name": "orbiter4",
+      "per_seed": [
+        2299,
+        2304,
+        2349
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/fable/genomes/10.json",
+      "mean_biomass": 22675.0,
+      "mean_population": 907.0,
+      "name": "bigorb5",
+      "per_seed": [
+        933,
+        911,
+        877
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

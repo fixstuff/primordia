@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 4132.0,
+      "mean_population": 1033.0,
+      "name": "Sunseed",
+      "per_seed": [
+        1044,
+        1034,
+        1021
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 7178.666666666667,
+      "mean_population": 1794.6666666666667,
+      "name": "Dawn grazer",
+      "per_seed": [
+        1838,
+        1555,
+        1991
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 9582.666666666666,
+      "mean_population": 2395.6666666666665,
+      "name": "Economy grazer",
+      "per_seed": [
+        2565,
+        2140,
+        2482
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 8625.333333333334,
+      "mean_population": 2156.3333333333335,
+      "name": "Longrange grazer",
+      "per_seed": [
+        2195,
+        2068,
+        2206
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 9954.666666666666,
+      "mean_population": 2488.6666666666665,
+      "name": "Slow meadow",
+      "per_seed": [
+        2682,
+        2278,
+        2506
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 9416.0,
+      "mean_population": 2354.0,
+      "name": "Fine grazer",
+      "per_seed": [
+        2513,
+        2126,
+        2423
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "Sun carpet",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 9768.0,
+      "mean_population": 2442.0,
+      "name": "Lean wanderer",
+      "per_seed": [
+        2734,
+        2182,
+        2410
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 12608.0,
+      "mean_population": 3152.0,
+      "name": "Slow sunlight",
+      "per_seed": [
+        3312,
+        3020,
+        3124
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

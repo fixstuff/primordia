@@ -1,0 +1,248 @@
+{
+ "ratings": {
+  "claude-fable-5-2": 1540.8,
+  "claude-opus-5-5": 1526.5,
+  "gpt-5.5": 1510.1,
+  "gpt-6-astra": 1509.1,
+  "deepseek-v4-pro": 1489.1,
+  "scripted-bot": 1424.4
+ },
+ "stats": {
+  "claude-fable-5-2": {
+   "matches": 6,
+   "wins": 3,
+   "rank_sum": 13,
+   "share_sum": 3.7956791960096643,
+   "cost": 38.5412216
+  },
+  "claude-opus-5-5": {
+   "matches": 6,
+   "wins": 1,
+   "rank_sum": 14,
+   "share_sum": 2.8598285014996008,
+   "cost": 3.5632135999999996
+  },
+  "deepseek-v4-pro": {
+   "matches": 6,
+   "wins": 1,
+   "rank_sum": 19,
+   "share_sum": 1.835902177161325,
+   "cost": 0.0
+  },
+  "scripted-bot": {
+   "matches": 6,
+   "wins": 0,
+   "rank_sum": 29,
+   "share_sum": 0.07228396445484271,
+   "cost": 0.0
+  },
+  "gpt-5.5": {
+   "matches": 3,
+   "wins": 1,
+   "rank_sum": 9,
+   "share_sum": 1.241202425391575,
+   "cost": 5.422528999999999
+  },
+  "gpt-6-astra": {
+   "matches": 3,
+   "wins": 0,
+   "rank_sum": 9,
+   "share_sum": 1.1953884075987071,
+   "cost": 3.910408
+  }
+ },
+ "matches": [
+  {
+   "match": "m01-drift-13",
+   "world": "drift",
+   "seed": 13,
+   "standings": [
+    [
+     1,
+     "claude-fable-5-2",
+     5005
+    ],
+    [
+     2,
+     "claude-opus-5-5",
+     1853
+    ],
+    [
+     3,
+     "scripted-bot",
+     225
+    ],
+    [
+     4,
+     "deepseek-v4-pro",
+     195
+    ]
+   ]
+  },
+  {
+   "match": "m02-patchy-13",
+   "world": "patchy",
+   "seed": 13,
+   "standings": [
+    [
+     1,
+     "claude-fable-5-2",
+     6171
+    ],
+    [
+     2,
+     "claude-opus-5-5",
+     1474
+    ],
+    [
+     3,
+     "deepseek-v4-pro",
+     206
+    ],
+    [
+     4,
+     "scripted-bot",
+     25
+    ]
+   ]
+  },
+  {
+   "match": "m03-bloom-13",
+   "world": "bloom",
+   "seed": 13,
+   "standings": [
+    [
+     1,
+     "claude-fable-5-2",
+     3852
+    ],
+    [
+     2,
+     "claude-opus-5-5",
+     2015
+    ],
+    [
+     3,
+     "deepseek-v4-pro",
+     1465
+    ],
+    [
+     4,
+     "scripted-bot",
+     76
+    ]
+   ]
+  },
+  {
+   "match": "m04-drift-14",
+   "world": "drift",
+   "seed": 14,
+   "standings": [
+    [
+     1,
+     "claude-opus-5-5",
+     2968
+    ],
+    [
+     2,
+     "gpt-6-astra",
+     1293
+    ],
+    [
+     3,
+     "claude-fable-5-2",
+     512
+    ],
+    [
+     4,
+     "gpt-5.5",
+     264
+    ],
+    [
+     5,
+     "deepseek-v4-pro",
+     57
+    ],
+    [
+     6,
+     "scripted-bot",
+     0
+    ]
+   ]
+  },
+  {
+   "match": "m05-patchy-14",
+   "world": "patchy",
+   "seed": 14,
+   "standings": [
+    [
+     1,
+     "deepseek-v4-pro",
+     3222
+    ],
+    [
+     2,
+     "claude-opus-5-5",
+     1642
+    ],
+    [
+     3,
+     "claude-fable-5-2",
+     866
+    ],
+    [
+     4,
+     "gpt-5.5",
+     491
+    ],
+    [
+     5,
+     "gpt-6-astra",
+     386
+    ],
+    [
+     6,
+     "scripted-bot",
+     5
+    ]
+   ]
+  },
+  {
+   "match": "m06-bloom-14",
+   "world": "bloom",
+   "seed": 14,
+   "standings": [
+    [
+     1,
+     "gpt-5.5",
+     2782
+    ],
+    [
+     2,
+     "gpt-6-astra",
+     1780
+    ],
+    [
+     3,
+     "deepseek-v4-pro",
+     1012
+    ],
+    [
+     4,
+     "claude-fable-5-2",
+     986
+    ],
+    [
+     5,
+     "claude-opus-5-5",
+     606
+    ],
+    [
+     6,
+     "scripted-bot",
+     6
+    ]
+   ]
+  }
+ ]
+}

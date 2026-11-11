@@ -1,0 +1,50 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Drift Ranger",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -70
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   2,
+   2,
+   0,
+   0,
+   0,
+   -1.7,
+   2,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.06,
+  "size": 0.1
+ }
+}

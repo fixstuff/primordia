@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/opus/genomes/01.json",
+      "mean_biomass": 9290.666666666666,
+      "mean_population": 580.6666666666666,
+      "name": "trackA",
+      "per_seed": [
+        565,
+        573,
+        604
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/opus/genomes/02.json",
+      "mean_biomass": 1317.3333333333333,
+      "mean_population": 82.33333333333333,
+      "name": "trackB",
+      "per_seed": [
+        130,
+        75,
+        42
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/opus/genomes/03.json",
+      "mean_biomass": 23800.0,
+      "mean_population": 238.0,
+      "name": "bigA",
+      "per_seed": [
+        252,
+        229,
+        233
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/opus/genomes/04.json",
+      "mean_biomass": 15333.333333333334,
+      "mean_population": 613.3333333333334,
+      "name": "trackC",
+      "per_seed": [
+        605,
+        612,
+        623
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/opus/genomes/05.json",
+      "mean_biomass": 10954.666666666666,
+      "mean_population": 684.6666666666666,
+      "name": "trackD",
+      "per_seed": [
+        683,
+        677,
+        694
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/opus/genomes/06.json",
+      "mean_biomass": 8010.666666666667,
+      "mean_population": 500.6666666666667,
+      "name": "trackE",
+      "per_seed": [
+        491,
+        503,
+        508
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/opus/genomes/07.json",
+      "mean_biomass": 15488.0,
+      "mean_population": 242.0,
+      "name": "hog",
+      "per_seed": [
+        246,
+        240,
+        240
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/opus/genomes/08.json",
+      "mean_biomass": 10896.0,
+      "mean_population": 302.6666666666667,
+      "name": "hog6",
+      "per_seed": [
+        300,
+        306,
+        302
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m01-drift-13/opus/genomes/09.json",
+      "mean_biomass": 9075.0,
+      "mean_population": 1008.3333333333334,
+      "name": "mini3",
+      "per_seed": [
+        995,
+        1030,
+        1000
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,206 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 8282.666666666666,
+      "mean_population": 2070.6666666666665,
+      "name": "Vent scout",
+      "per_seed": [
+        2074,
+        2094,
+        2044
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 12627.0,
+      "mean_population": 1403.0,
+      "name": "Long-lived gatherer",
+      "per_seed": [
+        1419,
+        1414,
+        1376
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 8382.666666666666,
+      "mean_population": 2095.6666666666665,
+      "name": "Frugal drifter",
+      "per_seed": [
+        2354,
+        1618,
+        2315
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 8662.666666666666,
+      "mean_population": 2165.6666666666665,
+      "name": "Patch keeper",
+      "per_seed": [
+        2220,
+        2134,
+        2143
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 18421.333333333332,
+      "mean_population": 1151.3333333333333,
+      "name": "Reservoir grazer",
+      "per_seed": [
+        1218,
+        1054,
+        1182
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 14608.0,
+      "mean_population": 913.0,
+      "name": "Mobile reservoir",
+      "per_seed": [
+        905,
+        921,
+        913
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 12570.666666666666,
+      "mean_population": 785.6666666666666,
+      "name": "Straight vent colonist",
+      "per_seed": [
+        784,
+        792,
+        781
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 21381.333333333332,
+      "mean_population": 1336.3333333333333,
+      "name": "Persistent spores",
+      "per_seed": [
+        1438,
+        1208,
+        1363
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 7793.333333333333,
+      "mean_population": 1948.3333333333333,
+      "name": "Sensitive patch finder",
+      "per_seed": [
+        1977,
+        1903,
+        1965
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 18677.333333333332,
+      "mean_population": 1167.3333333333333,
+      "name": "Patient patch explorer",
+      "per_seed": [
+        1230,
+        1049,
+        1223
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 12075.0,
+      "mean_population": 1341.6666666666667,
+      "name": "Gradient tracker",
+      "per_seed": [
+        1365,
+        1331,
+        1329
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 13477.333333333334,
+      "mean_population": 842.3333333333334,
+      "name": "Vent navigator",
+      "per_seed": [
+        843,
+        871,
+        813
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/13.json",
+      "mean_biomass": 18000.0,
+      "mean_population": 720.0,
+      "name": "Persistent gradient swimmer",
+      "per_seed": [
+        725,
+        728,
+        707
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/14.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "Dormant vent colonies",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/15.json",
+      "mean_biomass": 7049.333333333333,
+      "mean_population": 1762.3333333333333,
+      "name": "Reverse gradient colonist",
+      "per_seed": [
+        1767,
+        1800,
+        1720
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/16.json",
+      "mean_biomass": 15984.0,
+      "mean_population": 999.0,
+      "name": "Wide gradient grazer",
+      "per_seed": [
+        1069,
+        932,
+        996
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

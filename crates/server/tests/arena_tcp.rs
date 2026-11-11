@@ -20,6 +20,7 @@ fn three_bots_play_a_match_to_the_end() {
         players: 3,
         window_ticks: 250,
         window: Duration::from_secs(20),
+        first_window: None,
         match_ticks: 1500,
         log: Some(log.clone()),
         results: Some(results.clone()),

@@ -1,0 +1,23 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-5.5/genomes/01.json",
+  "name": "MineralSeek-r2-v1",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-5.5/genomes/02.json",
+  "name": "Grazer-r2-static",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m06-bloom-14/gpt-5.5/genomes/03.json",
+  "name": "Grazer-r2-2mouth",
+  "species": 14,
+  "tick": 500
+ }
+]

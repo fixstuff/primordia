@@ -1,0 +1,92 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |      4s] '' calls=['observe']
+[turn  3 | tick      0 |     26s] '' calls=['submit_genome']
+[turn  4 | tick      0 |     34s] '' calls=['release']
+[turn  5 | tick      0 |     46s] '' calls=['submit_genome']
+[turn  6 | tick      0 |     48s] '' calls=['release']
+[turn  7 | tick      0 |     49s] '' calls=['end_turn']
+[turn  8 | tick    500 |    455s] '' calls=['report']
+[turn  9 | tick    500 |    462s] '' calls=['submit_genome']
+[turn 10 | tick    500 |    464s] '' calls=['release']
+[turn 11 | tick    500 |    467s] '' calls=['end_turn']
+[turn 12 | tick   1000 |    634s] '' calls=['report']
+[turn 13 | tick   1000 |    639s] '' calls=['submit_genome']
+[turn 14 | tick   1000 |    641s] '' calls=['release']
+[turn 15 | tick   1000 |    643s] '' calls=['end_turn']
+[turn 16 | tick   1500 |    815s] '' calls=['report']
+[turn 17 | tick   1500 |    819s] '' calls=['release']
+[turn 18 | tick   1500 |    822s] '' calls=['end_turn']
+[turn 19 | tick   2000 |    951s] '' calls=['release']
+[turn 20 | tick   2000 |    952s] '' calls=['end_turn']
+[turn 21 | tick   2500 |   1032s] '' calls=['catalog']
+[turn 22 | tick   2500 |   1040s] '' calls=['submit_genome']
+[turn 23 | tick   2500 |   1042s] '' calls=['release']
+[turn 24 | tick   2500 |   1044s] '' calls=['end_turn']
+[turn 25 | tick   3000 |   1136s] '' calls=['report']
+[turn 26 | tick   3000 |   1140s] '' calls=['submit_genome']
+[turn 27 | tick   3000 |   1142s] '' calls=['release']
+[turn 28 | tick   3000 |   1145s] '' calls=['end_turn']
+[turn 29 | tick   3500 |   1303s] '' calls=['submit_genome']
+[turn 30 | tick   3500 |   1305s] '' calls=['release']
+[turn 31 | tick   3500 |   1307s] '' calls=['end_turn']
+[turn 32 | tick   4000 |   1451s] '' calls=['observe']
+[turn 33 | tick   4000 |   1454s] '' calls=['release']
+[turn 34 | tick   4000 |   1456s] '' calls=['end_turn']
+[turn 35 | tick   4500 |   1574s] '' calls=['submit_genome']
+[turn 36 | tick   4500 |   1576s] '' calls=['release']
+[turn 37 | tick   4500 |   1577s] '' calls=['end_turn']
+[turn 38 | tick   5000 |   1704s] '' calls=['submit_genome']
+[turn 39 | tick   5000 |   1707s] '' calls=['release']
+[turn 40 | tick   5000 |   1708s] '' calls=['end_turn']
+[turn 41 | tick   5500 |   1747s] '' calls=['catalog']
+[turn 42 | tick   5500 |   1750s] '' calls=['report']
+[turn 43 | tick   5500 |   1759s] '' calls=['submit_genome']
+[turn 44 | tick   5500 |   1761s] '' calls=['release']
+[turn 45 | tick   5500 |   1763s] '' calls=['end_turn']
+[turn 46 | tick   6000 |   1836s] '' calls=['report']
+[turn 47 | tick   6000 |   1843s] '' calls=['submit_genome']
+[turn 48 | tick   6000 |   1845s] '' calls=['release']
+[turn 49 | tick   6000 |   1847s] '' calls=['end_turn']
+[turn 50 | tick   6500 |   1974s] '' calls=['submit_genome']
+[turn 51 | tick   6500 |   1979s] '' calls=['submit_genome']
+[turn 52 | tick   6500 |   1982s] '' calls=['release']
+[turn 53 | tick   6500 |   1984s] '' calls=['release']
+[turn 54 | tick   6500 |   1986s] '' calls=['end_turn']
+[turn 55 | tick   7000 |   2010s] '' calls=['observe']
+[turn 56 | tick   7000 |   2019s] '' calls=['submit_genome']
+[turn 57 | tick   7000 |   2021s] '' calls=['release']
+[turn 58 | tick   7000 |   2023s] '' calls=['end_turn']
+[turn 59 | tick   7500 |   2190s] '' calls=['release']
+[turn 60 | tick   7500 |   2191s] '' calls=['end_turn']
+[turn 61 | tick   8000 |   2369s] '' calls=['catalog']
+[turn 62 | tick   8000 |   2374s] '' calls=['submit_genome']
+[turn 63 | tick   8000 |   2376s] '' calls=['release']
+[turn 64 | tick   8000 |   2378s] '' calls=['end_turn']
+[turn 65 | tick   8500 |   2550s] '' calls=['release']
+[turn 66 | tick   8500 |   2554s] '' calls=['end_turn']
+[turn 67 | tick   9000 |   2731s] '' calls=['report']
+[turn 68 | tick   9000 |   2742s] '' calls=['submit_genome']
+[turn 69 | tick   9000 |   2744s] '' calls=['release']
+[turn 70 | tick   9000 |   2746s] '' calls=['end_turn']
+[turn 71 | tick   9500 |   2908s] '' calls=['release']
+[turn 72 | tick   9500 |   2911s] '' calls=['end_turn']
+
+ended at tick 10000 after 72 turns, 16 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 Drift Scout              submitted at tick      0: 875.3333333333334
+  # 2 Drift Ranger             submitted at tick      0: 765.0
+  # 3 Vent Grazer              submitted at tick    500: 1515.6666666666667
+  # 4 Drift Tracker            submitted at tick   1000: 919.3333333333334
+  # 5 Double Ranger            submitted at tick   2500: 664.0
+  # 6 Agile Ranger             submitted at tick   3000: 751.6666666666666
+  # 7 Sharp Tracker            submitted at tick   3500: 804.6666666666666
+  # 8 Reverse Tracker          submitted at tick   4500: 78.66666666666667
+  # 9 Vent Harvester           submitted at tick   5000: 703.0
+  #10 Patient tracker          submitted at tick   5500: 1280.3333333333333
+  #11 Sharp positive           submitted at tick   6000: 992.3333333333334
+  #12 Micro positive           submitted at tick   6500: 1204.0
+  #13 Reverse seeker           submitted at tick   6500: 123.33333333333333
+  #14 Balanced forager         submitted at tick   7000: 1070.6666666666667
+  #15 Balanced large forager   submitted at tick   8000: 916.0
+  #16 Linear drift follower    submitted at tick   9000: 1122.0

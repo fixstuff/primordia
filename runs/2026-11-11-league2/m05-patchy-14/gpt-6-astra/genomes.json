@@ -1,0 +1,114 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/01.json",
+  "name": "Vent scout",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/02.json",
+  "name": "Long-lived gatherer",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/03.json",
+  "name": "Frugal drifter",
+  "species": 13,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/04.json",
+  "name": "Patch keeper",
+  "species": 21,
+  "tick": 1000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/05.json",
+  "name": "Reservoir grazer",
+  "species": 27,
+  "tick": 1500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/06.json",
+  "name": "Mobile reservoir",
+  "species": 31,
+  "tick": 2000
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/07.json",
+  "name": "Straight vent colonist",
+  "species": 38,
+  "tick": 2500
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/08.json",
+  "name": "Persistent spores",
+  "species": 44,
+  "tick": 3000
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/09.json",
+  "name": "Sensitive patch finder",
+  "species": 45,
+  "tick": 3500
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/10.json",
+  "name": "Patient patch explorer",
+  "species": 50,
+  "tick": 4000
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/11.json",
+  "name": "Gradient tracker",
+  "species": 51,
+  "tick": 4500
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/12.json",
+  "name": "Vent navigator",
+  "species": 55,
+  "tick": 5000
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/13.json",
+  "name": "Persistent gradient swimmer",
+  "species": 59,
+  "tick": 5500
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/14.json",
+  "name": "Dormant vent colonies",
+  "species": 62,
+  "tick": 6500
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/15.json",
+  "name": "Reverse gradient colonist",
+  "species": 65,
+  "tick": 7000
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m05-patchy-14/gpt-6-astra/genomes/16.json",
+  "name": "Wide gradient grazer",
+  "species": 70,
+  "tick": 8000
+ }
+]

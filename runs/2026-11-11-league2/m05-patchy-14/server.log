@@ -1,0 +1,3 @@
+lifeapi-server: ARENA for 6 players, 10000 ticks in windows of 500 ticks / 180s
+lifeapi-server: world patchy seed 14, API on 127.0.0.1:4610
+lifeapi-server: viewer on http://127.0.0.1:4611/

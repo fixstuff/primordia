@@ -1,0 +1,114 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_chemotax_5mouth_J",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.35
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -55
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 55
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -55
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 55
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   2,
+   -2,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   -2,
+   2,
+   -1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0.5,
+   0.5,
+   1,
+   0.5,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   2,
+   0.5,
+   -0.2,
+   -2,
+   2,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.03
+ }
+}

@@ -1,0 +1,326 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/01.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "test_zero",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/02.json",
+      "mean_biomass": 894.6666666666666,
+      "mean_population": 223.66666666666666,
+      "name": "trackA",
+      "per_seed": [
+        231,
+        218,
+        222
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/03.json",
+      "mean_biomass": 830.6666666666666,
+      "mean_population": 207.66666666666666,
+      "name": "trackB",
+      "per_seed": [
+        201,
+        189,
+        233
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/04.json",
+      "mean_biomass": 1170.6666666666667,
+      "mean_population": 292.6666666666667,
+      "name": "trackC",
+      "per_seed": [
+        260,
+        345,
+        273
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/05.json",
+      "mean_biomass": 1017.3333333333334,
+      "mean_population": 254.33333333333334,
+      "name": "trackD",
+      "per_seed": [
+        248,
+        251,
+        264
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/06.json",
+      "mean_biomass": 1298.6666666666667,
+      "mean_population": 324.6666666666667,
+      "name": "sugarG",
+      "per_seed": [
+        310,
+        337,
+        327
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/07.json",
+      "mean_biomass": 1384.0,
+      "mean_population": 346.0,
+      "name": "sugarH",
+      "per_seed": [
+        349,
+        348,
+        341
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/08.json",
+      "mean_biomass": 1233.3333333333333,
+      "mean_population": 308.3333333333333,
+      "name": "gateI",
+      "per_seed": [
+        317,
+        302,
+        306
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/09.json",
+      "mean_biomass": 1230.6666666666667,
+      "mean_population": 307.6666666666667,
+      "name": "gateJ",
+      "per_seed": [
+        309,
+        302,
+        312
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/10.json",
+      "mean_biomass": 1253.3333333333333,
+      "mean_population": 313.3333333333333,
+      "name": "cycleK",
+      "per_seed": [
+        303,
+        313,
+        324
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/11.json",
+      "mean_biomass": 1269.3333333333333,
+      "mean_population": 317.3333333333333,
+      "name": "cycleL",
+      "per_seed": [
+        312,
+        317,
+        323
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/12.json",
+      "mean_biomass": 1572.0,
+      "mean_population": 393.0,
+      "name": "cycleM",
+      "per_seed": [
+        366,
+        422,
+        391
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/13.json",
+      "mean_biomass": 1641.3333333333333,
+      "mean_population": 410.3333333333333,
+      "name": "cycleN",
+      "per_seed": [
+        459,
+        397,
+        375
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/14.json",
+      "mean_biomass": 1489.3333333333333,
+      "mean_population": 372.3333333333333,
+      "name": "cycleP",
+      "per_seed": [
+        363,
+        388,
+        366
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/15.json",
+      "mean_biomass": 1426.6666666666667,
+      "mean_population": 356.6666666666667,
+      "name": "cycleQ",
+      "per_seed": [
+        351,
+        380,
+        339
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/16.json",
+      "mean_biomass": 1572.0,
+      "mean_population": 393.0,
+      "name": "cycleR",
+      "per_seed": [
+        373,
+        441,
+        365
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/17.json",
+      "mean_biomass": 1542.6666666666667,
+      "mean_population": 385.6666666666667,
+      "name": "cycleS",
+      "per_seed": [
+        374,
+        395,
+        388
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/18.json",
+      "mean_biomass": 4586.666666666667,
+      "mean_population": 286.6666666666667,
+      "name": "sugarR4",
+      "per_seed": [
+        284,
+        294,
+        282
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/19.json",
+      "mean_biomass": 2904.0,
+      "mean_population": 322.6666666666667,
+      "name": "sugarR3",
+      "per_seed": [
+        320,
+        317,
+        331
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/20.json",
+      "mean_biomass": 1740.0,
+      "mean_population": 435.0,
+      "name": "sugarI",
+      "per_seed": [
+        373,
+        533,
+        399
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/21.json",
+      "mean_biomass": 3288.0,
+      "mean_population": 365.3333333333333,
+      "name": "sugarR3c",
+      "per_seed": [
+        346,
+        415,
+        335
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/22.json",
+      "mean_biomass": 1736.0,
+      "mean_population": 434.0,
+      "name": "sugarM",
+      "per_seed": [
+        444,
+        434,
+        424
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/23.json",
+      "mean_biomass": 1460.0,
+      "mean_population": 365.0,
+      "name": "cruiseR2",
+      "per_seed": [
+        388,
+        374,
+        333
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/24.json",
+      "mean_biomass": 3195.0,
+      "mean_population": 355.0,
+      "name": "cruiseR3",
+      "per_seed": [
+        347,
+        347,
+        371
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/25.json",
+      "mean_biomass": 1468.0,
+      "mean_population": 367.0,
+      "name": "sugarI2",
+      "per_seed": [
+        390,
+        400,
+        311
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/deepseek/genomes/26.json",
+      "mean_biomass": 3048.0,
+      "mean_population": 338.6666666666667,
+      "name": "sugarR3i",
+      "per_seed": [
+        348,
+        333,
+        335
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,114 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/01.json",
+  "name": "Drift Scout",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/02.json",
+  "name": "Drift Ranger",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/03.json",
+  "name": "Vent Grazer",
+  "species": 13,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/04.json",
+  "name": "Drift Tracker",
+  "species": 18,
+  "tick": 1000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/05.json",
+  "name": "Double Ranger",
+  "species": 33,
+  "tick": 2500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/06.json",
+  "name": "Agile Ranger",
+  "species": 37,
+  "tick": 3000
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/07.json",
+  "name": "Sharp Tracker",
+  "species": 42,
+  "tick": 3500
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/08.json",
+  "name": "Reverse Tracker",
+  "species": 50,
+  "tick": 4500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/09.json",
+  "name": "Vent Harvester",
+  "species": 54,
+  "tick": 5000
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/10.json",
+  "name": "Patient tracker",
+  "species": 58,
+  "tick": 5500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/11.json",
+  "name": "Sharp positive",
+  "species": 62,
+  "tick": 6000
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/12.json",
+  "name": "Micro positive",
+  "species": 64,
+  "tick": 6500
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/13.json",
+  "name": "Reverse seeker",
+  "species": 65,
+  "tick": 6500
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/14.json",
+  "name": "Balanced forager",
+  "species": 66,
+  "tick": 7000
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/15.json",
+  "name": "Balanced large forager",
+  "species": 72,
+  "tick": 8000
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m04-drift-14/gpt-6-astra/genomes/16.json",
+  "name": "Linear drift follower",
+  "species": 74,
+  "tick": 9000
+ }
+]

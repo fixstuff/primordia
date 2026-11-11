@@ -23,9 +23,10 @@ fn main() {
     let mut arena: Option<ArenaConfig> = None;
     let (mut window_ticks, mut window_secs, mut match_ticks) = (500u64, 120f64, 10_000u64);
     let (mut log, mut results) = (None, None);
+    let mut first_window_secs: Option<f64> = None;
     let mut args = std::env::args().skip(1);
     let usage = "usage: lifeapi-server [--addr HOST:PORT] [--http HOST:PORT | --no-viewer] [--seed N] \
-                 [--world NAME|FILE] [--arena PLAYERS [--window-ticks N] [--window-secs S] [--match-ticks N] \
+                 [--world NAME|FILE] [--arena PLAYERS [--window-ticks N] [--window-secs S] [--first-window-secs S] [--match-ticks N] \
                  [--log FILE] [--results FILE]]";
     while let Some(a) = args.next() {
         let mut val = || args.next().unwrap_or_else(|| panic!("{a} needs a value"));
@@ -40,6 +41,7 @@ fn main() {
                     players: val().parse().expect("--arena PLAYERS"),
                     window_ticks: 0,
                     window: Duration::ZERO,
+                    first_window: None,
                     match_ticks: 0,
                     log: None,
                     results: None,
@@ -47,6 +49,7 @@ fn main() {
             }
             "--window-ticks" => window_ticks = val().parse().expect("number"),
             "--window-secs" => window_secs = val().parse().expect("number"),
+            "--first-window-secs" => first_window_secs = Some(val().parse::<f64>().expect("number")),
             "--match-ticks" => match_ticks = val().parse().expect("number"),
             "--log" => log = Some(val().into()),
             "--results" => results = Some(val().into()),
@@ -77,6 +80,7 @@ fn main() {
         Some(mut cfg) => {
             cfg.window_ticks = window_ticks;
             cfg.window = Duration::from_secs_f64(window_secs);
+            cfg.first_window = first_window_secs.map(Duration::from_secs_f64);
             cfg.match_ticks = match_ticks;
             cfg.log = log;
             cfg.results = results;

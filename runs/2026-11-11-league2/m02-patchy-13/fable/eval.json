@@ -1,0 +1,182 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/01.json",
+      "mean_biomass": 17533.333333333332,
+      "mean_population": 175.33333333333334,
+      "name": "BigPlus",
+      "per_seed": [
+        180,
+        173,
+        173
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/02.json",
+      "mean_biomass": 733.3333333333334,
+      "mean_population": 7.333333333333333,
+      "name": "BigMinus",
+      "per_seed": [
+        1,
+        9,
+        12
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/03.json",
+      "mean_biomass": 11450.0,
+      "mean_population": 458.0,
+      "name": "SmallPlus",
+      "per_seed": [
+        435,
+        449,
+        490
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/04.json",
+      "mean_biomass": 5558.333333333333,
+      "mean_population": 222.33333333333334,
+      "name": "SmallMinus",
+      "per_seed": [
+        390,
+        145,
+        132
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/05.json",
+      "mean_biomass": 18800.0,
+      "mean_population": 188.0,
+      "name": "Homing10",
+      "per_seed": [
+        193,
+        194,
+        177
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/06.json",
+      "mean_biomass": 12380.666666666666,
+      "mean_population": 252.66666666666666,
+      "name": "Commuter7",
+      "per_seed": [
+        248,
+        256,
+        254
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/07.json",
+      "mean_biomass": 12429.666666666666,
+      "mean_population": 253.66666666666666,
+      "name": "Commuter7b",
+      "per_seed": [
+        252,
+        259,
+        250
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/08.json",
+      "mean_biomass": 18266.666666666668,
+      "mean_population": 182.66666666666666,
+      "name": "Commuter10b",
+      "per_seed": [
+        180,
+        191,
+        177
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/09.json",
+      "mean_biomass": 22032.0,
+      "mean_population": 272.0,
+      "name": "Efficient9",
+      "per_seed": [
+        282,
+        266,
+        268
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/10.json",
+      "mean_biomass": 19233.333333333332,
+      "mean_population": 192.33333333333334,
+      "name": "Tight10",
+      "per_seed": [
+        192,
+        194,
+        191
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/11.json",
+      "mean_biomass": 21735.0,
+      "mean_population": 268.3333333333333,
+      "name": "Lean9",
+      "per_seed": [
+        278,
+        264,
+        263
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/12.json",
+      "mean_biomass": 20714.666666666668,
+      "mean_population": 323.6666666666667,
+      "name": "Lean8",
+      "per_seed": [
+        334,
+        315,
+        322
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/13.json",
+      "mean_biomass": 18410.666666666668,
+      "mean_population": 287.6666666666667,
+      "name": "Lean8b",
+      "per_seed": [
+        278,
+        299,
+        286
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league2/m02-patchy-13/fable/genomes/14.json",
+      "mean_biomass": 18133.333333333332,
+      "mean_population": 283.3333333333333,
+      "name": "Grazer8",
+      "per_seed": [
+        282,
+        293,
+        275
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

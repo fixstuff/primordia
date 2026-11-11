@@ -1,0 +1,96 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "mini2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.33
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -90
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 9,
+  "weights": [
+   4,
+   -4,
+   4,
+   -2.4,
+   -4,
+   4,
+   4,
+   -2.4,
+   4,
+   -4,
+   4,
+   -2.4,
+   -4,
+   4,
+   4,
+   -2.4,
+   4,
+   -4,
+   4,
+   -0.6,
+   -4,
+   4,
+   4,
+   -0.6,
+   4,
+   -4,
+   3.3,
+   -4,
+   -4,
+   4,
+   3.3,
+   -4,
+   4,
+   4,
+   0,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -0.8,
+   1.2,
+   4,
+   -4,
+   4,
+   -4,
+   4,
+   -4,
+   -4,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

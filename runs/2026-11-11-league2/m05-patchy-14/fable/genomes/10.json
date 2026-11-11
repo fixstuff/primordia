@@ -1,0 +1,114 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "creep5m5",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 10,
+  "weights": [
+   4,
+   -4,
+   4,
+   -2.4,
+   -4,
+   4,
+   4,
+   -2.4,
+   4,
+   -4,
+   4,
+   -2.4,
+   -4,
+   4,
+   4,
+   -2.4,
+   4,
+   -4,
+   4,
+   -0.6,
+   -4,
+   4,
+   4,
+   -0.6,
+   4,
+   -4,
+   3.3,
+   -4,
+   -4,
+   4,
+   3.3,
+   -4,
+   4,
+   4,
+   0,
+   -1,
+   0,
+   0,
+   4,
+   -3.3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1.5,
+   0.68,
+   2.25,
+   4,
+   -4,
+   4,
+   -4,
+   4,
+   -4,
+   -4,
+   4,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

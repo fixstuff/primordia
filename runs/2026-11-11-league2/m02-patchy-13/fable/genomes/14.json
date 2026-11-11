@@ -1,0 +1,145 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Grazer8",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 8
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 180,
+   "chemical": "sugar"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 10,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -2,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   2,
+   0,
+   0,
+   4,
+   -4,
+   4,
+   -2,
+   0,
+   0,
+   4,
+   -4,
+   -4,
+   2,
+   -4,
+   -4,
+   -4,
+   -4,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -3.8,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -2,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   2,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -2,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   2,
+   0,
+   0,
+   4,
+   4,
+   3,
+   4,
+   0,
+   0,
+   0,
+   0,
+   2.56,
+   4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   4,
+   4,
+   4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

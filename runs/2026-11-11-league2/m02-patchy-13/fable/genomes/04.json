@@ -1,0 +1,99 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "SmallMinus",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "mineral"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 6,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   4,
+   0,
+   0,
+   0,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -3.4,
+   0,
+   0,
+   0,
+   0,
+   -2,
+   2,
+   2,
+   -4,
+   -4,
+   -4,
+   -4,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}
