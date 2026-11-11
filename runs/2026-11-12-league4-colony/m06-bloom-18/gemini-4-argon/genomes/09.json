@@ -1,0 +1,65 @@
+{
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   2,
+   2,
+   0,
+   -0.5,
+   0,
+   0.4,
+   1,
+   3,
+   0,
+   0.02
+  ],
+  "hidden": 2
+ },
+ "body": [
+  {
+   "radius": 2.8,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "power": 0.5,
+   "part": "camouflage"
+  },
+  {
+   "power": 0.5,
+   "part": "spikes"
+  },
+  {
+   "angle": 32,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -32,
+   "chemical": "sugar"
+  }
+ ],
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "name": "lean_r28",
+ "schema": "lifeapi.genome/1"
+}

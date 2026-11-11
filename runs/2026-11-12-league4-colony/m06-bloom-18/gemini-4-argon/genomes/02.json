@@ -1,0 +1,98 @@
+{
+ "name": "forager_A_r35",
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.08
+ },
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3.5,
+   -3.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   0,
+   0,
+   2,
+   2,
+   1.5,
+   1.5,
+   0,
+   -0.5,
+   0,
+   0,
+   0,
+   0,
+   3,
+   -1.8,
+   0,
+   0,
+   0.5,
+   0,
+   1.2,
+   2.5,
+   2,
+   0,
+   0,
+   0.03
+  ]
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.7
+  },
+  {
+   "part": "jaw",
+   "power": 0.5
+  },
+  {
+   "part": "toxin",
+   "power": 0.4
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "angle": -35,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  }
+ ]
+}

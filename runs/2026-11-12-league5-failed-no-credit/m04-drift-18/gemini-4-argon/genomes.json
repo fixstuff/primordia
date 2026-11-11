@@ -1,0 +1,58 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gemini-4-argon/genomes/01.json",
+  "name": "Forager_A",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gemini-4-argon/genomes/02.json",
+  "name": "Shelled_A",
+  "species": 10,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gemini-4-argon/genomes/03.json",
+  "name": "Forager_B",
+  "species": 11,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gemini-4-argon/genomes/04.json",
+  "name": "Shelled_B",
+  "species": 12,
+  "tick": 0
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gemini-4-argon/genomes/05.json",
+  "name": "ApexOmni_A",
+  "species": 13,
+  "tick": 0
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gemini-4-argon/genomes/06.json",
+  "name": "ApexOmni_B",
+  "species": 14,
+  "tick": 0
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gemini-4-argon/genomes/07.json",
+  "name": "Micro_A",
+  "species": 15,
+  "tick": 0
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gemini-4-argon/genomes/08.json",
+  "name": "Micro_B",
+  "species": 16,
+  "tick": 0
+ }
+]

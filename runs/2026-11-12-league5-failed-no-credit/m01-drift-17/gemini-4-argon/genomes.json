@@ -1,0 +1,79 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/01.json",
+  "name": "test_probe",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/02.json",
+  "name": "grazer_A",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/03.json",
+  "name": "grazer_B",
+  "species": 10,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/04.json",
+  "name": "heavy_grazer_A",
+  "species": 11,
+  "tick": 0
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/05.json",
+  "name": "heavy_grazer_B",
+  "species": 12,
+  "tick": 0
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/06.json",
+  "name": "micro_grazer_A",
+  "species": 13,
+  "tick": 0
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/07.json",
+  "name": "micro_grazer_B",
+  "species": 14,
+  "tick": 0
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/08.json",
+  "name": "lean_grazer_A",
+  "species": 15,
+  "tick": 0
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/09.json",
+  "name": "lean_grazer_B",
+  "species": 16,
+  "tick": 0
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/10.json",
+  "name": "omnivore_hunter_A",
+  "species": 17,
+  "tick": 0
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/11.json",
+  "name": "omnivore_hunter_B",
+  "species": 18,
+  "tick": 0
+ }
+]

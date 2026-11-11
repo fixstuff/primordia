@@ -1,0 +1,54 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "SpiralGrazer_r2_const_v2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.35
+  },
+  {
+   "part": "cilia",
+   "power": 0.45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   2,
+   4,
+   0,
+   0,
+   1
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.6
+ }
+}

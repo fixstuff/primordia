@@ -1,0 +1,102 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "CamoMicroGrazer_r2_v1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.65
+  },
+  {
+   "part": "cilia",
+   "power": 0.9
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 50
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "spikes",
+   "power": 0.4
+  }
+ ],
+ "brain": {
+  "hidden": 5,
+  "weights": [
+   2,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   0,
+   0,
+   -2,
+   2,
+   -1.5,
+   1.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -2,
+   1.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2,
+   2,
+   1.5,
+   1.5,
+   -0.5,
+   0.8,
+   0,
+   0,
+   3,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.2
+ }
+}

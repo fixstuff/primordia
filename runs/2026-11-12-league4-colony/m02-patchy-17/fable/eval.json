@@ -1,0 +1,158 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/01.json",
+      "mean_biomass": 25153.333333333332,
+      "mean_population": 128.33333333333334,
+      "name": "bigjaw",
+      "per_seed": [
+        131,
+        127,
+        127
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/02.json",
+      "mean_biomass": 26133.333333333332,
+      "mean_population": 133.33333333333334,
+      "name": "bigspike",
+      "per_seed": [
+        131,
+        129,
+        140
+      ]
+    },
+    {
+      "extinct": 1,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/03.json",
+      "mean_biomass": 522.6666666666666,
+      "mean_population": 2.6666666666666665,
+      "name": "bigspike_flip",
+      "per_seed": [
+        1,
+        0,
+        7
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/04.json",
+      "mean_biomass": 26133.333333333332,
+      "mean_population": 133.33333333333334,
+      "name": "hunter",
+      "per_seed": [
+        136,
+        132,
+        132
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/05.json",
+      "mean_biomass": 23912.0,
+      "mean_population": 122.0,
+      "name": "bigjaw7",
+      "per_seed": [
+        124,
+        120,
+        122
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/06.json",
+      "mean_biomass": 25610.666666666668,
+      "mean_population": 130.66666666666666,
+      "name": "grazer8",
+      "per_seed": [
+        130,
+        129,
+        133
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/07.json",
+      "mean_biomass": 25022.666666666668,
+      "mean_population": 127.66666666666667,
+      "name": "camper",
+      "per_seed": [
+        133,
+        130,
+        120
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/08.json",
+      "mean_biomass": 17796.0,
+      "mean_population": 494.3333333333333,
+      "name": "grazer6",
+      "per_seed": [
+        498,
+        500,
+        485
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/09.json",
+      "mean_biomass": 4977.0,
+      "mean_population": 553.0,
+      "name": "nipper",
+      "per_seed": [
+        563,
+        555,
+        541
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/10.json",
+      "mean_biomass": 15624.0,
+      "mean_population": 434.0,
+      "name": "grazer6m4",
+      "per_seed": [
+        438,
+        438,
+        426
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/11.json",
+      "mean_biomass": 10266.666666666666,
+      "mean_population": 641.6666666666666,
+      "name": "mite4",
+      "per_seed": [
+        638,
+        653,
+        634
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/fable/genomes/12.json",
+      "mean_biomass": 8373.0,
+      "mean_population": 930.3333333333334,
+      "name": "mite3",
+      "per_seed": [
+        921,
+        934,
+        936
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,86 @@
+{
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 1,
+   "part": "jaw"
+  },
+  {
+   "thickness": 0.4,
+   "part": "shell"
+  },
+  {
+   "power": 0.4,
+   "part": "toxin"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.65
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 30,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -30,
+   "chemical": "organism"
+  }
+ ],
+ "name": "apex_omnivore_34",
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   2,
+   -2,
+   2,
+   -2,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0.5,
+   0,
+   1,
+   1,
+   2,
+   0,
+   0
+  ],
+  "hidden": 2
+ }
+}

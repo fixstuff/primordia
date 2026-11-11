@@ -1,0 +1,266 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 5814.666666666667,
+      "mean_population": 1453.6666666666667,
+      "name": "Pioneer",
+      "per_seed": [
+        1496,
+        1359,
+        1506
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 17525.0,
+      "mean_population": 701.0,
+      "name": "Grazer",
+      "per_seed": [
+        708,
+        688,
+        707
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 1678.6666666666667,
+      "mean_population": 419.6666666666667,
+      "name": "Bloom",
+      "per_seed": [
+        415,
+        444,
+        400
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 8127.0,
+      "mean_population": 903.0,
+      "name": "Hunter",
+      "per_seed": [
+        912,
+        875,
+        922
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 5966.666666666667,
+      "mean_population": 1491.6666666666667,
+      "name": "Forager",
+      "per_seed": [
+        1480,
+        1488,
+        1507
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 4404.0,
+      "mean_population": 1101.0,
+      "name": "Ghost",
+      "per_seed": [
+        1113,
+        978,
+        1212
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 17558.333333333332,
+      "mean_population": 358.3333333333333,
+      "name": "Bastion",
+      "per_seed": [
+        375,
+        330,
+        370
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 13393.333333333334,
+      "mean_population": 68.33333333333333,
+      "name": "Leviathan",
+      "per_seed": [
+        76,
+        61,
+        68
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 11925.0,
+      "mean_population": 53.0,
+      "name": "Dreadnought",
+      "per_seed": [
+        59,
+        46,
+        54
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 25414.666666666668,
+      "mean_population": 129.66666666666666,
+      "name": "Siege",
+      "per_seed": [
+        135,
+        126,
+        128
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 3850.6666666666665,
+      "mean_population": 962.6666666666666,
+      "name": "Ghost",
+      "per_seed": [
+        996,
+        891,
+        1001
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 4401.333333333333,
+      "mean_population": 1100.3333333333333,
+      "name": "Armored seed",
+      "per_seed": [
+        1179,
+        966,
+        1156
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/13.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "Quiet grass",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/14.json",
+      "mean_biomass": 10792.0,
+      "mean_population": 2698.0,
+      "name": "Fortress grass",
+      "per_seed": [
+        2787,
+        2626,
+        2681
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/15.json",
+      "mean_biomass": 21952.0,
+      "mean_population": 448.0,
+      "name": "Ambush garden",
+      "per_seed": [
+        477,
+        408,
+        459
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/16.json",
+      "mean_biomass": 4485.0,
+      "mean_population": 498.3333333333333,
+      "name": "Roaming thorn",
+      "per_seed": [
+        511,
+        468,
+        516
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/17.json",
+      "mean_biomass": 3514.6666666666665,
+      "mean_population": 878.6666666666666,
+      "name": "Drift bloom",
+      "per_seed": [
+        956,
+        806,
+        874
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/18.json",
+      "mean_biomass": 11841.0,
+      "mean_population": 1315.6666666666667,
+      "name": "Hidden meadow",
+      "per_seed": [
+        1362,
+        1287,
+        1298
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/19.json",
+      "mean_biomass": 8184.0,
+      "mean_population": 909.3333333333334,
+      "name": "Hidden wanderer",
+      "per_seed": [
+        906,
+        883,
+        939
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/20.json",
+      "mean_biomass": 13391.666666666666,
+      "mean_population": 535.6666666666666,
+      "name": "Armored gleaner",
+      "per_seed": [
+        549,
+        515,
+        543
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/21.json",
+      "mean_biomass": 2568.0,
+      "mean_population": 642.0,
+      "name": "Rapid scavenger",
+      "per_seed": [
+        678,
+        600,
+        648
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

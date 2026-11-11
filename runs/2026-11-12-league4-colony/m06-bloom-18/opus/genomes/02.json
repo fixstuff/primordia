@@ -1,0 +1,80 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "spiky6",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "part": "cilia",
+   "power": 0.3
+  },
+  {
+   "part": "spikes",
+   "power": 0.6
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "mineral"
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   2,
+   0,
+   2,
+   1,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.2
+ }
+}

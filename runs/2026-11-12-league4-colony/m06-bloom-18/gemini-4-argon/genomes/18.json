@@ -1,0 +1,79 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "stinger_lean_r235",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   3.5,
+   -3.5,
+   0,
+   0,
+   2.5,
+   2.5,
+   3,
+   3,
+   0,
+   -0.7,
+   0,
+   0.5,
+   0.75,
+   2.8,
+   0,
+   0.02
+  ]
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.35
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "part": "cilia",
+   "power": 0.65
+  },
+  {
+   "power": 0.9,
+   "part": "stinger"
+  },
+  {
+   "part": "toxin",
+   "power": 0.6
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 38,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -38,
+   "chemical": "sugar"
+  },
+  {
+   "angle": 22,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -22,
+   "chemical": "organism"
+  }
+ ],
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ }
+}

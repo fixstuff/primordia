@@ -1,0 +1,74 @@
+{
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -3,
+   3,
+   -2.5,
+   2.5,
+   0,
+   0,
+   2,
+   2,
+   2,
+   2,
+   -0.2,
+   -0.3,
+   0,
+   1,
+   1.5,
+   -2.5,
+   0,
+   0.08
+  ]
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.75,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "angle": 35,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  }
+ ],
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.12
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "Forager_Minus"
+}

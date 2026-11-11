@@ -1,0 +1,53 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r3_camo_spike_grazer_G",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "spikes",
+   "power": 0.8
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 6
+ },
+ "mutation": {
+  "rate": 0.2,
+  "size": 0.35
+ }
+}

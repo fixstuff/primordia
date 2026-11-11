@@ -1,0 +1,90 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_camo_doublemouth_balanced_E",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -55
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 55
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -55
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 55
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3,
+   3,
+   0,
+   0,
+   -1,
+   0,
+   -3,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   3,
+   -1,
+   0,
+   0,
+   0,
+   -3,
+   3,
+   0,
+   0,
+   3,
+   0,
+   2,
+   0,
+   0.8,
+   2,
+   -3,
+   0,
+   3,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.12
+ }
+}

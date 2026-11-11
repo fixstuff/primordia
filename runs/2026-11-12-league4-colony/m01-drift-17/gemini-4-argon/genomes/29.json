@@ -1,0 +1,72 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "stinger",
+   "power": 0.8
+  },
+  {
+   "thickness": 0.65,
+   "part": "shell"
+  },
+  {
+   "power": 0.55,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "angle": 25,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -25
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   2.5,
+   -2.5,
+   0,
+   0,
+   0,
+   2.8,
+   3.8,
+   0.05
+  ]
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "KillerApex_5_2",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ }
+}

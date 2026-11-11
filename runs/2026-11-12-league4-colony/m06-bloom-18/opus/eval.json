@@ -1,0 +1,182 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/01.json",
+      "mean_biomass": 11136.0,
+      "mean_population": 696.0,
+      "name": "grazer4",
+      "per_seed": [
+        706,
+        699,
+        683
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/02.json",
+      "mean_biomass": 17508.0,
+      "mean_population": 486.3333333333333,
+      "name": "spiky6",
+      "per_seed": [
+        496,
+        487,
+        476
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/03.json",
+      "mean_biomass": 18156.0,
+      "mean_population": 504.3333333333333,
+      "name": "spiky6b",
+      "per_seed": [
+        519,
+        492,
+        502
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/04.json",
+      "mean_biomass": 10433.333333333334,
+      "mean_population": 417.3333333333333,
+      "name": "fast5",
+      "per_seed": [
+        410,
+        438,
+        404
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/05.json",
+      "mean_biomass": 18880.0,
+      "mean_population": 295.0,
+      "name": "hunter8",
+      "per_seed": [
+        299,
+        297,
+        289
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/06.json",
+      "mean_biomass": 22416.0,
+      "mean_population": 622.6666666666666,
+      "name": "lean6",
+      "per_seed": [
+        646,
+        606,
+        616
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/07.json",
+      "mean_biomass": 11808.0,
+      "mean_population": 738.0,
+      "name": "ventsit4",
+      "per_seed": [
+        726,
+        748,
+        740
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/08.json",
+      "mean_biomass": 6194.666666666667,
+      "mean_population": 1548.6666666666667,
+      "name": "mite2",
+      "per_seed": [
+        1517,
+        1544,
+        1585
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/09.json",
+      "mean_biomass": 2734.6666666666665,
+      "mean_population": 683.6666666666666,
+      "name": "dart2",
+      "per_seed": [
+        770,
+        581,
+        700
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/10.json",
+      "mean_biomass": 11016.666666666666,
+      "mean_population": 440.6666666666667,
+      "name": "hunter5",
+      "per_seed": [
+        438,
+        443,
+        441
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/11.json",
+      "mean_biomass": 10494.0,
+      "mean_population": 1166.0,
+      "name": "turtle3",
+      "per_seed": [
+        1159,
+        1166,
+        1173
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/12.json",
+      "mean_biomass": 13581.0,
+      "mean_population": 1509.0,
+      "name": "slowturtle3",
+      "per_seed": [
+        1554,
+        1499,
+        1474
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/13.json",
+      "mean_biomass": 7532.0,
+      "mean_population": 1883.0,
+      "name": "turtle2",
+      "per_seed": [
+        1857,
+        1942,
+        1850
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/opus/genomes/14.json",
+      "mean_biomass": 5523.0,
+      "mean_population": 613.6666666666666,
+      "name": "biter3",
+      "per_seed": [
+        627,
+        598,
+        616
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,50 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 3174.6666666666665,
+      "mean_population": 793.6666666666666,
+      "name": "Swift Grazer",
+      "per_seed": [
+        765,
+        803,
+        813
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 9696.0,
+      "mean_population": 606.0,
+      "name": "Wide Grazer",
+      "per_seed": [
+        602,
+        608,
+        608
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 1416.0,
+      "mean_population": 354.0,
+      "name": "Dense Grazer",
+      "per_seed": [
+        358,
+        346,
+        358
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

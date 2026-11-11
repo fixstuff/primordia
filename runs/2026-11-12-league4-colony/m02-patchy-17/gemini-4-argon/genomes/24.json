@@ -1,0 +1,87 @@
+{
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 14.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.95
+  },
+  {
+   "power": 0.95,
+   "part": "cilia"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  },
+  {
+   "part": "toxin",
+   "power": 0.8
+  },
+  {
+   "angle": -35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  }
+ ],
+ "name": "MegaMouth_r145_Pos",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -3.8,
+   3.8,
+   0,
+   0,
+   2,
+   2,
+   0,
+   -0.5,
+   0,
+   0.1,
+   1.4,
+   3.5,
+   0,
+   0.06
+  ]
+ }
+}

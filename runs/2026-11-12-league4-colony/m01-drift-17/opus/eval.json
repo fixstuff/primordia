@@ -1,0 +1,170 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/01.json",
+      "mean_biomass": 6309.0,
+      "mean_population": 701.0,
+      "name": "trackerA",
+      "per_seed": [
+        685,
+        696,
+        722
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/02.json",
+      "mean_biomass": 5181.0,
+      "mean_population": 575.6666666666666,
+      "name": "trackerB",
+      "per_seed": [
+        643,
+        521,
+        563
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/03.json",
+      "mean_biomass": 7893.333333333333,
+      "mean_population": 493.3333333333333,
+      "name": "trackerC",
+      "per_seed": [
+        499,
+        494,
+        487
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/04.json",
+      "mean_biomass": 13668.0,
+      "mean_population": 379.6666666666667,
+      "name": "hunter",
+      "per_seed": [
+        387,
+        368,
+        384
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/05.json",
+      "mean_biomass": 16088.333333333334,
+      "mean_population": 328.3333333333333,
+      "name": "hunter2",
+      "per_seed": [
+        338,
+        316,
+        331
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/06.json",
+      "mean_biomass": 12275.0,
+      "mean_population": 491.0,
+      "name": "porcupine",
+      "per_seed": [
+        491,
+        489,
+        493
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/07.json",
+      "mean_biomass": 4641.666666666667,
+      "mean_population": 742.6666666666666,
+      "name": "mite",
+      "per_seed": [
+        755,
+        740,
+        733
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/08.json",
+      "mean_biomass": 3508.0,
+      "mean_population": 877.0,
+      "name": "mite2",
+      "per_seed": [
+        889,
+        867,
+        875
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/09.json",
+      "mean_biomass": 3718.6666666666665,
+      "mean_population": 929.6666666666666,
+      "name": "mite3",
+      "per_seed": [
+        902,
+        951,
+        936
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/10.json",
+      "mean_biomass": 3328.0,
+      "mean_population": 832.0,
+      "name": "mite4",
+      "per_seed": [
+        804,
+        853,
+        839
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/11.json",
+      "mean_biomass": 2906.6666666666665,
+      "mean_population": 726.6666666666666,
+      "name": "mite5",
+      "per_seed": [
+        725,
+        722,
+        733
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/12.json",
+      "mean_biomass": 3006.6666666666665,
+      "mean_population": 751.6666666666666,
+      "name": "mite6",
+      "per_seed": [
+        765,
+        741,
+        749
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/opus/genomes/13.json",
+      "mean_biomass": 2818.6666666666665,
+      "mean_population": 704.6666666666666,
+      "name": "armite",
+      "per_seed": [
+        699,
+        705,
+        710
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,98 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/opus/genomes/01.json",
+      "mean_biomass": 11488.0,
+      "mean_population": 718.0,
+      "name": "trackA",
+      "per_seed": [
+        711,
+        727,
+        716
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/opus/genomes/02.json",
+      "mean_biomass": 6026.666666666667,
+      "mean_population": 376.6666666666667,
+      "name": "trackB",
+      "per_seed": [
+        454,
+        317,
+        359
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/opus/genomes/03.json",
+      "mean_biomass": 12050.0,
+      "mean_population": 482.0,
+      "name": "armorA",
+      "per_seed": [
+        488,
+        488,
+        470
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/opus/genomes/04.json",
+      "mean_biomass": 18309.666666666668,
+      "mean_population": 373.6666666666667,
+      "name": "hunter",
+      "per_seed": [
+        373,
+        374,
+        374
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/opus/genomes/05.json",
+      "mean_biomass": 13704.0,
+      "mean_population": 380.6666666666667,
+      "name": "armor2",
+      "per_seed": [
+        391,
+        368,
+        383
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/opus/genomes/06.json",
+      "mean_biomass": 12750.0,
+      "mean_population": 510.0,
+      "name": "lean",
+      "per_seed": [
+        511,
+        511,
+        508
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/opus/genomes/07.json",
+      "mean_biomass": 6162.0,
+      "mean_population": 684.6666666666666,
+      "name": "mini",
+      "per_seed": [
+        684,
+        687,
+        683
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

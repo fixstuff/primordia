@@ -1,0 +1,29 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "cost_test_flag",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.05
+ }
+}

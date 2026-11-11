@@ -1,0 +1,20 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "h4",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 4
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

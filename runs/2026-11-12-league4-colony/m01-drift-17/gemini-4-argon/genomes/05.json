@@ -1,0 +1,100 @@
+{
+ "mutation": {
+  "size": 0.12,
+  "rate": 0.04
+ },
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2.5,
+   2.5,
+   2,
+   2.5,
+   0.05
+  ],
+  "hidden": 3
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "OmniJaw_A",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 0.7
+  },
+  {
+   "part": "shell",
+   "thickness": 0.4
+  },
+  {
+   "power": 0.75,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.7
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -35
+  },
+  {
+   "angle": 25,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -25,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  }
+ ]
+}

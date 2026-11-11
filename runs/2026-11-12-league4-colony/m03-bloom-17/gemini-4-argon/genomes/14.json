@@ -1,0 +1,68 @@
+{
+ "name": "lean_forager_B",
+ "brain": {
+  "weights": [
+   3.5,
+   -3.5,
+   0,
+   0,
+   1.5,
+   1.5,
+   0,
+   -0.8,
+   0,
+   -0.4,
+   1,
+   3,
+   0,
+   0
+  ],
+  "hidden": 2
+ },
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 2.6,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "spikes",
+   "power": 0.25
+  },
+  {
+   "part": "toxin",
+   "power": 0.35
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "power": 0.6,
+   "part": "cilia"
+  },
+  {
+   "angle": 30,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -30,
+   "part": "chemo_sensor"
+  }
+ ],
+ "mutation": {
+  "rate": 0.06,
+  "size": 0.12
+ }
+}

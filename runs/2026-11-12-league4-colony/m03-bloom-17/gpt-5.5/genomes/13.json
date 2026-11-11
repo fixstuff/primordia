@@ -1,0 +1,84 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "R2_dual_grazer_rightturn",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1.0
+  },
+  {
+   "part": "cilia",
+   "power": 1.0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 45
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   3,
+   3,
+   2,
+   2,
+   2,
+   -3,
+   3,
+   -2,
+   2,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.3
+ }
+}

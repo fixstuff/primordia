@@ -1,0 +1,47 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Ghost",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "toxin",
+   "power": 1
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

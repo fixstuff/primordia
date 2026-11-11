@@ -1,0 +1,83 @@
+{
+ "name": "plague_lean_r22",
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   4,
+   -4,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   0,
+   0,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   0,
+   -0.6,
+   0,
+   0,
+   0.4,
+   1,
+   2.2,
+   2.6,
+   0,
+   0.02
+  ]
+ },
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.65,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.65
+  },
+  {
+   "power": 0.85,
+   "part": "toxin"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 32,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -32,
+   "chemical": "sugar"
+  },
+  {
+   "angle": 75,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -75,
+   "chemical": "sugar"
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

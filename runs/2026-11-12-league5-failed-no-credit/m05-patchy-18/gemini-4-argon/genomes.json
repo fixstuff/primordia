@@ -1,0 +1,51 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/01.json",
+  "name": "test_probe",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/02.json",
+  "name": "test_2mouths",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/03.json",
+  "name": "test_parts_cost",
+  "species": 12,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/04.json",
+  "name": "Forager_Plus",
+  "species": 13,
+  "tick": 0
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/05.json",
+  "name": "Forager_Minus",
+  "species": 14,
+  "tick": 0
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/06.json",
+  "name": "Omni_Plus",
+  "species": 15,
+  "tick": 0
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/07.json",
+  "name": "Omni_Minus",
+  "species": 16,
+  "tick": 0
+ }
+]

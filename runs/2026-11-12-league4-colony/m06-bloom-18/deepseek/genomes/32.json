@@ -1,0 +1,28 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r3_still_ss",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.0,
+  "size": 0.0
+ }
+}

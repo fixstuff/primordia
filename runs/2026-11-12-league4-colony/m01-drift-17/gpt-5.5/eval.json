@@ -1,0 +1,170 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/01.json",
+      "mean_biomass": 2312.0,
+      "mean_population": 578.0,
+      "name": "SwiftHarvester_r2_v1",
+      "per_seed": [
+        558,
+        593,
+        583
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/02.json",
+      "mean_biomass": 4647.0,
+      "mean_population": 516.3333333333334,
+      "name": "CamoShellGrazer_r3_v2",
+      "per_seed": [
+        524,
+        489,
+        536
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/03.json",
+      "mean_biomass": 1882.6666666666667,
+      "mean_population": 470.6666666666667,
+      "name": "CamoMicroGrazer_r2_v1",
+      "per_seed": [
+        484,
+        476,
+        452
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/04.json",
+      "mean_biomass": 8766.666666666666,
+      "mean_population": 350.6666666666667,
+      "name": "CamoHunterMiner_r5_v2",
+      "per_seed": [
+        359,
+        345,
+        348
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/05.json",
+      "mean_biomass": 4320.0,
+      "mean_population": 480.0,
+      "name": "MineralCamoGrazer_r3_v4",
+      "per_seed": [
+        481,
+        462,
+        497
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/06.json",
+      "mean_biomass": 4329.0,
+      "mean_population": 481.0,
+      "name": "CamoMinerR3_simple_v1",
+      "per_seed": [
+        508,
+        477,
+        458
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/07.json",
+      "mean_biomass": 1906.6666666666667,
+      "mean_population": 476.6666666666667,
+      "name": "TinyCamoMiner_r2_v2",
+      "per_seed": [
+        473,
+        480,
+        477
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/08.json",
+      "mean_biomass": 2012.0,
+      "mean_population": 503.0,
+      "name": "RandForager_r2_manyfounders_v1",
+      "per_seed": [
+        505,
+        489,
+        515
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/09.json",
+      "mean_biomass": 1949.3333333333333,
+      "mean_population": 487.3333333333333,
+      "name": "SeekBoth_r2_det_v2",
+      "per_seed": [
+        486,
+        490,
+        486
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/10.json",
+      "mean_biomass": 2850.6666666666665,
+      "mean_population": 712.6666666666666,
+      "name": "SpiralGrazer_r2_const_v2",
+      "per_seed": [
+        720,
+        705,
+        713
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/11.json",
+      "mean_biomass": 8575.0,
+      "mean_population": 343.0,
+      "name": "CamoJaw_r5_leftbias_v2",
+      "per_seed": [
+        353,
+        348,
+        328
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/12.json",
+      "mean_biomass": 1854.6666666666667,
+      "mean_population": 463.6666666666667,
+      "name": "SprintForager_r2_chem_v1",
+      "per_seed": [
+        463,
+        477,
+        451
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/13.json",
+      "mean_biomass": 2294.6666666666665,
+      "mean_population": 573.6666666666666,
+      "name": "LastChance_r2_chemo_linear_v2",
+      "per_seed": [
+        569,
+        596,
+        556
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

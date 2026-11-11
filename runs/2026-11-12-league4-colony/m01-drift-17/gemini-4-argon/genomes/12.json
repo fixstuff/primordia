@@ -1,0 +1,60 @@
+{
+ "name": "TankGrazer_3_5",
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.6,
+   "part": "jaw"
+  },
+  {
+   "thickness": 0.7,
+   "part": "shell"
+  },
+  {
+   "part": "toxin",
+   "power": 0.4
+  },
+  {
+   "power": 0.5,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.65
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "chemical": "sugar",
+   "angle": -35,
+   "part": "chemo_sensor"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.5,
+   3.5,
+   0.05
+  ]
+ }
+}

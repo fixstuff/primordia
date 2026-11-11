@@ -1,0 +1,56 @@
+{
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.06
+ },
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.3,
+   4,
+   0
+  ],
+  "hidden": 1
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.65,
+   "part": "cilia"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "organism"
+  },
+  {
+   "chemical": "organism",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "power": 0.65,
+   "part": "jaw"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.2
+  }
+ ],
+ "name": "piranha22_lean"
+}

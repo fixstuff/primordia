@@ -1,0 +1,54 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "mite",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   -4,
+   0,
+   1,
+   0,
+   2,
+   0,
+   4,
+   0,
+   0.3
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.3
+ }
+}

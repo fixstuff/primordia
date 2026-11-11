@@ -1,0 +1,28 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "probe_2flag",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.05
+ }
+}

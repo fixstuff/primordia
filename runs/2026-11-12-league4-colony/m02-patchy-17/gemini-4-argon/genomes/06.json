@@ -1,0 +1,32 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 4,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "power": 1,
+   "part": "spikes"
+  },
+  {
+   "part": "toxin",
+   "power": 1
+  }
+ ],
+ "name": "probe_r4_def",
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "brain": {
+  "hidden": 1
+ }
+}

@@ -1,0 +1,158 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/01.json",
+      "mean_biomass": 20700.0,
+      "mean_population": 207.0,
+      "name": "trackerA",
+      "per_seed": [
+        197,
+        207,
+        217
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/02.json",
+      "mean_biomass": 19033.333333333332,
+      "mean_population": 190.33333333333334,
+      "name": "trackerB_jaw",
+      "per_seed": [
+        196,
+        177,
+        198
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/03.json",
+      "mean_biomass": 1788.0,
+      "mean_population": 49.666666666666664,
+      "name": "smallC_flipped",
+      "per_seed": [
+        65,
+        48,
+        36
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/04.json",
+      "mean_biomass": 14904.0,
+      "mean_population": 414.0,
+      "name": "smallD",
+      "per_seed": [
+        416,
+        421,
+        405
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/05.json",
+      "mean_biomass": 20100.0,
+      "mean_population": 201.0,
+      "name": "chaserE",
+      "per_seed": [
+        198,
+        203,
+        202
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/06.json",
+      "mean_biomass": 19900.0,
+      "mean_population": 199.0,
+      "name": "sitterF",
+      "per_seed": [
+        191,
+        206,
+        200
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/07.json",
+      "mean_biomass": 24674.0,
+      "mean_population": 146.0,
+      "name": "sitterG13",
+      "per_seed": [
+        147,
+        139,
+        152
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/08.json",
+      "mean_biomass": 24955.666666666668,
+      "mean_population": 147.66666666666666,
+      "name": "sitterH13",
+      "per_seed": [
+        150,
+        146,
+        147
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/09.json",
+      "mean_biomass": 26736.0,
+      "mean_population": 185.66666666666666,
+      "name": "slowbigJ12",
+      "per_seed": [
+        179,
+        180,
+        198
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/10.json",
+      "mean_biomass": 24336.0,
+      "mean_population": 169.0,
+      "name": "sugarK12",
+      "per_seed": [
+        174,
+        167,
+        166
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/11.json",
+      "mean_biomass": 22890.666666666668,
+      "mean_population": 357.6666666666667,
+      "name": "tightD8",
+      "per_seed": [
+        361,
+        354,
+        358
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/fable/genomes/12.json",
+      "mean_biomass": 16660.583333333332,
+      "mean_population": 394.3333333333333,
+      "name": "leanD65",
+      "per_seed": [
+        390,
+        396,
+        397
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

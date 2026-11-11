@@ -1,0 +1,24 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "toxin1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "toxin",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

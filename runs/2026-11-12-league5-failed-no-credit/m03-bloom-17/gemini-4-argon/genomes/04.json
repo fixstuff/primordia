@@ -1,0 +1,82 @@
+{
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   3,
+   -3,
+   -2.5,
+   0
+  ],
+  "hidden": 2
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.15
+ },
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 6,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "power": 0.8,
+   "part": "jaw"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 40
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "mineral",
+   "angle": 40,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "mineral"
+  }
+ ],
+ "name": "Armored_B6"
+}

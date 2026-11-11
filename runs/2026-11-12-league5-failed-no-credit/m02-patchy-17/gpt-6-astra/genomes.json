@@ -1,0 +1,30 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/01.json",
+  "name": "Grazer-3",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/02.json",
+  "name": "Grazer-5",
+  "species": 10,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/03.json",
+  "name": "Grazer-2",
+  "species": 12,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/04.json",
+  "name": "Armored-Grazer",
+  "species": 15,
+  "tick": 0
+ }
+]

@@ -1,0 +1,25 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "probe_sensor_org",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "organism"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.1
+ }
+}

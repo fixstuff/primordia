@@ -1,0 +1,77 @@
+start m01-drift-17 on :4800 (viewer :4801)
+start m02-patchy-17 on :4810 (viewer :4811)
+start m03-bloom-17 on :4820 (viewer :4821)
+done  m01-drift-17: results written
+done  m02-patchy-17: results written
+done  m03-bloom-17: results written
+# LifeAPI league
+
+3 of 6 matches played. Elo is applied in schedule order (it depends on order); a player is rated only in matches it played; K = 32/(players in the match - 1). Mean rank and share mix field sizes when the field changes. Costs: Anthropic as reported, OpenAI estimated from tokens, DeepSeek not priced.
+
+| Rank | Player | Elo | Wins | Mean rank | Mean share of top score | API cost (est. for OpenAI) |
+|---|---|---|---|---|---|---|
+| 1 | claude-fable-5-2 | 1540 | 2/3 | 1.33 | 91% | $19.47 |
+| 2 | gemini-4-argon | 1536 | 1/3 | 1.67 | 70% | $5.36 |
+| 3 | gpt-6-astra | 1500 | 0/3 | 4.00 | 12% | $3.00 |
+| 4 | claude-opus-5-5 | 1495 | 0/3 | 4.33 | 4% | $2.93 |
+| 5 | gpt-5.5 | 1490 | 0/3 | 4.67 | 11% | $7.19 |
+| 6 | deepseek-v4-pro | 1485 | 0/3 | 5.00 | 3% | — |
+| 7 | scripted-bot | 1455 | 0/3 | 7.00 | 0% | — |
+
+| Match | World | Seed | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th |
+|---|---|---|---|---|---|---|---|---|---|
+| m01-drift-17 | drift | 17 | claude-fable-5-2 (5705) | gemini-4-argon (842) | gpt-6-astra (103) | claude-opus-5-5 (52) | gpt-5.5 (47) | deepseek-v4-pro (13) | scripted-bot (2) |
+| m02-patchy-17 | patchy | 17 | claude-fable-5-2 (2064) | gemini-4-argon (1957) | gpt-5.5 (655) | deepseek-v4-pro (159) | claude-opus-5-5 (101) | gpt-6-astra (92) | scripted-bot (6) |
+| m03-bloom-17 | bloom | 17 | gemini-4-argon (1876) | claude-fable-5-2 (1347) | gpt-6-astra (580) | claude-opus-5-5 (105) | deepseek-v4-pro (31) | gpt-5.5 (26) | scripted-bot (0) |
+start m04-drift-18 on :4830 (viewer :4831)
+start m05-patchy-18 on :4840 (viewer :4841)
+start m06-bloom-18 on :4850 (viewer :4851)
+done  m04-drift-18: results written
+done  m05-patchy-18: NO RESULTS
+done  m06-bloom-18: NO RESULTS
+# LifeAPI league
+
+4 of 6 matches played. Elo is applied in schedule order (it depends on order); a player is rated only in matches it played; K = 32/(players in the match - 1). Mean rank and share mix field sizes when the field changes. Costs: Anthropic as reported, OpenAI estimated from tokens, DeepSeek not priced.
+
+| Rank | Player | Elo | Wins | Mean rank | Mean share of top score | API cost (est. for OpenAI) |
+|---|---|---|---|---|---|---|
+| 1 | claude-fable-5-2 | 1554 | 3/4 | 1.25 | 93% | $27.05 |
+| 2 | gemini-4-argon | 1544 | 1/4 | 1.75 | 54% | $7.38 |
+| 3 | gpt-5.5 | 1495 | 0/4 | 4.25 | 9% | $9.40 |
+| 4 | claude-opus-5-5 | 1495 | 0/4 | 4.25 | 3% | $3.54 |
+| 5 | gpt-6-astra | 1489 | 0/4 | 4.50 | 9% | $4.66 |
+| 6 | deepseek-v4-pro | 1481 | 0/4 | 5.00 | 3% | — |
+| 7 | scripted-bot | 1441 | 0/4 | 7.00 | 0% | — |
+
+| Match | World | Seed | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th |
+|---|---|---|---|---|---|---|---|---|---|
+| m01-drift-17 | drift | 17 | claude-fable-5-2 (5705) | gemini-4-argon (842) | gpt-6-astra (103) | claude-opus-5-5 (52) | gpt-5.5 (47) | deepseek-v4-pro (13) | scripted-bot (2) |
+| m02-patchy-17 | patchy | 17 | claude-fable-5-2 (2064) | gemini-4-argon (1957) | gpt-5.5 (655) | deepseek-v4-pro (159) | claude-opus-5-5 (101) | gpt-6-astra (92) | scripted-bot (6) |
+| m03-bloom-17 | bloom | 17 | gemini-4-argon (1876) | claude-fable-5-2 (1347) | gpt-6-astra (580) | claude-opus-5-5 (105) | deepseek-v4-pro (31) | gpt-5.5 (26) | scripted-bot (0) |
+| m04-drift-18 | drift | 18 | claude-fable-5-2 (9206) | gemini-4-argon (422) | gpt-5.5 (264) | claude-opus-5-5 (183) | deepseek-v4-pro (41) | gpt-6-astra (20) | scripted-bot (0) |
+start m05-patchy-18 on :4800 (viewer :4801)
+start m06-bloom-18 on :4810 (viewer :4811)
+done  m05-patchy-18: results written
+done  m06-bloom-18: results written
+# LifeAPI league
+
+6 of 6 matches played. Elo is applied in schedule order (it depends on order); a player is rated only in matches it played; K = 32/(players in the match - 1). Mean rank and share mix field sizes when the field changes. Costs: Anthropic as reported, OpenAI estimated from tokens, DeepSeek not priced.
+
+| Rank | Player | Elo | Wins | Mean rank | Mean share of top score | API cost (est. for OpenAI) |
+|---|---|---|---|---|---|---|
+| 1 | claude-fable-5-2 | 1574 | 4/6 | 1.33 | 94% | $39.59 |
+| 2 | gemini-4-argon | 1566 | 2/6 | 1.67 | 60% | $12.34 |
+| 3 | gpt-6-astra | 1490 | 0/6 | 4.33 | 12% | $7.35 |
+| 4 | claude-opus-5-5 | 1490 | 0/6 | 4.33 | 7% | $5.73 |
+| 5 | deepseek-v4-pro | 1483 | 0/6 | 4.67 | 14% | — |
+| 6 | gpt-5.5 | 1481 | 0/6 | 4.67 | 9% | $14.44 |
+| 7 | scripted-bot | 1416 | 0/6 | 7.00 | 0% | — |
+
+| Match | World | Seed | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th |
+|---|---|---|---|---|---|---|---|---|---|
+| m01-drift-17 | drift | 17 | claude-fable-5-2 (5705) | gemini-4-argon (842) | gpt-6-astra (103) | claude-opus-5-5 (52) | gpt-5.5 (47) | deepseek-v4-pro (13) | scripted-bot (2) |
+| m02-patchy-17 | patchy | 17 | claude-fable-5-2 (2064) | gemini-4-argon (1957) | gpt-5.5 (655) | deepseek-v4-pro (159) | claude-opus-5-5 (101) | gpt-6-astra (92) | scripted-bot (6) |
+| m03-bloom-17 | bloom | 17 | gemini-4-argon (1876) | claude-fable-5-2 (1347) | gpt-6-astra (580) | claude-opus-5-5 (105) | deepseek-v4-pro (31) | gpt-5.5 (26) | scripted-bot (0) |
+| m04-drift-18 | drift | 18 | claude-fable-5-2 (9206) | gemini-4-argon (422) | gpt-5.5 (264) | claude-opus-5-5 (183) | deepseek-v4-pro (41) | gpt-6-astra (20) | scripted-bot (0) |
+| m05-patchy-18 | patchy | 18 | claude-fable-5-2 (4188) | gemini-4-argon (1851) | claude-opus-5-5 (584) | gpt-6-astra (76) | deepseek-v4-pro (37) | gpt-5.5 (31) | scripted-bot (6) |
+| m06-bloom-18 | bloom | 18 | gemini-4-argon (1597) | claude-fable-5-2 (1431) | deepseek-v4-pro (1121) | gpt-6-astra (477) | gpt-5.5 (252) | claude-opus-5-5 (199) | scripted-bot (0) |

@@ -1,0 +1,4 @@
+lifeapi-server: combat colony, body evolution 0.02
+lifeapi-server: ARENA for 7 players, 10000 ticks in windows of 500 ticks / 120s
+lifeapi-server: world bloom seed 18, API on 127.0.0.1:4810
+lifeapi-server: viewer on http://127.0.0.1:4811/

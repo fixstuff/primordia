@@ -1,0 +1,93 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/01.json",
+  "name": "SwiftHarvester_r2_v1",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/02.json",
+  "name": "CamoShellGrazer_r3_v2",
+  "species": 66,
+  "tick": 606
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/03.json",
+  "name": "CamoMicroGrazer_r2_v1",
+  "species": 74,
+  "tick": 1072
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/04.json",
+  "name": "CamoHunterMiner_r5_v2",
+  "species": 89,
+  "tick": 1585
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/05.json",
+  "name": "MineralCamoGrazer_r3_v4",
+  "species": 97,
+  "tick": 2108
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/06.json",
+  "name": "CamoMinerR3_simple_v1",
+  "species": 117,
+  "tick": 3070
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/07.json",
+  "name": "TinyCamoMiner_r2_v2",
+  "species": 131,
+  "tick": 3631
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/08.json",
+  "name": "RandForager_r2_manyfounders_v1",
+  "species": 139,
+  "tick": 4068
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/09.json",
+  "name": "SeekBoth_r2_det_v2",
+  "species": 153,
+  "tick": 4633
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/10.json",
+  "name": "SpiralGrazer_r2_const_v2",
+  "species": 173,
+  "tick": 5179
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/11.json",
+  "name": "CamoJaw_r5_leftbias_v2",
+  "species": 187,
+  "tick": 5625
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/12.json",
+  "name": "SprintForager_r2_chem_v1",
+  "species": 222,
+  "tick": 7118
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-5.5/genomes/13.json",
+  "name": "LastChance_r2_chemo_linear_v2",
+  "species": 257,
+  "tick": 9619
+ }
+]

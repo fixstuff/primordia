@@ -1,0 +1,60 @@
+{
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0
+  ],
+  "hidden": 1
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "grazer45_h1_sugar",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.85
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -40,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "jaw",
+   "power": 0.55
+  },
+  {
+   "power": 0.35,
+   "part": "spikes"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.2
+  }
+ ],
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.06
+ }
+}

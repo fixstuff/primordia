@@ -1,0 +1,24 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2vac50",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "vacuole",
+   "capacity": 50
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

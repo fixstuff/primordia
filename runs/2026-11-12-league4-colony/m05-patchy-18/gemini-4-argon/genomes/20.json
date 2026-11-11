@@ -1,0 +1,84 @@
+{
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   4,
+   -3.6,
+   0,
+   0,
+   -4,
+   4,
+   4,
+   -3.6,
+   0,
+   0,
+   0,
+   2.3,
+   4,
+   1.2,
+   -1.2,
+   0
+  ],
+  "hidden": 3
+ },
+ "mutation": {
+  "size": 0,
+  "rate": 0
+ },
+ "body": [
+  {
+   "radius": 6,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.9
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 50,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -50,
+   "chemical": "mineral"
+  },
+  {
+   "part": "jaw",
+   "power": 0.6
+  },
+  {
+   "part": "spikes",
+   "power": 0.4
+  }
+ ],
+ "name": "titan60_v2"
+}

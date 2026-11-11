@@ -1,0 +1,68 @@
+{
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   2,
+   -2,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0.5,
+   0,
+   1,
+   1,
+   2,
+   0,
+   0
+  ]
+ },
+ "name": "pure_forager_24",
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.12,
+  "rate": 0.06
+ },
+ "body": [
+  {
+   "radius": 2.4,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.3,
+   "part": "spikes"
+  },
+  {
+   "power": 0.3,
+   "part": "toxin"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "power": 0.6,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "sugar"
+  }
+ ]
+}

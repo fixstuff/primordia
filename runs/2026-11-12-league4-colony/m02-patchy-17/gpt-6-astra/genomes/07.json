@@ -1,0 +1,40 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Bastion",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 7
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "stinger",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0.03
+  ]
+ },
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.08
+ }
+}

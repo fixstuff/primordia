@@ -1,0 +1,75 @@
+{
+ "name": "omnivore_B",
+ "body": [
+  {
+   "radius": 6,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 0.7
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -30
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 30
+  }
+ ],
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.15
+ },
+ "brain": {
+  "weights": [
+   3,
+   -3,
+   2.5,
+   -2.5,
+   0,
+   0,
+   2,
+   2,
+   2,
+   2,
+   0,
+   0.5,
+   0,
+   1.5,
+   1,
+   3,
+   0,
+   0
+  ],
+  "hidden": 2
+ },
+ "schema": "lifeapi.genome/1"
+}

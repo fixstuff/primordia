@@ -1,0 +1,38 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/01.json",
+      "mean_biomass": 1917.3333333333333,
+      "mean_population": 479.3333333333333,
+      "name": "Gradient grazer r2 v1",
+      "per_seed": [
+        486,
+        472,
+        480
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/02.json",
+      "mean_biomass": 2634.6666666666665,
+      "mean_population": 658.6666666666666,
+      "name": "Tiny random swarm r2",
+      "per_seed": [
+        653,
+        622,
+        701
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

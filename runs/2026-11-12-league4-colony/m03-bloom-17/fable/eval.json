@@ -1,0 +1,170 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/01.json",
+      "mean_biomass": 5314.666666666667,
+      "mean_population": 1328.6666666666667,
+      "name": "grazer",
+      "per_seed": [
+        1359,
+        1244,
+        1383
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/02.json",
+      "mean_biomass": 12133.333333333334,
+      "mean_population": 485.3333333333333,
+      "name": "hunter",
+      "per_seed": [
+        501,
+        493,
+        462
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/03.json",
+      "mean_biomass": 10894.5,
+      "mean_population": 538.0,
+      "name": "venter",
+      "per_seed": [
+        523,
+        559,
+        532
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/04.json",
+      "mean_biomass": 2550.6666666666665,
+      "mean_population": 637.6666666666666,
+      "name": "sniffer",
+      "per_seed": [
+        671,
+        535,
+        707
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/05.json",
+      "mean_biomass": 3024.0,
+      "mean_population": 756.0,
+      "name": "tank",
+      "per_seed": [
+        826,
+        656,
+        786
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/06.json",
+      "mean_biomass": 3529.3333333333335,
+      "mean_population": 882.3333333333334,
+      "name": "urchin",
+      "per_seed": [
+        929,
+        806,
+        912
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/07.json",
+      "mean_biomass": 7772.0,
+      "mean_population": 1943.0,
+      "name": "creeper",
+      "per_seed": [
+        1983,
+        1877,
+        1969
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/08.json",
+      "mean_biomass": 4375.0,
+      "mean_population": 700.0,
+      "name": "wolf",
+      "per_seed": [
+        714,
+        651,
+        735
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/09.json",
+      "mean_biomass": 11144.25,
+      "mean_population": 550.3333333333334,
+      "name": "anemone",
+      "per_seed": [
+        543,
+        557,
+        551
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/10.json",
+      "mean_biomass": 2750.6666666666665,
+      "mean_population": 687.6666666666666,
+      "name": "spiny",
+      "per_seed": [
+        718,
+        673,
+        672
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/11.json",
+      "mean_biomass": 6168.0,
+      "mean_population": 1542.0,
+      "name": "armadillo",
+      "per_seed": [
+        1565,
+        1527,
+        1534
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/12.json",
+      "mean_biomass": 9543.269724206993,
+      "mean_population": 876.3333333333334,
+      "name": "raider",
+      "per_seed": [
+        875,
+        854,
+        900
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/fable/genomes/13.json",
+      "mean_biomass": 5356.0,
+      "mean_population": 1339.0,
+      "name": "forager",
+      "per_seed": [
+        1289,
+        1421,
+        1307
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

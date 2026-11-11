@@ -1,0 +1,28 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "name": "test_c1"
+}

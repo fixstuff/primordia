@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/fable/genomes/01.json",
+      "mean_biomass": 7782.0,
+      "mean_population": 864.6666666666666,
+      "name": "cruiserA",
+      "per_seed": [
+        967,
+        786,
+        841
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/fable/genomes/02.json",
+      "mean_biomass": 8976.0,
+      "mean_population": 997.3333333333334,
+      "name": "cruiserB",
+      "per_seed": [
+        995,
+        1012,
+        985
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/fable/genomes/03.json",
+      "mean_biomass": 18641.666666666668,
+      "mean_population": 745.6666666666666,
+      "name": "tank5",
+      "per_seed": [
+        743,
+        745,
+        749
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/fable/genomes/04.json",
+      "mean_biomass": 4493.333333333333,
+      "mean_population": 1123.3333333333333,
+      "name": "mossCamo",
+      "per_seed": [
+        1213,
+        1008,
+        1149
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/fable/genomes/05.json",
+      "mean_biomass": 6193.333333333333,
+      "mean_population": 1548.3333333333333,
+      "name": "mossSpike",
+      "per_seed": [
+        1784,
+        1266,
+        1595
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/fable/genomes/06.json",
+      "mean_biomass": 8786.666666666666,
+      "mean_population": 2196.6666666666665,
+      "name": "mossBare",
+      "per_seed": [
+        2492,
+        1972,
+        2126
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/fable/genomes/07.json",
+      "mean_biomass": 7629.333333333333,
+      "mean_population": 1907.3333333333333,
+      "name": "landmine",
+      "per_seed": [
+        1935,
+        1901,
+        1886
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/fable/genomes/08.json",
+      "mean_biomass": 5928.0,
+      "mean_population": 1482.0,
+      "name": "armoss",
+      "per_seed": [
+        1610,
+        1378,
+        1458
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/fable/genomes/09.json",
+      "mean_biomass": 7157.333333333333,
+      "mean_population": 1789.3333333333333,
+      "name": "shellmoss",
+      "per_seed": [
+        1911,
+        1729,
+        1728
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

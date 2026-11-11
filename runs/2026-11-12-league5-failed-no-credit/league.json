@@ -1,0 +1,63 @@
+{
+ "ratings": {
+  "claude-fable-5-2": 1500.0,
+  "claude-opus-5-5": 1500.0,
+  "deepseek-v4-pro": 1500.0,
+  "scripted-bot": 1500.0,
+  "gpt-5.5": 1500.0,
+  "gpt-6-astra": 1500.0,
+  "gemini-4-argon": 1500.0
+ },
+ "stats": {
+  "claude-fable-5-2": {
+   "matches": 0,
+   "wins": 0,
+   "rank_sum": 0,
+   "share_sum": 0.0,
+   "cost": 0.0
+  },
+  "claude-opus-5-5": {
+   "matches": 0,
+   "wins": 0,
+   "rank_sum": 0,
+   "share_sum": 0.0,
+   "cost": 0.0
+  },
+  "deepseek-v4-pro": {
+   "matches": 0,
+   "wins": 0,
+   "rank_sum": 0,
+   "share_sum": 0.0,
+   "cost": 0.0
+  },
+  "scripted-bot": {
+   "matches": 0,
+   "wins": 0,
+   "rank_sum": 0,
+   "share_sum": 0.0,
+   "cost": 0.0
+  },
+  "gpt-5.5": {
+   "matches": 0,
+   "wins": 0,
+   "rank_sum": 0,
+   "share_sum": 0.0,
+   "cost": 0.0
+  },
+  "gpt-6-astra": {
+   "matches": 0,
+   "wins": 0,
+   "rank_sum": 0,
+   "share_sum": 0.0,
+   "cost": 0.0
+  },
+  "gemini-4-argon": {
+   "matches": 0,
+   "wins": 0,
+   "rank_sum": 0,
+   "share_sum": 0.0,
+   "cost": 0.0
+  }
+ },
+ "matches": []
+}

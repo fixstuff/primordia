@@ -1,0 +1,40 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Micro hunter",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.05
+ }
+}

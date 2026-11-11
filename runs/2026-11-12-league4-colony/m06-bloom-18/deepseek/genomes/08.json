@@ -1,0 +1,25 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r5sugar",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

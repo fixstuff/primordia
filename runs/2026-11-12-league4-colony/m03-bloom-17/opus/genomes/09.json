@@ -1,0 +1,39 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "swarm2m",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "toxin",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   1,
+   2,
+   0.5,
+   0.1,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.2
+ }
+}

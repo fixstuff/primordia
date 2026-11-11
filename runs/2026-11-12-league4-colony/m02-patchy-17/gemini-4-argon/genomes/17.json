@@ -1,0 +1,83 @@
+{
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.06
+ },
+ "name": "SmartBoomer_r32",
+ "body": [
+  {
+   "radius": 3.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.55
+  },
+  {
+   "power": 0.8,
+   "part": "cilia"
+  },
+  {
+   "power": 0.5,
+   "part": "toxin"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.3
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -38
+  },
+  {
+   "chemical": "sugar",
+   "angle": 38,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 0,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "mineral",
+   "angle": -38,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 38
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -3.8,
+   3.8,
+   0,
+   -1.2,
+   1.2,
+   0,
+   0,
+   1.5,
+   1.5,
+   3,
+   0.5,
+   0.5,
+   0,
+   -0.8,
+   0,
+   -0.65,
+   0.85,
+   3.5,
+   0,
+   0.05
+  ]
+ }
+}

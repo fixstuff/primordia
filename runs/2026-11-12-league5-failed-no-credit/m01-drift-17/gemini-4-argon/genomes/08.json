@@ -1,0 +1,61 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 2.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.5,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.5,
+   "part": "cilia"
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "angle": 0,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  }
+ ],
+ "name": "lean_grazer_A",
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.15
+ },
+ "brain": {
+  "weights": [
+   1.5,
+   1.5,
+   1.5,
+   -0.3,
+   0.5,
+   3.5,
+   -3.5,
+   0,
+   0,
+   0,
+   1.2,
+   0,
+   0.6,
+   0,
+   2.5,
+   0.05
+  ],
+  "hidden": 2
+ }
+}

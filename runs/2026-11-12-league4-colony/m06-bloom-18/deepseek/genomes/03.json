@@ -1,0 +1,24 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "big",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 10
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 2
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

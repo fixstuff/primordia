@@ -1,0 +1,75 @@
+{
+ "brain": {
+  "weights": [
+   -2,
+   2,
+   -1.5,
+   1.5,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0.5,
+   0.2,
+   0.5,
+   0.8,
+   3,
+   0,
+   0.05
+  ],
+  "hidden": 2
+ },
+ "body": [
+  {
+   "radius": 2.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.6,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "angle": 40,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -40
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 40
+  },
+  {
+   "angle": -40,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.25
+  }
+ ],
+ "name": "Micro_B",
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.2
+ }
+}

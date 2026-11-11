@@ -1,0 +1,88 @@
+{
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   -3,
+   3,
+   0,
+   0,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   0,
+   -0.5,
+   0,
+   -0.3,
+   1.5,
+   3.8,
+   0,
+   0.1
+  ],
+  "hidden": 2
+ },
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.12
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6.3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "power": 1,
+   "part": "cilia"
+  },
+  {
+   "angle": -35,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 35,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -45
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 45
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "power": 1,
+   "part": "stinger"
+  },
+  {
+   "thickness": 1,
+   "part": "shell"
+  },
+  {
+   "power": 1,
+   "part": "spikes"
+  },
+  {
+   "power": 1,
+   "part": "toxin"
+  }
+ ],
+ "name": "leviathan_63_clino"
+}

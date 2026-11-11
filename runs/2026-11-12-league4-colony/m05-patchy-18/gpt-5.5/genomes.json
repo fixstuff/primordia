@@ -1,0 +1,135 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/01.json",
+  "name": "r2_dual_forager_v2",
+  "species": 16,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/02.json",
+  "name": "r2_random_swarm_v1",
+  "species": 20,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/03.json",
+  "name": "r3_tank_forager_v1",
+  "species": 22,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/04.json",
+  "name": "r2_camo_random_swarm_v1",
+  "species": 73,
+  "tick": 568
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/05.json",
+  "name": "r2_camo_spike_toxin_avoid_rand",
+  "species": 90,
+  "tick": 1404
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/06.json",
+  "name": "r2_camo_guided_forager_h4b",
+  "species": 95,
+  "tick": 1604
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/07.json",
+  "name": "r2_simple_random_forager",
+  "species": 109,
+  "tick": 2089
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/08.json",
+  "name": "r2_weighted_dual_chemo_v2",
+  "species": 130,
+  "tick": 2632
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/09.json",
+  "name": "r5_predator_no_shell_guided",
+  "species": 139,
+  "tick": 3112
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/10.json",
+  "name": "r2_const_chem_L60_A",
+  "species": 146,
+  "tick": 3587
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/11.json",
+  "name": "r2_simple_gradient_B",
+  "species": 157,
+  "tick": 4135
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/12.json",
+  "name": "r2_brownian_lowcost_C",
+  "species": 166,
+  "tick": 4558
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/13.json",
+  "name": "r2_sugar_wide_lowcost_D2",
+  "species": 177,
+  "tick": 5115
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/14.json",
+  "name": "r5_enemy_hunter_E2",
+  "species": 188,
+  "tick": 5758
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/15.json",
+  "name": "r2_simple_gradient_F2",
+  "species": 195,
+  "tick": 6125
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/16.json",
+  "name": "r2_lottery_swarm_G",
+  "species": 204,
+  "tick": 6595
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/17.json",
+  "name": "r8_direct_predator_H",
+  "species": 213,
+  "tick": 7104
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/18.json",
+  "name": "r2_guided_minimal_Ia",
+  "species": 231,
+  "tick": 7621
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-5.5/genomes/19.json",
+  "name": "r2_static_mouth_J",
+  "species": 243,
+  "tick": 8106
+ }
+]

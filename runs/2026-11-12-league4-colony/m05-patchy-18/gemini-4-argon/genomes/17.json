@@ -1,0 +1,96 @@
+{
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   3.5,
+   -1.2,
+   -4,
+   4,
+   0,
+   0,
+   3.5,
+   -1.2,
+   0,
+   0,
+   4,
+   -4,
+   3.5,
+   -3,
+   0,
+   0,
+   -4,
+   4,
+   3.5,
+   -3,
+   0,
+   0,
+   0,
+   0,
+   2.2,
+   3,
+   -3,
+   2.5,
+   -2.5,
+   0
+  ],
+  "hidden": 4
+ },
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "juggernaut65_plus",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.85
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "chemical": "mineral",
+   "angle": 50,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -50
+  },
+  {
+   "part": "jaw",
+   "power": 0.85
+  },
+  {
+   "power": 0.5,
+   "part": "spikes"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.25
+  }
+ ]
+}

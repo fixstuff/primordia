@@ -1,0 +1,58 @@
+{
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ },
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5.8
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "thickness": 0.15,
+   "part": "shell"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.36
+  },
+  {
+   "part": "cilia",
+   "power": 0.45
+  },
+  {
+   "angle": 35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  }
+ ],
+ "name": "TriMouth_5_8",
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0.05
+  ]
+ }
+}

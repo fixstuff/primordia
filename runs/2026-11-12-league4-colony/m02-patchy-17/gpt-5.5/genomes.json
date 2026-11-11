@@ -1,0 +1,79 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/01.json",
+  "name": "r2_dual_seek_swarm_A",
+  "species": 12,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/02.json",
+  "name": "r2_wide_sugar_fast_B",
+  "species": 19,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/03.json",
+  "name": "r2_pred_avoid_scavenger_C",
+  "species": 22,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/04.json",
+  "name": "r2_doublemouth_sugar_D",
+  "species": 65,
+  "tick": 101
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/05.json",
+  "name": "r2_camo_doublemouth_balanced_E",
+  "species": 89,
+  "tick": 568
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/06.json",
+  "name": "r4_armored_camo_hunter_F2",
+  "species": 106,
+  "tick": 1135
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/07.json",
+  "name": "r3_camo_spike_grazer_G",
+  "species": 129,
+  "tick": 1564
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/08.json",
+  "name": "r2_min_camo_forager_H2",
+  "species": 144,
+  "tick": 2074
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/09.json",
+  "name": "r2_defensive_seek_I",
+  "species": 159,
+  "tick": 2568
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/10.json",
+  "name": "r5_armored_dual_seek_J2",
+  "species": 186,
+  "tick": 3626
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-5.5/genomes/11.json",
+  "name": "r2_camo_dual_lowcost_K2",
+  "species": 229,
+  "tick": 5104
+ }
+]

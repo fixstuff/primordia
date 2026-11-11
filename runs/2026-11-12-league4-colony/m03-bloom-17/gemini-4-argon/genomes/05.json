@@ -1,0 +1,83 @@
+{
+ "name": "predator_B",
+ "mutation": {
+  "size": 0.25,
+  "rate": 0.15
+ },
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 5.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.8,
+   "part": "jaw"
+  },
+  {
+   "power": 0.6,
+   "part": "stinger"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  },
+  {
+   "power": 0.8,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 35
+  },
+  {
+   "chemical": "organism",
+   "angle": -35,
+   "part": "chemo_sensor"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   2,
+   -2,
+   2,
+   -2,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0.5,
+   0,
+   1,
+   1,
+   -2,
+   0,
+   0
+  ]
+ }
+}

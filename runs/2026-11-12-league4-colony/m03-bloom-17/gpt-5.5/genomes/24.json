@@ -1,0 +1,64 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "R2_true_chemotaxis_LR",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   4,
+   -4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.25
+ }
+}

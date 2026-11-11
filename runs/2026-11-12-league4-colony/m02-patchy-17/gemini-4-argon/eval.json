@@ -1,0 +1,506 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/01.json",
+      "mean_biomass": 7536.0,
+      "mean_population": 837.3333333333334,
+      "name": "test_forager",
+      "per_seed": [
+        856,
+        832,
+        824
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/02.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "test_combat_parts_2",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/03.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "probe_r4",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/04.json",
+      "mean_biomass": 10426.666666666666,
+      "mean_population": 651.6666666666666,
+      "name": "probe_r4_move",
+      "per_seed": [
+        672,
+        590,
+        693
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/05.json",
+      "mean_biomass": 20952.0,
+      "mean_population": 582.0,
+      "name": "probe_r6_jaw",
+      "per_seed": [
+        631,
+        535,
+        580
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/06.json",
+      "mean_biomass": 14944.0,
+      "mean_population": 934.0,
+      "name": "probe_r4_def",
+      "per_seed": [
+        1002,
+        871,
+        929
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/07.json",
+      "mean_biomass": 8849.25,
+      "mean_population": 437.0,
+      "name": "OmniDefender_Pos",
+      "per_seed": [
+        432,
+        436,
+        443
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/08.json",
+      "mean_biomass": 3186.0,
+      "mean_population": 157.33333333333334,
+      "name": "OmniDefender_Neg",
+      "per_seed": [
+        156,
+        216,
+        100
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/09.json",
+      "mean_biomass": 5795.8401727295395,
+      "mean_population": 566.0,
+      "name": "FastSprinter_Pos",
+      "per_seed": [
+        563,
+        576,
+        559
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/10.json",
+      "mean_biomass": 4348.586796264643,
+      "mean_population": 424.6666666666667,
+      "name": "FastSprinter_Neg",
+      "per_seed": [
+        459,
+        441,
+        374
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/11.json",
+      "mean_biomass": 5811.0,
+      "mean_population": 645.6666666666666,
+      "name": "LeanForager_Pos",
+      "per_seed": [
+        677,
+        626,
+        634
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/12.json",
+      "mean_biomass": 4857.0,
+      "mean_population": 539.6666666666666,
+      "name": "LeanForager_Neg",
+      "per_seed": [
+        588,
+        506,
+        525
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/13.json",
+      "mean_biomass": 2929.3331184386952,
+      "mean_population": 433.3333333333333,
+      "name": "MicroHunter_Pos",
+      "per_seed": [
+        429,
+        442,
+        429
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/14.json",
+      "mean_biomass": 2839.1997917175067,
+      "mean_population": 420.0,
+      "name": "MicroHunter_Neg",
+      "per_seed": [
+        422,
+        406,
+        432
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/15.json",
+      "mean_biomass": 10626.7192204284,
+      "mean_population": 393.0,
+      "name": "HunterKiller_r5_Pos",
+      "per_seed": [
+        398,
+        385,
+        396
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/16.json",
+      "mean_biomass": 16917.11910369859,
+      "mean_population": 326.3333333333333,
+      "name": "ApexJuggernaut_r7_Pos",
+      "per_seed": [
+        340,
+        320,
+        319
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/17.json",
+      "mean_biomass": 6809.600202941983,
+      "mean_population": 665.0,
+      "name": "SmartBoomer_r32",
+      "per_seed": [
+        669,
+        664,
+        662
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/18.json",
+      "mean_biomass": 6631.199648666307,
+      "mean_population": 511.6666666666667,
+      "name": "SmartPackHunter_r36",
+      "per_seed": [
+        518,
+        512,
+        505
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/19.json",
+      "mean_biomass": 13554.346326497378,
+      "mean_population": 58.666666666666664,
+      "name": "TitanHunter_r15_Pos",
+      "per_seed": [
+        60,
+        59,
+        57
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/20.json",
+      "mean_biomass": 21533.333333333332,
+      "mean_population": 215.33333333333334,
+      "name": "MegaHunter_r10_Pos",
+      "per_seed": [
+        224,
+        213,
+        209
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/21.json",
+      "mean_biomass": 11633.833333333334,
+      "mean_population": 55.333333333333336,
+      "name": "Leviathan_r145_Pos",
+      "per_seed": [
+        59,
+        55,
+        52
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/22.json",
+      "mean_biomass": 4276.906794128407,
+      "mean_population": 417.6666666666667,
+      "name": "PoisonStinger_r32_Pos",
+      "per_seed": [
+        420,
+        415,
+        418
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/23.json",
+      "mean_biomass": 26133.333333333332,
+      "mean_population": 133.33333333333334,
+      "name": "TestMultiMouth_r14",
+      "per_seed": [
+        141,
+        128,
+        131
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/24.json",
+      "mean_biomass": 12544.916666666666,
+      "mean_population": 59.666666666666664,
+      "name": "MegaMouth_r145_Pos",
+      "per_seed": [
+        60,
+        59,
+        60
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/25.json",
+      "mean_biomass": 11548.333333333334,
+      "mean_population": 273.3333333333333,
+      "name": "HyperMouth_r65_Pos",
+      "per_seed": [
+        274,
+        273,
+        273
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/26.json",
+      "mean_biomass": 4174.163607870684,
+      "mean_population": 496.3333333333333,
+      "name": "GptEater_r29_Pos",
+      "per_seed": [
+        493,
+        521,
+        475
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/27.json",
+      "mean_biomass": 6659.916666666667,
+      "mean_population": 543.6666666666666,
+      "name": "LeanSprinter_r35_Pos",
+      "per_seed": [
+        557,
+        532,
+        542
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/28.json",
+      "mean_biomass": 6882.479801101769,
+      "mean_population": 632.0,
+      "name": "UltraLean_r33_Pos",
+      "per_seed": [
+        640,
+        645,
+        611
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/29.json",
+      "mean_biomass": 6595.66292751938,
+      "mean_population": 686.3333333333334,
+      "name": "FeatherForager_r31_Pos",
+      "per_seed": [
+        690,
+        684,
+        685
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/30.json",
+      "mean_biomass": 4873.866500663772,
+      "mean_population": 621.6666666666666,
+      "name": "NanoHunter_r28_Pos",
+      "per_seed": [
+        614,
+        615,
+        636
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/31.json",
+      "mean_biomass": 4795.466503334056,
+      "mean_population": 611.6666666666666,
+      "name": "UltraForager_r28_Pos",
+      "per_seed": [
+        584,
+        620,
+        631
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/32.json",
+      "mean_biomass": 5365.173150596659,
+      "mean_population": 684.3333333333334,
+      "name": "MicroFeather_r28_Pos",
+      "per_seed": [
+        695,
+        683,
+        675
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/33.json",
+      "mean_biomass": 8423.916666666666,
+      "mean_population": 687.6666666666666,
+      "name": "FeatherForager_r35_Pos",
+      "per_seed": [
+        680,
+        690,
+        693
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/34.json",
+      "mean_biomass": 7408.8297858906835,
+      "mean_population": 680.3333333333334,
+      "name": "FeatherForager_r33_Pos",
+      "per_seed": [
+        677,
+        683,
+        681
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/35.json",
+      "mean_biomass": 12919.5,
+      "mean_population": 638.0,
+      "name": "FeatherGiant_r45_Pos",
+      "per_seed": [
+        628,
+        628,
+        658
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/36.json",
+      "mean_biomass": 6109.866848754944,
+      "mean_population": 596.6666666666666,
+      "name": "StealthFeather_r32_Pos",
+      "per_seed": [
+        593,
+        583,
+        614
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/37.json",
+      "mean_biomass": 8881.919529418832,
+      "mean_population": 685.3333333333334,
+      "name": "FeatherForager_r36_Pos",
+      "per_seed": [
+        669,
+        683,
+        704
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/38.json",
+      "mean_biomass": 5535.449404192518,
+      "mean_population": 623.3333333333334,
+      "name": "FeatherOmnivore_r298_Pos",
+      "per_seed": [
+        622,
+        623,
+        625
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/39.json",
+      "mean_biomass": 6066.0,
+      "mean_population": 674.0,
+      "name": "FeatherForager_r30_Pos",
+      "per_seed": [
+        674,
+        674,
+        674
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/40.json",
+      "mean_biomass": 3796.456509249971,
+      "mean_population": 717.6666666666666,
+      "name": "FeatherMicro_r23_Pos",
+      "per_seed": [
+        720,
+        721,
+        712
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gemini-4-argon/genomes/41.json",
+      "mean_biomass": 2976.0,
+      "mean_population": 744.0,
+      "name": "FeatherMicro_r20_Pos",
+      "per_seed": [
+        740,
+        742,
+        750
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,28 @@
+{
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "test_c3",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.5,
+   "part": "jaw"
+  },
+  {
+   "part": "stinger",
+   "power": 0.5
+  }
+ ]
+}

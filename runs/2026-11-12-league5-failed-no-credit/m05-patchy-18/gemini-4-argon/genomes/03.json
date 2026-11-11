@@ -1,0 +1,34 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 4,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.8,
+   "part": "jaw"
+  },
+  {
+   "thickness": 0.5,
+   "part": "shell"
+  }
+ ],
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "brain": {
+  "hidden": 2
+ },
+ "name": "test_parts_cost"
+}

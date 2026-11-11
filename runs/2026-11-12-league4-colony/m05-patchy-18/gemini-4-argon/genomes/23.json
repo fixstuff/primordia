@@ -1,0 +1,110 @@
+{
+ "name": "megalodon65",
+ "mutation": {
+  "size": 0.04,
+  "rate": 0.02
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 1,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.9,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 30,
+   "chemical": "organism"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": -30
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 45
+  },
+  {
+   "angle": -45,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "power": 1,
+   "part": "jaw"
+  },
+  {
+   "part": "spikes",
+   "power": 0.4
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   4,
+   -4,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   4,
+   -3.3,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   4,
+   4,
+   -3.3,
+   3,
+   3,
+   4,
+   4,
+   2,
+   2,
+   0,
+   -0.5,
+   0,
+   0,
+   0,
+   1.2,
+   1.5,
+   3.8,
+   2,
+   -2,
+   0,
+   0
+  ]
+ }
+}

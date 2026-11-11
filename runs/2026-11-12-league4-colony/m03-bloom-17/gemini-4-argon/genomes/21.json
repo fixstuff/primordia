@@ -1,0 +1,86 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "thickness": 1,
+   "part": "shell"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "chemical": "organism",
+   "angle": 28,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -28
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 40
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -40
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 50,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -50
+  }
+ ],
+ "name": "predator_32_shell10",
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   2.2,
+   -2.2,
+   2,
+   -2,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   2,
+   2.5,
+   0
+  ]
+ },
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.12
+ }
+}

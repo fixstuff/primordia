@@ -1,0 +1,91 @@
+{
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -3.8,
+   3.8,
+   0,
+   -2.5,
+   2.5,
+   0,
+   0,
+   1.5,
+   1.5,
+   3,
+   1,
+   1,
+   0,
+   -0.8,
+   0,
+   -0.55,
+   0.9,
+   3.5,
+   0,
+   0.05
+  ]
+ },
+ "mutation": {
+  "rate": 0.06,
+  "size": 0.1
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.65,
+   "part": "jaw"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "power": 0.85,
+   "part": "cilia"
+  },
+  {
+   "power": 0.6,
+   "part": "toxin"
+  },
+  {
+   "power": 0.4,
+   "part": "spikes"
+  },
+  {
+   "thickness": 0.4,
+   "part": "shell"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -38,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 38,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 0,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -32,
+   "chemical": "organism"
+  },
+  {
+   "angle": 32,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  }
+ ],
+ "name": "SmartPackHunter_r36"
+}

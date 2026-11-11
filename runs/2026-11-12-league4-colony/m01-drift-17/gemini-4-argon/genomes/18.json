@@ -1,0 +1,56 @@
+{
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ },
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "thickness": 0.55,
+   "part": "shell"
+  },
+  {
+   "part": "toxin",
+   "power": 0.2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.38
+  },
+  {
+   "power": 0.45,
+   "part": "cilia"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2,
+   3.5,
+   0.05
+  ],
+  "hidden": 1
+ },
+ "name": "LeanShellGrazer_2_6"
+}

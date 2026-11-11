@@ -1,0 +1,95 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "CamoSpore_R2_def",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.65
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 45
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "spikes",
+   "power": 0.7
+  },
+  {
+   "part": "toxin",
+   "power": 0.7
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   4,
+   1.5,
+   -3,
+   3,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.06,
+  "size": 0.25
+ }
+}

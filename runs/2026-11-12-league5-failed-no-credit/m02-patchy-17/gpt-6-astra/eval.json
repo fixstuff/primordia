@@ -1,0 +1,62 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 6075.0,
+      "mean_population": 675.0,
+      "name": "Grazer-3",
+      "per_seed": [
+        689,
+        664,
+        672
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 11408.333333333334,
+      "mean_population": 456.3333333333333,
+      "name": "Grazer-5",
+      "per_seed": [
+        458,
+        453,
+        458
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 2470.6666666666665,
+      "mean_population": 617.6666666666666,
+      "name": "Grazer-2",
+      "per_seed": [
+        570,
+        703,
+        580
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 10416.0,
+      "mean_population": 651.0,
+      "name": "Armored-Grazer",
+      "per_seed": [
+        655,
+        641,
+        657
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

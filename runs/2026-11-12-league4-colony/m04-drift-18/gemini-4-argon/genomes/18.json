@@ -1,0 +1,76 @@
+{
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.05
+ },
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   -3.5,
+   3.5,
+   0,
+   0,
+   3.8,
+   0,
+   0,
+   2
+  ],
+  "hidden": 1
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.8
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "power": 1,
+   "part": "cilia"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 35
+  },
+  {
+   "angle": -45,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "stinger",
+   "power": 1
+  },
+  {
+   "power": 0.8,
+   "part": "spikes"
+  },
+  {
+   "part": "toxin",
+   "power": 0.8
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "name": "vamp28_direct_plus"
+}

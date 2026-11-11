@@ -1,0 +1,86 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/01.json",
+      "mean_biomass": 9082.666666666666,
+      "mean_population": 567.6666666666666,
+      "name": "Forager_A4",
+      "per_seed": [
+        550,
+        582,
+        571
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/02.json",
+      "mean_biomass": 4853.333333333333,
+      "mean_population": 303.3333333333333,
+      "name": "Forager_B4",
+      "per_seed": [
+        300,
+        353,
+        257
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/03.json",
+      "mean_biomass": 13068.0,
+      "mean_population": 363.0,
+      "name": "Armored_A6",
+      "per_seed": [
+        371,
+        357,
+        361
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/04.json",
+      "mean_biomass": 4440.0,
+      "mean_population": 123.33333333333333,
+      "name": "Armored_B6",
+      "per_seed": [
+        110,
+        164,
+        96
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/05.json",
+      "mean_biomass": 5816.320173339893,
+      "mean_population": 568.0,
+      "name": "Scout_A3",
+      "per_seed": [
+        567,
+        570,
+        567
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/06.json",
+      "mean_biomass": 5478.400163269079,
+      "mean_population": 535.0,
+      "name": "Scout_B3",
+      "per_seed": [
+        572,
+        540,
+        493
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

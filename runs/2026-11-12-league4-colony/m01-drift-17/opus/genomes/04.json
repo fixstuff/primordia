@@ -1,0 +1,80 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "hunter",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  },
+  {
+   "part": "shell",
+   "thickness": 0.3
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   3,
+   -3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1.2,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.2
+ }
+}

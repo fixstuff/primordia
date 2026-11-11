@@ -1,0 +1,65 @@
+{
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0.05
+  ]
+ },
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6.4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.4,
+   "part": "jaw"
+  },
+  {
+   "thickness": 0.15,
+   "part": "shell"
+  },
+  {
+   "power": 0.36,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.45
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "sugar"
+  }
+ ],
+ "name": "QuadMouth_6_4"
+}

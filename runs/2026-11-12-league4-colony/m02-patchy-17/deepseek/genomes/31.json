@@ -1,0 +1,31 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "stoic2m2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.1
+ }
+}

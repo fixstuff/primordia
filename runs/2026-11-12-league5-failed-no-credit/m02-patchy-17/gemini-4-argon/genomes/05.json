@@ -1,0 +1,93 @@
+{
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.2
+ },
+ "body": [
+  {
+   "radius": 4.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.6,
+   "part": "jaw"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "angle": 25,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  },
+  {
+   "angle": -25,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "thickness": 0.35,
+   "part": "shell"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   2,
+   -2,
+   1.5,
+   -1.5,
+   1.5,
+   -1.5,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0.6,
+   0,
+   1,
+   0.8,
+   2.5,
+   0,
+   0.05
+  ]
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "Apex_A"
+}

@@ -1,0 +1,230 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 6021.0,
+      "mean_population": 669.0,
+      "name": "Swift Grazer",
+      "per_seed": [
+        673,
+        697,
+        637
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 14652.0,
+      "mean_population": 407.0,
+      "name": "Broad Grazer",
+      "per_seed": [
+        418,
+        400,
+        403
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 1830.6666666666667,
+      "mean_population": 457.6666666666667,
+      "name": "Trail Forager",
+      "per_seed": [
+        450,
+        454,
+        469
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 15173.666666666666,
+      "mean_population": 309.6666666666667,
+      "name": "Armored Hunter",
+      "per_seed": [
+        307,
+        306,
+        316
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 22923.0,
+      "mean_population": 283.0,
+      "name": "Fortress",
+      "per_seed": [
+        292,
+        279,
+        278
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 15190.0,
+      "mean_population": 310.0,
+      "name": "Warhead",
+      "per_seed": [
+        313,
+        307,
+        310
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 9750.0,
+      "mean_population": 43.333333333333336,
+      "name": "Leviathan",
+      "per_seed": [
+        50,
+        38,
+        42
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 17184.0,
+      "mean_population": 119.33333333333333,
+      "name": "Apex twelve",
+      "per_seed": [
+        136,
+        102,
+        120
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 5226.666666666667,
+      "mean_population": 1306.6666666666667,
+      "name": "Seed",
+      "per_seed": [
+        1314,
+        1310,
+        1296
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 8533.333333333334,
+      "mean_population": 133.33333333333334,
+      "name": "Raider",
+      "per_seed": [
+        129,
+        136,
+        135
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 6528.0,
+      "mean_population": 181.33333333333334,
+      "name": "Raider six",
+      "per_seed": [
+        180,
+        183,
+        181
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 4309.333333333333,
+      "mean_population": 269.3333333333333,
+      "name": "Hunter four",
+      "per_seed": [
+        281,
+        272,
+        255
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/13.json",
+      "mean_biomass": 17333.333333333332,
+      "mean_population": 173.33333333333334,
+      "name": "Dreadnought",
+      "per_seed": [
+        179,
+        171,
+        170
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/14.json",
+      "mean_biomass": 10290.0,
+      "mean_population": 210.0,
+      "name": "Fortress",
+      "per_seed": [
+        202,
+        216,
+        212
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/15.json",
+      "mean_biomass": 9966.666666666666,
+      "mean_population": 398.6666666666667,
+      "name": "Ghost grazer",
+      "per_seed": [
+        414,
+        392,
+        390
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/16.json",
+      "mean_biomass": 12300.0,
+      "mean_population": 54.666666666666664,
+      "name": "Leviathan",
+      "per_seed": [
+        60,
+        49,
+        55
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/17.json",
+      "mean_biomass": 1770.6666666666667,
+      "mean_population": 442.6666666666667,
+      "name": "Needle colonist",
+      "per_seed": [
+        445,
+        435,
+        448
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/18.json",
+      "mean_biomass": 7248.0,
+      "mean_population": 453.0,
+      "name": "Cyst",
+      "per_seed": [
+        460,
+        452,
+        447
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

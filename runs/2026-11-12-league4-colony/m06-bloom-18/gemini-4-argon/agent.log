@@ -1,0 +1,98 @@
+[turn  1 | tick      0 |      6s] '' calls=['catalog', 'observe']
+[turn  2 | tick      0 |     25s] '' calls=['submit_genome', 'submit_genome']
+[turn  3 | tick      0 |     59s] '' calls=['submit_genome', 'submit_genome', 'submit_genome']
+[turn  4 | tick      0 |     74s] '' calls=['release', 'release', 'release', 'end_turn']
+[turn  5 | tick      0 |    255s] '' calls=['report', 'observe']
+[turn  6 | tick     26 |    274s] '' calls=['submit_genome', 'release', 'end_turn']
+[turn  7 | tick    500 |    378s] '' calls=['report']
+[turn  8 | tick    538 |    413s] '' calls=['submit_genome', 'submit_genome']
+[turn  9 | tick    688 |    422s] '' calls=['observe', 'release', 'end_turn']
+[turn 10 | tick   1000 |    495s] '' calls=['report']
+[turn 11 | tick   1029 |    515s] '' calls=['submit_genome', 'submit_genome']
+[turn 12 | tick   1113 |    528s] '' calls=['submit_genome']
+[turn 13 | tick   1164 |    538s] '' calls=['submit_genome']
+[turn 14 | tick   1205 |    549s] '' calls=['release', 'release', 'end_turn']
+[turn 15 | tick   1500 |    619s] '' calls=['report']
+[turn 16 | tick   1543 |    626s] '' calls=['observe']
+[turn 17 | tick   1574 |    680s] '' calls=['submit_genome', 'submit_genome']
+[turn 18 | tick   1574 |    717s] '' calls=['submit_genome', 'submit_genome']
+[turn 19 | tick   1954 |    724s] '' calls=['release', 'release', 'end_turn']
+[turn 20 | tick   2000 |    735s] '' calls=['observe', 'report']
+[turn 21 | tick   2029 |    768s] '' calls=['submit_genome']
+[turn 22 | tick   2166 |    774s] '' calls=['observe']
+[turn 23 | tick   2189 |    797s] '' calls=['submit_genome']
+[turn 24 | tick   2286 |    804s] '' calls=['release', 'release', 'end_turn']
+[turn 25 | tick   2500 |    858s] '' calls=['observe']
+[turn 26 | tick   2538 |    865s] '' calls=['report']
+[turn 27 | tick   2569 |    872s] '' calls=['observe']
+[turn 28 | tick   2597 |    900s] '' calls=['submit_genome']
+[turn 29 | tick   2714 |    906s] '' calls=['observe']
+[turn 30 | tick   2740 |    962s] '' calls=['submit_genome', 'submit_genome']
+[turn 31 | tick   2974 |    972s] '' calls=['release', 'release', 'end_turn']
+[turn 32 | tick   3500 |   1096s] '' calls=['observe']
+[turn 33 | tick   3533 |   1200s] '' calls=['submit_genome', 'submit_genome']
+[turn 34 | tick   3533 |   1238s] '' calls=['submit_genome']
+[turn 35 | tick   4125 |   1266s] '' calls=['observe', 'submit_genome', 'submit_genome']
+[turn 36 | tick   4240 |   1292s] '' calls=['release', 'release', 'release', 'end_turn']
+[turn 37 | tick   4500 |   1340s] '' calls=['report', 'observe']
+[turn 38 | tick   4549 |   1366s] '' calls=['observe']
+[turn 39 | tick   4656 |   1412s] '' calls=['submit_genome']
+[turn 40 | tick   4849 |   1424s] '' calls=['release', 'end_turn']
+[turn 41 | tick   5000 |   1461s] '' calls=['observe']
+[turn 42 | tick   5051 |   1509s] '' calls=['observe']
+[turn 43 | tick   5253 |   1542s] '' calls=['submit_genome']
+[turn 44 | tick   5389 |   1552s] '' calls=['release', 'end_turn']
+[turn 45 | tick   5500 |   1579s] '' calls=['observe']
+[turn 46 | tick   5542 |   1620s] '' calls=['submit_genome', 'observe']
+[turn 47 | tick   5715 |   1665s] '' calls=['release', 'end_turn']
+[turn 48 | tick   6000 |   1695s] '' calls=['observe']
+[turn 49 | tick   6028 |   1770s] '' calls=['submit_genome', 'observe']
+[turn 50 | tick   6339 |   1780s] '' calls=['release', 'end_turn']
+[turn 51 | tick   6500 |   1818s] '' calls=['observe']
+[turn 52 | tick   6541 |   1829s] '' calls=['observe']
+[turn 53 | tick   6586 |   1880s] '' calls=['observe']
+[turn 54 | tick   6799 |   1912s] '' calls=['submit_genome']
+[turn 55 | tick   6931 |   1950s] '' calls=['release', 'end_turn']
+[turn 56 | tick   7500 |   2056s] '' calls=['observe']
+[turn 57 | tick   7532 |   2113s] '' calls=['submit_genome', 'observe']
+[turn 58 | tick   7770 |   2136s] '' calls=['submit_genome']
+[turn 59 | tick   7865 |   2152s] '' calls=['release', 'release', 'end_turn']
+[turn 60 | tick   8000 |   2179s] '' calls=['observe']
+[turn 61 | tick   8044 |   2213s] '' calls=['submit_genome', 'observe']
+[turn 62 | tick   8186 |   2232s] '' calls=['release', 'end_turn']
+[turn 63 | tick   8500 |   2321s] '' calls=['observe']
+[turn 64 | tick   8635 |   2347s] '' calls=['release', 'end_turn']
+[turn 65 | tick   9000 |   2417s] '' calls=['observe']
+[turn 66 | tick   9036 |   2427s] '' calls=['release', 'end_turn']
+[turn 67 | tick   9500 |   2537s] '' calls=['release', 'end_turn']
+
+ended at tick 10000 after 67 turns, 27 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 probe_r3                 submitted at tick      0: 664.0
+  # 2 forager_A_r35            submitted at tick      0: 450.3333333333333
+  # 3 forager_B_r35            submitted at tick      0: 408.3333333333333
+  # 4 hunter_A_r52             submitted at tick      0: 356.6666666666667
+  # 5 apex_r54                 submitted at tick    688: 356.0
+  # 6 armour_r42               submitted at tick    688: 389.0
+  # 7 ghost_forager_r40        submitted at tick   1113: 399.0
+  # 8 evader_r32               submitted at tick   1113: 454.0
+  # 9 lean_r28                 submitted at tick   1164: 565.6666666666666
+  #10 lean_r30                 submitted at tick   1205: 557.3333333333334
+  #11 smart_ghost_r42          submitted at tick   1954: 389.3333333333333
+  #12 smart_ghost_r32          submitted at tick   1954: 462.6666666666667
+  #13 toxic_ghost_r42          submitted at tick   2166: 355.0
+  #14 ghost_forager_r40_tox8   submitted at tick   2286: 395.6666666666667
+  #15 ghost_forager_r40_v2     submitted at tick   2714: 370.3333333333333
+  #16 stinger_ghost_r40        submitted at tick   2974: 371.3333333333333
+  #17 swarm_killer_r235        submitted at tick   4125: 391.0
+  #18 stinger_lean_r235        submitted at tick   4240: 558.0
+  #19 forager_lean_r220        submitted at tick   4240: 615.0
+  #20 ghost_forager_r36        submitted at tick   4849: 405.3333333333333
+  #21 ghost_forager_r38_pure   submitted at tick   5389: 392.3333333333333
+  #22 patch_reaper_r36         submitted at tick   5715: 434.0
+  #23 dual_forager_r36         submitted at tick   6338: 369.6666666666667
+  #24 ghost_forager_r38_minera submitted at tick   6931: 373.6666666666667
+  #25 plague_swarm_r20         submitted at tick   7770: 432.0
+  #26 plague_lean_r22          submitted at tick   7865: 561.3333333333334
+  #27 plague_stinger_r225      submitted at tick   8186: 486.6666666666667

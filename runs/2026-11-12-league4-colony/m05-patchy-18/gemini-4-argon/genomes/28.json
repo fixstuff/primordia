@@ -1,0 +1,60 @@
+{
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0
+  ],
+  "hidden": 1
+ },
+ "body": [
+  {
+   "radius": 3.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.8,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 40
+  },
+  {
+   "angle": -40,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.3
+  },
+  {
+   "part": "spikes",
+   "power": 0.4
+  },
+  {
+   "power": 0.6,
+   "part": "stinger"
+  }
+ ],
+ "name": "assassin32_stinger",
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.06
+ },
+ "schema": "lifeapi.genome/1"
+}

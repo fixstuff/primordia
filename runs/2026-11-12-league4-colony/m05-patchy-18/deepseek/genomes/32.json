@@ -1,0 +1,25 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r6bare",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

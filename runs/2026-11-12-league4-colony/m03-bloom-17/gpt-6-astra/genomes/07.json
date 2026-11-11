@@ -1,0 +1,49 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Hidden nettle",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.4
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "part": "toxin",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   3,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

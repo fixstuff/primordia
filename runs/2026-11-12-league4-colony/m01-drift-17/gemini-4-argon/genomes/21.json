@@ -1,0 +1,68 @@
+{
+ "body": [
+  {
+   "radius": 5.3,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 0.55
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  },
+  {
+   "part": "flagellum",
+   "power": 0.38
+  },
+  {
+   "power": 0.45,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 20,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -20
+  }
+ ],
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.1
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "LeanApex_5_3",
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   3.5,
+   -3.5,
+   2.5,
+   -2.5,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0.05
+  ]
+ }
+}

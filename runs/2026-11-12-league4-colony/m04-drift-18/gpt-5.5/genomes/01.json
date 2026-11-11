@@ -1,0 +1,84 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "spark_forager_r2_v1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "part": "cilia",
+   "power": 0.9
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 70
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3,
+   0,
+   2,
+   0,
+   0,
+   1,
+   0,
+   3,
+   0,
+   2,
+   0,
+   1,
+   0,
+   0,
+   3,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   3,
+   -1,
+   1,
+   1.2,
+   1.2,
+   0.7,
+   0.7,
+   0.6,
+   2.2,
+   -2.2,
+   1.8,
+   -1.8,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.18
+ }
+}

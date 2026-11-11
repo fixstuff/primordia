@@ -1,0 +1,82 @@
+[turn  1 | tick      0 |      5s] '' calls=['catalog', 'observe']
+[turn  2 | tick      0 |     31s] '' calls=['submit_genome', 'submit_genome', 'submit_genome', 'submit_genome']
+[turn  3 | tick      0 |     55s] '' calls=['submit_genome', 'submit_genome', 'submit_genome', 'submit_genome']
+[turn  4 | tick      0 |     68s] '' calls=['release', 'release', 'submit_genome', 'submit_genome']
+[turn  5 | tick      0 |     76s] '' calls=['release', 'release', 'end_turn']
+[turn  6 | tick      0 |    203s] '' calls=['submit_genome', 'release', 'release', 'end_turn']
+[turn  7 | tick    500 |    322s] '' calls=['report', 'observe']
+[turn  8 | tick    559 |    340s] '' calls=['submit_genome', 'release']
+[turn  9 | tick    632 |    397s] '' calls=['release', 'end_turn']
+[turn 10 | tick   1000 |    436s] '' calls=['report', 'observe']
+[turn 11 | tick   1034 |    461s] '' calls=['submit_genome', 'submit_genome']
+[turn 12 | tick   1137 |    474s] '' calls=['submit_genome', 'release', 'release']
+[turn 13 | tick   1193 |    487s] '' calls=['release', 'end_turn']
+[turn 14 | tick   1500 |    598s] '' calls=['report', 'observe']
+[turn 15 | tick   1710 |    623s] '' calls=['submit_genome']
+[turn 16 | tick   1811 |    662s] '' calls=['submit_genome']
+[turn 17 | tick   1975 |    673s] '' calls=['release', 'end_turn']
+[turn 18 | tick   2500 |    808s] '' calls=['catalog', 'report']
+[turn 19 | tick   2582 |    849s] '' calls=['observe']
+[turn 20 | tick   2754 |    890s] '' calls=['submit_genome', 'submit_genome']
+[turn 21 | tick   2927 |    902s] '' calls=['release', 'release', 'end_turn']
+[turn 22 | tick   3000 |    921s] '' calls=['report', 'observe']
+[turn 23 | tick   3054 |   1000s] '' calls=['submit_genome', 'submit_genome']
+[turn 24 | tick   3385 |   1011s] '' calls=['submit_genome', 'release']
+[turn 25 | tick   3429 |   1020s] '' calls=['release', 'end_turn']
+[turn 26 | tick   3500 |   1107s] '' calls=['observe', 'report']
+[turn 27 | tick   3829 |   1143s] '' calls=['submit_genome', 'release']
+[turn 28 | tick   3978 |   1150s] '' calls=['release', 'end_turn']
+[turn 29 | tick   4500 |   1288s] '' calls=['observe', 'report']
+[turn 30 | tick   4583 |   1313s] '' calls=['observe']
+[turn 31 | tick   4687 |   1350s] '' calls=['submit_genome', 'submit_genome']
+[turn 32 | tick   4843 |   1362s] '' calls=['release', 'release', 'end_turn']
+[turn 33 | tick   5000 |   1395s] '' calls=['observe', 'report']
+[turn 34 | tick   5030 |   1426s] '' calls=['submit_genome']
+[turn 35 | tick   5157 |   1455s] '' calls=['observe']
+[turn 36 | tick   5279 |   1482s] '' calls=['release', 'end_turn']
+[turn 37 | tick   5500 |   1547s] '' calls=['observe', 'report']
+[turn 38 | tick   5662 |   1606s] '' calls=['submit_genome']
+[turn 39 | tick   5662 |   1653s] '' calls=['submit_genome']
+[turn 40 | tick   6103 |   1686s] '' calls=['observe', 'report']
+[turn 41 | tick   6243 |   1778s] '' calls=['submit_genome', 'submit_genome']
+[turn 42 | tick   6625 |   1786s] '' calls=['release', 'release', 'end_turn']
+[turn 43 | tick   7000 |   1880s] '' calls=['observe', 'report']
+[turn 44 | tick   7049 |   1926s] '' calls=['submit_genome']
+[turn 45 | tick   7243 |   1941s] '' calls=['observe']
+[turn 46 | tick   7304 |   1953s] '' calls=['release', 'end_turn']
+[turn 47 | tick   7500 |   2006s] '' calls=['observe', 'report']
+[turn 48 | tick   7577 |   2021s] '' calls=['release', 'end_turn']
+[turn 49 | tick   8000 |   2119s] '' calls=['observe', 'report']
+[turn 50 | tick   8047 |   2131s] '' calls=['release', 'end_turn']
+[turn 51 | tick   8500 |   2252s] '' calls=['observe', 'report']
+[turn 52 | tick   8599 |   2265s] '' calls=['release', 'end_turn']
+[turn 53 | tick   9000 |   2358s] '' calls=['observe', 'release', 'end_turn']
+[turn 54 | tick   9500 |   2476s] '' calls=['release', 'end_turn']
+
+ended at tick 10000 after 54 turns, 24 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 hunter_grazer            submitted at tick      0: 505.3333333333333
+  # 2 forager_A                submitted at tick      0: 483.3333333333333
+  # 3 forager_B                submitted at tick      0: 461.0
+  # 4 predator_A               submitted at tick      0: 378.0
+  # 5 predator_B               submitted at tick      0: 353.0
+  # 6 stealth_A                submitted at tick     62: 440.3333333333333
+  # 7 apex_A                   submitted at tick    631: 312.6666666666667
+  # 8 titan_forager_A          submitted at tick   1137: 336.6666666666667
+  # 9 forager_camo_A           submitted at tick   1137: 379.3333333333333
+  #10 forager_A_plus           submitted at tick   1192: 437.6666666666667
+  #11 test_inputs              submitted at tick   1811: 556.6666666666666
+  #12 test_1_sensor            submitted at tick   1975: 0.0
+  #13 lean_forager_A           submitted at tick   2927: 634.6666666666666
+  #14 lean_forager_B           submitted at tick   2927: 603.6666666666666
+  #15 pure_forager_24          submitted at tick   3385: 539.3333333333334
+  #16 hunter_forager_25        submitted at tick   3429: 428.3333333333333
+  #17 apex_omnivore_34         submitted at tick   3978: 421.6666666666667
+  #18 oasis_forager_30         submitted at tick   4843: 499.6666666666667
+  #19 oasis_jaw_35             submitted at tick   4843: 444.3333333333333
+  #20 predator_38              submitted at tick   5157: 425.3333333333333
+  #21 predator_32_shell10      submitted at tick   6103: 399.0
+  #22 forager_A_lean32         submitted at tick   6625: 512.6666666666666
+  #23 forager_A_jaw32          submitted at tick   6625: 436.6666666666667
+  #24 predator_A_32            submitted at tick   7243: 494.6666666666667

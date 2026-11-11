@@ -1,0 +1,105 @@
+{
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   2.5,
+   2.5,
+   3,
+   3,
+   0,
+   -0.8,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0.5,
+   0,
+   1,
+   2.8,
+   2.2,
+   0,
+   1,
+   0.02
+  ],
+  "hidden": 4
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "body": [
+  {
+   "radius": 4.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.85,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "part": "jaw",
+   "power": 0.8
+  },
+  {
+   "thickness": 0.5,
+   "part": "shell"
+  },
+  {
+   "power": 0.4,
+   "part": "toxin"
+  },
+  {
+   "angle": 30,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -30
+  },
+  {
+   "chemical": "organism",
+   "angle": 25,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -25
+  }
+ ],
+ "name": "armour_r42",
+ "schema": "lifeapi.genome/1"
+}

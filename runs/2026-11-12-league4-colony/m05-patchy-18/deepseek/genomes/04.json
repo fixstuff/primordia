@@ -1,0 +1,20 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "baser3",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.05
+ }
+}

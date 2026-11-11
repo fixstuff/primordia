@@ -1,0 +1,50 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 9333.333333333334,
+      "mean_population": 583.3333333333334,
+      "name": "Grazer-4",
+      "per_seed": [
+        575,
+        585,
+        590
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 18453.333333333332,
+      "mean_population": 288.3333333333333,
+      "name": "Grazer-8",
+      "per_seed": [
+        287,
+        285,
+        293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 19392.0,
+      "mean_population": 303.0,
+      "name": "Hunter-8",
+      "per_seed": [
+        305,
+        305,
+        299
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

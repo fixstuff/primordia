@@ -1,0 +1,105 @@
+{
+ "name": "ghost_forager_r40_tox8",
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   0,
+   0,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   0,
+   -0.6,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0.4,
+   0,
+   1.1,
+   2.8,
+   1.5,
+   0,
+   1,
+   0.02
+  ],
+  "hidden": 4
+ },
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.75,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "thickness": 0.6,
+   "part": "shell"
+  },
+  {
+   "part": "camouflage",
+   "power": 0.7
+  },
+  {
+   "power": 0.8,
+   "part": "toxin"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 32
+  },
+  {
+   "angle": -32,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 75,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -75,
+   "part": "chemo_sensor"
+  }
+ ]
+}

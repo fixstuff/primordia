@@ -1,0 +1,20 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r5mouth",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

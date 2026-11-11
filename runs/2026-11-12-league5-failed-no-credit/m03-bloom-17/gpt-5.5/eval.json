@@ -1,0 +1,50 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-5.5/genomes/01.json",
+      "mean_biomass": 5598.0,
+      "mean_population": 622.0,
+      "name": "SwiftGrazer3a",
+      "per_seed": [
+        644,
+        624,
+        598
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-5.5/genomes/02.json",
+      "mean_biomass": 2802.6666666666665,
+      "mean_population": 700.6666666666666,
+      "name": "MicroGrazer2",
+      "per_seed": [
+        723,
+        700,
+        679
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-5.5/genomes/03.json",
+      "mean_biomass": 8613.333333333334,
+      "mean_population": 538.3333333333334,
+      "name": "FatGrazer4",
+      "per_seed": [
+        559,
+        508,
+        548
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

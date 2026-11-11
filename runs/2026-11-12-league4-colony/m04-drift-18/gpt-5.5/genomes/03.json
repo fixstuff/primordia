@@ -1,0 +1,133 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "armed_camo_hunter_r3",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.85
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "spikes",
+   "power": 0.7
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 45
+  }
+ ],
+ "brain": {
+  "hidden": 6,
+  "weights": [
+   3,
+   0,
+   1,
+   0,
+   2,
+   0,
+   0,
+   1,
+   0,
+   3,
+   0,
+   1,
+   0,
+   2,
+   0,
+   1,
+   0,
+   0,
+   3,
+   0,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   3,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   -1,
+   1,
+   1.2,
+   1.2,
+   0.8,
+   0.8,
+   1.5,
+   1.5,
+   0.5,
+   2.5,
+   -2.5,
+   1.6,
+   -1.6,
+   2.4,
+   -2.4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.12,
+  "size": 0.25
+ }
+}

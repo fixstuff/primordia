@@ -1,0 +1,84 @@
+{
+ "name": "titan62_apex",
+ "body": [
+  {
+   "radius": 6.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.95,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.85,
+   "part": "cilia"
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "angle": 45,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -45,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "jaw",
+   "power": 0.85
+  },
+  {
+   "power": 0.35,
+   "part": "spikes"
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.04
+ },
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   4,
+   -3.3,
+   0,
+   0,
+   -4,
+   4,
+   4,
+   -3.3,
+   0,
+   0,
+   0,
+   2.2,
+   3.8,
+   1.8,
+   -1.8,
+   0
+  ],
+  "hidden": 3
+ }
+}

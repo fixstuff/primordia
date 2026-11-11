@@ -1,0 +1,56 @@
+{
+ "name": "micro20_h1",
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0
+  ]
+ },
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ },
+ "body": [
+  {
+   "radius": 2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "chemical": "sugar",
+   "angle": 40,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -40,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "thickness": 0.3,
+   "part": "shell"
+  },
+  {
+   "part": "spikes",
+   "power": 0.3
+  }
+ ]
+}

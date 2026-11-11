@@ -1,0 +1,100 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/01.json",
+  "name": "fast-grazer-r2-v2",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/02.json",
+  "name": "simple-r2-random",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/03.json",
+  "name": "camo-efficient-r2-v1",
+  "species": 50,
+  "tick": 53
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/04.json",
+  "name": "r4-camo-jaw-hunter-v2",
+  "species": 67,
+  "tick": 636
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/05.json",
+  "name": "r3-camo-grazer-v2",
+  "species": 68,
+  "tick": 676
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/06.json",
+  "name": "r2-camo-chemotaxis-v2",
+  "species": 109,
+  "tick": 1669
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/07.json",
+  "name": "r2-camo-avoid-taxis-v2",
+  "species": 118,
+  "tick": 2182
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/08.json",
+  "name": "r2-random-swarm-8sens-v1",
+  "species": 129,
+  "tick": 2566
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/09.json",
+  "name": "r5-jaw-organism-hunter-v3",
+  "species": 140,
+  "tick": 3191
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/10.json",
+  "name": "r2-deterministic-dual-taxis-v2",
+  "species": 151,
+  "tick": 3623
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/11.json",
+  "name": "r4-efficient-hunter-v1",
+  "species": 173,
+  "tick": 4615
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/12.json",
+  "name": "r2-sessile-spore-v1",
+  "species": 184,
+  "tick": 5057
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/13.json",
+  "name": "r2-doublemouth-spore-v1",
+  "species": 193,
+  "tick": 5539
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-5.5/genomes/14.json",
+  "name": "directed-r2-dual-seeker-v2",
+  "species": 212,
+  "tick": 7629
+ }
+]

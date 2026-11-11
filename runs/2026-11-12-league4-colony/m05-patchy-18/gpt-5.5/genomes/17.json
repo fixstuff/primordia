@@ -1,0 +1,88 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r8_direct_predator_H",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 8
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -75
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 75
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   3,
+   3,
+   3,
+   0,
+   0,
+   0,
+   0,
+   -3,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   0,
+   0,
+   4,
+   0,
+   1,
+   1,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.2
+ }
+}

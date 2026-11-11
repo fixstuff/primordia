@@ -1,0 +1,173 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |      7s] '' calls=['catalog']
+[turn  3 | tick      0 |     10s] '' calls=['observe']
+[turn  4 | tick      0 |     17s] '' calls=['submit_genome']
+[turn  5 | tick      0 |     24s] '' calls=['submit_genome']
+[turn  6 | tick      0 |     28s] '' calls=['submit_genome']
+[turn  7 | tick      0 |     31s] '' calls=['submit_genome']
+[turn  8 | tick      0 |     34s] '' calls=['submit_genome']
+[turn  9 | tick      0 |     36s] '' calls=['submit_genome']
+[turn 10 | tick      0 |     38s] '' calls=['submit_genome']
+[turn 11 | tick      0 |     41s] '' calls=['submit_genome']
+[turn 12 | tick      0 |     60s] '' calls=['submit_genome']
+[turn 13 | tick      0 |     84s] '' calls=['submit_genome']
+[turn 14 | tick      0 |    107s] '' calls=['submit_genome']
+[turn 15 | tick      0 |    109s] '' calls=['submit_genome']
+[turn 16 | tick      0 |    112s] '' calls=['submit_genome']
+[turn 17 | tick      0 |    115s] '' calls=['submit_genome']
+[turn 18 | tick      0 |    116s] '' calls=['submit_genome']
+[turn 19 | tick      0 |    119s] '' calls=['submit_genome']
+[turn 20 | tick      0 |    132s] '' calls=['submit_genome']
+[turn 21 | tick      0 |    137s] '' calls=['release', 'release']
+[turn 22 | tick      0 |    142s] '' calls=['observe']
+[turn 23 | tick      0 |    150s] '' calls=['release', 'release']
+[turn 24 | tick      0 |    163s] '' calls=['submit_genome']
+[turn 25 | tick      0 |    169s] '' calls=['submit_genome', 'submit_genome']
+[turn 26 | tick      0 |    172s] '' calls=['end_turn']
+[turn 27 | tick      0 |    428s] '' calls=['report', 'observe']
+[turn 28 | tick     35 |    448s] '' calls=['submit_genome']
+[turn 29 | tick    118 |    451s] '' calls=['observe']
+[turn 30 | tick    133 |    455s] '' calls=['report']
+[turn 31 | tick    148 |    484s] '' calls=['submit_genome', 'submit_genome', 'submit_genome']
+[turn 32 | tick    269 |    488s] '' calls=['observe']
+[turn 33 | tick    287 |    499s] '' calls=['release', 'release']
+[turn 34 | tick    331 |    501s] '' calls=['release']
+[turn 35 | tick    338 |    506s] '' calls=['report']
+[turn 36 | tick    358 |    509s] '' calls=['observe']
+[turn 37 | tick    372 |    515s] '' calls=['report']
+[turn 38 | tick    399 |    519s] '' calls=['observe']
+[turn 39 | tick    413 |    538s] '' calls=['submit_genome', 'submit_genome']
+[turn 40 | tick    493 |    541s] '' calls=['observe']
+[turn 41 | tick    505 |    543s] '' calls=['release']
+[turn 42 | tick    514 |    552s] '' calls=['release']
+[turn 43 | tick    550 |    554s] '' calls=['end_turn']
+[turn 44 | tick   1000 |    668s] '' calls=['report', 'observe']
+[turn 45 | tick   1034 |    681s] '' calls=['observe']
+[turn 46 | tick   1091 |    696s] '' calls=['catalog']
+[turn 47 | tick   1152 |    733s] '' calls=['submit_genome', 'submit_genome']
+[turn 48 | tick   1307 |    737s] '' calls=['release', 'release']
+[turn 49 | tick   1322 |    739s] '' calls=['observe']
+[turn 50 | tick   1330 |    747s] '' calls=['end_turn']
+[turn 51 | tick   1500 |    782s] '' calls=['report', 'observe']
+[turn 52 | tick   1510 |    805s] '' calls=['submit_genome', 'submit_genome', 'submit_genome']
+[turn 53 | tick   1607 |    810s] '' calls=['release', 'release', 'release', 'release']
+[turn 54 | tick   1628 |    812s] '' calls=['end_turn']
+[turn 55 | tick   2000 |    903s] '' calls=['observe']
+[turn 56 | tick   2015 |    915s] '' calls=['report']
+[turn 57 | tick   2066 |    918s] '' calls=['observe']
+[turn 58 | tick   2078 |    928s] '' calls=['submit_genome', 'submit_genome', 'submit_genome']
+[turn 59 | tick   2118 |    933s] '' calls=['submit_genome', 'submit_genome', 'submit_genome', 'submit_genome', 'submit_genome', 'submit_genome']
+[turn 60 | tick   2142 |    991s] '' calls=['submit_genome']
+[turn 61 | tick   2382 |    995s] '' calls=['release']
+[turn 62 | tick   2396 |    997s] '' calls=['end_turn']
+[turn 63 | tick   2500 |   1024s] '' calls=['observe']
+[turn 64 | tick   2518 |   1028s] '' calls=['report']
+[turn 65 | tick   2537 |   1041s] '' calls=['observe']
+[turn 66 | tick   2590 |   1090s] '' calls=['submit_genome']
+[turn 67 | tick   2590 |   1095s] '' calls=['submit_genome']
+[turn 68 | tick   2813 |   1097s] '' calls=['release']
+[turn 69 | tick   2822 |   1100s] '' calls=['release']
+[turn 70 | tick   2834 |   1101s] '' calls=['end_turn']
+[turn 71 | tick   3000 |   1145s] '' calls=['observe']
+[turn 72 | tick   3021 |   1158s] '' calls=['release']
+[turn 73 | tick   3077 |   1161s] '' calls=['end_turn']
+[turn 74 | tick   3500 |   1283s] '' calls=['observe']
+[turn 75 | tick   3597 |   1296s] '' calls=['submit_genome']
+[turn 76 | tick   3653 |   1299s] '' calls=['release']
+[turn 77 | tick   3665 |   1301s] '' calls=['end_turn']
+[turn 78 | tick   4000 |   1397s] '' calls=['catalog']
+[turn 79 | tick   4074 |   1416s] '' calls=['submit_genome', 'submit_genome']
+[turn 80 | tick   4152 |   1418s] '' calls=['release', 'release']
+[turn 81 | tick   4160 |   1420s] '' calls=['end_turn']
+[turn 82 | tick   4500 |   1502s] '' calls=['observe']
+[turn 83 | tick   4509 |   1504s] '' calls=['report']
+[turn 84 | tick   4517 |   1544s] '' calls=['submit_genome']
+[turn 85 | tick   4684 |   1547s] '' calls=['release']
+[turn 86 | tick   4698 |   1549s] '' calls=['end_turn']
+[turn 87 | tick   5000 |   1622s] '' calls=['observe']
+[turn 88 | tick   5008 |   1648s] '' calls=['end_turn']
+[turn 89 | tick   5500 |   1749s] '' calls=['submit_genome']
+[turn 90 | tick   5539 |   1752s] '' calls=['release']
+[turn 91 | tick   5552 |   1754s] '' calls=['end_turn']
+[turn 92 | tick   6000 |   1910s] '' calls=['submit_genome']
+Traceback (most recent call last):
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 245, in main
+    if a.responses_api else openai_chat(a.base_url, key, a.model, messages, tools))
+                            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 67, in openai_chat
+    with urllib.request.urlopen(req, timeout=600) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 402: Payment Required
+relaunch 1
+Traceback (most recent call last):
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 245, in main
+    if a.responses_api else openai_chat(a.base_url, key, a.model, messages, tools))
+                            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 67, in openai_chat
+    with urllib.request.urlopen(req, timeout=600) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 402: Payment Required
+relaunch 2
+Traceback (most recent call last):
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 245, in main
+    if a.responses_api else openai_chat(a.base_url, key, a.model, messages, tools))
+                            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 67, in openai_chat
+    with urllib.request.urlopen(req, timeout=600) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 402: Payment Required
+relaunch 3

@@ -1,0 +1,106 @@
+{
+ "name": "patch_reaper_r36",
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ },
+ "body": [
+  {
+   "radius": 3.6,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "part": "stinger",
+   "power": 0.65
+  },
+  {
+   "thickness": 0.6,
+   "part": "shell"
+  },
+  {
+   "angle": 32,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -32,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 75
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -75
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 18,
+   "chemical": "organism"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": -18
+  }
+ ],
+ "brain": {
+  "weights": [
+   3.5,
+   -3.5,
+   1,
+   -1,
+   3,
+   -3,
+   0,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   0,
+   0,
+   0,
+   0,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   2.5,
+   2.5,
+   0,
+   -0.6,
+   0,
+   0,
+   0.45,
+   0.95,
+   2,
+   3,
+   0,
+   0
+  ],
+  "hidden": 3
+ },
+ "schema": "lifeapi.genome/1"
+}

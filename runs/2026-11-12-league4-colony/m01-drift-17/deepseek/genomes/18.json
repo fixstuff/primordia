@@ -1,0 +1,20 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "probe_h16",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 16
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.01
+ }
+}

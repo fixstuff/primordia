@@ -1,0 +1,44 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/01.json",
+  "name": "Forager_A4",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/02.json",
+  "name": "Forager_B4",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/03.json",
+  "name": "Armored_A6",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/04.json",
+  "name": "Armored_B6",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/05.json",
+  "name": "Scout_A3",
+  "species": 12,
+  "tick": 0
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gemini-4-argon/genomes/06.json",
+  "name": "Scout_B3",
+  "species": 13,
+  "tick": 0
+ }
+]

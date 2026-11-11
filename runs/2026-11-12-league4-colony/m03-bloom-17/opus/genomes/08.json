@@ -1,0 +1,54 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "swarmS",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "toxin",
+   "power": 0.5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   3,
+   -3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   2,
+   0,
+   2,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.3
+ }
+}

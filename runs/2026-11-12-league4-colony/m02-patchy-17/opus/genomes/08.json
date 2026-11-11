@@ -1,0 +1,58 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "wander",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 50,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -50,
+   "chemical": "sugar"
+  },
+  {
+   "part": "toxin",
+   "power": 0.6
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   -3,
+   -3,
+   0,
+   1,
+   0,
+   2,
+   0,
+   4,
+   0,
+   0.25
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.3
+ }
+}

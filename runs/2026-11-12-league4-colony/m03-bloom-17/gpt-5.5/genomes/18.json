@@ -1,0 +1,79 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "R2_seek_sugarmin_v2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.45
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 45
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   3,
+   3,
+   2,
+   2,
+   0,
+   -1,
+   -2,
+   2,
+   -2,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   4,
+   1,
+   0.5,
+   0,
+   4,
+   -4,
+   4,
+   -4,
+   0.2
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.35
+ }
+}

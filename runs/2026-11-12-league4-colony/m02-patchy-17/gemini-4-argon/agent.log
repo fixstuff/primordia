@@ -1,0 +1,103 @@
+[turn  1 | tick      0 |      5s] '' calls=['catalog', 'observe']
+[turn  2 | tick      0 |     15s] '' calls=['submit_genome', 'submit_genome']
+[turn  3 | tick      0 |     28s] '' calls=['submit_genome']
+[turn  4 | tick      0 |    104s] '' calls=['submit_genome', 'submit_genome', 'submit_genome', 'submit_genome']
+[turn  5 | tick      0 |    135s] '' calls=['submit_genome', 'submit_genome', 'submit_genome', 'submit_genome']
+[turn  6 | tick      0 |    151s] '' calls=['submit_genome', 'submit_genome']
+[turn  7 | tick      0 |    164s] '' calls=['release', 'release', 'release', 'release', 'release', 'release', 'end_turn']
+[turn  8 | tick      0 |    408s] '' calls=['submit_genome', 'submit_genome']
+[turn  9 | tick    225 |    420s] '' calls=['report']
+[turn 10 | tick    274 |    472s] '' calls=['submit_genome', 'submit_genome']
+[turn 11 | tick    490 |    484s] '' calls=['release', 'release', 'release', 'end_turn']
+[turn 12 | tick   1000 |    611s] '' calls=['report']
+[turn 13 | tick   1072 |    625s] '' calls=['observe']
+[turn 14 | tick   1127 |    677s] '' calls=['submit_genome', 'submit_genome']
+[turn 15 | tick   1347 |    723s] '' calls=['release', 'release', 'end_turn']
+[turn 16 | tick   2000 |    864s] '' calls=['observe', 'report']
+[turn 17 | tick   2124 |    911s] '' calls=['submit_genome', 'submit_genome']
+[turn 18 | tick   2322 |    962s] '' calls=['submit_genome', 'submit_genome']
+[turn 19 | tick   2535 |    974s] '' calls=['release', 'release', 'end_turn']
+[turn 20 | tick   3000 |   1117s] '' calls=['observe']
+[turn 21 | tick   3178 |   1143s] '' calls=['submit_genome']
+[turn 22 | tick   3287 |   1163s] '' calls=['submit_genome']
+[turn 23 | tick   3287 |   1252s] '' calls=['submit_genome', 'submit_genome']
+[turn 24 | tick   3743 |   1280s] '' calls=['release', 'release', 'end_turn']
+[turn 25 | tick   4000 |   1330s] '' calls=['observe']
+[turn 26 | tick   4066 |   1398s] '' calls=['submit_genome', 'submit_genome']
+[turn 27 | tick   4352 |   1412s] '' calls=['release', 'release', 'end_turn']
+[turn 28 | tick   4500 |   1460s] '' calls=['observe']
+[turn 29 | tick   4609 |   1521s] '' calls=['submit_genome', 'submit_genome']
+[turn 30 | tick   4863 |   1548s] '' calls=['release', 'release', 'end_turn']
+[turn 31 | tick   5000 |   1566s] '' calls=['observe']
+[turn 32 | tick   5050 |   1609s] '' calls=['submit_genome', 'submit_genome']
+[turn 33 | tick   5228 |   1624s] '' calls=['submit_genome', 'release', 'release', 'end_turn']
+[turn 34 | tick   5500 |   1687s] '' calls=['observe']
+[turn 35 | tick   5554 |   1736s] '' calls=['submit_genome', 'submit_genome']
+[turn 36 | tick   5757 |   1780s] '' calls=['release', 'release', 'end_turn']
+[turn 37 | tick   6000 |   1808s] '' calls=['observe']
+[turn 38 | tick   6060 |   1818s] '' calls=['report']
+[turn 39 | tick   6102 |   1853s] '' calls=['submit_genome', 'submit_genome']
+[turn 40 | tick   6247 |   1868s] '' calls=['release', 'release', 'end_turn']
+[turn 41 | tick   6500 |   1924s] '' calls=['observe']
+[turn 42 | tick   6543 |   1985s] '' calls=['submit_genome']
+[turn 43 | tick   6796 |   2006s] '' calls=['release', 'release', 'end_turn']
+[turn 44 | tick   7000 |   2043s] '' calls=['observe']
+[turn 45 | tick   7039 |   2088s] '' calls=['submit_genome']
+[turn 46 | tick   7226 |   2097s] '' calls=['release', 'release', 'end_turn']
+[turn 47 | tick   7500 |   2200s] '' calls=['observe']
+[turn 48 | tick   7691 |   2226s] '' calls=['submit_genome']
+[turn 49 | tick   7801 |   2252s] '' calls=['release', 'release', 'end_turn']
+[turn 50 | tick   8000 |   2288s] '' calls=['observe']
+[turn 51 | tick   8057 |   2315s] '' calls=['release', 'release', 'end_turn']
+[turn 52 | tick   8500 |   2405s] '' calls=['report', 'observe']
+[turn 53 | tick   8546 |   2439s] '' calls=['submit_genome']
+[turn 54 | tick   8689 |   2450s] '' calls=['submit_genome']
+[turn 55 | tick   8732 |   2461s] '' calls=['release', 'release', 'release', 'end_turn']
+[turn 56 | tick   9000 |   2593s] '' calls=['observe']
+[turn 57 | tick   9330 |   2704s] '' calls=['submit_genome', 'release']
+[turn 58 | tick   9790 |   2716s] '' calls=['release', 'release', 'end_turn']
+
+ended at tick 10000 after 58 turns, 41 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 test_forager             submitted at tick      0: 837.3333333333334
+  # 2 test_combat_parts_2      submitted at tick      0: 0.0
+  # 3 probe_r4                 submitted at tick      0: 0.0
+  # 4 probe_r4_move            submitted at tick      0: 651.6666666666666
+  # 5 probe_r6_jaw             submitted at tick      0: 582.0
+  # 6 probe_r4_def             submitted at tick      0: 934.0
+  # 7 OmniDefender_Pos         submitted at tick      0: 437.0
+  # 8 OmniDefender_Neg         submitted at tick      0: 157.33333333333334
+  # 9 FastSprinter_Pos         submitted at tick      0: 566.0
+  #10 FastSprinter_Neg         submitted at tick      0: 424.6666666666667
+  #11 LeanForager_Pos          submitted at tick      0: 645.6666666666666
+  #12 LeanForager_Neg          submitted at tick      0: 539.6666666666666
+  #13 MicroHunter_Pos          submitted at tick    225: 433.3333333333333
+  #14 MicroHunter_Neg          submitted at tick    225: 420.0
+  #15 HunterKiller_r5_Pos      submitted at tick    490: 393.0
+  #16 ApexJuggernaut_r7_Pos    submitted at tick    490: 326.3333333333333
+  #17 SmartBoomer_r32          submitted at tick   1347: 665.0
+  #18 SmartPackHunter_r36      submitted at tick   1347: 511.6666666666667
+  #19 TitanHunter_r15_Pos      submitted at tick   2321: 58.666666666666664
+  #20 MegaHunter_r10_Pos       submitted at tick   2322: 215.33333333333334
+  #21 Leviathan_r145_Pos       submitted at tick   2535: 55.333333333333336
+  #22 PoisonStinger_r32_Pos    submitted at tick   2535: 417.6666666666667
+  #23 TestMultiMouth_r14       submitted at tick   3287: 133.33333333333334
+  #24 MegaMouth_r145_Pos       submitted at tick   3743: 59.666666666666664
+  #25 HyperMouth_r65_Pos       submitted at tick   3743: 273.3333333333333
+  #26 GptEater_r29_Pos         submitted at tick   4352: 496.3333333333333
+  #27 LeanSprinter_r35_Pos     submitted at tick   4352: 543.6666666666666
+  #28 UltraLean_r33_Pos        submitted at tick   4863: 632.0
+  #29 FeatherForager_r31_Pos   submitted at tick   4863: 686.3333333333334
+  #30 NanoHunter_r28_Pos       submitted at tick   5228: 621.6666666666666
+  #31 UltraForager_r28_Pos     submitted at tick   5228: 611.6666666666666
+  #32 MicroFeather_r28_Pos     submitted at tick   5292: 684.3333333333334
+  #33 FeatherForager_r35_Pos   submitted at tick   5757: 687.6666666666666
+  #34 FeatherForager_r33_Pos   submitted at tick   5757: 680.3333333333334
+  #35 FeatherGiant_r45_Pos     submitted at tick   6247: 638.0
+  #36 StealthFeather_r32_Pos   submitted at tick   6247: 596.6666666666666
+  #37 FeatherForager_r36_Pos   submitted at tick   6796: 685.3333333333334
+  #38 FeatherOmnivore_r298_Pos submitted at tick   7226: 623.3333333333334
+  #39 FeatherForager_r30_Pos   submitted at tick   7801: 674.0
+  #40 FeatherMicro_r23_Pos     submitted at tick   8689: 717.6666666666666
+  #41 FeatherMicro_r20_Pos     submitted at tick   8732: 744.0

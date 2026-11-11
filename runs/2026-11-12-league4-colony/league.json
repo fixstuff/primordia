@@ -1,0 +1,316 @@
+{
+ "ratings": {
+  "claude-fable-5-2": 1574.3,
+  "gemini-4-argon": 1566.0,
+  "gpt-6-astra": 1490.4,
+  "claude-opus-5-5": 1490.1,
+  "deepseek-v4-pro": 1482.9,
+  "gpt-5.5": 1480.5,
+  "scripted-bot": 1415.8
+ },
+ "stats": {
+  "claude-fable-5-2": {
+   "matches": 6,
+   "wins": 4,
+   "rank_sum": 8,
+   "share_sum": 5.613909793620647,
+   "cost": 39.5863172
+  },
+  "claude-opus-5-5": {
+   "matches": 6,
+   "wins": 0,
+   "rank_sum": 26,
+   "share_sum": 0.3976937912357717,
+   "cost": 5.7324962
+  },
+  "deepseek-v4-pro": {
+   "matches": 6,
+   "wins": 0,
+   "rank_sum": 28,
+   "share_sum": 0.8111705054878201,
+   "cost": 0.0
+  },
+  "scripted-bot": {
+   "matches": 6,
+   "wins": 0,
+   "rank_sum": 42,
+   "share_sum": 0.004693163844038684,
+   "cost": 0.0
+  },
+  "gpt-5.5": {
+   "matches": 6,
+   "wins": 0,
+   "rank_sum": 28,
+   "share_sum": 0.5336460919304734,
+   "cost": 14.438682000000002
+  },
+  "gpt-6-astra": {
+   "matches": 6,
+   "wins": 0,
+   "rank_sum": 26,
+   "share_sum": 0.6908779302822403,
+   "cost": 7.352988000000002
+  },
+  "gemini-4-argon": {
+   "matches": 6,
+   "wins": 2,
+   "rank_sum": 10,
+   "share_sum": 3.5835947868002584,
+   "cost": 12.3395376
+  }
+ },
+ "matches": [
+  {
+   "match": "m01-drift-17",
+   "world": "drift",
+   "seed": 17,
+   "standings": [
+    [
+     1,
+     "claude-fable-5-2",
+     5705
+    ],
+    [
+     2,
+     "gemini-4-argon",
+     842
+    ],
+    [
+     3,
+     "gpt-6-astra",
+     103
+    ],
+    [
+     4,
+     "claude-opus-5-5",
+     52
+    ],
+    [
+     5,
+     "gpt-5.5",
+     47
+    ],
+    [
+     6,
+     "deepseek-v4-pro",
+     13
+    ],
+    [
+     7,
+     "scripted-bot",
+     2
+    ]
+   ]
+  },
+  {
+   "match": "m02-patchy-17",
+   "world": "patchy",
+   "seed": 17,
+   "standings": [
+    [
+     1,
+     "claude-fable-5-2",
+     2064
+    ],
+    [
+     2,
+     "gemini-4-argon",
+     1957
+    ],
+    [
+     3,
+     "gpt-5.5",
+     655
+    ],
+    [
+     4,
+     "deepseek-v4-pro",
+     159
+    ],
+    [
+     5,
+     "claude-opus-5-5",
+     101
+    ],
+    [
+     6,
+     "gpt-6-astra",
+     92
+    ],
+    [
+     7,
+     "scripted-bot",
+     6
+    ]
+   ]
+  },
+  {
+   "match": "m03-bloom-17",
+   "world": "bloom",
+   "seed": 17,
+   "standings": [
+    [
+     1,
+     "gemini-4-argon",
+     1876
+    ],
+    [
+     2,
+     "claude-fable-5-2",
+     1347
+    ],
+    [
+     3,
+     "gpt-6-astra",
+     580
+    ],
+    [
+     4,
+     "claude-opus-5-5",
+     105
+    ],
+    [
+     5,
+     "deepseek-v4-pro",
+     31
+    ],
+    [
+     6,
+     "gpt-5.5",
+     26
+    ],
+    [
+     7,
+     "scripted-bot",
+     0
+    ]
+   ]
+  },
+  {
+   "match": "m04-drift-18",
+   "world": "drift",
+   "seed": 18,
+   "standings": [
+    [
+     1,
+     "claude-fable-5-2",
+     9206
+    ],
+    [
+     2,
+     "gemini-4-argon",
+     422
+    ],
+    [
+     3,
+     "gpt-5.5",
+     264
+    ],
+    [
+     4,
+     "claude-opus-5-5",
+     183
+    ],
+    [
+     5,
+     "deepseek-v4-pro",
+     41
+    ],
+    [
+     6,
+     "gpt-6-astra",
+     20
+    ],
+    [
+     7,
+     "scripted-bot",
+     0
+    ]
+   ]
+  },
+  {
+   "match": "m05-patchy-18",
+   "world": "patchy",
+   "seed": 18,
+   "standings": [
+    [
+     1,
+     "claude-fable-5-2",
+     4188
+    ],
+    [
+     2,
+     "gemini-4-argon",
+     1851
+    ],
+    [
+     3,
+     "claude-opus-5-5",
+     584
+    ],
+    [
+     4,
+     "gpt-6-astra",
+     76
+    ],
+    [
+     5,
+     "deepseek-v4-pro",
+     37
+    ],
+    [
+     6,
+     "gpt-5.5",
+     31
+    ],
+    [
+     7,
+     "scripted-bot",
+     6
+    ]
+   ]
+  },
+  {
+   "match": "m06-bloom-18",
+   "world": "bloom",
+   "seed": 18,
+   "standings": [
+    [
+     1,
+     "gemini-4-argon",
+     1597
+    ],
+    [
+     2,
+     "claude-fable-5-2",
+     1431
+    ],
+    [
+     3,
+     "deepseek-v4-pro",
+     1121
+    ],
+    [
+     4,
+     "gpt-6-astra",
+     477
+    ],
+    [
+     5,
+     "gpt-5.5",
+     252
+    ],
+    [
+     6,
+     "claude-opus-5-5",
+     199
+    ],
+    [
+     7,
+     "scripted-bot",
+     0
+    ]
+   ]
+  }
+ ]
+}

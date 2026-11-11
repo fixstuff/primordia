@@ -1,0 +1,114 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/01.json",
+  "name": "spark_forager_r2_v1",
+  "species": 2,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/02.json",
+  "name": "camo_spark_r2_v1",
+  "species": 86,
+  "tick": 78
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/03.json",
+  "name": "armed_camo_hunter_r3",
+  "species": 108,
+  "tick": 601
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/04.json",
+  "name": "fortress_grazer_r5",
+  "species": 125,
+  "tick": 1122
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/05.json",
+  "name": "stealth_sipper_r2_lowcost",
+  "species": 133,
+  "tick": 1684
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/06.json",
+  "name": "sugar_first_stealth_r2",
+  "species": 144,
+  "tick": 2218
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/07.json",
+  "name": "hunter_r7_valid",
+  "species": 157,
+  "tick": 2644
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/08.json",
+  "name": "bare_drifter_r2_no_camo",
+  "species": 158,
+  "tick": 2673
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/09.json",
+  "name": "simple_const_forager_r2",
+  "species": 165,
+  "tick": 3076
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/10.json",
+  "name": "tiny_static_lowcost",
+  "species": 167,
+  "tick": 3095
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/11.json",
+  "name": "rand_swarm_r2_mut",
+  "species": 177,
+  "tick": 3585
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/12.json",
+  "name": "direct_grad_r2_balanced_v1",
+  "species": 185,
+  "tick": 4082
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/13.json",
+  "name": "roulette_r2_cheap6s_h4",
+  "species": 196,
+  "tick": 4567
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/14.json",
+  "name": "camo_random_r2_h4_swarm",
+  "species": 205,
+  "tick": 5050
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/15.json",
+  "name": "coded_r2_dualchem_right_v1",
+  "species": 224,
+  "tick": 6145
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gpt-5.5/genomes/16.json",
+  "name": "r2_sugar_saver_v1",
+  "species": 244,
+  "tick": 7061
+ }
+]

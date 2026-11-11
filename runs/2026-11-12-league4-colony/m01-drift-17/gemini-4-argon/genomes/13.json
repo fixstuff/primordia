@@ -1,0 +1,68 @@
+{
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.65
+  },
+  {
+   "part": "toxin",
+   "power": 0.4
+  },
+  {
+   "power": 0.5,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.65,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "sugar"
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   3,
+   3,
+   0,
+   0,
+   0,
+   -1.2,
+   1.6,
+   3.5,
+   0,
+   0.08
+  ],
+  "hidden": 2
+ },
+ "name": "TriMouthTank_4_5"
+}

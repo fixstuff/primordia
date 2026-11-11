@@ -1,0 +1,82 @@
+{
+ "mutation": {
+  "size": 0.12,
+  "rate": 0.04
+ },
+ "body": [
+  {
+   "radius": 2.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.55,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -40
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 40
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -50
+  },
+  {
+   "angle": 50,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": -30
+  },
+  {
+   "angle": 30,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  }
+ ],
+ "name": "lean_22_evader",
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   -2.5,
+   2.5,
+   1.8,
+   -1.8,
+   0,
+   0,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   0,
+   -0.5,
+   0,
+   -0.4,
+   1.5,
+   3.5,
+   0,
+   0.05
+  ],
+  "hidden": 2
+ },
+ "schema": "lifeapi.genome/1"
+}

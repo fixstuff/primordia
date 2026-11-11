@@ -1,0 +1,60 @@
+{
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0
+  ]
+ },
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ },
+ "name": "porcupine32_h1",
+ "body": [
+  {
+   "radius": 3.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  },
+  {
+   "thickness": 0.35,
+   "part": "shell"
+  },
+  {
+   "power": 0.6,
+   "part": "spikes"
+  },
+  {
+   "power": 0.4,
+   "part": "toxin"
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

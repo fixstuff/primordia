@@ -1,0 +1,98 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/01.json",
+      "mean_biomass": 8616.0,
+      "mean_population": 957.3333333333334,
+      "name": "test_probe",
+      "per_seed": [
+        927,
+        977,
+        968
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/02.json",
+      "mean_biomass": 18181.333333333332,
+      "mean_population": 1136.3333333333333,
+      "name": "test_2mouths",
+      "per_seed": [
+        1229,
+        1052,
+        1128
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/03.json",
+      "mean_biomass": 12224.0,
+      "mean_population": 764.0,
+      "name": "test_parts_cost",
+      "per_seed": [
+        774,
+        766,
+        752
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/04.json",
+      "mean_biomass": 5143.893486633324,
+      "mean_population": 502.3333333333333,
+      "name": "Forager_Plus",
+      "per_seed": [
+        503,
+        510,
+        494
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/05.json",
+      "mean_biomass": 4553.386802368163,
+      "mean_population": 444.6666666666667,
+      "name": "Forager_Minus",
+      "per_seed": [
+        459,
+        425,
+        450
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/06.json",
+      "mean_biomass": 10234.583333333334,
+      "mean_population": 338.3333333333333,
+      "name": "Omni_Plus",
+      "per_seed": [
+        334,
+        348,
+        333
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gemini-4-argon/genomes/07.json",
+      "mean_biomass": 3882.0833333333335,
+      "mean_population": 128.33333333333334,
+      "name": "Omni_Minus",
+      "per_seed": [
+        72,
+        165,
+        148
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

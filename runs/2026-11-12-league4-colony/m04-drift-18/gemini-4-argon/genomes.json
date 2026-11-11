@@ -1,0 +1,261 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/01.json",
+  "name": "test_forager",
+  "species": 27,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/02.json",
+  "name": "test_combat_parts2",
+  "species": 44,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/03.json",
+  "name": "forager_guard_plus",
+  "species": 51,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/04.json",
+  "name": "forager_guard_minus",
+  "species": 52,
+  "tick": 0
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/05.json",
+  "name": "hunter_omni_plus",
+  "species": 53,
+  "tick": 0
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/06.json",
+  "name": "hunter_omni_minus",
+  "species": 54,
+  "tick": 0
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/07.json",
+  "name": "sprinter_plus",
+  "species": 61,
+  "tick": 0
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/08.json",
+  "name": "sprinter_minus",
+  "species": 62,
+  "tick": 0
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/09.json",
+  "name": "apex_32_plus",
+  "species": 88,
+  "tick": 110
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/10.json",
+  "name": "apex_32_minus",
+  "species": 89,
+  "tick": 110
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/11.json",
+  "name": "triforce_40_plus",
+  "species": 114,
+  "tick": 718
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/12.json",
+  "name": "titan_50_plus",
+  "species": 126,
+  "tick": 1488
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/13.json",
+  "name": "titan_65_plus",
+  "species": 127,
+  "tick": 1488
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/14.json",
+  "name": "direct_45_plus",
+  "species": 145,
+  "tick": 2257
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/15.json",
+  "name": "direct_45_minus",
+  "species": 146,
+  "tick": 2257
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/16.json",
+  "name": "clino_45_plus",
+  "species": 149,
+  "tick": 2374
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/17.json",
+  "name": "vamp28_clino_plus",
+  "species": 160,
+  "tick": 2942
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/18.json",
+  "name": "vamp28_direct_plus",
+  "species": 161,
+  "tick": 2942
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/19.json",
+  "name": "vamp28_direct_minus",
+  "species": 162,
+  "tick": 2942
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/20.json",
+  "name": "leviathan_63_direct",
+  "species": 172,
+  "tick": 3364
+ },
+ {
+  "n": 21,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/21.json",
+  "name": "leviathan_63_clino",
+  "species": 173,
+  "tick": 3364
+ },
+ {
+  "n": 22,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/22.json",
+  "name": "evader_22_mod",
+  "species": 192,
+  "tick": 4549
+ },
+ {
+  "n": 23,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/23.json",
+  "name": "evader_22_strong",
+  "species": 193,
+  "tick": 4549
+ },
+ {
+  "n": 24,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/24.json",
+  "name": "forager_30_v2",
+  "species": 194,
+  "tick": 4549
+ },
+ {
+  "n": 25,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/25.json",
+  "name": "lean_22_champ",
+  "species": 201,
+  "tick": 5023
+ },
+ {
+  "n": 26,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/26.json",
+  "name": "lean_22_evader",
+  "species": 202,
+  "tick": 5023
+ },
+ {
+  "n": 27,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/27.json",
+  "name": "leviathan_63_champ",
+  "species": 203,
+  "tick": 5024
+ },
+ {
+  "n": 28,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/28.json",
+  "name": "lean_26_champ",
+  "species": 215,
+  "tick": 5784
+ },
+ {
+  "n": 29,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/29.json",
+  "name": "lean_25_evader_gentle",
+  "species": 216,
+  "tick": 5784
+ },
+ {
+  "n": 30,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/30.json",
+  "name": "forager_30_v3",
+  "species": 225,
+  "tick": 6167
+ },
+ {
+  "n": 31,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/31.json",
+  "name": "lean_20_champ_v2",
+  "species": 235,
+  "tick": 6719
+ },
+ {
+  "n": 32,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/32.json",
+  "name": "lean_22_champ_v2",
+  "species": 236,
+  "tick": 6719
+ },
+ {
+  "n": 33,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/33.json",
+  "name": "forager_30_v4",
+  "species": 237,
+  "tick": 6719
+ },
+ {
+  "n": 34,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/34.json",
+  "name": "forager_30_v2_mineral",
+  "species": 240,
+  "tick": 6846
+ },
+ {
+  "n": 35,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/35.json",
+  "name": "brawler_30_nofear",
+  "species": 298,
+  "tick": 8666
+ },
+ {
+  "n": 36,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/36.json",
+  "name": "brawler_30_hunter",
+  "species": 299,
+  "tick": 8666
+ },
+ {
+  "n": 37,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m04-drift-18/gemini-4-argon/genomes/37.json",
+  "name": "brawler_225_hunter",
+  "species": 301,
+  "tick": 8754
+ }
+]

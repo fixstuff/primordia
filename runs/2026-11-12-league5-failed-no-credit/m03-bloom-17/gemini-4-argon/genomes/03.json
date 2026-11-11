@@ -1,0 +1,82 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Armored_A6",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "part": "jaw",
+   "power": 0.8
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 40
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 40
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -40
+  }
+ ],
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.15
+ },
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   3,
+   3,
+   2.5,
+   0
+  ]
+ }
+}

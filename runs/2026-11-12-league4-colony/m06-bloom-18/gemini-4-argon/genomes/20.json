@@ -1,0 +1,97 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 3.6,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.55
+  },
+  {
+   "part": "camouflage",
+   "power": 0.65
+  },
+  {
+   "part": "toxin",
+   "power": 0.6
+  },
+  {
+   "chemical": "sugar",
+   "angle": 32,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -32,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 75,
+   "chemical": "sugar"
+  },
+  {
+   "angle": -75,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  }
+ ],
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "name": "ghost_forager_r36",
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   0,
+   0,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   0,
+   -0.6,
+   0,
+   0,
+   0.4,
+   1,
+   2.4,
+   2.8,
+   0,
+   0.02
+  ],
+  "hidden": 3
+ }
+}

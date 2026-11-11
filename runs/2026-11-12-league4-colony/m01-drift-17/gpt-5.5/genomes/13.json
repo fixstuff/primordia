@@ -1,0 +1,84 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "LastChance_r2_chemo_linear_v2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   3,
+   0,
+   0,
+   3,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   2,
+   0,
+   0,
+   1.5,
+   1.3,
+   0,
+   0,
+   0.8,
+   0,
+   0,
+   2,
+   -2,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

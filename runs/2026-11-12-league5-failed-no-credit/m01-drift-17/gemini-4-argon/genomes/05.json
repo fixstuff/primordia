@@ -1,0 +1,83 @@
+{
+ "brain": {
+  "weights": [
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   -0.2,
+   0.5,
+   3,
+   -3,
+   2.5,
+   -2.5,
+   0,
+   0,
+   1.2,
+   0,
+   0.6,
+   0,
+   -2.5,
+   0.05
+  ],
+  "hidden": 2
+ },
+ "name": "heavy_grazer_B",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "mineral"
+  },
+  {
+   "thickness": 0.5,
+   "part": "shell"
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  },
+  {
+   "part": "toxin",
+   "power": 0.5
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.08
+ }
+}

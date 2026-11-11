@@ -1,0 +1,149 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/01.json",
+  "name": "Swiftgrazer",
+  "species": 13,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/02.json",
+  "name": "Micrograzer",
+  "species": 14,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/03.json",
+  "name": "Armoredgrazer",
+  "species": 15,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/04.json",
+  "name": "Thornseed",
+  "species": 70,
+  "tick": 530
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/05.json",
+  "name": "Harvestthorn",
+  "species": 72,
+  "tick": 547
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/06.json",
+  "name": "Raptor",
+  "species": 81,
+  "tick": 1039
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/07.json",
+  "name": "Hunter41",
+  "species": 93,
+  "tick": 1533
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/08.json",
+  "name": "Ghost",
+  "species": 94,
+  "tick": 1553
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/09.json",
+  "name": "Apex9",
+  "species": 105,
+  "tick": 2020
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/10.json",
+  "name": "Filter6",
+  "species": 107,
+  "tick": 2047
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/11.json",
+  "name": "Siege",
+  "species": 129,
+  "tick": 2563
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/12.json",
+  "name": "Harvester",
+  "species": 136,
+  "tick": 3033
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/13.json",
+  "name": "Skimmer",
+  "species": 144,
+  "tick": 3530
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/14.json",
+  "name": "Ghost",
+  "species": 155,
+  "tick": 4020
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/15.json",
+  "name": "Ambush",
+  "species": 163,
+  "tick": 4522
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/16.json",
+  "name": "DriftFort",
+  "species": 175,
+  "tick": 5036
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/17.json",
+  "name": "Siegebreaker",
+  "species": 183,
+  "tick": 5539
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/18.json",
+  "name": "ApexEight",
+  "species": 192,
+  "tick": 6034
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/19.json",
+  "name": "NeedleSprint",
+  "species": 200,
+  "tick": 6518
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/20.json",
+  "name": "QuietBloom",
+  "species": 211,
+  "tick": 7010
+ },
+ {
+  "n": 21,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m05-patchy-18/gpt-6-astra/genomes/21.json",
+  "name": "BareBloom",
+  "species": 224,
+  "tick": 7510
+ }
+]

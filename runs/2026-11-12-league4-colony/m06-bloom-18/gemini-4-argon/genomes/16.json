@@ -1,0 +1,109 @@
+{
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   4,
+   -4,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   0,
+   0,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   0,
+   -0.6,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0.4,
+   0,
+   1.1,
+   2.8,
+   1.5,
+   0,
+   1,
+   0.02
+  ]
+ },
+ "name": "stinger_ghost_r40",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.75,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "thickness": 0.6,
+   "part": "shell"
+  },
+  {
+   "part": "camouflage",
+   "power": 0.7
+  },
+  {
+   "power": 0.5,
+   "part": "toxin"
+  },
+  {
+   "power": 0.65,
+   "part": "stinger"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 32
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -32,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 75
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -75,
+   "chemical": "sugar"
+  }
+ ]
+}

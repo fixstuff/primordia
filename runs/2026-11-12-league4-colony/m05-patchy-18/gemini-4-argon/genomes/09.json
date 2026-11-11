@@ -1,0 +1,79 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "chemical": "sugar",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": 30
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -30
+  },
+  {
+   "part": "jaw",
+   "power": 0.9
+  },
+  {
+   "part": "spikes",
+   "power": 0.3
+  },
+  {
+   "part": "camouflage"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   2.5,
+   3.5,
+   3.5,
+   0
+  ]
+ },
+ "name": "hunter26_fast",
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ }
+}

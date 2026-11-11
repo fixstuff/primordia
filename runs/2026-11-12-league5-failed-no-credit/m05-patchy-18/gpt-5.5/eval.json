@@ -1,0 +1,50 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/01.json",
+      "mean_biomass": 2478.6666666666665,
+      "mean_population": 619.6666666666666,
+      "name": "Cheap grazer v1",
+      "per_seed": [
+        624,
+        611,
+        624
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/02.json",
+      "mean_biomass": 2126.6666666666665,
+      "mean_population": 531.6666666666666,
+      "name": "Cheap grazer random v2",
+      "per_seed": [
+        512,
+        586,
+        497
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/03.json",
+      "mean_biomass": 7677.333333333333,
+      "mean_population": 1919.3333333333333,
+      "name": "Still grazer v3",
+      "per_seed": [
+        1943,
+        1906,
+        1909
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

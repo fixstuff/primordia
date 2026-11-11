@@ -1,0 +1,31 @@
+{
+ "brain": {
+  "hidden": 2
+ },
+ "mutation": {
+  "size": 0.25,
+  "rate": 0.25
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.6,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.6,
+   "part": "cilia"
+  }
+ ],
+ "name": "random_evolver",
+ "schema": "lifeapi.genome/1"
+}

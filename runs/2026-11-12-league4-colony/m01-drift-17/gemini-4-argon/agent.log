@@ -1,0 +1,93 @@
+[turn  1 | tick      0 |      9s] '' calls=['catalog', 'observe']
+[turn  2 | tick      0 |     33s] '' calls=['submit_genome', 'submit_genome']
+[turn  3 | tick      0 |     51s] '' calls=['submit_genome', 'submit_genome', 'submit_genome']
+[turn  4 | tick      0 |    102s] '' calls=['submit_genome', 'submit_genome']
+[turn  5 | tick      0 |    147s] '' calls=['submit_genome', 'submit_genome']
+[turn  6 | tick      0 |    173s] '' calls=['release', 'release', 'release', 'release']
+[turn  7 | tick      0 |    180s] '' calls=['end_turn']
+[turn  8 | tick      0 |    284s] '' calls=['submit_genome']
+[turn  9 | tick    112 |    324s] '' calls=['report', 'release']
+[turn 10 | tick    277 |    338s] '' calls=['end_turn']
+[turn 11 | tick    500 |    405s] '' calls=['report']
+[turn 12 | tick    617 |    432s] '' calls=['submit_genome']
+[turn 13 | tick    728 |    449s] '' calls=['submit_genome', 'release']
+[turn 14 | tick    798 |    459s] '' calls=['release', 'end_turn']
+[turn 15 | tick   1000 |    549s] '' calls=['report']
+[turn 16 | tick   1217 |    579s] '' calls=['observe']
+[turn 17 | tick   1340 |    604s] '' calls=['submit_genome', 'submit_genome']
+[turn 18 | tick   1443 |    614s] '' calls=['release', 'release', 'release', 'end_turn']
+[turn 19 | tick   1500 |    636s] '' calls=['report']
+[turn 20 | tick   1580 |    663s] '' calls=['observe']
+[turn 21 | tick   1690 |    709s] '' calls=['submit_genome']
+[turn 22 | tick   1690 |    725s] '' calls=['submit_genome']
+[turn 23 | tick   1951 |    742s] '' calls=['release', 'end_turn']
+[turn 24 | tick   2500 |    894s] '' calls=['observe']
+[turn 25 | tick   2654 |    940s] '' calls=['submit_genome', 'submit_genome']
+[turn 26 | tick   2846 |    958s] '' calls=['release', 'release', 'end_turn']
+[turn 27 | tick   3000 |    992s] '' calls=['observe']
+[turn 28 | tick   3063 |   1033s] '' calls=['submit_genome', 'submit_genome']
+[turn 29 | tick   3063 |   1124s] '' calls=['submit_genome', 'submit_genome']
+[turn 30 | tick   3612 |   1132s] '' calls=['observe']
+[turn 31 | tick   3647 |   1192s] '' calls=['submit_genome', 'submit_genome']
+[turn 32 | tick   3896 |   1203s] '' calls=['release', 'release', 'release', 'end_turn']
+[turn 33 | tick   4000 |   1254s] '' calls=['observe']
+[turn 34 | tick   4153 |   1290s] '' calls=['submit_genome', 'release', 'end_turn']
+[turn 35 | tick   4500 |   1347s] '' calls=['observe']
+[turn 36 | tick   4541 |   1385s] '' calls=['submit_genome', 'submit_genome']
+[turn 37 | tick   4701 |   1394s] '' calls=['observe']
+[turn 38 | tick   4735 |   1418s] '' calls=['submit_genome', 'release', 'end_turn']
+[turn 39 | tick   5000 |   1480s] '' calls=['observe']
+[turn 40 | tick   5094 |   1523s] '' calls=['report']
+[turn 41 | tick   5275 |   1582s] '' calls=['submit_genome', 'submit_genome']
+[turn 42 | tick   5519 |   1591s] '' calls=['observe']
+[turn 43 | tick   5559 |   1622s] '' calls=['submit_genome', 'release', 'release', 'end_turn']
+[turn 44 | tick   6000 |   1710s] '' calls=['observe']
+[turn 45 | tick   6053 |   1755s] '' calls=['submit_genome', 'release', 'end_turn']
+[turn 46 | tick   6500 |   1824s] '' calls=['observe']
+[turn 47 | tick   6528 |   1872s] '' calls=['submit_genome', 'release', 'end_turn']
+[turn 48 | tick   7000 |   1945s] '' calls=['observe']
+[turn 49 | tick   7033 |   2010s] '' calls=['submit_genome', 'release', 'end_turn']
+[turn 50 | tick   7500 |   2066s] '' calls=['observe']
+[turn 51 | tick   7538 |   2117s] '' calls=['submit_genome', 'release']
+[turn 52 | tick   7748 |   2133s] '' calls=['submit_genome', 'release', 'end_turn']
+[turn 53 | tick   8000 |   2197s] '' calls=['observe']
+[turn 54 | tick   8082 |   2238s] '' calls=['submit_genome', 'release']
+[turn 55 | tick   8254 |   2250s] '' calls=['release', 'end_turn']
+[turn 56 | tick   8500 |   2304s] '' calls=['observe']
+[turn 57 | tick   8527 |   2311s] '' calls=['release', 'end_turn']
+[turn 58 | tick   9000 |   2424s] '' calls=['release', 'end_turn']
+[turn 59 | tick   9500 |   2593s] '' calls=['release', 'end_turn']
+
+ended at tick 10000 after 59 turns, 30 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 test_probe               submitted at tick      0: 725.6666666666666
+  # 2 test_c1                  submitted at tick      0: 1674.6666666666667
+  # 3 test_c3                  submitted at tick      0: 1288.6666666666667
+  # 4 ChemoGrazer_A            submitted at tick      0: 589.3333333333334
+  # 5 OmniJaw_A                submitted at tick      0: 418.0
+  # 6 ChemoGrazer_Rev          submitted at tick      0: 464.0
+  # 7 MicroGrazer_A            submitted at tick      0: 650.6666666666666
+  # 8 JawGrazer_3_1            submitted at tick    112: 468.3333333333333
+  # 9 GhostShellGrazer         submitted at tick    728: 582.3333333333334
+  #10 PureShellGrazer          submitted at tick    798: 768.0
+  #11 ApexGrazer_6_2           submitted at tick   1443: 471.3333333333333
+  #12 TankGrazer_3_5           submitted at tick   1443: 621.0
+  #13 TriMouthTank_4_5         submitted at tick   1951: 581.6666666666666
+  #14 MegaShellGrazer_5_8      submitted at tick   2846: 533.6666666666666
+  #15 PureShellGrazer_4_2      submitted at tick   2846: 710.6666666666666
+  #16 PatchBiter_5_5           submitted at tick   3612: 467.6666666666667
+  #17 PatchStinger_4_5         submitted at tick   3612: 504.3333333333333
+  #18 LeanShellGrazer_2_6      submitted at tick   3896: 946.6666666666666
+  #19 ApexJaw_5_3              submitted at tick   3896: 493.6666666666667
+  #20 ApexJaw_6_1              submitted at tick   4305: 448.0
+  #21 LeanApex_5_3             submitted at tick   4701: 552.3333333333334
+  #22 LeanShellGrazer_4_8      submitted at tick   4701: 766.0
+  #23 SafeGrazer_5_4           submitted at tick   4835: 695.3333333333334
+  #24 TriMouth_5_8             submitted at tick   5519: 541.3333333333334
+  #25 QuadMouth_6_4            submitted at tick   5519: 424.6666666666667
+  #26 ArmoredApex_5_6          submitted at tick   5685: 412.6666666666667
+  #27 ApexJaw_5_5              submitted at tick   6240: 440.6666666666667
+  #28 PatchStinger_5_1         submitted at tick   6728: 436.0
+  #29 KillerApex_5_2           submitted at tick   7817: 429.3333333333333
+  #30 EvadeGrazer_3_8          submitted at tick   8254: 714.3333333333334

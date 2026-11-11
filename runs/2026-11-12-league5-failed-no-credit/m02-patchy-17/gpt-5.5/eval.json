@@ -1,0 +1,50 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/01.json",
+      "mean_biomass": 2006.6666666666667,
+      "mean_population": 501.6666666666667,
+      "name": "MicroForager_r2_quad",
+      "per_seed": [
+        511,
+        501,
+        493
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/02.json",
+      "mean_biomass": 4689.0,
+      "mean_population": 521.0,
+      "name": "SeedGrazer_r3",
+      "per_seed": [
+        515,
+        534,
+        514
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/03.json",
+      "mean_biomass": 2905.3333333333335,
+      "mean_population": 726.3333333333334,
+      "name": "MicroRand_r2",
+      "per_seed": [
+        709,
+        744,
+        726
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

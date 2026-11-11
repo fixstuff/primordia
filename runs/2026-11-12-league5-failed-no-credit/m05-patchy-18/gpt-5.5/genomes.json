@@ -1,0 +1,23 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/01.json",
+  "name": "Cheap grazer v1",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/02.json",
+  "name": "Cheap grazer random v2",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/03.json",
+  "name": "Still grazer v3",
+  "species": 6,
+  "tick": 0
+ }
+]

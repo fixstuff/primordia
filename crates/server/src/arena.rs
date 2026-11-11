@@ -39,6 +39,11 @@ pub struct ArenaConfig {
     /// the window's end. The first window is a design phase with no ticks;
     /// it ends early once everyone has ended their turn.
     pub realtime: bool,
+    /// How long after the first player joins to wait for the rest. Then the
+    /// match starts with whoever is here, and anyone missing simply scores
+    /// nothing (League 5: a player whose API had no credit never joined, and
+    /// six matches sat at tick 0 waiting for it). None = wait for everyone.
+    pub join_wait: Option<Duration>,
     pub match_ticks: u64,
     pub log: Option<PathBuf>,
     pub results: Option<PathBuf>,
@@ -51,6 +56,11 @@ pub struct Arena {
     /// dump of short-lived bodies counts for little (arena match 1).
     biomass_ticks: Vec<f64>,
     started: bool,
+    /// When the match starts anyway if players are still missing.
+    join_deadline: Option<Instant>,
+    /// Players the match is played by: cfg.players, or fewer if it started
+    /// short. Only these are waited for to end the design window early.
+    expected: usize,
     window: u64,
     deadline: Option<Instant>,
     /// Realtime: when the current window opened, and ticks run in it so far.
@@ -65,7 +75,9 @@ pub struct Arena {
 impl Arena {
     fn new(cfg: ArenaConfig) -> Arena {
         let log = cfg.log.as_ref().map(|p| std::fs::File::create(p).expect("arena log file"));
-        Arena { cfg, biomass_ticks: Vec::new(), started: false, window: 0, deadline: None, ended: Vec::new(),
+        let expected = cfg.players;
+        Arena { cfg, biomass_ticks: Vec::new(), started: false, join_deadline: None, expected,
+                window: 0, deadline: None, ended: Vec::new(),
                 waiting: Vec::new(), over: false, log,
                 window_start: None, window_done: 0 }
     }
@@ -101,6 +113,17 @@ impl Arena {
         }
     }
 
+    /// Start the match with `n` players joined (fewer than cfg.players if the
+    /// join wait ran out).
+    fn start(&mut self, n: usize, now: Instant) {
+        self.started = true;
+        self.expected = n;
+        self.deadline = Some(now + self.cfg.first_window.unwrap_or(self.cfg.window));
+        self.window_start = Some(now);
+        let missing = self.cfg.players.saturating_sub(n);
+        self.log_event(json!({"event": "start", "tick": 0, "players": n, "missing": missing}));
+    }
+
     fn log_event(&mut self, ev: Value) {
         if let Some(f) = self.log.as_mut() {
             let _ = writeln!(f, "{ev}");
@@ -121,6 +144,8 @@ impl Game {
         self.arena.as_ref().and_then(|a| {
             if a.over {
                 None
+            } else if !a.started {
+                a.join_deadline
             } else if a.cfg.realtime && a.started && a.window > 0 {
                 // Wake ~20 times a second so the world (and the viewer) moves smoothly.
                 a.deadline.map(|d| d.min(Instant::now() + Duration::from_millis(50)))
@@ -135,12 +160,11 @@ impl Game {
         let n = self.players.len();
         let a = self.arena.as_mut()?;
         a.ended.resize(n, false);
+        let now = Instant::now();
         if !a.started && n >= a.cfg.players {
-            a.started = true;
-            let now = Instant::now();
-            a.deadline = Some(now + a.cfg.first_window.unwrap_or(a.cfg.window));
-            a.window_start = Some(now);
-            a.log_event(json!({"event": "start", "tick": 0, "players": n}));
+            a.start(n, now);
+        } else if !a.started && a.join_deadline.is_none() {
+            a.join_deadline = a.cfg.join_wait.map(|w| now + w);
         }
         Some(json!({"started": a.started, "joined": n, "rules": a.rules()}))
     }
@@ -179,11 +203,17 @@ impl Game {
 
     /// Close the window if it's time; returns the deferred replies to send.
     pub fn arena_poll(&mut self, now: Instant) -> Vec<(usize, String)> {
-        let Some(a) = self.arena.as_ref() else { return Vec::new() };
+        let n = self.players.len();
+        let Some(a) = self.arena.as_mut() else { return Vec::new() };
+        if !a.started && n > 0 && a.join_deadline.is_some_and(|d| now >= d) {
+            // The join wait is over: play with whoever came.
+            a.start(n, now);
+            return Vec::new();
+        }
         if !a.started || a.over {
             return Vec::new();
         }
-        let everyone_done = a.ended.len() >= a.cfg.players && a.ended.iter().all(|&e| e);
+        let everyone_done = a.ended.len() >= a.expected && a.ended.iter().all(|&e| e);
         let timed_out = a.deadline.is_some_and(|d| now >= d);
         let realtime = a.cfg.realtime;
         // Realtime design window: no ticks, ends on time or when everyone is ready.
@@ -329,7 +359,7 @@ mod tests {
         Game::with_arena(
             scenario::pool(scenario::base_config(1, 64, 64), 4, 2),
             ArenaConfig { players, window_ticks: 100, window: Duration::from_millis(window_ms),
-                          first_window: None, realtime: false, match_ticks: 300, log: None, results: None },
+                          first_window: None, realtime: false, join_wait: None, match_ticks: 300, log: None, results: None },
         )
     }
 
@@ -383,6 +413,44 @@ mod tests {
         assert_eq!(g.arena_poll(Instant::now()).len(), 1);
         let left = g.arena_deadline().unwrap() - Instant::now();
         assert!(left <= Duration::from_secs(1), "{left:?}");
+    }
+
+    /// A player that never joins doesn't freeze the match: after the join
+    /// wait it starts with whoever came, and plays to the end.
+    #[test]
+    fn a_no_show_does_not_freeze_the_match() {
+        let mut g = arena(3, 60_000);
+        g.arena.as_mut().unwrap().cfg.join_wait = Some(Duration::from_millis(200));
+        let a = join_and_release(&mut g, "a");
+        let b = join_and_release(&mut g, "b");
+        let joined = Instant::now();
+        assert!(!g.arena.as_ref().unwrap().started, "still waiting for the third player");
+        assert!(g.arena_deadline().is_some(), "the join wait wakes the server");
+        assert!(g.arena_poll(joined).is_empty());
+        assert!(!g.arena.as_ref().unwrap().started, "not before the wait is over");
+        g.arena_poll(joined + Duration::from_millis(300));
+        assert!(g.arena.as_ref().unwrap().started, "started short-handed");
+        // Both present players ending their turn closes the window: the
+        // missing one is not waited for.
+        for _ in 0..3 {
+            for p in [a, b] {
+                let _ = call(&mut g, p, r#"{"op":"release","species":0,"count":5}"#);
+                assert!(call(&mut g, p, r#"{"op":"end_turn"}"#).0.is_none());
+            }
+            assert_eq!(g.arena_poll(Instant::now()).len(), 2);
+        }
+        assert_eq!(g.world.tick, 300);
+        assert!(g.arena.as_ref().unwrap().over);
+    }
+
+    /// Without a join wait the arena waits for everyone, as before.
+    #[test]
+    fn without_a_join_wait_the_arena_waits() {
+        let mut g = arena(3, 1);
+        join_and_release(&mut g, "a");
+        assert!(g.arena_deadline().is_none());
+        g.arena_poll(Instant::now() + Duration::from_secs(3600));
+        assert!(!g.arena.as_ref().unwrap().started);
     }
 
     #[test]

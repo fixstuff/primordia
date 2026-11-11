@@ -1,0 +1,61 @@
+{
+ "name": "StealthFeather_r32_Pos",
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.15
+ },
+ "brain": {
+  "weights": [
+   -3.4,
+   3.4,
+   0,
+   0,
+   2.2,
+   2.2,
+   0,
+   -0.5,
+   0,
+   -0.5,
+   1.15,
+   3.2,
+   0,
+   0.08
+  ],
+  "hidden": 2
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.65,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "power": 0.4,
+   "part": "toxin"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  }
+ ]
+}

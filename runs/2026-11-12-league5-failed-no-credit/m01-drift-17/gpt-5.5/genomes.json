@@ -1,0 +1,16 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/01.json",
+  "name": "Gradient grazer r2 v1",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/02.json",
+  "name": "Tiny random swarm r2",
+  "species": 5,
+  "tick": 0
+ }
+]

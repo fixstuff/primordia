@@ -1,0 +1,78 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "sugar_first_stealth_r2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.55
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3,
+   0,
+   0.4,
+   -1,
+   1,
+   0,
+   3,
+   0.4,
+   -1,
+   1,
+   0,
+   0,
+   2,
+   0,
+   1,
+   0,
+   0,
+   -2,
+   0,
+   1,
+   1.6,
+   1.6,
+   0.2,
+   0.2,
+   0.4,
+   2.2,
+   -2.2,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.12,
+  "size": 0.25
+ }
+}

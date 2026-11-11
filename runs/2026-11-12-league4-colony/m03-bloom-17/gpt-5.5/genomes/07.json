@@ -1,0 +1,69 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "HunterGrazer_R4_jaw_camo",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1.0
+  },
+  {
+   "part": "flagellum",
+   "power": 0.55
+  },
+  {
+   "part": "cilia",
+   "power": 1.0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.4
+  }
+ ],
+ "brain": {
+  "hidden": 4
+ },
+ "mutation": {
+  "rate": 0.12,
+  "size": 0.35
+ }
+}

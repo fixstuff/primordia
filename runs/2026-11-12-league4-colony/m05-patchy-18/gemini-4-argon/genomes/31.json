@@ -1,0 +1,60 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "angle": 40,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "jaw",
+   "power": 0.5
+  },
+  {
+   "part": "shell",
+   "thickness": 0.25
+  },
+  {
+   "power": 0.25,
+   "part": "spikes"
+  }
+ ],
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ },
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0
+  ]
+ },
+ "name": "micro22_jaw"
+}

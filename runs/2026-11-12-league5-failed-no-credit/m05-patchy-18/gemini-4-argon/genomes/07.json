@@ -1,0 +1,96 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 0.8
+  },
+  {
+   "thickness": 0.3,
+   "part": "shell"
+  },
+  {
+   "power": 0.8,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "chemical": "sugar",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -35,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "angle": -30,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 30,
+   "chemical": "organism"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -3,
+   3,
+   -2.5,
+   2.5,
+   -2,
+   2,
+   0,
+   0,
+   2,
+   2,
+   2,
+   2,
+   1.5,
+   1.5,
+   -0.2,
+   -0.3,
+   0,
+   1,
+   1.5,
+   -2.5,
+   0,
+   0.08
+  ]
+ },
+ "name": "Omni_Minus",
+ "mutation": {
+  "size": 0.12,
+  "rate": 0.04
+ },
+ "schema": "lifeapi.genome/1"
+}

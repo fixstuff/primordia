@@ -1,0 +1,75 @@
+{
+ "body": [
+  {
+   "radius": 2.8,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "thickness": 0.55,
+   "part": "shell"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.55
+  },
+  {
+   "part": "cilia",
+   "power": 0.65
+  },
+  {
+   "angle": 35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 45,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": -45
+  }
+ ],
+ "mutation": {
+  "size": 0.12,
+  "rate": 0.04
+ },
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   2.5,
+   3.5,
+   2,
+   0.05
+  ],
+  "hidden": 2
+ },
+ "name": "GhostShellGrazer",
+ "schema": "lifeapi.genome/1"
+}

@@ -1,0 +1,72 @@
+{
+ "body": [
+  {
+   "radius": 3,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.55
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "part": "toxin",
+   "power": 0.4
+  },
+  {
+   "angle": -40,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "angle": -40,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "angle": 40,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  }
+ ],
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.15
+ },
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   3,
+   -3,
+   2.5,
+   -2.5,
+   0,
+   0,
+   2,
+   2,
+   2,
+   2,
+   0,
+   -0.5,
+   0,
+   -0.3,
+   1.2,
+   3,
+   0,
+   0.1
+  ]
+ },
+ "name": "LeanForager_Neg"
+}

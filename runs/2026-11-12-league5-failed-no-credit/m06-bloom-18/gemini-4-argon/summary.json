@@ -1,0 +1,7 @@
+{
+ "model": "gemini-4-argon",
+ "prompt_tokens": 595731,
+ "cached_tokens": 119204,
+ "completion_tokens": 7791,
+ "cost_usd": 2.073848399999999
+}

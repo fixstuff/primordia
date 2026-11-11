@@ -1,0 +1,4 @@
+lifeapi-server: combat colony, body evolution 0.02
+lifeapi-server: ARENA for 7 players, 10000 ticks in windows of 500 ticks / 120s
+lifeapi-server: world drift seed 18, API on 127.0.0.1:4830
+lifeapi-server: viewer on http://127.0.0.1:4831/

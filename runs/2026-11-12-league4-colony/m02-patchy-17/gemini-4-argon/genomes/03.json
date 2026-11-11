@@ -1,0 +1,17 @@
+{
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 1
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  }
+ ],
+ "name": "probe_r4",
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

@@ -1,0 +1,128 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/01.json",
+  "name": "Swift Grazer",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/02.json",
+  "name": "Broad Grazer",
+  "species": 10,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/03.json",
+  "name": "Trail Forager",
+  "species": 61,
+  "tick": 552
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/04.json",
+  "name": "Armored Hunter",
+  "species": 72,
+  "tick": 1021
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/05.json",
+  "name": "Fortress",
+  "species": 88,
+  "tick": 1575
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/06.json",
+  "name": "Warhead",
+  "species": 96,
+  "tick": 2042
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/07.json",
+  "name": "Leviathan",
+  "species": 102,
+  "tick": 2547
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/08.json",
+  "name": "Apex twelve",
+  "species": 113,
+  "tick": 3017
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/09.json",
+  "name": "Seed",
+  "species": 127,
+  "tick": 3536
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/10.json",
+  "name": "Raider",
+  "species": 137,
+  "tick": 4041
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/11.json",
+  "name": "Raider six",
+  "species": 149,
+  "tick": 4539
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/12.json",
+  "name": "Hunter four",
+  "species": 182,
+  "tick": 5518
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/13.json",
+  "name": "Dreadnought",
+  "species": 195,
+  "tick": 6030
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/14.json",
+  "name": "Fortress",
+  "species": 196,
+  "tick": 6076
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/15.json",
+  "name": "Ghost grazer",
+  "species": 208,
+  "tick": 6527
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/16.json",
+  "name": "Leviathan",
+  "species": 217,
+  "tick": 7026
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/17.json",
+  "name": "Needle colonist",
+  "species": 230,
+  "tick": 7515
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/gpt-6-astra/genomes/18.json",
+  "name": "Cyst",
+  "species": 242,
+  "tick": 8017
+ }
+]

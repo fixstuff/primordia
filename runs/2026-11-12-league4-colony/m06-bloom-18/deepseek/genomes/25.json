@@ -1,0 +1,51 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_camo",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "camouflage"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   1,
+   -1,
+   0,
+   0,
+   0,
+   2,
+   2,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.0,
+  "size": 0.0
+ }
+}

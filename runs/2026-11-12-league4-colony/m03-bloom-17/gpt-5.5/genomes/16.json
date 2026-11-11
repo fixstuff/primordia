@@ -1,0 +1,93 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "R2_multimouth_seek_B",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.28
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -40
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 40
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -40
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 40
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3,
+   3,
+   3,
+   3,
+   0,
+   -1,
+   -2,
+   2,
+   -1.5,
+   1.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   2,
+   2,
+   0,
+   0.5,
+   1,
+   0.2,
+   0,
+   -4,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.25
+ }
+}

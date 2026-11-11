@@ -1,0 +1,47 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "tank3m2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "shell",
+   "thickness": 1.0
+  },
+  {
+   "part": "spikes",
+   "power": 1.0
+  },
+  {
+   "part": "toxin",
+   "power": 1.0
+  },
+  {
+   "part": "camouflage",
+   "power": 1.0
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.1
+ }
+}

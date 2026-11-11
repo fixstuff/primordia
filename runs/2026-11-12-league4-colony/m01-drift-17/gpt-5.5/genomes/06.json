@@ -1,0 +1,82 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "CamoMinerR3_simple_v1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "camouflage"
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   2,
+   -2,
+   0.5,
+   -0.5,
+   0,
+   0,
+   -2,
+   2,
+   -0.5,
+   0.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   1,
+   2,
+   -2,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.12
+ }
+}

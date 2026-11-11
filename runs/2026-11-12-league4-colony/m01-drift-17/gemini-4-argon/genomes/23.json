@@ -1,0 +1,52 @@
+{
+ "name": "SafeGrazer_5_4",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ },
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0.05
+  ],
+  "hidden": 1
+ },
+ "body": [
+  {
+   "radius": 5.4,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "thickness": 0.55,
+   "part": "shell"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.38
+  },
+  {
+   "power": 0.45,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

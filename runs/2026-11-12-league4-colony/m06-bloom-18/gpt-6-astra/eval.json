@@ -1,0 +1,158 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 3584.0,
+      "mean_population": 896.0,
+      "name": "Swift grazer",
+      "per_seed": [
+        884,
+        892,
+        912
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 11250.0,
+      "mean_population": 450.0,
+      "name": "Broad grazer",
+      "per_seed": [
+        449,
+        445,
+        456
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 1769.3333333333333,
+      "mean_population": 442.3333333333333,
+      "name": "Swift triple",
+      "per_seed": [
+        433,
+        441,
+        453
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 7258.666666666667,
+      "mean_population": 453.6666666666667,
+      "name": "Armored hunter",
+      "per_seed": [
+        460,
+        435,
+        466
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 3164.0,
+      "mean_population": 791.0,
+      "name": "Thorn grazer",
+      "per_seed": [
+        788,
+        802,
+        783
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 2136.0,
+      "mean_population": 534.0,
+      "name": "Thorn raider",
+      "per_seed": [
+        564,
+        481,
+        557
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 1701.3333333333333,
+      "mean_population": 425.3333333333333,
+      "name": "Rapid thorn",
+      "per_seed": [
+        440,
+        385,
+        451
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "Quiet grazer",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 2557.7997676849154,
+      "mean_population": 580.0,
+      "name": "Micro hunter",
+      "per_seed": [
+        568,
+        583,
+        589
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 9379.979563636687,
+      "mean_population": 558.0,
+      "name": "Colony raider",
+      "per_seed": [
+        576,
+        526,
+        572
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 9005.333333333334,
+      "mean_population": 2251.3333333333335,
+      "name": "Quiet defended",
+      "per_seed": [
+        2293,
+        2231,
+        2230
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 6024.0,
+      "mean_population": 1506.0,
+      "name": "Drifting defended",
+      "per_seed": [
+        1562,
+        1343,
+        1613
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

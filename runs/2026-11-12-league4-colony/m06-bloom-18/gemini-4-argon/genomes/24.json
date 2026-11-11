@@ -1,0 +1,123 @@
+{
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   4,
+   -4,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   0,
+   0,
+   0,
+   0,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   0,
+   -0.6,
+   0,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   0,
+   0,
+   0,
+   0,
+   0.4,
+   0,
+   1,
+   2.2,
+   2.8,
+   0,
+   1.4,
+   0.02
+  ]
+ },
+ "name": "ghost_forager_r38_mineral",
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.06
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.8
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "thickness": 0.55,
+   "part": "shell"
+  },
+  {
+   "power": 0.65,
+   "part": "camouflage"
+  },
+  {
+   "part": "toxin",
+   "power": 0.6
+  },
+  {
+   "chemical": "sugar",
+   "angle": 32,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -32,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 75,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -75,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 45,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "angle": -45,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

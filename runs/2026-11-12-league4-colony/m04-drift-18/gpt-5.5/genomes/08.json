@@ -1,0 +1,84 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "bare_drifter_r2_no_camo",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.2
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 45
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3,
+   0,
+   0.8,
+   0,
+   0,
+   1,
+   0,
+   3,
+   0,
+   0.8,
+   0,
+   1,
+   0,
+   0,
+   2,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   2,
+   -1,
+   1,
+   1.2,
+   1.2,
+   0.5,
+   0.5,
+   0.5,
+   2,
+   -2,
+   0.7,
+   -0.7,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.2,
+  "size": 0.4
+ }
+}

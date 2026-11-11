@@ -1,0 +1,58 @@
+{
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   -3.4,
+   3.4,
+   0,
+   0,
+   2.2,
+   2.2,
+   0,
+   -0.5,
+   0,
+   -0.4,
+   1.15,
+   3.2,
+   0,
+   0.08
+  ],
+  "hidden": 2
+ },
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.08
+ },
+ "name": "FeatherMicro_r23_Pos",
+ "body": [
+  {
+   "radius": 2.3,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.55
+  },
+  {
+   "part": "cilia",
+   "power": 0.7
+  },
+  {
+   "power": 0.35,
+   "part": "toxin"
+  },
+  {
+   "angle": -35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  }
+ ]
+}

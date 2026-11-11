@@ -1,0 +1,89 @@
+{
+ "name": "forager_camo_A",
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.08
+ },
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   2.5,
+   -2.5,
+   1,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   0.5,
+   0.5,
+   0,
+   0.8,
+   0,
+   1.2,
+   1,
+   2.5,
+   0,
+   0
+  ]
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "camouflage",
+   "power": 0.7
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  },
+  {
+   "part": "toxin",
+   "power": 0.5
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "mineral"
+  }
+ ]
+}

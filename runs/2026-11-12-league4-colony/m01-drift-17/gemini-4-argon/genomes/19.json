@@ -1,0 +1,68 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5.3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.85,
+   "part": "jaw"
+  },
+  {
+   "thickness": 0.25,
+   "part": "shell"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.48
+  },
+  {
+   "part": "cilia",
+   "power": 0.55
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "angle": 20,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -20
+  }
+ ],
+ "brain": {
+  "weights": [
+   3.5,
+   -3.5,
+   2.8,
+   -2.8,
+   0,
+   0,
+   0,
+   2.5,
+   3.5,
+   0.05
+  ],
+  "hidden": 1
+ },
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ },
+ "name": "ApexJaw_5_3"
+}

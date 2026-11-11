@@ -1,0 +1,62 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 4313.333333333333,
+      "mean_population": 1078.3333333333333,
+      "name": "Swift grazers",
+      "per_seed": [
+        1086,
+        1037,
+        1112
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 20775.0,
+      "mean_population": 831.0,
+      "name": "Broad grazers",
+      "per_seed": [
+        838,
+        823,
+        832
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 14300.0,
+      "mean_population": 572.0,
+      "name": "Armored hunters",
+      "per_seed": [
+        571,
+        571,
+        574
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 7047.0,
+      "mean_population": 783.0,
+      "name": "Double feeders",
+      "per_seed": [
+        796,
+        771,
+        782
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

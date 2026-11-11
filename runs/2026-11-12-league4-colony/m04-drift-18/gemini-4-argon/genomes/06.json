@@ -1,0 +1,98 @@
+{
+ "body": [
+  {
+   "radius": 4.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "power": 1,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -45
+  },
+  {
+   "angle": 45,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "angle": -45,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 45
+  },
+  {
+   "chemical": "organism",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 35,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "power": 0.8,
+   "part": "jaw"
+  },
+  {
+   "power": 0.6,
+   "part": "stinger"
+  },
+  {
+   "power": 0.5,
+   "part": "spikes"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.4
+  }
+ ],
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.05
+ },
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -4,
+   4,
+   -3,
+   3,
+   -3,
+   3,
+   0,
+   0,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   0,
+   -0.5,
+   0,
+   0,
+   1.5,
+   -3.5,
+   0,
+   -0.05
+  ]
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "hunter_omni_minus"
+}

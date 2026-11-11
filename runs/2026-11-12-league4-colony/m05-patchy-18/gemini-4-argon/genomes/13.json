@@ -1,0 +1,80 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5.3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.75,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "angle": 35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 50
+  },
+  {
+   "angle": -50,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "power": 0.7,
+   "part": "jaw"
+  },
+  {
+   "part": "spikes",
+   "power": 0.4
+  },
+  {
+   "thickness": 0.35,
+   "part": "shell"
+  }
+ ],
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ },
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   1.5,
+   0
+  ],
+  "hidden": 2
+ },
+ "name": "titan53_shell"
+}

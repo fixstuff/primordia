@@ -1,0 +1,96 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "ForkGrazer_R2_4mouth",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.25
+  },
+  {
+   "part": "cilia",
+   "power": 1.0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  },
+  {
+   "part": "camouflage"
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3,
+   3,
+   1.5,
+   1.5,
+   -1,
+   0,
+   3,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -2,
+   1,
+   2,
+   0,
+   0,
+   1,
+   0.5,
+   0,
+   -3,
+   3,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.3
+ }
+}

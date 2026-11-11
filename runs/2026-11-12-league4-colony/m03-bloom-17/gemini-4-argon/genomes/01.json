@@ -1,0 +1,54 @@
+{
+ "name": "hunter_grazer",
+ "brain": {
+  "hidden": 3
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.6,
+   "part": "jaw"
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": 0
+  }
+ ],
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.25
+ },
+ "schema": "lifeapi.genome/1"
+}

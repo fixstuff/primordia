@@ -1,0 +1,734 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/01.json",
+      "mean_biomass": 23441.666666666668,
+      "mean_population": 937.6666666666666,
+      "name": "probe",
+      "per_seed": [
+        1014,
+        852,
+        947
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/02.json",
+      "mean_biomass": 13262.666666666666,
+      "mean_population": 3315.6666666666665,
+      "name": "probe2",
+      "per_seed": [
+        3524,
+        3125,
+        3298
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/03.json",
+      "mean_biomass": 29266.666666666668,
+      "mean_population": 292.6666666666667,
+      "name": "probe10",
+      "per_seed": [
+        330,
+        254,
+        294
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/04.json",
+      "mean_biomass": 13466.666666666666,
+      "mean_population": 33.666666666666664,
+      "name": "probe20",
+      "per_seed": [
+        37,
+        31,
+        33
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/05.json",
+      "mean_biomass": 15416.666666666666,
+      "mean_population": 616.6666666666666,
+      "name": "probe_sugar",
+      "per_seed": [
+        614,
+        630,
+        606
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/06.json",
+      "mean_biomass": 19325.0,
+      "mean_population": 773.0,
+      "name": "probe_flag",
+      "per_seed": [
+        758,
+        738,
+        823
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/07.json",
+      "mean_biomass": 20125.0,
+      "mean_population": 805.0,
+      "name": "probe_cilia",
+      "per_seed": [
+        871,
+        747,
+        797
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/08.json",
+      "mean_biomass": 22208.333333333332,
+      "mean_population": 888.3333333333334,
+      "name": "probe_sens",
+      "per_seed": [
+        942,
+        810,
+        913
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/09.json",
+      "mean_biomass": 12375.0,
+      "mean_population": 495.0,
+      "name": "probe_vac",
+      "per_seed": [
+        541,
+        448,
+        496
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/10.json",
+      "mean_biomass": 18150.0,
+      "mean_population": 726.0,
+      "name": "probe_jaw",
+      "per_seed": [
+        786,
+        668,
+        724
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/11.json",
+      "mean_biomass": 20125.0,
+      "mean_population": 805.0,
+      "name": "probe_stinger",
+      "per_seed": [
+        858,
+        745,
+        812
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/12.json",
+      "mean_biomass": 21191.666666666668,
+      "mean_population": 847.6666666666666,
+      "name": "probe_spikes",
+      "per_seed": [
+        916,
+        778,
+        849
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/13.json",
+      "mean_biomass": 20125.0,
+      "mean_population": 805.0,
+      "name": "probe_camo",
+      "per_seed": [
+        858,
+        745,
+        812
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/14.json",
+      "mean_biomass": 21191.666666666668,
+      "mean_population": 847.6666666666666,
+      "name": "probe_toxin",
+      "per_seed": [
+        916,
+        778,
+        849
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/15.json",
+      "mean_biomass": 22350.0,
+      "mean_population": 894.0,
+      "name": "probe_shell",
+      "per_seed": [
+        975,
+        808,
+        899
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/16.json",
+      "mean_biomass": 15625.0,
+      "mean_population": 625.0,
+      "name": "weight_test",
+      "per_seed": [
+        621,
+        630,
+        624
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/17.json",
+      "mean_biomass": 22091.666666666668,
+      "mean_population": 883.6666666666666,
+      "name": "probe_orgsens",
+      "per_seed": [
+        942,
+        812,
+        897
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/18.json",
+      "mean_biomass": 23825.0,
+      "mean_population": 953.0,
+      "name": "probe_h16",
+      "per_seed": [
+        1044,
+        876,
+        939
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/19.json",
+      "mean_biomass": 1594.6666666666667,
+      "mean_population": 398.6666666666667,
+      "name": "sugar_seeker2",
+      "per_seed": [
+        432,
+        331,
+        433
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/20.json",
+      "mean_biomass": 1580.0,
+      "mean_population": 395.0,
+      "name": "generalist2",
+      "per_seed": [
+        446,
+        386,
+        353
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/21.json",
+      "mean_biomass": 3531.0,
+      "mean_population": 392.3333333333333,
+      "name": "generalist3",
+      "per_seed": [
+        436,
+        356,
+        385
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/22.json",
+      "mean_biomass": 3069.0,
+      "mean_population": 341.0,
+      "name": "sugar_seeker3",
+      "per_seed": [
+        356,
+        342,
+        325
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/23.json",
+      "mean_biomass": 5250.0,
+      "mean_population": 210.0,
+      "name": "generalist5",
+      "per_seed": [
+        208,
+        246,
+        176
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/24.json",
+      "mean_biomass": 6066.666666666667,
+      "mean_population": 242.66666666666666,
+      "name": "generalist5_def",
+      "per_seed": [
+        226,
+        238,
+        264
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/25.json",
+      "mean_biomass": 1524.0,
+      "mean_population": 381.0,
+      "name": "gen2_camo",
+      "per_seed": [
+        373,
+        375,
+        395
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/26.json",
+      "mean_biomass": 1860.0,
+      "mean_population": 465.0,
+      "name": "gen2_def",
+      "per_seed": [
+        472,
+        472,
+        451
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/27.json",
+      "mean_biomass": 1344.0,
+      "mean_population": 336.0,
+      "name": "sugar2_camo",
+      "per_seed": [
+        400,
+        256,
+        352
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/28.json",
+      "mean_biomass": 1478.6666666666667,
+      "mean_population": 369.6666666666667,
+      "name": "sugar4",
+      "per_seed": [
+        455,
+        275,
+        379
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/29.json",
+      "mean_biomass": 2150.6666666666665,
+      "mean_population": 537.6666666666666,
+      "name": "smart2",
+      "per_seed": [
+        630,
+        506,
+        477
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/30.json",
+      "mean_biomass": 1928.0,
+      "mean_population": 482.0,
+      "name": "smart2_camo",
+      "per_seed": [
+        572,
+        438,
+        436
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/31.json",
+      "mean_biomass": 4224.0,
+      "mean_population": 469.3333333333333,
+      "name": "smart3",
+      "per_seed": [
+        536,
+        404,
+        468
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/32.json",
+      "mean_biomass": 3012.0,
+      "mean_population": 334.6666666666667,
+      "name": "smart3_def",
+      "per_seed": [
+        401,
+        349,
+        254
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/33.json",
+      "mean_biomass": 4737.0,
+      "mean_population": 526.3333333333334,
+      "name": "srv3",
+      "per_seed": [
+        591,
+        488,
+        500
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/34.json",
+      "mean_biomass": 4949.333333333333,
+      "mean_population": 309.3333333333333,
+      "name": "srv4",
+      "per_seed": [
+        363,
+        263,
+        302
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/35.json",
+      "mean_biomass": 5350.0,
+      "mean_population": 214.0,
+      "name": "srv5",
+      "per_seed": [
+        239,
+        241,
+        162
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/36.json",
+      "mean_biomass": 21317.333333333332,
+      "mean_population": 1332.3333333333333,
+      "name": "seed4",
+      "per_seed": [
+        1434,
+        1208,
+        1355
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/37.json",
+      "mean_biomass": 23583.333333333332,
+      "mean_population": 943.3333333333334,
+      "name": "seed5",
+      "per_seed": [
+        1023,
+        831,
+        976
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/38.json",
+      "mean_biomass": 15333.333333333334,
+      "mean_population": 958.3333333333334,
+      "name": "cruise4",
+      "per_seed": [
+        1076,
+        823,
+        976
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/39.json",
+      "mean_biomass": 14994.0,
+      "mean_population": 306.0,
+      "name": "pred7",
+      "per_seed": [
+        346,
+        286,
+        286
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/40.json",
+      "mean_biomass": 12684.0,
+      "mean_population": 352.3333333333333,
+      "name": "pred6",
+      "per_seed": [
+        373,
+        356,
+        328
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/41.json",
+      "mean_biomass": 14487.666666666666,
+      "mean_population": 295.6666666666667,
+      "name": "pred7b",
+      "per_seed": [
+        307,
+        291,
+        289
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/42.json",
+      "mean_biomass": 12012.0,
+      "mean_population": 333.6666666666667,
+      "name": "pred6b",
+      "per_seed": [
+        352,
+        332,
+        317
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/43.json",
+      "mean_biomass": 13867.0,
+      "mean_population": 283.0,
+      "name": "combat_test",
+      "per_seed": [
+        286,
+        283,
+        280
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/44.json",
+      "mean_biomass": 9425.0,
+      "mean_population": 377.0,
+      "name": "pred5b",
+      "per_seed": [
+        382,
+        381,
+        368
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/45.json",
+      "mean_biomass": 6426.666666666667,
+      "mean_population": 401.6666666666667,
+      "name": "pred4b",
+      "per_seed": [
+        411,
+        383,
+        411
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/46.json",
+      "mean_biomass": 7450.666666666667,
+      "mean_population": 465.6666666666667,
+      "name": "pred4c",
+      "per_seed": [
+        470,
+        466,
+        461
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/47.json",
+      "mean_biomass": 13572.0,
+      "mean_population": 377.0,
+      "name": "pred6c",
+      "per_seed": [
+        402,
+        365,
+        364
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/48.json",
+      "mean_biomass": 4554.0,
+      "mean_population": 506.0,
+      "name": "ghost3",
+      "per_seed": [
+        443,
+        547,
+        528
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/49.json",
+      "mean_biomass": 2332.0,
+      "mean_population": 583.0,
+      "name": "herbA2",
+      "per_seed": [
+        573,
+        596,
+        580
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/50.json",
+      "mean_biomass": 2301.3333333333335,
+      "mean_population": 575.3333333333334,
+      "name": "herbB2",
+      "per_seed": [
+        570,
+        567,
+        589
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/51.json",
+      "mean_biomass": 12516.0,
+      "mean_population": 347.6666666666667,
+      "name": "tankA",
+      "per_seed": [
+        365,
+        342,
+        336
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/52.json",
+      "mean_biomass": 12516.0,
+      "mean_population": 347.6666666666667,
+      "name": "tankB",
+      "per_seed": [
+        365,
+        342,
+        336
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/53.json",
+      "mean_biomass": 11736.0,
+      "mean_population": 326.0,
+      "name": "huntA",
+      "per_seed": [
+        332,
+        325,
+        321
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/54.json",
+      "mean_biomass": 11736.0,
+      "mean_population": 326.0,
+      "name": "huntB",
+      "per_seed": [
+        332,
+        325,
+        321
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/55.json",
+      "mean_biomass": 9336.0,
+      "mean_population": 259.3333333333333,
+      "name": "armorHerb",
+      "per_seed": [
+        260,
+        255,
+        263
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/56.json",
+      "mean_biomass": 18636.0,
+      "mean_population": 517.6666666666666,
+      "name": "trap",
+      "per_seed": [
+        555,
+        482,
+        516
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/57.json",
+      "mean_biomass": 12276.0,
+      "mean_population": 341.0,
+      "name": "stingA",
+      "per_seed": [
+        345,
+        342,
+        336
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/58.json",
+      "mean_biomass": 12276.0,
+      "mean_population": 341.0,
+      "name": "stingB",
+      "per_seed": [
+        345,
+        342,
+        336
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/59.json",
+      "mean_biomass": 11796.0,
+      "mean_population": 327.6666666666667,
+      "name": "jawA",
+      "per_seed": [
+        337,
+        326,
+        320
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m01-drift-17/deepseek/genomes/60.json",
+      "mean_biomass": 11796.0,
+      "mean_population": 327.6666666666667,
+      "name": "jawB",
+      "per_seed": [
+        337,
+        326,
+        320
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

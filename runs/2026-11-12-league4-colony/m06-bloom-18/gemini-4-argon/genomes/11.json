@@ -1,0 +1,105 @@
+{
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   4,
+   -3,
+   0,
+   0,
+   -4,
+   4,
+   4,
+   -3,
+   2.5,
+   2.5,
+   2,
+   2,
+   0,
+   -0.6,
+   0,
+   0,
+   0,
+   0.45,
+   1.05,
+   2.2,
+   2.8,
+   -2.8,
+   0,
+   0.02
+  ],
+  "hidden": 4
+ },
+ "name": "smart_ghost_r42",
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "part": "shell",
+   "thickness": 0.6
+  },
+  {
+   "power": 0.7,
+   "part": "camouflage"
+  },
+  {
+   "power": 0.5,
+   "part": "toxin"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 32,
+   "chemical": "sugar"
+  },
+  {
+   "angle": -32,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "mineral",
+   "angle": 32,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -32,
+   "chemical": "mineral"
+  }
+ ],
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

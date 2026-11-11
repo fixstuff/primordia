@@ -27,9 +27,10 @@ fn main() {
     let mut combat: Option<String> = None;
     let mut evolve: f32 = 0.0;
     let mut realtime = false;
+    let mut join_wait_secs: Option<f64> = None;
     let mut args = std::env::args().skip(1);
     let usage = "usage: primordia-server [--addr HOST:PORT] [--http HOST:PORT | --no-viewer] [--seed N] \
-                 [--world NAME|FILE] [--combat off|colony|individual] [--evolve-bodies RATE] [--arena PLAYERS [--window-ticks N] [--window-secs S] [--first-window-secs S] [--realtime] [--match-ticks N] \
+                 [--world NAME|FILE] [--combat off|colony|individual] [--evolve-bodies RATE] [--arena PLAYERS [--window-ticks N] [--window-secs S] [--first-window-secs S] [--join-wait-secs S] [--realtime] [--match-ticks N] \
                  [--log FILE] [--results FILE]]";
     while let Some(a) = args.next() {
         let mut val = || args.next().unwrap_or_else(|| panic!("{a} needs a value"));
@@ -48,6 +49,7 @@ fn main() {
                     window: Duration::ZERO,
                     first_window: None,
                     realtime: false,
+                    join_wait: None,
                     match_ticks: 0,
                     log: None,
                     results: None,
@@ -56,6 +58,7 @@ fn main() {
             "--window-ticks" => window_ticks = val().parse().expect("number"),
             "--window-secs" => window_secs = val().parse().expect("number"),
             "--realtime" => realtime = true,
+            "--join-wait-secs" => join_wait_secs = Some(val().parse::<f64>().expect("number")),
             "--first-window-secs" => first_window_secs = Some(val().parse::<f64>().expect("number")),
             "--match-ticks" => match_ticks = val().parse().expect("number"),
             "--log" => log = Some(val().into()),
@@ -97,6 +100,7 @@ fn main() {
             cfg.window = Duration::from_secs_f64(window_secs);
             cfg.first_window = first_window_secs.map(Duration::from_secs_f64);
             cfg.realtime = realtime;
+            cfg.join_wait = join_wait_secs.map(Duration::from_secs_f64);
             cfg.match_ticks = match_ticks;
             cfg.log = log;
             cfg.results = results;

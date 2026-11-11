@@ -1,0 +1,133 @@
+{
+ "name": "dual_forager_r36",
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0,
+  "rate": 0
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.75,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.55
+  },
+  {
+   "part": "camouflage",
+   "power": 0.65
+  },
+  {
+   "power": 0.65,
+   "part": "toxin"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 32
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -32,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 75,
+   "chemical": "sugar"
+  },
+  {
+   "angle": -75,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "mineral"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -45
+  }
+ ],
+ "brain": {
+  "hidden": 5,
+  "weights": [
+   3.5,
+   -3.5,
+   2,
+   -2,
+   0,
+   0,
+   -3.5,
+   2,
+   -3.5,
+   3.5,
+   -2,
+   2,
+   0,
+   0,
+   -3.5,
+   2,
+   0,
+   0,
+   0,
+   0,
+   3.8,
+   -3.8,
+   4,
+   -3.5,
+   0,
+   0,
+   0,
+   0,
+   -3.8,
+   3.8,
+   4,
+   -3.5,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   0,
+   -0.6,
+   0,
+   0,
+   0,
+   0,
+   0.4,
+   1,
+   2.2,
+   -2.2,
+   2.4,
+   -2.4,
+   0,
+   0
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 1,
+   "part": "flagellum"
+  },
+  {
+   "power": 1,
+   "part": "cilia"
+  }
+ ],
+ "name": "probe_r4_move",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "brain": {
+  "hidden": 1
+ }
+}

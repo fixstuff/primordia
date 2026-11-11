@@ -1,0 +1,75 @@
+{
+ "brain": {
+  "weights": [
+   3.5,
+   -3.5,
+   2.8,
+   -2.8,
+   0,
+   0,
+   0,
+   2.5,
+   3.5,
+   0.05
+  ],
+  "hidden": 1
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5.6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.85,
+   "part": "jaw"
+  },
+  {
+   "power": 0.6,
+   "part": "stinger"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.55
+  },
+  {
+   "part": "flagellum",
+   "power": 0.45
+  },
+  {
+   "power": 0.55,
+   "part": "cilia"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  },
+  {
+   "angle": -35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": 20
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": -20
+  }
+ ],
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ },
+ "name": "ArmoredApex_5_6",
+ "schema": "lifeapi.genome/1"
+}

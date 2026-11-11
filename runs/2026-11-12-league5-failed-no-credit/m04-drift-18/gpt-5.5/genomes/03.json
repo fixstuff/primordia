@@ -1,0 +1,68 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "sprinter_r2_sugarhunt_v2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   2.5,
+   2.5,
+   0.8,
+   0.5,
+   3,
+   -3,
+   0.4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.12,
+  "size": 0.25
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   2.5,
+   -2.5,
+   -2.5,
+   0.05
+  ],
+  "hidden": 2
+ },
+ "name": "Shelled_B",
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 4.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -40
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 40
+  },
+  {
+   "angle": -40,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  }
+ ],
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "name": "piranha32_prey",
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ },
+ "body": [
+  {
+   "radius": 3.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.85
+  },
+  {
+   "part": "cilia",
+   "power": 0.85
+  },
+  {
+   "angle": 35,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -35
+  },
+  {
+   "chemical": "sugar",
+   "angle": 45,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -45,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "jaw",
+   "power": 0.85
+  },
+  {
+   "part": "shell",
+   "thickness": 0.3
+  },
+  {
+   "power": 0.3,
+   "part": "spikes"
+  }
+ ],
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   3,
+   -3,
+   0,
+   0,
+   0,
+   2.5,
+   4,
+   0
+  ],
+  "hidden": 1
+ },
+ "schema": "lifeapi.genome/1"
+}

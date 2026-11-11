@@ -1,0 +1,79 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_camo_spike_toxin_avoid_rand",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "part": "toxin",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 90
+  }
+ ],
+ "brain": {
+  "hidden": 10
+ },
+ "mutation": {
+  "rate": 0.2,
+  "size": 0.4
+ }
+}

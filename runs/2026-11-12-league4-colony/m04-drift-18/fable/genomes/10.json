@@ -1,0 +1,109 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "sugarK12",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 12
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 8,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   4,
+   0,
+   -0.3,
+   4,
+   4,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -0.7,
+   -0.7,
+   1.6,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

@@ -19,7 +19,7 @@ rebuilt:
 
 Standard library only. Key files are read by the agent runners, never here.
 """
-import argparse, itertools, json, pathlib, socket, subprocess, sys, time
+import argparse, itertools, json, pathlib, socket, subprocess, sys, time, urllib.error, urllib.request
 
 
 def port_free(port):
@@ -61,6 +61,45 @@ OPENAI = {"gpt-5.5": ("5,0.5,30", False) + _OA,
           "gemini-4-argon": ("4,0.1,20", False) + _GEM}
 
 
+def preflight(a):
+    """One tiny call per paid API before any match starts. League 5's first
+    run spent ~$29 on six matches that never left tick 0: DeepSeek's key had
+    no credit (HTTP 402), so its player never joined. Returns the problems."""
+    def key(file, name):
+        for line in (pathlib.Path.home() / ".config/lifeapi" / file).read_text().splitlines():
+            if line.strip().startswith(name + "="):
+                return line.split("=", 1)[1].strip().strip('"').strip("'")
+        return None
+    checks = [("deepseek-v4-pro", "https://api.deepseek.com/v1", "deepseek.env", "DEEPSEEK_API_KEY", False)]
+    checks += [(m, OPENAI[m][2], OPENAI[m][3], OPENAI[m][4], OPENAI[m][1]) for m in a.openai]
+    problems = []
+    for model, base, file, name, responses in checks:
+        try:
+            k = key(file, name)
+        except OSError as e:
+            problems.append(f"{model}: key file {file}: {e.strerror}")
+            continue
+        if not k:
+            problems.append(f"{model}: no {name}= line in {file}")
+            continue
+        body = ({"model": model, "input": "ok", "max_output_tokens": 16} if responses else
+                {"model": model, "messages": [{"role": "user", "content": "ok"}], "max_tokens": 1})
+        req = urllib.request.Request(base + ("/responses" if responses else "/chat/completions"),
+                                     data=json.dumps(body).encode(), method="POST",
+                                     headers={"Authorization": "Bearer " + k, "Content-Type": "application/json"})
+        try:
+            urllib.request.urlopen(req, timeout=60).read()
+        except urllib.error.HTTPError as e:
+            text = e.read().decode(errors="replace")[:300]
+            # A 400 about a parameter still proves the key works and has credit.
+            if e.code in (401, 402, 403, 404) or (e.code == 429 and "quota" in text.lower()) \
+                    or "insufficient" in text.lower() or "balance" in text.lower():
+                problems.append(f"{model}: HTTP {e.code}: {text}")
+        except OSError as e:
+            problems.append(f"{model}: {e}")
+    return problems
+
+
 def launch(match_dir, port, http, world, seed, a):
     """Start a server and the four players for one match. Returns the processes."""
     d = match_dir
@@ -72,7 +111,7 @@ def launch(match_dir, port, http, world, seed, a):
     procs["server"] = subprocess.Popen(
         [rel(ROOT / "target/release/primordia-server"), "--addr", addr, "--http", f"127.0.0.1:{http}",
          "--world", world, "--seed", str(seed), "--combat", a.combat, "--evolve-bodies", str(a.evolve_bodies), "--arena", str(len(PLAYERS)), "--window-ticks", str(a.window_ticks),
-         "--window-secs", str(a.window_secs), "--first-window-secs", str(a.first_window_secs), *(["--realtime"] if a.realtime else []), "--match-ticks", str(a.match_ticks),
+         "--window-secs", str(a.window_secs), "--first-window-secs", str(a.first_window_secs), "--join-wait-secs", str(a.join_wait_secs), *(["--realtime"] if a.realtime else []), "--match-ticks", str(a.match_ticks),
          "--log", rel(d / "match-log.jsonl"), "--results", rel(d / "results.json")],
         stdout=open(d / "server.log", "w"), stderr=subprocess.STDOUT, cwd=ROOT)
     # Players start only once the server answers: a server that failed to
@@ -212,6 +251,9 @@ def main():
     ap.add_argument("--window-secs", type=float, default=180)
     ap.add_argument("--first-window-secs", type=float, default=600,
                     help="longer first window: League 1 saw Fable miss window 1 in 6/6 matches at 180 s")
+    ap.add_argument("--join-wait-secs", type=float, default=300,
+                    help="start without players still missing this long after the first joins (they score nothing)")
+    ap.add_argument("--skip-preflight", action="store_true", help="don't test each paid API before starting")
     ap.add_argument("--combat", default="off", choices=["off", "colony", "individual"],
                     help="off (Leagues 1-3), colony (your organisms never fight each other, like ants), "
                          "individual (every organism for itself)")
@@ -233,6 +275,12 @@ def main():
     # The exact settings, so a league's rules are on record (League 3's were not).
     (out / "args.json").write_text(json.dumps({**vars(a), "argv": sys.argv[1:]}, indent=1))
     todo = [m for m in schedule if not (out / m["name"] / "results.json").exists()]
+    if todo and not a.skip_preflight:
+        problems = preflight(a)
+        if problems:
+            print("PREFLIGHT FAILED, no match started:\n  " + "\n  ".join(problems), flush=True)
+            sys.exit(3)
+        print("preflight: every paid API answered", flush=True)
     for start in range(0, len(todo), a.parallel):
         batch = todo[start:start + a.parallel]
         running = []

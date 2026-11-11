@@ -1,0 +1,100 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |     18s] '' calls=['catalog']
+[turn  3 | tick      0 |     21s] '' calls=['observe']
+[turn  4 | tick      0 |     26s] '' calls=['submit_genome']
+[turn  5 | tick      0 |     33s] '' calls=['submit_genome']
+[turn  6 | tick      0 |     37s] '' calls=['submit_genome']
+[turn  7 | tick      0 |     40s] '' calls=['release']
+[turn  8 | tick      0 |     42s] '' calls=['release']
+[turn  9 | tick      0 |     44s] '' calls=['release']
+[turn 10 | tick      0 |     46s] '' calls=['end_turn']
+[turn 11 | tick      0 |    189s] '' calls=['end_turn']
+[turn 12 | tick    500 |    310s] '' calls=['report']
+[turn 13 | tick    507 |    314s] '' calls=['submit_genome']
+[turn 14 | tick    507 |    317s] '' calls=['submit_genome']
+[turn 15 | tick    537 |    322s] '' calls=['submit_genome']
+[turn 16 | tick    557 |    324s] '' calls=['release']
+[turn 17 | tick    568 |    327s] '' calls=['release']
+[turn 18 | tick    581 |    329s] '' calls=['end_turn']
+[turn 19 | tick   1000 |    430s] '' calls=['report']
+[turn 20 | tick   1008 |    440s] '' calls=['submit_genome']
+[turn 21 | tick   1048 |    442s] '' calls=['release']
+[turn 22 | tick   1058 |    444s] '' calls=['end_turn']
+[turn 23 | tick   1500 |    550s] '' calls=['catalog']
+[turn 24 | tick   1507 |    563s] '' calls=['submit_genome']
+[turn 25 | tick   1560 |    565s] '' calls=['release']
+[turn 26 | tick   1569 |    566s] '' calls=['end_turn']
+[turn 27 | tick   2000 |    674s] '' calls=['submit_genome']
+[turn 28 | tick   2024 |    676s] '' calls=['release']
+[turn 29 | tick   2034 |    678s] '' calls=['end_turn']
+[turn 30 | tick   2500 |    793s] '' calls=['report']
+[turn 31 | tick   2522 |    798s] '' calls=['submit_genome']
+[turn 32 | tick   2541 |    800s] '' calls=['release']
+[turn 33 | tick   2551 |    802s] '' calls=['end_turn']
+[turn 34 | tick   3000 |    914s] '' calls=['submit_genome']
+[turn 35 | tick   3027 |    916s] '' calls=['release']
+[turn 36 | tick   3027 |    918s] '' calls=['release']
+[turn 37 | tick   3041 |    919s] '' calls=['end_turn']
+[turn 38 | tick   3500 |   1033s] '' calls=['submit_genome']
+[turn 39 | tick   3520 |   1035s] '' calls=['release']
+[turn 40 | tick   3531 |   1037s] '' calls=['end_turn']
+[turn 41 | tick   4000 |   1150s] '' calls=['release']
+[turn 42 | tick   4008 |   1151s] '' calls=['end_turn']
+[turn 43 | tick   4500 |   1270s] '' calls=['catalog']
+[turn 44 | tick   4508 |   1272s] '' calls=['release']
+[turn 45 | tick   4518 |   1275s] '' calls=['end_turn']
+[turn 46 | tick   5000 |   1390s] '' calls=['report']
+[turn 47 | tick   5009 |   1392s] '' calls=['release']
+[turn 48 | tick   5018 |   1394s] '' calls=['end_turn']
+[turn 49 | tick   5500 |   1510s] '' calls=['release']
+[turn 50 | tick   5506 |   1511s] '' calls=['end_turn']
+[turn 51 | tick   6000 |   1630s] '' calls=['release']
+[turn 52 | tick   6006 |   1631s] '' calls=['end_turn']
+[turn 53 | tick   6500 |   1750s] '' calls=['release']
+[turn 54 | tick   6507 |   1752s] '' calls=['end_turn']
+[turn 55 | tick   7000 |   1870s] '' calls=['release']
+[turn 56 | tick   7007 |   1871s] '' calls=['end_turn']
+[turn 57 | tick   7500 |   1990s] '' calls=['release']
+[turn 58 | tick   7510 |   1992s] '' calls=['end_turn']
+[turn 59 | tick   8000 |   2110s] '' calls=['release']
+[turn 60 | tick   8008 |   2112s] '' calls=['end_turn']
+[turn 61 | tick   8500 |   2230s] '' calls=['release']
+[turn 62 | tick   8507 |   2231s] '' calls=['end_turn']
+[turn 63 | tick   9000 |   2350s] '' calls=['release']
+[turn 64 | tick   9008 |   2351s] '' calls=['end_turn']
+[turn 65 | tick   9500 |   2471s] '' calls=['release']
+  (HTTP 520: b'error code: 520\n')
+Traceback (most recent call last):
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 244, in main
+    resp = (responses_chat(a.base_url, key, a.model, messages, tools, a.reasoning_effort)
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 126, in responses_chat
+    with urllib.request.urlopen(req, timeout=900) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 520: <none>
+relaunch 1
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick   9561 |      5s] '' calls=['observe']
+[turn  3 | tick   9573 |      7s] '' calls=['report']
+[turn  4 | tick   9582 |     10s] '' calls=['release']
+[turn  5 | tick   9596 |     12s] '' calls=['end_turn']
+
+ended at tick 10000 after 5 turns, 0 genomes submitted

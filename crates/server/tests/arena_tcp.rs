@@ -21,6 +21,7 @@ fn three_bots_play_a_match_to_the_end() {
         window_ticks: 250,
         window: Duration::from_secs(20),
         first_window: None,
+        join_wait: None,
         realtime: false,
         match_ticks: 1500,
         log: Some(log.clone()),

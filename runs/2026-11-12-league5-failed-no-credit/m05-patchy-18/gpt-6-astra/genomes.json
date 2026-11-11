@@ -1,0 +1,30 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/01.json",
+  "name": "Swift grazers",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/02.json",
+  "name": "Broad grazers",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/03.json",
+  "name": "Armored hunters",
+  "species": 10,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/04.json",
+  "name": "Double feeders",
+  "species": 11,
+  "tick": 0
+ }
+]

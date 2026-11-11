@@ -1,0 +1,52 @@
+{
+ "brain": {
+  "weights": [
+   -3.5,
+   3.5,
+   0,
+   0,
+   0,
+   1.1,
+   3.5,
+   0.06
+  ],
+  "hidden": 1
+ },
+ "name": "MicroFeather_r28_Pos",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.8
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.65,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "power": 0.35,
+   "part": "toxin"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  }
+ ],
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.15
+ },
+ "schema": "lifeapi.genome/1"
+}

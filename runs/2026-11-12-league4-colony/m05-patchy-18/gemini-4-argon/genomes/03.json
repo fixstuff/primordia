@@ -1,0 +1,52 @@
+{
+ "name": "test_r4_jaw",
+ "body": [
+  {
+   "radius": 4,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "angle": -40,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 40,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -40,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "jaw",
+   "power": 0.5
+  }
+ ],
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "brain": {
+  "hidden": 6
+ },
+ "schema": "lifeapi.genome/1"
+}

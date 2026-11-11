@@ -1,0 +1,75 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5.1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 0.75
+  },
+  {
+   "part": "stinger",
+   "power": 0.75
+  },
+  {
+   "thickness": 0.55,
+   "part": "shell"
+  },
+  {
+   "power": 0.48,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.55
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "angle": -35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 20,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  },
+  {
+   "angle": -20,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   3.5,
+   -3.5,
+   2.8,
+   -2.8,
+   0,
+   0,
+   0,
+   2.5,
+   3.5,
+   0.05
+  ]
+ },
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.03
+ },
+ "name": "PatchStinger_5_1",
+ "schema": "lifeapi.genome/1"
+}

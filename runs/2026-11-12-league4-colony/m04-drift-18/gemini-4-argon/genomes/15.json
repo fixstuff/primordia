@@ -1,0 +1,72 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.6,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.9
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "chemical": "mineral",
+   "angle": -45,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 45,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "thickness": 1,
+   "part": "shell"
+  },
+  {
+   "power": 0.8,
+   "part": "spikes"
+  },
+  {
+   "part": "toxin",
+   "power": 0.8
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -4,
+   4,
+   -2.5,
+   2.5,
+   0,
+   0,
+   -3.5,
+   0,
+   0,
+   2
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.12
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "direct_45_minus"
+}

@@ -1,0 +1,149 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/01.json",
+  "name": "Pioneer",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/02.json",
+  "name": "Grazer",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/03.json",
+  "name": "Bloom",
+  "species": 11,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/04.json",
+  "name": "Hunter",
+  "species": 86,
+  "tick": 530
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/05.json",
+  "name": "Forager",
+  "species": 91,
+  "tick": 576
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/06.json",
+  "name": "Ghost",
+  "species": 103,
+  "tick": 1037
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/07.json",
+  "name": "Bastion",
+  "species": 105,
+  "tick": 1056
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/08.json",
+  "name": "Leviathan",
+  "species": 128,
+  "tick": 1547
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/09.json",
+  "name": "Dreadnought",
+  "species": 141,
+  "tick": 2041
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/10.json",
+  "name": "Siege",
+  "species": 157,
+  "tick": 2549
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/11.json",
+  "name": "Ghost",
+  "species": 170,
+  "tick": 3023
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/12.json",
+  "name": "Armored seed",
+  "species": 181,
+  "tick": 3534
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/13.json",
+  "name": "Quiet grass",
+  "species": 202,
+  "tick": 4036
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/14.json",
+  "name": "Fortress grass",
+  "species": 225,
+  "tick": 5019
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/15.json",
+  "name": "Ambush garden",
+  "species": 244,
+  "tick": 5525
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/16.json",
+  "name": "Roaming thorn",
+  "species": 252,
+  "tick": 6018
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/17.json",
+  "name": "Drift bloom",
+  "species": 259,
+  "tick": 6526
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/18.json",
+  "name": "Hidden meadow",
+  "species": 264,
+  "tick": 7050
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/19.json",
+  "name": "Hidden wanderer",
+  "species": 275,
+  "tick": 7516
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/20.json",
+  "name": "Armored gleaner",
+  "species": 291,
+  "tick": 8020
+ },
+ {
+  "n": 21,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m02-patchy-17/gpt-6-astra/genomes/21.json",
+  "name": "Rapid scavenger",
+  "species": 306,
+  "tick": 8513
+ }
+]

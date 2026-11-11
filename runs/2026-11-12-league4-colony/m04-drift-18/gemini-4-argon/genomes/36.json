@@ -1,0 +1,98 @@
+{
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.12
+ },
+ "name": "brawler_30_hunter",
+ "body": [
+  {
+   "radius": 3,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 0.6
+  },
+  {
+   "power": 0.65,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.9,
+   "part": "cilia"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 40
+  },
+  {
+   "chemical": "mineral",
+   "angle": -50,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 50,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -30,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": 30
+  },
+  {
+   "part": "shell",
+   "thickness": 0.6
+  },
+  {
+   "power": 0.5,
+   "part": "spikes"
+  },
+  {
+   "power": 0.5,
+   "part": "toxin"
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   -2.5,
+   2.5,
+   -1.8,
+   1.8,
+   0,
+   0,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   0,
+   -0.5,
+   0,
+   -0.4,
+   1.5,
+   3.5,
+   0,
+   0.05
+  ],
+  "hidden": 2
+ }
+}

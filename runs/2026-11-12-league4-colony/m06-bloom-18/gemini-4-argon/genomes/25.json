@@ -1,0 +1,94 @@
+{
+ "name": "plague_swarm_r20",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.65
+  },
+  {
+   "power": 0.65,
+   "part": "cilia"
+  },
+  {
+   "part": "toxin",
+   "power": 0.85
+  },
+  {
+   "part": "shell",
+   "thickness": 0.45
+  },
+  {
+   "power": 0.55,
+   "part": "camouflage"
+  },
+  {
+   "angle": 32,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -32,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 75
+  },
+  {
+   "angle": -75,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   1.5,
+   -1.5,
+   0,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   0,
+   0,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   0,
+   -0.6,
+   0,
+   0,
+   0.4,
+   1,
+   2.2,
+   2.6,
+   0,
+   0.02
+  ],
+  "hidden": 3
+ },
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.06
+ }
+}

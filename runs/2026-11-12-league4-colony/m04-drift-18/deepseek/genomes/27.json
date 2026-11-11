@@ -1,0 +1,17 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "nomouth",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

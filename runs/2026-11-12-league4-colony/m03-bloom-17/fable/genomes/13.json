@@ -1,0 +1,60 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "forager",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.35
+  },
+  {
+   "part": "cilia",
+   "power": 0.2
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   4,
+   4,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1.5,
+   0,
+   0.3,
+   4,
+   0,
+   0,
+   0.02
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

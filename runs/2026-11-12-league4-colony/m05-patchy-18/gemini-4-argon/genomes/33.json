@@ -1,0 +1,56 @@
+{
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ },
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0
+  ]
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.6,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.55,
+   "part": "cilia"
+  },
+  {
+   "angle": 40,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "angle": -40,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "jaw",
+   "power": 0.45
+  },
+  {
+   "thickness": 0.15,
+   "part": "shell"
+  }
+ ],
+ "name": "micro21_jaw_lean"
+}

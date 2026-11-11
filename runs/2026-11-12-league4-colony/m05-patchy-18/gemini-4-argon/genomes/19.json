@@ -1,0 +1,88 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "angle": 35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "chemical": "mineral",
+   "angle": 50,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -50,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "part": "jaw",
+   "power": 0.7
+  },
+  {
+   "power": 0.45,
+   "part": "spikes"
+  },
+  {
+   "thickness": 0.25,
+   "part": "shell"
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   4,
+   -3.6,
+   0,
+   0,
+   -4,
+   4,
+   4,
+   -3.6,
+   0,
+   0,
+   0,
+   2.3,
+   4,
+   1.2,
+   -1.2,
+   0
+  ]
+ },
+ "name": "tank50_v2_shell",
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ }
+}

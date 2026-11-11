@@ -1,0 +1,106 @@
+{
+ "name": "ApexOmni_A",
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   -3,
+   0,
+   0,
+   3,
+   0,
+   0,
+   0,
+   2.5,
+   2.5,
+   2,
+   0.05
+  ],
+  "hidden": 3
+ },
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "body": [
+  {
+   "radius": 6,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 0.8
+  },
+  {
+   "thickness": 0.6,
+   "part": "shell"
+  },
+  {
+   "power": 0.8,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.8,
+   "part": "cilia"
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "sugar"
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": 25
+  },
+  {
+   "angle": -25,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  }
+ ]
+}

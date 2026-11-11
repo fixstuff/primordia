@@ -1,0 +1,23 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/01.json",
+  "name": "Grazer-4",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/02.json",
+  "name": "Grazer-8",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/03.json",
+  "name": "Hunter-8",
+  "species": 9,
+  "tick": 0
+ }
+]

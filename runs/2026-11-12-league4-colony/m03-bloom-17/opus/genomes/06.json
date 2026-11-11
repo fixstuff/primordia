@@ -1,0 +1,46 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "tank5",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "toxin",
+   "power": 0.6
+  },
+  {
+   "part": "spikes",
+   "power": 0.4
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   1,
+   2,
+   0.5,
+   0.1,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.2
+ }
+}

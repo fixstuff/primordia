@@ -1,0 +1,37 @@
+{
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.1
+ },
+ "body": [
+  {
+   "radius": 5,
+   "part": "membrane"
+  },
+  {
+   "part": "stinger",
+   "power": 0.5
+  },
+  {
+   "thickness": 0.5,
+   "part": "shell"
+  },
+  {
+   "power": 0.5,
+   "part": "spikes"
+  },
+  {
+   "power": 0.5,
+   "part": "camouflage"
+  },
+  {
+   "part": "toxin",
+   "power": 0.5
+  }
+ ],
+ "name": "test_combat_parts_2",
+ "brain": {
+  "hidden": 1
+ }
+}

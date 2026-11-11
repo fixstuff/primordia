@@ -1,0 +1,88 @@
+{
+ "name": "MegaHunter_r10_Pos",
+ "body": [
+  {
+   "radius": 10,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 1,
+   "part": "jaw"
+  },
+  {
+   "power": 0.8,
+   "part": "stinger"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.85
+  },
+  {
+   "part": "cilia",
+   "power": 0.9
+  },
+  {
+   "thickness": 0.75,
+   "part": "shell"
+  },
+  {
+   "part": "spikes",
+   "power": 0.75
+  },
+  {
+   "power": 0.8,
+   "part": "toxin"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -28,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 28,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  }
+ ],
+ "brain": {
+  "weights": [
+   -3.5,
+   3.5,
+   -3.8,
+   3.8,
+   0,
+   0,
+   2,
+   2,
+   2.5,
+   2.5,
+   0,
+   -0.5,
+   0,
+   0.2,
+   1.5,
+   3.5,
+   0,
+   0.08
+  ],
+  "hidden": 2
+ },
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ }
+}

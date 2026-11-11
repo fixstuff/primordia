@@ -1,0 +1,72 @@
+{
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.08
+ },
+ "name": "UltraLean_r33_Pos",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.65,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "power": 0.4,
+   "part": "toxin"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "chemical": "mineral",
+   "angle": 35,
+   "part": "chemo_sensor"
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "weights": [
+   -3,
+   3,
+   -1.5,
+   1.5,
+   0,
+   0,
+   2,
+   2,
+   1,
+   1,
+   0,
+   -0.5,
+   0,
+   -0.3,
+   1.2,
+   3,
+   0,
+   0.08
+  ],
+  "hidden": 2
+ }
+}

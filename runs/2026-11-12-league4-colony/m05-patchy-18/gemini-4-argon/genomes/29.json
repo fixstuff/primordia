@@ -1,0 +1,60 @@
+{
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.06
+ },
+ "body": [
+  {
+   "radius": 3.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.85,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 40
+  },
+  {
+   "angle": -40,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "jaw",
+   "power": 0.75
+  },
+  {
+   "power": 0.3,
+   "part": "spikes"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.3
+  }
+ ],
+ "name": "shark32_h1",
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   0,
+   2.2,
+   3.5,
+   0
+  ]
+ }
+}

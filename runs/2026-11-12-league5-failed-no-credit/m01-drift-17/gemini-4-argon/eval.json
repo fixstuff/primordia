@@ -1,0 +1,146 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/01.json",
+      "mean_biomass": 6555.0,
+      "mean_population": 728.3333333333334,
+      "name": "test_probe",
+      "per_seed": [
+        749,
+        711,
+        725
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/02.json",
+      "mean_biomass": 3541.6666666666665,
+      "mean_population": 566.6666666666666,
+      "name": "grazer_A",
+      "per_seed": [
+        574,
+        559,
+        567
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/03.json",
+      "mean_biomass": 3491.6666666666665,
+      "mean_population": 558.6666666666666,
+      "name": "grazer_B",
+      "per_seed": [
+        535,
+        584,
+        557
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/04.json",
+      "mean_biomass": 6129.083333333333,
+      "mean_population": 500.3333333333333,
+      "name": "heavy_grazer_A",
+      "per_seed": [
+        498,
+        497,
+        506
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/05.json",
+      "mean_biomass": 5537.0,
+      "mean_population": 452.0,
+      "name": "heavy_grazer_B",
+      "per_seed": [
+        475,
+        450,
+        431
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/06.json",
+      "mean_biomass": 2192.0,
+      "mean_population": 548.0,
+      "name": "micro_grazer_A",
+      "per_seed": [
+        541,
+        554,
+        549
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/07.json",
+      "mean_biomass": 2228.0,
+      "mean_population": 557.0,
+      "name": "micro_grazer_B",
+      "per_seed": [
+        542,
+        563,
+        566
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/08.json",
+      "mean_biomass": 4868.75,
+      "mean_population": 779.0,
+      "name": "lean_grazer_A",
+      "per_seed": [
+        777,
+        779,
+        781
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/09.json",
+      "mean_biomass": 4758.333333333333,
+      "mean_population": 761.3333333333334,
+      "name": "lean_grazer_B",
+      "per_seed": [
+        781,
+        744,
+        759
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/10.json",
+      "mean_biomass": 7512.75,
+      "mean_population": 371.0,
+      "name": "omnivore_hunter_A",
+      "per_seed": [
+        376,
+        370,
+        367
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gemini-4-argon/genomes/11.json",
+      "mean_biomass": 6075.0,
+      "mean_population": 300.0,
+      "name": "omnivore_hunter_B",
+      "per_seed": [
+        330,
+        281,
+        289
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

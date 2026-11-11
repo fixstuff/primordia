@@ -1,0 +1,72 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.85
+  },
+  {
+   "part": "cilia",
+   "power": 0.85
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "organism"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "sugar"
+  },
+  {
+   "power": 0.85,
+   "part": "jaw"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.25
+  },
+  {
+   "part": "spikes",
+   "power": 0.25
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   3,
+   -3,
+   0,
+   0,
+   0,
+   2.5,
+   4,
+   0
+  ]
+ },
+ "name": "piranha23_prey",
+ "mutation": {
+  "size": 0.06,
+  "rate": 0.03
+ }
+}

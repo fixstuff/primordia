@@ -1,0 +1,51 @@
+{
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.1
+ },
+ "brain": {
+  "hidden": 4
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.5,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.5,
+   "part": "cilia"
+  },
+  {
+   "angle": 40,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": -40,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "mineral"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -40
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "name": "probe_r3"
+}

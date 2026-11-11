@@ -1,0 +1,58 @@
+{
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -3.4,
+   3.4,
+   0,
+   0,
+   2.2,
+   2.2,
+   0,
+   -0.5,
+   0,
+   -0.5,
+   1.15,
+   3.2,
+   0,
+   0.08
+  ]
+ },
+ "body": [
+  {
+   "radius": 3.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.65
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "power": 0.4,
+   "part": "toxin"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.15
+ },
+ "name": "FeatherForager_r35_Pos"
+}

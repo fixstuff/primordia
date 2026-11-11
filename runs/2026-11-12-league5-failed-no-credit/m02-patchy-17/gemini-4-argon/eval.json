@@ -1,0 +1,134 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/01.json",
+      "mean_biomass": 4785.416666666667,
+      "mean_population": 765.6666666666666,
+      "name": "MicroSprinter",
+      "per_seed": [
+        774,
+        771,
+        752
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/02.json",
+      "mean_biomass": 7239.75,
+      "mean_population": 591.0,
+      "name": "Grazer_A",
+      "per_seed": [
+        581,
+        576,
+        616
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/03.json",
+      "mean_biomass": 6835.5,
+      "mean_population": 558.0,
+      "name": "Grazer_B",
+      "per_seed": [
+        571,
+        574,
+        529
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/04.json",
+      "mean_biomass": 10104.75,
+      "mean_population": 499.0,
+      "name": "JawGrazer",
+      "per_seed": [
+        492,
+        493,
+        512
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/05.json",
+      "mean_biomass": 8721.0,
+      "mean_population": 430.6666666666667,
+      "name": "Apex_A",
+      "per_seed": [
+        446,
+        421,
+        425
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/06.json",
+      "mean_biomass": 7337.25,
+      "mean_population": 362.3333333333333,
+      "name": "Apex_B",
+      "per_seed": [
+        404,
+        317,
+        366
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/07.json",
+      "mean_biomass": 3835.4166666666665,
+      "mean_population": 613.6666666666666,
+      "name": "Micro_A",
+      "per_seed": [
+        599,
+        633,
+        609
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/08.json",
+      "mean_biomass": 3754.1666666666665,
+      "mean_population": 600.6666666666666,
+      "name": "Micro_B",
+      "per_seed": [
+        614,
+        579,
+        609
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/09.json",
+      "mean_biomass": 12516.0,
+      "mean_population": 347.6666666666667,
+      "name": "HeavyApex_A",
+      "per_seed": [
+        353,
+        337,
+        353
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/10.json",
+      "mean_biomass": 6684.0,
+      "mean_population": 185.66666666666666,
+      "name": "HeavyApex_B",
+      "per_seed": [
+        273,
+        127,
+        157
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

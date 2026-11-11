@@ -1,0 +1,72 @@
+{
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.06
+ },
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -4,
+   3.5,
+   -3.5,
+   0,
+   0,
+   0,
+   2.5,
+   3.5,
+   0
+  ]
+ },
+ "body": [
+  {
+   "radius": 3.3,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.8,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.8,
+   "part": "cilia"
+  },
+  {
+   "angle": 35,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  },
+  {
+   "angle": -35,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 40,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -40,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "jaw",
+   "power": 0.75
+  },
+  {
+   "thickness": 0.35,
+   "part": "shell"
+  },
+  {
+   "part": "spikes",
+   "power": 0.35
+  }
+ ],
+ "name": "herb33_org",
+ "schema": "lifeapi.genome/1"
+}

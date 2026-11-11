@@ -1,0 +1,86 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/01.json",
+  "name": "Swift grazer",
+  "species": 17,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/02.json",
+  "name": "Broad grazer",
+  "species": 25,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/03.json",
+  "name": "Swift triple",
+  "species": 28,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/04.json",
+  "name": "Armored hunter",
+  "species": 62,
+  "tick": 547
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/05.json",
+  "name": "Thorn grazer",
+  "species": 76,
+  "tick": 1034
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/06.json",
+  "name": "Thorn raider",
+  "species": 113,
+  "tick": 2017
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/07.json",
+  "name": "Rapid thorn",
+  "species": 127,
+  "tick": 2530
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/08.json",
+  "name": "Quiet grazer",
+  "species": 149,
+  "tick": 3518
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/09.json",
+  "name": "Micro hunter",
+  "species": 158,
+  "tick": 4027
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/10.json",
+  "name": "Colony raider",
+  "species": 183,
+  "tick": 5017
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/11.json",
+  "name": "Quiet defended",
+  "species": 192,
+  "tick": 5532
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m06-bloom-18/gpt-6-astra/genomes/12.json",
+  "name": "Drifting defended",
+  "species": 204,
+  "tick": 6513
+ }
+]

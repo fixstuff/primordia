@@ -1,0 +1,68 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "chemofeeder",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "mineral"
+  },
+  {
+   "part": "flagellum",
+   "power": 1.0
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   2.0,
+   2.0,
+   0.0,
+   0.0,
+   -1.0,
+   0.0,
+   0.0,
+   2.0,
+   0.0,
+   -1.0,
+   -3.0,
+   3.0,
+   0.0,
+   0.0,
+   0.0,
+   2.0,
+   2.0,
+   0.0,
+   -0.5,
+   0.0,
+   0.0,
+   3.0,
+   0.0
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.05
+ }
+}

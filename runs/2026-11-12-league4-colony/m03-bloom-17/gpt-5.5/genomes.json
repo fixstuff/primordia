@@ -1,0 +1,170 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/01.json",
+  "name": "Scout_L2_basic",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/02.json",
+  "name": "Grazer_R3_slow",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/03.json",
+  "name": "CamoSpore_R2_def",
+  "species": 58,
+  "tick": 570
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/04.json",
+  "name": "StealthSeed_R2_lowcost",
+  "species": 82,
+  "tick": 1081
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/05.json",
+  "name": "ArmoredGrazer_R3_camo",
+  "species": 102,
+  "tick": 1629
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/06.json",
+  "name": "ForkGrazer_R2_4mouth",
+  "species": 119,
+  "tick": 2103
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/07.json",
+  "name": "HunterGrazer_R4_jaw_camo",
+  "species": 133,
+  "tick": 2610
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/08.json",
+  "name": "LeanChem_R2_2mouth_v2",
+  "species": 135,
+  "tick": 2666
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/09.json",
+  "name": "SeekPred_R5_jaw_explicit",
+  "species": 146,
+  "tick": 3067
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/10.json",
+  "name": "SeekPred_R4_jaw_fast",
+  "species": 158,
+  "tick": 3583
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/11.json",
+  "name": "RoamPred_R4_jaw_bias",
+  "species": 168,
+  "tick": 4087
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/12.json",
+  "name": "RoamPred_R5_bite_R4",
+  "species": 190,
+  "tick": 5127
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/13.json",
+  "name": "R2_dual_grazer_rightturn",
+  "species": 200,
+  "tick": 5601
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/14.json",
+  "name": "R2_lowcost_random_grazer",
+  "species": 209,
+  "tick": 6096
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/15.json",
+  "name": "R2_multimouth_seek_A",
+  "species": 225,
+  "tick": 6645
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/16.json",
+  "name": "R2_multimouth_seek_B",
+  "species": 226,
+  "tick": 6658
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/17.json",
+  "name": "R2_drifter_mouth6_rand",
+  "species": 234,
+  "tick": 7147
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/18.json",
+  "name": "R2_seek_sugarmin_v2",
+  "species": 235,
+  "tick": 7174
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/19.json",
+  "name": "R3_predator_seek_org",
+  "species": 243,
+  "tick": 7605
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/20.json",
+  "name": "R2_sugar_turn_pos",
+  "species": 249,
+  "tick": 8130
+ },
+ {
+  "n": 21,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/21.json",
+  "name": "R2_sugar_turn_neg",
+  "species": 250,
+  "tick": 8141
+ },
+ {
+  "n": 22,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/22.json",
+  "name": "R2_random_grazer_many",
+  "species": 255,
+  "tick": 8581
+ },
+ {
+  "n": 23,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/23.json",
+  "name": "R2_static_fourmouth_lowup",
+  "species": 264,
+  "tick": 9082
+ },
+ {
+  "n": 24,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league4-colony/m03-bloom-17/gpt-5.5/genomes/24.json",
+  "name": "R2_true_chemotaxis_LR",
+  "species": 269,
+  "tick": 9553
+ }
+]

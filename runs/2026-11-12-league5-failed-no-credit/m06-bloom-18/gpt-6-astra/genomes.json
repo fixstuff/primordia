@@ -1,0 +1,30 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/01.json",
+  "name": "Swiftgrazer",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/02.json",
+  "name": "Broadgrazer",
+  "species": 11,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/03.json",
+  "name": "Armoredgrazer",
+  "species": 12,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/04.json",
+  "name": "Micrograzer",
+  "species": 13,
+  "tick": 0
+ }
+]

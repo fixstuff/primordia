@@ -1,0 +1,84 @@
+{
+ "name": "forager_guard_minus",
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.15
+ },
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   -3,
+   3,
+   0,
+   0,
+   2,
+   2,
+   1,
+   1,
+   0,
+   -0.5,
+   0,
+   -0.5,
+   1.5,
+   -3.5,
+   0,
+   -0.05
+  ],
+  "hidden": 2
+ },
+ "body": [
+  {
+   "radius": 3,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.6,
+   "part": "flagellum"
+  },
+  {
+   "power": 1,
+   "part": "cilia"
+  },
+  {
+   "angle": -50,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 50,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -50
+  },
+  {
+   "angle": 50,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "power": 0.5,
+   "part": "stinger"
+  },
+  {
+   "power": 0.5,
+   "part": "spikes"
+  },
+  {
+   "part": "toxin",
+   "power": 0.5
+  },
+  {
+   "part": "shell",
+   "thickness": 0.3
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

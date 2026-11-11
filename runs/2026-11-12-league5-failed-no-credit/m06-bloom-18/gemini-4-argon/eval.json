@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gemini-4-argon/genomes/01.json",
+      "mean_biomass": 10186.666666666666,
+      "mean_population": 636.6666666666666,
+      "name": "forager_A",
+      "per_seed": [
+        644,
+        630,
+        636
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gemini-4-argon/genomes/02.json",
+      "mean_biomass": 7146.666666666667,
+      "mean_population": 446.6666666666667,
+      "name": "forager_B",
+      "per_seed": [
+        555,
+        369,
+        416
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gemini-4-argon/genomes/03.json",
+      "mean_biomass": 5646.0,
+      "mean_population": 627.3333333333334,
+      "name": "fast_breeder_A",
+      "per_seed": [
+        642,
+        630,
+        610
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gemini-4-argon/genomes/04.json",
+      "mean_biomass": 14748.0,
+      "mean_population": 409.6666666666667,
+      "name": "omnivore_A",
+      "per_seed": [
+        416,
+        411,
+        402
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gemini-4-argon/genomes/05.json",
+      "mean_biomass": 5442.0,
+      "mean_population": 604.6666666666666,
+      "name": "fast_breeder_B",
+      "per_seed": [
+        601,
+        590,
+        623
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gemini-4-argon/genomes/06.json",
+      "mean_biomass": 1896.0,
+      "mean_population": 52.666666666666664,
+      "name": "omnivore_B",
+      "per_seed": [
+        56,
+        75,
+        27
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gemini-4-argon/genomes/07.json",
+      "mean_biomass": 15707.25,
+      "mean_population": 775.6666666666666,
+      "name": "random_evolver",
+      "per_seed": [
+        774,
+        769,
+        784
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gemini-4-argon/genomes/08.json",
+      "mean_biomass": 9146.666666666666,
+      "mean_population": 571.6666666666666,
+      "name": "forager2_A",
+      "per_seed": [
+        557,
+        569,
+        589
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gemini-4-argon/genomes/09.json",
+      "mean_biomass": 7381.333333333333,
+      "mean_population": 461.3333333333333,
+      "name": "forager2_B",
+      "per_seed": [
+        518,
+        434,
+        432
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

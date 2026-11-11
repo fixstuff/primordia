@@ -1,0 +1,40 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "mossSpike",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.15
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -3.32,
+   -4,
+   1.8,
+   4,
+   4,
+   4,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.05
+ }
+}

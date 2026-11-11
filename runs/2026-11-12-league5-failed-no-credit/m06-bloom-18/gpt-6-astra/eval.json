@@ -1,0 +1,62 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 5895.0,
+      "mean_population": 655.0,
+      "name": "Swiftgrazer",
+      "per_seed": [
+        674,
+        645,
+        646
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 12708.0,
+      "mean_population": 353.0,
+      "name": "Broadgrazer",
+      "per_seed": [
+        355,
+        360,
+        344
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 8309.333333333334,
+      "mean_population": 519.3333333333334,
+      "name": "Armoredgrazer",
+      "per_seed": [
+        528,
+        500,
+        530
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 1366.6666666666667,
+      "mean_population": 341.6666666666667,
+      "name": "Micrograzer",
+      "per_seed": [
+        366,
+        276,
+        383
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

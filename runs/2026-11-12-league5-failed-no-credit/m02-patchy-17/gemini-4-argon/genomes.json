@@ -1,0 +1,72 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/01.json",
+  "name": "MicroSprinter",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/02.json",
+  "name": "Grazer_A",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/03.json",
+  "name": "Grazer_B",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/04.json",
+  "name": "JawGrazer",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/05.json",
+  "name": "Apex_A",
+  "species": 13,
+  "tick": 0
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/06.json",
+  "name": "Apex_B",
+  "species": 14,
+  "tick": 0
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/07.json",
+  "name": "Micro_A",
+  "species": 16,
+  "tick": 0
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/08.json",
+  "name": "Micro_B",
+  "species": 17,
+  "tick": 0
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/09.json",
+  "name": "HeavyApex_A",
+  "species": 18,
+  "tick": 0
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gemini-4-argon/genomes/10.json",
+  "name": "HeavyApex_B",
+  "species": 19,
+  "tick": 0
+ }
+]

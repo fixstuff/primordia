@@ -1,0 +1,23 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/01.json",
+  "name": "MicroForager_r2_quad",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/02.json",
+  "name": "SeedGrazer_r3",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/03.json",
+  "name": "MicroRand_r2",
+  "species": 11,
+  "tick": 0
+ }
+]
