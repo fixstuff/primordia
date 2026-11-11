@@ -1,0 +1,93 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Voracious Pursuer",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.3
+  },
+  {
+   "part": "cilia",
+   "power": 0.7
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -70
+  }
+ ],
+ "brain": {
+  "hidden": 8,
+  "weights": [
+   2,
+   2,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1.4,
+   0,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.05
+ }
+}

@@ -1,0 +1,170 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 5796.0,
+      "mean_population": 1449.0,
+      "name": "Sunskimmer",
+      "per_seed": [
+        1490,
+        1402,
+        1455
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 11085.0,
+      "mean_population": 1231.6666666666667,
+      "name": "Sunskimmer Major",
+      "per_seed": [
+        1234,
+        1240,
+        1221
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 9294.666666666666,
+      "mean_population": 2323.6666666666665,
+      "name": "Sun Drifter",
+      "per_seed": [
+        2456,
+        2101,
+        2414
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 8193.333333333334,
+      "mean_population": 2048.3333333333335,
+      "name": "Sun Grazer",
+      "per_seed": [
+        2203,
+        1748,
+        2194
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 7829.333333333333,
+      "mean_population": 1957.3333333333333,
+      "name": "Sun Cruiser",
+      "per_seed": [
+        1998,
+        1851,
+        2023
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 8662.666666666666,
+      "mean_population": 2165.6666666666665,
+      "name": "Light Drifter",
+      "per_seed": [
+        2448,
+        1765,
+        2284
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 10929.333333333334,
+      "mean_population": 2732.3333333333335,
+      "name": "Solar Sail",
+      "per_seed": [
+        3003,
+        2527,
+        2667
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 3370.6666666666665,
+      "mean_population": 842.6666666666666,
+      "name": "Rapid Surveyor",
+      "per_seed": [
+        846,
+        835,
+        847
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 8301.333333333334,
+      "mean_population": 2075.3333333333335,
+      "name": "Balanced Rover",
+      "per_seed": [
+        2132,
+        1900,
+        2194
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 5332.0,
+      "mean_population": 1333.0,
+      "name": "Vent Seeker",
+      "per_seed": [
+        1331,
+        1336,
+        1332
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 6220.0,
+      "mean_population": 1555.0,
+      "name": "Persistent Skimmer",
+      "per_seed": [
+        1553,
+        1508,
+        1604
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 3573.3333333333335,
+      "mean_population": 893.3333333333334,
+      "name": "Fast Forager",
+      "per_seed": [
+        936,
+        871,
+        873
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/13.json",
+      "mean_biomass": 7514.666666666667,
+      "mean_population": 1878.6666666666667,
+      "name": "Late Grazer",
+      "per_seed": [
+        1898,
+        1804,
+        1934
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

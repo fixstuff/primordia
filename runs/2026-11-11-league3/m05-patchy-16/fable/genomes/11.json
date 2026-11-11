@@ -1,0 +1,165 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "loiter65",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6.5
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 15,
+  "weights": [
+   4,
+   -4,
+   4,
+   -1.6,
+   -4,
+   4,
+   4,
+   -1.6,
+   4,
+   -4,
+   4,
+   -1.6,
+   -4,
+   4,
+   4,
+   -1.6,
+   4,
+   -4,
+   4,
+   -1.6,
+   -4,
+   4,
+   4,
+   -1.6,
+   4,
+   -4,
+   4,
+   -1.6,
+   -4,
+   4,
+   4,
+   -1.6,
+   4,
+   -4,
+   4,
+   -1.6,
+   -4,
+   4,
+   4,
+   -1.6,
+   4,
+   -4,
+   4,
+   -1.6,
+   -4,
+   4,
+   4,
+   -1.6,
+   4,
+   -4,
+   4,
+   -1.6,
+   -4,
+   4,
+   4,
+   -1.6,
+   4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -2.5,
+   3,
+   4,
+   -4,
+   4,
+   -4,
+   4,
+   -4,
+   4,
+   -4,
+   4,
+   -4,
+   4,
+   -4,
+   4,
+   -4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.03
+ }
+}

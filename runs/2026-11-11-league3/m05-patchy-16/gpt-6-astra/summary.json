@@ -1,0 +1,7 @@
+{
+ "model": "gpt-6-astra",
+ "prompt_tokens": 353961,
+ "cached_tokens": 295253,
+ "completion_tokens": 4654,
+ "cost_usd": 1.115033
+}

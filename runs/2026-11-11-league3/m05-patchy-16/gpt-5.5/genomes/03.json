@@ -1,0 +1,81 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "SlowSniffer_R2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.25
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   3,
+   -3,
+   0,
+   0,
+   0,
+   -3,
+   3,
+   0,
+   0,
+   0,
+   2,
+   2,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   3,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   -2,
+   2,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.08
+ }
+}

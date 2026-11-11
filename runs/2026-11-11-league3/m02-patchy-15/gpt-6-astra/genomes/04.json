@@ -1,0 +1,43 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Lean vent scout",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.25
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   0,
+   0,
+   4,
+   0,
+   0,
+   -4,
+   -4,
+   0.7,
+   0,
+   0,
+   0.015
+  ]
+ },
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.06
+ }
+}

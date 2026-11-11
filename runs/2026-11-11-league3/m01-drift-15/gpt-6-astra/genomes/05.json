@@ -1,0 +1,57 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Vent harvester",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 55,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -55,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   -0.8,
+   1,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.06
+ }
+}

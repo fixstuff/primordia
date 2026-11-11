@@ -1,0 +1,113 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |     49s] '' calls=['observe']
+[turn  3 | tick      0 |    128s] '' calls=['submit_genome']
+[turn  4 | tick      0 |    172s] '' calls=['submit_genome', 'submit_genome']
+[turn  5 | tick      0 |    186s] '' calls=['release', 'release', 'release']
+[turn  6 | tick      0 |    193s] '' calls=['release']
+[turn  7 | tick      0 |    195s] '' calls=['observe']
+[turn  8 | tick      0 |    197s] '' calls=['end_turn']
+[turn  9 | tick    500 |    234s] '' calls=['report']
+[turn 10 | tick    500 |    373s] '' calls=['submit_genome']
+[turn 11 | tick    500 |    389s] '' calls=['submit_genome']
+[turn 12 | tick    500 |    392s] '' calls=['release']
+[turn 13 | tick    500 |    396s] '' calls=['observe']
+[turn 14 | tick    500 |    398s] '' calls=['end_turn']
+[turn 15 | tick   1000 |    413s] '' calls=['report']
+[turn 16 | tick   1000 |    429s] '' calls=['report']
+[turn 17 | tick   1000 |    487s] '' calls=['submit_genome']
+[turn 18 | tick   1000 |    489s] '' calls=['release']
+[turn 19 | tick   1000 |    493s] '' calls=['end_turn']
+[turn 20 | tick   1500 |    495s] '' calls=['report']
+[turn 21 | tick   1500 |    500s] '' calls=['observe']
+[turn 22 | tick   1500 |    530s] '' calls=['release']
+[turn 23 | tick   1500 |    532s] '' calls=['end_turn']
+[turn 24 | tick   2000 |    565s] '' calls=['report']
+[turn 25 | tick   2000 |    568s] '' calls=['observe']
+[turn 26 | tick   2000 |    580s] '' calls=['catalog']
+[turn 27 | tick   2000 |    648s] '' calls=['submit_genome']
+[turn 28 | tick   2000 |    658s] '' calls=['release']
+[turn 29 | tick   2000 |    660s] '' calls=['end_turn']
+[turn 30 | tick   2500 |    663s] '' calls=['observe']
+[turn 31 | tick   2500 |    720s] '' calls=['report']
+[turn 32 | tick   2500 |    898s] '' calls=['submit_genome']
+[turn 33 | tick   2500 |    914s] '' calls=['submit_genome']
+[turn 34 | tick   3000 |    928s] '' calls=['observe']
+[turn 35 | tick   3000 |    933s] '' calls=['release']
+[turn 36 | tick   3000 |    935s] '' calls=['end_turn']
+[turn 37 | tick   3500 |    939s] '' calls=['observe']
+[turn 38 | tick   3500 |    943s] '' calls=['report']
+[turn 39 | tick   3500 |    947s] '' calls=['observe']
+[turn 40 | tick   3500 |   1012s] '' calls=['submit_genome']
+[turn 41 | tick   3500 |   1015s] '' calls=['release']
+[turn 42 | tick   3500 |   1017s] '' calls=['end_turn']
+[turn 43 | tick   4000 |   1019s] '' calls=['observe']
+[turn 44 | tick   4000 |   1032s] '' calls=['observe']
+[turn 45 | tick   4000 |   1047s] '' calls=['catalog']
+[turn 46 | tick   4000 |   1226s] '' calls=['submit_genome']
+[turn 47 | tick   4500 |   1228s] '' calls=['observe']
+[turn 48 | tick   4500 |   1231s] '' calls=['release']
+[turn 49 | tick   4500 |   1235s] '' calls=['end_turn']
+[turn 50 | tick   5000 |   1321s] '' calls=['observe']
+[turn 51 | tick   5000 |   1367s] '' calls=['submit_genome']
+[turn 52 | tick   5000 |   1369s] '' calls=['release']
+[turn 53 | tick   5000 |   1370s] '' calls=['end_turn']
+[turn 54 | tick   5500 |   1376s] '' calls=['observe']
+[turn 55 | tick   5500 |   1420s] '' calls=['submit_genome']
+[turn 56 | tick   5500 |   1422s] '' calls=['release']
+[turn 57 | tick   5500 |   1424s] '' calls=['end_turn']
+[turn 58 | tick   6000 |   1434s] '' calls=['observe']
+[turn 59 | tick   6000 |   1461s] '' calls=['submit_genome']
+[turn 60 | tick   6000 |   1463s] '' calls=['release']
+[turn 61 | tick   6000 |   1465s] '' calls=['end_turn']
+[turn 62 | tick   6500 |   1468s] '' calls=['observe']
+[turn 63 | tick   6500 |   1553s] '' calls=['submit_genome']
+[turn 64 | tick   6500 |   1561s] '' calls=['submit_genome']
+[turn 65 | tick   6500 |   1563s] '' calls=['release']
+[turn 66 | tick   6500 |   1565s] '' calls=['end_turn']
+[turn 67 | tick   7000 |   1568s] '' calls=['observe']
+[turn 68 | tick   7000 |   1615s] '' calls=['catalog']
+[turn 69 | tick   7000 |   1692s] '' calls=['submit_genome']
+[turn 70 | tick   7000 |   1694s] '' calls=['release']
+[turn 71 | tick   7000 |   1696s] '' calls=['end_turn']
+[turn 72 | tick   7500 |   1698s] '' calls=['observe']
+[turn 73 | tick   7500 |   1702s] '' calls=['report']
+[turn 74 | tick   7500 |   1795s] '' calls=['report']
+[turn 75 | tick   7500 |   1817s] '' calls=['release']
+[turn 76 | tick   7500 |   1841s] '' calls=['end_turn']
+[turn 77 | tick   8000 |   1844s] '' calls=['observe']
+[turn 78 | tick   8000 |   1959s] '' calls=['submit_genome']
+[turn 79 | tick   8000 |   1968s] '' calls=['release']
+[turn 80 | tick   8000 |   1969s] '' calls=['end_turn']
+[turn 81 | tick   8500 |   1972s] '' calls=['observe']
+[turn 82 | tick   8500 |   1991s] '' calls=['submit_genome']
+[turn 83 | tick   8500 |   1993s] '' calls=['release']
+[turn 84 | tick   8500 |   1997s] '' calls=['end_turn']
+[turn 85 | tick   9000 |   1999s] '' calls=['observe']
+[turn 86 | tick   9000 |   2038s] '' calls=['submit_genome']
+[turn 87 | tick   9000 |   2053s] '' calls=['submit_genome']
+[turn 88 | tick   9000 |   2056s] '' calls=['release']
+[turn 89 | tick   9000 |   2058s] '' calls=['end_turn']
+[turn 90 | tick   9500 |   2060s] '' calls=['observe']
+[turn 91 | tick   9500 |   2067s] '' calls=['release']
+[turn 92 | tick   9500 |   2069s] '' calls=['end_turn']
+
+ended at tick 10000 after 92 turns, 17 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 seeker5                  submitted at tick      0: 385.6666666666667
+  # 2 seeker10                 submitted at tick      0: 190.0
+  # 3 seeker20                 submitted at tick      0: 40.0
+  # 4 seeker5b                 submitted at tick    500: 373.3333333333333
+  # 5 seeker5c                 submitted at tick   1000: 451.0
+  # 6 seeker2                  submitted at tick   2000: 493.6666666666667
+  # 7 seeker2fast              submitted at tick   3000: 471.3333333333333
+  # 8 seeker2min               submitted at tick   3500: 459.6666666666667
+  # 9 seeker4buff              submitted at tick   4500: 306.0
+  #10 seeker2min2              submitted at tick   5000: 439.0
+  #11 seeker5buff              submitted at tick   5500: 302.0
+  #12 seeker5c                 submitted at tick   6000: 354.0
+  #13 seeker5d                 submitted at tick   6500: 375.3333333333333
+  #14 seeker5e                 submitted at tick   7000: 373.3333333333333
+  #15 seeker2sens2             submitted at tick   8000: 475.3333333333333
+  #16 seeker5sens              submitted at tick   8500: 368.0
+  #17 seeker2leave             submitted at tick   9000: 452.6666666666667

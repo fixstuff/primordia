@@ -1,0 +1,158 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 4120.0,
+      "mean_population": 1030.0,
+      "name": "Drift Forager",
+      "per_seed": [
+        1045,
+        1001,
+        1044
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 8153.333333333333,
+      "mean_population": 2038.3333333333333,
+      "name": "Lean Rover",
+      "per_seed": [
+        2049,
+        2095,
+        1971
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 7657.333333333333,
+      "mean_population": 1914.3333333333333,
+      "name": "Slow Grazer",
+      "per_seed": [
+        1908,
+        1920,
+        1915
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 5102.666666666667,
+      "mean_population": 1275.6666666666667,
+      "name": "Vent Tracker",
+      "per_seed": [
+        1290,
+        1308,
+        1229
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 4608.0,
+      "mean_population": 1152.0,
+      "name": "Agile Tracker",
+      "per_seed": [
+        1164,
+        1167,
+        1125
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 9264.0,
+      "mean_population": 1029.3333333333333,
+      "name": "Broad Tracker",
+      "per_seed": [
+        1004,
+        1100,
+        984
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 14421.333333333334,
+      "mean_population": 901.3333333333334,
+      "name": "Enduring Tracker",
+      "per_seed": [
+        933,
+        884,
+        887
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 4633.333333333333,
+      "mean_population": 1158.3333333333333,
+      "name": "Sensitive Tracker",
+      "per_seed": [
+        1134,
+        1202,
+        1139
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 10981.333333333334,
+      "mean_population": 686.3333333333334,
+      "name": "Large Agile Tracker",
+      "per_seed": [
+        675,
+        705,
+        679
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 4176.0,
+      "mean_population": 1044.0,
+      "name": "Keen Vent Pursuer",
+      "per_seed": [
+        1045,
+        1078,
+        1009
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 11525.333333333334,
+      "mean_population": 720.3333333333334,
+      "name": "Keen Heavy",
+      "per_seed": [
+        743,
+        699,
+        719
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 3505.3333333333335,
+      "mean_population": 876.3333333333334,
+      "name": "Voracious Pursuer",
+      "per_seed": [
+        866,
+        876,
+        887
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

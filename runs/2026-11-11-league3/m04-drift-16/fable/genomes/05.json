@@ -1,0 +1,205 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "commuter-v2-fast",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 8
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -50
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 16,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -1.2,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   1.2,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -1.2,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   1.2,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -1.2,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   1.2,
+   0,
+   0,
+   4,
+   -4,
+   3,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   -3,
+   4,
+   0,
+   0,
+   4,
+   -4,
+   3,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   -3,
+   4,
+   0,
+   0,
+   4,
+   -4,
+   3,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   -3,
+   4,
+   0,
+   0,
+   4,
+   -4,
+   3,
+   -3,
+   0,
+   0,
+   4,
+   -4,
+   -3,
+   3,
+   4,
+   4,
+   0,
+   0,
+   -4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   1.2,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   -1.624,
+   -1.624,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

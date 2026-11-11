@@ -1,0 +1,165 @@
+{
+ "model": "claude-fable-5-2",
+ "exit": 1,
+ "seconds": 1595,
+ "final_tick": 6500,
+ "tool_calls": [
+  "catalog",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "submit_genome",
+  "submit_genome",
+  "release",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "end_turn",
+  "submit_genome",
+  "report",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "report",
+  "observe",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome",
+  "release",
+  "end_turn",
+  "report",
+  "submit_genome"
+ ],
+ "genomes": [
+  {
+   "n": 1,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/01.json",
+   "name": "scout-sense",
+   "tick": 0,
+   "eval_mean_population": 375.3333333333333
+  },
+  {
+   "n": 2,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/02.json",
+   "name": "scout-fast",
+   "tick": 0,
+   "eval_mean_population": 362.0
+  },
+  {
+   "n": 3,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/03.json",
+   "name": "scout-slow",
+   "tick": 0,
+   "eval_mean_population": 934.6666666666666
+  },
+  {
+   "n": 4,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/04.json",
+   "name": "climbA",
+   "tick": 500,
+   "eval_mean_population": 1479.3333333333333
+  },
+  {
+   "n": 5,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/05.json",
+   "name": "climbB",
+   "tick": 500,
+   "eval_mean_population": 1149.6666666666667
+  },
+  {
+   "n": 6,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/06.json",
+   "name": "crawl2",
+   "tick": 500,
+   "eval_mean_population": 2835.0
+  },
+  {
+   "n": 7,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/07.json",
+   "name": "shuttle5",
+   "tick": 1500,
+   "eval_mean_population": 742.6666666666666
+  },
+  {
+   "n": 8,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/08.json",
+   "name": "crawl2b",
+   "tick": 2000,
+   "eval_mean_population": 2845.3333333333335
+  },
+  {
+   "n": 9,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/09.json",
+   "name": "vent3",
+   "tick": 2500,
+   "eval_mean_population": 1369.3333333333333
+  },
+  {
+   "n": 10,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/10.json",
+   "name": "loop3",
+   "tick": 4000,
+   "eval_mean_population": 1152.6666666666667
+  },
+  {
+   "n": 11,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/11.json",
+   "name": "loop3b",
+   "tick": 5000,
+   "eval_mean_population": 1166.3333333333333
+  },
+  {
+   "n": 12,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/12.json",
+   "name": "loop3c",
+   "tick": 6000,
+   "eval_mean_population": 1159.6666666666667
+  },
+  {
+   "n": 13,
+   "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/13.json",
+   "name": "orbit2",
+   "tick": 6500,
+   "eval_mean_population": 1726.3333333333333
+  }
+ ],
+ "cost_usd": 8.293713600000002,
+ "result_subtype": "error_max_budget_usd",
+ "num_turns": 60,
+ "last_text": ""
+}

@@ -1,0 +1,47 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "scout-sense",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.67
+  },
+  {
+   "part": "flagellum",
+   "power": 0.66
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "mineral"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   1.8,
+   3.6,
+   -3.78,
+   1.8,
+   3.6,
+   -3.78,
+   -4,
+   -4,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.2,
+  "size": 0.1
+ }
+}

@@ -19,7 +19,31 @@ rebuilt:
 
 Standard library only. Key files are read by the agent runners, never here.
 """
-import argparse, itertools, json, pathlib, subprocess, sys, time
+import argparse, itertools, json, pathlib, socket, subprocess, sys, time
+
+
+def port_free(port):
+    """True if nothing listens on 127.0.0.1:port or on any address (another
+    service, e.g. a ControlForge instance, may hold it on 0.0.0.0)."""
+    for host in ("127.0.0.1", "0.0.0.0"):
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        try:
+            s.bind((host, port))
+        except OSError:
+            return False
+        finally:
+            s.close()
+    return True
+
+
+def free_pair(start, taken):
+    """The first port p >= start with p and p+1 free and not already taken
+    by this batch (League 4 lost two matches to ports 4841/4850 held by
+    another program)."""
+    p = start
+    while not (p not in taken and p + 1 not in taken and port_free(p) and port_free(p + 1)):
+        p += 2
+    return p
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PLAYERS = ["claude-fable-5-2", "claude-opus-5-5", "deepseek-v4-pro", "scripted-bot"]
@@ -51,7 +75,19 @@ def launch(match_dir, port, http, world, seed, a):
          "--window-secs", str(a.window_secs), "--first-window-secs", str(a.first_window_secs), *(["--realtime"] if a.realtime else []), "--match-ticks", str(a.match_ticks),
          "--log", rel(d / "match-log.jsonl"), "--results", rel(d / "results.json")],
         stdout=open(d / "server.log", "w"), stderr=subprocess.STDOUT, cwd=ROOT)
-    time.sleep(0.5)
+    # Players start only once the server answers: a server that failed to
+    # bind must not leave agents spending money against a dead port.
+    for _ in range(50):
+        if procs["server"].poll() is not None:
+            break
+        try:
+            socket.create_connection(("127.0.0.1", port), timeout=0.2).close()
+            break
+        except OSError:
+            time.sleep(0.1)
+    if procs["server"].poll() is not None:
+        print(f"SERVER FAILED for {d.name}: see {d / 'server.log'}; players not started", flush=True)
+        return procs
     py = [sys.executable, "-I"]
     procs["fable"] = subprocess.Popen(
         py + ["tools/agent_claude.py", "--arena", "--model", "claude-fable-5-2", "--addr", addr,
@@ -194,12 +230,16 @@ def main():
     schedule = [{"name": f"m{i + 1:02d}-{w}-{s}", "world": w, "seed": int(s)}
                 for i, (s, w) in enumerate(itertools.product(a.seeds.split(","), a.worlds.split(",")))]
     (out / "schedule.json").write_text(json.dumps(schedule, indent=1))
+    # The exact settings, so a league's rules are on record (League 3's were not).
+    (out / "args.json").write_text(json.dumps({**vars(a), "argv": sys.argv[1:]}, indent=1))
     todo = [m for m in schedule if not (out / m["name"] / "results.json").exists()]
     for start in range(0, len(todo), a.parallel):
         batch = todo[start:start + a.parallel]
         running = []
+        taken = set()
         for j, m in enumerate(batch):
-            port = a.base_port + 10 * (start + j)
+            port = free_pair(a.base_port + 10 * j, taken)
+            taken |= {port, port + 1}
             print(f"start {m['name']} on :{port} (viewer :{port + 1})", flush=True)
             running.append((m, launch(out / m["name"], port, port + 1, m["world"], m["seed"], a)))
         deadline = time.time() + 20 * a.window_secs * (a.match_ticks / a.window_ticks / 20) + a.first_window_secs + 900

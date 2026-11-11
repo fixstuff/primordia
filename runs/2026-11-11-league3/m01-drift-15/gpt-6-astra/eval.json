@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 3753.3333333333335,
+      "mean_population": 938.3333333333334,
+      "name": "Drift tracker",
+      "per_seed": [
+        940,
+        926,
+        949
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 7662.0,
+      "mean_population": 851.3333333333334,
+      "name": "Long range grazer",
+      "per_seed": [
+        830,
+        891,
+        833
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 2317.3333333333335,
+      "mean_population": 579.3333333333334,
+      "name": "Counter tracker",
+      "per_seed": [
+        744,
+        521,
+        473
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 4782.666666666667,
+      "mean_population": 1195.6666666666667,
+      "name": "Efficient tracker",
+      "per_seed": [
+        1182,
+        1174,
+        1231
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 9712.0,
+      "mean_population": 607.0,
+      "name": "Vent harvester",
+      "per_seed": [
+        639,
+        601,
+        581
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 4908.0,
+      "mean_population": 1227.0,
+      "name": "Lean vent tracker",
+      "per_seed": [
+        1233,
+        1218,
+        1230
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 716.0,
+      "mean_population": 179.0,
+      "name": "Reverse lean tracker",
+      "per_seed": [
+        338,
+        78,
+        121
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 5922.666666666667,
+      "mean_population": 1480.6666666666667,
+      "name": "Frugal follower",
+      "per_seed": [
+        1483,
+        1479,
+        1480
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 4718.666666666667,
+      "mean_population": 1179.6666666666667,
+      "name": "Sensitive drift follower",
+      "per_seed": [
+        1175,
+        1147,
+        1217
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

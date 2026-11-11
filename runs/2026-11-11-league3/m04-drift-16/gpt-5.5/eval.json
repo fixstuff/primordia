@@ -1,0 +1,146 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/01.json",
+      "mean_biomass": 1933.3333333333333,
+      "mean_population": 483.3333333333333,
+      "name": "drift-mite-right-v2",
+      "per_seed": [
+        489,
+        473,
+        488
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/02.json",
+      "mean_biomass": 1960.0,
+      "mean_population": 490.0,
+      "name": "drift-mite-left-v2",
+      "per_seed": [
+        532,
+        471,
+        467
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/03.json",
+      "mean_biomass": 3398.6666666666665,
+      "mean_population": 849.6666666666666,
+      "name": "drift-economy-r2-right-v1",
+      "per_seed": [
+        847,
+        858,
+        844
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/04.json",
+      "mean_biomass": 3160.0,
+      "mean_population": 790.0,
+      "name": "drift-economy-2mouth-r2-right-v1",
+      "per_seed": [
+        792,
+        772,
+        806
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/05.json",
+      "mean_biomass": 2065.3333333333335,
+      "mean_population": 516.3333333333334,
+      "name": "drift-sprinter-2mouth-r2-v1",
+      "per_seed": [
+        515,
+        523,
+        511
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/06.json",
+      "mean_biomass": 2557.3333333333335,
+      "mean_population": 639.3333333333334,
+      "name": "drift-trimouth-r2-cruise-v1",
+      "per_seed": [
+        647,
+        630,
+        641
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/07.json",
+      "mean_biomass": 8010.666666666667,
+      "mean_population": 500.6666666666667,
+      "name": "drift-heavy-r4-trimouth-v1",
+      "per_seed": [
+        497,
+        498,
+        507
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/08.json",
+      "mean_biomass": 2976.0,
+      "mean_population": 744.0,
+      "name": "drift-r2-3mouth-lean-v2",
+      "per_seed": [
+        731,
+        755,
+        746
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/09.json",
+      "mean_biomass": 2812.0,
+      "mean_population": 703.0,
+      "name": "drift-r2-2mouth-agile-v1",
+      "per_seed": [
+        715,
+        706,
+        688
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/10.json",
+      "mean_biomass": 2552.0,
+      "mean_population": 638.0,
+      "name": "drift-explicit-chemotaxis-r2-2mouth-v1",
+      "per_seed": [
+        644,
+        633,
+        637
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/11.json",
+      "mean_biomass": 4181.333333333333,
+      "mean_population": 261.3333333333333,
+      "name": "drift-r4-tracker-3mouth-valid-v2",
+      "per_seed": [
+        293,
+        273,
+        218
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

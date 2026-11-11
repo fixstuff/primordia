@@ -1,0 +1,7 @@
+{
+ "model": "gpt-5.5",
+ "prompt_tokens": 768839,
+ "cached_tokens": 545408,
+ "completion_tokens": 25246,
+ "cost_usd": 2.1472389999999995
+}

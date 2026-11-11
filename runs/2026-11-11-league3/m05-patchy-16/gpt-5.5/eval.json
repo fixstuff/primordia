@@ -1,0 +1,206 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/01.json",
+      "mean_biomass": 1077.3333333333333,
+      "mean_population": 269.3333333333333,
+      "name": "ScoutGrazer_L",
+      "per_seed": [
+        299,
+        240,
+        269
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/02.json",
+      "mean_biomass": 4280.0,
+      "mean_population": 1070.0,
+      "name": "StillFeeder_R2",
+      "per_seed": [
+        1068,
+        1063,
+        1079
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/03.json",
+      "mean_biomass": 3678.6666666666665,
+      "mean_population": 919.6666666666666,
+      "name": "SlowSniffer_R2",
+      "per_seed": [
+        925,
+        916,
+        918
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/04.json",
+      "mean_biomass": 13428.0,
+      "mean_population": 3357.0,
+      "name": "SporeMouth_R2",
+      "per_seed": [
+        3503,
+        3236,
+        3332
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/05.json",
+      "mean_biomass": 8881.333333333334,
+      "mean_population": 2220.3333333333335,
+      "name": "SporeMouth2_R2",
+      "per_seed": [
+        2250,
+        2202,
+        2209
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/06.json",
+      "mean_biomass": 21225.0,
+      "mean_population": 849.0,
+      "name": "VentBarnacle_R5_2M",
+      "per_seed": [
+        912,
+        778,
+        857
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/07.json",
+      "mean_biomass": 5262.666666666667,
+      "mean_population": 1315.6666666666667,
+      "name": "SugarGlider_R2_1M_F03b",
+      "per_seed": [
+        1373,
+        1268,
+        1306
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/08.json",
+      "mean_biomass": 23583.333333333332,
+      "mean_population": 943.3333333333334,
+      "name": "VentSpore_R5_1M_low",
+      "per_seed": [
+        1023,
+        831,
+        976
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/09.json",
+      "mean_biomass": 18180.0,
+      "mean_population": 2020.0,
+      "name": "SporeMouth_R3",
+      "per_seed": [
+        2166,
+        1850,
+        2044
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/10.json",
+      "mean_biomass": 3582.6666666666665,
+      "mean_population": 895.6666666666666,
+      "name": "SugarScout_R2_v1",
+      "per_seed": [
+        910,
+        872,
+        905
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/11.json",
+      "mean_biomass": 14436.0,
+      "mean_population": 1604.0,
+      "name": "SporeMouth2_R3",
+      "per_seed": [
+        1688,
+        1523,
+        1601
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/12.json",
+      "mean_biomass": 18357.333333333332,
+      "mean_population": 1147.3333333333333,
+      "name": "VentSpore_R4_2M",
+      "per_seed": [
+        1226,
+        1071,
+        1145
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/13.json",
+      "mean_biomass": 7381.333333333333,
+      "mean_population": 461.3333333333333,
+      "name": "SugarHunter_R4_4M",
+      "per_seed": [
+        466,
+        473,
+        445
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/14.json",
+      "mean_biomass": 2010.6666666666667,
+      "mean_population": 502.6666666666667,
+      "name": "TinyChemSweep_R2_4M",
+      "per_seed": [
+        513,
+        502,
+        493
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/15.json",
+      "mean_biomass": 2168.0,
+      "mean_population": 542.0,
+      "name": "TinyDiffChem_R2_3M_fix",
+      "per_seed": [
+        574,
+        510,
+        542
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/16.json",
+      "mean_biomass": 1533.3333333333333,
+      "mean_population": 383.3333333333333,
+      "name": "LastChance_R2_15M",
+      "per_seed": [
+        379,
+        383,
+        388
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

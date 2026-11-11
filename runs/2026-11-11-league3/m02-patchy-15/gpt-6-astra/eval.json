@@ -1,0 +1,242 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 6108.0,
+      "mean_population": 1527.0,
+      "name": "Vent seeker",
+      "per_seed": [
+        1568,
+        1555,
+        1458
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 9152.083333333334,
+      "mean_population": 1464.3333333333333,
+      "name": "Drift grazer",
+      "per_seed": [
+        1418,
+        1496,
+        1479
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 15349.333333333334,
+      "mean_population": 959.3333333333334,
+      "name": "Long scout",
+      "per_seed": [
+        961,
+        935,
+        982
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 8110.666666666667,
+      "mean_population": 2027.6666666666667,
+      "name": "Lean vent scout",
+      "per_seed": [
+        2043,
+        2013,
+        2027
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 20100.0,
+      "mean_population": 804.0,
+      "name": "Vent anchor",
+      "per_seed": [
+        851,
+        756,
+        805
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 13328.0,
+      "mean_population": 833.0,
+      "name": "Rich patch harvester",
+      "per_seed": [
+        865,
+        817,
+        817
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 9468.0,
+      "mean_population": 1052.0,
+      "name": "Active patch seeker",
+      "per_seed": [
+        1030,
+        1075,
+        1051
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 14736.0,
+      "mean_population": 921.0,
+      "name": "Reverse navigator",
+      "per_seed": [
+        968,
+        882,
+        913
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 15456.0,
+      "mean_population": 966.0,
+      "name": "Threshold hunter",
+      "per_seed": [
+        953,
+        956,
+        989
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 16083.333333333334,
+      "mean_population": 643.3333333333334,
+      "name": "Persistent navigator",
+      "per_seed": [
+        652,
+        632,
+        646
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 11845.333333333334,
+      "mean_population": 740.3333333333334,
+      "name": "Agile grazer",
+      "per_seed": [
+        716,
+        771,
+        734
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 6665.333333333333,
+      "mean_population": 1666.3333333333333,
+      "name": "Trace stopper",
+      "per_seed": [
+        1609,
+        1683,
+        1707
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/13.json",
+      "mean_biomass": 14874.666666666666,
+      "mean_population": 929.6666666666666,
+      "name": "Sensitive vent colonist",
+      "per_seed": [
+        985,
+        890,
+        914
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/14.json",
+      "mean_biomass": 10058.666666666666,
+      "mean_population": 628.6666666666666,
+      "name": "Wide-ranging harvester",
+      "per_seed": [
+        603,
+        641,
+        642
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/15.json",
+      "mean_biomass": 13900.0,
+      "mean_population": 556.0,
+      "name": "Hotspot navigator",
+      "per_seed": [
+        573,
+        547,
+        548
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/16.json",
+      "mean_biomass": 9471.0,
+      "mean_population": 1052.3333333333333,
+      "name": "Reverse chemotaxis",
+      "per_seed": [
+        1067,
+        1056,
+        1034
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/17.json",
+      "mean_biomass": 20800.0,
+      "mean_population": 832.0,
+      "name": "Deep vent seeker",
+      "per_seed": [
+        861,
+        822,
+        813
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/18.json",
+      "mean_biomass": 10768.0,
+      "mean_population": 673.0,
+      "name": "Persistent hotspot grazer",
+      "per_seed": [
+        672,
+        686,
+        661
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/19.json",
+      "mean_biomass": 7602.666666666667,
+      "mean_population": 1900.6666666666667,
+      "name": "Trace sugar settler",
+      "per_seed": [
+        1921,
+        1935,
+        1846
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

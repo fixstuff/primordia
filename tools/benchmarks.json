@@ -1,0 +1,30 @@
+{
+ "_sources": "ARC-AGI-2: arcprize.org result pages / leaderboard, semi-private set, each model's best listed effort level (Fable 5.2 XHigh 2026-11-09; Opus 5.5 High 2026-09-22; GPT-5.5 2026-04-22; GPT-6 Astra Max 2026-09-02; Gemini 4 Argon High 2026-10-13, table 91.3, summary text 91.2; DeepSeek V4 Pro 0813 Max 2026-08-13). LMArena: arena.ai/leaderboard/text, overall, page dated 2026-11-09 (Opus 5.5 High, GPT-5.5 High, GPT-6 Astra Max, Gemini 4 Argon High, DeepSeek-V4-Pro); Fable 5.2 not yet listed. GPQA Diamond: GPT-5.5 93.6 (OpenAI headline via vellum.ai), GPT-6 Astra 96.0 (OpenAI headline via the-decoder.com), DeepSeek V4 Pro 90.1 Max (Hugging Face card). SWE-bench Verified: DeepSeek V4 Pro 80.6 Max (Hugging Face card); no published figure for the others. All checked by a second agent against the sources on 2026-11-11.",
+ "claude-fable-5-2": {
+  "arc_agi_2": 93.8
+ },
+ "claude-opus-5-5": {
+  "arc_agi_2": 93.3,
+  "lmarena": 1506
+ },
+ "gpt-5.5": {
+  "arc_agi_2": 85.0,
+  "lmarena": 1481,
+  "gpqa_diamond": 93.6
+ },
+ "gpt-6-astra": {
+  "arc_agi_2": 95.0,
+  "lmarena": 1474,
+  "gpqa_diamond": 96.0
+ },
+ "gemini-4-argon": {
+  "arc_agi_2": 91.3,
+  "lmarena": 1522
+ },
+ "deepseek-v4-pro": {
+  "arc_agi_2": 61.3,
+  "lmarena": 1458,
+  "gpqa_diamond": 90.1,
+  "swe_bench_verified": 80.6
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "vent3",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.15
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   4,
+   4,
+   0,
+   -2.4,
+   0,
+   0,
+   -4,
+   3.52,
+   4,
+   -4,
+   -4,
+   1.6,
+   -4,
+   4,
+   -4,
+   1.6,
+   -3.6,
+   -3.6,
+   0,
+   0,
+   4,
+   0,
+   0,
+   4,
+   -4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.03
+ }
+}

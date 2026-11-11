@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/fable/genomes/01.json",
+      "mean_biomass": 19933.333333333332,
+      "mean_population": 199.33333333333334,
+      "name": "commuter10",
+      "per_seed": [
+        200,
+        205,
+        193
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/fable/genomes/02.json",
+      "mean_biomass": 1233.3333333333333,
+      "mean_population": 12.333333333333334,
+      "name": "commuter10flip",
+      "per_seed": [
+        18,
+        9,
+        10
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/fable/genomes/03.json",
+      "mean_biomass": 15061.333333333334,
+      "mean_population": 235.33333333333334,
+      "name": "parker8",
+      "per_seed": [
+        227,
+        234,
+        245
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/fable/genomes/04.json",
+      "mean_biomass": 9016.666666666666,
+      "mean_population": 360.6666666666667,
+      "name": "parker5",
+      "per_seed": [
+        370,
+        366,
+        346
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/fable/genomes/05.json",
+      "mean_biomass": 8300.0,
+      "mean_population": 332.0,
+      "name": "commuter5",
+      "per_seed": [
+        334,
+        326,
+        336
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/fable/genomes/06.json",
+      "mean_biomass": 8600.0,
+      "mean_population": 344.0,
+      "name": "commuter5b",
+      "per_seed": [
+        335,
+        345,
+        352
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/fable/genomes/07.json",
+      "mean_biomass": 9241.666666666666,
+      "mean_population": 369.6666666666667,
+      "name": "flee5",
+      "per_seed": [
+        372,
+        376,
+        361
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/fable/genomes/08.json",
+      "mean_biomass": 9041.666666666666,
+      "mean_population": 361.6666666666667,
+      "name": "looper5",
+      "per_seed": [
+        359,
+        360,
+        366
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/fable/genomes/09.json",
+      "mean_biomass": 14651.0,
+      "mean_population": 299.0,
+      "name": "parker7",
+      "per_seed": [
+        293,
+        304,
+        300
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

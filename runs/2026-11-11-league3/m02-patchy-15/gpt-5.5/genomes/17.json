@@ -1,0 +1,137 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_cond_sugar_mineral_B_m6",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.4
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 6,
+  "weights": [
+   3,
+   -3,
+   1,
+   0,
+   0,
+   0,
+   -2,
+   0.8,
+   -3,
+   3,
+   1,
+   0,
+   0,
+   0,
+   -2,
+   0.8,
+   0,
+   0,
+   0,
+   3,
+   -3,
+   1,
+   2,
+   -1.2,
+   0,
+   0,
+   0,
+   -3,
+   3,
+   1,
+   2,
+   -1.2,
+   0,
+   0,
+   3,
+   0,
+   0,
+   0,
+   -2,
+   0.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   2,
+   -2,
+   0,
+   0,
+   0,
+   0,
+   -1.4,
+   -1.4,
+   0.8,
+   -2,
+   2,
+   -2,
+   2,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.08
+ }
+}

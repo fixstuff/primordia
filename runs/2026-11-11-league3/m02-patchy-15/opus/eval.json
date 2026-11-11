@@ -1,0 +1,86 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/opus/genomes/01.json",
+      "mean_biomass": 9226.666666666666,
+      "mean_population": 576.6666666666666,
+      "name": "seeker",
+      "per_seed": [
+        539,
+        625,
+        566
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/opus/genomes/02.json",
+      "mean_biomass": 6266.666666666667,
+      "mean_population": 391.6666666666667,
+      "name": "seekerB",
+      "per_seed": [
+        447,
+        268,
+        460
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/opus/genomes/03.json",
+      "mean_biomass": 15648.0,
+      "mean_population": 434.6666666666667,
+      "name": "bigseeker",
+      "per_seed": [
+        432,
+        435,
+        437
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/opus/genomes/04.json",
+      "mean_biomass": 9568.0,
+      "mean_population": 598.0,
+      "name": "lean",
+      "per_seed": [
+        588,
+        596,
+        610
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/opus/genomes/05.json",
+      "mean_biomass": 13941.666666666666,
+      "mean_population": 557.6666666666666,
+      "name": "seeker5",
+      "per_seed": [
+        557,
+        557,
+        559
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/opus/genomes/06.json",
+      "mean_biomass": 18591.666666666668,
+      "mean_population": 743.6666666666666,
+      "name": "lean5",
+      "per_seed": [
+        745,
+        733,
+        753
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

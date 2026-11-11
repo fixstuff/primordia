@@ -1,0 +1,65 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/01.json",
+  "name": "Drift tracker",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/02.json",
+  "name": "Long range grazer",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/03.json",
+  "name": "Counter tracker",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/04.json",
+  "name": "Efficient tracker",
+  "species": 18,
+  "tick": 500
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/05.json",
+  "name": "Vent harvester",
+  "species": 25,
+  "tick": 1000
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/06.json",
+  "name": "Lean vent tracker",
+  "species": 61,
+  "tick": 5500
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/07.json",
+  "name": "Reverse lean tracker",
+  "species": 65,
+  "tick": 6000
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/08.json",
+  "name": "Frugal follower",
+  "species": 71,
+  "tick": 6500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-6-astra/genomes/09.json",
+  "name": "Sensitive drift follower",
+  "species": 74,
+  "tick": 7000
+ }
+]

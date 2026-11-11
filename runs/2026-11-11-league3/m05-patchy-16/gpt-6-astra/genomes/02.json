@@ -1,0 +1,38 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Rover3",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "flagellum",
+   "power": 0.35
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   0,
+   0,
+   -4,
+   2,
+   0,
+   0.2
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

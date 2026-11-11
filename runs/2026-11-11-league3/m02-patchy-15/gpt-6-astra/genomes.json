@@ -1,0 +1,135 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/01.json",
+  "name": "Vent seeker",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/02.json",
+  "name": "Drift grazer",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/03.json",
+  "name": "Long scout",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/04.json",
+  "name": "Lean vent scout",
+  "species": 14,
+  "tick": 500
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/05.json",
+  "name": "Vent anchor",
+  "species": 20,
+  "tick": 1000
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/06.json",
+  "name": "Rich patch harvester",
+  "species": 26,
+  "tick": 1500
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/07.json",
+  "name": "Active patch seeker",
+  "species": 30,
+  "tick": 2000
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/08.json",
+  "name": "Reverse navigator",
+  "species": 32,
+  "tick": 2500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/09.json",
+  "name": "Threshold hunter",
+  "species": 34,
+  "tick": 3000
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/10.json",
+  "name": "Persistent navigator",
+  "species": 38,
+  "tick": 3500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/11.json",
+  "name": "Agile grazer",
+  "species": 42,
+  "tick": 4000
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/12.json",
+  "name": "Trace stopper",
+  "species": 44,
+  "tick": 4500
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/13.json",
+  "name": "Sensitive vent colonist",
+  "species": 49,
+  "tick": 5000
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/14.json",
+  "name": "Wide-ranging harvester",
+  "species": 51,
+  "tick": 5500
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/15.json",
+  "name": "Hotspot navigator",
+  "species": 55,
+  "tick": 6000
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/16.json",
+  "name": "Reverse chemotaxis",
+  "species": 58,
+  "tick": 6500
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/17.json",
+  "name": "Deep vent seeker",
+  "species": 62,
+  "tick": 7000
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/18.json",
+  "name": "Persistent hotspot grazer",
+  "species": 66,
+  "tick": 7500
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m02-patchy-15/gpt-6-astra/genomes/19.json",
+  "name": "Trace sugar settler",
+  "species": 70,
+  "tick": 9000
+ }
+]

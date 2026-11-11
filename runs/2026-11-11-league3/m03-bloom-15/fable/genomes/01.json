@@ -1,0 +1,32 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "grazer2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   4,
+   4,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.5,
+  "size": 0.1
+ }
+}

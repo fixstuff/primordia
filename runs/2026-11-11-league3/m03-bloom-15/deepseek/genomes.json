@@ -1,0 +1,44 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/01.json",
+  "name": "r5_seeker",
+  "species": 11,
+  "tick": 500
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/02.json",
+  "name": "r8_seeker",
+  "species": 15,
+  "tick": 500
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/03.json",
+  "name": "r5_seeker_mirror",
+  "species": 16,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/04.json",
+  "name": "r2_sitter",
+  "species": 25,
+  "tick": 1500
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/05.json",
+  "name": "r2_2m",
+  "species": 32,
+  "tick": 2500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/06.json",
+  "name": "r2_3m",
+  "species": 33,
+  "tick": 2500
+ }
+]

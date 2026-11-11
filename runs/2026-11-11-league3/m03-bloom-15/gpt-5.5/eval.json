@@ -1,0 +1,74 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/01.json",
+      "mean_biomass": 1588.0,
+      "mean_population": 397.0,
+      "name": "r2_chemograzer_v1",
+      "per_seed": [
+        392,
+        379,
+        420
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/02.json",
+      "mean_biomass": 9006.666666666666,
+      "mean_population": 2251.6666666666665,
+      "name": "r2_sessile_bloom_v1",
+      "per_seed": [
+        2295,
+        2231,
+        2229
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/03.json",
+      "mean_biomass": 13400.0,
+      "mean_population": 3350.0,
+      "name": "r2_minimal_sessile_v2",
+      "per_seed": [
+        3522,
+        3208,
+        3320
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/04.json",
+      "mean_biomass": 8956.0,
+      "mean_population": 2239.0,
+      "name": "r2_doublemouth_sessile_v3",
+      "per_seed": [
+        2275,
+        2236,
+        2206
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/05.json",
+      "mean_biomass": 8909.333333333334,
+      "mean_population": 2227.3333333333335,
+      "name": "r2_dualmouth_sessile_probe",
+      "per_seed": [
+        2279,
+        2192,
+        2211
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

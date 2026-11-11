@@ -1,0 +1,98 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/opus/genomes/01.json",
+      "mean_biomass": 6150.0,
+      "mean_population": 683.3333333333334,
+      "name": "graze3",
+      "per_seed": [
+        691,
+        672,
+        687
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/opus/genomes/02.json",
+      "mean_biomass": 5934.0,
+      "mean_population": 659.3333333333334,
+      "name": "graze3b",
+      "per_seed": [
+        647,
+        660,
+        671
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/opus/genomes/03.json",
+      "mean_biomass": 6206.666666666667,
+      "mean_population": 1551.6666666666667,
+      "name": "mini2",
+      "per_seed": [
+        1553,
+        1535,
+        1567
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/opus/genomes/04.json",
+      "mean_biomass": 9849.333333333334,
+      "mean_population": 2462.3333333333335,
+      "name": "slow2",
+      "per_seed": [
+        2425,
+        2450,
+        2512
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/opus/genomes/05.json",
+      "mean_biomass": 6133.333333333333,
+      "mean_population": 1533.3333333333333,
+      "name": "sniff2",
+      "per_seed": [
+        1531,
+        1557,
+        1512
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/opus/genomes/06.json",
+      "mean_biomass": 8823.0,
+      "mean_population": 980.3333333333334,
+      "name": "duo3",
+      "per_seed": [
+        984,
+        981,
+        976
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/opus/genomes/07.json",
+      "mean_biomass": 10965.333333333334,
+      "mean_population": 685.3333333333334,
+      "name": "tri4",
+      "per_seed": [
+        689,
+        680,
+        687
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

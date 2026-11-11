@@ -1,0 +1,95 @@
+[turn  1 | tick      0 |      3s] '' calls=['catalog']
+[turn  2 | tick      0 |      6s] '' calls=['observe']
+[turn  3 | tick      0 |     23s] '' calls=['submit_genome']
+[turn  4 | tick      0 |     26s] '' calls=['release']
+[turn  5 | tick      0 |     32s] '' calls=['submit_genome']
+[turn  6 | tick      0 |     34s] '' calls=['release']
+[turn  7 | tick      0 |     36s] '' calls=['release']
+[turn  8 | tick      0 |     38s] '' calls=['end_turn']
+[turn  9 | tick    500 |    607s] '' calls=['report']
+[turn 10 | tick    500 |    613s] '' calls=['submit_genome']
+[turn 11 | tick    500 |    615s] '' calls=['release']
+[turn 12 | tick    500 |    618s] '' calls=['end_turn']
+[turn 13 | tick   1000 |    762s] '' calls=['report']
+[turn 14 | tick   1000 |    770s] '' calls=['submit_genome']
+[turn 15 | tick   1000 |    773s] '' calls=['release']
+[turn 16 | tick   1000 |    775s] '' calls=['end_turn']
+[turn 17 | tick   1500 |    942s] '' calls=['report']
+[turn 18 | tick   1500 |    947s] '' calls=['submit_genome']
+[turn 19 | tick   1500 |    949s] '' calls=['release']
+[turn 20 | tick   1500 |    951s] '' calls=['end_turn']
+[turn 21 | tick   2000 |   1030s] '' calls=['catalog']
+[turn 22 | tick   2000 |   1031s] '' calls=['report']
+[turn 23 | tick   2000 |   1035s] '' calls=['release']
+[turn 24 | tick   2000 |   1037s] '' calls=['end_turn']
+[turn 25 | tick   2500 |   1128s] '' calls=['submit_genome']
+[turn 26 | tick   2500 |   1130s] '' calls=['release']
+[turn 27 | tick   2500 |   1132s] '' calls=['end_turn']
+[turn 28 | tick   3000 |   1178s] '' calls=['observe']
+[turn 29 | tick   3000 |   1185s] '' calls=['submit_genome']
+[turn 30 | tick   3000 |   1186s] '' calls=['release']
+[turn 31 | tick   3000 |   1188s] '' calls=['end_turn']
+[turn 32 | tick   3500 |   1250s] '' calls=['observe']
+[turn 33 | tick   3500 |   1256s] '' calls=['submit_genome']
+[turn 34 | tick   3500 |   1259s] '' calls=['release']
+[turn 35 | tick   3500 |   1261s] '' calls=['end_turn']
+[turn 36 | tick   4000 |   1390s] '' calls=['report']
+[turn 37 | tick   4000 |   1396s] '' calls=['submit_genome']
+[turn 38 | tick   4000 |   1397s] '' calls=['release']
+[turn 39 | tick   4000 |   1399s] '' calls=['end_turn']
+[turn 40 | tick   4500 |   1407s] '' calls=['observe']
+[turn 41 | tick   4500 |   1408s] '' calls=['catalog']
+[turn 42 | tick   4500 |   1425s] '' calls=['submit_genome']
+[turn 43 | tick   4500 |   1427s] '' calls=['release']
+[turn 44 | tick   4500 |   1428s] '' calls=['end_turn']
+[turn 45 | tick   5000 |   1594s] '' calls=['observe']
+[turn 46 | tick   5000 |   1600s] '' calls=['submit_genome']
+[turn 47 | tick   5000 |   1603s] '' calls=['release']
+[turn 48 | tick   5000 |   1605s] '' calls=['end_turn']
+[turn 49 | tick   5500 |   1728s] '' calls=['report']
+[turn 50 | tick   5500 |   1737s] '' calls=['submit_genome']
+[turn 51 | tick   5500 |   1740s] '' calls=['release']
+[turn 52 | tick   5500 |   1741s] '' calls=['end_turn']
+[turn 53 | tick   6000 |   1840s] '' calls=['observe']
+[turn 54 | tick   6000 |   1850s] '' calls=['submit_genome']
+[turn 55 | tick   6000 |   1852s] '' calls=['release']
+[turn 56 | tick   6000 |   1854s] '' calls=['end_turn']
+[turn 57 | tick   6500 |   1905s] '' calls=['submit_genome']
+[turn 58 | tick   6500 |   1907s] '' calls=['release']
+[turn 59 | tick   6500 |   1909s] '' calls=['end_turn']
+[turn 60 | tick   7000 |   1946s] '' calls=['submit_genome']
+[turn 61 | tick   7000 |   1948s] '' calls=['release']
+[turn 62 | tick   7000 |   1950s] '' calls=['end_turn']
+[turn 63 | tick   7500 |   1986s] '' calls=['catalog']
+[turn 64 | tick   7500 |   1991s] '' calls=['submit_genome']
+[turn 65 | tick   7500 |   1998s] '' calls=['release']
+[turn 66 | tick   7500 |   2000s] '' calls=['report']
+[turn 67 | tick   7500 |   2001s] '' calls=['end_turn']
+[turn 68 | tick   8000 |   2073s] '' calls=['release']
+[turn 69 | tick   8000 |   2075s] '' calls=['end_turn']
+[turn 70 | tick   8500 |   2110s] '' calls=['release']
+[turn 71 | tick   8500 |   2112s] '' calls=['end_turn']
+[turn 72 | tick   9000 |   2135s] '' calls=['release']
+[turn 73 | tick   9000 |   2137s] '' calls=['end_turn']
+[turn 74 | tick   9500 |   2166s] '' calls=['release']
+[turn 75 | tick   9500 |   2169s] '' calls=['end_turn']
+
+ended at tick 10000 after 75 turns, 16 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 Sunskimmer               submitted at tick      0: 990.3333333333334
+  # 2 Meadow                   submitted at tick      0: 1555.0
+  # 3 Lean grazer              submitted at tick    500: 2152.0
+  # 4 Prairie                  submitted at tick   1000: 1831.3333333333333
+  # 5 Swift meadow             submitted at tick   1500: 1254.0
+  # 6 Gentle drift             submitted at tick   2500: 2441.6666666666665
+  # 7 Light grazer             submitted at tick   3000: 2418.6666666666665
+  # 8 Dawn moss                submitted at tick   3500: 2700.6666666666665
+  # 9 Sun moss                 submitted at tick   4000: 3353.6666666666665
+  #10 Adaptive meadow          submitted at tick   4500: 2183.0
+  #11 Patient sweep            submitted at tick   5000: 2488.6666666666665
+  #12 Vent seeker              submitted at tick   5500: 1602.3333333333333
+  #13 Sugar brake              submitted at tick   6000: 2023.0
+  #14 Steady grazer            submitted at tick   6500: 2323.6666666666665
+  #15 Long range               submitted at tick   7000: 925.0
+  #16 Solar hold               submitted at tick   7500: 3353.6666666666665

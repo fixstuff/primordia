@@ -1,0 +1,170 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 8641.333333333334,
+      "mean_population": 2160.3333333333335,
+      "name": "Scout2",
+      "per_seed": [
+        2173,
+        2133,
+        2175
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 12837.0,
+      "mean_population": 1426.3333333333333,
+      "name": "Rover3",
+      "per_seed": [
+        1394,
+        1403,
+        1482
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "Settler2",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 9245.333333333334,
+      "mean_population": 2311.3333333333335,
+      "name": "Grazer2",
+      "per_seed": [
+        2377,
+        2280,
+        2277
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 23786.666666666668,
+      "mean_population": 371.6666666666667,
+      "name": "Reef8",
+      "per_seed": [
+        405,
+        333,
+        377
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 23733.333333333332,
+      "mean_population": 949.3333333333334,
+      "name": "Reef5",
+      "per_seed": [
+        1026,
+        839,
+        983
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 24085.333333333332,
+      "mean_population": 376.3333333333333,
+      "name": "Forager8",
+      "per_seed": [
+        398,
+        360,
+        371
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 14698.666666666666,
+      "mean_population": 229.66666666666666,
+      "name": "Cruiser8",
+      "per_seed": [
+        228,
+        230,
+        231
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 9189.333333333334,
+      "mean_population": 574.3333333333334,
+      "name": "Sweep4",
+      "per_seed": [
+        578,
+        567,
+        578
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 20384.0,
+      "mean_population": 1274.0,
+      "name": "Harvester4",
+      "per_seed": [
+        1306,
+        1212,
+        1304
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 16005.333333333334,
+      "mean_population": 1000.3333333333334,
+      "name": "GradientGrazer",
+      "per_seed": [
+        1058,
+        949,
+        994
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 17264.0,
+      "mean_population": 1079.0,
+      "name": "Forager4",
+      "per_seed": [
+        1079,
+        1046,
+        1112
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-6-astra/genomes/13.json",
+      "mean_biomass": 14484.0,
+      "mean_population": 1609.3333333333333,
+      "name": "Sensitive3",
+      "per_seed": [
+        1669,
+        1530,
+        1629
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

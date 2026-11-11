@@ -1,0 +1,72 @@
+[turn  1 | tick      0 |      4s] '' calls=['catalog']
+[turn  2 | tick      0 |      7s] '' calls=['observe']
+[turn  3 | tick      0 |     28s] '' calls=['submit_genome']
+[turn  4 | tick      0 |     32s] '' calls=['release']
+[turn  5 | tick      0 |     43s] '' calls=['submit_genome']
+[turn  6 | tick      0 |     45s] '' calls=['release']
+[turn  7 | tick      0 |     48s] '' calls=['submit_genome']
+[turn  8 | tick      0 |     50s] '' calls=['release']
+[turn  9 | tick      0 |     52s] '' calls=['end_turn']
+[turn 10 | tick    500 |    381s] '' calls=['report']
+[turn 11 | tick    500 |    388s] '' calls=['submit_genome']
+[turn 12 | tick    500 |    390s] '' calls=['release']
+[turn 13 | tick    500 |    392s] '' calls=['end_turn']
+[turn 14 | tick   1000 |    532s] '' calls=['report']
+[turn 15 | tick   1000 |    537s] '' calls=['submit_genome']
+[turn 16 | tick   1000 |    539s] '' calls=['release']
+[turn 17 | tick   1000 |    541s] '' calls=['end_turn']
+[turn 18 | tick   1500 |    670s] '' calls=['report']
+[turn 19 | tick   1500 |    675s] '' calls=['release']
+[turn 20 | tick   1500 |    677s] '' calls=['end_turn']
+[turn 21 | tick   2000 |    740s] '' calls=['catalog']
+[turn 22 | tick   2000 |    743s] '' calls=['release']
+[turn 23 | tick   2000 |    745s] '' calls=['end_turn']
+[turn 24 | tick   2500 |    900s] '' calls=['release']
+[turn 25 | tick   2500 |    901s] '' calls=['end_turn']
+[turn 26 | tick   3000 |   1019s] '' calls=['release']
+[turn 27 | tick   3000 |   1021s] '' calls=['end_turn']
+[turn 28 | tick   3500 |   1119s] '' calls=['release']
+[turn 29 | tick   3500 |   1122s] '' calls=['end_turn']
+[turn 30 | tick   4000 |   1267s] '' calls=['release']
+[turn 31 | tick   4000 |   1268s] '' calls=['end_turn']
+[turn 32 | tick   4500 |   1412s] '' calls=['release']
+[turn 33 | tick   4500 |   1416s] '' calls=['end_turn']
+[turn 34 | tick   5000 |   1501s] '' calls=['release']
+[turn 35 | tick   5000 |   1503s] '' calls=['end_turn']
+[turn 36 | tick   5500 |   1618s] '' calls=['report']
+[turn 37 | tick   5500 |   1626s] '' calls=['submit_genome']
+[turn 38 | tick   5500 |   1629s] '' calls=['release']
+[turn 39 | tick   5500 |   1630s] '' calls=['end_turn']
+[turn 40 | tick   6000 |   1736s] '' calls=['submit_genome']
+[turn 41 | tick   6000 |   1738s] '' calls=['release']
+[turn 42 | tick   6000 |   1740s] '' calls=['end_turn']
+[turn 43 | tick   6500 |   1913s] '' calls=['catalog']
+[turn 44 | tick   6500 |   1919s] '' calls=['submit_genome']
+[turn 45 | tick   6500 |   1921s] '' calls=['release']
+[turn 46 | tick   6500 |   1923s] '' calls=['end_turn']
+[turn 47 | tick   7000 |   2101s] '' calls=['submit_genome']
+[turn 48 | tick   7000 |   2103s] '' calls=['release']
+[turn 49 | tick   7000 |   2105s] '' calls=['end_turn']
+[turn 50 | tick   7500 |   2275s] '' calls=['release']
+[turn 51 | tick   7500 |   2277s] '' calls=['end_turn']
+[turn 52 | tick   8000 |   2457s] '' calls=['release']
+[turn 53 | tick   8000 |   2459s] '' calls=['end_turn']
+[turn 54 | tick   8500 |   2634s] '' calls=['release']
+[turn 55 | tick   8500 |   2637s] '' calls=['end_turn']
+[turn 56 | tick   9000 |   2814s] '' calls=['release']
+[turn 57 | tick   9000 |   2815s] '' calls=['end_turn']
+[turn 58 | tick   9500 |   2995s] '' calls=['release']
+[turn 59 | tick   9500 |   2997s] '' calls=['end_turn']
+
+ended at tick 10000 after 59 turns, 9 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 Drift tracker            submitted at tick      0: 938.3333333333334
+  # 2 Long range grazer        submitted at tick      0: 851.3333333333334
+  # 3 Counter tracker          submitted at tick      0: 579.3333333333334
+  # 4 Efficient tracker        submitted at tick    500: 1195.6666666666667
+  # 5 Vent harvester           submitted at tick   1000: 607.0
+  # 6 Lean vent tracker        submitted at tick   5500: 1227.0
+  # 7 Reverse lean tracker     submitted at tick   6000: 179.0
+  # 8 Frugal follower          submitted at tick   6500: 1480.6666666666667
+  # 9 Sensitive drift follower submitted at tick   7000: 1179.6666666666667

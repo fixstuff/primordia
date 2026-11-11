@@ -1,0 +1,62 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "loop3c",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.3
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   4,
+   4,
+   0,
+   -2.4,
+   0,
+   0,
+   -4,
+   3.52,
+   4,
+   -4,
+   -4,
+   0,
+   -4,
+   4,
+   -4,
+   0,
+   -3.6,
+   -3.6,
+   0,
+   0,
+   4,
+   0,
+   0,
+   4,
+   -4,
+   0.3
+  ]
+ },
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.02
+ }
+}

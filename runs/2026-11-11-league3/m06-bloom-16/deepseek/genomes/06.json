@@ -1,0 +1,36 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_m1_circle",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.0
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1.0
+  },
+  {
+   "part": "cilia",
+   "power": 1.0
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "mutation": {
+  "rate": 0.0,
+  "size": 0.1
+ }
+}

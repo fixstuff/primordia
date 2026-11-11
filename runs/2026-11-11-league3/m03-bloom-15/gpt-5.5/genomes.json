@@ -1,0 +1,37 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/01.json",
+  "name": "r2_chemograzer_v1",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/02.json",
+  "name": "r2_sessile_bloom_v1",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/03.json",
+  "name": "r2_minimal_sessile_v2",
+  "species": 14,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/04.json",
+  "name": "r2_doublemouth_sessile_v3",
+  "species": 27,
+  "tick": 1500
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-5.5/genomes/05.json",
+  "name": "r2_dualmouth_sessile_probe",
+  "species": 39,
+  "tick": 4000
+ }
+]

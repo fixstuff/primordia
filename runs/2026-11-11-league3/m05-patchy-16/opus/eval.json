@@ -1,0 +1,98 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/opus/genomes/01.json",
+      "mean_biomass": 10186.666666666666,
+      "mean_population": 636.6666666666666,
+      "name": "seekA",
+      "per_seed": [
+        671,
+        624,
+        615
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/opus/genomes/02.json",
+      "mean_biomass": 10346.666666666666,
+      "mean_population": 646.6666666666666,
+      "name": "seekB",
+      "per_seed": [
+        660,
+        636,
+        644
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/opus/genomes/03.json",
+      "mean_biomass": 7407.0,
+      "mean_population": 823.0,
+      "name": "seekC",
+      "per_seed": [
+        799,
+        840,
+        830
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/opus/genomes/04.json",
+      "mean_biomass": 21738.666666666668,
+      "mean_population": 339.6666666666667,
+      "name": "bigD",
+      "per_seed": [
+        378,
+        300,
+        341
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/opus/genomes/05.json",
+      "mean_biomass": 9280.0,
+      "mean_population": 580.0,
+      "name": "seekE",
+      "per_seed": [
+        565,
+        591,
+        584
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/opus/genomes/06.json",
+      "mean_biomass": 19008.0,
+      "mean_population": 528.0,
+      "name": "seekE6",
+      "per_seed": [
+        525,
+        536,
+        523
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/opus/genomes/07.json",
+      "mean_biomass": 14275.0,
+      "mean_population": 571.0,
+      "name": "seekE5",
+      "per_seed": [
+        560,
+        580,
+        573
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

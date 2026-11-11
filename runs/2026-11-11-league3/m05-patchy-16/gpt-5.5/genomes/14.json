@@ -1,0 +1,77 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "TinyChemSweep_R2_4M",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   2,
+   0,
+   -2,
+   0,
+   0,
+   0,
+   3,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   2,
+   2,
+   2,
+   0,
+   0,
+   2,
+   3,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

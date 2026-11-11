@@ -1,0 +1,66 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "chemo2rev",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0.3
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   4,
+   -4,
+   4,
+   -4,
+   4,
+   -4,
+   -4,
+   4,
+   4,
+   -4,
+   4,
+   -4,
+   4,
+   -4,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   -4,
+   -4,
+   -4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.3,
+  "size": 0.1
+ }
+}

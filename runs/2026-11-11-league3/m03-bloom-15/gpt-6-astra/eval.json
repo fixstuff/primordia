@@ -1,0 +1,206 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 3961.3333333333335,
+      "mean_population": 990.3333333333334,
+      "name": "Sunskimmer",
+      "per_seed": [
+        1071,
+        849,
+        1051
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 6220.0,
+      "mean_population": 1555.0,
+      "name": "Meadow",
+      "per_seed": [
+        1553,
+        1508,
+        1604
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 8608.0,
+      "mean_population": 2152.0,
+      "name": "Lean grazer",
+      "per_seed": [
+        2385,
+        1824,
+        2247
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 7325.333333333333,
+      "mean_population": 1831.3333333333333,
+      "name": "Prairie",
+      "per_seed": [
+        1903,
+        1765,
+        1826
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 5016.0,
+      "mean_population": 1254.0,
+      "name": "Swift meadow",
+      "per_seed": [
+        1261,
+        1210,
+        1291
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 9766.666666666666,
+      "mean_population": 2441.6666666666665,
+      "name": "Gentle drift",
+      "per_seed": [
+        2603,
+        2154,
+        2568
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 9674.666666666666,
+      "mean_population": 2418.6666666666665,
+      "name": "Light grazer",
+      "per_seed": [
+        2573,
+        2195,
+        2488
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 10802.666666666666,
+      "mean_population": 2700.6666666666665,
+      "name": "Dawn moss",
+      "per_seed": [
+        2934,
+        2568,
+        2600
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "Sun moss",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 8732.0,
+      "mean_population": 2183.0,
+      "name": "Adaptive meadow",
+      "per_seed": [
+        2401,
+        2015,
+        2133
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 9954.666666666666,
+      "mean_population": 2488.6666666666665,
+      "name": "Patient sweep",
+      "per_seed": [
+        2682,
+        2278,
+        2506
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 6409.333333333333,
+      "mean_population": 1602.3333333333333,
+      "name": "Vent seeker",
+      "per_seed": [
+        1538,
+        1695,
+        1574
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/13.json",
+      "mean_biomass": 8092.0,
+      "mean_population": 2023.0,
+      "name": "Sugar brake",
+      "per_seed": [
+        2022,
+        2007,
+        2040
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/14.json",
+      "mean_biomass": 9294.666666666666,
+      "mean_population": 2323.6666666666665,
+      "name": "Steady grazer",
+      "per_seed": [
+        2456,
+        2101,
+        2414
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/15.json",
+      "mean_biomass": 3700.0,
+      "mean_population": 925.0,
+      "name": "Long range",
+      "per_seed": [
+        935,
+        917,
+        923
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/16.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "Solar hold",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,13 @@
+{
+ "mcpServers": {
+  "lifeapi": {
+   "command": "/home/james/projects/SporeAI/target/release/lifeapi-mcp",
+   "args": [
+    "--addr",
+    "127.0.0.1:4730",
+    "--name",
+    "claude-fable-5-2"
+   ]
+  }
+ }
+}

@@ -1,0 +1,170 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/01.json",
+      "mean_biomass": 1969.3333333333333,
+      "mean_population": 492.3333333333333,
+      "name": "grazer2",
+      "per_seed": [
+        509,
+        478,
+        490
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/02.json",
+      "mean_biomass": 1850.6666666666667,
+      "mean_population": 462.6666666666667,
+      "name": "chemo2",
+      "per_seed": [
+        484,
+        450,
+        454
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/03.json",
+      "mean_biomass": 1816.0,
+      "mean_population": 454.0,
+      "name": "chemo2rev",
+      "per_seed": [
+        467,
+        453,
+        442
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/04.json",
+      "mean_biomass": 4320.0,
+      "mean_population": 1080.0,
+      "name": "slow2",
+      "per_seed": [
+        1101,
+        1058,
+        1081
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/05.json",
+      "mean_biomass": 11490.666666666666,
+      "mean_population": 2872.6666666666665,
+      "name": "drifter",
+      "per_seed": [
+        2923,
+        2873,
+        2822
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/06.json",
+      "mean_biomass": 7917.333333333333,
+      "mean_population": 1979.3333333333333,
+      "name": "gated",
+      "per_seed": [
+        2164,
+        1786,
+        1988
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/07.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "sitter",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/08.json",
+      "mean_biomass": 4092.0,
+      "mean_population": 1023.0,
+      "name": "seekP",
+      "per_seed": [
+        1061,
+        1021,
+        987
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/09.json",
+      "mean_biomass": 4393.333333333333,
+      "mean_population": 1098.3333333333333,
+      "name": "seekN",
+      "per_seed": [
+        1120,
+        1111,
+        1064
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/10.json",
+      "mean_biomass": 12128.0,
+      "mean_population": 3032.0,
+      "name": "slowdrift",
+      "per_seed": [
+        3145,
+        2999,
+        2952
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/11.json",
+      "mean_biomass": 12933.333333333334,
+      "mean_population": 3233.3333333333335,
+      "name": "parker",
+      "per_seed": [
+        3252,
+        3192,
+        3256
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/12.json",
+      "mean_biomass": 5529.0,
+      "mean_population": 614.3333333333334,
+      "name": "commuter3",
+      "per_seed": [
+        619,
+        612,
+        612
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/fable/genomes/13.json",
+      "mean_biomass": 8787.0,
+      "mean_population": 976.3333333333334,
+      "name": "commuter3s",
+      "per_seed": [
+        995,
+        978,
+        956
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

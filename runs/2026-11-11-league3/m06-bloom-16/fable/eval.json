@@ -1,0 +1,170 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/01.json",
+      "mean_biomass": 1501.3333333333333,
+      "mean_population": 375.3333333333333,
+      "name": "scout-sense",
+      "per_seed": [
+        370,
+        375,
+        381
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/02.json",
+      "mean_biomass": 1448.0,
+      "mean_population": 362.0,
+      "name": "scout-fast",
+      "per_seed": [
+        346,
+        366,
+        374
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/03.json",
+      "mean_biomass": 3738.6666666666665,
+      "mean_population": 934.6666666666666,
+      "name": "scout-slow",
+      "per_seed": [
+        890,
+        966,
+        948
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/04.json",
+      "mean_biomass": 13314.0,
+      "mean_population": 1479.3333333333333,
+      "name": "climbA",
+      "per_seed": [
+        1499,
+        1460,
+        1479
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/05.json",
+      "mean_biomass": 10347.0,
+      "mean_population": 1149.6666666666667,
+      "name": "climbB",
+      "per_seed": [
+        1196,
+        1114,
+        1139
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/06.json",
+      "mean_biomass": 11340.0,
+      "mean_population": 2835.0,
+      "name": "crawl2",
+      "per_seed": [
+        2935,
+        2873,
+        2697
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/07.json",
+      "mean_biomass": 18566.666666666668,
+      "mean_population": 742.6666666666666,
+      "name": "shuttle5",
+      "per_seed": [
+        766,
+        733,
+        729
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/08.json",
+      "mean_biomass": 11381.333333333334,
+      "mean_population": 2845.3333333333335,
+      "name": "crawl2b",
+      "per_seed": [
+        2963,
+        2782,
+        2791
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/09.json",
+      "mean_biomass": 12324.0,
+      "mean_population": 1369.3333333333333,
+      "name": "vent3",
+      "per_seed": [
+        1393,
+        1328,
+        1387
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/10.json",
+      "mean_biomass": 10374.0,
+      "mean_population": 1152.6666666666667,
+      "name": "loop3",
+      "per_seed": [
+        1146,
+        1171,
+        1141
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/11.json",
+      "mean_biomass": 10497.0,
+      "mean_population": 1166.3333333333333,
+      "name": "loop3b",
+      "per_seed": [
+        1165,
+        1164,
+        1170
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/12.json",
+      "mean_biomass": 10437.0,
+      "mean_population": 1159.6666666666667,
+      "name": "loop3c",
+      "per_seed": [
+        1173,
+        1156,
+        1150
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/fable/genomes/13.json",
+      "mean_biomass": 6905.333333333333,
+      "mean_population": 1726.3333333333333,
+      "name": "orbit2",
+      "per_seed": [
+        1725,
+        1734,
+        1720
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

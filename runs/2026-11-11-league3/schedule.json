@@ -1,0 +1,32 @@
+[
+ {
+  "name": "m01-drift-15",
+  "world": "drift",
+  "seed": 15
+ },
+ {
+  "name": "m02-patchy-15",
+  "world": "patchy",
+  "seed": 15
+ },
+ {
+  "name": "m03-bloom-15",
+  "world": "bloom",
+  "seed": 15
+ },
+ {
+  "name": "m04-drift-16",
+  "world": "drift",
+  "seed": 16
+ },
+ {
+  "name": "m05-patchy-16",
+  "world": "patchy",
+  "seed": 16
+ },
+ {
+  "name": "m06-bloom-16",
+  "world": "bloom",
+  "seed": 16
+ }
+]

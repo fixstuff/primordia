@@ -1,0 +1,105 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "drift-r2-2mouth-agile-v1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 0.32
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -30
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 30
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 5,
+  "weights": [
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0.25,
+   0.65,
+   0.65,
+   0.25,
+   0.05,
+   0.8,
+   -2.5,
+   -0.8,
+   0.8,
+   2.5,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.06,
+  "size": 0.12
+ }
+}

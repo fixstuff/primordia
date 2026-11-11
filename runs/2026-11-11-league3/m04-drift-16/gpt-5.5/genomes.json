@@ -1,0 +1,79 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/01.json",
+  "name": "drift-mite-right-v2",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/02.json",
+  "name": "drift-mite-left-v2",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/03.json",
+  "name": "drift-economy-r2-right-v1",
+  "species": 15,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/04.json",
+  "name": "drift-economy-2mouth-r2-right-v1",
+  "species": 20,
+  "tick": 1000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/05.json",
+  "name": "drift-sprinter-2mouth-r2-v1",
+  "species": 25,
+  "tick": 1500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/06.json",
+  "name": "drift-trimouth-r2-cruise-v1",
+  "species": 31,
+  "tick": 2500
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/07.json",
+  "name": "drift-heavy-r4-trimouth-v1",
+  "species": 35,
+  "tick": 3000
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/08.json",
+  "name": "drift-r2-3mouth-lean-v2",
+  "species": 42,
+  "tick": 3500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/09.json",
+  "name": "drift-r2-2mouth-agile-v1",
+  "species": 44,
+  "tick": 4000
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/10.json",
+  "name": "drift-explicit-chemotaxis-r2-2mouth-v1",
+  "species": 61,
+  "tick": 6500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-5.5/genomes/11.json",
+  "name": "drift-r4-tracker-3mouth-valid-v2",
+  "species": 66,
+  "tick": 8000
+ }
+]

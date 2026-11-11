@@ -1,0 +1,114 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/01.json",
+  "name": "Sunskimmer",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/02.json",
+  "name": "Meadow",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/03.json",
+  "name": "Lean grazer",
+  "species": 12,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/04.json",
+  "name": "Prairie",
+  "species": 20,
+  "tick": 1000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/05.json",
+  "name": "Swift meadow",
+  "species": 26,
+  "tick": 1500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/06.json",
+  "name": "Gentle drift",
+  "species": 31,
+  "tick": 2500
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/07.json",
+  "name": "Light grazer",
+  "species": 34,
+  "tick": 3000
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/08.json",
+  "name": "Dawn moss",
+  "species": 36,
+  "tick": 3500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/09.json",
+  "name": "Sun moss",
+  "species": 38,
+  "tick": 4000
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/10.json",
+  "name": "Adaptive meadow",
+  "species": 40,
+  "tick": 4500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/11.json",
+  "name": "Patient sweep",
+  "species": 41,
+  "tick": 5000
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/12.json",
+  "name": "Vent seeker",
+  "species": 43,
+  "tick": 5500
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/13.json",
+  "name": "Sugar brake",
+  "species": 44,
+  "tick": 6000
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/14.json",
+  "name": "Steady grazer",
+  "species": 45,
+  "tick": 6500
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/15.json",
+  "name": "Long range",
+  "species": 46,
+  "tick": 7000
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/gpt-6-astra/genomes/16.json",
+  "name": "Solar hold",
+  "species": 47,
+  "tick": 7500
+ }
+]

@@ -1,0 +1,93 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/01.json",
+  "name": "Sunskimmer",
+  "species": 2,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/02.json",
+  "name": "Sunskimmer Major",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/03.json",
+  "name": "Sun Drifter",
+  "species": 13,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/04.json",
+  "name": "Sun Grazer",
+  "species": 24,
+  "tick": 1000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/05.json",
+  "name": "Sun Cruiser",
+  "species": 32,
+  "tick": 2000
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/06.json",
+  "name": "Light Drifter",
+  "species": 37,
+  "tick": 3000
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/07.json",
+  "name": "Solar Sail",
+  "species": 38,
+  "tick": 4000
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/08.json",
+  "name": "Rapid Surveyor",
+  "species": 40,
+  "tick": 4500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/09.json",
+  "name": "Balanced Rover",
+  "species": 41,
+  "tick": 5000
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/10.json",
+  "name": "Vent Seeker",
+  "species": 43,
+  "tick": 5500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/11.json",
+  "name": "Persistent Skimmer",
+  "species": 45,
+  "tick": 6500
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/12.json",
+  "name": "Fast Forager",
+  "species": 47,
+  "tick": 7000
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-6-astra/genomes/13.json",
+  "name": "Late Grazer",
+  "species": 48,
+  "tick": 8500
+ }
+]

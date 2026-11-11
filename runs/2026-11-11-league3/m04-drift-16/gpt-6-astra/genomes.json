@@ -1,0 +1,86 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/01.json",
+  "name": "Drift Forager",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/02.json",
+  "name": "Lean Rover",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/03.json",
+  "name": "Slow Grazer",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/04.json",
+  "name": "Vent Tracker",
+  "species": 13,
+  "tick": 500
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/05.json",
+  "name": "Agile Tracker",
+  "species": 19,
+  "tick": 1000
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/06.json",
+  "name": "Broad Tracker",
+  "species": 22,
+  "tick": 1500
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/07.json",
+  "name": "Enduring Tracker",
+  "species": 30,
+  "tick": 2500
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/08.json",
+  "name": "Sensitive Tracker",
+  "species": 34,
+  "tick": 3000
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/09.json",
+  "name": "Large Agile Tracker",
+  "species": 39,
+  "tick": 3500
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/10.json",
+  "name": "Keen Vent Pursuer",
+  "species": 47,
+  "tick": 4500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/11.json",
+  "name": "Keen Heavy",
+  "species": 50,
+  "tick": 5000
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m04-drift-16/gpt-6-astra/genomes/12.json",
+  "name": "Voracious Pursuer",
+  "species": 58,
+  "tick": 6000
+ }
+]

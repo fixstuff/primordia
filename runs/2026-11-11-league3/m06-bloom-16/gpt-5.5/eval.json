@@ -1,0 +1,50 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-5.5/genomes/01.json",
+      "mean_biomass": 1921.3333333333333,
+      "mean_population": 480.3333333333333,
+      "name": "r2_straight_grazer_v1",
+      "per_seed": [
+        492,
+        467,
+        482
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-5.5/genomes/02.json",
+      "mean_biomass": 13429.333333333334,
+      "mean_population": 3357.3333333333335,
+      "name": "r2_stationary_grazer_v2",
+      "per_seed": [
+        3524,
+        3217,
+        3331
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m06-bloom-16/gpt-5.5/genomes/03.json",
+      "mean_biomass": 8913.333333333334,
+      "mean_population": 2228.3333333333335,
+      "name": "r2_doublemouth_stationary_v3",
+      "per_seed": [
+        2255,
+        2217,
+        2213
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

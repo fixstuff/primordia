@@ -1,0 +1,114 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/01.json",
+  "name": "ScoutGrazer_L",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/02.json",
+  "name": "StillFeeder_R2",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/03.json",
+  "name": "SlowSniffer_R2",
+  "species": 16,
+  "tick": 500
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/04.json",
+  "name": "SporeMouth_R2",
+  "species": 19,
+  "tick": 1000
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/05.json",
+  "name": "SporeMouth2_R2",
+  "species": 26,
+  "tick": 1500
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/06.json",
+  "name": "VentBarnacle_R5_2M",
+  "species": 38,
+  "tick": 2000
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/07.json",
+  "name": "SugarGlider_R2_1M_F03b",
+  "species": 49,
+  "tick": 3500
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/08.json",
+  "name": "VentSpore_R5_1M_low",
+  "species": 53,
+  "tick": 4000
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/09.json",
+  "name": "SporeMouth_R3",
+  "species": 58,
+  "tick": 4500
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/10.json",
+  "name": "SugarScout_R2_v1",
+  "species": 63,
+  "tick": 5500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/11.json",
+  "name": "SporeMouth2_R3",
+  "species": 67,
+  "tick": 6000
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/12.json",
+  "name": "VentSpore_R4_2M",
+  "species": 69,
+  "tick": 6500
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/13.json",
+  "name": "SugarHunter_R4_4M",
+  "species": 72,
+  "tick": 7000
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/14.json",
+  "name": "TinyChemSweep_R2_4M",
+  "species": 82,
+  "tick": 8500
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/15.json",
+  "name": "TinyDiffChem_R2_3M_fix",
+  "species": 83,
+  "tick": 9000
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m05-patchy-16/gpt-5.5/genomes/16.json",
+  "name": "LastChance_R2_15M",
+  "species": 84,
+  "tick": 9500
+ }
+]

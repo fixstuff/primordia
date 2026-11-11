@@ -1,0 +1,156 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/01.json",
+  "name": "r2_lr_tracker_pos",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/02.json",
+  "name": "r2_sugar_tracker_pos",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/03.json",
+  "name": "r3_more_capacity_tracker",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/04.json",
+  "name": "r2_2mouth_slow_lr_pos",
+  "species": 19,
+  "tick": 500
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/05.json",
+  "name": "r2_random_2mouth_8sens",
+  "species": 27,
+  "tick": 1000
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/06.json",
+  "name": "r2_sugar_slow_turnA",
+  "species": 34,
+  "tick": 1500
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/07.json",
+  "name": "r2_straight_search_hi_mut",
+  "species": 36,
+  "tick": 2000
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/08.json",
+  "name": "r2_drift_tracker_A",
+  "species": 42,
+  "tick": 2500
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/09.json",
+  "name": "r2_dual_lr_fixed",
+  "species": 45,
+  "tick": 3000
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/10.json",
+  "name": "r5_simple_cruise_lr",
+  "species": 49,
+  "tick": 3500
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/11.json",
+  "name": "r2_dual_lr_invert_turn",
+  "species": 52,
+  "tick": 4000
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/12.json",
+  "name": "r2_true_gradient_rightA",
+  "species": 56,
+  "tick": 4500
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/13.json",
+  "name": "r2_const_swim_gradturn_6mouth",
+  "species": 58,
+  "tick": 5000
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/14.json",
+  "name": "r2_random_founder_pool_4m8s",
+  "species": 62,
+  "tick": 5500
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/15.json",
+  "name": "r2_4mouth_track_turn_pos",
+  "species": 67,
+  "tick": 6000
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/16.json",
+  "name": "r2_simple_track_mirror_4m",
+  "species": 72,
+  "tick": 6500
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/17.json",
+  "name": "r2_dualchem_pos_turn_const_fast_3m",
+  "species": 75,
+  "tick": 7000
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/18.json",
+  "name": "r2_dual_gradient_const_signpos_2m",
+  "species": 77,
+  "tick": 7500
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/19.json",
+  "name": "r2_const_chemo_A_4mouth",
+  "species": 78,
+  "tick": 8000
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/20.json",
+  "name": "r2_const_thrust_grad_turn_pos_2m",
+  "species": 79,
+  "tick": 8500
+ },
+ {
+  "n": 21,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/21.json",
+  "name": "r2_best_track_highbirth_B",
+  "species": 80,
+  "tick": 9000
+ },
+ {
+  "n": 22,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m01-drift-15/gpt-5.5/genomes/22.json",
+  "name": "r2_random_founder_lottery_final_8h",
+  "species": 82,
+  "tick": 9500
+ }
+]

@@ -1,0 +1,3 @@
+lifeapi-server: ARENA for 6 players, 10000 ticks in windows of 500 ticks / 180s
+lifeapi-server: world bloom seed 16, API on 127.0.0.1:4750
+lifeapi-server: viewer on http://127.0.0.1:4751/

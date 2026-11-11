@@ -1,0 +1,86 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/01.json",
+      "mean_biomass": 12808.333333333334,
+      "mean_population": 512.3333333333334,
+      "name": "r5_seeker",
+      "per_seed": [
+        553,
+        487,
+        497
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/02.json",
+      "mean_biomass": 20053.333333333332,
+      "mean_population": 313.3333333333333,
+      "name": "r8_seeker",
+      "per_seed": [
+        335,
+        292,
+        313
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/03.json",
+      "mean_biomass": 12358.333333333334,
+      "mean_population": 494.3333333333333,
+      "name": "r5_seeker_mirror",
+      "per_seed": [
+        533,
+        448,
+        502
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/04.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "r2_sitter",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/05.json",
+      "mean_biomass": 8985.333333333334,
+      "mean_population": 2246.3333333333335,
+      "name": "r2_2m",
+      "per_seed": [
+        2279,
+        2234,
+        2226
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-11-league3/m03-bloom-15/deepseek/genomes/06.json",
+      "mean_biomass": 6624.0,
+      "mean_population": 1656.0,
+      "name": "r2_3m",
+      "per_seed": [
+        1663,
+        1664,
+        1641
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

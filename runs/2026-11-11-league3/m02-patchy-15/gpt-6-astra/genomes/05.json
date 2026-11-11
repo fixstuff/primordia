@@ -1,0 +1,56 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Vent anchor",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 55
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -55
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   4,
+   4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   0,
+   0,
+   0.65,
+   0,
+   4,
+   -4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.08
+ }
+}
