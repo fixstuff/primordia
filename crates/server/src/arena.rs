@@ -58,8 +58,10 @@ impl Arena {
 
     pub fn rules(&self) -> Value {
         json!({
-            "score": "your biomass (sum of radius^2 over your living organisms) averaged over every tick of the match; \
-                      every tick counts the same, so what you hold all match matters, not a last-minute surge",
+            "score": "your biomass (sum of radius^2 over your living organisms BORN IN THE POOL; founders you release \
+                      do not count, only their descendants) averaged over every tick of the match. Every tick counts \
+                      the same, and only lineages that eat and reproduce score.",
+            "founder_energy": "a founder starts with r^2 energy (half its body's 2r^2); vacuoles start empty",
             "founder_cost": "5 * (radius/5)^2 budget per founder: radius 2 = 0.8, 5 = 5, 10 = 20, 20 = 80",
             "players": self.cfg.players,
             "window_ticks": self.cfg.window_ticks,
@@ -196,10 +198,14 @@ impl Game {
         waiting.into_iter().map(|p| (p, self.turn_reply(p))).collect()
     }
 
-    /// Biomass (sum of r^2 over living organisms) per player, right now.
+    /// Scoring biomass per player right now: sum of r^2 over living organisms
+    /// BORN IN THE POOL (generation >= 1). Founders don't count. Match 1 was
+    /// won by mouthless giants and match 2 by non-feeding "batteries"; both
+    /// were founders that never reproduced, and no founder price closes that
+    /// gap. Only reproduction does.
     fn player_biomass(&self) -> Vec<f64> {
         let mut bio = vec![0.0; self.players.len()];
-        for o in &self.world.orgs {
+        for o in self.world.orgs.iter().filter(|o| o.generation >= 1) {
             if let Some(p) = self.lineage_owner.get(o.lineage as usize).copied().flatten() {
                 let r = self.world.species[o.species as usize].phen.radius as f64;
                 bio[p] += r * r;
@@ -360,9 +366,35 @@ mod tests {
         let by = |n: &str| s.iter().find(|r| r["name"] == n).unwrap().clone();
         let (e, l) = (by("early"), by("late"));
         // Score = mean over all 300 ticks: the late player held biomass for ~100.
-        assert!(l["score"].as_f64().unwrap() < 0.5 * l["biomass"].as_f64().unwrap(), "{l}");
+        assert!(l["score"].as_f64().unwrap() <= 0.5 * l["biomass"].as_f64().unwrap(), "{l}");
+        assert!(l["score"].as_f64().unwrap() < e["score"].as_f64().unwrap(), "{l} vs {e}");
         assert_eq!(s[0]["name"], "early", "{s:?}");
         let _ = e;
+    }
+
+    /// Founders never score: a player whose bodies never reproduce scores 0,
+    /// however many it releases.
+    #[test]
+    fn only_organisms_born_in_the_pool_score() {
+        let mut g = arena(2, 1);
+        let breeder = join_and_release(&mut g, "breeder");
+        let (_, blobs) = call(&mut g, None, r#"{"op":"hello","name":"blobs"}"#);
+        let blob = r#"{"schema":"lifeapi.genome/1","name":"blob","body":[{"part":"membrane","radius":20}],"brain":{"hidden":1},"mutation":{"rate":0,"size":0}}"#;
+        let (r, _) = call(&mut g, blobs, &format!(r#"{{"op":"submit_genome","genome":{blob}}}"#));
+        let sp = r.unwrap()["species"].clone();
+        let (r, _) = call(&mut g, blobs, &format!(r#"{{"op":"release","species":{sp},"count":6}}"#));
+        assert_eq!(r.unwrap()["ok"], true);
+        let _ = call(&mut g, breeder, r#"{"op":"release","species":0,"count":20}"#);
+        for _ in 0..3 {
+            let _ = call(&mut g, breeder, r#"{"op":"end_turn"}"#);
+            let _ = call(&mut g, blobs, r#"{"op":"end_turn"}"#);
+            g.arena_poll(Instant::now());
+        }
+        let s = g.standings();
+        let by = |n: &str| s.iter().find(|r| r["name"] == n).unwrap().clone();
+        assert_eq!(by("blobs")["alive"], 6, "the blobs are alive...");
+        assert_eq!(by("blobs")["score"], 0.0, "...but founders don't score");
+        assert!(by("breeder")["score"].as_f64().unwrap() > 0.0, "{s:?}");
     }
 
     #[test]

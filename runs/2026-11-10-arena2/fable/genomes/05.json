@@ -1,0 +1,187 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "rover99",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 9.89
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 180,
+   "chemical": "sugar"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 16,
+  "weights": [
+   4,
+   -4,
+   0,
+   4,
+   -1,
+   4,
+   -4,
+   0,
+   -4,
+   1,
+   4,
+   -4,
+   0,
+   4,
+   -1,
+   4,
+   -4,
+   0,
+   -4,
+   1,
+   4,
+   -4,
+   0,
+   4,
+   -1,
+   4,
+   -4,
+   0,
+   -4,
+   1,
+   4,
+   -4,
+   0,
+   4,
+   -1,
+   4,
+   -4,
+   0,
+   -4,
+   1,
+   4,
+   -4,
+   0,
+   4,
+   -1,
+   4,
+   -4,
+   0,
+   -4,
+   1,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -2,
+   -2,
+   4,
+   0,
+   0,
+   -2,
+   -2,
+   4,
+   0,
+   0,
+   -2,
+   -2,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -3.5,
+   0,
+   0,
+   0,
+   4,
+   -3.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   -4,
+   -4,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

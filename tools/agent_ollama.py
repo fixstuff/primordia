@@ -16,9 +16,10 @@ import argparse, json, pathlib, subprocess, sys, time, urllib.request
 
 ARENA_GOAL = (
     "THIS IS AN ARENA MATCH against other AI players in the same world. Your SCORE is your biomass "
-    "(sum of radius^2 over your living organisms) AVERAGED OVER EVERY TICK of the match, which ends at tick "
-    "{target}; the highest score wins. Every tick counts the same, so what you hold all match matters, not a "
-    "last-minute surge. Founders cost 5 x (radius/5)^2 budget each (radius 20 = 80). "
+    "(sum of radius^2) counting ONLY organisms BORN IN THE POOL (the founders you release do not count, only "
+    "their descendants), AVERAGED OVER EVERY TICK of the match, which ends at tick {target}; the highest score "
+    "wins. Only lineages that eat and reproduce score. Founders cost 5 x (radius/5)^2 budget each and start with "
+    "r^2 energy (vacuoles start empty). "
     "The server owns the clock: time moves in windows. In each window, make your moves (catalog, report, "
     "submit_genome, release, observe), then call end_turn. end_turn returns when the next window opens, with "
     "the scoreboard (everyone's alive count and biomass, your rank, ticks left, match_over). If you take too "

@@ -43,5 +43,7 @@ fn three_bots_play_a_match_to_the_end() {
     let log = std::fs::read_to_string(&log).unwrap();
     assert_eq!(log.lines().filter(|l| l.contains("\"advance\"")).count(), 6);
     assert!(log.contains("\"start\"") && log.contains("\"over\""));
+    // Every join is logged with its player index, so the log maps index -> name.
+    assert_eq!(log.lines().filter(|l| l.contains("hello")).count(), 3, "{log}");
     std::fs::remove_dir_all(&dir).ok();
 }

@@ -1,0 +1,134 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/01.json",
+      "mean_biomass": 14628.0,
+      "mean_population": 406.3333333333333,
+      "name": "trackA",
+      "per_seed": [
+        416,
+        408,
+        395
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/02.json",
+      "mean_biomass": 9792.0,
+      "mean_population": 272.0,
+      "name": "trackB",
+      "per_seed": [
+        348,
+        250,
+        218
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/03.json",
+      "mean_biomass": 26976.0,
+      "mean_population": 187.33333333333334,
+      "name": "bigA",
+      "per_seed": [
+        197,
+        179,
+        186
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/04.json",
+      "mean_biomass": 22815.0,
+      "mean_population": 281.6666666666667,
+      "name": "lean9",
+      "per_seed": [
+        306,
+        252,
+        287
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/05.json",
+      "mean_biomass": 25542.0,
+      "mean_population": 315.3333333333333,
+      "name": "lean9b",
+      "per_seed": [
+        338,
+        302,
+        306
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/06.json",
+      "mean_biomass": 13653.333333333334,
+      "mean_population": 53.333333333333336,
+      "name": "blob16",
+      "per_seed": [
+        50,
+        55,
+        55
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/07.json",
+      "mean_biomass": 8618.666666666666,
+      "mean_population": 33.666666666666664,
+      "name": "battery16",
+      "per_seed": [
+        36,
+        32,
+        33
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/08.json",
+      "mean_biomass": 12400.0,
+      "mean_population": 31.0,
+      "name": "battery20",
+      "per_seed": [
+        34,
+        27,
+        32
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/09.json",
+      "mean_biomass": 19716.0,
+      "mean_population": 547.6666666666666,
+      "name": "lean6",
+      "per_seed": [
+        528,
+        561,
+        554
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/opus/genomes/10.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "cell5",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,77 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "cell5",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

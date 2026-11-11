@@ -286,6 +286,13 @@ impl Game {
                 },
             },
         };
+        // A hello arrives before the connection has a player, so log it once
+        // it has one: the match log must say which index is which name.
+        if let (Some(a), Some(p)) = (self.arena.as_mut(), player) {
+            if line.contains("\"hello\"") {
+                a.log_line(p, self.world.tick, line);
+            }
+        }
         (Some(reply), player)
     }
 

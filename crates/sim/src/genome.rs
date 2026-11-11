@@ -91,6 +91,11 @@ pub struct Phenotype {
     pub upkeep: f32,
     /// Mineral needed to build a child.
     pub child_material: f32,
+    /// Energy a released founder starts with: half the BODY's capacity
+    /// (2*r^2), never the vacuoles'. Storage is filled by eating. (Arena
+    /// match 2: founders starting with half of 15 vacuoles' capacity were
+    /// "batteries" that lived ~2500 ticks without eating, for 0.8 budget.)
+    pub founder_energy: f32,
     pub hidden: usize,
     pub n_in: usize,
     pub n_weights: usize,
@@ -196,6 +201,7 @@ impl Genome {
                 + 0.002 * sensors.len() as f32
                 + 0.0002 * vacuole,
             child_material: 0.1 * area,
+            founder_energy: area,
             sensors,
             hidden,
             n_in,
@@ -256,6 +262,21 @@ mod tests {
         assert_eq!(p.radius, 6.0);
         assert_eq!(p.sensors.len(), 2);
         assert_eq!(p.n_in, 4);
+    }
+
+    /// Match 2's "battery": radius 2, 15 vacuoles, nothing else. It must
+    /// start with the body's energy only, so it can't live for thousands of
+    /// ticks without eating.
+    #[test]
+    fn vacuoles_start_empty() {
+        let battery = r#"{"schema":"lifeapi.genome/1","name":"batt","body":[{"part":"membrane","radius":2},
+            {"part":"vacuole","capacity":100},{"part":"vacuole","capacity":100},{"part":"vacuole","capacity":100}],
+            "brain":{"hidden":1},"mutation":{"rate":0,"size":0}}"#;
+        let p = Genome::from_json(battery).unwrap().express().unwrap();
+        assert_eq!(p.founder_energy, 4.0);
+        assert!(p.capacity > 300.0);
+        // Lifespan on starting energy alone: a few dozen ticks, not thousands.
+        assert!(p.founder_energy / p.upkeep < 100.0, "{}", p.founder_energy / p.upkeep);
     }
 
     #[test]

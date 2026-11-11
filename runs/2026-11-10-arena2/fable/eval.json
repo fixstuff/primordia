@@ -1,0 +1,98 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/fable/genomes/01.json",
+      "mean_biomass": 30576.0,
+      "mean_population": 156.0,
+      "name": "trackP",
+      "per_seed": [
+        153,
+        153,
+        162
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/fable/genomes/02.json",
+      "mean_biomass": 1045.3333333333333,
+      "mean_population": 5.333333333333333,
+      "name": "trackN",
+      "per_seed": [
+        10,
+        2,
+        4
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/fable/genomes/03.json",
+      "mean_biomass": 18500.0,
+      "mean_population": 185.0,
+      "name": "homer10",
+      "per_seed": [
+        187,
+        183,
+        185
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/fable/genomes/04.json",
+      "mean_biomass": 18233.333333333332,
+      "mean_population": 182.33333333333334,
+      "name": "rover10",
+      "per_seed": [
+        180,
+        189,
+        178
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/fable/genomes/05.json",
+      "mean_biomass": 18062.63572072391,
+      "mean_population": 184.66666666666666,
+      "name": "rover99",
+      "per_seed": [
+        182,
+        181,
+        191
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/fable/genomes/06.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "batt2",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-10-arena2/fable/genomes/07.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "batt14",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

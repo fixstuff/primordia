@@ -2,8 +2,7 @@
 
 > The game is **LifeAPI** (D-5). The project folder is still `SporeAI`; that
 > name stays off the game, because "Spore" is EA's trademark.
-> Status: DRAFT 8, 2026-11-10. M0–M4 built (§10–§14); arena match 2, under the
-> fixed rules, is running. Still owed: the droplet run of the golden hash, and
+> Status: DRAFT 9, 2026-11-10. M0–M4 built (§10–§15); two arena matches played. Still owed: the droplet run of the golden hash, and
 > M2's watch from a second machine. Draft 1's claims were checked
 > by a fresh-context reviewer, and its findings are folded in. Open decisions are marked **D-n**
 > and collected at the end. They're yours to rule on.
@@ -745,4 +744,76 @@ The winner was decided by the loophole, not by the ecology.
 5. **The OpenAI-style runner retries transient errors.** Match 2's first
    start lost its DeepSeek player to one "connection reset by peer"; that
    aborted run is in `runs/2026-11-10-arena2-aborted/`.
+
+## 15. Arena match 2, under the fixed rules (2026-11-10)
+
+`runs/2026-11-10-arena2/`: the same world, seed and windows as match 1
+(`drift`, 42, 20 × 500 ticks, 180 s), and the same players. The new rules:
+founders cost 5·(r/5)², and the score is biomass averaged over all 10 000
+ticks.
+
+| Rank | Player | Score (mean biomass) | Biomass at end | Alive at end | Cost | Turns |
+|---|---|---|---|---|---|---|
+| 1 | Fable 5.2 | 4 300 | 1 000 | 250 | $4.69 | 70 |
+| 2 | DeepSeek V4 Pro | 4 107 | 9 342 | 288 | — | 84 |
+| 3 | Opus 5.5 | 3 435 | 1 396 | 51 | $0.68 | 64 |
+| 4 | scripted bot | 846 | 75 | 3 | — | — |
+
+**Leaders by window:**
+- DeepSeek, windows 1–3: swarms of small cells.
+- Opus, windows 4–12: its swarm peaked early and then eroded.
+- Fable, windows 13–20. Its feeders, `homer10` and `rover10`, are radius
+  10 with nine mouths, two flagella and three sugar sensors; `rover10` has
+  extra brain units keyed on energy. They held 6 000–7 300 biomass in
+  windows 8–14, or up to 8 300 counting the batteries below.
+- DeepSeek held the most biomass from window 15 to the end, passed Opus
+  in window 19, and finished 193 behind Fable. Its score was rising about
+  476 a window against Fable's 62, while its biomass held level (9 558 →
+  9 342).
+
+**Misses:**
+- Fable missed window 1: a 178 s thinking block before its first genome.
+- DeepSeek missed window 9. It hit a connection reset and its retry landed
+  7 s after the deadline. The `advance` standings map player indexes to
+  names. Hellos are now logged too.
+
+**The fixes closed match 1's exploit, and the players found the next
+one.** Nobody dumped giants at the deadline. But Fable's `batt2` decided
+the match:
+- **The genome:** radius 2 plus 15 vacuoles, with no mouth, no motor and
+  no sensors.
+- **Why it worked:** founders started with half their capacity, and
+  vacuoles add capacity. Each battery cost 0.8 budget and lived about
+  2 500 ticks without eating.
+- **How much:** Fable released 701 of them, its whole budget each window
+  from tick 4 000. They were worth about 575 points, three times the
+  winning margin. Without them Fable would have finished about 3 725, below
+  DeepSeek.
+- **Opus did the same** with `cell5` (radius 5, 15 vacuoles).
+- **Fable's end state** (250 alive, 1 000 biomass) was all batteries.
+
+So match 2 doesn't cleanly show "who held the pool".
+
+**Limits of the result.**
+- It's one match, and the margin is narrow (193 points, about 4.5 %).
+- DeepSeek was rising at the end, so a longer match might well rank it
+  first.
+- A league of many matches, with rotating seeds and worlds and Elo
+  ratings, is the right way to rank models. Per-window token or time
+  budgets would remove speed as a confounder.
+
+**Fixed at the root after match 2:**
+- **Founders start with their body's energy only** (r²); vacuoles start
+  empty. Test: `vacuoles_start_empty`.
+- **The arena score counts only organisms born in the pool**
+  (generation ≥ 1). Founders are seeds, so a body that never reproduces
+  scores nothing, however it's priced.
+  - The `generation` counter is observational and left out of the hash;
+    the golden hash is unchanged.
+  - Test: `only_organisms_born_in_the_pool_score`.
+  - No founder price could close this gap, since any founder carries
+    biomass for its lifetime. Requiring reproduction does.
+
+This section was checked by a fresh-context reviewer, which re-derived
+every number; its corrections are folded in.
 

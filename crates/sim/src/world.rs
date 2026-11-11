@@ -80,6 +80,11 @@ pub struct Organism {
     pub energy: f32,
     pub material: f32,
     pub age: u32,
+    /// 0 for a released founder, parent + 1 for a child. An observation
+    /// only (nothing in the sim reads it), so it is left out of the hash.
+    /// Arenas score only generation >= 1: founders are seeds, and a body
+    /// that never reproduces scores nothing.
+    pub generation: u32,
     pub brain: Vec<f32>,
 }
 
@@ -198,9 +203,10 @@ impl World {
                 x: self.rng.range(0.0, ww),
                 y: self.rng.range(0.0, wh),
                 heading: self.rng.range(-det::PI, det::PI),
-                energy: 0.5 * phen.capacity,
+                energy: phen.founder_energy,
                 material: 0.0,
                 age: 0,
+                generation: 0,
                 brain,
             };
             self.next_id += 1;
@@ -391,6 +397,7 @@ impl World {
             child.id = self.next_id;
             self.next_id += 1;
             child.age = 0;
+            child.generation = o.generation.saturating_add(1);
             child.material = 0.0;
             child.heading = det::wrap_angle(o.heading + det::PI);
             child.x = det::wrap(o.x + det::cos(child.heading) * r, ww);
