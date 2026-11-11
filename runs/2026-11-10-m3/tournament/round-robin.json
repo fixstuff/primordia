@@ -1,0 +1,273 @@
+{
+  "founders": 60,
+  "matches": [
+    {
+      "a": "Driftwhip",
+      "a_wins": 1,
+      "b": "Sweeper",
+      "b_wins": 2,
+      "seeds": 3
+    },
+    {
+      "a": "Driftwhip",
+      "a_wins": 0,
+      "b": "seed3",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Driftwhip",
+      "a_wins": 0,
+      "b": "glutton-v5",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Driftwhip",
+      "a_wins": 0,
+      "b": "grazer-v1",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Driftwhip",
+      "a_wins": 0,
+      "b": "drifter5",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Driftwhip",
+      "a_wins": 0,
+      "b": "grazer1",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Driftwhip",
+      "a_wins": 0,
+      "b": "sitter6",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Sweeper",
+      "a_wins": 0,
+      "b": "seed3",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Sweeper",
+      "a_wins": 0,
+      "b": "glutton-v5",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Sweeper",
+      "a_wins": 0,
+      "b": "grazer-v1",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Sweeper",
+      "a_wins": 0,
+      "b": "drifter5",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Sweeper",
+      "a_wins": 0,
+      "b": "grazer1",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "Sweeper",
+      "a_wins": 0,
+      "b": "sitter6",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "seed3",
+      "a_wins": 0,
+      "b": "glutton-v5",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "seed3",
+      "a_wins": 0,
+      "b": "grazer-v1",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "seed3",
+      "a_wins": 0,
+      "b": "drifter5",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "seed3",
+      "a_wins": 0,
+      "b": "grazer1",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "seed3",
+      "a_wins": 0,
+      "b": "sitter6",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "glutton-v5",
+      "a_wins": 0,
+      "b": "grazer-v1",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "glutton-v5",
+      "a_wins": 0,
+      "b": "drifter5",
+      "b_wins": 3,
+      "seeds": 3
+    },
+    {
+      "a": "glutton-v5",
+      "a_wins": 3,
+      "b": "grazer1",
+      "b_wins": 0,
+      "seeds": 3
+    },
+    {
+      "a": "glutton-v5",
+      "a_wins": 3,
+      "b": "sitter6",
+      "b_wins": 0,
+      "seeds": 3
+    },
+    {
+      "a": "grazer-v1",
+      "a_wins": 3,
+      "b": "drifter5",
+      "b_wins": 0,
+      "seeds": 3
+    },
+    {
+      "a": "grazer-v1",
+      "a_wins": 3,
+      "b": "grazer1",
+      "b_wins": 0,
+      "seeds": 3
+    },
+    {
+      "a": "grazer-v1",
+      "a_wins": 3,
+      "b": "sitter6",
+      "b_wins": 0,
+      "seeds": 3
+    },
+    {
+      "a": "drifter5",
+      "a_wins": 3,
+      "b": "grazer1",
+      "b_wins": 0,
+      "seeds": 3
+    },
+    {
+      "a": "drifter5",
+      "a_wins": 3,
+      "b": "sitter6",
+      "b_wins": 0,
+      "seeds": 3
+    },
+    {
+      "a": "grazer1",
+      "a_wins": 3,
+      "b": "sitter6",
+      "b_wins": 0,
+      "seeds": 3
+    }
+  ],
+  "mode": "round-robin",
+  "note": "a win = more biomass alive at the end of a seed",
+  "rejected": [
+    {
+      "error": "unknown field `founders`, expected one of `schema`, `name`, `body`, `brain`, `mutation`",
+      "file": "runs/2026-11-10-m3/tournament/together.json"
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "table": [
+    {
+      "file": "runs/2026-11-10-m3/tournament/fable-grazer-v1.json",
+      "games": 21,
+      "mean_biomass_in_duels": 2894.4761904761904,
+      "name": "grazer-v1",
+      "wins": 21
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/opus-drifter5.json",
+      "games": 21,
+      "mean_biomass_in_duels": 6707.809523809524,
+      "name": "drifter5",
+      "wins": 18
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/fable-glutton-v5.json",
+      "games": 21,
+      "mean_biomass_in_duels": 6428.761904761905,
+      "name": "glutton-v5",
+      "wins": 15
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/opus-grazer1.json",
+      "games": 21,
+      "mean_biomass_in_duels": 4128.857142857143,
+      "name": "grazer1",
+      "wins": 12
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/opus-sitter6.json",
+      "games": 21,
+      "mean_biomass_in_duels": 3886.8571428571427,
+      "name": "sitter6",
+      "wins": 9
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/deepseek-seed3.json",
+      "games": 21,
+      "mean_biomass_in_duels": 852.1904761904761,
+      "name": "seed3",
+      "wins": 6
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/bot-sweeper.json",
+      "games": 21,
+      "mean_biomass_in_duels": 2414.285714285714,
+      "name": "Sweeper",
+      "wins": 2
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/base-driftwhip.json",
+      "games": 21,
+      "mean_biomass_in_duels": 1719.4285714285713,
+      "name": "Driftwhip",
+      "wins": 1
+    }
+  ],
+  "ticks": 5000
+}

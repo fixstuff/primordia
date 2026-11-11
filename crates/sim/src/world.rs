@@ -68,6 +68,29 @@ pub struct Stats {
     pub deaths: u64,
 }
 
+/// Running totals for one lineage since it was released. These are
+/// observations only: nothing in the simulation reads them, so they are
+/// left out of `World::hash` (adding them changes no outcome).
+#[derive(Clone, Debug, Default, PartialEq)]
+pub struct LineageStats {
+    /// The species every member of this lineage belongs to.
+    pub species: u32,
+    pub alive: u32,
+    pub released: u64,
+    pub born: u64,
+    /// Every death today is starvation: energy reached 0.
+    pub starved: u64,
+    pub age_at_death_sum: u64,
+    /// Organism-ticks lived (one per organism per tick).
+    pub org_ticks: u64,
+    /// Energy gained from sugar.
+    pub energy_in: f64,
+    pub upkeep: f64,
+    pub movement: f64,
+    pub mineral_in: f64,
+    pub distance: f64,
+}
+
 pub struct World {
     pub tick: u64,
     pub cfg: Config,
@@ -76,6 +99,8 @@ pub struct World {
     pub species: Vec<Species>,
     pub orgs: Vec<Organism>,
     pub stats: Stats,
+    /// Indexed by lineage id (index 0 unused).
+    pub lineages: Vec<LineageStats>,
     next_id: u64,
     next_lineage: u32,
     // Broadphase, reused every tick.
@@ -107,6 +132,7 @@ impl World {
             species: Vec::new(),
             orgs: Vec::new(),
             stats: Stats::default(),
+            lineages: vec![LineageStats::default()],
             next_id: 1,
             next_lineage: 1,
             nbx,
@@ -153,6 +179,8 @@ impl World {
             self.next_id += 1;
             self.orgs.push(o);
         }
+        self.lineages.push(LineageStats { species, alive: n as u32, released: n as u64, ..Default::default() });
+        debug_assert_eq!(self.lineages.len(), lineage as usize + 1);
         Ok(lineage)
     }
 
@@ -175,10 +203,11 @@ impl World {
     }
 
     pub fn step_organisms(&mut self) {
-        let World { orgs, species, grid, cfg, .. } = self;
+        let World { orgs, species, grid, cfg, lineages, .. } = self;
         let (ww, wh) = (grid.world_w(), grid.world_h());
         let mut inputs = [0f32; MAX_SENSORS + 2];
         for o in orgs.iter_mut() {
+            let ls = &mut lineages[o.lineage as usize];
             let p = &species[o.species as usize].phen;
             // Sense.
             let ns = p.sensors.len();
@@ -201,16 +230,25 @@ impl World {
             if p.mouths > 0 {
                 let bite = cfg.eat_rate * p.mouths as f32;
                 let room = det::max(p.capacity - o.energy, 0.0) / cfg.sugar_energy;
-                o.energy += grid.take(o.x, o.y, 0, det::min(bite, room)) * cfg.sugar_energy;
+                let gained = grid.take(o.x, o.y, 0, det::min(bite, room)) * cfg.sugar_energy;
+                o.energy += gained;
                 let mroom = det::max(cfg.material_cap - o.material, 0.0);
-                o.material += grid.take(o.x, o.y, 1, det::min(bite, mroom));
+                let mgained = grid.take(o.x, o.y, 1, det::min(bite, mroom));
+                o.material += mgained;
+                ls.energy_in += gained as f64;
+                ls.mineral_in += mgained as f64;
             }
             // Pay.
-            o.energy -= p.upkeep + speed * cfg.move_cost;
+            let move_cost = speed * cfg.move_cost;
+            o.energy -= p.upkeep + move_cost;
             if cfg.fixed_population {
                 o.energy = det::max(o.energy, 0.0);
             }
             o.age = o.age.saturating_add(1);
+            ls.upkeep += p.upkeep as f64;
+            ls.movement += move_cost as f64;
+            ls.distance += speed as f64;
+            ls.org_ticks += 1;
         }
     }
 
@@ -266,13 +304,17 @@ impl World {
 
     /// The dead return their body to the pool where they fell.
     pub fn step_deaths(&mut self) {
-        let World { orgs, species, grid, stats, .. } = self;
+        let World { orgs, species, grid, stats, lineages, .. } = self;
         for o in orgs.iter() {
             if o.energy <= 0.0 {
                 let p = &species[o.species as usize].phen;
                 grid.add(o.x, o.y, 1, o.material + p.child_material);
                 grid.add(o.x, o.y, 0, 0.02 * p.radius * p.radius);
                 stats.deaths += 1;
+                let ls = &mut lineages[o.lineage as usize];
+                ls.alive -= 1;
+                ls.starved += 1;
+                ls.age_at_death_sum += o.age as u64;
             }
         }
         orgs.retain(|o| o.energy > 0.0);
@@ -309,6 +351,9 @@ impl World {
                     *w = det::clamp(*w + self.rng.range(-size, size), -4.0, 4.0);
                 }
             }
+            let ls = &mut self.lineages[child.lineage as usize];
+            ls.alive += 1;
+            ls.born += 1;
             self.orgs.push(child);
             self.stats.births += 1;
         }

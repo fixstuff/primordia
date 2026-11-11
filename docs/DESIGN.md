@@ -2,8 +2,8 @@
 
 > The game is **LifeAPI** (D-5). The project folder is still `SporeAI`; that
 > name stays off the game, because "Spore" is EA's trademark.
-> Status: DRAFT 5, 2026-11-10. M0, M1 and M2 built (§10–§12). Still owed: the
-> droplet run of the golden hash, and M2's watch from a second machine. Draft 1's claims were checked
+> Status: DRAFT 6, 2026-11-10. M0–M3 built (§10–§13). Still owed: the droplet
+> run of the golden hash, and M2's watch from a second machine. Draft 1's claims were checked
 > by a fresh-context reviewer, and its findings are folded in. Open decisions are marked **D-n**
 > and collected at the end. They're yours to rule on.
 
@@ -474,3 +474,158 @@ own done-condition. It needs James at another machine.
   the sandbox. It's read-only and loopback only; an Origin check is due
   before anything leaves loopback.
 
+## 13. M3 results (2026-11-10)
+
+This section was checked by a fresh-context reviewer, which re-ran every
+evaluation. Every number reproduced. Its corrections are folded in below.
+
+**What was built.**
+- **`report`:** for each of the player's lineages, what changed since the
+  player's last report:
+  - released, born and starved, and the mean age at death
+  - energy in, upkeep, movement cost and net, per organism per tick
+  - the body: radius, mouths, flagellum power, sensors and costs
+  - plain-language notes, e.g. "has no mouth, so it can never eat",
+    "mineral-limited", "energy-starved"
+
+  An extinct lineage keeps its name and body in the report. The counts
+  come from new per-lineage counters in the sim (`World::lineages`), which
+  are observations only. They're left out of the state hash
+  (`World::hash` never reads them), and the golden hash still passes.
+- **`subscribe` / `unsubscribe`:** one-shot triggers that end a `step`
+  early, with `woke` saying which fired. Events: `population_below`,
+  `population_above`, `extinct`, `tick`.
+- **`lifeapi-mcp`:** an MCP server over stdio. It handles initialize,
+  ping, tools/list and tools/call, with eight tools, one for each player
+  op; `hello` is sent implicitly on connect.
+  - **It repairs formatting slips in `submit_genome`:** genome fields
+    given beside `genome`, JSON sent as a string, and an array given as
+    the genome (taken as its body). Each repair is reported in
+    `input_fixed`.
+  - **It refuses, by index, a body item without `part`**, e.g. "body[2]
+    has no "part"".
+  - The server's rules are untouched. A refusal comes back as a tool
+    error that names the rule; `submit_genome` refusals also include a
+    complete example call.
+- **`lifeapi-eval`:** the judge. Modes:
+  - solo
+  - `--together`: a free-for-all
+  - `--round-robin`: every pair, decided by biomass. Release order
+    alternates by seed parity, so with seeds 1, 2, 3 one side goes first
+    twice.
+
+  Scores are population and biomass (Σr²).
+- **Runners:**
+  - `tools/agent_ollama.py`: Ollama, or any OpenAI-style API such as
+    DeepSeek
+  - `tools/agent_claude.py`: headless `claude --bare` with only the
+    lifeapi tools allowed and a `--max-budget-usd` cap
+
+**The runs.** Each model played alone on a fresh sandbox (seed 42, 128²,
+target tick 12 000). The goal text was "have as many of your organisms
+alive as possible when the world reaches tick 12000", followed by the same
+round instructions. The Claude runner also adds "Stop when the world
+reaches tick 12000." All records, genomes and evaluations are in
+`runs/2026-11-10-m3/`.
+
+| Model | Loop turns* | Time | Cost | Genomes accepted | Solo eval, first → best (pop) |
+|---|---|---|---|---|---|
+| Opus 5.5 | 36 | 82 s | $0.20 | 6 | 887 → 3 306 |
+| Fable 5.2 | 46 | 669 s | $3.69 | 6 | 721 → 3 306 |
+| DeepSeek V4 Pro | 32 | 912 s | — | 8 | 355 → 458 (best of 8; the last was 349) |
+| qwen3.5:4b, run 3 | 20 | 603 s | free | 3 | 0, 0, 0 (no mouth) |
+
+\* Claude Code's `num_turns` for the Claude runs, and the runner's loop
+count for the others. Costs are Claude Code's `total_cost_usd`. DeepSeek
+used 753 k prompt and 54 k completion tokens; its cost wasn't computed.
+qwen's run ran on past the target, to tick 18 000.
+
+**What the runs showed.**
+- **Solo scores improved; in-game populations didn't.** Judged alone in a
+  fresh pool, Opus's genomes rose 887 → 1 077 → 1 612 → 1 579 → 2 050 →
+  3 306, and Fable's later genomes also beat its first. In their own
+  worlds, though, neither raised its population by redesign:
+  - **The pool was sugar-capped from about tick 2 000.** Fable's first
+    lineage held 730–756 throughout. Its genomes 2–5 had zero births and
+    all their founders starved against it.
+  - **Opus's drifter3 established itself** (about 235 alive) while its
+    first lineage shrank, so the world total stayed near 970–985. Its
+    drifter4 and drifter5 went extinct.
+  - **Both final genomes (3 306 solo) were founder dumps** released at
+    ticks 11 750–11 950, purely to be alive at the deadline. Opus said
+    they "only needed to survive 250 ticks".
+  - **So M3's condition ("improves its lineage from a report") is only
+    partly met.** The agents read the reports correctly and designed
+    genomes that are better alone. In a full world, a newcomer has to beat
+    the incumbent, and none did. The next test needs a fresh pool per
+    design, or a lineage replaced in place.
+- **DeepSeek:** its best genome (seed3) was +29 % over its first, but later
+  genomes fell back. seed6 is seed1 renamed, and its in-game population
+  was flat (320 → 356).
+- **qwen3.5:4b, one model, three runs, with the harness fixed between
+  them:**
+  - All 3 genomes accepted in run 3 lacked a mouth.
+  - 6 of its 10 submissions included one, but they were refused for other
+    slips. The one finally accepted had dropped the mouth along with the
+    bad item.
+  - It then acknowledged the cause twice ("went extinct because it had no
+    mouth"; "I forgot to add the mouth part again!") and still submitted
+    mouthless bodies.
+  - In run 2, before the "no mouth" note existed, it blamed lack of
+    movement instead.
+  - No run exists after the last MCP fix.
+- **Two models converged on the same design.** Opus's `sitter6` and
+  Fable's `dormant-spore-v6` are the same genome apart from the name:
+  radius 2, one mouth, nothing else.
+- **The solo score was the goal I wrote, and it's gameable.** Headcount
+  rewards swarms of the smallest legal body. Biomass reverses the solo
+  ranking: Driftwhip (r 6) 20 040 > Sweeper 14 925 > sitter6 13 224.
+
+**Head-to-head** (`runs/2026-11-10-m3/tournament/`: 8 contestants, 5 000
+ticks, 3 seeds; the reviewer re-ran both and got identical results):
+
+| | grazer-v1 (Fable) | drifter5 (Opus) | glutton-v5 (Fable) | grazer1 (Opus) | sitter6 | seed3 (DeepSeek) | Sweeper (bot) | Driftwhip |
+|---|---|---|---|---|---|---|---|---|
+| Round-robin wins (of 21) | **21** | 18 | 15 | 12 | 9 | 6 | 2 | 1 |
+| Free-for-all biomass | **2 772** | 331† | 15 | 0 | 0 | 0 | 0 | 0 |
+
+† drifter5's 331 is one seed's survival (988, 0, 4).
+
+- **The champion is Fable's first genome, `grazer-v1`.**
+  - **Body:** radius 2, flagellum 0.5, cilia 0.5, two mouths, and sugar
+    sensors at ±45°.
+  - **Brain, hand-wired by Fable:** h = tanh(4·(s₊₄₅ − s₋₄₅)), turn =
+    tanh(2h), thrust = tanh(1). That's a Braitenberg-style gradient
+    follower.
+  - Its solo headcount was Fable's lowest (721), yet it is undefeated in
+    duels. Fable's closing summary described it as the only design that
+    held its ground.
+  - Why it wins is not measured yet. The hypothesis is that it takes the
+    sugar first; per-lineage `energy_in` in a duel would settle it.
+- **The design alone doesn't explain the win.** DeepSeek's `seed3` uses a
+  similar recipe (radius 2, two mouths, hand-set steering weights) and
+  placed 6th, losing 3–0 to the passive sitter6. The details of the brain
+  matter.
+- **sitter6 (9/21) loses to the strong foragers.** It starves completely
+  against grazer-v1 and loses on biomass to grazer1. It beats the weaker
+  ones (seed3, Sweeper, Driftwhip).
+
+**Consequences for M4.**
+- The arena scores head-to-head or free-for-all, and states its scoring
+  rule in the goal. Solo scores are a side stat.
+- The arena's "improvement" metric must be measured in the shared world,
+  not by the solo judge.
+- Patchy, moving food and predation (§8) are the planned counters to
+  passive and swarm strategies.
+
+**Fixed along the way, each found by watching a run.**
+- A flattened genome looped the model, and stringified JSON was refused.
+  Both are now repaired by the MCP layer.
+- Extinct lineages lost their names in `report`.
+- "missing field `part`" didn't say which body item.
+- The runner saved genomes before repair, so qwen's run-3 genomes were
+  re-extracted from its transcript (`genomes-as-accepted/`).
+
+The reviewer also found that `tools/agent_claude.py` saved a genome only
+when `genome` arrived as an object. It now uses the same `saved_genome`
+repair as the Ollama runner. It hadn't missed anything in these runs.

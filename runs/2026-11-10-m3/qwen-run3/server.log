@@ -1,0 +1,2 @@
+lifeapi-server: sandbox seed 42, API on 127.0.0.1:4347
+lifeapi-server: viewer on http://127.0.0.1:4384/

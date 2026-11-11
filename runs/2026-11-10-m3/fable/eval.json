@@ -1,0 +1,83 @@
+{
+  "founders": 60,
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-fable/genomes/01.json",
+      "mean_biomass": 2882.6666666666665,
+      "mean_population": 720.6666666666666,
+      "name": "grazer-v1",
+      "per_seed": [
+        721,
+        715,
+        726
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-fable/genomes/02.json",
+      "mean_biomass": 7836.0,
+      "mean_population": 1959.0,
+      "name": "frugal-v2",
+      "per_seed": [
+        1955,
+        1959,
+        1963
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-fable/genomes/03.json",
+      "mean_biomass": 3758.6666666666665,
+      "mean_population": 939.6666666666666,
+      "name": "lean-seeker-v3",
+      "per_seed": [
+        922,
+        906,
+        991
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-fable/genomes/04.json",
+      "mean_biomass": 5090.666666666667,
+      "mean_population": 1272.6666666666667,
+      "name": "sitter-v4",
+      "per_seed": [
+        1292,
+        1275,
+        1251
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-fable/genomes/05.json",
+      "mean_biomass": 9341.333333333334,
+      "mean_population": 2335.3333333333335,
+      "name": "glutton-v5",
+      "per_seed": [
+        2252,
+        2401,
+        2353
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-fable/genomes/06.json",
+      "mean_biomass": 13224.0,
+      "mean_population": 3306.0,
+      "name": "dormant-spore-v6",
+      "per_seed": [
+        3507,
+        3112,
+        3299
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000
+}

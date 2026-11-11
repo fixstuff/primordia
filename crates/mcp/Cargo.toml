@@ -1,0 +1,12 @@
+[package]
+name = "lifeapi-mcp"
+version = "0.1.0"
+edition = "2021"
+description = "LifeAPI as an MCP server over stdio: any MCP client can play."
+
+[dependencies]
+lifeapi-server = { path = "../server" }
+serde_json = { version = "1", features = ["float_roundtrip"] }
+
+[dev-dependencies]
+lifeapi-sim = { path = "../sim" }

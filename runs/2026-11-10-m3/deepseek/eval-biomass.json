@@ -1,0 +1,107 @@
+{
+  "founders": 60,
+  "results": [
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/deepseek/genomes/01.json",
+      "mean_biomass": 1420.0,
+      "mean_population": 355.0,
+      "name": "seed1",
+      "per_seed": [
+        369,
+        356,
+        340
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/deepseek/genomes/02.json",
+      "mean_biomass": 1786.6666666666667,
+      "mean_population": 446.6666666666667,
+      "name": "seed2",
+      "per_seed": [
+        330,
+        625,
+        385
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "runs/2026-11-10-m3/deepseek/genomes/03.json",
+      "mean_biomass": -0.0,
+      "mean_population": 0.0,
+      "name": "signtest",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/deepseek/genomes/04.json",
+      "mean_biomass": 1830.6666666666667,
+      "mean_population": 457.6666666666667,
+      "name": "seed3",
+      "per_seed": [
+        474,
+        436,
+        463
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/deepseek/genomes/05.json",
+      "mean_biomass": 1524.0,
+      "mean_population": 381.0,
+      "name": "seed4",
+      "per_seed": [
+        397,
+        386,
+        360
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/deepseek/genomes/06.json",
+      "mean_biomass": 1382.6666666666667,
+      "mean_population": 345.6666666666667,
+      "name": "seed5",
+      "per_seed": [
+        370,
+        329,
+        338
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/deepseek/genomes/07.json",
+      "mean_biomass": 1420.0,
+      "mean_population": 355.0,
+      "name": "seed6",
+      "per_seed": [
+        369,
+        356,
+        340
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/deepseek/genomes/08.json",
+      "mean_biomass": 1394.6666666666667,
+      "mean_population": 348.6666666666667,
+      "name": "seed7",
+      "per_seed": [
+        352,
+        351,
+        343
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000
+}

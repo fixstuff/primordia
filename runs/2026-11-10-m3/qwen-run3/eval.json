@@ -1,0 +1,23 @@
+{
+  "founders": 60,
+  "results": [
+    {
+      "error": "missing field `schema`",
+      "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run3-qwen35-4b/genomes/01.json"
+    },
+    {
+      "error": "missing field `schema`",
+      "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run3-qwen35-4b/genomes/02.json"
+    },
+    {
+      "error": "missing field `schema`",
+      "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run3-qwen35-4b/genomes/03.json"
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000
+}

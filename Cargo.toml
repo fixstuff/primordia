@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/sim", "crates/server"]
+members = ["crates/sim", "crates/server", "crates/mcp"]
 
 [profile.release]
 debug = 1

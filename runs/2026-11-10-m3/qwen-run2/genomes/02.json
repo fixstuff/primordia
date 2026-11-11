@@ -1,0 +1,15 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  }
+ ],
+ "brain": {
+  "hidden": 8
+ },
+ "mutation": {
+  "rate": 0.3,
+  "size": 0.2
+ }
+}

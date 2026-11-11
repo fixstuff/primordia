@@ -43,12 +43,48 @@ enum Request {
         limit: Option<usize>,
     },
     Step { ticks: u64 },
+    Report,
+    Subscribe {
+        event: Event,
+        #[serde(default)]
+        lineage: Option<u32>,
+        #[serde(default)]
+        value: Option<u64>,
+    },
+    Unsubscribe { id: u64 },
+}
+
+#[derive(Deserialize, Debug, Clone, Copy, PartialEq, serde::Serialize)]
+#[serde(rename_all = "snake_case")]
+pub enum Event {
+    /// Lineage has fewer than `value` alive.
+    PopulationBelow,
+    /// Lineage has more than `value` alive.
+    PopulationAbove,
+    /// Lineage has none alive.
+    Extinct,
+    /// The world reached tick `value`.
+    Tick,
+}
+
+#[derive(Clone, Debug)]
+struct Sub {
+    id: u64,
+    event: Event,
+    lineage: u32,
+    value: u64,
 }
 
 struct Player {
     name: String,
     budget: f64,
+    /// Lineage counters at the last `report`, to report the difference.
+    last_report: Vec<(u32, lifeapi_sim::world::LineageStats)>,
+    last_report_tick: u64,
+    subs: Vec<Sub>,
 }
+
+pub const MAX_SUBSCRIPTIONS: usize = 32;
 
 /// One point of the population graph.
 #[derive(Clone, Debug, serde::Serialize)]
@@ -74,6 +110,7 @@ pub struct Game {
     version: u64,
     history: Vec<HistPoint>,
     hist_every: u64,
+    next_sub: u64,
 }
 
 impl Game {
@@ -87,6 +124,7 @@ impl Game {
             version: 0,
             history: Vec::new(),
             hist_every: 50,
+            next_sub: 0,
         };
         g.sample_history();
         g
@@ -152,7 +190,8 @@ impl Game {
         let reply = match serde_json::from_str::<Request>(line) {
             Err(e) => self.err(format!(
                 "bad request: {e}. Ops: hello{{name}}, catalog, submit_genome{{genome}}, \
-                 release{{species,count}}, observe{{limit?}}, step{{ticks}}"
+                 release{{species,count}}, observe{{limit?}}, step{{ticks}}, report, \
+                 subscribe{{event,lineage?,value?}}, unsubscribe{{id}}"
             )),
             Ok(Request::Hello { name }) => {
                 if player.is_some() {
@@ -160,7 +199,13 @@ impl Game {
                 } else if name.is_empty() || name.len() > 64 {
                     self.err("hello: name must be 1..=64 bytes".into())
                 } else {
-                    self.players.push(Player { name, budget: BUDGET_START });
+                    self.players.push(Player {
+                        name,
+                        budget: BUDGET_START,
+                        last_report: Vec::new(),
+                        last_report_tick: self.world.tick,
+                        subs: Vec::new(),
+                    });
                     let id = self.players.len() - 1;
                     player = Some(id);
                     self.ok(json!({
@@ -316,19 +361,244 @@ impl Game {
                 if ticks == 0 || ticks > MAX_STEP {
                     return self.err(format!("step: ticks must be 1..={MAX_STEP}"));
                 }
-                for _ in 0..ticks {
+                let mut stepped = 0;
+                let mut woke = Vec::new();
+                while stepped < ticks {
                     self.world.tick();
+                    stepped += 1;
                     if self.world.tick % self.hist_every == 0 {
                         self.sample_history();
+                    }
+                    woke = self.fired(p);
+                    if !woke.is_empty() {
+                        break;
                     }
                 }
                 self.version += 1;
                 for pl in self.players.iter_mut() {
-                    pl.budget = (pl.budget + BUDGET_PER_TICK * ticks as f64).min(BUDGET_CAP);
+                    pl.budget = (pl.budget + BUDGET_PER_TICK * stepped as f64).min(BUDGET_CAP);
                 }
-                self.ok(json!({"stepped": ticks, "population": self.world.orgs.len()}))
+                let woke_ids: Vec<u64> = woke.iter().map(|s| s.id).collect();
+                self.players[p].subs.retain(|s| !woke_ids.contains(&s.id));
+                let woke: Vec<Value> = woke
+                    .iter()
+                    .map(|s| json!({"id": s.id, "event": s.event, "lineage": s.lineage, "value": s.value}))
+                    .collect();
+                self.ok(json!({"stepped": stepped, "population": self.world.orgs.len(), "woke": woke}))
+            }
+            Request::Report => self.report(p),
+            Request::Subscribe { event, lineage, value } => {
+                if self.players[p].subs.len() >= MAX_SUBSCRIPTIONS {
+                    return self.err(format!("subscribe: at most {MAX_SUBSCRIPTIONS} subscriptions"));
+                }
+                let needs_lineage = event != Event::Tick;
+                let lineage = match (needs_lineage, lineage) {
+                    (true, None) => return self.err("subscribe: this event needs a lineage".into()),
+                    (true, Some(l)) if self.lineage_owner.get(l as usize).copied().flatten() != Some(p) => {
+                        return self.err(format!("subscribe: lineage {l} is not yours"))
+                    }
+                    (_, l) => l.unwrap_or(0),
+                };
+                let value = match (event, value) {
+                    (Event::Extinct, _) => 0,
+                    (_, Some(v)) => v,
+                    (_, None) => return self.err("subscribe: this event needs a value".into()),
+                };
+                if event == Event::Tick && value <= self.world.tick {
+                    return self.err(format!("subscribe: tick {value} is not in the future (now {})", self.world.tick));
+                }
+                self.next_sub += 1;
+                let id = self.next_sub;
+                let sub = Sub { id, event, lineage, value };
+                let now = self.sub_true(&sub);
+                self.players[p].subs.push(sub);
+                self.ok(json!({"id": id, "true_now": now,
+                    "note": "one-shot: a step stops at the end of the first tick this is true, and the subscription is removed"}))
+            }
+            Request::Unsubscribe { id } => {
+                let before = self.players[p].subs.len();
+                self.players[p].subs.retain(|s| s.id != id);
+                if self.players[p].subs.len() == before {
+                    self.err(format!("unsubscribe: no subscription {id}"))
+                } else {
+                    self.ok(json!({"removed": id}))
+                }
             }
         }
+    }
+
+    fn alive(&self, lineage: u32) -> u64 {
+        self.world.lineages.get(lineage as usize).map_or(0, |l| l.alive as u64)
+    }
+
+    fn sub_true(&self, s: &Sub) -> bool {
+        match s.event {
+            Event::PopulationBelow => self.alive(s.lineage) < s.value,
+            Event::PopulationAbove => self.alive(s.lineage) > s.value,
+            Event::Extinct => self.alive(s.lineage) == 0,
+            Event::Tick => self.world.tick >= s.value,
+        }
+    }
+
+    /// The stepping player's subscriptions that are true now.
+    fn fired(&self, p: usize) -> Vec<Sub> {
+        self.players[p].subs.iter().filter(|s| self.sub_true(s)).cloned().collect()
+    }
+
+    /// What happened to the player's lineages since their last report,
+    /// as numbers plus plain sentences written for a model to read.
+    fn report(&mut self, p: usize) -> String {
+        let now = self.world.tick;
+        let since = self.players[p].last_report_tick;
+        let mine: Vec<u32> = self
+            .lineage_owner
+            .iter()
+            .enumerate()
+            .filter(|(_, o)| **o == Some(p))
+            .map(|(i, _)| i as u32)
+            .collect();
+        // Current energy and material per lineage, from the living.
+        let mut cur: Vec<(f64, f64, u32)> = vec![(0.0, 0.0, 0); self.world.lineages.len()];
+        for o in &self.world.orgs {
+            let ph = &self.world.species[o.species as usize].phen;
+            let c = &mut cur[o.lineage as usize];
+            c.0 += (o.energy / ph.capacity) as f64;
+            c.1 += (o.material / ph.child_material) as f64;
+            c.2 += 1;
+        }
+        let split = self.world.cfg.split_frac as f64;
+        let mut lineages = Vec::new();
+        let mut notes = Vec::new();
+        let mut snapshot = Vec::new();
+        for &l in &mine {
+            let now_s = self.world.lineages[l as usize].clone();
+            let before = self.players[p]
+                .last_report
+                .iter()
+                .find(|(id, _)| *id == l)
+                .map(|(_, s)| s.clone())
+                .unwrap_or_default();
+            snapshot.push((l, now_s.clone()));
+            let d = |a: u64, b: u64| a.saturating_sub(b);
+            let born = d(now_s.born, before.born);
+            let starved = d(now_s.starved, before.starved);
+            let released = d(now_s.released, before.released);
+            let ot = d(now_s.org_ticks, before.org_ticks);
+            let per = |a: f64, b: f64| if ot == 0 { 0.0 } else { (a - b) / ot as f64 };
+            let e_in = per(now_s.energy_in, before.energy_in);
+            let upkeep = per(now_s.upkeep, before.upkeep);
+            let movement = per(now_s.movement, before.movement);
+            let speed = per(now_s.distance, before.distance);
+            let net = e_in - upkeep - movement;
+            let age_at_death = if starved == 0 {
+                None
+            } else {
+                Some(d(now_s.age_at_death_sum, before.age_at_death_sum) as f64 / starved as f64)
+            };
+            let (es, ms, n) = cur[l as usize];
+            let mean_energy = if n == 0 { None } else { Some(es / n as f64) };
+            let mean_material = if n == 0 { None } else { Some(ms / n as f64) };
+            let alive_before = before.alive as i64;
+            let species = now_s.species;
+            let ph = self.world.species[species as usize].phen.clone();
+            let name = Some(self.world.species[species as usize].genome.name.clone());
+            lineages.push(json!({
+                "lineage": l, "species": species, "genome_name": name,
+                "body": {
+                    "radius": ph.radius, "mouths": ph.mouths, "flagellum_power": ph.thrust,
+                    "chemo_sensors": ph.sensors.len(), "capacity": ph.capacity,
+                    "upkeep_per_tick": ph.upkeep, "child_material": ph.child_material,
+                },
+                "alive": now_s.alive, "alive_at_last_report": before.alive,
+                "released": released, "born": born, "starved": starved,
+                "mean_age_at_death": age_at_death,
+                "per_organism_per_tick": {
+                    "energy_in": e_in, "upkeep": upkeep, "movement": movement, "net": net, "speed": speed,
+                },
+                "births_per_1000_organism_ticks": if ot == 0 { 0.0 } else { born as f64 * 1000.0 / ot as f64 },
+                "mean_energy_fraction_now": mean_energy,
+                "mean_material_fraction_of_child_now": mean_material,
+            }));
+            let tag = format!("Lineage {l}{}", name.as_deref().map(|n| format!(" ({n})")).unwrap_or_default());
+            let reported = now_s.alive > 0 || alive_before > 0 || released > 0;
+            // Facts about the body that decide its fate, stated plainly.
+            if reported {
+                if ph.mouths == 0 {
+                    notes.push(format!("{tag} has no mouth, so it can never eat: it can only starve. Add {{\"part\": \"mouth\"}}."));
+                }
+                if ph.thrust == 0.0 {
+                    notes.push(format!(
+                        "{tag} has no flagellum (or zero power), so it cannot move: it only eats what is in the cell it sits on."
+                    ));
+                }
+                if ph.sensors.is_empty() {
+                    notes.push(format!("{tag} has no chemo_sensor, so its brain gets no information about where food is."));
+                }
+            }
+            if now_s.alive == 0 {
+                if alive_before > 0 || released > 0 {
+                    notes.push(format!("{tag} went extinct: {starved} starved since the last report."));
+                }
+                continue;
+            }
+            notes.push(format!(
+                "{tag}: {} alive ({:+} since the last report). {born} born, {starved} starved{}.",
+                now_s.alive,
+                now_s.alive as i64 - alive_before,
+                age_at_death.map(|a| format!(", dying at {a:.0} ticks old on average")).unwrap_or_default()
+            ));
+            if ot > 0 {
+                notes.push(format!(
+                    "{tag} energy per organism per tick: {e_in:.4} eaten, {upkeep:.4} upkeep, {movement:.4} moving, net {net:+.4}."
+                ));
+            }
+            if let (Some(e), Some(m)) = (mean_energy, mean_material) {
+                if e >= split * 0.9 && m < 1.0 {
+                    notes.push(format!(
+                        "{tag} is mineral-limited: organisms average {:.0}% energy (division needs {:.0}%) \
+                         but only {:.0}% of the mineral a child needs. More mineral intake, or a smaller body \
+                         (child_material = 0.1*r^2), would speed division.",
+                        e * 100.0, split * 100.0, m * 100.0
+                    ));
+                } else if e < 0.3 {
+                    notes.push(format!(
+                        "{tag} is energy-starved: organisms average {:.0}% of capacity. Cheaper upkeep, \
+                         better food-finding (sensors) or more mouths would help.",
+                        e * 100.0
+                    ));
+                }
+            }
+        }
+        let room = self.world.cfg.max_population.saturating_sub(self.world.orgs.len());
+        if room < self.world.cfg.max_population / 10 {
+            notes.push(format!("The pool is nearly full: room for {room} more organisms in total."));
+        }
+        if mine.is_empty() {
+            notes.push("You have no lineages yet: submit_genome, then release.".into());
+        }
+        let pl = &mut self.players[p];
+        pl.last_report = snapshot;
+        pl.last_report_tick = now;
+        let mine_alive: u64 = mine.iter().map(|&l| self.world.lineages[l as usize].alive as u64).sum();
+        let subs: Vec<Value> = self.players[p]
+            .subs
+            .iter()
+            .map(|s| json!({"id": s.id, "event": s.event, "lineage": s.lineage, "value": s.value}))
+            .collect();
+        self.ok(json!({
+            "since_tick": since,
+            "world": {
+                "population": self.world.orgs.len(),
+                "yours": mine_alive,
+                "others": self.world.orgs.len() as u64 - mine_alive,
+                "sugar_total": self.world.grid.total(0),
+                "mineral_total": self.world.grid.total(1),
+                "deaths_cause": "every death is starvation (energy reached 0)",
+            },
+            "lineages": lineages,
+            "subscriptions": subs,
+            "notes": notes,
+        }))
     }
 
     fn ok(&self, mut body: Value) -> String {
@@ -539,6 +809,88 @@ mod tests {
         }
         let (r, _) = call(&mut g, a, r#"{"op":"step","ticks":7}"#);
         assert_eq!(r["tick"], 7);
+    }
+
+    fn founder_lineage(g: &mut Game) -> (Option<usize>, u64) {
+        let (_, a) = call(g, None, r#"{"op":"hello","name":"a"}"#);
+        let (r, _) = call(g, a, &format!(r#"{{"op":"submit_genome","genome":{}}}"#, scenario::FOUNDER));
+        let sp = r["species"].as_u64().unwrap();
+        let (r, _) = call(g, a, &format!(r#"{{"op":"release","species":{sp},"count":40}}"#));
+        (a, r["lineage"].as_u64().unwrap())
+    }
+
+    #[test]
+    fn report_gives_numbers_notes_and_resets() {
+        let mut g = game();
+        let (a, l) = founder_lineage(&mut g);
+        call(&mut g, a, r#"{"op":"step","ticks":400}"#);
+        let (r, _) = call(&mut g, a, r#"{"op":"report"}"#);
+        assert_eq!(r["since_tick"], 0);
+        let ln = &r["lineages"][0];
+        assert_eq!(ln["lineage"], l);
+        assert_eq!(ln["released"], 40);
+        let alive = ln["alive"].as_u64().unwrap();
+        assert_eq!(alive, 40 + ln["born"].as_u64().unwrap() - ln["starved"].as_u64().unwrap());
+        assert!(ln["per_organism_per_tick"]["energy_in"].as_f64().unwrap() > 0.0, "{r}");
+        let notes: Vec<&str> = r["notes"].as_array().unwrap().iter().map(|n| n.as_str().unwrap()).collect();
+        assert!(notes.iter().any(|n| n.contains("energy per organism per tick")), "{notes:?}");
+        // A second report covers only what happened since the first.
+        call(&mut g, a, r#"{"op":"step","ticks":100}"#);
+        let (r2, _) = call(&mut g, a, r#"{"op":"report"}"#);
+        assert_eq!(r2["since_tick"], 400);
+        assert_eq!(r2["lineages"][0]["released"], 0);
+        assert_eq!(r2["lineages"][0]["alive_at_last_report"], alive);
+    }
+
+    #[test]
+    fn subscriptions_stop_a_step_early_once() {
+        let mut g = game();
+        let (a, l) = founder_lineage(&mut g);
+        let (r, _) = call(&mut g, a, r#"{"op":"subscribe","event":"tick","value":250}"#);
+        let tick_sub = r["id"].as_u64().unwrap();
+        let (r, _) = call(&mut g, a, r#"{"op":"step","ticks":1000}"#);
+        assert_eq!(r["tick"], 250, "{r}");
+        assert_eq!(r["stepped"], 250);
+        assert_eq!(r["woke"][0]["id"], tick_sub);
+        // One-shot: the next step runs its full length.
+        let (r, _) = call(&mut g, a, r#"{"op":"step","ticks":100}"#);
+        assert_eq!(r["stepped"], 100);
+        assert_eq!(r["woke"].as_array().unwrap().len(), 0);
+        // population_above on a growing lineage fires; on someone else's is refused.
+        let (r, _) = call(&mut g, a, &format!(r#"{{"op":"subscribe","event":"population_above","lineage":{l},"value":1000000}}"#));
+        let never = r["id"].as_u64().unwrap();
+        assert_eq!(r["true_now"], false);
+        let (r, _) = call(&mut g, a, &format!(r#"{{"op":"unsubscribe","id":{never}}}"#));
+        assert_eq!(r["removed"], never);
+        let (_, b) = call(&mut g, None, r#"{"op":"hello","name":"b"}"#);
+        let (r, _) = call(&mut g, b, &format!(r#"{{"op":"subscribe","event":"extinct","lineage":{l}}}"#));
+        assert!(r["error"].as_str().unwrap().contains("not yours"), "{r}");
+        let (r, _) = call(&mut g, a, r#"{"op":"subscribe","event":"tick","value":5}"#);
+        assert!(r["error"].as_str().unwrap().contains("not in the future"), "{r}");
+    }
+
+    #[test]
+    fn extinction_wakes_the_player() {
+        // A body that can't eat starves: no mouth.
+        let mut g = game();
+        let (_, a) = call(&mut g, None, r#"{"op":"hello","name":"a"}"#);
+        let mouthless = r#"{"schema":"lifeapi.genome/1","name":"Mouthless","body":[{"part":"membrane","radius":6},{"part":"flagellum","power":1.0}],"brain":{"hidden":2},"mutation":{"rate":0,"size":0}}"#;
+        let (r, _) = call(&mut g, a, &format!(r#"{{"op":"submit_genome","genome":{mouthless}}}"#));
+        let sp = r["species"].as_u64().unwrap();
+        let (r, _) = call(&mut g, a, &format!(r#"{{"op":"release","species":{sp},"count":10}}"#));
+        let l = r["lineage"].as_u64().unwrap();
+        call(&mut g, a, &format!(r#"{{"op":"subscribe","event":"extinct","lineage":{l}}}"#));
+        let (r, _) = call(&mut g, a, r#"{"op":"step","ticks":10000}"#);
+        assert!(r["stepped"].as_u64().unwrap() < 10000, "{r}");
+        assert_eq!(r["woke"][0]["event"], "extinct");
+        let (r, _) = call(&mut g, a, r#"{"op":"report"}"#);
+        let notes = r["notes"].to_string();
+        assert!(notes.contains("went extinct"), "{notes}");
+        // The extinct lineage still has its name and body, and the notes say why.
+        assert_eq!(r["lineages"][0]["genome_name"], "Mouthless");
+        assert_eq!(r["lineages"][0]["body"]["mouths"], 0);
+        assert!(notes.contains("has no mouth"), "{notes}");
+        assert!(notes.contains("no chemo_sensor"), "{notes}");
     }
 
     #[test]

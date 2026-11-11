@@ -1,0 +1,45 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |     28s] '' calls=['observe']
+[turn  3 | tick      0 |    168s] '' calls=['submit_genome']
+[turn  4 | tick      0 |    177s] '' calls=['release', 'subscribe']
+[turn  5 | tick      0 |    179s] '' calls=['step']
+[turn  6 | tick   2000 |    182s] '' calls=['observe', 'report']
+[turn  7 | tick   2000 |    273s] '' calls=['submit_genome']
+[turn  8 | tick   2000 |    283s] '' calls=['release', 'subscribe']
+[turn  9 | tick   2000 |    285s] '' calls=['step']
+[turn 10 | tick   4000 |    288s] '' calls=['observe', 'report']
+[turn 11 | tick   4000 |    393s] '' calls=['submit_genome']
+[turn 12 | tick   4000 |    395s] '' calls=['release', 'observe']
+[turn 13 | tick   4000 |    398s] '' calls=['observe']
+[turn 14 | tick   4000 |    426s] '' calls=['submit_genome']
+[turn 15 | tick   4000 |    432s] '' calls=['release', 'subscribe']
+[turn 16 | tick   4000 |    434s] '' calls=['step']
+[turn 17 | tick   6000 |    436s] '' calls=['observe', 'report']
+[turn 18 | tick   6000 |    503s] '' calls=['catalog']
+[turn 19 | tick   6000 |    634s] '' calls=['submit_genome']
+[turn 20 | tick   6000 |    637s] '' calls=['release', 'subscribe']
+[turn 21 | tick   6000 |    639s] '' calls=['step']
+[turn 22 | tick   8000 |    644s] '' calls=['observe', 'report']
+[turn 23 | tick   8000 |    730s] '' calls=['submit_genome', 'submit_genome']
+[turn 24 | tick   8000 |    734s] '' calls=['release', 'release', 'subscribe']
+[turn 25 | tick   8000 |    737s] '' calls=['step']
+[turn 26 | tick  10000 |    740s] '' calls=['observe', 'report']
+[turn 27 | tick  10000 |    866s] '' calls=['submit_genome']
+[turn 28 | tick  10000 |    870s] '' calls=['release', 'subscribe']
+[turn 29 | tick  10000 |    873s] '' calls=['step']
+[turn 30 | tick  11000 |    875s] '' calls=['observe', 'report']
+[turn 31 | tick  11000 |    909s] '' calls=['release', 'subscribe']
+[turn 32 | tick  11000 |    911s] '' calls=['step']
+
+ended at tick 12000 after 32 turns, 8 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 seed1                    submitted at tick      0: 355.0
+  # 2 seed2                    submitted at tick   2000: 446.6666666666667
+  # 3 signtest                 submitted at tick   4000: 0.0
+  # 4 seed3                    submitted at tick   4000: 457.6666666666667
+  # 5 seed4                    submitted at tick   6000: 381.0
+  # 6 seed5                    submitted at tick   8000: 345.6666666666667
+  # 7 seed6                    submitted at tick   8000: 355.0
+  # 8 seed7                    submitted at tick  10000: 348.6666666666667
+exit 0

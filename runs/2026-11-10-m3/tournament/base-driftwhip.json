@@ -1,0 +1,14 @@
+{
+  "schema": "lifeapi.genome/1",
+  "name": "Driftwhip",
+  "body": [
+    {"part": "membrane", "radius":6},
+    {"part": "flagellum", "power": 0.6},
+    {"part": "cilia", "power": 0.5},
+    {"part": "mouth"},
+    {"part": "chemo_sensor", "angle": -30, "chemical": "sugar"},
+    {"part": "chemo_sensor", "angle": 30, "chemical": "sugar"}
+  ],
+  "brain": {"hidden":6},
+  "mutation": {"rate": 0.05, "size": 0.3}
+}

@@ -1,0 +1,23 @@
+[
+ {
+  "n": 1,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run3-qwen35-4b/genomes/01.json",
+  "name": null,
+  "species": 0,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run3-qwen35-4b/genomes/02.json",
+  "name": null,
+  "species": 1,
+  "tick": 2000
+ },
+ {
+  "n": 3,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run3-qwen35-4b/genomes/03.json",
+  "name": null,
+  "species": 2,
+  "tick": 10000
+ }
+]

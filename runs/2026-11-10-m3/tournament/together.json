@@ -1,0 +1,102 @@
+{
+  "founders": 60,
+  "mode": "together",
+  "note": "all released at tick 0 into one pool, ranked by biomass",
+  "rejected": [],
+  "results": [
+    {
+      "file": "runs/2026-11-10-m3/tournament/fable-grazer-v1.json",
+      "mean_biomass": 2772.0,
+      "mean_population": 693.0,
+      "name": "grazer-v1",
+      "per_seed_biomass": [
+        2536.0,
+        2892.0,
+        2888.0
+      ]
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/opus-drifter5.json",
+      "mean_biomass": 330.6666666666667,
+      "mean_population": 82.66666666666667,
+      "name": "drifter5",
+      "per_seed_biomass": [
+        988.0,
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/fable-glutton-v5.json",
+      "mean_biomass": 14.666666666666666,
+      "mean_population": 3.6666666666666665,
+      "name": "glutton-v5",
+      "per_seed_biomass": [
+        28.0,
+        4.0,
+        12.0
+      ]
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/base-driftwhip.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "Driftwhip",
+      "per_seed_biomass": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/bot-sweeper.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "Sweeper",
+      "per_seed_biomass": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/deepseek-seed3.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "seed3",
+      "per_seed_biomass": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/opus-grazer1.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "grazer1",
+      "per_seed_biomass": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "file": "runs/2026-11-10-m3/tournament/opus-sitter6.json",
+      "mean_biomass": 0.0,
+      "mean_population": 0.0,
+      "name": "sitter6",
+      "per_seed_biomass": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000
+}

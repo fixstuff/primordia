@@ -1,0 +1,58 @@
+[
+ {
+  "n": 1,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-deepseek/genomes/01.json",
+  "name": "seed1",
+  "species": 0,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-deepseek/genomes/02.json",
+  "name": "seed2",
+  "species": 1,
+  "tick": 2000
+ },
+ {
+  "n": 3,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-deepseek/genomes/03.json",
+  "name": "signtest",
+  "species": 2,
+  "tick": 4000
+ },
+ {
+  "n": 4,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-deepseek/genomes/04.json",
+  "name": "seed3",
+  "species": 3,
+  "tick": 4000
+ },
+ {
+  "n": 5,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-deepseek/genomes/05.json",
+  "name": "seed4",
+  "species": 4,
+  "tick": 6000
+ },
+ {
+  "n": 6,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-deepseek/genomes/06.json",
+  "name": "seed5",
+  "species": 5,
+  "tick": 8000
+ },
+ {
+  "n": 7,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-deepseek/genomes/07.json",
+  "name": "seed6",
+  "species": 6,
+  "tick": 8000
+ },
+ {
+  "n": 8,
+  "file": "/tmp/claude-1000/-home-james-projects-SporeAI/18c89e9e-43f1-4a62-8de5-3fd7483f3900/scratchpad/run-deepseek/genomes/08.json",
+  "name": "seed7",
+  "species": 7,
+  "tick": 10000
+ }
+]

@@ -45,6 +45,28 @@ fn golden_hash_matches() {
     );
 }
 
+/// The per-lineage counters (outside the hash) must agree with the world.
+#[test]
+fn lineage_counters_agree_with_the_world() {
+    let mut w = scenario::golden();
+    let sp = w.species.len() as u32 - 1;
+    w.release(sp, 40).unwrap(); // a second lineage, so there's more than one to check
+    for _ in 0..3_000 {
+        w.tick();
+    }
+    let mut live = vec![0u32; w.lineages.len()];
+    for o in &w.orgs {
+        live[o.lineage as usize] += 1;
+    }
+    for (id, ls) in w.lineages.iter().enumerate().skip(1) {
+        assert_eq!(ls.alive, live[id], "lineage {id}");
+        assert_eq!(ls.released + ls.born - ls.starved, ls.alive as u64, "lineage {id}");
+        assert!(ls.org_ticks > 0 && ls.energy_in > 0.0, "lineage {id}: {ls:?}");
+    }
+    let (born, starved): (u64, u64) = w.lineages.iter().map(|l| (l.born, l.starved)).fold((0, 0), |a, b| (a.0 + b.0, a.1 + b.1));
+    assert_eq!((born, starved), (w.stats.births, w.stats.deaths));
+}
+
 #[test]
 fn same_seed_twice_same_hash() {
     assert_eq!(run(2_000).hash(), run(2_000).hash());

@@ -1,0 +1,6 @@
+[turn  1 | tick      0 |     30s] '' calls=['catalog']
+[turn  2 | tick      0 |     64s] '' calls=['submit_genome']
+[turn  3 | tick      0 |     91s] '' calls=['submit_genome']
+[turn  4 | tick      0 |    113s] '' calls=['submit_genome']
+[turn  5 | tick      0 |    135s] '' calls=['submit_genome']
+[turn  6 | tick      0 |    155s] '' calls=['submit_genome']

@@ -1,0 +1,15 @@
+{
+  "schema": "lifeapi.genome/1",
+  "name": "Sweeper",
+  "body": [
+    {"part": "membrane", "radius": 5},
+    {"part": "flagellum", "power": 0.7},
+    {"part": "cilia", "power": 0.6},
+    {"part": "mouth"},
+    {"part": "chemo_sensor", "angle": -40, "chemical": "sugar"},
+    {"part": "chemo_sensor", "angle": 0, "chemical": "sugar"},
+    {"part": "chemo_sensor", "angle": 40, "chemical": "sugar"}
+  ],
+  "brain": {"hidden": 6},
+  "mutation": {"rate": 0.05, "size": 0.3}
+}

@@ -1,0 +1,47 @@
+{
+  "founders": 60,
+  "results": [
+    {
+      "extinct": 3,
+      "file": "runs/2026-11-10-m3/qwen-run3/genomes-as-accepted/01.json",
+      "mean_biomass": -0.0,
+      "mean_population": 0.0,
+      "name": "Round1_BasicSwimmer",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "runs/2026-11-10-m3/qwen-run3/genomes-as-accepted/02.json",
+      "mean_biomass": -0.0,
+      "mean_population": 0.0,
+      "name": "Round2_EaterSwimmer",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extinct": 3,
+      "file": "runs/2026-11-10-m3/qwen-run3/genomes-as-accepted/03.json",
+      "mean_biomass": -0.0,
+      "mean_population": 0.0,
+      "name": "Round3_FoodSeeker",
+      "per_seed": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000
+}

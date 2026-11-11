@@ -1,0 +1,28 @@
+[turn  1 | tick      0 |     10s] '' calls=['catalog']
+[turn  2 | tick      0 |     58s] '' calls=['submit_genome']
+[turn  3 | tick      0 |     91s] '' calls=['submit_genome']
+[turn  4 | tick      0 |    126s] '' calls=['submit_genome']
+[turn  5 | tick      0 |    165s] '' calls=['submit_genome']
+[turn  6 | tick      0 |    203s] '' calls=['submit_genome']
+[turn  7 | tick      0 |    242s] '' calls=['submit_genome']
+[turn  8 | tick      0 |    283s] '' calls=['submit_genome']
+[turn  9 | tick      0 |    324s] '' calls=['submit_genome']
+[turn 10 | tick      0 |    349s] "Species 0 created successfully! Now I'll release about 50 founders and subscribe to tick 2000:" calls=['release']
+[turn 11 | tick      0 |    372s] '' calls=['subscribe']
+[turn 12 | tick      0 |    387s] '' calls=['step']
+[turn 13 | tick   2000 |    399s] '' calls=['report']
+[turn 14 | tick   2000 |    460s] "The first lineage went extinct because it had no mouth - organisms can't eat without one! I need to " calls=['submit_genome']
+[turn 15 | tick   2000 |    482s] '' calls=['release']
+[turn 16 | tick   2000 |    497s] '' calls=['step']
+[turn 17 | tick  10000 |    510s] '' calls=['report']
+[turn 18 | tick  10000 |    567s] 'I forgot to add the mouth part again! Let me fix that and create a proper genome with both sugar and' calls=['submit_genome']
+[turn 19 | tick  10000 |    585s] '' calls=['release']
+[turn 20 | tick  10000 |    601s] '' calls=['step']
+
+ended at tick 18000 after 20 turns, 3 genomes submitted
+
+lifeapi-eval (each genome alone, fixed seeds):
+  # 1 None                     submitted at tick      0: missing field `schema`
+  # 2 None                     submitted at tick   2000: missing field `schema`
+  # 3 None                     submitted at tick  10000: missing field `schema`
+exit 0

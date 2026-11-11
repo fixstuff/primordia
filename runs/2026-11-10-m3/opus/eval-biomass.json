@@ -1,0 +1,83 @@
+{
+  "founders": 60,
+  "results": [
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/opus/genomes/01.json",
+      "mean_biomass": 7986.0,
+      "mean_population": 887.3333333333334,
+      "name": "grazer1",
+      "per_seed": [
+        877,
+        867,
+        918
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/opus/genomes/02.json",
+      "mean_biomass": 4308.0,
+      "mean_population": 1077.0,
+      "name": "grazer2",
+      "per_seed": [
+        1133,
+        1023,
+        1075
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/opus/genomes/03.json",
+      "mean_biomass": 6446.666666666667,
+      "mean_population": 1611.6666666666667,
+      "name": "drifter3",
+      "per_seed": [
+        1646,
+        1565,
+        1624
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/opus/genomes/04.json",
+      "mean_biomass": 6317.333333333333,
+      "mean_population": 1579.3333333333333,
+      "name": "drifter4",
+      "per_seed": [
+        1561,
+        1541,
+        1636
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/opus/genomes/05.json",
+      "mean_biomass": 8198.666666666666,
+      "mean_population": 2049.6666666666665,
+      "name": "drifter5",
+      "per_seed": [
+        2007,
+        1988,
+        2154
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "runs/2026-11-10-m3/opus/genomes/06.json",
+      "mean_biomass": 13224.0,
+      "mean_population": 3306.0,
+      "name": "sitter6",
+      "per_seed": [
+        3507,
+        3112,
+        3299
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000
+}
