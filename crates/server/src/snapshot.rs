@@ -104,6 +104,8 @@ pub fn build(game: &Game, history_after: Option<u64>) -> Snapshot {
             "species_alive": species_bodies.len(),
             "evolved_alive": alive_sp.iter().enumerate().filter(|(s, a)| **a && !w.species[*s].origin.is_empty()).count(),
             "combat": w.cfg.combat.name(),
+            "name": game.world_info().get("name").cloned().unwrap_or_default(),
+            "players": game.player_names(),
             "body_evolution": w.cfg.body_mutation,
         },
         "lineages": lineages,

@@ -233,6 +233,16 @@ impl Game {
     }
 
     /// Describe the world in `catalog` (set by whoever built the world).
+    /// Every player's name, in join order (for the viewer's title screen).
+    pub fn player_names(&self) -> Vec<String> {
+        self.players.iter().map(|p| p.name.clone()).collect()
+    }
+
+    /// The world spec this game was built from (name, seed, dynamics).
+    pub fn world_info(&self) -> &Value {
+        &self.world_info
+    }
+
     pub fn set_world_info(&mut self, info: Value) {
         self.world_info = info;
     }

@@ -73,6 +73,7 @@ function connect() {
 
 function onMeta(m) {
   if (m.frame_version && m.frame_version !== FRAME_V) return staleViewer(m.frame_version);
+  renderSplash(m);
   if (m.history_reset) S.history = [];
   for (const p of m.history) S.history.push(p);
   S.meta = m;
@@ -869,9 +870,43 @@ function loop(now) {
   requestAnimationFrame(loop);
 }
 
+// ---- splash: the title screen ----------------------------------------------
+
+function renderSplash(m) {
+  const sp = $("splash");
+  if (!sp || sp.classList.contains("gone")) return;
+  const w = m.world || {};
+  const bits = [w.name ? `world ${w.name}` : null, `tick ${m.tick.toLocaleString()}`,
+    `combat ${w.combat || "off"}`, `evolution ${w.body_evolution ? Math.round(w.body_evolution * 100) + "%" : "off"}`];
+  $("sp-match").textContent = bits.filter(Boolean).join("  ·  ");
+  const names = (w.players || []).filter(Boolean);
+  $("sp-players").innerHTML = names.map((n) => `<li>${n.replace(/[<&]/g, "")}</li>`).join("");
+}
+function closeSplash() {
+  const sp = $("splash");
+  if (!sp) return;
+  sp.classList.add("gone");
+  try { sessionStorage.setItem("primordia-splash", "1"); } catch (_) {}
+  setTimeout(() => sp.remove(), 600);
+}
+$("sp-enter").onclick = closeSplash;
+window.addEventListener("keydown", (ev) => {
+  if ((ev.key === "Enter" || ev.key === " ") && $("splash") && !$("splash").classList.contains("gone")) {
+    ev.preventDefault();
+    closeSplash();
+  }
+});
+
 // Link parameters: ?follow=<lineage>&track=<organism id>&zoom=<1..32>&chem=0
 {
   const q = new URLSearchParams(location.search);
+  // Skip the title screen when asked (?splash=0), when a link opens straight
+  // onto something (?track/?follow), or once per browser tab.
+  let seen = false;
+  try { seen = sessionStorage.getItem("primordia-splash") === "1"; } catch (_) {}
+  if (q.get("splash") === "0" || q.has("track") || q.has("follow") || seen) {
+    $("splash")?.remove();
+  }
   if (q.has("follow")) S.follow = Number(q.get("follow"));
   const z = Number(q.get("zoom"));
   if (z >= ZOOM_MIN && z <= ZOOM_MAX) setZoom(z);
