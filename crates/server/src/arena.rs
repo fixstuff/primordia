@@ -33,6 +33,12 @@ pub struct ArenaConfig {
     /// and designs from nothing then (League 1: Fable missed window 1 in all
     /// six matches, DeepSeek in five, at 180 s). None = `window`.
     pub first_window: Option<Duration>,
+    /// Continuous time: the world advances steadily through each window on
+    /// the server's clock (window_ticks per window), never waiting for
+    /// anyone. Moves land at the tick they arrive; end_turn just waits for
+    /// the window's end. The first window is a design phase with no ticks;
+    /// it ends early once everyone has ended their turn.
+    pub realtime: bool,
     pub match_ticks: u64,
     pub log: Option<PathBuf>,
     pub results: Option<PathBuf>,
@@ -47,6 +53,9 @@ pub struct Arena {
     started: bool,
     window: u64,
     deadline: Option<Instant>,
+    /// Realtime: when the current window opened, and ticks run in it so far.
+    window_start: Option<Instant>,
+    window_done: u64,
     ended: Vec<bool>,
     waiting: Vec<usize>,
     over: bool,
@@ -57,7 +66,8 @@ impl Arena {
     fn new(cfg: ArenaConfig) -> Arena {
         let log = cfg.log.as_ref().map(|p| std::fs::File::create(p).expect("arena log file"));
         Arena { cfg, biomass_ticks: Vec::new(), started: false, window: 0, deadline: None, ended: Vec::new(),
-                waiting: Vec::new(), over: false, log }
+                waiting: Vec::new(), over: false, log,
+                window_start: None, window_done: 0 }
     }
 
     pub fn rules(&self) -> Value {
@@ -70,6 +80,13 @@ impl Arena {
             "players": self.cfg.players,
             "window_ticks": self.cfg.window_ticks,
             "window_seconds": self.cfg.window.as_secs_f64(),
+            "clock": if self.cfg.realtime {
+                "continuous: after the first (design) window the world runs on its own, window_ticks per \
+                 window_seconds, and never waits. Your moves land at the tick they arrive. end_turn waits \
+                 for the window's end and returns the scoreboard."
+            } else {
+                "turns: the world advances window_ticks when everyone has ended their turn or the window times out"
+            },
             "first_window_seconds": self.cfg.first_window.unwrap_or(self.cfg.window).as_secs_f64(),
             "match_ticks": self.cfg.match_ticks,
             "how": "act (catalog, report, submit_genome, release, observe), then call end_turn; \
@@ -101,7 +118,16 @@ impl Game {
 
     /// When the current window closes, if a match is running.
     pub fn arena_deadline(&self) -> Option<Instant> {
-        self.arena.as_ref().and_then(|a| if a.over { None } else { a.deadline })
+        self.arena.as_ref().and_then(|a| {
+            if a.over {
+                None
+            } else if a.cfg.realtime && a.started && a.window > 0 {
+                // Wake ~20 times a second so the world (and the viewer) moves smoothly.
+                a.deadline.map(|d| d.min(Instant::now() + Duration::from_millis(50)))
+            } else {
+                a.deadline
+            }
+        })
     }
 
     /// Called on hello: start the match once everyone is here.
@@ -111,7 +137,9 @@ impl Game {
         a.ended.resize(n, false);
         if !a.started && n >= a.cfg.players {
             a.started = true;
-            a.deadline = Some(Instant::now() + a.cfg.first_window.unwrap_or(a.cfg.window));
+            let now = Instant::now();
+            a.deadline = Some(now + a.cfg.first_window.unwrap_or(a.cfg.window));
+            a.window_start = Some(now);
             a.log_event(json!({"event": "start", "tick": 0, "players": n}));
         }
         Some(json!({"started": a.started, "joined": n, "rules": a.rules()}))
@@ -157,33 +185,35 @@ impl Game {
         }
         let everyone_done = a.ended.len() >= a.cfg.players && a.ended.iter().all(|&e| e);
         let timed_out = a.deadline.is_some_and(|d| now >= d);
-        if !(everyone_done || timed_out) {
+        let realtime = a.cfg.realtime;
+        // Realtime design window: no ticks, ends on time or when everyone is ready.
+        let design = realtime && a.window == 0;
+        if realtime && !design {
+            // Run the world up to where the clock says this window should be.
+            let (start, len) = (a.window_start.unwrap_or(now), a.cfg.window.as_secs_f64().max(1e-9));
+            let frac = (now.saturating_duration_since(start).as_secs_f64() / len).min(1.0);
+            let due = (a.cfg.window_ticks as f64 * frac) as u64;
+            let n = due.saturating_sub(a.window_done);
+            self.advance(n);
+            if !timed_out {
+                return Vec::new();
+            }
+        } else if !(everyone_done || timed_out) {
             return Vec::new();
         }
+        let a = self.arena.as_ref().unwrap();
         let missed: Vec<usize> = a.ended.iter().enumerate().filter(|(_, &e)| !e).map(|(i, _)| i).collect();
-        let n = a.cfg.window_ticks.min(a.cfg.match_ticks.saturating_sub(self.world.tick));
-        for _ in 0..n {
-            self.world.tick();
-            if self.world.tick % self.hist_every == 0 {
-                self.sample_history();
-            }
-            let bio = self.player_biomass();
-            let a = self.arena.as_mut().unwrap();
-            a.biomass_ticks.resize(bio.len(), 0.0);
-            for (s, b) in a.biomass_ticks.iter_mut().zip(bio) {
-                *s += b;
-            }
-        }
-        for pl in self.players.iter_mut() {
-            pl.budget = (pl.budget + crate::BUDGET_PER_TICK * n as f64).min(crate::BUDGET_CAP);
-        }
-        self.version += 1;
+        // Turns: the whole window now. Realtime: whatever the window still owes.
+        let n = if design { 0 } else { a.cfg.window_ticks.saturating_sub(if realtime { a.window_done } else { 0 }) };
+        self.advance(n);
         let tick = self.world.tick;
         let standings = self.standings();
         let a = self.arena.as_mut().unwrap();
         a.window += 1;
         a.ended.iter_mut().for_each(|e| *e = false);
         a.deadline = Some(now + a.cfg.window);
+        a.window_start = Some(now);
+        a.window_done = 0;
         let over = tick >= a.cfg.match_ticks;
         a.over = over;
         let w = a.window;
@@ -201,6 +231,31 @@ impl Game {
         }
         let waiting = std::mem::take(&mut self.arena.as_mut().unwrap().waiting);
         waiting.into_iter().map(|p| (p, self.turn_reply(p))).collect()
+    }
+
+    /// Run the world `n` ticks (capped at the match's end), scoring every tick.
+    fn advance(&mut self, n: u64) {
+        let n = n.min(self.arena.as_ref().map_or(0, |a| a.cfg.match_ticks.saturating_sub(self.world.tick)));
+        if n == 0 {
+            return;
+        }
+        for _ in 0..n {
+            self.world.tick();
+            if self.world.tick % self.hist_every == 0 {
+                self.sample_history();
+            }
+            let bio = self.player_biomass();
+            let a = self.arena.as_mut().unwrap();
+            a.biomass_ticks.resize(bio.len(), 0.0);
+            for (s, b) in a.biomass_ticks.iter_mut().zip(bio) {
+                *s += b;
+            }
+        }
+        self.arena.as_mut().unwrap().window_done += n;
+        for pl in self.players.iter_mut() {
+            pl.budget = (pl.budget + crate::BUDGET_PER_TICK * n as f64).min(crate::BUDGET_CAP);
+        }
+        self.version += 1;
     }
 
     /// Scoring biomass per player right now: sum of r^2 over living organisms
@@ -274,7 +329,7 @@ mod tests {
         Game::with_arena(
             scenario::pool(scenario::base_config(1, 64, 64), 4, 2),
             ArenaConfig { players, window_ticks: 100, window: Duration::from_millis(window_ms),
-                          first_window: None, match_ticks: 300, log: None, results: None },
+                          first_window: None, realtime: false, match_ticks: 300, log: None, results: None },
         )
     }
 
@@ -289,6 +344,31 @@ mod tests {
         let sp = r.unwrap()["species"].clone();
         let _ = call(g, p, &format!(r#"{{"op":"release","species":{sp},"count":20}}"#));
         p
+    }
+
+    /// Realtime: the design window runs no ticks and ends when everyone is
+    /// ready; then the world moves with the clock, part-way through a window
+    /// at part of its ticks, and doesn't wait for a player who has ended.
+    #[test]
+    fn realtime_world_moves_with_the_clock() {
+        let mut g = arena(1, 1_000);
+        g.arena.as_mut().unwrap().cfg.realtime = true;
+        let p = join_and_release(&mut g, "a");
+        assert!(call(&mut g, p, r#"{"op":"end_turn"}"#).0.is_none());
+        let t0 = Instant::now();
+        assert_eq!(g.arena_poll(t0).len(), 1, "design window ends once everyone is ready");
+        assert_eq!(g.world.tick, 0, "the design window runs no ticks");
+        assert!(g.arena_deadline().unwrap() <= Instant::now() + Duration::from_millis(60), "wakes often");
+        // Halfway through window 1: about half its 100 ticks, and no reply yet.
+        assert!(g.arena_poll(t0 + Duration::from_millis(500)).is_empty());
+        assert!((45..=55).contains(&g.world.tick), "tick {}", g.world.tick);
+        // Ending the turn early doesn't close the window or jump the world.
+        assert!(call(&mut g, p, r#"{"op":"end_turn"}"#).0.is_none());
+        assert!(g.arena_poll(t0 + Duration::from_millis(600)).is_empty());
+        assert!(g.world.tick < 100, "tick {}", g.world.tick);
+        // At the window's end: exactly 100 ticks, and the waiting reply goes out.
+        assert_eq!(g.arena_poll(t0 + Duration::from_millis(1_000)).len(), 1);
+        assert_eq!(g.world.tick, 100);
     }
 
     /// The first window can be longer; later windows use the normal limit.

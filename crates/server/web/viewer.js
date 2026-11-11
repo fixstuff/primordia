@@ -3,13 +3,18 @@
 "use strict";
 
 const $ = (id) => document.getElementById(id);
-const HEADER = 32, ORG = 20;
+const HEADER = 32, ORG = 24;
+const ZOOM_MIN = 1, ZOOM_MAX = 32;
 
 const S = {
   meta: null,          // latest JSON meta
   frame: null,         // latest parsed binary frame
   history: [],         // [{tick,total,lineages:[[id,n],...]}]
   follow: null,        // lineage id or null
+  track: null,         // one organism's id (low 32 bits) or null
+  insp: null,          // latest /inspect reply for the tracked organism
+  pan: null,           // [x, y] world point the user dragged to, or null
+  view: null,          // last drawn transform, for mouse -> world
   zoom: 1,
   chem: true,
   field: document.createElement("canvas"), // chemical field at native res
@@ -50,6 +55,9 @@ function onMeta(m) {
   if (m.history_reset) S.history = [];
   for (const p of m.history) S.history.push(p);
   S.meta = m;
+  // Body plan per lineage (the body never mutates; only the brain does).
+  S.bodies = new Map();
+  for (const l of m.lineages) if (l.body) S.bodies.set(l.lineage, l.body);
   $("tick").textContent = m.tick.toLocaleString();
   $("pop").textContent = m.world.population.toLocaleString();
   $("births").textContent = m.world.births.toLocaleString();
@@ -61,7 +69,7 @@ function onMeta(m) {
 function onFrame(buf) {
   const dv = new DataView(buf);
   const magic = String.fromCharCode(dv.getUint8(0), dv.getUint8(1), dv.getUint8(2), dv.getUint8(3));
-  if (magic !== "LAPI" || dv.getUint8(4) !== 1) {
+  if (magic !== "LAPI" || dv.getUint8(4) !== 2) {
     setConn("unknown frame format", "down");
     return;
   }
@@ -74,6 +82,7 @@ function onFrame(buf) {
     n,
     x: new Float32Array(n), y: new Float32Array(n), h: new Float32Array(n),
     lin: new Uint32Array(n), e: new Float32Array(n), r: new Float32Array(n),
+    id: new Uint32Array(n),
   };
   const sugar = new Uint8Array(buf, HEADER, fw * fh);
   const mineral = new Uint8Array(buf, HEADER + fw * fh, fw * fh);
@@ -85,6 +94,7 @@ function onFrame(buf) {
     f.lin[i] = dv.getUint32(o + 12, true);
     f.e[i] = dv.getUint16(o + 16, true) / 65535;
     f.r[i] = dv.getUint16(o + 18, true) / 100;
+    f.id[i] = dv.getUint32(o + 20, true);
   }
   // Paint the chemical field once per frame at native resolution.
   const fc = S.field;
@@ -138,6 +148,104 @@ function centre(f, lineage) {
   return [mx * f.ww, my * f.wh];
 }
 
+// Organisms at least this many pixels in radius are drawn with their parts.
+const DETAIL_PX = 4;
+const SENSOR_COL = { sugar: "#4ade80", mineral: "#60a5fa" };
+
+// One organism drawn from its genome: wiggling flagella out the back, a cilia
+// fringe, the membrane (lineage colour, brightness = energy), vacuoles inside,
+// mouths as dark notches at the front, and chemo-sensor antennae at their real
+// angles, tipped green (sugar) or blue (mineral).
+function drawOrganism(g, x, y, r, h, body, lin, e, a, seed) {
+  const t = performance.now() / 1000;
+  const lw = Math.max(1, r / 6);
+  const at = (ang, d) => [x + Math.cos(ang) * d, y + Math.sin(ang) * d];
+
+  // Flagella: one tail each behind the body, longer with power, waving.
+  const nf = body.flagella.length;
+  g.strokeStyle = col(lin, a * 0.9, 75);
+  g.lineWidth = lw;
+  body.flagella.forEach((pw, k) => {
+    const base = h + Math.PI + (k - (nf - 1) / 2) * 0.45;
+    const len = r * (0.8 + 1.8 * pw);
+    const [bx, by] = at(base, r * 0.95);
+    const px = -Math.sin(base), py = Math.cos(base);
+    g.beginPath();
+    g.moveTo(bx, by);
+    for (let s = 1; s <= 8; s++) {
+      const u = s / 8, d = len * u;
+      const wv = Math.sin(t * 9 + seed + u * 6 + k) * r * 0.28 * u;
+      g.lineTo(bx + Math.cos(base) * d + px * wv, by + Math.sin(base) * d + py * wv);
+    }
+    g.stroke();
+  });
+
+  // Cilia: a fringe of short hairs, denser with more cilia power.
+  const cp = body.cilia.reduce((s, v) => s + v, 0);
+  if (body.cilia.length) {
+    const nh = Math.round(8 + 12 * Math.min(cp, 2));
+    g.strokeStyle = `rgba(255,255,255,${a * 0.45})`;
+    g.lineWidth = Math.max(0.6, lw * 0.6);
+    g.beginPath();
+    for (let k = 0; k < nh; k++) {
+      const ang = h + (k / nh) * 2 * Math.PI;
+      const sway = Math.sin(t * 7 + seed + k) * 0.35;
+      const [ax, ay] = at(ang, r);
+      g.moveTo(ax, ay);
+      g.lineTo(ax + Math.cos(ang + sway) * r * 0.3, ay + Math.sin(ang + sway) * r * 0.3);
+    }
+    g.stroke();
+  }
+
+  // Membrane.
+  g.fillStyle = col(lin, a, 30 + 40 * e);
+  g.beginPath();
+  g.arc(x, y, r, 0, 2 * Math.PI);
+  g.fill();
+  g.strokeStyle = col(lin, a, 80);
+  g.lineWidth = Math.max(0.8, r / 10);
+  g.stroke();
+
+  // Vacuoles: pale blobs inside, bigger with capacity.
+  const nv = Math.min(body.vacuoles.length, 8);
+  g.fillStyle = `rgba(255,255,255,${a * 0.35})`;
+  for (let k = 0; k < nv; k++) {
+    const ang = h + Math.PI + (k + 0.5) * (2 * Math.PI / nv) * 0.5 - Math.PI / 4 * (nv > 1 ? 1 : 0);
+    const [vx, vy] = at(ang, nv > 1 ? r * 0.45 : r * 0.2);
+    g.beginPath();
+    g.arc(vx, vy, r * (0.1 + 0.18 * Math.min(body.vacuoles[k], 100) / 100), 0, 2 * Math.PI);
+    g.fill();
+  }
+
+  // Mouths: dark notches at the front.
+  g.fillStyle = `rgba(0,0,0,${a * 0.7})`;
+  for (let k = 0; k < body.mouths; k++) {
+    const [mx, my] = at(h + (k - (body.mouths - 1) / 2) * 0.55, r * 0.78);
+    g.beginPath();
+    g.arc(mx, my, r * 0.22, 0, 2 * Math.PI);
+    g.fill();
+  }
+
+  // Sensors: antennae at their angle, tip coloured by chemical.
+  for (const [deg, chem] of body.sensors) {
+    const ang = h + (deg * Math.PI) / 180;
+    const [sx, sy] = at(ang, r);
+    const [tx, ty] = at(ang, r * 1.7);
+    g.strokeStyle = `rgba(255,255,255,${a * 0.7})`;
+    g.lineWidth = Math.max(0.7, lw * 0.7);
+    g.beginPath();
+    g.moveTo(sx, sy);
+    g.lineTo(tx, ty);
+    g.stroke();
+    g.fillStyle = SENSOR_COL[chem] || "#fff";
+    g.globalAlpha = a;
+    g.beginPath();
+    g.arc(tx, ty, Math.max(1.2, r * 0.16), 0, 2 * Math.PI);
+    g.fill();
+    g.globalAlpha = 1;
+  }
+}
+
 function drawPool() {
   const c = $("pool"), f = S.frame;
   fit(c);
@@ -145,12 +253,15 @@ function drawPool() {
   g.fillStyle = "#000";
   g.fillRect(0, 0, c.width, c.height);
   if (!f) return;
-  let [vx, vy] = [f.ww / 2, f.wh / 2];
-  if (S.follow !== null) {
+  let [vx, vy] = S.pan || [f.ww / 2, f.wh / 2];
+  const ti = S.track === null ? -1 : f.id.indexOf(S.track);
+  if (ti >= 0) [vx, vy] = [f.x[ti], f.y[ti]];
+  else if (S.follow !== null) {
     const m = centre(f, S.follow);
     if (m) [vx, vy] = m;
   }
   const scale = (c.width / f.ww) * S.zoom;
+  S.view = { vx, vy, scale, w: c.width, h: c.height };
   const toX = (x) => c.width / 2 + wrapDelta(vx, x, f.ww) * scale;
   const toY = (y) => c.height / 2 + wrapDelta(vy, y, f.wh) * scale;
 
@@ -172,6 +283,12 @@ function drawPool() {
       const r = Math.max(1.5, f.r[i] * scale);
       if (x < -r || y < -r || x > c.width + r || y > c.height + r) continue;
       const a = dimOthers && !mine ? 0.22 : 0.95;
+      const body = S.bodies?.get(f.lin[i]);
+      if (body && r >= DETAIL_PX) {
+        drawOrganism(g, x, y, r, f.h[i], body, f.lin[i], f.e[i], a, f.x[i] + f.y[i]);
+        S.animating = true;
+        continue;
+      }
       g.fillStyle = col(f.lin[i], a, 30 + 40 * f.e[i]);
       g.beginPath();
       g.arc(x, y, r, 0, 2 * Math.PI);
@@ -186,6 +303,48 @@ function drawPool() {
       }
     }
   }
+  drawTracked(g, f, toX, toY, scale);
+}
+
+// The tracked organism: a ring, and its sensors' sample points with what they
+// read (brighter = more), so you can see what it "smells".
+function drawTracked(g, f, toX, toY, scale) {
+  const ti = S.track === null ? -1 : f.id.indexOf(S.track);
+  if (ti < 0) return;
+  const x = toX(f.x[ti]), y = toY(f.y[ti]), r = Math.max(3, f.r[ti] * scale);
+  const pulse = 1 + 0.15 * Math.sin(performance.now() / 200);
+  g.strokeStyle = "rgba(255,255,255,0.9)";
+  g.lineWidth = 2;
+  g.setLineDash([6, 4]);
+  g.beginPath();
+  g.arc(x, y, r * 1.9 * pulse, 0, 2 * Math.PI);
+  g.stroke();
+  g.setLineDash([]);
+  const i = S.insp;
+  if (i && !i.gone && i.id % 4294967296 === S.track) {
+    const h = f.h[ti];
+    for (const s of i.sensors) {
+      const a = h + (s.angle_deg * Math.PI) / 180;
+      const reach = (f.r[ti] + 2) * scale;
+      const sx = x + Math.cos(a) * reach, sy = y + Math.sin(a) * reach;
+      g.strokeStyle = s.chemical === "sugar" ? `rgba(74,222,128,${0.3 + 0.7 * s.input})` : `rgba(96,165,250,${0.3 + 0.7 * s.input})`;
+      g.lineWidth = 1 + 3 * s.input;
+      g.beginPath();
+      g.moveTo(x, y);
+      g.lineTo(sx, sy);
+      g.stroke();
+    }
+    // Where the brain is steering: an arrow, length = next tick's speed.
+    const na = h + (i.next.turn_deg * Math.PI) / 180;
+    const len = r + Math.max(0, i.next.speed) * scale * 12;
+    g.strokeStyle = "rgba(255,255,255,0.95)";
+    g.lineWidth = 2;
+    g.beginPath();
+    g.moveTo(x, y);
+    g.lineTo(x + Math.cos(na) * len, y + Math.sin(na) * len);
+    g.stroke();
+  }
+  S.animating = true;
 }
 
 function drawGraph() {
@@ -304,6 +463,7 @@ function renderLineages() {
       li.append(sw, name, n);
       li.onclick = () => {
         S.follow = S.follow === l.lineage ? null : l.lineage;
+        S.track = null; S.pan = null; renderTrack();
         renderLineages();
         S.dirty = true;
       };
@@ -318,12 +478,162 @@ function renderLineages() {
   }
 }
 
-for (const b of document.querySelectorAll("[data-zoom]")) {
-  b.onclick = () => {
-    S.zoom = Number(b.dataset.zoom);
-    for (const o of document.querySelectorAll("[data-zoom]")) o.setAttribute("aria-pressed", String(o === b));
-    S.dirty = true;
-  };
+function setZoom(z) {
+  S.zoom = Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, z));
+  for (const o of document.querySelectorAll("[data-zoom]"))
+    o.setAttribute("aria-pressed", String(Math.abs(Number(o.dataset.zoom) - S.zoom) < 0.01));
+  $("zoomval").textContent = S.zoom < 10 ? S.zoom.toFixed(1) + "×" : Math.round(S.zoom) + "×";
+  S.dirty = true;
+}
+for (const b of document.querySelectorAll("[data-zoom]")) b.onclick = () => setZoom(Number(b.dataset.zoom));
+
+// ---- mouse: wheel zoom toward the cursor, drag to pan, click to track -----
+
+const pool = $("pool");
+function mouseWorld(ev) {
+  const v = S.view, f = S.frame;
+  if (!v || !f) return null;
+  const dpr = window.devicePixelRatio || 1;
+  const px = ev.offsetX * dpr, py = ev.offsetY * dpr;
+  const wrap = (a, n) => ((a % n) + n) % n;
+  return [wrap(v.vx + (px - v.w / 2) / v.scale, f.ww), wrap(v.vy + (py - v.h / 2) / v.scale, f.wh), px, py];
+}
+pool.addEventListener("wheel", (ev) => {
+  ev.preventDefault();
+  const m = mouseWorld(ev), v = S.view;
+  const z0 = S.zoom;
+  setZoom(z0 * Math.pow(1.0015, -ev.deltaY));
+  // Keep the point under the cursor fixed (unless something is being followed).
+  if (m && v && S.track === null && S.follow === null) {
+    const k = v.scale * (S.zoom / z0);
+    S.pan = [m[0] - (m[2] - v.w / 2) / k, m[1] - (m[3] - v.h / 2) / k];
+  }
+}, { passive: false });
+
+let drag = null;
+pool.addEventListener("pointerdown", (ev) => {
+  const v = S.view;
+  if (!v) return;
+  drag = { x: ev.offsetX, y: ev.offsetY, vx: v.vx, vy: v.vy, moved: false };
+  pool.setPointerCapture(ev.pointerId);
+});
+pool.addEventListener("pointermove", (ev) => {
+  if (!drag || !S.view) return;
+  const dx = ev.offsetX - drag.x, dy = ev.offsetY - drag.y;
+  if (!drag.moved && Math.hypot(dx, dy) < 5) return;
+  drag.moved = true;
+  const dpr = window.devicePixelRatio || 1;
+  S.track = null; S.follow = null;
+  S.pan = [drag.vx - (dx * dpr) / S.view.scale, drag.vy - (dy * dpr) / S.view.scale];
+  renderTrack();
+  renderLineages();
+  S.dirty = true;
+});
+pool.addEventListener("pointerup", (ev) => {
+  const d = drag;
+  drag = null;
+  if (!d || d.moved) return;
+  // A click: track the organism under the cursor (nearest within reach).
+  const m = mouseWorld(ev), f = S.frame;
+  if (!m || !f) return;
+  const reach = 12 / S.view.scale;
+  let best = -1, bd = Infinity;
+  for (let i = 0; i < f.n; i++) {
+    const dx = wrapDelta(m[0], f.x[i], f.ww), dy = wrapDelta(m[1], f.y[i], f.wh);
+    const dd = Math.hypot(dx, dy) - f.r[i];
+    if (dd < bd) { bd = dd; best = i; }
+  }
+  if (best >= 0 && bd <= reach) {
+    startTracking(f.id[best]);
+    if (S.zoom < 6) setZoom(6);
+  }
+});
+window.addEventListener("keydown", (ev) => { if (ev.key === "Escape") stopTracking(); });
+
+// ---- tracking one organism ------------------------------------------------
+
+function startTracking(id) {
+  S.track = id;
+  S.insp = null;
+  S.follow = null;
+  S.pan = null;
+  renderLineages();
+  pollInspect();
+  S.dirty = true;
+}
+function stopTracking() {
+  S.track = null;
+  S.insp = null;
+  renderTrack();
+  S.dirty = true;
+}
+$("untrack").onclick = stopTracking;
+
+let inspTimer = null;
+async function pollInspect() {
+  clearTimeout(inspTimer);
+  if (S.track === null) return;
+  const id = S.track;
+  try {
+    const r = await fetch(`/inspect?id=${id}`);
+    const j = await r.json();
+    if (S.track !== id) return;
+    if (j.gone) {
+      if (S.insp && !S.insp.gone) S.insp = { ...S.insp, gone: true };
+    } else S.insp = j;
+    renderTrack();
+  } catch (_) { /* server busy or restarting: try again */ }
+  inspTimer = setTimeout(pollInspect, 250);
+}
+
+const pct = (a, b) => Math.max(0, Math.min(100, (100 * a) / (b || 1)));
+function bar(label, frac, cls, note) {
+  return `<div class="tb"><span>${label}</span><i class="${cls}"><b style="width:${frac}%"></b></i><em>${note}</em></div>`;
+}
+function signedBar(label, v, note) {
+  const w = Math.min(50, Math.abs(v) * 50), left = v < 0 ? 50 - w : 50;
+  return `<div class="tb"><span>${label}</span><i class="sg"><b style="left:${left}%;width:${w}%"></b></i><em>${note}</em></div>`;
+}
+
+// Plain-language summary of what the organism is doing right now.
+function doing(i) {
+  const out = [];
+  const e = i.energy / i.capacity;
+  if (i.energy >= i.split_energy && i.material >= i.child_material) out.push("about to divide");
+  if (i.brain.thrust <= 0) out.push("holding still (its brain says stop)");
+  else out.push(`swimming at ${i.next.speed.toFixed(2)} per tick`);
+  if (Math.abs(i.next.turn_deg) >= 0.5) out.push(`turning ${i.next.turn_deg > 0 ? "right" : "left"} ${Math.abs(i.next.turn_deg).toFixed(1)}° a tick`);
+  if (i.mouths === 0) out.push("has no mouth, so it can't eat");
+  else if (i.sugar_here > 0.05) out.push(`eating: sugar under it ${i.sugar_here.toFixed(2)}`);
+  else out.push("no sugar under it");
+  if (e < 0.2) out.push(`starving: about ${Math.round(i.energy / i.upkeep)} ticks of energy left`);
+  return out;
+}
+
+function renderTrack() {
+  const sec = $("track");
+  if (S.track === null) { sec.hidden = true; return; }
+  sec.hidden = false;
+  const i = S.insp, el = $("trackbody");
+  if (!i) { el.innerHTML = `<p class="hint">Finding organism…</p>`; return; }
+  const head = `<p class="tt"><b style="color:${col(i.lineage)}">#${i.id}</b> ${i.species || ""} · ${i.owner || "sandbox"}<br>
+    <span class="hint">lineage ${i.lineage} · generation ${i.generation} · age ${i.age} ticks</span></p>`;
+  if (i.gone) {
+    el.innerHTML = head + `<p class="gone">It's gone: it died (starved) after tick ${i.tick}.</p>`;
+    return;
+  }
+  const sensors = i.sensors.map((s) =>
+    bar(`${s.angle_deg > 0 ? "+" : ""}${s.angle_deg}° ${s.chemical}`, 100 * s.input, s.chemical, s.reading.toFixed(2))).join("")
+    || `<p class="hint">No sensors: it moves blind.</p>`;
+  el.innerHTML = head +
+    `<ul class="doing">${doing(i).map((d) => `<li>${d}</li>`).join("")}</ul>` +
+    `<h3>Body</h3>` +
+    bar("energy", pct(i.energy, i.capacity), "en", `${i.energy.toFixed(0)} / ${i.capacity.toFixed(0)} (divides at ${i.split_energy.toFixed(0)})`) +
+    bar("material", pct(i.material, i.child_material), "ma", `${i.material.toFixed(1)} / ${i.child_material.toFixed(1)} for a child`) +
+    `<h3>Senses</h3>` + sensors +
+    `<h3>Brain → next tick</h3>` +
+    signedBar("thrust", i.brain.thrust, i.brain.thrust.toFixed(2)) +
+    signedBar("turn", i.brain.turn, i.brain.turn.toFixed(2));
 }
 $("chem").onclick = (e) => {
   S.chem = !S.chem;
@@ -332,23 +642,29 @@ $("chem").onclick = (e) => {
 };
 window.addEventListener("resize", () => (S.dirty = true));
 
-function loop() {
+let lastAnim = 0;
+function loop(now) {
   if (S.dirty) {
     S.dirty = false;
+    S.animating = false;
     drawPool();
     drawGraph();
+  } else if (S.animating && now - lastAnim > 33) {
+    // Detailed organisms wave their flagella and cilia: redraw ~30 times a second.
+    lastAnim = now;
+    S.animating = false;
+    drawPool();
   }
   requestAnimationFrame(loop);
 }
 
-// Link parameters: ?follow=<lineage>&zoom=<1|2|4>&chem=0
+// Link parameters: ?follow=<lineage>&track=<organism id>&zoom=<1..32>&chem=0
 {
   const q = new URLSearchParams(location.search);
   if (q.has("follow")) S.follow = Number(q.get("follow"));
-  if (["1", "2", "4"].includes(q.get("zoom"))) {
-    S.zoom = Number(q.get("zoom"));
-    for (const o of document.querySelectorAll("[data-zoom]")) o.setAttribute("aria-pressed", String(o.dataset.zoom === q.get("zoom")));
-  }
+  const z = Number(q.get("zoom"));
+  if (z >= ZOOM_MIN && z <= ZOOM_MAX) setZoom(z);
+  if (q.has("track")) startTracking(Number(q.get("track")));
   if (q.get("chem") === "0") {
     S.chem = false;
     $("chem").setAttribute("aria-pressed", "false");

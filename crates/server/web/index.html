@@ -55,6 +55,20 @@
   .ln small { color: var(--muted); }
   .n { font-variant-numeric: tabular-nums; color: var(--muted); }
   .hint { color: var(--muted); font-size: 12px; margin: 0; }
+  #pool { cursor: crosshair; touch-action: none; }
+  #track h3 { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 10px 0 4px; }
+  #track .tt { margin: 0 0 6px; }
+  #track .doing { margin: 0 0 4px; padding-left: 18px; }
+  #track .doing li { margin: 2px 0; }
+  #track .gone { color: #f87171; }
+  .tb { display: grid; grid-template-columns: 92px 1fr; gap: 2px 8px; align-items: center; font-size: 12px; margin: 3px 0; }
+  .tb em { grid-column: 2; font-style: normal; color: var(--muted); font-size: 11px; }
+  .tb i { position: relative; height: 8px; border-radius: 4px; background: rgba(255,255,255,.08); overflow: hidden; }
+  .tb i b { position: absolute; top: 0; bottom: 0; left: 0; border-radius: 4px; background: #e5e7eb; }
+  .tb i.en b { background: #fbbf24; } .tb i.ma b { background: #60a5fa; }
+  .tb i.sugar b { background: #4ade80; } .tb i.mineral b { background: #60a5fa; }
+  .tb i.sg b { background: #f472b6; }
+  .tb i.sg::after { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(255,255,255,.4); }
   @media (max-width: 820px) {
     main { grid-template-columns: 1fr; padding: 12px 16px; }
     #poolwrap { max-width: 100%; }
@@ -89,8 +103,17 @@
         <button data-zoom="1" aria-pressed="true">1×</button>
         <button data-zoom="2" aria-pressed="false">2×</button>
         <button data-zoom="4" aria-pressed="false">4×</button>
+        <button data-zoom="8" aria-pressed="false">8×</button>
+        <button data-zoom="16" aria-pressed="false">16×</button>
+        <span class="hint" id="zoomval">1.0×</span>
         <button id="chem" aria-pressed="true">Chemicals</button>
       </div>
+      <p class="hint">Scroll to zoom (to 32×), drag to move, click an organism to track it.</p>
+    </section>
+    <section id="track" hidden>
+      <h2>Tracking</h2>
+      <div id="trackbody"></div>
+      <button id="untrack">Stop tracking (Esc)</button>
     </section>
     <section>
       <h2>Lineages</h2>
@@ -100,8 +123,10 @@
     <section>
       <h2>Key</h2>
       <p class="hint">Green: sugar (energy). Blue: mineral (material for children).
-        Each dot is an organism, coloured by lineage; the tick shows its heading,
-        and brightness its energy.</p>
+        Each organism is coloured by lineage, brighter with more energy. Up close
+        (zoom in) it is drawn from its genome: tails are flagella, the fringe is
+        cilia, dark notches at the front are mouths, antennae are chemo-sensors
+        (green tip: sugar, blue: mineral), pale blobs inside are vacuoles.</p>
     </section>
   </aside>
 </main>

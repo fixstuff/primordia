@@ -699,6 +699,9 @@ pub(crate) enum Msg {
         history_after: Option<u64>,
         reply: mpsc::Sender<Option<snapshot::Snapshot>>,
     },
+    /// A spectator tracking one organism: its state and next decision as
+    /// JSON, or None if it is gone.
+    Inspect { id: u64, reply: mpsc::Sender<Option<String>> },
 }
 
 fn is_loopback(addr: &SocketAddr) -> bool {
@@ -790,6 +793,9 @@ fn handle_msg(game: &mut Game, msg: Msg, waiting: &mut Vec<(usize, mpsc::Sender<
                     Some(snapshot::build(&game, history_after))
                 };
                 let _ = reply.send(snap);
+            }
+            Msg::Inspect { id, reply } => {
+                let _ = reply.send(snapshot::inspect(&game, id));
             }
         }
     }

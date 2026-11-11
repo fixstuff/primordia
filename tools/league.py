@@ -5,7 +5,7 @@
         --parallel 3 --fable-usd 6 --opus-usd 2
 
 Every match is the same players (Fable, Opus, DeepSeek, the scripted bot,
-and each --openai model) on a fresh arena server with its own
+and each --openai model: any API player in the OPENAI table, Gemini included) on a fresh arena server with its own
 ports. A match whose results.json already exists is not run again, so a
 league can be continued (League 2 added GPT-5.5 from match 4). Matches run --parallel at a
 time. When a match ends, its results.json is read and the league table is
@@ -28,7 +28,13 @@ COSTED = {"fable": "claude-fable-5-2", "opus": "claude-opus-5-5"}
 # OpenAI list prices from third-party sources, NOT checked against OpenAI's own
 # page: input, cached input, output USD per million tokens; and whether the
 # model needs the Responses API for function tools with reasoning on.
-OPENAI = {"gpt-5.5": ("5,0.5,30", False), "gpt-6-astra": ("10,1,50", True)}
+# Also: the OpenAI-style endpoint and key file for each model.
+_OA = ("https://api.openai.com/v1", "openai.env", "OPENAI_API_KEY")
+_GEM = ("https://generativelanguage.googleapis.com/v1beta/openai", "gemini.env", "GEMINI_API_KEY")
+OPENAI = {"gpt-5.5": ("5,0.5,30", False) + _OA,
+          "gpt-6-astra": ("10,1,50", True) + _OA,
+          # $2/$10 introductory to 2026-11-30, then $4/$20; priced at the later rate.
+          "gemini-4-argon": ("4,0.1,20", False) + _GEM}
 
 
 def launch(match_dir, port, http, world, seed, a):
@@ -42,7 +48,7 @@ def launch(match_dir, port, http, world, seed, a):
     procs["server"] = subprocess.Popen(
         [rel(ROOT / "target/release/lifeapi-server"), "--addr", addr, "--http", f"127.0.0.1:{http}",
          "--world", world, "--seed", str(seed), "--arena", str(len(PLAYERS)), "--window-ticks", str(a.window_ticks),
-         "--window-secs", str(a.window_secs), "--first-window-secs", str(a.first_window_secs), "--match-ticks", str(a.match_ticks),
+         "--window-secs", str(a.window_secs), "--first-window-secs", str(a.first_window_secs), *(["--realtime"] if a.realtime else []), "--match-ticks", str(a.match_ticks),
          "--log", rel(d / "match-log.jsonl"), "--results", rel(d / "results.json")],
         stdout=open(d / "server.log", "w"), stderr=subprocess.STDOUT, cwd=ROOT)
     time.sleep(0.5)
@@ -66,10 +72,10 @@ def launch(match_dir, port, http, world, seed, a):
     procs["deepseek"] = subprocess.Popen(["bash", "-c", ds], stdout=open(d / "deepseek/agent.log", "a"),
                                          stderr=subprocess.STDOUT, cwd=ROOT)
     for m in a.openai:
-        price, responses = OPENAI[m]
+        price, responses, base, keyfile, keyname = OPENAI[m]
         oa = (f"for i in 1 2 3; do {sys.executable} -I tools/agent_ollama.py --arena --provider openai "
-              f"--base-url https://api.openai.com/v1 --model {m} {'--responses-api ' if responses else ''}"
-              f"--key-file ~/.config/lifeapi/openai.env --key-name OPENAI_API_KEY --addr {addr} "
+              f"--base-url {base} --model {m} {'--responses-api ' if responses else ''}"
+              f"--key-file ~/.config/lifeapi/{keyfile} --key-name {keyname} --addr {addr} "
               f"--target-tick {a.match_ticks} --max-turns 200 --budget-usd {a.openai_usd} "
               f"--usd-per-mtok {price} --out {d / m} && break; "
               f"test -f {d / 'results.json'} && break; echo relaunch $i; done")
@@ -170,6 +176,8 @@ def main():
     ap.add_argument("--window-secs", type=float, default=180)
     ap.add_argument("--first-window-secs", type=float, default=600,
                     help="longer first window: League 1 saw Fable miss window 1 in 6/6 matches at 180 s")
+    ap.add_argument("--realtime", action="store_true",
+                    help="continuous clock: the world runs on its own and never waits for a player")
     ap.add_argument("--match-ticks", type=int, default=10000)
     ap.add_argument("--base-port", type=int, default=4400)
     a = ap.parse_args()

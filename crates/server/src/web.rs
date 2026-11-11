@@ -100,6 +100,18 @@ fn handle(stream: TcpStream, tx: mpsc::Sender<Msg>) -> io::Result<()> {
     match path {
         "/" | "/index.html" => respond(&mut w, "200 OK", "text/html; charset=utf-8", INDEX_HTML.as_bytes()),
         "/viewer.js" => respond(&mut w, "200 OK", "text/javascript; charset=utf-8", VIEWER_JS.as_bytes()),
+        "/inspect" => {
+            let id = req.path.split_once("id=").and_then(|(_, v)| v.split('&').next()?.parse::<u64>().ok());
+            let Some(id) = id else {
+                return respond(&mut w, "400 Bad Request", "text/plain", b"inspect?id=N\n");
+            };
+            let (rtx, rrx) = mpsc::channel();
+            if tx.send(Msg::Inspect { id, reply: rtx }).is_err() {
+                return respond(&mut w, "503 Service Unavailable", "text/plain", b"stopped\n");
+            }
+            let body = rrx.recv().ok().flatten().unwrap_or_else(|| "{\"gone\":true}".to_string());
+            respond(&mut w, "200 OK", "application/json", body.as_bytes())
+        }
         "/ws" => {
             let upgrade = req.header("upgrade").is_some_and(|v| v.eq_ignore_ascii_case("websocket"));
             let Some(key) = req.header("sec-websocket-key").filter(|_| upgrade) else {

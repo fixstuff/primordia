@@ -94,6 +94,37 @@ pub struct Species {
     pub phen: Phenotype,
 }
 
+/// One organism's state and its next decision (see `World::inspect`).
+#[derive(Clone, Debug)]
+pub struct Inspect {
+    pub id: u64,
+    pub lineage: u32,
+    pub species: u32,
+    pub name: String,
+    pub generation: u32,
+    pub age: u32,
+    pub x: f32,
+    pub y: f32,
+    pub heading: f32,
+    pub energy: f32,
+    pub capacity: f32,
+    pub material: f32,
+    pub child_material: f32,
+    pub split_energy: f32,
+    pub upkeep: f32,
+    pub mouths: u32,
+    pub sugar_here: f32,
+    pub mineral_here: f32,
+    /// (angle off the heading in radians, chemical index, raw reading)
+    pub sensors: Vec<(f32, usize, f32)>,
+    /// Brain outputs: thrust (negative = stop) and turn, each -1..=1.
+    pub thrust_out: f32,
+    pub turn_out: f32,
+    /// What those outputs do next tick: distance and radians.
+    pub speed: f32,
+    pub turn_rate: f32,
+}
+
 #[derive(Clone, Debug, Default)]
 pub struct Stats {
     pub births: u64,
@@ -305,6 +336,54 @@ impl World {
             ls.distance += speed as f64;
             ls.org_ticks += 1;
         }
+    }
+
+    /// What one organism senses and decides right now: the same sense and
+    /// think steps `step_organisms` runs, recomputed read-only (nothing is
+    /// changed, so the hash is untouched). For the viewer's "track" panel.
+    pub fn inspect(&self, id: u64) -> Option<Inspect> {
+        let o = self.orgs.iter().find(|o| o.id == id)?;
+        let sp = &self.species[o.species as usize];
+        let p = &sp.phen;
+        let ns = p.sensors.len();
+        let mut inputs = vec![0f32; ns + 2];
+        let mut sensors = Vec::with_capacity(ns);
+        for (k, &(ang, c)) in p.sensors.iter().enumerate() {
+            let a = o.heading + ang;
+            let reach = p.radius + 2.0;
+            let v = self.grid.sample(o.x + det::cos(a) * reach, o.y + det::sin(a) * reach, c);
+            inputs[k] = v / (v + 1.0);
+            sensors.push((ang, c, v));
+        }
+        inputs[ns] = o.energy / p.capacity;
+        inputs[ns + 1] = 1.0;
+        let out = brain::forward(&o.brain, &inputs, p.hidden);
+        let speed = self.cfg.max_speed * det::max(out[0], 0.0) * p.thrust * (6.0 / p.radius);
+        Some(Inspect {
+            id: o.id,
+            lineage: o.lineage,
+            species: o.species,
+            name: sp.genome.name.clone(),
+            generation: o.generation,
+            age: o.age,
+            x: o.x,
+            y: o.y,
+            heading: o.heading,
+            energy: o.energy,
+            capacity: p.capacity,
+            material: o.material,
+            child_material: p.child_material,
+            split_energy: self.cfg.split_frac * p.capacity,
+            upkeep: p.upkeep,
+            mouths: p.mouths,
+            sugar_here: self.grid.sample(o.x, o.y, 0),
+            mineral_here: self.grid.sample(o.x, o.y, 1),
+            sensors,
+            thrust_out: out[0],
+            turn_out: out[1],
+            speed,
+            turn_rate: out[1] * p.turn,
+        })
     }
 
     /// Soft push-apart of overlapping bodies, grid broadphase on the torus.
