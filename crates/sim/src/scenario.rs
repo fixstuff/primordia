@@ -3,7 +3,7 @@
 
 use crate::det;
 use crate::genome::Genome;
-use crate::world::{Config, Dynamics, Vent, World};
+use crate::world::{CombatMode, Config, Dynamics, Vent, World};
 
 /// The default founder: one flagellum, cilia, a mouth, two sugar sensors.
 pub const FOUNDER: &str = r#"{
@@ -39,6 +39,8 @@ pub fn base_config(seed: u64, grid_w: usize, grid_h: usize) -> Config {
         split_frac: 0.8,
         material_cap: 20.0,
         dynamics: Dynamics::default(),
+        combat: CombatMode::Colony,
+        body_mutation: 0.0,
     }
 }
 

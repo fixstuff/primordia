@@ -187,6 +187,32 @@ impl Game {
         }
     }
 
+    /// This match's combat setting, told to every player at hello.
+    pub fn combat_rules(&self) -> Value {
+        use lifeapi_sim::world::CombatMode;
+        let mode = self.world.cfg.combat;
+        json!({
+            "mode": mode.name(),
+            "means": match mode {
+                CombatMode::Off => "no combat: combat parts are refused",
+                CombatMode::Colony => "colony: your own organisms never fight or smell each other; \
+                                       you fight other players' organisms (like rival ant colonies)",
+                CombatMode::Individual => "individual: every organism for itself; jaws and stingers bite \
+                                           ANY organism, your own lineage included, and sensors smell everyone",
+            },
+            "parts": "see catalog: jaw, stinger (offence); shell, spikes, camouflage, toxin (defence); \
+                      chemo_sensor chemical \"organism\" smells bodies",
+            "body_evolution": if self.world.cfg.body_mutation > 0.0 {
+                format!("ON: each birth has a {:.0}% chance the child's BODY mutates (a part nudged, added or \
+                         removed); a changed body is a new species in your lineage, still yours. Selection decides \
+                         which bodies spread. Brains mutate as your genome's mutation settings say.",
+                        100.0 * self.world.cfg.body_mutation)
+            } else {
+                "off: bodies never change; only brains mutate".to_string()
+            },
+        })
+    }
+
     pub fn owner_name(&self, lineage: u32) -> Option<&str> {
         self.lineage_owner
             .get(lineage as usize)
@@ -263,6 +289,7 @@ impl Game {
                     let arena = self.arena_joined();
                     self.ok(json!({
                         "arena": arena,
+                        "combat": self.combat_rules(),
                         "player": id,
                         "protocol": PROTOCOL,
                         "budget": BUDGET_START,
@@ -303,6 +330,7 @@ impl Game {
                 let c = &self.world.cfg;
                 self.ok(json!({
                     "genome": genome::catalog(),
+                    "combat_setting": self.combat_rules(),
                     "world_spec": self.world_info,
                     "arena": self.arena.as_ref().map(|a| a.rules()),
                     "world": {
@@ -325,10 +353,35 @@ impl Game {
                     Ok(g) => g,
                     Err(e) => return self.err(format!("submit_genome: not a valid {} document: {e}", genome::SCHEMA)),
                 };
+                if self.world.cfg.combat == lifeapi_sim::world::CombatMode::Off {
+                    if let Some(i) = g.body.iter().position(|p| {
+                        matches!(
+                            p,
+                            genome::Part::Jaw { .. }
+                                | genome::Part::Stinger { .. }
+                                | genome::Part::Shell { .. }
+                                | genome::Part::Spikes { .. }
+                                | genome::Part::Camouflage
+                                | genome::Part::Toxin { .. }
+                        )
+                    }) {
+                        return self.err(format!(
+                            "submit_genome: body[{i}] is a combat part, and this match has combat off. \
+                             Remove jaw, stinger, shell, spikes, camouflage and toxin."
+                        ));
+                    }
+                }
                 match self.world.add_species(g) {
                     Err(rule) => self.err(format!("submit_genome: {rule}")),
                     Ok(id) => {
-                        self.species_owner.push(p);
+                        // By id: the sim also makes species of its own (evolved
+                        // bodies), so ids don't follow submission order.
+                        if self.species_owner.len() <= id as usize {
+                            self.species_owner.resize(id as usize + 1, usize::MAX);
+                        }
+                        self.species_owner[id as usize] = p;
+                        // One team per player: your own organisms never fight.
+                        self.world.species[id as usize].team = p as u32 + 1;
                         self.version += 1;
                         let ph = &self.world.species[id as usize].phen;
                         let reply = json!({
@@ -549,6 +602,7 @@ impl Game {
             let d = |a: u64, b: u64| a.saturating_sub(b);
             let born = d(now_s.born, before.born);
             let starved = d(now_s.starved, before.starved);
+            let killed = d(now_s.killed, before.killed);
             let released = d(now_s.released, before.released);
             let ot = d(now_s.org_ticks, before.org_ticks);
             let per = |a: f64, b: f64| if ot == 0 { 0.0 } else { (a - b) / ot as f64 };
@@ -556,7 +610,10 @@ impl Game {
             let upkeep = per(now_s.upkeep, before.upkeep);
             let movement = per(now_s.movement, before.movement);
             let speed = per(now_s.distance, before.distance);
-            let net = e_in - upkeep - movement;
+            let prey_in = per(now_s.prey_in, before.prey_in);
+            let lost = per(now_s.lost_to_attack, before.lost_to_attack);
+            let hurt = per(now_s.hurt, before.hurt);
+            let net = e_in + prey_in - upkeep - movement - lost - hurt;
             let age_at_death = if starved == 0 {
                 None
             } else {
@@ -575,12 +632,15 @@ impl Game {
                     "radius": ph.radius, "mouths": ph.mouths, "flagellum_power": ph.thrust,
                     "chemo_sensors": ph.sensors.len(), "capacity": ph.capacity,
                     "upkeep_per_tick": ph.upkeep, "child_material": ph.child_material,
+                    "jaw": ph.jaw, "stinger": ph.stinger, "shell": ph.shell, "spikes": ph.spikes,
+                    "camouflage": ph.camouflage, "toxin": ph.toxin,
                 },
                 "alive": now_s.alive, "alive_at_last_report": before.alive,
-                "released": released, "born": born, "starved": starved,
+                "released": released, "born": born, "starved": starved, "killed_by_enemies": killed,
                 "mean_age_at_death": age_at_death,
                 "per_organism_per_tick": {
-                    "energy_in": e_in, "upkeep": upkeep, "movement": movement, "net": net, "speed": speed,
+                    "energy_in": e_in, "prey_in": prey_in, "lost_to_attacks": lost, "hurt_by_spikes_or_toxin": hurt,
+                    "upkeep": upkeep, "movement": movement, "net": net, "speed": speed,
                 },
                 "births_per_1000_organism_ticks": if ot == 0 { 0.0 } else { born as f64 * 1000.0 / ot as f64 },
                 "mean_energy_fraction_now": mean_energy,
@@ -589,8 +649,21 @@ impl Game {
             let tag = format!("Lineage {l}{}", name.as_deref().map(|n| format!(" ({n})")).unwrap_or_default());
             let reported = now_s.alive > 0 || alive_before > 0 || released > 0;
             // Facts about the body that decide its fate, stated plainly.
+            if reported && killed > 0 {
+                notes.push(format!(
+                    "{tag}: {killed} killed by other players' organisms since the last report (losing {lost:.3} energy per \
+                     organism per tick to attacks). Defences: shell (halves jaws), spikes (hurt attackers), toxin \
+                     (poisons them), camouflage (can't be smelled), or speed."
+                ));
+            }
+            if reported && hurt > prey_in && hurt > 0.0 {
+                notes.push(format!(
+                    "{tag}'s attacks cost more than they feed: {hurt:.3} energy per organism per tick lost to spikes or \
+                     toxin against {prey_in:.3} gained from prey."
+                ));
+            }
             if reported {
-                if ph.mouths == 0 {
+                if ph.mouths == 0 && ph.jaw == 0.0 && ph.stinger == 0.0 {
                     notes.push(format!("{tag} has no mouth, so it can never eat: it can only starve. Add {{\"part\": \"mouth\"}}."));
                 }
                 if ph.thrust == 0.0 {
@@ -604,7 +677,9 @@ impl Game {
             }
             if now_s.alive == 0 {
                 if alive_before > 0 || released > 0 {
-                    notes.push(format!("{tag} went extinct: {starved} starved since the last report."));
+                    notes.push(format!(
+                        "{tag} went extinct: {starved} starved and {killed} were killed by other players' organisms since the last report."
+                    ));
                 }
                 continue;
             }

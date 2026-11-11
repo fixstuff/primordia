@@ -61,12 +61,18 @@
   #track .doing { margin: 0 0 4px; padding-left: 18px; }
   #track .doing li { margin: 2px 0; }
   #track .gone { color: #f87171; }
+  #track .atk, .events .atk { color: #f87171; } #track .hit { color: #fb923c; }
+  .events { list-style: none; margin: 0; padding: 0; max-height: 180px; overflow-y: auto; font-size: 12px; }
+  .events li { padding: 2px 0; border-bottom: 1px solid var(--line); }
+  .events .evo { color: #facc15; }
+  .ex { color: var(--muted); }
   .tb { display: grid; grid-template-columns: 92px 1fr; gap: 2px 8px; align-items: center; font-size: 12px; margin: 3px 0; }
   .tb em { grid-column: 2; font-style: normal; color: var(--muted); font-size: 11px; }
   .tb i { position: relative; height: 8px; border-radius: 4px; background: rgba(255,255,255,.08); overflow: hidden; }
   .tb i b { position: absolute; top: 0; bottom: 0; left: 0; border-radius: 4px; background: #e5e7eb; }
   .tb i.en b { background: #fbbf24; } .tb i.ma b { background: #60a5fa; }
   .tb i.sugar b { background: #4ade80; } .tb i.mineral b { background: #60a5fa; }
+  .tb i.organism b { background: #fde047; }
   .tb i.sg b { background: #f472b6; }
   .tb i.sg::after { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(255,255,255,.4); }
   @media (max-width: 820px) {
@@ -83,6 +89,9 @@
   <span class="stat">population <b id="pop">–</b></span>
   <span class="stat">births <b id="births">–</b></span>
   <span class="stat">deaths <b id="deaths">–</b></span>
+  <span class="stat">kills <b id="kills">–</b></span>
+  <span class="stat">species <b id="species">–</b></span>
+  <span class="stat" id="settings"></span>
   <span id="conn">connecting…</span>
 </header>
 <main>
@@ -116,6 +125,10 @@
       <button id="untrack">Stop tracking (Esc)</button>
     </section>
     <section>
+      <h2>Events</h2>
+      <ul id="events" class="events"><li class="hint">Kills and new bodies appear here.</li></ul>
+    </section>
+    <section>
       <h2>Lineages</h2>
       <ul id="lineages"></ul>
       <p class="hint" id="followhint">Click a lineage to follow it. Click again to stop.</p>
@@ -126,7 +139,10 @@
         Each organism is coloured by lineage, brighter with more energy. Up close
         (zoom in) it is drawn from its genome: tails are flagella, the fringe is
         cilia, dark notches at the front are mouths, antennae are chemo-sensors
-        (green tip: sugar, blue: mineral), pale blobs inside are vacuoles.</p>
+        (green tip: sugar, blue: mineral, yellow: smells other organisms), pale
+        blobs inside are vacuoles. Combat: mandibles are jaws, a gold barb is a
+        stinger, a tan rim is a shell, white points are spikes, a green dashed
+        ring is toxin, and a faint body is camouflaged.</p>
     </section>
   </aside>
 </main>

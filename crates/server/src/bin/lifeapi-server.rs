@@ -24,10 +24,12 @@ fn main() {
     let (mut window_ticks, mut window_secs, mut match_ticks) = (500u64, 120f64, 10_000u64);
     let (mut log, mut results) = (None, None);
     let mut first_window_secs: Option<f64> = None;
+    let mut combat: Option<String> = None;
+    let mut evolve: f32 = 0.0;
     let mut realtime = false;
     let mut args = std::env::args().skip(1);
     let usage = "usage: lifeapi-server [--addr HOST:PORT] [--http HOST:PORT | --no-viewer] [--seed N] \
-                 [--world NAME|FILE] [--arena PLAYERS [--window-ticks N] [--window-secs S] [--first-window-secs S] [--realtime] [--match-ticks N] \
+                 [--world NAME|FILE] [--combat off|colony|individual] [--evolve-bodies RATE] [--arena PLAYERS [--window-ticks N] [--window-secs S] [--first-window-secs S] [--realtime] [--match-ticks N] \
                  [--log FILE] [--results FILE]]";
     while let Some(a) = args.next() {
         let mut val = || args.next().unwrap_or_else(|| panic!("{a} needs a value"));
@@ -37,6 +39,8 @@ fn main() {
             "--no-viewer" => http = None,
             "--seed" => seed = val().parse().expect("--seed is a number"),
             "--world" => world = val(),
+            "--combat" => combat = Some(val()),
+            "--evolve-bodies" => evolve = val().parse().expect("--evolve-bodies RATE (0..=1)"),
             "--arena" => {
                 arena = Some(ArenaConfig {
                     players: val().parse().expect("--arena PLAYERS"),
@@ -66,10 +70,18 @@ fn main() {
         eprintln!("lifeapi-server: {e}");
         std::process::exit(2);
     });
-    let w = spec.build(seed).unwrap_or_else(|e| {
+    let mut w = spec.build(seed).unwrap_or_else(|e| {
         eprintln!("lifeapi-server: {e}");
         std::process::exit(2);
     });
+    if let Some(c) = combat.as_deref() {
+        w.cfg.combat = lifeapi_sim::world::CombatMode::parse(c).unwrap_or_else(|e| {
+            eprintln!("lifeapi-server: {e}");
+            std::process::exit(2);
+        });
+    }
+    w.cfg.body_mutation = evolve;
+    eprintln!("lifeapi-server: combat {}, body evolution {}", w.cfg.combat.name(), evolve);
     let open = |a: &str| match bind(a) {
         Ok(l) => l,
         Err(e) => {

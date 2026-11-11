@@ -27,6 +27,8 @@ use lifeapi_sim::World;
 
 /// --world: a preset name or a WorldSpec JSON path (default calm).
 static WORLD: std::sync::OnceLock<String> = std::sync::OnceLock::new();
+static COMBAT: std::sync::OnceLock<lifeapi_sim::world::CombatMode> = std::sync::OnceLock::new();
+static EVOLVE: std::sync::OnceLock<f32> = std::sync::OnceLock::new();
 use serde_json::{json, Value};
 
 #[derive(PartialEq)]
@@ -47,9 +49,17 @@ fn run(seed: u64, ticks: u64, founders: usize, gs: &[&Genome]) -> Vec<(u64, f64)
     let world = WORLD.get().map(String::as_str).unwrap_or("calm");
     let spec = worlds::load(world, seed).unwrap_or_else(|e| panic!("{e}"));
     let mut w: World = spec.build(seed).unwrap_or_else(|e| panic!("{e}"));
+    if let Some(c) = COMBAT.get() {
+        w.cfg.combat = *c;
+    }
+    if let Some(r) = EVOLVE.get() {
+        w.cfg.body_mutation = *r;
+    }
     let mut lineages = Vec::new();
-    for g in gs {
+    for (k, g) in gs.iter().enumerate() {
         let sp = w.add_species((*g).clone()).expect("expressed when loaded");
+        // Each entry is its own team, so jaws and stingers bite the others.
+        w.species[sp as usize].team = k as u32 + 1;
         lineages.push(w.release(sp, founders).expect("species exists"));
     }
     for _ in 0..ticks {
@@ -93,6 +103,13 @@ fn main() {
                 let w = args.next().expect("--world NAME|FILE");
                 worlds::load(&w, 0).unwrap_or_else(|e| panic!("{e}"));
                 WORLD.set(w).expect("--world given once");
+            }
+            "--combat" => {
+                let c = args.next().expect("--combat off|colony|individual");
+                COMBAT.set(lifeapi_sim::world::CombatMode::parse(&c).unwrap_or_else(|e| panic!("{e}"))).unwrap();
+            }
+            "--evolve-bodies" => {
+                EVOLVE.set(args.next().expect("--evolve-bodies RATE").parse().expect("number")).unwrap();
             }
             "--together" => mode = Mode::Together,
             "--round-robin" => mode = Mode::RoundRobin,

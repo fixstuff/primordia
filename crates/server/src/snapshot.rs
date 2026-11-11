@@ -3,7 +3,7 @@
 //! Sandbox spectating shows the whole pool. Arena matches (M4) will close
 //! this stream to their players and delay it for everyone else (design §6).
 //!
-//! Binary frame, little-endian, version 2:
+//! Binary frame, little-endian, version 4:
 //! ```text
 //! 0   "LAPI"           4 bytes
 //! 4   version u8 = 1, then 3 zero bytes
@@ -13,19 +13,23 @@
 //! 28  n u32                    organisms
 //! 32  sugar   u8[grid_w*grid_h]   v/(v+1)*255, row-major
 //!     mineral u8[grid_w*grid_h]
-//!     n x 24 bytes: x f32, y f32, heading f32, lineage u32,
+//!     n x 28 bytes: x f32, y f32, heading f32, lineage u32,
 //!                   energy u16 (fraction of capacity * 65535),
 //!                   radius u16 (radius * 100), id u32 (low 32 bits of the
-//!                   organism id, for tracking one organism)
+//!                   organism id, for tracking one organism), species u32
+//!                   (bodies can evolve, so a lineage may hold many species),
+//!                   flags u32 (1 = attacking, 2 = attacked or hurt,
+//!                   4 = evolved body), target u32 (low 32 bits of the id it
+//!                   is attacking, 0 = none)
 //! ```
 
 use crate::Game;
 use serde_json::json;
 
 pub const MAGIC: &[u8; 4] = b"LAPI";
-pub const FRAME_VERSION: u8 = 2;
+pub const FRAME_VERSION: u8 = 4;
 pub const HEADER_BYTES: usize = 32;
-pub const ORG_BYTES: usize = 24;
+pub const ORG_BYTES: usize = 36;
 pub const MAX_FIELD: usize = 256;
 
 pub struct Snapshot {
@@ -54,6 +58,9 @@ pub fn build(game: &Game, history_after: Option<u64>) -> Snapshot {
                 "body": body_plan(&sp.genome),
                 "owner": game.owner_name(o.lineage),
                 "alive": counts[l],
+                "kills": w.lineages[l].kills,
+                "killed": w.lineages[l].killed,
+                "bodies": bodies_in(w, o.lineage),
             }));
         }
     }
@@ -62,6 +69,20 @@ pub fn build(game: &Game, history_after: Option<u64>) -> Snapshot {
             lineages.push(json!({"lineage": l, "owner": game.owner_name(l as u32), "alive": 0}));
         }
     }
+    // Body plans of every species alive now (evolved ones included).
+    let mut alive_sp = vec![false; w.species.len()];
+    for o in &w.orgs {
+        alive_sp[o.species as usize] = true;
+    }
+    let species_bodies: Vec<_> = alive_sp
+        .iter()
+        .enumerate()
+        .filter(|(_, a)| **a)
+        .map(|(s, _)| {
+            json!({"species": s, "name": w.species[s].genome.name, "origin": w.species[s].origin,
+                   "body": body_plan(&w.species[s].genome)})
+        })
+        .collect();
     let history: Vec<_> = game
         .history()
         .iter()
@@ -70,6 +91,7 @@ pub fn build(game: &Game, history_after: Option<u64>) -> Snapshot {
     let history_tick = history.last().map(|p| p.tick).or(history_after);
     let meta = json!({
         "type": "meta",
+        "frame_version": FRAME_VERSION,
         "tick": w.tick,
         "history_reset": history_after.is_none(),
         "world": {
@@ -78,12 +100,26 @@ pub fn build(game: &Game, history_after: Option<u64>) -> Snapshot {
             "population": w.orgs.len(),
             "births": w.stats.births,
             "deaths": w.stats.deaths,
+            "kills": w.lineages.iter().map(|l| l.kills).sum::<u64>(),
+            "species_alive": species_bodies.len(),
+            "evolved_alive": alive_sp.iter().enumerate().filter(|(s, a)| **a && !w.species[*s].origin.is_empty()).count(),
+            "combat": w.cfg.combat.name(),
+            "body_evolution": w.cfg.body_mutation,
         },
         "lineages": lineages,
+        "species": species_bodies,
         "history": history,
     })
     .to_string();
     Snapshot { version: game.version(), history_tick, meta, frame: encode_frame(game) }
+}
+
+/// How many different bodies (species) a lineage has alive.
+fn bodies_in(w: &lifeapi_sim::world::World, lineage: u32) -> usize {
+    let mut ss: Vec<u32> = w.orgs.iter().filter(|x| x.lineage == lineage).map(|x| x.species).collect();
+    ss.sort_unstable();
+    ss.dedup();
+    ss.len()
 }
 
 /// One organism for the viewer's track panel: state, what it senses, and
@@ -96,8 +132,9 @@ pub fn inspect(game: &Game, id: u64) -> Option<String> {
     let sensors: Vec<_> = i
         .sensors
         .iter()
-        .map(|&(ang, c, v)| json!({"angle_deg": (ang / lifeapi_sim::det::DEG).round(),
-                                   "chemical": if c == 0 { "sugar" } else { "mineral" },
+        .map(|&(ang, c, v)| (ang, ["sugar", "mineral", "organism"][std::cmp::min(c, 2)], v))
+        .map(|(ang, chem, v)| json!({"angle_deg": (ang / lifeapi_sim::det::DEG).round(),
+                                   "chemical": chem,
                                    "reading": v, "input": v / (v + 1.0)}))
         .collect();
     Some(
@@ -110,6 +147,8 @@ pub fn inspect(game: &Game, id: u64) -> Option<String> {
             "mouths": i.mouths, "sugar_here": i.sugar_here, "mineral_here": i.mineral_here,
             "sensors": sensors,
             "brain": {"thrust": i.thrust_out, "turn": i.turn_out},
+            "fight": {"target": i.fight.target, "dealt": i.fight.dealt, "attacker": i.fight.attacker,
+                      "taken": i.fight.taken, "hurt": i.fight.hurt},
             "next": {"speed": i.speed, "turn_deg": (i.turn_rate / lifeapi_sim::det::DEG * 10.0).round() / 10.0},
         })
         .to_string(),
@@ -117,23 +156,39 @@ pub fn inspect(game: &Game, id: u64) -> Option<String> {
 }
 
 /// The parts the viewer draws: flagella (power each), cilia (power each),
-/// mouths, sensors ([angle in degrees, chemical]) and vacuoles (capacity each).
+/// mouths, sensors ([angle in degrees, chemical]), vacuoles (capacity each),
+/// and the combat parts (summed power, capped at 1 as the sim uses them).
 fn body_plan(g: &lifeapi_sim::genome::Genome) -> serde_json::Value {
     use lifeapi_sim::genome::{Chemical, Part};
     let (mut flagella, mut cilia, mut sensors, mut vacuoles, mut mouths) = (vec![], vec![], vec![], vec![], 0);
+    let (mut jaw, mut stinger, mut shell, mut spikes, mut toxin, mut camouflage) = (0f32, 0f32, 0f32, 0f32, 0f32, false);
     for part in &g.body {
         match part {
             Part::Membrane { .. } => {}
             Part::Flagellum { power } => flagella.push(*power),
             Part::Cilia { power } => cilia.push(*power),
             Part::Mouth => mouths += 1,
-            Part::ChemoSensor { angle, chemical } => {
-                sensors.push(json!([angle, if *chemical == Chemical::Sugar { "sugar" } else { "mineral" }]))
-            }
+            Part::ChemoSensor { angle, chemical } => sensors.push(json!([
+                angle,
+                match chemical {
+                    Chemical::Sugar => "sugar",
+                    Chemical::Mineral => "mineral",
+                    Chemical::Organism => "organism",
+                }
+            ])),
             Part::Vacuole { capacity } => vacuoles.push(*capacity),
+            Part::Jaw { power } => jaw += power,
+            Part::Stinger { power } => stinger += power,
+            Part::Shell { thickness } => shell += thickness,
+            Part::Spikes { power } => spikes += power,
+            Part::Camouflage => camouflage = true,
+            Part::Toxin { power } => toxin += power,
         }
     }
-    json!({"flagella": flagella, "cilia": cilia, "mouths": mouths, "sensors": sensors, "vacuoles": vacuoles})
+    let cap = |v: f32| if v > 1.0 { 1.0 } else { v };
+    json!({"flagella": flagella, "cilia": cilia, "mouths": mouths, "sensors": sensors, "vacuoles": vacuoles,
+           "jaw": cap(jaw), "stinger": cap(stinger), "shell": cap(shell), "spikes": cap(spikes),
+           "toxin": cap(toxin), "camouflage": camouflage})
 }
 
 fn encode_frame(game: &Game) -> Vec<u8> {
@@ -169,6 +224,13 @@ fn encode_frame(game: &Game) -> Vec<u8> {
         b.extend_from_slice(&((e * 65535.0) as u16).to_le_bytes());
         b.extend_from_slice(&((p.radius * 100.0) as u16).to_le_bytes());
         b.extend_from_slice(&(o.id as u32).to_le_bytes());
+        b.extend_from_slice(&o.species.to_le_bytes());
+        let f = &o.fight;
+        let flags = (f.target != 0) as u32
+            | (((f.attacker != 0) || f.hurt > 0.0) as u32) << 1
+            | ((!w.species[o.species as usize].origin.is_empty()) as u32) << 2;
+        b.extend_from_slice(&flags.to_le_bytes());
+        b.extend_from_slice(&(f.target as u32).to_le_bytes());
     }
     b
 }
@@ -207,6 +269,8 @@ mod tests {
         assert_eq!(u32_at(b, o0 + 12), org.lineage);
         assert_eq!(u16::from_le_bytes([b[o0 + 18], b[o0 + 19]]), 600);
         assert_eq!(u32_at(b, o0 + 20) as u64, org.id);
+        assert_eq!(u32_at(b, o0 + 24), org.species);
+        assert_eq!(u32_at(b, o0 + 28), 0, "no fight, not evolved");
         // The track panel: found by id, and gone ids say so.
         let i: serde_json::Value = serde_json::from_str(&inspect(&g, org.id).unwrap()).unwrap();
         assert_eq!(i["id"], org.id);

@@ -19,6 +19,10 @@ pub const N_OUT: usize = 2;
 pub enum Chemical {
     Sugar,
     Mineral,
+    /// Not a chemical: the scent of OTHER teams' organisms (bodies, by area),
+    /// so predators can find prey and prey can notice predators. Camouflaged
+    /// bodies give off none.
+    Organism,
 }
 
 impl Chemical {
@@ -26,6 +30,7 @@ impl Chemical {
         match self {
             Chemical::Sugar => 0,
             Chemical::Mineral => 1,
+            Chemical::Organism => 2,
         }
     }
 }
@@ -45,6 +50,20 @@ pub enum Part {
     ChemoSensor { angle: f32, chemical: Chemical },
     /// Extra energy storage.
     Vacuole { capacity: f32 },
+    /// OFFENCE. Bites an enemy organism on contact, if it is smaller than you.
+    /// You keep 35% of the energy taken. Shells block up to 75%.
+    Jaw { power: f32 },
+    /// OFFENCE. Drains any other team's organism on contact, any size, and
+    /// pierces shells. You keep only a fifth: it kills more than it feeds.
+    Stinger { power: f32 },
+    /// DEFENCE. Blocks 75% of jaw bites at full thickness. Heavy: slows you.
+    Shell { thickness: f32 },
+    /// DEFENCE. Anything that bites or stings you takes damage.
+    Spikes { power: f32 },
+    /// DEFENCE. Other organisms' sensors can't smell you.
+    Camouflage,
+    /// DEFENCE. Whoever bites or stings you is poisoned instead of fed.
+    Toxin { power: f32 },
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]
@@ -87,6 +106,15 @@ pub struct Phenotype {
     /// (angle in radians, chemical index)
     pub sensors: Vec<(f32, usize)>,
     pub capacity: f32,
+    /// Combat parts (each sum capped at 1).
+    pub jaw: f32,
+    pub stinger: f32,
+    pub shell: f32,
+    pub spikes: f32,
+    pub camouflage: bool,
+    pub toxin: f32,
+    /// Has a sensor for other organisms' scent.
+    pub smells: bool,
     /// Energy burned per tick just for existing.
     pub upkeep: f32,
     /// Mineral needed to build a child.
@@ -131,6 +159,8 @@ impl Genome {
 
         let mut radius = None;
         let (mut thrust, mut cilia, mut mouths, mut vacuole) = (0.0f32, 0.0f32, 0u32, 0.0f32);
+        let (mut jaw, mut stinger, mut shell, mut spikes, mut toxin) = (0.0f32, 0.0f32, 0.0f32, 0.0f32, 0.0f32);
+        let mut camouflage = false;
         let mut sensors = Vec::new();
         for (i, p) in self.body.iter().enumerate() {
             match *p {
@@ -161,6 +191,27 @@ impl Genome {
                     in_range(&format!("body[{i}].capacity"), capacity, 0.0, 100.0)?;
                     vacuole += capacity;
                 }
+                Part::Jaw { power } => {
+                    in_range(&format!("body[{i}].power"), power, 0.0, 1.0)?;
+                    jaw += power;
+                }
+                Part::Stinger { power } => {
+                    in_range(&format!("body[{i}].power"), power, 0.0, 1.0)?;
+                    stinger += power;
+                }
+                Part::Shell { thickness } => {
+                    in_range(&format!("body[{i}].thickness"), thickness, 0.0, 1.0)?;
+                    shell += thickness;
+                }
+                Part::Spikes { power } => {
+                    in_range(&format!("body[{i}].power"), power, 0.0, 1.0)?;
+                    spikes += power;
+                }
+                Part::Camouflage => camouflage = true,
+                Part::Toxin { power } => {
+                    in_range(&format!("body[{i}].power"), power, 0.0, 1.0)?;
+                    toxin += power;
+                }
             }
         }
         let r = radius.ok_or("body must have a membrane")?;
@@ -188,9 +239,13 @@ impl Genome {
         }
 
         let area = r * r;
+        let (jaw, stinger, shell, spikes, toxin) =
+            (det::min(jaw, 1.0), det::min(stinger, 1.0), det::min(shell, 1.0), det::min(spikes, 1.0), det::min(toxin, 1.0));
+        let smells = sensors.iter().any(|&(_, c)| c == Chemical::Organism.index());
         Ok(Phenotype {
             radius: r,
-            thrust,
+            // A shell is heavy: full thickness costs 40% of your speed.
+            thrust: thrust * (1.0 - 0.4 * det::min(shell, 1.0)),
             turn: 0.05 + 0.15 * cilia,
             mouths,
             capacity: 2.0 * area + vacuole,
@@ -199,7 +254,20 @@ impl Genome {
                 + 0.006 * cilia
                 + 0.004 * mouths as f32
                 + 0.002 * sensors.len() as f32
-                + 0.0002 * vacuole,
+                + 0.0002 * vacuole
+                + 0.010 * jaw
+                + 0.006 * stinger
+                + 0.002 * shell
+                + 0.004 * spikes
+                + if camouflage { 0.006 } else { 0.0 }
+                + 0.004 * toxin,
+            jaw,
+            stinger,
+            shell,
+            spikes,
+            camouflage,
+            toxin,
+            smells,
             child_material: 0.1 * area,
             founder_energy: area,
             sensors,
@@ -231,8 +299,24 @@ pub fn catalog() -> serde_json::Value {
             {"part": "mouth", "fields": {}, "note": "eats sugar (energy) and mineral (material for children) from the cell under the body"},
             {"part": "chemo_sensor", "fields": {"angle": "-180..=180 degrees off the heading", "chemical": "sugar | mineral"}},
             {"part": "vacuole", "fields": {"capacity": "0..=100 extra energy storage"}},
+            {"part": "jaw", "fields": {"power": "0..=1"}, "role": "offence",
+             "note": "on contact, bites an enemy organism SMALLER than you: takes 0.8*power energy per tick (less 75%*thickness of its shell) and some material; you keep 35%"},
+            {"part": "stinger", "fields": {"power": "0..=1"}, "role": "offence",
+             "note": "on contact, drains 0.4*power energy per tick from an enemy organism of ANY size, ignoring shells; you keep only a fifth"},
+            {"part": "shell", "fields": {"thickness": "0..=1"}, "role": "defence",
+             "note": "jaw bites on you are cut by 75%*thickness; costs up to 40% of your speed"},
+            {"part": "spikes", "fields": {"power": "0..=1"}, "role": "defence",
+             "note": "anything that bites or stings you loses 1.0*power energy per tick of contact (more than a jaw gains)"},
+            {"part": "camouflage", "fields": {}, "role": "defence",
+             "note": "other organisms' 'organism' sensors can't smell you"},
+            {"part": "toxin", "fields": {"power": "0..=1"}, "role": "defence",
+             "note": "whoever bites or stings you gains less, and at power >= 0.5 LOSES energy instead (gain x (1 - 2*power))"},
         ],
-        "chemicals": ["sugar", "mineral"],
+        "chemicals": ["sugar", "mineral", "organism"],
+        "combat": "who counts as an enemy depends on the match's combat setting (told at hello): off = no combat; \
+                   colony = other players' organisms; individual = any organism except your parent, children and \
+                   siblings. Bodies touch when they overlap. A sensor with chemical \"organism\" smells enemy \
+                   (non-camouflaged) bodies nearby.",
         "brain": {
             "inputs": "one per chemo_sensor (reading v as v/(v+1)), then own energy/capacity, then a bias of 1",
             "outputs": ["thrust (negative = stop)", "turn"],
@@ -242,7 +326,8 @@ pub fn catalog() -> serde_json::Value {
         },
         "phenotype": {
             "capacity": "2*r^2 + sum(vacuole.capacity)",
-            "upkeep_per_tick": "0.0005*r^2 + 0.01*thrust + 0.006*cilia + 0.004*mouths + 0.002*sensors + 0.0002*vacuole",
+            "upkeep_per_tick": "0.0005*r^2 + 0.01*thrust + 0.006*cilia + 0.004*mouths + 0.002*sensors + 0.0002*vacuole \
+                                + 0.01*jaw + 0.006*stinger + 0.002*shell + 0.004*spikes + 0.006*camouflage + 0.004*toxin",
             "turn_rad_per_tick": "0.05 + 0.15*sum(cilia.power)",
             "speed": "max_speed * max(thrust_out,0) * sum(flagellum.power) * 6/r",
             "child_material": "0.1*r^2",

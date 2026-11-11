@@ -3,7 +3,24 @@
 "use strict";
 
 const $ = (id) => document.getElementById(id);
-const HEADER = 32, ORG = 24;
+const HEADER = 32, ORG = 36;
+const FRAME_V = 4;
+
+// A server restarted onto a newer build sends a newer frame format than this
+// page understands: reload to get the matching viewer (at most once a minute,
+// so a real mismatch can't loop).
+function staleViewer(serverV) {
+  let last = 0;
+  try { last = Number(sessionStorage.getItem("lifeapi-reload") || 0); } catch (_) {}
+  if (Date.now() - last > 60000) {
+    try { sessionStorage.setItem("lifeapi-reload", String(Date.now())); } catch (_) {}
+    location.reload();
+    return;
+  }
+  setConn(`viewer out of date (server frame v${serverV}): reload the page`, "down");
+  $("empty").style.display = "grid";
+  $("empty").textContent = "This page is older than the server. Reload the page (Ctrl+Shift+R).";
+}
 const ZOOM_MIN = 1, ZOOM_MAX = 32;
 
 const S = {
@@ -12,6 +29,9 @@ const S = {
   history: [],         // [{tick,total,lineages:[[id,n],...]}]
   follow: null,        // lineage id or null
   track: null,         // one organism's id (low 32 bits) or null
+  bursts: [],          // [{x, y, t0}] where an organism was killed
+  events: [],          // newest first: html strings for the event feed
+  seenSpecies: new Set(),
   insp: null,          // latest /inspect reply for the tracked organism
   pan: null,           // [x, y] world point the user dragged to, or null
   view: null,          // last drawn transform, for mouse -> world
@@ -52,12 +72,20 @@ function connect() {
 }
 
 function onMeta(m) {
+  if (m.frame_version && m.frame_version !== FRAME_V) return staleViewer(m.frame_version);
   if (m.history_reset) S.history = [];
   for (const p of m.history) S.history.push(p);
   S.meta = m;
-  // Body plan per lineage (the body never mutates; only the brain does).
+  // Body plan per species (bodies can evolve, so draw each organism's own).
   S.bodies = new Map();
-  for (const l of m.lineages) if (l.body) S.bodies.set(l.lineage, l.body);
+  for (const s of m.species || []) {
+    S.bodies.set(s.species, s.body);
+    if (s.origin && !S.seenSpecies.has(s.species) && S.meta) event(`<b class="evo">new body</b> ${s.name}: ${s.origin.replace(/^[^:]*: /, "")}`);
+    S.seenSpecies.add(s.species);
+  }
+  $("kills").textContent = (m.world.kills || 0).toLocaleString();
+  $("species").textContent = `${m.world.species_alive || 0}` + (m.world.evolved_alive ? ` (${m.world.evolved_alive} evolved)` : "");
+  $("settings").textContent = `combat ${m.world.combat || "off"} · evolution ${m.world.body_evolution ? Math.round(m.world.body_evolution * 100) + "%" : "off"}`;
   $("tick").textContent = m.tick.toLocaleString();
   $("pop").textContent = m.world.population.toLocaleString();
   $("births").textContent = m.world.births.toLocaleString();
@@ -69,8 +97,9 @@ function onMeta(m) {
 function onFrame(buf) {
   const dv = new DataView(buf);
   const magic = String.fromCharCode(dv.getUint8(0), dv.getUint8(1), dv.getUint8(2), dv.getUint8(3));
-  if (magic !== "LAPI" || dv.getUint8(4) !== 2) {
-    setConn("unknown frame format", "down");
+  if (magic !== "LAPI" || dv.getUint8(4) !== FRAME_V) {
+    if (magic === "LAPI") staleViewer(dv.getUint8(4));
+    else setConn("unknown frame format", "down");
     return;
   }
   const fw = dv.getUint16(16, true), fh = dv.getUint16(18, true);
@@ -82,7 +111,8 @@ function onFrame(buf) {
     n,
     x: new Float32Array(n), y: new Float32Array(n), h: new Float32Array(n),
     lin: new Uint32Array(n), e: new Float32Array(n), r: new Float32Array(n),
-    id: new Uint32Array(n),
+    id: new Uint32Array(n), sp: new Uint32Array(n),
+    flags: new Uint32Array(n), target: new Uint32Array(n),
   };
   const sugar = new Uint8Array(buf, HEADER, fw * fh);
   const mineral = new Uint8Array(buf, HEADER + fw * fh, fw * fh);
@@ -95,6 +125,9 @@ function onFrame(buf) {
     f.e[i] = dv.getUint16(o + 16, true) / 65535;
     f.r[i] = dv.getUint16(o + 18, true) / 100;
     f.id[i] = dv.getUint32(o + 20, true);
+    f.sp[i] = dv.getUint32(o + 24, true);
+    f.flags[i] = dv.getUint32(o + 28, true);
+    f.target[i] = dv.getUint32(o + 32, true);
   }
   // Paint the chemical field once per frame at native resolution.
   const fc = S.field;
@@ -109,6 +142,7 @@ function onFrame(buf) {
     img.data[i * 4 + 3] = 255;
   }
   ctx.putImageData(img, 0, 0);
+  noteFights(S.frame, f);
   S.frame = f;
   $("empty").style.display = n === 0 && !S.meta?.lineages?.length ? "grid" : "none";
   if (n === 0) $("empty").textContent = "The pool is empty. Release a lineage through the API.";
@@ -150,7 +184,7 @@ function centre(f, lineage) {
 
 // Organisms at least this many pixels in radius are drawn with their parts.
 const DETAIL_PX = 4;
-const SENSOR_COL = { sugar: "#4ade80", mineral: "#60a5fa" };
+const SENSOR_COL = { sugar: "#4ade80", mineral: "#60a5fa", organism: "#fde047" };
 
 // One organism drawn from its genome: wiggling flagella out the back, a cilia
 // fringe, the membrane (lineage colour, brightness = energy), vacuoles inside,
@@ -197,14 +231,46 @@ function drawOrganism(g, x, y, r, h, body, lin, e, a, seed) {
     g.stroke();
   }
 
-  // Membrane.
-  g.fillStyle = col(lin, a, 30 + 40 * e);
+  // Spikes: triangles out from the rim, longer with power.
+  if (body.spikes > 0) {
+    const ns = 12, len = r * (0.25 + 0.35 * body.spikes);
+    g.fillStyle = `rgba(226,232,240,${a * 0.85})`;
+    g.beginPath();
+    for (let k = 0; k < ns; k++) {
+      const ang = h + ((k + 0.5) / ns) * 2 * Math.PI, w = Math.PI / ns * 0.6;
+      const [p1x, p1y] = at(ang - w, r * 0.95), [p2x, p2y] = at(ang + w, r * 0.95), [tx, ty] = at(ang, r + len);
+      g.moveTo(p1x, p1y); g.lineTo(tx, ty); g.lineTo(p2x, p2y);
+    }
+    g.fill();
+  }
+
+  // Membrane. Camouflage makes the body faint.
+  const ba = body.camouflage ? a * 0.35 : a;
+  g.fillStyle = col(lin, ba, 30 + 40 * e);
   g.beginPath();
   g.arc(x, y, r, 0, 2 * Math.PI);
   g.fill();
-  g.strokeStyle = col(lin, a, 80);
+  g.strokeStyle = col(lin, ba, 80);
   g.lineWidth = Math.max(0.8, r / 10);
   g.stroke();
+  // Shell: a thick hard rim.
+  if (body.shell > 0) {
+    g.strokeStyle = `rgba(214,188,140,${ba * 0.95})`;
+    g.lineWidth = Math.max(1.5, r * (0.08 + 0.2 * body.shell));
+    g.beginPath();
+    g.arc(x, y, r * 0.92, 0, 2 * Math.PI);
+    g.stroke();
+  }
+  // Toxin: a warning ring of bright dashes.
+  if (body.toxin > 0) {
+    g.strokeStyle = `rgba(163,230,53,${ba * (0.5 + 0.5 * body.toxin)})`;
+    g.lineWidth = Math.max(1, r / 8);
+    g.setLineDash([Math.max(2, r / 3), Math.max(2, r / 4)]);
+    g.beginPath();
+    g.arc(x, y, r * 0.6, 0, 2 * Math.PI);
+    g.stroke();
+    g.setLineDash([]);
+  }
 
   // Vacuoles: pale blobs inside, bigger with capacity.
   const nv = Math.min(body.vacuoles.length, 8);
@@ -223,6 +289,34 @@ function drawOrganism(g, x, y, r, h, body, lin, e, a, seed) {
     const [mx, my] = at(h + (k - (body.mouths - 1) / 2) * 0.55, r * 0.78);
     g.beginPath();
     g.arc(mx, my, r * 0.22, 0, 2 * Math.PI);
+    g.fill();
+  }
+
+  // Jaw: two mandibles at the front that snap open and shut.
+  if (body.jaw > 0) {
+    const len = r * (0.5 + 0.6 * body.jaw), open = 0.35 + 0.25 * Math.abs(Math.sin(t * 6 + seed));
+    g.strokeStyle = `rgba(254,226,226,${a})`;
+    g.lineWidth = Math.max(1.2, r / 5);
+    g.lineCap = "round";
+    for (const side of [-1, 1]) {
+      const [bx, by] = at(h + side * 0.5, r * 0.9);
+      const tipA = h + side * open * 0.5;
+      g.beginPath();
+      g.moveTo(bx, by);
+      g.quadraticCurveTo(bx + Math.cos(h + side * open) * len, by + Math.sin(h + side * open) * len,
+                         x + Math.cos(tipA) * (r + len), y + Math.sin(tipA) * (r + len));
+      g.stroke();
+    }
+    g.lineCap = "butt";
+  }
+  // Stinger: a sharp barb straight ahead.
+  if (body.stinger > 0) {
+    const len = r * (0.6 + 0.8 * body.stinger), w = r * 0.18;
+    const [bx, by] = at(h, r * 0.85), [tx, ty] = at(h, r + len);
+    const px = -Math.sin(h) * w, py = Math.cos(h) * w;
+    g.fillStyle = `rgba(251,191,36,${a})`;
+    g.beginPath();
+    g.moveTo(bx + px, by + py); g.lineTo(tx, ty); g.lineTo(bx - px, by - py);
     g.fill();
   }
 
@@ -283,7 +377,7 @@ function drawPool() {
       const r = Math.max(1.5, f.r[i] * scale);
       if (x < -r || y < -r || x > c.width + r || y > c.height + r) continue;
       const a = dimOthers && !mine ? 0.22 : 0.95;
-      const body = S.bodies?.get(f.lin[i]);
+      const body = S.bodies?.get(f.sp[i]);
       if (body && r >= DETAIL_PX) {
         drawOrganism(g, x, y, r, f.h[i], body, f.lin[i], f.e[i], a, f.x[i] + f.y[i]);
         S.animating = true;
@@ -303,7 +397,97 @@ function drawPool() {
       }
     }
   }
+  drawFights(g, f, toX, toY, scale);
   drawTracked(g, f, toX, toY, scale);
+}
+
+// ---- combat and evolution, visible at any zoom ------------------------------
+
+// Between two frames: an organism that was under attack and is now gone was
+// killed. Leave a burst where it fell, and log it.
+function noteFights(prev, f) {
+  if (!prev) return;
+  const now = new Set(f.id);
+  for (let i = 0; i < prev.n; i++) {
+    if (!(prev.flags[i] & 2) || now.has(prev.id[i])) continue;
+    S.bursts.push({ x: prev.x[i], y: prev.y[i], t0: performance.now() });
+    // Who was biting it last frame?
+    let killer = -1;
+    for (let k = 0; k < prev.n; k++) if (prev.target[k] === prev.id[i]) { killer = k; break; }
+    const victim = nameOf(prev, i);
+    event(killer >= 0 ? `<b class="atk">kill</b> ${nameOf(prev, killer)} killed ${victim}` : `<b class="atk">kill</b> ${victim} died fighting`);
+  }
+  if (S.bursts.length > 200) S.bursts.splice(0, S.bursts.length - 200);
+}
+function nameOf(f, i) {
+  const l = S.meta?.lineages?.find((x) => x.lineage === f.lin[i]);
+  const sp = S.meta?.species?.find((x) => x.species === f.sp[i]);
+  return `<span style="color:${col(f.lin[i])}">${sp?.name || l?.species_name || "#" + f.lin[i]}</span>` + (l?.owner ? ` <small>(${l.owner})</small>` : "");
+}
+function event(html) {
+  S.events.unshift(html);
+  S.events.length = Math.min(S.events.length, 40);
+  const ul = $("events");
+  if (!ul) return;
+  ul.innerHTML = S.events.map((e) => `<li>${e}</li>`).join("");
+}
+
+function drawFights(g, f, toX, toY, scale) {
+  const now = performance.now();
+  const idx = new Map();
+  for (let i = 0; i < f.n; i++) idx.set(f.id[i], i);
+  let any = false;
+  for (let i = 0; i < f.n; i++) {
+    const fl = f.flags[i];
+    if (!fl) continue;
+    const x = toX(f.x[i]), y = toY(f.y[i]), r = Math.max(2, f.r[i] * scale);
+    if (fl & 4) {
+      // Evolved body: a gold halo.
+      g.strokeStyle = "rgba(250,204,21,0.85)";
+      g.lineWidth = Math.max(1, r / 6);
+      g.beginPath();
+      g.arc(x, y, r * 1.35 + 1, 0, 2 * Math.PI);
+      g.stroke();
+    }
+    if (fl & 1) {
+      const k = idx.get(f.target[i]);
+      if (k !== undefined) {
+        g.strokeStyle = "rgba(239,68,68,0.9)";
+        g.lineWidth = Math.max(2, r / 3);
+        g.beginPath();
+        g.moveTo(x, y);
+        g.lineTo(toX(f.x[k]), toY(f.y[k]));
+        g.stroke();
+      }
+      any = true;
+    }
+    if (fl & 2) {
+      const p = 1 + 0.3 * Math.sin(now / 80 + i);
+      g.strokeStyle = "rgba(239,68,68,0.95)";
+      g.lineWidth = Math.max(1.5, r / 4);
+      g.beginPath();
+      g.arc(x, y, r * 1.6 * p + 2, 0, 2 * Math.PI);
+      g.stroke();
+      any = true;
+    }
+  }
+  // Kill bursts fade over a second and a half.
+  S.bursts = S.bursts.filter((b) => now - b.t0 < 1500);
+  for (const b of S.bursts) {
+    const u = (now - b.t0) / 1500, x = toX(b.x), y = toY(b.y);
+    const rr = (6 + 30 * u) * Math.max(1, Math.sqrt(S.zoom));
+    g.strokeStyle = `rgba(248,113,113,${1 - u})`;
+    g.lineWidth = 3;
+    g.beginPath();
+    g.arc(x, y, rr, 0, 2 * Math.PI);
+    g.stroke();
+    g.beginPath();
+    g.moveTo(x - rr / 2, y - rr / 2); g.lineTo(x + rr / 2, y + rr / 2);
+    g.moveTo(x + rr / 2, y - rr / 2); g.lineTo(x - rr / 2, y + rr / 2);
+    g.stroke();
+    any = true;
+  }
+  if (any) S.animating = true;
 }
 
 // The tracked organism: a ring, and its sensors' sample points with what they
@@ -327,11 +511,24 @@ function drawTracked(g, f, toX, toY, scale) {
       const a = h + (s.angle_deg * Math.PI) / 180;
       const reach = (f.r[ti] + 2) * scale;
       const sx = x + Math.cos(a) * reach, sy = y + Math.sin(a) * reach;
-      g.strokeStyle = s.chemical === "sugar" ? `rgba(74,222,128,${0.3 + 0.7 * s.input})` : `rgba(96,165,250,${0.3 + 0.7 * s.input})`;
+      const rgb = { sugar: "74,222,128", mineral: "96,165,250", organism: "253,224,71" }[s.chemical] || "255,255,255";
+      g.strokeStyle = `rgba(${rgb},${0.3 + 0.7 * s.input})`;
       g.lineWidth = 1 + 3 * s.input;
       g.beginPath();
       g.moveTo(x, y);
       g.lineTo(sx, sy);
+      g.stroke();
+    }
+    // A fight: red line to whoever it is biting, orange from whoever bites it.
+    for (const [other, colr] of [[i.fight.target, "rgba(248,113,113,0.95)"], [i.fight.attacker, "rgba(251,146,60,0.95)"]]) {
+      if (!other) continue;
+      const k = f.id.indexOf(other % 4294967296);
+      if (k < 0) continue;
+      g.strokeStyle = colr;
+      g.lineWidth = 3;
+      g.beginPath();
+      g.moveTo(x, y);
+      g.lineTo(toX(f.x[k]), toY(f.y[k]));
       g.stroke();
     }
     // Where the brain is steering: an arrow, length = next tick's speed.
@@ -460,6 +657,16 @@ function renderLineages() {
       const n = document.createElement("span");
       n.className = "n";
       n.textContent = l.alive === 0 ? "extinct" : l.alive.toLocaleString();
+      const extra = [];
+      if (l.kills) extra.push(`⚔ ${l.kills} kills`);
+      if (l.killed) extra.push(`☠ ${l.killed} lost`);
+      if (l.bodies > 1) extra.push(`${l.bodies} bodies`);
+      if (extra.length) {
+        const ex = document.createElement("small");
+        ex.className = "ex";
+        ex.textContent = extra.join(" · ");
+        name.append(document.createElement("br"), ex);
+      }
       li.append(sw, name, n);
       li.onclick = () => {
         S.follow = S.follow === l.lineage ? null : l.lineage;
@@ -598,12 +805,16 @@ function signedBar(label, v, note) {
 // Plain-language summary of what the organism is doing right now.
 function doing(i) {
   const out = [];
+  const fi = i.fight || {};
+  if (fi.target) out.push(`<b class="atk">attacking #${fi.target}</b>: took ${fi.dealt.toFixed(2)} energy this tick`);
+  if (fi.attacker) out.push(`<b class="hit">under attack by #${fi.attacker}</b>: lost ${fi.taken.toFixed(2)} this tick`);
+  if (fi.hurt > 0) out.push(`<b class="hit">hurt by its prey's spikes or toxin</b>: −${fi.hurt.toFixed(2)}`);
   const e = i.energy / i.capacity;
   if (i.energy >= i.split_energy && i.material >= i.child_material) out.push("about to divide");
   if (i.brain.thrust <= 0) out.push("holding still (its brain says stop)");
   else out.push(`swimming at ${i.next.speed.toFixed(2)} per tick`);
   if (Math.abs(i.next.turn_deg) >= 0.5) out.push(`turning ${i.next.turn_deg > 0 ? "right" : "left"} ${Math.abs(i.next.turn_deg).toFixed(1)}° a tick`);
-  if (i.mouths === 0) out.push("has no mouth, so it can't eat");
+  if (i.mouths === 0 && !fi.target) out.push("has no mouth: it eats only by attacking");
   else if (i.sugar_here > 0.05) out.push(`eating: sugar under it ${i.sugar_here.toFixed(2)}`);
   else out.push("no sugar under it");
   if (e < 0.2) out.push(`starving: about ${Math.round(i.energy / i.upkeep)} ticks of energy left`);

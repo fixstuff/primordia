@@ -47,7 +47,7 @@ def launch(match_dir, port, http, world, seed, a):
     procs = {}
     procs["server"] = subprocess.Popen(
         [rel(ROOT / "target/release/lifeapi-server"), "--addr", addr, "--http", f"127.0.0.1:{http}",
-         "--world", world, "--seed", str(seed), "--arena", str(len(PLAYERS)), "--window-ticks", str(a.window_ticks),
+         "--world", world, "--seed", str(seed), "--combat", a.combat, "--evolve-bodies", str(a.evolve_bodies), "--arena", str(len(PLAYERS)), "--window-ticks", str(a.window_ticks),
          "--window-secs", str(a.window_secs), "--first-window-secs", str(a.first_window_secs), *(["--realtime"] if a.realtime else []), "--match-ticks", str(a.match_ticks),
          "--log", rel(d / "match-log.jsonl"), "--results", rel(d / "results.json")],
         stdout=open(d / "server.log", "w"), stderr=subprocess.STDOUT, cwd=ROOT)
@@ -176,6 +176,11 @@ def main():
     ap.add_argument("--window-secs", type=float, default=180)
     ap.add_argument("--first-window-secs", type=float, default=600,
                     help="longer first window: League 1 saw Fable miss window 1 in 6/6 matches at 180 s")
+    ap.add_argument("--combat", default="off", choices=["off", "colony", "individual"],
+                    help="off (Leagues 1-3), colony (your organisms never fight each other, like ants), "
+                         "individual (every organism for itself)")
+    ap.add_argument("--evolve-bodies", type=float, default=0.0,
+                    help="chance per birth that a child's body mutates (0 = off; e.g. 0.02)")
     ap.add_argument("--realtime", action="store_true",
                     help="continuous clock: the world runs on its own and never waits for a player")
     ap.add_argument("--match-ticks", type=int, default=10000)

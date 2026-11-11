@@ -120,7 +120,10 @@ pub fn normalize_submit(args: Value) -> (Value, Vec<String>) {
     (Value::Object(m), fixed)
 }
 
-const PARTS: [&str; 6] = ["membrane", "flagellum", "cilia", "mouth", "chemo_sensor", "vacuole"];
+const PARTS: [&str; 12] = [
+    "membrane", "flagellum", "cilia", "mouth", "chemo_sensor", "vacuole",
+    "jaw", "stinger", "shell", "spikes", "camouflage", "toxin",
+];
 
 /// Point at the exact body item a model got wrong. serde's own message for
 /// a tagged item ("missing field `part`", or a field of the wrong variant)
