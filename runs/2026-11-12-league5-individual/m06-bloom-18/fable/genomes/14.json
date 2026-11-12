@@ -1,0 +1,82 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Apex10c",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 10
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "organism"
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   -2,
+   -2,
+   0,
+   4,
+   4,
+   -4,
+   0,
+   0,
+   4,
+   -4,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0.3,
+   0,
+   4,
+   4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.2
+ }
+}

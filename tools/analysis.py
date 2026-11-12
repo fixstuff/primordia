@@ -168,10 +168,15 @@ def main():
             boots[x].append(r[x])
     ci = {x: (pct(v, 0.025), pct(v, 0.975)) if v else (float("nan"),) * 2 for x, v in boots.items()}
     order = sorted(players, key=lambda x: -rating[x])
-    # How often each player is rated first across the bootstrap samples.
-    first = {x: 0 for x in players}
+    # How often each player is rated first across the bootstrap samples. An exact
+    # tie for first (common when two players always take the top two places) is
+    # split evenly, not handed to whichever name sorts first.
+    first = {x: 0.0 for x in players}
     for r in boot_ratings:
-        first[max(r, key=r.get)] += 1
+        top = max(r.values())
+        tied = [x for x, v in r.items() if abs(v - top) <= 1e-6]
+        for x in tied:
+            first[x] += 1 / len(tied)
 
     filt = ", ".join(f for f in [a.leagues and f"leagues {a.leagues}", a.world and f"world {a.world}",
                                  a.combat and f"combat {a.combat}", exclude and f"without {', '.join(sorted(exclude))}"] if f)

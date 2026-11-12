@@ -1,0 +1,148 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |     11s] '' calls=['observe']
+[turn  3 | tick      0 |     31s] '' calls=['submit_genome']
+[turn  4 | tick      0 |     35s] '' calls=['release']
+[turn  5 | tick      0 |     45s] '' calls=['submit_genome']
+[turn  6 | tick      0 |     49s] '' calls=['submit_genome']
+[turn  7 | tick      0 |     50s] '' calls=['end_turn']
+[turn  8 | tick      0 |    342s] '' calls=['release', 'release', 'release']
+[turn  9 | tick     15 |    343s] '' calls=['end_turn']
+[turn 10 | tick    500 |    460s] '' calls=['report']
+[turn 11 | tick    507 |    472s] '' calls=['submit_genome']
+[turn 12 | tick    557 |    474s] '' calls=['release']
+[turn 13 | tick    564 |    475s] '' calls=['end_turn']
+[turn 14 | tick   1000 |    580s] '' calls=['report']
+[turn 15 | tick   1007 |    585s] '' calls=['observe']
+[turn 16 | tick   1025 |    594s] '' calls=['catalog']
+[turn 17 | tick   1063 |    606s] '' calls=['submit_genome']
+[turn 18 | tick   1116 |    608s] '' calls=['release']
+[turn 19 | tick   1123 |    609s] '' calls=['end_turn']
+[turn 20 | tick   1500 |    701s] '' calls=['report']
+[turn 21 | tick   1512 |    712s] '' calls=['submit_genome']
+[turn 22 | tick   1512 |    721s] '' calls=['observe']
+[turn 23 | tick   1596 |    730s] '' calls=['submit_genome']
+[turn 24 | tick   1631 |    731s] '' calls=['release']
+[turn 25 | tick   1631 |    735s] '' calls=['observe']
+[turn 26 | tick   1652 |    736s] '' calls=['release']
+[turn 27 | tick   1658 |    738s] '' calls=['end_turn']
+[turn 28 | tick   2000 |    821s] '' calls=['report']
+[turn 29 | tick   2009 |    833s] '' calls=['submit_genome']
+[turn 30 | tick   2062 |    835s] '' calls=['release']
+[turn 31 | tick   2068 |    836s] '' calls=['end_turn']
+[turn 32 | tick   2500 |    941s] '' calls=['report']
+[turn 33 | tick   2511 |    951s] '' calls=['observe']
+[turn 34 | tick   2552 |    962s] '' calls=['submit_genome']
+[turn 35 | tick   2552 |    964s] '' calls=['catalog']
+[turn 36 | tick   2606 |    977s] '' calls=['submit_genome']
+[turn 37 | tick   2606 |    989s] '' calls=['submit_genome']
+[turn 38 | tick   2711 |    991s] '' calls=['release']
+[turn 39 | tick   2718 |    992s] '' calls=['end_turn']
+[turn 40 | tick   3000 |   1061s] '' calls=['report']
+[turn 41 | tick   3008 |   1063s] '' calls=['observe']
+[turn 42 | tick   3019 |   1075s] '' calls=['submit_genome']
+[turn 43 | tick   3069 |   1082s] '' calls=['release']
+[turn 44 | tick   3099 |   1084s] '' calls=['end_turn']
+[turn 45 | tick   3500 |   1189s] '' calls=['report']
+[turn 46 | tick   3544 |   1191s] '' calls=['observe']
+[turn 47 | tick   3551 |   1202s] '' calls=['submit_genome']
+[turn 48 | tick   3598 |   1206s] '' calls=['release']
+[turn 49 | tick   3614 |   1208s] '' calls=['end_turn']
+[turn 50 | tick   4000 |   1301s] '' calls=['report']
+[turn 51 | tick   4009 |   1307s] '' calls=['observe']
+[turn 52 | tick   4037 |   1321s] '' calls=['submit_genome', 'submit_genome']
+[turn 53 | tick   4092 |   1322s] '' calls=['release']
+[turn 54 | tick   4100 |   1324s] '' calls=['release']
+[turn 55 | tick   4107 |   1325s] '' calls=['end_turn']
+[turn 56 | tick   4500 |   1421s] '' calls=['catalog']
+[turn 57 | tick   4511 |   1432s] '' calls=['report']
+[turn 58 | tick   4556 |   1443s] '' calls=['observe']
+[turn 59 | tick   4600 |   1458s] '' calls=['submit_genome', 'submit_genome', 'submit_genome']
+[turn 60 | tick   4664 |   1470s] '' calls=['submit_genome', 'submit_genome', 'submit_genome']
+[turn 61 | tick   4716 |   1472s] '' calls=['release']
+[turn 62 | tick   4724 |   1474s] '' calls=['release']
+[turn 63 | tick   4733 |   1476s] '' calls=['release']
+[turn 64 | tick   4739 |   1477s] '' calls=['release']
+[turn 65 | tick   4746 |   1479s] '' calls=['end_turn']
+[turn 66 | tick   5000 |   1541s] '' calls=['report', 'observe']
+[turn 67 | tick   5009 |   1558s] '' calls=['release']
+[turn 68 | tick   5079 |   1559s] '' calls=['end_turn']
+[turn 69 | tick   5500 |   1662s] '' calls=['report', 'observe']
+[turn 70 | tick   5513 |   1671s] '' calls=['catalog']
+[turn 71 | tick   5554 |   1695s] '' calls=['submit_genome', 'submit_genome', 'submit_genome']
+[turn 72 | tick   5654 |   1697s] '' calls=['release']
+[turn 73 | tick   5660 |   1698s] '' calls=['release']
+[turn 74 | tick   5667 |   1700s] '' calls=['release']
+[turn 75 | tick   5672 |   1701s] '' calls=['release']
+[turn 76 | tick   5679 |   1703s] '' calls=['end_turn']
+[turn 77 | tick   6000 |   1785s] '' calls=['report', 'observe']
+[turn 78 | tick   6027 |   1810s] '' calls=['submit_genome', 'submit_genome', 'submit_genome', 'submit_genome']
+[turn 79 | tick   6132 |   1812s] '' calls=['release']
+[turn 80 | tick   6141 |   1814s] '' calls=['release']
+[turn 81 | tick   6147 |   1815s] '' calls=['release']
+[turn 82 | tick   6154 |   1817s] '' calls=['release']
+[turn 83 | tick   6160 |   1819s] '' calls=['release']
+[turn 84 | tick   6167 |   1820s] '' calls=['end_turn']
+[turn 85 | tick   6500 |   1902s] '' calls=['catalog', 'report', 'observe']
+[turn 86 | tick   6515 |   1914s] '' calls=['submit_genome']
+[turn 87 | tick   6563 |   1916s] '' calls=['submit_genome']
+[turn 88 | tick   6575 |   1918s] '' calls=['release']
+[turn 89 | tick   6581 |   1920s] '' calls=['release']
+[turn 90 | tick   6588 |   1921s] '' calls=['release']
+[turn 91 | tick   6594 |   1923s] '' calls=['release']
+[turn 92 | tick   6600 |   1924s] '' calls=['end_turn']
+[turn 93 | tick   7000 |   2020s] '' calls=['report', 'observe']
+[turn 94 | tick   7008 |   2030s] '' calls=['release']
+[turn 95 | tick   7050 |   2032s] '' calls=['end_turn']
+[turn 96 | tick   7500 |   2142s] '' calls=['report', 'observe']
+[turn 97 | tick   7515 |   2152s] '' calls=['release']
+[turn 98 | tick   7557 |   2155s] '' calls=['end_turn']
+[turn 99 | tick   8000 |   2261s] '' calls=['catalog']
+[turn 100 | tick   8010 |   2271s] '' calls=['report', 'observe']
+[turn 101 | tick   8052 |   2283s] '' calls=['submit_genome']
+[turn 102 | tick   8103 |   2285s] '' calls=['release']
+[turn 103 | tick   8109 |   2286s] '' calls=['end_turn']
+[turn 104 | tick   8500 |   2387s] '' calls=['report', 'observe']
+[turn 105 | tick   8537 |   2398s] '' calls=['submit_genome']
+[turn 106 | tick   8583 |   2408s] '' calls=['submit_genome']
+[turn 107 | tick   8623 |   2416s] '' calls=['release']
+[turn 108 | tick   8655 |   2417s] '' calls=['end_turn']
+[turn 109 | tick   9000 |   2503s] '' calls=['report', 'observe']
+[turn 110 | tick   9018 |   2513s] '' calls=['release']
+[turn 111 | tick   9061 |   2515s] '' calls=['release']
+[turn 112 | tick   9069 |   2517s] '' calls=['end_turn']
+[turn 113 | tick   9500 |   2623s] '' calls=['report']
+[turn 114 | tick   9519 |   2627s] '' calls=['observe']
+[turn 115 | tick   9537 |   2635s] '' calls=['release']
+[turn 116 | tick   9570 |   2637s] '' calls=['end_turn']
+
+ended at tick 10000 after 116 turns, 28 genomes submitted
+
+primordia-eval (each genome alone, fixed seeds):
+  # 1 r2-forager-turnA         submitted at tick      0: 513.3333333333334
+  # 2 r2-forager-turnB         submitted at tick      0: 545.0
+  # 3 r2-fast-mouth            submitted at tick      0: 543.3333333333334
+  # 4 r2-economy-seeker        submitted at tick    557: 804.0
+  # 5 r2-camo-forager          submitted at tick   1116: 481.0
+  # 6 r3-camo-hunter           submitted at tick   1631: 393.3333333333333
+  # 7 r2-camo-onefast          submitted at tick   2062: 489.3333333333333
+  # 8 r5-shell-camo-randpred   submitted at tick   2711: 351.0
+  # 9 r5-shell-camo-guidedpred submitted at tick   3069: 348.6666666666667
+  #10 r2-guided-forager-balanc submitted at tick   3598: 642.6666666666666
+  #11 r2-random-3mouth-fast    submitted at tick   4092: 504.3333333333333
+  #12 r2-random-2mouth-camo    submitted at tick   4092: 505.3333333333333
+  #13 r2-simple-cruise-2m      submitted at tick   4664: 578.0
+  #14 r2-smart-gradient-A      submitted at tick   4716: 469.0
+  #15 r2-smart-gradient-B      submitted at tick   4716: 503.0
+  #16 r2-econ-random-1m        submitted at tick   4716: 680.6666666666666
+  #17 r3-organism-jaw-A        submitted at tick   5654: 480.6666666666667
+  #18 r3-organism-jaw-B        submitted at tick   5654: 477.3333333333333
+  #19 r2-econ-gradient-C       submitted at tick   5654: 822.0
+  #20 r2-grad-food-R           submitted at tick   6131: 580.6666666666666
+  #21 r2-grad-food-L           submitted at tick   6131: 573.0
+  #22 r2-camo-grad-R           submitted at tick   6132: 506.6666666666667
+  #23 r2-slow-grad-L           submitted at tick   6132: 862.3333333333334
+  #24 r3-hunter-org-right      submitted at tick   6563: 417.0
+  #25 r2-ultraeco-static       submitted at tick   6575: 1226.3333333333333
+  #26 r2-swarm-last-lowupkeep  submitted at tick   8103: 846.0
+  #27 r4-predator-scavenger-fi submitted at tick   8583: 494.3333333333333
+  #28 r2-sessile-4mouth-lotter submitted at tick   8623: 1297.3333333333333

@@ -1,0 +1,83 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Fortress hunter",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 15
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "organism"
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   0,
+   2,
+   2,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.1
+ }
+}

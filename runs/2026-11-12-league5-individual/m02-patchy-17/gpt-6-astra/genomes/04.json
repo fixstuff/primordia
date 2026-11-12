@@ -1,0 +1,59 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Bristle bloom",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "toxin",
+   "power": 1
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.05
+ }
+}

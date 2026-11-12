@@ -1,0 +1,62 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_random_evo_swarm_lowcost",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.2
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 90
+  },
+  {
+   "part": "vacuole",
+   "capacity": 20
+  }
+ ],
+ "brain": {
+  "hidden": 6
+ },
+ "mutation": {
+  "rate": 0.35,
+  "size": 0.6
+ }
+}

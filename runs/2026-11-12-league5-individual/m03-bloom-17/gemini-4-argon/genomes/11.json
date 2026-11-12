@@ -1,0 +1,94 @@
+{
+ "body": [
+  {
+   "radius": 5.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "power": 0.85,
+   "part": "jaw"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.4
+  },
+  {
+   "part": "camouflage",
+   "power": 0.8
+  },
+  {
+   "chemical": "sugar",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "angle": 35,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "organism",
+   "angle": -25,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "organism",
+   "part": "chemo_sensor",
+   "angle": 25
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "name": "Apex55_Camo",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   0.5,
+   0.5,
+   0,
+   0,
+   0.8,
+   0.8,
+   0,
+   1.2,
+   -3,
+   3,
+   -2.5,
+   2.5,
+   -2.5,
+   2.5,
+   0,
+   0,
+   1.5,
+   -0.3,
+   0.5,
+   0,
+   3.5,
+   0.04
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

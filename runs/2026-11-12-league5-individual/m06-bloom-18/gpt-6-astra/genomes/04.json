@@ -1,0 +1,41 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Microfilter",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.25
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.1
+ }
+}

@@ -1,0 +1,110 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 12252.0,
+      "mean_population": 1361.3333333333333,
+      "name": "Grazer",
+      "per_seed": [
+        1366,
+        1353,
+        1365
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 19524.0,
+      "mean_population": 542.3333333333334,
+      "name": "Broad grazer",
+      "per_seed": [
+        543,
+        525,
+        559
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 24166.666666666668,
+      "mean_population": 241.66666666666666,
+      "name": "Colossus",
+      "per_seed": [
+        225,
+        248,
+        252
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 3186.6666666666665,
+      "mean_population": 796.6666666666666,
+      "name": "Microfilter",
+      "per_seed": [
+        822,
+        725,
+        843
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 11600.0,
+      "mean_population": 29.0,
+      "name": "Armored leviathan",
+      "per_seed": [
+        33,
+        27,
+        27
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 6848.0,
+      "mean_population": 1712.0,
+      "name": "Efficient swimmer",
+      "per_seed": [
+        1732,
+        1629,
+        1775
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 6633.333333333333,
+      "mean_population": 1658.3333333333333,
+      "name": "Shelled swimmer",
+      "per_seed": [
+        1807,
+        1394,
+        1774
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 22080.0,
+      "mean_population": 345.0,
+      "name": "Hunter",
+      "per_seed": [
+        342,
+        342,
+        351
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -69,6 +69,8 @@ def openai_chat(base, key, model, messages, tools):
             break
         except urllib.error.HTTPError as e:
             if e.code not in (429, 500, 502, 503, 504) or attempt == 5:
+                # The body says why (League 5: a 402 whose reason went unlogged).
+                print(f"  (HTTP {e.code}: {e.read()[:500]!r})", flush=True)
                 raise
             print(f"  (HTTP {e.code}; retrying in {2 ** attempt}s)", flush=True)
         except (ConnectionError, TimeoutError, urllib.error.URLError, OSError) as e:

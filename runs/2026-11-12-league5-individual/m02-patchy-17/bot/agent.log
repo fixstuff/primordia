@@ -1,0 +1,22 @@
+window 1 tick 0 you {"alive":60,"biomass":0.0,"name":"scripted-bot","player":0,"rank":1,"score":0.0}
+window 2 tick 500 you {"alive":62,"biomass":50.0,"name":"scripted-bot","player":0,"rank":5,"score":1.0725}
+window 3 tick 1000 you {"alive":15,"biomass":50.0,"name":"scripted-bot","player":0,"rank":6,"score":4.27}
+window 4 tick 1500 you {"alive":31,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":7.0275}
+window 5 tick 2000 you {"alive":1,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":7.0275}
+window 6 tick 2500 you {"alive":14,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":7.0275}
+window 7 tick 3000 you {"alive":2,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":7.0275}
+window 8 tick 3500 you {"alive":17,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":7.0275}
+window 9 tick 4000 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":7.0275}
+window 10 tick 4500 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":7.0275}
+window 11 tick 5000 you {"alive":14,"biomass":25.0,"name":"scripted-bot","player":0,"rank":7,"score":8.045}
+window 12 tick 5500 you {"alive":1,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":8.4375}
+window 13 tick 6000 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":8.4375}
+window 14 tick 6500 you {"alive":19,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":8.4375}
+window 15 tick 7000 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":8.4375}
+window 16 tick 7500 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":8.4375}
+window 17 tick 8000 you {"alive":26,"biomass":75.0,"name":"scripted-bot","player":0,"rank":7,"score":11.0575}
+window 18 tick 8500 you {"alive":2,"biomass":25.0,"name":"scripted-bot","player":0,"rank":7,"score":12.685}
+window 19 tick 9000 you {"alive":1,"biomass":25.0,"name":"scripted-bot","player":0,"rank":7,"score":13.935}
+window 20 tick 9500 you {"alive":22,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":14.1575}
+window 21 tick 10000 you {"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":14.1575}
+final standings: [{"alive":160,"biomass":15485.57880661013,"name":"claude-fable-5-2","player":5,"rank":1,"score":8777.628996922498},{"alive":0,"biomass":0.0,"name":"gemini-4-argon","player":6,"rank":2,"score":546.6206081077136},{"alive":2,"biomass":8.0,"name":"gpt-6-astra","player":2,"rank":3,"score":299.65103458820465},{"alive":6,"biomass":54.0,"name":"claude-opus-5-5","player":4,"rank":4,"score":214.4594},{"alive":0,"biomass":0.0,"name":"deepseek-v4-pro","player":3,"rank":5,"score":173.10405653443686},{"alive":59,"biomass":236.0,"name":"gpt-5.5","player":1,"rank":6,"score":163.00032087120252},{"alive":0,"biomass":0.0,"name":"scripted-bot","player":0,"rank":7,"score":14.1575}]

@@ -1,0 +1,105 @@
+{
+ "body": [
+  {
+   "radius": 4,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.85
+  },
+  {
+   "part": "cilia",
+   "power": 0.85
+  },
+  {
+   "part": "jaw",
+   "power": 0.85
+  },
+  {
+   "thickness": 0.45,
+   "part": "shell"
+  },
+  {
+   "power": 0.45,
+   "part": "toxin"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "angle": 180,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 35
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   -3.5,
+   -3.5,
+   4,
+   0,
+   0,
+   0,
+   -1.2,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -3.5,
+   3.5,
+   4,
+   -3.4,
+   0,
+   0,
+   0,
+   3.5,
+   -3.5,
+   4,
+   -3.4,
+   -0.4,
+   0,
+   0,
+   0,
+   1.2,
+   1.5,
+   2.8,
+   2,
+   -2,
+   1.25
+  ]
+ },
+ "name": "gated_omnivore_A",
+ "mutation": {
+  "size": 0.12,
+  "rate": 0.04
+ },
+ "schema": "lifeapi.genome/1"
+}

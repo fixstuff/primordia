@@ -1,0 +1,42 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_min",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "flagellum",
+   "power": 1.0
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  },
+  {
+   "part": "vacuole",
+   "capacity": 20
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   3,
+   0,
+   -1.2,
+   4,
+   0.5,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

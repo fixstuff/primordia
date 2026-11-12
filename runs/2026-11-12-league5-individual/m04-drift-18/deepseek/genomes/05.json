@@ -1,0 +1,23 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "probe_camo",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

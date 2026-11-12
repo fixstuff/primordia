@@ -1,0 +1,67 @@
+{
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   0,
+   4,
+   1.2,
+   0
+  ],
+  "hidden": 1
+ },
+ "name": "armored_sugar_r3.5_h1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.45,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -38,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 38,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "thickness": 1,
+   "part": "shell"
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "part": "toxin",
+   "power": 1
+  },
+  {
+   "part": "stinger",
+   "power": 0.5
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

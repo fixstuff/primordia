@@ -1,0 +1,64 @@
+{
+ "name": "Fast20_Lean",
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.06
+ },
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "part": "cilia",
+   "power": 0.7
+  },
+  {
+   "thickness": 0.25,
+   "part": "shell"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -35
+  },
+  {
+   "angle": 35,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  }
+ ],
+ "brain": {
+  "weights": [
+   -3.5,
+   3.5,
+   -2.5,
+   2.5,
+   0,
+   0,
+   0,
+   2,
+   3.5,
+   0.05
+  ],
+  "hidden": 1
+ }
+}

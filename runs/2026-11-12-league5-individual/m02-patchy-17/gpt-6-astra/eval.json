@@ -1,0 +1,182 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 4718.666666666667,
+      "mean_population": 1179.6666666666667,
+      "name": "Seed swift",
+      "per_seed": [
+        1173,
+        1170,
+        1196
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 7896.0,
+      "mean_population": 877.3333333333334,
+      "name": "Seed grazer",
+      "per_seed": [
+        866,
+        891,
+        875
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 9166.666666666666,
+      "mean_population": 366.6666666666667,
+      "name": "Hunter five",
+      "per_seed": [
+        373,
+        376,
+        351
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 6565.333333333333,
+      "mean_population": 410.3333333333333,
+      "name": "Bristle bloom",
+      "per_seed": [
+        424,
+        410,
+        397
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 14336.0,
+      "mean_population": 224.0,
+      "name": "Reaper eight",
+      "per_seed": [
+        239,
+        214,
+        219
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 9888.0,
+      "mean_population": 68.66666666666667,
+      "name": "Leviathan",
+      "per_seed": [
+        86,
+        59,
+        61
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 1665.3333333333333,
+      "mean_population": 416.3333333333333,
+      "name": "Dart",
+      "per_seed": [
+        425,
+        384,
+        440
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 8625.333333333334,
+      "mean_population": 2156.3333333333335,
+      "name": "Mote",
+      "per_seed": [
+        2195,
+        2068,
+        2206
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 18198.0,
+      "mean_population": 224.66666666666666,
+      "name": "Broad grazer",
+      "per_seed": [
+        250,
+        195,
+        229
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 24600.0,
+      "mean_population": 246.0,
+      "name": "Crown ten",
+      "per_seed": [
+        264,
+        220,
+        254
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 22896.0,
+      "mean_population": 159.0,
+      "name": "Apex twelve",
+      "per_seed": [
+        182,
+        144,
+        151
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 27505.333333333332,
+      "mean_population": 140.33333333333334,
+      "name": "Sweep fourteen",
+      "per_seed": [
+        147,
+        135,
+        139
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/13.json",
+      "mean_biomass": 16956.0,
+      "mean_population": 209.33333333333334,
+      "name": "Broad meadow",
+      "per_seed": [
+        214,
+        202,
+        212
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/14.json",
+      "mean_biomass": 3346.6666666666665,
+      "mean_population": 836.6666666666666,
+      "name": "Hidden bloom",
+      "per_seed": [
+        924,
+        798,
+        788
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

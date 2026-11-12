@@ -1,0 +1,146 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/01.json",
+      "mean_biomass": 8608.0,
+      "mean_population": 538.0,
+      "name": "seekA",
+      "per_seed": [
+        547,
+        522,
+        545
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/02.json",
+      "mean_biomass": 6218.666666666667,
+      "mean_population": 388.6666666666667,
+      "name": "seekB",
+      "per_seed": [
+        281,
+        451,
+        434
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/03.json",
+      "mean_biomass": 12658.333333333334,
+      "mean_population": 506.3333333333333,
+      "name": "seekC",
+      "per_seed": [
+        520,
+        495,
+        504
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/04.json",
+      "mean_biomass": 8896.0,
+      "mean_population": 556.0,
+      "name": "seekD",
+      "per_seed": [
+        549,
+        578,
+        541
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/05.json",
+      "mean_biomass": 13464.0,
+      "mean_population": 374.0,
+      "name": "hunter",
+      "per_seed": [
+        363,
+        371,
+        388
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/06.json",
+      "mean_biomass": 18965.333333333332,
+      "mean_population": 296.3333333333333,
+      "name": "brute",
+      "per_seed": [
+        305,
+        290,
+        294
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/07.json",
+      "mean_biomass": 9072.0,
+      "mean_population": 567.0,
+      "name": "ghost",
+      "per_seed": [
+        554,
+        555,
+        592
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/08.json",
+      "mean_biomass": 8378.666666666666,
+      "mean_population": 523.6666666666666,
+      "name": "ghost2",
+      "per_seed": [
+        528,
+        522,
+        521
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/09.json",
+      "mean_biomass": 26660.333333333332,
+      "mean_population": 220.33333333333334,
+      "name": "titan",
+      "per_seed": [
+        233,
+        213,
+        215
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/10.json",
+      "mean_biomass": 7306.666666666667,
+      "mean_population": 456.6666666666667,
+      "name": "turtle",
+      "per_seed": [
+        451,
+        469,
+        450
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/opus/genomes/11.json",
+      "mean_biomass": 5937.0,
+      "mean_population": 659.6666666666666,
+      "name": "mite",
+      "per_seed": [
+        660,
+        651,
+        668
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

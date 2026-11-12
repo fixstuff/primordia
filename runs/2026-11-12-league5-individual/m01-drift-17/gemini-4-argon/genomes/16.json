@@ -1,0 +1,72 @@
+{
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   1.2,
+   4,
+   4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "name": "toxic_tank_r3.5",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.42
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -38
+  },
+  {
+   "angle": 38,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "power": 1,
+   "part": "toxin"
+  },
+  {
+   "part": "camouflage"
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

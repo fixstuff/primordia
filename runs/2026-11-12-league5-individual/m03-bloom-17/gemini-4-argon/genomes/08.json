@@ -1,0 +1,68 @@
+{
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   -3,
+   3,
+   -3,
+   3,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   -3,
+   0.05
+  ]
+ },
+ "name": "Fast25_B",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "chemical": "mineral",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "mineral"
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.08
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "g4_rand",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "cilia",
+   "power": 0.4
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "vacuole",
+   "capacity": 30
+  }
+ ],
+ "brain": {
+  "hidden": 2
+ },
+ "mutation": {
+  "rate": 0.25,
+  "size": 0.1
+ }
+}

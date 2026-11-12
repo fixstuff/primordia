@@ -1,0 +1,24 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "t_shell2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

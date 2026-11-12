@@ -1,0 +1,109 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "R5 camo chemotroph differential",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  },
+  {
+   "part": "vacuole",
+   "capacity": 20
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   1.2,
+   1.2,
+   1.5,
+   0.8,
+   0.8,
+   1.0,
+   0.0,
+   0.2,
+   1.0,
+   -1.0,
+   0.0,
+   0.7,
+   -0.7,
+   0.0,
+   0.0,
+   0.0,
+   -1.0,
+   1.0,
+   0.0,
+   -0.7,
+   0.7,
+   0.0,
+   0.0,
+   0.0,
+   0.5,
+   0.5,
+   0.8,
+   1.2,
+   1.2,
+   1.5,
+   0.0,
+   0.0,
+   2.0,
+   0.0,
+   0.0,
+   1.0,
+   2.0,
+   1.5,
+   -1.5,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

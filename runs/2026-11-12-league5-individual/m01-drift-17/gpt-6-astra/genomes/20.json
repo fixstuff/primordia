@@ -1,0 +1,70 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Apex reserve",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 16
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.3
+  },
+  {
+   "part": "cilia",
+   "power": 0.1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0.6,
+   0,
+   0.1
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.1
+ }
+}

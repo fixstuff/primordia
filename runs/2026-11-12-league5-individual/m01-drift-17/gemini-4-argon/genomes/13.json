@@ -1,0 +1,64 @@
+{
+ "schema": "lifeapi.genome/1",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   2.2,
+   4,
+   4,
+   0
+  ]
+ },
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "name": "sugar_3m_r2.8",
+ "body": [
+  {
+   "radius": 2.8,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.55,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -38,
+   "chemical": "sugar"
+  },
+  {
+   "angle": 38,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "power": 0.3,
+   "part": "spikes"
+  }
+ ]
+}

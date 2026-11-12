@@ -1,0 +1,79 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/01.json",
+  "name": "Scout2 chemotroph",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/02.json",
+  "name": "CamoFrugal2",
+  "species": 60,
+  "tick": 573
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/03.json",
+  "name": "SpikyCamo3 grazer",
+  "species": 79,
+  "tick": 1176
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/04.json",
+  "name": "TripleMouth2 seeker",
+  "species": 103,
+  "tick": 1754
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/05.json",
+  "name": "Jaw4 hunter grazer",
+  "species": 107,
+  "tick": 2085
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/06.json",
+  "name": "QuadMouth2 mineralist",
+  "species": 122,
+  "tick": 2578
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/07.json",
+  "name": "Scout3 chemotroph biomass",
+  "species": 148,
+  "tick": 4068
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/08.json",
+  "name": "Hunter10 anti-giant bare",
+  "species": 182,
+  "tick": 5589
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/09.json",
+  "name": "Camo2 mineral sprinter",
+  "species": 206,
+  "tick": 7118
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/10.json",
+  "name": "R5 camo chemotroph differential",
+  "species": 208,
+  "tick": 7576
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/11.json",
+  "name": "R2 triple-mouth mineral harvester",
+  "species": 218,
+  "tick": 8567
+ }
+]

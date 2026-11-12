@@ -1,0 +1,158 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/01.json",
+      "mean_biomass": 7856.0,
+      "mean_population": 491.0,
+      "name": "trackA",
+      "per_seed": [
+        476,
+        517,
+        480
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/02.json",
+      "mean_biomass": 5712.0,
+      "mean_population": 357.0,
+      "name": "trackB",
+      "per_seed": [
+        393,
+        333,
+        345
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/03.json",
+      "mean_biomass": 8352.0,
+      "mean_population": 522.0,
+      "name": "trackC",
+      "per_seed": [
+        526,
+        518,
+        522
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/04.json",
+      "mean_biomass": 13188.0,
+      "mean_population": 366.3333333333333,
+      "name": "hunter",
+      "per_seed": [
+        368,
+        374,
+        357
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/05.json",
+      "mean_biomass": 18858.666666666668,
+      "mean_population": 294.6666666666667,
+      "name": "hunter2",
+      "per_seed": [
+        304,
+        301,
+        279
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/06.json",
+      "mean_biomass": 23066.666666666668,
+      "mean_population": 230.66666666666666,
+      "name": "hunter3",
+      "per_seed": [
+        242,
+        229,
+        221
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/07.json",
+      "mean_biomass": 24833.333333333332,
+      "mean_population": 248.33333333333334,
+      "name": "graze10",
+      "per_seed": [
+        269,
+        242,
+        234
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/08.json",
+      "mean_biomass": 15144.0,
+      "mean_population": 420.6666666666667,
+      "name": "graze6",
+      "per_seed": [
+        417,
+        421,
+        424
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/09.json",
+      "mean_biomass": 25680.0,
+      "mean_population": 178.33333333333334,
+      "name": "titan12",
+      "per_seed": [
+        184,
+        176,
+        175
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/10.json",
+      "mean_biomass": 19533.333333333332,
+      "mean_population": 195.33333333333334,
+      "name": "hunter4",
+      "per_seed": [
+        202,
+        190,
+        194
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/11.json",
+      "mean_biomass": 27766.666666666668,
+      "mean_population": 141.66666666666666,
+      "name": "fortress14",
+      "per_seed": [
+        152,
+        140,
+        133
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/opus/genomes/12.json",
+      "mean_biomass": 7600.0,
+      "mean_population": 475.0,
+      "name": "prickly4",
+      "per_seed": [
+        469,
+        479,
+        477
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

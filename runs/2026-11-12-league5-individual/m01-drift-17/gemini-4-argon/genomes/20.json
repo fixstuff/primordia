@@ -1,0 +1,83 @@
+{
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   4,
+   1.4,
+   0
+  ],
+  "hidden": 1
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "apex_hunter_r6.5_h1",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 1,
+   "part": "jaw"
+  },
+  {
+   "power": 0.6,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.85
+  },
+  {
+   "angle": -38,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 38
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -32
+  },
+  {
+   "chemical": "organism",
+   "angle": 32,
+   "part": "chemo_sensor"
+  },
+  {
+   "thickness": 1,
+   "part": "shell"
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "part": "toxin",
+   "power": 1
+  },
+  {
+   "power": 1,
+   "part": "stinger"
+  }
+ ]
+}

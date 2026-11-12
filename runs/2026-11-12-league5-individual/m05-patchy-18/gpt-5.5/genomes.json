@@ -1,0 +1,205 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/01.json",
+  "name": "swift-grazer-r2",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/02.json",
+  "name": "swift-grazer-r3",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/03.json",
+  "name": "wide-grazer-r2",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/04.json",
+  "name": "creep-grazer-r2-lowcost",
+  "species": 59,
+  "tick": 593
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/05.json",
+  "name": "random-swimmers-r2",
+  "species": 60,
+  "tick": 594
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/06.json",
+  "name": "still-mouth-r2",
+  "species": 76,
+  "tick": 1068
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/07.json",
+  "name": "camo-creep-r2",
+  "species": 77,
+  "tick": 1068
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/08.json",
+  "name": "fat-grazer-r4-slow",
+  "species": 93,
+  "tick": 1593
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/09.json",
+  "name": "fat-grazer-r5-slower",
+  "species": 103,
+  "tick": 2070
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/10.json",
+  "name": "lazy-sensor-r2",
+  "species": 104,
+  "tick": 2071
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/11.json",
+  "name": "hunter-r6-jaw",
+  "species": 115,
+  "tick": 2556
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/12.json",
+  "name": "micro-grazer-r2-rand",
+  "species": 122,
+  "tick": 3070
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/13.json",
+  "name": "micro-camo-r2",
+  "species": 123,
+  "tick": 3070
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/14.json",
+  "name": "micro-drifter-r2-const2",
+  "species": 124,
+  "tick": 3080
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/15.json",
+  "name": "nano-straight-r2-lowup",
+  "species": 136,
+  "tick": 3626
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/16.json",
+  "name": "nano-straight-r2-med",
+  "species": 137,
+  "tick": 3626
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/17.json",
+  "name": "nano-zig-r2",
+  "species": 138,
+  "tick": 3626
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/18.json",
+  "name": "nano-straight-r2-ultra08",
+  "species": 146,
+  "tick": 4067
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/19.json",
+  "name": "nano-straight-r2-low10",
+  "species": 147,
+  "tick": 4067
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/20.json",
+  "name": "nano-wander-r2-p10",
+  "species": 148,
+  "tick": 4068
+ },
+ {
+  "n": 21,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/21.json",
+  "name": "nano-drift-r2-p03",
+  "species": 164,
+  "tick": 4681
+ },
+ {
+  "n": 22,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/22.json",
+  "name": "midi-drift-r3-p08",
+  "species": 165,
+  "tick": 4681
+ },
+ {
+  "n": 23,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/23.json",
+  "name": "macro-drift-r4-p08",
+  "species": 166,
+  "tick": 4682
+ },
+ {
+  "n": 24,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/24.json",
+  "name": "giant-slow-r8-p03",
+  "species": 174,
+  "tick": 5146
+ },
+ {
+  "n": 25,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/25.json",
+  "name": "giant-slow-r10-p02",
+  "species": 175,
+  "tick": 5146
+ },
+ {
+  "n": 26,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/26.json",
+  "name": "fat-slow-r6-p04",
+  "species": 176,
+  "tick": 5147
+ },
+ {
+  "n": 27,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/27.json",
+  "name": "edible-wall-r12-zero",
+  "species": 178,
+  "tick": 5627
+ },
+ {
+  "n": 28,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/28.json",
+  "name": "r4-sensor-grazer-v2",
+  "species": 191,
+  "tick": 6165
+ },
+ {
+  "n": 29,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-5.5/genomes/29.json",
+  "name": "r10-jaw-hunter-v2",
+  "species": 203,
+  "tick": 7663
+ }
+]

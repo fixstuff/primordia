@@ -1,0 +1,45 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "vent6",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   0,
+   -0.8,
+   -4,
+   0,
+   0,
+   0.1
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

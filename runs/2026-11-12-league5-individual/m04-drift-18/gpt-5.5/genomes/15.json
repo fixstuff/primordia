@@ -1,0 +1,100 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r6_opportunist_predator_noshell_v12",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   1,
+   3,
+   0,
+   -3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   1,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0.5,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.2
+ }
+}

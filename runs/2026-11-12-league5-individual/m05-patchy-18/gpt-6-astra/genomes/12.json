@@ -1,0 +1,73 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Sweeping ten",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 10
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.05
+ }
+}

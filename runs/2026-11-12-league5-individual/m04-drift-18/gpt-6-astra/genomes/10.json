@@ -1,0 +1,47 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Hunter Nine",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 9
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.2
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

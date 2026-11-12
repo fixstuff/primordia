@@ -1,0 +1,158 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/01.json",
+      "mean_biomass": 6178.666666666667,
+      "mean_population": 1544.6666666666667,
+      "name": "graz2",
+      "per_seed": [
+        1480,
+        1592,
+        1562
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/02.json",
+      "mean_biomass": 12256.0,
+      "mean_population": 766.0,
+      "name": "graz4",
+      "per_seed": [
+        763,
+        760,
+        775
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/03.json",
+      "mean_biomass": 10806.0,
+      "mean_population": 1200.6666666666667,
+      "name": "sens3",
+      "per_seed": [
+        1185,
+        1227,
+        1190
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/04.json",
+      "mean_biomass": 21766.666666666668,
+      "mean_population": 217.66666666666666,
+      "name": "omni10",
+      "per_seed": [
+        222,
+        209,
+        222
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/05.json",
+      "mean_biomass": 1554.6666666666667,
+      "mean_population": 388.6666666666667,
+      "name": "swift2",
+      "per_seed": [
+        386,
+        388,
+        392
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/06.json",
+      "mean_biomass": 8766.666666666666,
+      "mean_population": 87.66666666666667,
+      "name": "omni10f",
+      "per_seed": [
+        110,
+        70,
+        83
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/07.json",
+      "mean_biomass": 4053.3333333333335,
+      "mean_population": 1013.3333333333334,
+      "name": "armor2",
+      "per_seed": [
+        995,
+        1040,
+        1005
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/08.json",
+      "mean_biomass": 9340.0,
+      "mean_population": 2335.0,
+      "name": "sit2",
+      "per_seed": [
+        2371,
+        2316,
+        2318
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/09.json",
+      "mean_biomass": 18594.0,
+      "mean_population": 2066.0,
+      "name": "sit3",
+      "per_seed": [
+        2154,
+        2020,
+        2024
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/10.json",
+      "mean_biomass": 18936.0,
+      "mean_population": 526.0,
+      "name": "vent6",
+      "per_seed": [
+        509,
+        557,
+        512
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/11.json",
+      "mean_biomass": 7593.333333333333,
+      "mean_population": 1898.3333333333333,
+      "name": "mine2",
+      "per_seed": [
+        1929,
+        1858,
+        1908
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/fable/genomes/12.json",
+      "mean_biomass": 8272.0,
+      "mean_population": 2068.0,
+      "name": "shellsit2",
+      "per_seed": [
+        2088,
+        2060,
+        2056
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

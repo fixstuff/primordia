@@ -1,0 +1,127 @@
+[turn  1 | tick      0 |      1s] '' calls=['catalog']
+[turn  2 | tick      0 |     11s] '' calls=['observe']
+[turn  3 | tick      0 |     26s] '' calls=['submit_genome']
+[turn  4 | tick      0 |     49s] '' calls=['submit_genome']
+[turn  5 | tick      0 |     52s] '' calls=['submit_genome']
+[turn  6 | tick      0 |     55s] '' calls=['submit_genome']
+[turn  7 | tick      0 |     57s] '' calls=['release', 'release', 'release']
+[turn  8 | tick      0 |     61s] '' calls=['release']
+[turn  9 | tick      0 |     63s] 'Initial founders released. Ending window.' calls=['end_turn']
+[turn 10 | tick      0 |    165s] '' calls=['report', 'observe']
+[turn 11 | tick     11 |    178s] '' calls=['release']
+[turn 12 | tick     63 |    180s] 'Good net intake; added cheap r2 founders.' calls=['end_turn']
+[turn 13 | tick    500 |    285s] '' calls=['report', 'observe']
+[turn 14 | tick    510 |    289s] '' calls=['catalog']
+[turn 15 | tick    526 |    303s] '' calls=['submit_genome']
+[turn 16 | tick    586 |    305s] '' calls=['release']
+[turn 17 | tick    594 |    307s] 'Most grazers collapsed; deployed camo jaw scavenger/predator.' calls=['end_turn']
+[turn 18 | tick   1000 |    404s] '' calls=['report', 'observe']
+[turn 19 | tick   1007 |    419s] '' calls=['submit_genome']
+[turn 20 | tick   1007 |    431s] '' calls=['submit_genome']
+[turn 21 | tick   1118 |    433s] '' calls=['release']
+[turn 22 | tick   1126 |    435s] 'Added camouflaged r2 grazer to reduce predation losses.' calls=['end_turn']
+[turn 23 | tick   1500 |    525s] '' calls=['report', 'observe']
+[turn 24 | tick   1510 |    539s] '' calls=['submit_genome']
+[turn 25 | tick   1569 |    541s] '' calls=['release', 'release']
+[turn 26 | tick   1577 |    543s] 'Camo grazer surviving but low births; seeded spiked variant plus more grazers.' calls=['end_turn']
+[turn 27 | tick   2000 |    645s] '' calls=['report', 'observe']
+[turn 28 | tick   2010 |    647s] '' calls=['catalog']
+[turn 29 | tick   2020 |    661s] '' calls=['submit_genome']
+[turn 30 | tick   2078 |    663s] '' calls=['release']
+[turn 31 | tick   2086 |    665s] 'Low-energy starvation; new camo grazer emphasizes sugar/mineral steering with less speed.' calls=['end_turn']
+[turn 32 | tick   2500 |    774s] '' calls=['report', 'observe']
+[turn 33 | tick   2549 |    789s] '' calls=['submit_genome']
+[turn 34 | tick   2609 |    791s] '' calls=['release']
+[turn 35 | tick   2617 |    793s] 'Starving before reproduction; trying slower, larger buffer, chemotaxis-focused camo r2.' calls=['end_turn']
+[turn 36 | tick   3000 |    885s] '' calls=['report']
+[turn 37 | tick   3010 |    896s] '' calls=['observe']
+[turn 38 | tick   3055 |    909s] '' calls=['submit_genome']
+[turn 39 | tick   3111 |    911s] '' calls=['release']
+[turn 40 | tick   3119 |    913s] 'Still energy-limited despite minerals; added dual-mouth grazer for higher resource intake.' calls=['end_turn']
+[turn 41 | tick   3500 |   1017s] '' calls=['submit_genome']
+[turn 42 | tick   3500 |   1019s] '' calls=['catalog']
+[turn 43 | tick   3570 |   1032s] '' calls=['submit_genome']
+[turn 44 | tick   3570 |   1044s] '' calls=['submit_genome']
+[turn 45 | tick   3675 |   1047s] '' calls=['release']
+[turn 46 | tick   3683 |   1049s] 'Forager failed in depleted contested world; switching to camouflaged r5 predator/scavenger targeting' calls=['end_turn']
+[turn 47 | tick   4000 |   1126s] '' calls=['report', 'observe']
+[turn 48 | tick   4016 |   1134s] '' calls=['catalog']
+[turn 49 | tick   4047 |   1138s] '' calls=['report']
+[turn 50 | tick   4065 |   1152s] '' calls=['submit_genome']
+[turn 51 | tick   4065 |   1166s] '' calls=['submit_genome']
+[turn 52 | tick   4182 |   1168s] '' calls=['release']
+[turn 53 | tick   4189 |   1170s] 'Only 4 predators survived with full material but low energy; released smaller cheaper predator wave.' calls=['end_turn']
+[turn 54 | tick   4500 |   1246s] '' calls=['report', 'observe']
+[turn 55 | tick   4513 |   1258s] '' calls=['submit_genome']
+[turn 56 | tick   4565 |   1260s] '' calls=['release']
+[turn 57 | tick   4572 |   1262s] 'Predators survive but not reproducing; adding cheap camo foragers to hunt residual sugar/mineral wit' calls=['end_turn']
+[turn 58 | tick   5000 |   1365s] '' calls=['report', 'observe']
+[turn 59 | tick   5012 |   1378s] '' calls=['submit_genome']
+[turn 60 | tick   5012 |   1391s] '' calls=['submit_genome']
+[turn 61 | tick   5119 |   1393s] '' calls=['release']
+[turn 62 | tick   5126 |   1395s] 'Cheap foragers died; predators starved before births. Trying large camo apex to feed on dense enemy ' calls=['end_turn']
+[turn 63 | tick   5500 |   1486s] '' calls=['report', 'observe']
+[turn 64 | tick   5513 |   1499s] '' calls=['submit_genome']
+[turn 65 | tick   5567 |   1500s] '' calls=['release']
+[turn 66 | tick   5574 |   1502s] 'Large hunters live but too little material; seeding many low-upkeep direct foragers for possible bir' calls=['end_turn']
+[turn 67 | tick   6000 |   1605s] '' calls=['report', 'observe', 'catalog']
+[turn 68 | tick   6010 |   1618s] '' calls=['submit_genome']
+[turn 69 | tick   6010 |   1629s] '' calls=['submit_genome']
+[turn 70 | tick   6109 |   1630s] '' calls=['release']
+[turn 71 | tick   6115 |   1632s] 'Foragers accumulate mineral but miss energy/reproduction. Releasing lower-thrust balanced chemotaxis' calls=['end_turn']
+[turn 72 | tick   6500 |   1725s] '' calls=['report', 'observe']
+[turn 73 | tick   6509 |   1737s] 'Need births, switching to diverse random-brain r2/r3 swarms and opposite turn chemotaxis.' calls=['submit_genome']
+[turn 74 | tick   6561 |   1739s] '' calls=['release']
+[turn 75 | tick   6569 |   1741s] '' calls=['end_turn']
+[turn 76 | tick   7000 |   1850s] '' calls=['report', 'observe']
+[turn 77 | tick   7029 |   1861s] '' calls=['submit_genome']
+[turn 78 | tick   7079 |   1864s] 'Trying cheapest chemotaxis: no vacuole, lower upkeep and faster divide energy threshold.' calls=['release']
+[turn 79 | tick   7088 |   1865s] '' calls=['end_turn']
+[turn 80 | tick   7500 |   1966s] '' calls=['report', 'observe', 'catalog']
+[turn 81 | tick   7513 |   1981s] 'Energy remains bottleneck. Pivoting to predators on the dense small-cell field.' calls=['submit_genome']
+[turn 82 | tick   7513 |   1989s] '' calls=['submit_genome']
+[turn 83 | tick   7612 |   1992s] '' calls=['release']
+[turn 84 | tick   7623 |   1994s] '' calls=['end_turn']
+[turn 85 | tick   8000 |   2086s] '' calls=['report']
+[turn 86 | tick   8015 |   2107s] '' calls=['catalog']
+[turn 87 | tick   8100 |   2113s] '' calls=['observe']
+[turn 88 | tick   8126 |   2126s] 'Late pivot: seed low-upkeep grazers and alternate turn polarity; need any births before tick 10000.' calls=['submit_genome']
+[turn 89 | tick   8181 |   2128s] '' calls=['release']
+[turn 90 | tick   8188 |   2130s] '' calls=['end_turn']
+[turn 91 | tick   8500 |   2211s] '' calls=['report', 'observe']
+[turn 92 | tick   8535 |   2224s] 'Survivors have material but not energy. Releasing more ultra-cheap slow grazers.' calls=['submit_genome']
+[turn 93 | tick   8535 |   2231s] '' calls=['submit_genome']
+[turn 94 | tick   8620 |   2234s] '' calls=['release']
+[turn 95 | tick   8631 |   2236s] '' calls=['end_turn']
+[turn 96 | tick   9000 |   2324s] 'Still no descendants; last windows: flood cheapest viable variants.' calls=['observe', 'report']
+[turn 97 | tick   9008 |   2336s] 'Energy limiting; survivors close to reproduction. Adding more slow grazers plus immobile ultra-low u' calls=['submit_genome']
+[turn 98 | tick   9057 |   2338s] '' calls=['release']
+[turn 99 | tick   9064 |   2339s] '' calls=['end_turn']
+[turn 100 | tick   9500 |   2446s] 'Finally scoring; spend final budget on the working low-upkeep lottery.' calls=['observe', 'report']
+[turn 101 | tick   9512 |   2447s] 'Static lottery produced descendants; final release.' calls=['release']
+[turn 102 | tick   9520 |   2449s] 'Final turn.' calls=['end_turn']
+
+ended at tick 10000 after 102 turns, 21 genomes submitted
+
+primordia-eval (each genome alone, fixed seeds):
+  # 1 r2_chemotaxi_turnA       submitted at tick      0: 380.0
+  # 2 r2_chemotaxi_turnB       submitted at tick      0: 531.6666666666666
+  # 3 r3_sensor_vacuole        submitted at tick      0: 487.6666666666667
+  # 4 r3_jaw_chaser_cam        submitted at tick    586: 386.3333333333333
+  # 5 r2_camo_balanced_grazer  submitted at tick   1118: 525.3333333333334
+  # 6 r2_camo_spike_grazer     submitted at tick   1569: 472.6666666666667
+  # 7 r2_camo_taxon_A          submitted at tick   2078: 487.3333333333333
+  # 8 r2_camo_slow_sensor_v2   submitted at tick   2609: 561.0
+  # 9 r2_dualmouth_cruise      submitted at tick   3111: 463.6666666666667
+  #10 r5_hunter_noshell        submitted at tick   3675: 306.6666666666667
+  #11 r4_pred_sweeper_fix      submitted at tick   4182: 386.0
+  #12 r2_camo_random_forager   submitted at tick   4565: 566.6666666666666
+  #13 r7_camo_apex_chaser_fix  submitted at tick   5119: 218.33333333333334
+  #14 r2_direct_chemotaxi_v2   submitted at tick   5567: 579.6666666666666
+  #15 r2_hand_forager_balanced submitted at tick   6109: 747.0
+  #16 r2_random_evo_swarm_lowc submitted at tick   6561: 709.6666666666666
+  #17 r2_no_vac_simple_seek    submitted at tick   7079: 654.6666666666666
+  #18 r4_camo_jaw_hunter_seek  submitted at tick   7612: 373.6666666666667
+  #19 r2_cheap_seek_Rturn      submitted at tick   8181: 570.0
+  #20 r2_slow_energy_sipper    submitted at tick   8620: 952.0
+  #21 r2_static_lottery        submitted at tick   9057: 3354.0

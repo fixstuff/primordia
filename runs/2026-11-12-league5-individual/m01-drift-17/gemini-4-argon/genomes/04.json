@@ -1,0 +1,75 @@
+{
+ "body": [
+  {
+   "radius": 2.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "chemical": "sugar",
+   "angle": -40,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 40,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -40
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "mineral"
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  }
+ ],
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.15
+ },
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   2.5,
+   -3,
+   -2,
+   0
+  ]
+ },
+ "schema": "lifeapi.genome/1",
+ "name": "seeker_r2.5_B"
+}

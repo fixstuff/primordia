@@ -1,0 +1,36 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "swift2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.3
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   4,
+   0,
+   0.1
+  ]
+ },
+ "mutation": {
+  "rate": 0.2,
+  "size": 0.15
+ }
+}

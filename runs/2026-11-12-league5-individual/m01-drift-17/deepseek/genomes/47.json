@@ -1,0 +1,35 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "m2r7",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 7
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1.0
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.099,
+   0.0,
+   0.0
+  ]
+ },
+ "mutation": {
+  "rate": 0.06,
+  "size": 0.15
+ }
+}

@@ -1,0 +1,107 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/01.json",
+  "name": "Swift grazer",
+  "species": 1,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/02.json",
+  "name": "Broad grazer",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/03.json",
+  "name": "Rapid bloom",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/04.json",
+  "name": "Armored bloom",
+  "species": 11,
+  "tick": 0
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/05.json",
+  "name": "Large bloom",
+  "species": 12,
+  "tick": 0
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/06.json",
+  "name": "Quiet meadow",
+  "species": 57,
+  "tick": 527
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/07.json",
+  "name": "Hunter grazer",
+  "species": 72,
+  "tick": 1031
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/08.json",
+  "name": "Leviathan grazer",
+  "species": 90,
+  "tick": 1526
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/09.json",
+  "name": "Apex twelve",
+  "species": 101,
+  "tick": 2039
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/10.json",
+  "name": "Filter eight",
+  "species": 114,
+  "tick": 2526
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/11.json",
+  "name": "Mesopredator",
+  "species": 121,
+  "tick": 3021
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/12.json",
+  "name": "Sweeping ten",
+  "species": 130,
+  "tick": 3536
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/13.json",
+  "name": "Hunter eleven",
+  "species": 143,
+  "tick": 4043
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/14.json",
+  "name": "Sessile ten",
+  "species": 160,
+  "tick": 4566
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m05-patchy-18/gpt-6-astra/genomes/15.json",
+  "name": "Apex eleven",
+  "species": 187,
+  "tick": 6029
+ }
+]

@@ -1,0 +1,98 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/opus/genomes/01.json",
+      "mean_biomass": 17268.0,
+      "mean_population": 479.6666666666667,
+      "name": "grazer6",
+      "per_seed": [
+        507,
+        456,
+        476
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/opus/genomes/02.json",
+      "mean_biomass": 14112.0,
+      "mean_population": 882.0,
+      "name": "graze4",
+      "per_seed": [
+        894,
+        830,
+        922
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/opus/genomes/03.json",
+      "mean_biomass": 14088.0,
+      "mean_population": 391.3333333333333,
+      "name": "hunter6",
+      "per_seed": [
+        389,
+        393,
+        392
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/opus/genomes/04.json",
+      "mean_biomass": 23104.0,
+      "mean_population": 361.0,
+      "name": "tank8",
+      "per_seed": [
+        383,
+        342,
+        358
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/opus/genomes/05.json",
+      "mean_biomass": 20498.333333333332,
+      "mean_population": 418.3333333333333,
+      "name": "ghost7",
+      "per_seed": [
+        429,
+        411,
+        415
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/opus/genomes/06.json",
+      "mean_biomass": 12972.0,
+      "mean_population": 360.3333333333333,
+      "name": "racer6",
+      "per_seed": [
+        361,
+        365,
+        355
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/opus/genomes/07.json",
+      "mean_biomass": 24059.0,
+      "mean_population": 491.0,
+      "name": "lean7",
+      "per_seed": [
+        501,
+        482,
+        490
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

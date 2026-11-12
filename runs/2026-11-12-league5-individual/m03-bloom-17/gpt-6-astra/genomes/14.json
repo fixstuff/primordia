@@ -1,0 +1,36 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Leviathan",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.25
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   3,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

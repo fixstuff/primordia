@@ -1,0 +1,96 @@
+{
+ "name": "lean_omnivore_A",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "power": 0.8,
+   "part": "cilia"
+  },
+  {
+   "part": "jaw",
+   "power": 0.85
+  },
+  {
+   "thickness": 0.4,
+   "part": "shell"
+  },
+  {
+   "power": 0.4,
+   "part": "toxin"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 180,
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "mineral",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "mineral"
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.12,
+  "rate": 0.04
+ },
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   -3.2,
+   -3.2,
+   4,
+   -1,
+   -1,
+   0,
+   -1.2,
+   -4,
+   4,
+   0,
+   -2.5,
+   2.5,
+   0,
+   0,
+   2,
+   2,
+   1,
+   1.5,
+   1.5,
+   0,
+   -0.8,
+   -0.35,
+   0,
+   0.35,
+   1.2,
+   1.5,
+   2.8,
+   0,
+   1.25
+  ]
+ }
+}

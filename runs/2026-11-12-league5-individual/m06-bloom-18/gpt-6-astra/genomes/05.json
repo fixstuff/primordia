@@ -1,0 +1,67 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Armored leviathan",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 20
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.05
+ }
+}

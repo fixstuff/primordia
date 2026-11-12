@@ -1,0 +1,42 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "parts",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 90
+  }
+ ],
+ "brain": {
+  "hidden": 2
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

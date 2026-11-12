@@ -1,0 +1,85 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r3_linear_sugar_mineral_taxis_v9",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.45
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   0,
+   2,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   0.5,
+   -3,
+   0,
+   3,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   2,
+   0,
+   0.4,
+   0,
+   2,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.15
+ }
+}

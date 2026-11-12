@@ -1,0 +1,52 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "hunter-r6-jaw",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 6
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.25
+ }
+}

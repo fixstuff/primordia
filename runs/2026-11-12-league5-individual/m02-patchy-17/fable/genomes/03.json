@@ -1,0 +1,187 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "B10",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 9.9
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -50,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 50,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -50,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 50,
+   "chemical": "mineral"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 14,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   4,
+   -1.2,
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   1.2,
+   -4,
+   4,
+   0,
+   0,
+   4,
+   -1.2,
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   1.2,
+   -4,
+   4,
+   0,
+   0,
+   4,
+   -1.2,
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   1.2,
+   -4,
+   4,
+   0,
+   0,
+   4,
+   -1.2,
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   1.2,
+   -4,
+   4,
+   0,
+   0,
+   4,
+   -1.2,
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   1.2,
+   -4,
+   4,
+   0,
+   0,
+   4,
+   -1.2,
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   1.2,
+   0,
+   0,
+   -4,
+   4,
+   4,
+   -4,
+   0,
+   0,
+   -4,
+   4,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   -4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.03,
+  "size": 0.05
+ }
+}

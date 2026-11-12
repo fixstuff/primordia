@@ -1,0 +1,32 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "fat-slow-r6-p04",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.04
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   1,
+   1.3,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.04
+ }
+}

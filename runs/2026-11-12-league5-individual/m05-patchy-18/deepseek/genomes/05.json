@@ -1,0 +1,35 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "test_camou",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "camouflage"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   2,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

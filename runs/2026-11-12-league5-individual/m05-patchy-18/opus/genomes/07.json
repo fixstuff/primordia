@@ -1,0 +1,75 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "ghost",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.6
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "mineral"
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   3,
+   -3,
+   2.5,
+   -2.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   2,
+   0,
+   3,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.2
+ }
+}

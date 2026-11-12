@@ -1,0 +1,146 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/01.json",
+      "mean_biomass": 2234.6666666666665,
+      "mean_population": 558.6666666666666,
+      "name": "Scout2 chemotroph",
+      "per_seed": [
+        571,
+        554,
+        551
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/02.json",
+      "mean_biomass": 2981.3333333333335,
+      "mean_population": 745.3333333333334,
+      "name": "CamoFrugal2",
+      "per_seed": [
+        723,
+        750,
+        763
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/03.json",
+      "mean_biomass": 6210.0,
+      "mean_population": 690.0,
+      "name": "SpikyCamo3 grazer",
+      "per_seed": [
+        693,
+        685,
+        692
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/04.json",
+      "mean_biomass": 2052.0,
+      "mean_population": 513.0,
+      "name": "TripleMouth2 seeker",
+      "per_seed": [
+        510,
+        510,
+        519
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/05.json",
+      "mean_biomass": 6725.333333333333,
+      "mean_population": 420.3333333333333,
+      "name": "Jaw4 hunter grazer",
+      "per_seed": [
+        441,
+        411,
+        409
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/06.json",
+      "mean_biomass": 1922.6666666666667,
+      "mean_population": 480.6666666666667,
+      "name": "QuadMouth2 mineralist",
+      "per_seed": [
+        478,
+        482,
+        482
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/07.json",
+      "mean_biomass": 5265.0,
+      "mean_population": 585.0,
+      "name": "Scout3 chemotroph biomass",
+      "per_seed": [
+        567,
+        600,
+        588
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/08.json",
+      "mean_biomass": 15100.0,
+      "mean_population": 151.0,
+      "name": "Hunter10 anti-giant bare",
+      "per_seed": [
+        178,
+        140,
+        135
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/09.json",
+      "mean_biomass": 1576.0,
+      "mean_population": 394.0,
+      "name": "Camo2 mineral sprinter",
+      "per_seed": [
+        397,
+        395,
+        390
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/10.json",
+      "mean_biomass": 9100.0,
+      "mean_population": 364.0,
+      "name": "R5 camo chemotroph differential",
+      "per_seed": [
+        375,
+        350,
+        367
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-5.5/genomes/11.json",
+      "mean_biomass": 1402.6666666666667,
+      "mean_population": 350.6666666666667,
+      "name": "R2 triple-mouth mineral harvester",
+      "per_seed": [
+        354,
+        342,
+        356
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

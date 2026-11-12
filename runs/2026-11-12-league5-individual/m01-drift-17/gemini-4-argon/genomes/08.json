@@ -1,0 +1,68 @@
+{
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   2.5,
+   -3,
+   -2,
+   0
+  ],
+  "hidden": 2
+ },
+ "mutation": {
+  "size": 0.12,
+  "rate": 0.06
+ },
+ "body": [
+  {
+   "radius": 2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.6,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.7
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -40
+  },
+  {
+   "angle": 40,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -40
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "mineral"
+  }
+ ],
+ "name": "tiny_r2_B",
+ "schema": "lifeapi.genome/1"
+}

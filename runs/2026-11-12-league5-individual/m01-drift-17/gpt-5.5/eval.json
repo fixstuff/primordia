@@ -1,0 +1,158 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/01.json",
+      "mean_biomass": 1862.6666666666667,
+      "mean_population": 465.6666666666667,
+      "name": "SwiftGrazer-r2-v1",
+      "per_seed": [
+        487,
+        454,
+        456
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/02.json",
+      "mean_biomass": 3360.0,
+      "mean_population": 840.0,
+      "name": "EcoGrazer-r2-slow-v2",
+      "per_seed": [
+        864,
+        837,
+        819
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/03.json",
+      "mean_biomass": 2345.3333333333335,
+      "mean_population": 586.3333333333334,
+      "name": "PulseGrazer-r2-econ-v3",
+      "per_seed": [
+        576,
+        596,
+        587
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/04.json",
+      "mean_biomass": 2278.6666666666665,
+      "mean_population": 569.6666666666666,
+      "name": "TwinMouthGrazer-r2-v4",
+      "per_seed": [
+        570,
+        578,
+        561
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/05.json",
+      "mean_biomass": 9541.666666666666,
+      "mean_population": 381.6666666666667,
+      "name": "JawGrazer-r5-v2",
+      "per_seed": [
+        398,
+        376,
+        371
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/06.json",
+      "mean_biomass": 2156.0,
+      "mean_population": 539.0,
+      "name": "RandOmniGrazer-r2-v6",
+      "per_seed": [
+        550,
+        531,
+        536
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/07.json",
+      "mean_biomass": 3305.3333333333335,
+      "mean_population": 826.3333333333334,
+      "name": "HandChem-r2-staticbias-v1",
+      "per_seed": [
+        825,
+        830,
+        824
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/08.json",
+      "mean_biomass": 6366.0,
+      "mean_population": 707.3333333333334,
+      "name": "FatChem-r3-2mouth-v1",
+      "per_seed": [
+        717,
+        690,
+        715
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/09.json",
+      "mean_biomass": 2538.6666666666665,
+      "mean_population": 39.666666666666664,
+      "name": "BigGrazer-r8-seek-v1",
+      "per_seed": [
+        66,
+        25,
+        28
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/10.json",
+      "mean_biomass": 2946.6666666666665,
+      "mean_population": 736.6666666666666,
+      "name": "DrifterGrazer-r2-lowcost-v1",
+      "per_seed": [
+        772,
+        737,
+        701
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/11.json",
+      "mean_biomass": 11132.0,
+      "mean_population": 92.0,
+      "name": "ApexR11NoShell-v1",
+      "per_seed": [
+        105,
+        84,
+        87
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/12.json",
+      "mean_biomass": 13426.666666666666,
+      "mean_population": 3356.6666666666665,
+      "name": "StillSpore-r2-mouth-v1",
+      "per_seed": [
+        3508,
+        3233,
+        3329
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

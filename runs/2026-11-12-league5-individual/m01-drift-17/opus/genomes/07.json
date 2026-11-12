@@ -1,0 +1,68 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "graze10",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 10
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   4,
+   -4,
+   0,
+   0,
+   -1.5,
+   -1.5,
+   0,
+   2.5,
+   0,
+   2,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.2
+ }
+}

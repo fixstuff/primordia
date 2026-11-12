@@ -1,0 +1,72 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Omnivore55_H1",
+ "mutation": {
+  "size": 0.08,
+  "rate": 0.04
+ },
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -3.5,
+   3.5,
+   -2.5,
+   2.5,
+   0,
+   0,
+   0,
+   2,
+   3.5,
+   0.05
+  ]
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.8,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.7,
+   "part": "cilia"
+  },
+  {
+   "power": 0.65,
+   "part": "jaw"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.4
+  },
+  {
+   "part": "spikes",
+   "power": 0.4
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -35
+  },
+  {
+   "chemical": "sugar",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "mineral",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "mineral",
+   "angle": 35,
+   "part": "chemo_sensor"
+  }
+ ]
+}

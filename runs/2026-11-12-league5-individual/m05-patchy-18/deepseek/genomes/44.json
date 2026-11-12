@@ -1,0 +1,56 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "hunter_r5",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 0.3
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -0.8,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0.8,
+   "chemical": "organism"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   1,
+   -1,
+   0,
+   0,
+   0,
+   3,
+   3,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

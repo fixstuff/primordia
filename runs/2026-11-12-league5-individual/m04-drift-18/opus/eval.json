@@ -1,0 +1,122 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/opus/genomes/01.json",
+      "mean_biomass": 9349.333333333334,
+      "mean_population": 584.3333333333334,
+      "name": "trackA",
+      "per_seed": [
+        588,
+        589,
+        576
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/opus/genomes/02.json",
+      "mean_biomass": 5136.0,
+      "mean_population": 321.0,
+      "name": "trackB",
+      "per_seed": [
+        355,
+        305,
+        303
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/opus/genomes/03.json",
+      "mean_biomass": 10549.333333333334,
+      "mean_population": 659.3333333333334,
+      "name": "trackC",
+      "per_seed": [
+        665,
+        635,
+        678
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/opus/genomes/04.json",
+      "mean_biomass": 20416.0,
+      "mean_population": 319.0,
+      "name": "bigJ",
+      "per_seed": [
+        326,
+        321,
+        310
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/opus/genomes/05.json",
+      "mean_biomass": 19797.333333333332,
+      "mean_population": 309.3333333333333,
+      "name": "bigHunt",
+      "per_seed": [
+        309,
+        310,
+        309
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/opus/genomes/06.json",
+      "mean_biomass": 26500.0,
+      "mean_population": 265.0,
+      "name": "graze10",
+      "per_seed": [
+        283,
+        254,
+        258
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/opus/genomes/07.json",
+      "mean_biomass": 26136.0,
+      "mean_population": 216.0,
+      "name": "titan",
+      "per_seed": [
+        221,
+        212,
+        215
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/opus/genomes/08.json",
+      "mean_biomass": 25872.0,
+      "mean_population": 179.66666666666666,
+      "name": "titanT",
+      "per_seed": [
+        187,
+        173,
+        179
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/opus/genomes/09.json",
+      "mean_biomass": 19157.333333333332,
+      "mean_population": 299.3333333333333,
+      "name": "fort",
+      "per_seed": [
+        298,
+        296,
+        304
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,65 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "herb_r5_rev",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 1.0
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "vacuole",
+   "capacity": 50
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   0,
+   3,
+   0,
+   0,
+   -1.2,
+   3,
+   0,
+   -3,
+   0,
+   0,
+   4,
+   0,
+   0.5,
+   0,
+   3,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

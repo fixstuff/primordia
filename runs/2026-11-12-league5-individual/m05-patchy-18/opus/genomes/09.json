@@ -1,0 +1,86 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "whale",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 10
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 40,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -40,
+   "chemical": "mineral"
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   3,
+   -3,
+   2,
+   -2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   -2,
+   0,
+   3,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.2
+ }
+}

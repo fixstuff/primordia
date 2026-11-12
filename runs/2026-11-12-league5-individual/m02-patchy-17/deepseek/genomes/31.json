@@ -1,0 +1,56 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2f",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "cilia",
+   "power": 0.2
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -1,
+   1,
+   0,
+   0,
+   0,
+   4,
+   1,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.1
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Needle",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.18
+  },
+  {
+   "part": "stinger",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   3,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

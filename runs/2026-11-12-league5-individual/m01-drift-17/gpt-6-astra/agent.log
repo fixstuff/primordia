@@ -1,0 +1,106 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |      3s] '' calls=['observe']
+[turn  3 | tick      0 |      7s] '' calls=['catalog']
+[turn  4 | tick      0 |     10s] '' calls=['submit_genome']
+[turn  5 | tick      0 |     15s] '' calls=['submit_genome', 'submit_genome', 'release']
+[turn  6 | tick      0 |     18s] '' calls=['release', 'release']
+[turn  7 | tick      0 |     20s] '' calls=['end_turn']
+[turn  8 | tick      0 |    211s] '' calls=['end_turn']
+[turn  9 | tick    500 |    331s] '' calls=['report']
+[turn 10 | tick    509 |    336s] '' calls=['submit_genome']
+[turn 11 | tick    530 |    339s] '' calls=['release']
+[turn 12 | tick    541 |    340s] '' calls=['end_turn']
+[turn 13 | tick   1000 |    451s] '' calls=['report']
+[turn 14 | tick   1006 |    461s] '' calls=['submit_genome']
+[turn 15 | tick   1006 |    468s] '' calls=['submit_genome']
+[turn 16 | tick   1078 |    474s] '' calls=['submit_genome']
+[turn 17 | tick   1103 |    476s] '' calls=['release', 'release']
+[turn 18 | tick   1111 |    477s] '' calls=['end_turn']
+[turn 19 | tick   1500 |    572s] '' calls=['catalog']
+[turn 20 | tick   1513 |    578s] '' calls=['submit_genome']
+[turn 21 | tick   1535 |    580s] '' calls=['release']
+[turn 22 | tick   1546 |    583s] '' calls=['end_turn']
+[turn 23 | tick   2000 |    693s] '' calls=['observe']
+[turn 24 | tick   2015 |    700s] '' calls=['submit_genome']
+[turn 25 | tick   2045 |    702s] '' calls=['release']
+[turn 26 | tick   2052 |    703s] '' calls=['end_turn']
+[turn 27 | tick   2500 |    814s] '' calls=['observe']
+[turn 28 | tick   2519 |    819s] '' calls=['submit_genome']
+[turn 29 | tick   2543 |    828s] '' calls=['submit_genome']
+[turn 30 | tick   2580 |    830s] '' calls=['release', 'release']
+[turn 31 | tick   2588 |    832s] '' calls=['end_turn']
+[turn 32 | tick   3000 |    931s] '' calls=['report']
+[turn 33 | tick   3008 |    942s] '' calls=['submit_genome']
+[turn 34 | tick   3053 |    945s] '' calls=['submit_genome']
+[turn 35 | tick   3068 |    947s] '' calls=['release']
+[turn 36 | tick   3075 |    950s] '' calls=['release']
+[turn 37 | tick   3089 |    952s] '' calls=['end_turn']
+[turn 38 | tick   3500 |   1050s] '' calls=['catalog']
+[turn 39 | tick   3505 |   1055s] '' calls=['observe']
+[turn 40 | tick   3523 |   1061s] '' calls=['submit_genome']
+[turn 41 | tick   3548 |   1062s] '' calls=['release']
+[turn 42 | tick   3555 |   1064s] '' calls=['release']
+[turn 43 | tick   3561 |   1067s] '' calls=['end_turn']
+[turn 44 | tick   4000 |   1172s] '' calls=['release']
+[turn 45 | tick   4010 |   1175s] '' calls=['observe']
+[turn 46 | tick   4023 |   1177s] '' calls=['end_turn']
+[turn 47 | tick   4500 |   1292s] '' calls=['release']
+[turn 48 | tick   4513 |   1294s] '' calls=['end_turn']
+[turn 49 | tick   5000 |   1411s] '' calls=['release']
+[turn 50 | tick   5005 |   1412s] '' calls=['end_turn']
+[turn 51 | tick   5500 |   1533s] '' calls=['submit_genome']
+[turn 52 | tick   5516 |   1535s] '' calls=['release']
+[turn 53 | tick   5525 |   1537s] '' calls=['end_turn']
+[turn 54 | tick   6000 |   1650s] '' calls=['observe']
+[turn 55 | tick   6005 |   1655s] '' calls=['submit_genome']
+[turn 56 | tick   6026 |   1658s] '' calls=['release']
+[turn 57 | tick   6035 |   1659s] '' calls=['end_turn']
+[turn 58 | tick   6500 |   1771s] '' calls=['catalog']
+[turn 59 | tick   6508 |   1773s] '' calls=['report']
+[turn 60 | tick   6517 |   1781s] '' calls=['submit_genome']
+[turn 61 | tick   6517 |   1784s] '' calls=['submit_genome']
+[turn 62 | tick   6562 |   1786s] '' calls=['release']
+[turn 63 | tick   6570 |   1788s] '' calls=['end_turn']
+[turn 64 | tick   7000 |   1893s] '' calls=['observe']
+[turn 65 | tick   7014 |   1897s] '' calls=['submit_genome']
+[turn 66 | tick   7032 |   1901s] '' calls=['release']
+[turn 67 | tick   7049 |   1903s] '' calls=['end_turn']
+[turn 68 | tick   7500 |   2011s] '' calls=['release']
+[turn 69 | tick   7506 |   2012s] '' calls=['end_turn']
+[turn 70 | tick   8000 |   2135s] '' calls=['submit_genome']
+[turn 71 | tick   8025 |   2137s] '' calls=['release']
+[turn 72 | tick   8031 |   2138s] '' calls=['end_turn']
+[turn 73 | tick   8500 |   2255s] '' calls=['submit_genome']
+[turn 74 | tick   8524 |   2258s] '' calls=['release']
+[turn 75 | tick   8536 |   2260s] '' calls=['end_turn']
+[turn 76 | tick   9000 |   2372s] '' calls=['catalog']
+[turn 77 | tick   9010 |   2374s] '' calls=['report']
+[turn 78 | tick   9021 |   2382s] '' calls=['submit_genome']
+[turn 79 | tick   9054 |   2386s] '' calls=['release']
+[turn 80 | tick   9069 |   2387s] '' calls=['end_turn']
+[turn 81 | tick   9500 |   2492s] '' calls=['release']
+[turn 82 | tick   9511 |   2494s] '' calls=['end_turn']
+
+ended at tick 10000 after 82 turns, 20 genomes submitted
+
+primordia-eval (each genome alone, fixed seeds):
+  # 1 Swift grazer             submitted at tick      0: 1456.6666666666667
+  # 2 Micro grazer             submitted at tick      0: 1328.6666666666667
+  # 3 Broad grazer             submitted at tick      0: 1037.6666666666667
+  # 4 Efficient twin grazer    submitted at tick    530: 1476.6666666666667
+  # 5 Seeking grazer           submitted at tick   1078: 659.6666666666666
+  # 6 Hunter                   submitted at tick   1103: 332.3333333333333
+  # 7 Wide filter              submitted at tick   1535: 229.0
+  # 8 Apex cruiser             submitted at tick   2045: 104.66666666666667
+  # 9 Apex twin jaw            submitted at tick   2543: 104.66666666666667
+  #10 Tracking apex            submitted at tick   2580: 94.66666666666667
+  #11 Leviathan                submitted at tick   3053: 27.333333333333332
+  #12 Crown hunter             submitted at tick   3068: 54.0
+  #13 Hunter twelve            submitted at tick   3548: 60.333333333333336
+  #14 Hunter sixteen           submitted at tick   5516: 27.333333333333332
+  #15 Hunter fourteen          submitted at tick   6026: 54.0
+  #16 Armored fourteen         submitted at tick   6562: 54.333333333333336
+  #17 Rapid twelve             submitted at tick   7032: 102.0
+  #18 Heavy twelve             submitted at tick   8025: 72.66666666666667
+  #19 Fortress hunter          submitted at tick   8524: 57.0
+  #20 Apex reserve             submitted at tick   9054: 29.666666666666668

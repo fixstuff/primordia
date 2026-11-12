@@ -1,0 +1,28 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "sit2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.15
+ }
+}

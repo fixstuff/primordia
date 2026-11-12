@@ -1,0 +1,35 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "sitspikecam",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "spikes",
+   "power": 1.0
+  },
+  {
+   "part": "camouflage"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

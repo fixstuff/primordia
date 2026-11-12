@@ -1,0 +1,100 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "fat-grazer-r4-slow",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.3
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -70
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 70
+  }
+ ],
+ "brain": {
+  "hidden": 6,
+  "weights": [
+   -3,
+   -3,
+   -3,
+   -3,
+   0,
+   -2,
+   3,
+   3,
+   3,
+   3,
+   0,
+   -1,
+   4,
+   0,
+   4,
+   0,
+   0,
+   -2,
+   0,
+   4,
+   0,
+   4,
+   0,
+   -2,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -2,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   2,
+   -1.0,
+   0.6,
+   0.5,
+   0.5,
+   0,
+   -0.8,
+   0.1,
+   -3,
+   3,
+   -2,
+   2,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.12
+ }
+}

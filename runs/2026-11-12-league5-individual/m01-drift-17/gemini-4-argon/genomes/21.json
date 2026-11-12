@@ -1,0 +1,65 @@
+{
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   0,
+   4,
+   1.5,
+   0
+  ],
+  "hidden": 1
+ },
+ "name": "apex_pure_pred_r6.5_h1",
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 6.5
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "power": 0.65,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.85,
+   "part": "cilia"
+  },
+  {
+   "angle": -30,
+   "part": "chemo_sensor",
+   "chemical": "organism"
+  },
+  {
+   "chemical": "organism",
+   "angle": 30,
+   "part": "chemo_sensor"
+  },
+  {
+   "thickness": 1,
+   "part": "shell"
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "power": 1,
+   "part": "toxin"
+  },
+  {
+   "part": "stinger",
+   "power": 1
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Tracking apex",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 10
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0.4
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "organism"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   0,
+   4,
+   4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

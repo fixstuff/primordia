@@ -1,0 +1,95 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "FatChem-r3-2mouth-v1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.25
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  }
+ ],
+ "brain": {
+  "hidden": 5,
+  "weights": [
+   3,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0.6,
+   0.6,
+   0.4,
+   0.4,
+   1.5,
+   0.5,
+   -2,
+   2,
+   -1.2,
+   1.2,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.2
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "blind7c",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 7
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1.0
+  },
+  {
+   "part": "cilia",
+   "power": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.099,
+   0.0,
+   0.0
+  ]
+ },
+ "mutation": {
+  "rate": 0.06,
+  "size": 0.15
+ }
+}

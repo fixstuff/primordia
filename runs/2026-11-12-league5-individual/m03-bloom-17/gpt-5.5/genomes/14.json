@@ -1,0 +1,106 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_direct_chemotaxi_v2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.45
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  },
+  {
+   "part": "vacuole",
+   "capacity": 4
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   0,
+   2,
+   0,
+   0,
+   1.2,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   1.2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   1.2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1.5,
+   2,
+   2,
+   2,
+   0.5,
+   1,
+   0.8,
+   -0.5,
+   2.5,
+   0,
+   -2.5
+  ]
+ },
+ "mutation": {
+  "rate": 0.2,
+  "size": 0.35
+ }
+}

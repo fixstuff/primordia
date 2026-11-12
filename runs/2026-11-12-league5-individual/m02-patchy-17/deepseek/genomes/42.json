@@ -1,0 +1,96 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 11
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0.2
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -135,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 135,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "sugar"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "stinger",
+   "power": 1
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "part": "toxin",
+   "power": 1
+  },
+  {
+   "part": "camouflage",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -0.5,
+   -0.8,
+   0.8,
+   0.5,
+   -0.3,
+   0.3,
+   0,
+   0,
+   0,
+   4,
+   1,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.1
+ },
+ "name": "r11apex",
+ "schema": "lifeapi.genome/1"
+}

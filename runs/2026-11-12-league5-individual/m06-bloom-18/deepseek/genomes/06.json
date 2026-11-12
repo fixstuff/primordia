@@ -1,0 +1,42 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "jaw1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "sugar"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.15
+ }
+}

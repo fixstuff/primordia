@@ -1,0 +1,90 @@
+{
+  "rules": {
+    "clock": "continuous: after the first (design) window the world runs on its own, window_ticks per window_seconds, and never waits. Your moves land at the tick they arrive. end_turn waits for the window's end and returns the scoreboard.",
+    "first_window_seconds": 600.0,
+    "founder_cost": "5 * (radius/5)^2 budget per founder: radius 2 = 0.8, 5 = 5, 10 = 20, 20 = 80",
+    "founder_energy": "a founder starts with r^2 energy (half its body's 2r^2); vacuoles start empty",
+    "how": "act (catalog, report, submit_genome, release, observe), then call end_turn; it returns when the next window opens, with the scoreboard. step and subscribe are refused.",
+    "match_ticks": 10000,
+    "players": 7,
+    "score": "your biomass (sum of radius^2 over your living organisms BORN IN THE POOL; founders you release do not count, only their descendants) averaged over every tick of the match. Every tick counts the same, and only lineages that eat and reproduce score.",
+    "window_seconds": 120.0,
+    "window_ticks": 500
+  },
+  "standings": [
+    {
+      "alive": 923,
+      "biomass": 3147.6911236594124,
+      "name": "claude-fable-5-2",
+      "player": 5,
+      "rank": 1,
+      "score": 2045.6066828620762
+    },
+    {
+      "alive": 86,
+      "biomass": 2556.0,
+      "name": "claude-opus-5-5",
+      "player": 4,
+      "rank": 2,
+      "score": 1960.674
+    },
+    {
+      "alive": 56,
+      "biomass": 1694.0,
+      "name": "gemini-4-argon",
+      "player": 6,
+      "rank": 3,
+      "score": 1249.6119194747776
+    },
+    {
+      "alive": 37,
+      "biomass": 95.96000398635869,
+      "name": "gpt-6-astra",
+      "player": 2,
+      "rank": 4,
+      "score": 302.9465242645186
+    },
+    {
+      "alive": 92,
+      "biomass": 203.0,
+      "name": "deepseek-v4-pro",
+      "player": 3,
+      "rank": 5,
+      "score": 98.05763282771323
+    },
+    {
+      "alive": 104,
+      "biomass": 172.0,
+      "name": "gpt-5.5",
+      "player": 1,
+      "rank": 6,
+      "score": 27.0963
+    },
+    {
+      "alive": 26,
+      "biomass": 0.0,
+      "name": "scripted-bot",
+      "player": 0,
+      "rank": 7,
+      "score": 0.0
+    }
+  ],
+  "tick": 10000,
+  "world": {
+    "background_sugar": 0.0012000000569969416,
+    "decay": 0.0005000000237487257,
+    "description": "Weak sugar falls on every cell (sunlight) and vents are few. Grazing anywhere beats hunting vents.",
+    "diffusion": 0.10000000149011612,
+    "drift": 0.0,
+    "grid": 128,
+    "max_population": 4000,
+    "mineral_rate": 1.0,
+    "mineral_vents": 4,
+    "name": "bloom",
+    "pulse_depth": 0.0,
+    "pulse_period": 0,
+    "relocate_chance": 0.0,
+    "sugar_rate": 3.0,
+    "sugar_vents": 2
+  }
+}

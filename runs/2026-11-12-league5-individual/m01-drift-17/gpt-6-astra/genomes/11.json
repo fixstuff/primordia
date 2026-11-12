@@ -1,0 +1,64 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Leviathan",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 16
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "organism"
+  },
+  {
+   "part": "cilia",
+   "power": 0.4
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   0,
+   4,
+   4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.1
+ }
+}

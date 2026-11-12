@@ -1,0 +1,25 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "mover",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 1.0
+  },
+  {
+   "part": "cilia",
+   "power": 1.0
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.0,
+  "size": 0.0
+ }
+}

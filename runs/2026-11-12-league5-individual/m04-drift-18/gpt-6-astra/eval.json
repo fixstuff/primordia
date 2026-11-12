@@ -1,0 +1,182 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/01.json",
+      "mean_biomass": 4357.333333333333,
+      "mean_population": 1089.3333333333333,
+      "name": "Swift Seed",
+      "per_seed": [
+        1052,
+        1107,
+        1109
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/02.json",
+      "mean_biomass": 2265.3333333333335,
+      "mean_population": 566.3333333333334,
+      "name": "Bloom",
+      "per_seed": [
+        569,
+        533,
+        597
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/03.json",
+      "mean_biomass": 1993.3333333333333,
+      "mean_population": 498.3333333333333,
+      "name": "Drift",
+      "per_seed": [
+        496,
+        500,
+        499
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/04.json",
+      "mean_biomass": 8762.666666666666,
+      "mean_population": 2190.6666666666665,
+      "name": "Meadow",
+      "per_seed": [
+        2362,
+        1987,
+        2223
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/05.json",
+      "mean_biomass": 13414.666666666666,
+      "mean_population": 3353.6666666666665,
+      "name": "Root",
+      "per_seed": [
+        3544,
+        3224,
+        3293
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/06.json",
+      "mean_biomass": 9093.333333333334,
+      "mean_population": 568.3333333333334,
+      "name": "Oak",
+      "per_seed": [
+        575,
+        567,
+        563
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/07.json",
+      "mean_biomass": 7776.0,
+      "mean_population": 486.0,
+      "name": "Grazer",
+      "per_seed": [
+        492,
+        445,
+        521
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/08.json",
+      "mean_biomass": 17541.666666666668,
+      "mean_population": 701.6666666666666,
+      "name": "Canopy",
+      "per_seed": [
+        768,
+        628,
+        709
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/09.json",
+      "mean_biomass": 23520.0,
+      "mean_population": 163.33333333333334,
+      "name": "Crown",
+      "per_seed": [
+        180,
+        149,
+        161
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/10.json",
+      "mean_biomass": 26136.0,
+      "mean_population": 322.6666666666667,
+      "name": "Hunter Nine",
+      "per_seed": [
+        362,
+        286,
+        320
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/11.json",
+      "mean_biomass": 18549.0,
+      "mean_population": 229.0,
+      "name": "Nine Grazer",
+      "per_seed": [
+        251,
+        214,
+        222
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/12.json",
+      "mean_biomass": 27216.0,
+      "mean_population": 189.0,
+      "name": "Hunter Twelve",
+      "per_seed": [
+        200,
+        169,
+        198
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/13.json",
+      "mean_biomass": 11776.0,
+      "mean_population": 46.0,
+      "name": "Apex Sixteen",
+      "per_seed": [
+        52,
+        41,
+        45
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/14.json",
+      "mean_biomass": 14816.0,
+      "mean_population": 926.0,
+      "name": "Final Bloom",
+      "per_seed": [
+        1003,
+        838,
+        937
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

@@ -1,0 +1,100 @@
+{
+ "name": "stealth_wolf_25",
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 2.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.85,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.85
+  },
+  {
+   "power": 1,
+   "part": "jaw"
+  },
+  {
+   "power": 0.85,
+   "part": "camouflage"
+  },
+  {
+   "thickness": 0.5,
+   "part": "shell"
+  },
+  {
+   "power": 0.5,
+   "part": "toxin"
+  },
+  {
+   "chemical": "sugar",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 35,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 180,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -35
+  },
+  {
+   "chemical": "mineral",
+   "angle": 35,
+   "part": "chemo_sensor"
+  }
+ ],
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.12
+ },
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   -3.2,
+   -3.2,
+   4,
+   -1,
+   -1,
+   0,
+   -1.2,
+   -4,
+   4,
+   0,
+   -2,
+   2,
+   0,
+   0,
+   2,
+   2,
+   1,
+   1,
+   1,
+   0,
+   -0.8,
+   -0.35,
+   0,
+   0.35,
+   1.2,
+   1.5,
+   2.8,
+   0,
+   1.25
+  ]
+ }
+}

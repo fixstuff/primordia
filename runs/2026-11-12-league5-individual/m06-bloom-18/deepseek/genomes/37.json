@@ -1,0 +1,75 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "g2min3",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "mineral"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "mineral"
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "camouflage"
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -3,
+   3,
+   -3,
+   3,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   -0.2,
+   0,
+   2,
+   0.9,
+   4,
+   0,
+   0.3
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.15
+ }
+}

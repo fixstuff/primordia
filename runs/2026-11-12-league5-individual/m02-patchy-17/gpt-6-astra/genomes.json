@@ -1,0 +1,100 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/01.json",
+  "name": "Seed swift",
+  "species": 1,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/02.json",
+  "name": "Seed grazer",
+  "species": 2,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/03.json",
+  "name": "Hunter five",
+  "species": 57,
+  "tick": 532
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/04.json",
+  "name": "Bristle bloom",
+  "species": 76,
+  "tick": 1050
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/05.json",
+  "name": "Reaper eight",
+  "species": 97,
+  "tick": 1596
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/06.json",
+  "name": "Leviathan",
+  "species": 105,
+  "tick": 2035
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/07.json",
+  "name": "Dart",
+  "species": 119,
+  "tick": 2545
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/08.json",
+  "name": "Mote",
+  "species": 121,
+  "tick": 2569
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/09.json",
+  "name": "Broad grazer",
+  "species": 130,
+  "tick": 3025
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/10.json",
+  "name": "Crown ten",
+  "species": 142,
+  "tick": 3555
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/11.json",
+  "name": "Apex twelve",
+  "species": 149,
+  "tick": 4068
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/12.json",
+  "name": "Sweep fourteen",
+  "species": 164,
+  "tick": 4536
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/13.json",
+  "name": "Broad meadow",
+  "species": 172,
+  "tick": 5041
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m02-patchy-17/gpt-6-astra/genomes/14.json",
+  "name": "Hidden bloom",
+  "species": 196,
+  "tick": 6520
+ }
+]

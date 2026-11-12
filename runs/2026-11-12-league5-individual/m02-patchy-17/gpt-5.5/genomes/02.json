@@ -1,0 +1,79 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "CamoFrugal2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.45
+  },
+  {
+   "part": "cilia",
+   "power": 0.7
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 45
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   1,
+   1,
+   0.7,
+   0.7,
+   0,
+   0,
+   -1,
+   1,
+   -0.7,
+   0.7,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1.7,
+   0.4,
+   0,
+   0.9,
+   -0.9,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.06,
+  "size": 0.16
+ }
+}

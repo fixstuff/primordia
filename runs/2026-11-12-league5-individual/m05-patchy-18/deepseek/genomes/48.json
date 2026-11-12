@@ -1,0 +1,69 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "sugar_r8_8m",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 8
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "cilia",
+   "power": 0.3
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   1,
+   -1,
+   0,
+   0,
+   0,
+   3,
+   4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "lazy-sensor-r2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.15
+  },
+  {
+   "part": "cilia",
+   "power": 0.6
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 90
+  }
+ ],
+ "brain": {
+  "hidden": 6,
+  "weights": [
+   -3,
+   -3,
+   -3,
+   -3,
+   0,
+   -2,
+   3,
+   3,
+   3,
+   3,
+   0,
+   -1,
+   4,
+   0,
+   4,
+   0,
+   0,
+   -2,
+   0,
+   4,
+   0,
+   4,
+   0,
+   -2,
+   0,
+   0,
+   0,
+   0,
+   4,
+   -2,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   2,
+   -0.5,
+   0.4,
+   0.35,
+   0.35,
+   0,
+   -0.8,
+   0.1,
+   -3,
+   3,
+   -2,
+   2,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.18
+ }
+}

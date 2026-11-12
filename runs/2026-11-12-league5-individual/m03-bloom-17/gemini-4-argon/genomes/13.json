@@ -1,0 +1,76 @@
+{
+ "body": [
+  {
+   "radius": 5.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.65
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "part": "jaw",
+   "power": 0.9
+  },
+  {
+   "thickness": 0.45,
+   "part": "shell"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "chemical": "sugar",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "mineral",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 35,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  }
+ ],
+ "schema": "lifeapi.genome/1",
+ "mutation": {
+  "rate": 0.01,
+  "size": 0.02
+ },
+ "brain": {
+  "weights": [
+   2,
+   2,
+   0.8,
+   0.8,
+   0,
+   -0.5,
+   -3.5,
+   3.5,
+   -2.5,
+   2.5,
+   0,
+   0,
+   -0.75,
+   0,
+   0.85,
+   0,
+   3.5,
+   0.03
+  ],
+  "hidden": 2
+ },
+ "name": "Omnivore55_Smart"
+}

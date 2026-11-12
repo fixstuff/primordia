@@ -1,0 +1,98 @@
+{
+ "body": [
+  {
+   "radius": 5.5,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.75,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "power": 0.9,
+   "part": "jaw"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.45
+  },
+  {
+   "power": 0.4,
+   "part": "toxin"
+  },
+  {
+   "power": 0.6,
+   "part": "camouflage"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "chemical": "mineral",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "mineral",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -25
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 25,
+   "chemical": "organism"
+  }
+ ],
+ "name": "Apex55",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   0.5,
+   0.5,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1.2,
+   -3,
+   3,
+   -2.5,
+   2.5,
+   -3.5,
+   3.5,
+   0,
+   0,
+   1.5,
+   -0.3,
+   0.5,
+   0,
+   3.5,
+   0.04
+  ]
+ },
+ "mutation": {
+  "rate": 0.06,
+  "size": 0.12
+ },
+ "schema": "lifeapi.genome/1"
+}

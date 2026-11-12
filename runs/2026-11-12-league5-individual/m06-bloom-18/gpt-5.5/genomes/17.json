@@ -1,0 +1,80 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r3-organism-jaw-A",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 50
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  }
+ ],
+ "brain": {
+  "hidden": 3,
+  "weights": [
+   3,
+   3,
+   1,
+   1,
+   0,
+   0,
+   -3,
+   3,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   2,
+   3,
+   1,
+   2,
+   0.5,
+   0,
+   4,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.25
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 3.3,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.9,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.9,
+   "part": "cilia"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "thickness": 0.3,
+   "part": "shell"
+  },
+  {
+   "part": "spikes",
+   "power": 0.3
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -35,
+   "chemical": "organism"
+  },
+  {
+   "angle": 35,
+   "chemical": "organism",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -35
+  },
+  {
+   "angle": 35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "mineral",
+   "angle": -35,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 35
+  }
+ ],
+ "name": "micro_jaw_B",
+ "mutation": {
+  "size": 0.12,
+  "rate": 0.04
+ },
+ "brain": {
+  "weights": [
+   -3.5,
+   3.5,
+   -3.5,
+   3.5,
+   -3.5,
+   3.5,
+   0,
+   0,
+   2,
+   2,
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   0,
+   -0.3,
+   0,
+   0.5,
+   1.5,
+   -2.5,
+   0,
+   0
+  ],
+  "hidden": 2
+ }
+}

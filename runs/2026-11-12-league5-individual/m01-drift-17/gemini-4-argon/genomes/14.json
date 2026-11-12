@@ -1,0 +1,57 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "pure_sugar_r3.2_v2",
+ "mutation": {
+  "size": 0.1,
+  "rate": 0.05
+ },
+ "brain": {
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   1.2,
+   4,
+   4,
+   0
+  ],
+  "hidden": 2
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.4,
+   "part": "flagellum"
+  },
+  {
+   "power": 0.75,
+   "part": "cilia"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -38
+  },
+  {
+   "chemical": "sugar",
+   "angle": 38,
+   "part": "chemo_sensor"
+  }
+ ]
+}

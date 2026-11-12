@@ -1,0 +1,84 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2-forager-turnA",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 45
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   1,
+   1,
+   0.7,
+   0.7,
+   1.4,
+   1,
+   -1,
+   0.8,
+   -0.8,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.25
+ }
+}

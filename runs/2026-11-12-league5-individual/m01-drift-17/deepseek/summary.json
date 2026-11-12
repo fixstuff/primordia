@@ -1,0 +1,7 @@
+{
+ "model": "deepseek-v4-pro",
+ "prompt_tokens": 2328037,
+ "cached_tokens": 1847936,
+ "completion_tokens": 133671,
+ "cost_usd": 0.0
+}

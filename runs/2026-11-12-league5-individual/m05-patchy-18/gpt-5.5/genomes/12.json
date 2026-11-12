@@ -1,0 +1,48 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "micro-grazer-r2-rand",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.25
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 60
+  }
+ ],
+ "brain": {
+  "hidden": 8
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.25
+ }
+}

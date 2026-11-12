@@ -1,0 +1,58 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/01.json",
+  "name": "Grazer",
+  "species": 2,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/02.json",
+  "name": "Broad grazer",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/03.json",
+  "name": "Colossus",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/04.json",
+  "name": "Microfilter",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/05.json",
+  "name": "Armored leviathan",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/06.json",
+  "name": "Efficient swimmer",
+  "species": 64,
+  "tick": 537
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/07.json",
+  "name": "Shelled swimmer",
+  "species": 67,
+  "tick": 1024
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/gpt-6-astra/genomes/08.json",
+  "name": "Hunter",
+  "species": 75,
+  "tick": 1538
+ }
+]

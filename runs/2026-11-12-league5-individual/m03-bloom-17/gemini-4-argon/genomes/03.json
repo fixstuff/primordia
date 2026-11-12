@@ -1,0 +1,80 @@
+{
+ "mutation": {
+  "size": 0.15,
+  "rate": 0.08
+ },
+ "name": "Forager32_A",
+ "brain": {
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   -3,
+   3,
+   -3,
+   3,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   3,
+   0.05
+  ],
+  "hidden": 2
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.7,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.7
+  },
+  {
+   "part": "shell",
+   "thickness": 0.3
+  },
+  {
+   "power": 0.3,
+   "part": "spikes"
+  },
+  {
+   "power": 0.3,
+   "part": "toxin"
+  },
+  {
+   "angle": -35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": 35
+  },
+  {
+   "angle": -35,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 35
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

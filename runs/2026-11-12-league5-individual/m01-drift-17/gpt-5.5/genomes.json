@@ -1,0 +1,86 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/01.json",
+  "name": "SwiftGrazer-r2-v1",
+  "species": 10,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/02.json",
+  "name": "EcoGrazer-r2-slow-v2",
+  "species": 68,
+  "tick": 565
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/03.json",
+  "name": "PulseGrazer-r2-econ-v3",
+  "species": 81,
+  "tick": 1090
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/04.json",
+  "name": "TwinMouthGrazer-r2-v4",
+  "species": 100,
+  "tick": 1591
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/05.json",
+  "name": "JawGrazer-r5-v2",
+  "species": 118,
+  "tick": 2275
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/06.json",
+  "name": "RandOmniGrazer-r2-v6",
+  "species": 123,
+  "tick": 2623
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/07.json",
+  "name": "HandChem-r2-staticbias-v1",
+  "species": 138,
+  "tick": 3109
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/08.json",
+  "name": "FatChem-r3-2mouth-v1",
+  "species": 179,
+  "tick": 5054
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/09.json",
+  "name": "BigGrazer-r8-seek-v1",
+  "species": 210,
+  "tick": 7568
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/10.json",
+  "name": "DrifterGrazer-r2-lowcost-v1",
+  "species": 215,
+  "tick": 8648
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/11.json",
+  "name": "ApexR11NoShell-v1",
+  "species": 218,
+  "tick": 9145
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-5.5/genomes/12.json",
+  "name": "StillSpore-r2-mouth-v1",
+  "species": 221,
+  "tick": 9591
+ }
+]

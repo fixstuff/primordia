@@ -1,0 +1,36 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "shellsit2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.25
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   4,
+   -1.8,
+   -4,
+   0,
+   0,
+   0.1
+  ]
+ },
+ "mutation": {
+  "rate": 0.1,
+  "size": 0.1
+ }
+}

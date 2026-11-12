@@ -275,14 +275,16 @@ def main():
     # The exact settings, so a league's rules are on record (League 3's were not).
     (out / "args.json").write_text(json.dumps({**vars(a), "argv": sys.argv[1:]}, indent=1))
     todo = [m for m in schedule if not (out / m["name"] / "results.json").exists()]
-    if todo and not a.skip_preflight:
-        problems = preflight(a)
-        if problems:
-            print("PREFLIGHT FAILED, no match started:\n  " + "\n  ".join(problems), flush=True)
-            sys.exit(3)
-        print("preflight: every paid API answered", flush=True)
     for start in range(0, len(todo), a.parallel):
         batch = todo[start:start + a.parallel]
+        # Before EVERY batch: League 5's Gemini prepay ran out between
+        # batches, so a check at the start alone let three matches go short.
+        if not a.skip_preflight:
+            problems = preflight(a)
+            if problems:
+                print("PREFLIGHT FAILED, batch not started (rerun to resume):\n  " + "\n  ".join(problems), flush=True)
+                sys.exit(3)
+            print("preflight: every paid API answered", flush=True)
         running = []
         taken = set()
         for j, m in enumerate(batch):

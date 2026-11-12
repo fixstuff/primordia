@@ -1,0 +1,32 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "nano-straight-r2-lowup",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.12
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   1,
+   1.4,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.08
+ }
+}

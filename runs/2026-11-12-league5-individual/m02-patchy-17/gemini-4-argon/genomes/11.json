@@ -1,0 +1,114 @@
+{
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.12
+ },
+ "brain": {
+  "weights": [
+   -2.5,
+   -2.5,
+   4,
+   -2.5,
+   -2.5,
+   4,
+   0,
+   -1.2,
+   -3.5,
+   3.5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -3.5,
+   3.5,
+   0,
+   0,
+   0,
+   2,
+   2,
+   -1,
+   2,
+   2,
+   -1,
+   0,
+   -0.5,
+   -0.4,
+   0,
+   0,
+   0.4,
+   1.4,
+   1.5,
+   -2.2,
+   -2,
+   0,
+   1.25
+  ],
+  "hidden": 4
+ },
+ "name": "smart_omnivore_B",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.85
+  },
+  {
+   "part": "cilia",
+   "power": 0.85
+  },
+  {
+   "part": "jaw",
+   "power": 0.8
+  },
+  {
+   "part": "shell",
+   "thickness": 0.35
+  },
+  {
+   "power": 0.35,
+   "part": "toxin"
+  },
+  {
+   "angle": -35,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 35,
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "sugar",
+   "angle": 180,
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -35
+  },
+  {
+   "angle": 35,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 180,
+   "chemical": "mineral"
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

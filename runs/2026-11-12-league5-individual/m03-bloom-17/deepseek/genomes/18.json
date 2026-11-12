@@ -1,0 +1,83 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "pred5b",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 1.0
+  },
+  {
+   "part": "cilia",
+   "power": 0.1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 1.0
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -45,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 45,
+   "chemical": "mineral"
+  },
+  {
+   "part": "vacuole",
+   "capacity": 50
+  }
+ ],
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   0.5,
+   0.5,
+   0.5,
+   0.3,
+   0.0,
+   0.0,
+   -0.8,
+   0.0,
+   -0.6,
+   0.6,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.2,
+   0.0,
+   1.0,
+   0.0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

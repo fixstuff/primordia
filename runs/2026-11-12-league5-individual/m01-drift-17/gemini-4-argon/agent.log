@@ -1,0 +1,114 @@
+[turn  1 | tick      0 |      6s] '' calls=['catalog', 'observe']
+[turn  2 | tick      0 |     21s] '' calls=['submit_genome', 'submit_genome', 'submit_genome']
+[turn  3 | tick      0 |     53s] '' calls=['submit_genome', 'submit_genome', 'submit_genome', 'submit_genome']
+[turn  4 | tick      0 |     66s] '' calls=['submit_genome', 'submit_genome', 'release', 'release']
+[turn  5 | tick      0 |     76s] '' calls=['submit_genome', 'submit_genome', 'release', 'release']
+[turn  6 | tick      0 |     83s] '' calls=['release', 'release', 'end_turn']
+[turn  7 | tick      0 |    215s] '' calls=['report', 'observe']
+[turn  8 | tick     24 |    260s] '' calls=['submit_genome', 'submit_genome']
+[turn  9 | tick    211 |    265s] '' calls=['observe', 'report']
+[turn 10 | tick    234 |    289s] '' calls=['submit_genome', 'submit_genome', 'end_turn']
+[turn 11 | tick    500 |    348s] '' calls=['report', 'observe']
+[turn 12 | tick    577 |    365s] '' calls=['submit_genome', 'release', 'release']
+[turn 13 | tick    649 |    384s] '' calls=['submit_genome', 'release', 'end_turn']
+[turn 14 | tick   1000 |    475s] '' calls=['report', 'observe']
+[turn 15 | tick   1106 |    502s] '' calls=['submit_genome', 'submit_genome', 'release']
+[turn 16 | tick   1220 |    529s] '' calls=['release', 'release', 'end_turn']
+[turn 17 | tick   1500 |    582s] '' calls=['report', 'observe']
+[turn 18 | tick   1554 |    634s] '' calls=['submit_genome', 'submit_genome']
+[turn 19 | tick   1772 |    672s] '' calls=['submit_genome', 'submit_genome']
+[turn 20 | tick   1928 |    678s] '' calls=['release', 'release', 'end_turn']
+[turn 21 | tick   2000 |    696s] '' calls=['observe', 'report']
+[turn 22 | tick   2028 |    709s] '' calls=['observe']
+[turn 23 | tick   2084 |    773s] '' calls=['observe']
+[turn 24 | tick   2351 |    809s] '' calls=['submit_genome', 'submit_genome']
+[turn 25 | tick   2351 |    818s] '' calls=['submit_genome', 'submit_genome']
+[turn 26 | tick   2536 |    826s] '' calls=['release', 'release']
+[turn 27 | tick   2569 |    839s] '' calls=['submit_genome']
+[turn 28 | tick   2624 |    845s] '' calls=['release', 'observe']
+[turn 29 | tick   2651 |    906s] '' calls=['end_turn']
+[turn 30 | tick   3000 |    945s] '' calls=['observe', 'report']
+[turn 31 | tick   3067 |    993s] '' calls=['submit_genome']
+[turn 32 | tick   3265 |   1057s] '' calls=['observe']
+[turn 33 | tick   3532 |   1070s] '' calls=['release', 'release', 'end_turn']
+Traceback (most recent call last):
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 245, in main
+    if a.responses_api else openai_chat(a.base_url, key, a.model, messages, tools))
+                            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 67, in openai_chat
+    with urllib.request.urlopen(req, timeout=600) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 402: Payment Required
+relaunch 1
+Traceback (most recent call last):
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 245, in main
+    if a.responses_api else openai_chat(a.base_url, key, a.model, messages, tools))
+                            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 67, in openai_chat
+    with urllib.request.urlopen(req, timeout=600) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 402: Payment Required
+relaunch 2
+Traceback (most recent call last):
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 245, in main
+    if a.responses_api else openai_chat(a.base_url, key, a.model, messages, tools))
+                            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/projects/SporeAI/tools/agent_ollama.py", line 67, in openai_chat
+    with urllib.request.urlopen(req, timeout=600) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 402: Payment Required
+relaunch 3

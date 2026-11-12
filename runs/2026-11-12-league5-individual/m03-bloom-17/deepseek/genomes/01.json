@@ -1,0 +1,37 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "herb1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 0.4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  },
+  {
+   "part": "vacuole",
+   "capacity": 50
+  }
+ ],
+ "brain": {
+  "hidden": 3
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ }
+}

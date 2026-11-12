@@ -1,0 +1,69 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "armored_sugar_r3.2",
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   1.2,
+   4,
+   4,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "body": [
+  {
+   "radius": 3.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.4,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.75
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -38
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 38,
+   "chemical": "sugar"
+  },
+  {
+   "thickness": 1,
+   "part": "shell"
+  },
+  {
+   "power": 0.8,
+   "part": "spikes"
+  },
+  {
+   "part": "toxin",
+   "power": 0.8
+  }
+ ]
+}

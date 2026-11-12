@@ -1,0 +1,52 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "giant1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 20
+  },
+  {
+   "part": "flagellum",
+   "power": 0.8
+  },
+  {
+   "part": "cilia",
+   "power": 0.8
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -30,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 30,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   0,
+   2.0,
+   1.5,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

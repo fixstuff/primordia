@@ -1,0 +1,60 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 10
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 1
+  },
+  {
+   "part": "cilia",
+   "power": 0.2
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -90,
+   "chemical": "organism"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 90,
+   "chemical": "organism"
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "spikes",
+   "power": 0.5
+  },
+  {
+   "part": "shell",
+   "thickness": 0.5
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   -1,
+   1,
+   0,
+   0,
+   0,
+   4,
+   1,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.1
+ },
+ "name": "r10pred",
+ "schema": "lifeapi.genome/1"
+}

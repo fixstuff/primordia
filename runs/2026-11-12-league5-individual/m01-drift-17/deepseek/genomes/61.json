@@ -1,0 +1,24 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "armor2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "shell",
+   "thickness": 1.0
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.02,
+  "size": 0.1
+ }
+}

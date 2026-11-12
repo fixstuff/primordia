@@ -1,0 +1,142 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/01.json",
+  "name": "Swift grazer",
+  "species": 1,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/02.json",
+  "name": "Micro grazer",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/03.json",
+  "name": "Broad grazer",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/04.json",
+  "name": "Efficient twin grazer",
+  "species": 67,
+  "tick": 530
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/05.json",
+  "name": "Seeking grazer",
+  "species": 80,
+  "tick": 1078
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/06.json",
+  "name": "Hunter",
+  "species": 82,
+  "tick": 1103
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/07.json",
+  "name": "Wide filter",
+  "species": 99,
+  "tick": 1535
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/08.json",
+  "name": "Apex cruiser",
+  "species": 110,
+  "tick": 2045
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/09.json",
+  "name": "Apex twin jaw",
+  "species": 121,
+  "tick": 2543
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/10.json",
+  "name": "Tracking apex",
+  "species": 122,
+  "tick": 2580
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/11.json",
+  "name": "Leviathan",
+  "species": 133,
+  "tick": 3053
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/12.json",
+  "name": "Crown hunter",
+  "species": 134,
+  "tick": 3068
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/13.json",
+  "name": "Hunter twelve",
+  "species": 147,
+  "tick": 3548
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/14.json",
+  "name": "Hunter sixteen",
+  "species": 190,
+  "tick": 5516
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/15.json",
+  "name": "Hunter fourteen",
+  "species": 195,
+  "tick": 6026
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/16.json",
+  "name": "Armored fourteen",
+  "species": 199,
+  "tick": 6562
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/17.json",
+  "name": "Rapid twelve",
+  "species": 203,
+  "tick": 7032
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/18.json",
+  "name": "Heavy twelve",
+  "species": 211,
+  "tick": 8025
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/19.json",
+  "name": "Fortress hunter",
+  "species": 214,
+  "tick": 8524
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m01-drift-17/gpt-6-astra/genomes/20.json",
+  "name": "Apex reserve",
+  "species": 216,
+  "tick": 9054
+ }
+]

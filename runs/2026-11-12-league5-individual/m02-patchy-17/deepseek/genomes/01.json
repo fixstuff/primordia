@@ -1,0 +1,33 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "probe",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "vacuole",
+   "capacity": 50
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 0,
+   "chemical": "sugar"
+  }
+ ],
+ "brain": {
+  "hidden": 2
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.05
+ }
+}

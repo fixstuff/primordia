@@ -61,6 +61,11 @@ pub struct Arena {
     /// Players the match is played by: cfg.players, or fewer if it started
     /// short. Only these are waited for to end the design window early.
     expected: usize,
+    /// Filled when the match starts: answer every end_turn made while waiting
+    /// for players, so the design window opens for everyone at the start
+    /// (League 5: end_turns made during the join wait counted, the design
+    /// window closed at once, and founders landed at ticks 4-78, not 0).
+    answer_now: Vec<usize>,
     window: u64,
     deadline: Option<Instant>,
     /// Realtime: when the current window opened, and ticks run in it so far.
@@ -76,7 +81,7 @@ impl Arena {
     fn new(cfg: ArenaConfig) -> Arena {
         let log = cfg.log.as_ref().map(|p| std::fs::File::create(p).expect("arena log file"));
         let expected = cfg.players;
-        Arena { cfg, biomass_ticks: Vec::new(), started: false, join_deadline: None, expected,
+        Arena { cfg, biomass_ticks: Vec::new(), started: false, join_deadline: None, expected, answer_now: Vec::new(),
                 window: 0, deadline: None, ended: Vec::new(),
                 waiting: Vec::new(), over: false, log,
                 window_start: None, window_done: 0 }
@@ -118,6 +123,9 @@ impl Arena {
     fn start(&mut self, n: usize, now: Instant) {
         self.started = true;
         self.expected = n;
+        // Turns ended before the start don't end the design window.
+        self.ended.iter_mut().for_each(|e| *e = false);
+        self.answer_now = std::mem::take(&mut self.waiting);
         self.deadline = Some(now + self.cfg.first_window.unwrap_or(self.cfg.window));
         self.window_start = Some(now);
         let missing = self.cfg.players.saturating_sub(n);
@@ -217,7 +225,10 @@ impl Game {
         if !a.started && n > 0 && a.join_deadline.is_some_and(|d| now >= d) {
             // The join wait is over: play with whoever came.
             a.start(n, now);
-            return Vec::new();
+        }
+        if !a.answer_now.is_empty() {
+            let early = std::mem::take(&mut a.answer_now);
+            return early.into_iter().map(|p| (p, self.turn_reply(p))).collect();
         }
         if !a.started || a.over {
             return Vec::new();
@@ -450,6 +461,29 @@ mod tests {
         }
         assert_eq!(g.world.tick, 300);
         assert!(g.arena.as_ref().unwrap().over);
+    }
+
+    /// end_turns made before the start are answered when it starts and
+    /// don't close the design window: it opens for everyone at the start.
+    #[test]
+    fn turns_ended_while_waiting_do_not_close_the_design_window() {
+        let mut g = arena(2, 60_000);
+        g.arena.as_mut().unwrap().cfg.realtime = true;
+        let (_, a) = call(&mut g, None, r#"{"op":"hello","name":"a"}"#);
+        assert!(call(&mut g, a, r#"{"op":"end_turn"}"#).0.is_none(), "a waits for the start");
+        let (_, b) = call(&mut g, None, r#"{"op":"hello","name":"b"}"#);
+        let r = g.arena_poll(Instant::now());
+        assert_eq!(r.len(), 1, "a is answered when the match starts");
+        assert_eq!(r[0].0, a.unwrap());
+        assert_eq!(g.arena.as_ref().unwrap().window, 0, "still the design window");
+        // The design window closes only when both end their turn now. b goes
+        // first: a's end_turn from before the start must not count for it.
+        assert!(call(&mut g, b, r#"{"op":"end_turn"}"#).0.is_none());
+        assert!(g.arena_poll(Instant::now()).is_empty(), "a hasn't ended its turn since the start");
+        assert_eq!(g.arena.as_ref().unwrap().window, 0, "still the design window");
+        assert!(call(&mut g, a, r#"{"op":"end_turn"}"#).0.is_none());
+        assert_eq!(g.arena_poll(Instant::now()).len(), 2);
+        assert_eq!(g.arena.as_ref().unwrap().window, 1);
     }
 
     /// Without a join wait the arena waits for everyone, as before.

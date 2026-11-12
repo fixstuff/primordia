@@ -1,0 +1,43 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r3_efficient_sensor_v1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "part": "cilia",
+   "power": 0.7
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -40
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 40
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 3
+ },
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.25
+ }
+}

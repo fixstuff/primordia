@@ -1,0 +1,100 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/01.json",
+  "name": "Swift Seed",
+  "species": 4,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/02.json",
+  "name": "Bloom",
+  "species": 8,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/03.json",
+  "name": "Drift",
+  "species": 9,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/04.json",
+  "name": "Meadow",
+  "species": 60,
+  "tick": 518
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/05.json",
+  "name": "Root",
+  "species": 77,
+  "tick": 1032
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/06.json",
+  "name": "Oak",
+  "species": 99,
+  "tick": 1526
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/07.json",
+  "name": "Grazer",
+  "species": 102,
+  "tick": 1545
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/08.json",
+  "name": "Canopy",
+  "species": 113,
+  "tick": 2062
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/09.json",
+  "name": "Crown",
+  "species": 122,
+  "tick": 2513
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/10.json",
+  "name": "Hunter Nine",
+  "species": 137,
+  "tick": 3557
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/11.json",
+  "name": "Nine Grazer",
+  "species": 152,
+  "tick": 5052
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/12.json",
+  "name": "Hunter Twelve",
+  "species": 158,
+  "tick": 5548
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/13.json",
+  "name": "Apex Sixteen",
+  "species": 164,
+  "tick": 6522
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-6-astra/genomes/14.json",
+  "name": "Final Bloom",
+  "species": 184,
+  "tick": 8520
+ }
+]

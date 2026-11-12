@@ -1,0 +1,44 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "camouflage",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.1
+ },
+ "name": "r2ghost",
+ "schema": "lifeapi.genome/1"
+}

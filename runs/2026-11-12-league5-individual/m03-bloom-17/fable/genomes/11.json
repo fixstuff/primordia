@@ -1,0 +1,32 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "mine2",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "shell",
+   "thickness": 1
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.05
+ }
+}

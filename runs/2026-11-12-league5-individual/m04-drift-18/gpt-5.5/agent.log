@@ -1,0 +1,131 @@
+[turn  1 | tick      0 |      2s] '' calls=['catalog']
+[turn  2 | tick      0 |     13s] '' calls=['submit_genome']
+[turn  3 | tick      0 |     21s] '' calls=['submit_genome']
+[turn  4 | tick      0 |     24s] '' calls=['submit_genome']
+[turn  5 | tick      0 |     29s] '' calls=['submit_genome']
+[turn  6 | tick      0 |     32s] '' calls=['submit_genome']
+[turn  7 | tick      0 |     33s] '' calls=['release']
+[turn  8 | tick      0 |     36s] '' calls=['submit_genome']
+[turn  9 | tick      0 |     37s] '' calls=['observe']
+[turn 10 | tick      0 |     39s] '' calls=['release']
+[turn 11 | tick      0 |     41s] 'Waiting for all players; genomes submitted.' calls=['end_turn']
+[turn 12 | tick      0 |    346s] '' calls=['release', 'release', 'release']
+[turn 13 | tick     17 |    348s] 'Released three r2 grazer swarms.' calls=['end_turn']
+[turn 14 | tick    500 |    463s] '' calls=['report']
+[turn 15 | tick    506 |    472s] '' calls=['submit_genome']
+[turn 16 | tick    542 |    474s] '' calls=['release']
+[turn 17 | tick    549 |    475s] 'v2 lower movement cost released.' calls=['end_turn']
+[turn 18 | tick   1000 |    583s] '' calls=['report']
+[turn 19 | tick   1006 |    586s] '' calls=['observe']
+[turn 20 | tick   1018 |    590s] '' calls=['catalog']
+[turn 21 | tick   1032 |    597s] '' calls=['release']
+[turn 22 | tick   1065 |    599s] 'Reinforced best v1 chemotaxi lineage.' calls=['end_turn']
+[turn 23 | tick   1500 |    709s] '' calls=['report']
+[turn 24 | tick   1529 |    715s] '' calls=['observe']
+[turn 25 | tick   1553 |    727s] '' calls=['submit_genome']
+[turn 26 | tick   1606 |    729s] '' calls=['release']
+[turn 27 | tick   1612 |    731s] 'Added camouflage to resist organism hunters.' calls=['end_turn']
+[turn 28 | tick   2000 |    824s] '' calls=['report']
+[turn 29 | tick   2009 |    826s] '' calls=['observe']
+[turn 30 | tick   2018 |    838s] '' calls=['submit_genome']
+[turn 31 | tick   2018 |    849s] '' calls=['submit_genome']
+[turn 32 | tick   2111 |    851s] '' calls=['release']
+[turn 33 | tick   2122 |    853s] 'Deployed r6 hunters to counter biomass leader.' calls=['end_turn']
+[turn 34 | tick   2500 |    945s] '' calls=['report']
+[turn 35 | tick   2514 |    949s] '' calls=['observe']
+[turn 36 | tick   2531 |    959s] '' calls=['catalog']
+[turn 37 | tick   2572 |    971s] '' calls=['submit_genome']
+[turn 38 | tick   2572 |    983s] '' calls=['submit_genome']
+[turn 39 | tick   2672 |    992s] '' calls=['release']
+[turn 40 | tick   2708 |    994s] 'Reinforced with larger hunters; grazers being exterminated by combat.' calls=['end_turn']
+[turn 41 | tick   3000 |   1064s] '' calls=['report']
+[turn 42 | tick   3010 |   1066s] '' calls=['observe']
+[turn 43 | tick   3016 |   1077s] '' calls=['report']
+[turn 44 | tick   3063 |   1090s] '' calls=['submit_genome']
+[turn 45 | tick   3118 |   1092s] '' calls=['release']
+[turn 46 | tick   3125 |   1094s] 'Added camouflaged r2 breeders to rebuild scoring biomass under predator pressure.' calls=['end_turn']
+[turn 47 | tick   3500 |   1187s] '' calls=['report']
+[turn 48 | tick   3522 |   1189s] '' calls=['observe']
+[turn 49 | tick   3528 |   1202s] '' calls=['submit_genome']
+[turn 50 | tick   3585 |   1204s] '' calls=['release']
+[turn 51 | tick   3591 |   1206s] 'Previous swarm failed; trying cheaper slower camo grazers with stronger taxis.' calls=['end_turn']
+[turn 52 | tick   4000 |   1313s] '' calls=['report']
+[turn 53 | tick   4045 |   1326s] '' calls=['submit_genome']
+[turn 54 | tick   4100 |   1327s] '' calls=['release']
+[turn 55 | tick   4100 |   1329s] 'Release too large; scaling down.' calls=['release']
+[turn 56 | tick   4114 |   1331s] 'Trying r3 camo for more starting energy and survivability.' calls=['end_turn']
+[turn 57 | tick   4500 |   1424s] '' calls=['report']
+[turn 58 | tick   4510 |   1428s] '' calls=['catalog']
+[turn 59 | tick   4525 |   1432s] '' calls=['observe']
+[turn 60 | tick   4543 |   1445s] '' calls=['submit_genome']
+[turn 61 | tick   4598 |   1456s] '' calls=['release']
+[turn 62 | tick   4642 |   1458s] 'Trying fewer r4 camo with vacuoles/random brain for survival/reproduction.' calls=['end_turn']
+[turn 63 | tick   5000 |   1544s] '' calls=['report']
+[turn 64 | tick   5010 |   1547s] '' calls=['observe']
+[turn 65 | tick   5022 |   1559s] '' calls=['submit_genome']
+[turn 66 | tick   5071 |   1571s] '' calls=['release']
+[turn 67 | tick   5120 |   1573s] 'r4 alive but energy-starved; adding r3 linear taxis.' calls=['end_turn']
+[turn 68 | tick   5500 |   1670s] '' calls=['report']
+[turn 69 | tick   5534 |   1681s] '' calls=['observe']
+[turn 70 | tick   5578 |   1693s] '' calls=['submit_genome']
+[turn 71 | tick   5627 |   1694s] '' calls=['release']
+[turn 72 | tick   5634 |   1697s] 'Population crashing; flooding low-cost r2 sugar-taxis camo.' calls=['end_turn']
+[turn 73 | tick   6000 |   1784s] '' calls=['report']
+[turn 74 | tick   6007 |   1786s] '' calls=['observe']
+[turn 75 | tick   6016 |   1788s] '' calls=['catalog']
+[turn 76 | tick   6025 |   1809s] '' calls=['submit_genome']
+[turn 77 | tick   6025 |   1820s] '' calls=['submit_genome']
+[turn 78 | tick   6160 |   1822s] '' calls=['release']
+[turn 79 | tick   6168 |   1824s] 'r2 survivors have material; adding r6 predator to exploit dense opponents.' calls=['end_turn']
+[turn 80 | tick   6500 |   1904s] '' calls=['report', 'observe']
+[turn 81 | tick   6508 |   1917s] '' calls=['submit_genome']
+[turn 82 | tick   6565 |   1928s] '' calls=['release']
+[turn 83 | tick   6607 |   1930s] 'r6 has prey energy but no births yet; adding smaller predator for faster child cost.' calls=['end_turn']
+[turn 84 | tick   7000 |   2024s] '' calls=['report', 'observe']
+[turn 85 | tick   7008 |   2029s] '' calls=['release']
+[turn 86 | tick   7028 |   2031s] 'r3 predator is the only lineage reproducing; reinvesting budget there.' calls=['end_turn']
+[turn 87 | tick   7500 |   2144s] '' calls=['report', 'observe']
+[turn 88 | tick   7508 |   2175s] '' calls=['submit_genome']
+[turn 89 | tick   7508 |   2181s] '' calls=['submit_genome']
+[turn 90 | tick   7661 |   2182s] '' calls=['release']
+[turn 91 | tick   7667 |   2183s] 'Current predators dying; trying r4 with stronger left/right organism steering.' calls=['end_turn']
+[turn 92 | tick   8000 |   2272s] '' calls=['report', 'observe']
+[turn 93 | tick   8042 |   2275s] '' calls=['catalog']
+[turn 94 | tick   8054 |   2303s] '' calls=['submit_genome', 'submit_genome']
+[turn 95 | tick   8171 |   2305s] '' calls=['release', 'release']
+[turn 96 | tick   8178 |   2307s] 'Extinct; testing two spiral predator biases to intersect dense swarms.' calls=['end_turn']
+[turn 97 | tick   8500 |   2384s] '' calls=['report', 'observe']
+[turn 98 | tick   8510 |   2397s] '' calls=['submit_genome']
+[turn 99 | tick   8510 |   2408s] '' calls=['submit_genome']
+[turn 100 | tick   8608 |   2409s] '' calls=['release']
+[turn 101 | tick   8615 |   2411s] 'Late pivot: cheap r2 resource chemotaxis to exploit open niches; predators not reproducing.' calls=['end_turn']
+[turn 102 | tick   9000 |   2507s] '' calls=['report', 'observe']
+[turn 103 | tick   9021 |   2515s] '' calls=['release']
+[turn 104 | tick   9054 |   2516s] 'r2 grazer produced births; flooding remaining budget with same.' calls=['end_turn']
+[turn 105 | tick   9500 |   2633s] '' calls=['submit_genome', 'release']
+[turn 106 | tick   9546 |   2636s] 'Final: one more r2 chemotaxis burst; also registered ultra-low-upkeep static fallback.' calls=['end_turn']
+
+ended at tick 10000 after 106 turns, 21 genomes submitted
+
+primordia-eval (each genome alone, fixed seeds):
+  # 1 r2_chemotaxi_swarm_v1    submitted at tick      0: 544.0
+  # 2 r2_spiral_grazer_v1      submitted at tick      0: 423.0
+  # 3 r3_efficient_sensor_v1   submitted at tick      0: 712.0
+  # 4 r2_passive_grazer_lowcos submitted at tick      0: 1053.6666666666667
+  # 5 r2_efficient_chemotaxi_v submitted at tick    542: 641.3333333333334
+  # 6 r2_camo_efficient_grazer submitted at tick   1606: 559.0
+  # 7 r6_apex_hunter_v1        submitted at tick   2111: 346.3333333333333
+  # 8 r8_biggame_hunter_v2     submitted at tick   2672: 274.3333333333333
+  # 9 r2_camo_fast_breeder_v5  submitted at tick   3118: 449.0
+  #10 r2_camo_grazer_balanced_ submitted at tick   3585: 506.0
+  #11 r3_steered_camo_grazer_v submitted at tick   4100: 475.6666666666667
+  #12 r4_simple_camo_random_se submitted at tick   4598: 531.3333333333334
+  #13 r3_linear_sugar_mineral_ submitted at tick   5071: 552.6666666666666
+  #14 r2_sugar_taxis_low_upkee submitted at tick   5627: 769.0
+  #15 r6_opportunist_predator_ submitted at tick   6160: 321.0
+  #16 r3_scavenger_predator_fa submitted at tick   6565: 399.0
+  #17 r4_steering_predator_tur submitted at tick   7661: 394.0
+  #18 r5_predator_rightturn_v1 submitted at tick   8171: 319.0
+  #19 r5_predator_leftturn_v16 submitted at tick   8171: 309.0
+  #20 r2_resource_chemotaxis_m submitted at tick   8608: 547.0
+  #21 r2_static_burst_final_v1 submitted at tick   9546: 3354.0

@@ -1,0 +1,100 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/01.json",
+  "name": "Bloom",
+  "species": 1,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/02.json",
+  "name": "Spore",
+  "species": 2,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/03.json",
+  "name": "Drift",
+  "species": 49,
+  "tick": 530
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/04.json",
+  "name": "Hunter",
+  "species": 60,
+  "tick": 1027
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/05.json",
+  "name": "Needle",
+  "species": 76,
+  "tick": 1538
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/06.json",
+  "name": "Lancer",
+  "species": 93,
+  "tick": 2064
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/07.json",
+  "name": "Leviathan",
+  "species": 103,
+  "tick": 2544
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/08.json",
+  "name": "ArmoredSpore",
+  "species": 108,
+  "tick": 3037
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/09.json",
+  "name": "Grazer",
+  "species": 118,
+  "tick": 3516
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/10.json",
+  "name": "Ghost",
+  "species": 129,
+  "tick": 4025
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/11.json",
+  "name": "Needle",
+  "species": 138,
+  "tick": 4542
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/12.json",
+  "name": "Microhunter",
+  "species": 147,
+  "tick": 5024
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/13.json",
+  "name": "Mesohunter",
+  "species": 166,
+  "tick": 6024
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m03-bloom-17/gpt-6-astra/genomes/14.json",
+  "name": "Leviathan",
+  "species": 190,
+  "tick": 7020
+ }
+]

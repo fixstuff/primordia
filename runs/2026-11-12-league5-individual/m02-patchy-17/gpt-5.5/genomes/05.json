@@ -1,0 +1,106 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "Jaw4 hunter grazer",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 4
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "jaw",
+   "power": 0.85
+  },
+  {
+   "part": "flagellum",
+   "power": 0.65
+  },
+  {
+   "part": "cilia",
+   "power": 1.0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   0.9,
+   0.9,
+   1.4,
+   0.5,
+   0.5,
+   0.3,
+   0,
+   0.2,
+   -1.3,
+   1.3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0.8,
+   0.8,
+   1.2,
+   0.8,
+   0.8,
+   0.5,
+   0,
+   0.2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1.8,
+   0,
+   0.7,
+   0,
+   0.4,
+   1.4,
+   -1.4,
+   0,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.2
+ }
+}

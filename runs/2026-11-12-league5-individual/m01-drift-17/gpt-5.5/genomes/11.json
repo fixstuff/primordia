@@ -1,0 +1,70 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "ApexR11NoShell-v1",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 11
+  },
+  {
+   "part": "jaw",
+   "power": 1
+  },
+  {
+   "part": "stinger",
+   "power": 1
+  },
+  {
+   "part": "flagellum",
+   "power": 0.75
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "organism",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 60
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -90
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 90
+  },
+  {
+   "part": "vacuole",
+   "capacity": 100
+  }
+ ],
+ "brain": {
+  "hidden": 4
+ },
+ "mutation": {
+  "rate": 0.18,
+  "size": 0.3
+ }
+}

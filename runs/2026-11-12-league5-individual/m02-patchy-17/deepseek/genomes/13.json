@@ -1,0 +1,52 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "g5_straight",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "cilia",
+   "power": 0.3
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "vacuole",
+   "capacity": 50
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.08,
+  "size": 0.05
+ }
+}

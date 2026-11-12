@@ -1,0 +1,149 @@
+[
+ {
+  "n": 1,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/01.json",
+  "name": "r2_chemotaxi_swarm_v1",
+  "species": 3,
+  "tick": 0
+ },
+ {
+  "n": 2,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/02.json",
+  "name": "r2_spiral_grazer_v1",
+  "species": 5,
+  "tick": 0
+ },
+ {
+  "n": 3,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/03.json",
+  "name": "r3_efficient_sensor_v1",
+  "species": 6,
+  "tick": 0
+ },
+ {
+  "n": 4,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/04.json",
+  "name": "r2_passive_grazer_lowcost",
+  "species": 7,
+  "tick": 0
+ },
+ {
+  "n": 5,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/05.json",
+  "name": "r2_efficient_chemotaxi_v2",
+  "species": 63,
+  "tick": 542
+ },
+ {
+  "n": 6,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/06.json",
+  "name": "r2_camo_efficient_grazer_v3",
+  "species": 103,
+  "tick": 1606
+ },
+ {
+  "n": 7,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/07.json",
+  "name": "r6_apex_hunter_v1",
+  "species": 118,
+  "tick": 2111
+ },
+ {
+  "n": 8,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/08.json",
+  "name": "r8_biggame_hunter_v2",
+  "species": 124,
+  "tick": 2672
+ },
+ {
+  "n": 9,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/09.json",
+  "name": "r2_camo_fast_breeder_v5",
+  "species": 130,
+  "tick": 3118
+ },
+ {
+  "n": 10,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/10.json",
+  "name": "r2_camo_grazer_balanced_v6",
+  "species": 138,
+  "tick": 3585
+ },
+ {
+  "n": 11,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/11.json",
+  "name": "r3_steered_camo_grazer_v7",
+  "species": 144,
+  "tick": 4100
+ },
+ {
+  "n": 12,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/12.json",
+  "name": "r4_simple_camo_random_search_v8",
+  "species": 148,
+  "tick": 4598
+ },
+ {
+  "n": 13,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/13.json",
+  "name": "r3_linear_sugar_mineral_taxis_v9",
+  "species": 153,
+  "tick": 5071
+ },
+ {
+  "n": 14,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/14.json",
+  "name": "r2_sugar_taxis_low_upkeep_v10",
+  "species": 159,
+  "tick": 5627
+ },
+ {
+  "n": 15,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/15.json",
+  "name": "r6_opportunist_predator_noshell_v12",
+  "species": 162,
+  "tick": 6160
+ },
+ {
+  "n": 16,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/16.json",
+  "name": "r3_scavenger_predator_fast_breed_v13",
+  "species": 165,
+  "tick": 6565
+ },
+ {
+  "n": 17,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/17.json",
+  "name": "r4_steering_predator_turnA_v15",
+  "species": 172,
+  "tick": 7661
+ },
+ {
+  "n": 18,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/18.json",
+  "name": "r5_predator_rightturn_v16",
+  "species": 180,
+  "tick": 8171
+ },
+ {
+  "n": 19,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/19.json",
+  "name": "r5_predator_leftturn_v16",
+  "species": 181,
+  "tick": 8171
+ },
+ {
+  "n": 20,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/20.json",
+  "name": "r2_resource_chemotaxis_mirrorR_v18",
+  "species": 185,
+  "tick": 8608
+ },
+ {
+  "n": 21,
+  "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m04-drift-18/gpt-5.5/genomes/21.json",
+  "name": "r2_static_burst_final_v19",
+  "species": 199,
+  "tick": 9546
+ }
+]

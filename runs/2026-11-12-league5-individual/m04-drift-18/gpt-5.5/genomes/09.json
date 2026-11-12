@@ -1,0 +1,105 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "r2_camo_fast_breeder_v5",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.7
+  },
+  {
+   "part": "cilia",
+   "power": 1
+  },
+  {
+   "part": "camouflage"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": -45
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 0
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "mineral",
+   "angle": 45
+  }
+ ],
+ "brain": {
+  "hidden": 4,
+  "weights": [
+   2,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0.5,
+   0,
+   -2,
+   2,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.04,
+  "size": 0.2
+ }
+}

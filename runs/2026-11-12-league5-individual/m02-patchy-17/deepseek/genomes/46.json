@@ -1,0 +1,52 @@
+{
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 2
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.5
+  },
+  {
+   "part": "cilia",
+   "power": 0.2
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": -60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "angle": 60,
+   "chemical": "sugar"
+  },
+  {
+   "part": "spikes",
+   "power": 1
+  }
+ ],
+ "brain": {
+  "hidden": 1,
+  "weights": [
+   0,
+   0,
+   0,
+   0,
+   1.5,
+   0.6,
+   0,
+   0
+  ]
+ },
+ "mutation": {
+  "rate": 0.15,
+  "size": 0.1
+ },
+ "name": "r2spike",
+ "schema": "lifeapi.genome/1"
+}

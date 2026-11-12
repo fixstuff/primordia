@@ -1,0 +1,96 @@
+{
+ "brain": {
+  "weights": [
+   -3,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -3,
+   3,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   -0.5,
+   0,
+   0,
+   0.5,
+   0,
+   1.5,
+   -2.5,
+   -2,
+   0,
+   0,
+   0
+  ],
+  "hidden": 4
+ },
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.15
+ },
+ "name": "hunter_B",
+ "schema": "lifeapi.genome/1",
+ "body": [
+  {
+   "radius": 4.2,
+   "part": "membrane"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "flagellum",
+   "power": 0.85
+  },
+  {
+   "part": "cilia",
+   "power": 0.85
+  },
+  {
+   "part": "jaw",
+   "power": 0.8
+  },
+  {
+   "part": "shell",
+   "thickness": 0.4
+  },
+  {
+   "part": "toxin",
+   "power": 0.4
+  },
+  {
+   "chemical": "sugar",
+   "part": "chemo_sensor",
+   "angle": -40
+  },
+  {
+   "angle": 40,
+   "chemical": "sugar",
+   "part": "chemo_sensor"
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": -40
+  },
+  {
+   "chemical": "mineral",
+   "part": "chemo_sensor",
+   "angle": 40
+  }
+ ]
+}

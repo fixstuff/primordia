@@ -1,0 +1,88 @@
+{
+ "brain": {
+  "hidden": 2,
+  "weights": [
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -4,
+   4,
+   0,
+   0,
+   0,
+   0,
+   2.5,
+   3.5,
+   1.5,
+   0
+  ]
+ },
+ "name": "penta_mouth_r3.5_A",
+ "mutation": {
+  "rate": 0.05,
+  "size": 0.1
+ },
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 3.5
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "power": 0.75,
+   "part": "flagellum"
+  },
+  {
+   "part": "cilia",
+   "power": 0.9
+  },
+  {
+   "angle": -35,
+   "part": "chemo_sensor",
+   "chemical": "sugar"
+  },
+  {
+   "part": "chemo_sensor",
+   "chemical": "sugar",
+   "angle": 35
+  },
+  {
+   "angle": -45,
+   "chemical": "mineral",
+   "part": "chemo_sensor"
+  },
+  {
+   "angle": 45,
+   "part": "chemo_sensor",
+   "chemical": "mineral"
+  },
+  {
+   "power": 0.6,
+   "part": "spikes"
+  },
+  {
+   "part": "shell",
+   "thickness": 0.4
+  }
+ ],
+ "schema": "lifeapi.genome/1"
+}

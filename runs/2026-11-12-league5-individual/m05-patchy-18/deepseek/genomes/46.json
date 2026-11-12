@@ -1,0 +1,29 @@
+{
+ "schema": "lifeapi.genome/1",
+ "name": "graz_r10_4m",
+ "body": [
+  {
+   "part": "membrane",
+   "radius": 10
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  },
+  {
+   "part": "mouth"
+  }
+ ],
+ "brain": {
+  "hidden": 1
+ },
+ "mutation": {
+  "rate": 0,
+  "size": 0
+ }
+}

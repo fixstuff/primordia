@@ -1,0 +1,98 @@
+{
+  "founders": 60,
+  "mode": "solo",
+  "rejected": [],
+  "results": [
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/opus/genomes/01.json",
+      "mean_biomass": 7755.0,
+      "mean_population": 861.6666666666666,
+      "name": "grazer3",
+      "per_seed": [
+        847,
+        866,
+        872
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/opus/genomes/02.json",
+      "mean_biomass": 10339.0,
+      "mean_population": 211.0,
+      "name": "cruiser7",
+      "per_seed": [
+        208,
+        208,
+        217
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/opus/genomes/03.json",
+      "mean_biomass": 11475.0,
+      "mean_population": 141.66666666666666,
+      "name": "cruiser9",
+      "per_seed": [
+        139,
+        145,
+        141
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/opus/genomes/04.json",
+      "mean_biomass": 10584.0,
+      "mean_population": 130.66666666666666,
+      "name": "cruiser9s",
+      "per_seed": [
+        129,
+        132,
+        131
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/opus/genomes/05.json",
+      "mean_biomass": 7341.666666666667,
+      "mean_population": 293.6666666666667,
+      "name": "spiky5",
+      "per_seed": [
+        281,
+        297,
+        303
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/opus/genomes/06.json",
+      "mean_biomass": 7587.0,
+      "mean_population": 93.66666666666667,
+      "name": "hunter9",
+      "per_seed": [
+        116,
+        77,
+        88
+      ]
+    },
+    {
+      "extinct": 0,
+      "file": "/home/james/projects/SporeAI/runs/2026-11-12-league5-individual/m06-bloom-18/opus/genomes/07.json",
+      "mean_biomass": 5952.0,
+      "mean_population": 41.333333333333336,
+      "name": "hunter12",
+      "per_seed": [
+        59,
+        13,
+        52
+      ]
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ticks": 5000,
+  "world": "calm"
+}

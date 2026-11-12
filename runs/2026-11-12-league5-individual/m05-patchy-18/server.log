@@ -1,0 +1,4 @@
+primordia-server: combat individual, body evolution 0.02
+primordia-server: ARENA for 7 players, 10000 ticks in windows of 500 ticks / 120s
+primordia-server: world patchy seed 18, API on 127.0.0.1:5010
+primordia-server: viewer on http://127.0.0.1:5011/
