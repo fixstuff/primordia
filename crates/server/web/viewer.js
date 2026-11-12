@@ -56,19 +56,38 @@ function setConn(text, cls) {
   c.className = cls || "";
 }
 
+// Firefox makes every new WebSocket to a host:port that recently FAILED to
+// connect wait, growing ~1.5x per failure to a minute, browser-wide, so new
+// tabs inherit it (measured: after 10 failures the next connect took 12.3 s
+// with the server up). Retrying the socket every second while a match's
+// server was down built up waits of 25 s+. So: after a drop, ask over plain
+// HTTP (never delayed) until the server answers, then open the socket once.
 function connect() {
   const proto = location.protocol === "https:" ? "wss://" : "ws://";
   const ws = new WebSocket(proto + location.host + "/ws");
   ws.binaryType = "arraybuffer";
   ws.onopen = () => setConn("live", "live");
   ws.onclose = () => {
-    setConn("reconnecting…", "down");
-    setTimeout(connect, 1000);
+    if (S.meta?.match?.over) setConn("match over: final view", "");
+    else setConn("server stopped: waiting for it", "down");
+    waitForServer();
   };
   ws.onmessage = (ev) => {
     if (typeof ev.data === "string") onMeta(JSON.parse(ev.data));
     else onFrame(ev.data);
   };
+}
+
+async function waitForServer() {
+  for (;;) {
+    await new Promise((r) => setTimeout(r, 1000));
+    try {
+      await fetch("/", { cache: "no-store" });
+      break; // any HTTP answer: the server is back
+    } catch (_) { /* still down */ }
+  }
+  setConn("reconnecting…", "down");
+  connect();
 }
 
 function onMeta(m) {
@@ -87,7 +106,7 @@ function onMeta(m) {
   $("kills").textContent = (m.world.kills || 0).toLocaleString();
   $("species").textContent = `${m.world.species_alive || 0}` + (m.world.evolved_alive ? ` (${m.world.evolved_alive} evolved)` : "");
   $("settings").textContent = `combat ${m.world.combat || "off"} · evolution ${m.world.body_evolution ? Math.round(m.world.body_evolution * 100) + "%" : "off"}`;
-  $("tick").textContent = m.tick.toLocaleString();
+  $("tick").textContent = m.tick.toLocaleString() + (m.match ? ` / ${m.match.match_ticks.toLocaleString()}` : "");
   $("pop").textContent = m.world.population.toLocaleString();
   $("births").textContent = m.world.births.toLocaleString();
   $("deaths").textContent = m.world.deaths.toLocaleString();
@@ -355,14 +374,18 @@ function drawPool() {
     const m = centre(f, S.follow);
     if (m) [vx, vy] = m;
   }
-  const scale = (c.width / f.ww) * S.zoom;
+  // Zoom 1 fills the panel with the world (no repeats): on a wide panel the
+  // top and bottom of the world sit just off-screen, and dragging scrolls
+  // around it, wrapping, since the world is a torus.
+  const scale = Math.max(c.width / f.ww, c.height / f.wh) * S.zoom;
   S.view = { vx, vy, scale, w: c.width, h: c.height };
   const toX = (x) => c.width / 2 + wrapDelta(vx, x, f.ww) * scale;
   const toY = (y) => c.height / 2 + wrapDelta(vy, y, f.wh) * scale;
+  const tw = f.ww * scale, th = f.wh * scale;
+  if (!(tw > 0 && th > 0)) return; // canvas not laid out yet: no size to draw into
 
   if (S.chem) {
     g.imageSmoothingEnabled = true;
-    const tw = f.ww * scale, th = f.wh * scale;
     const ox = c.width / 2 - vx * scale, oy = c.height / 2 - vy * scale;
     for (let tx = -1; tx <= 1; tx++)
       for (let ty = -1; ty <= 1; ty++)

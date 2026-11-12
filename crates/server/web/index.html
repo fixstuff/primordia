@@ -24,8 +24,8 @@
   main { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 14px; padding: 14px 16px; }
   .stage { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
-  #poolwrap { position: relative; width: 100%; max-width: min(100%, calc(100vh - 290px));
-    aspect-ratio: 1; margin: 0 auto; }
+  /* The pool fills the space the graph leaves; the view tiles the torus. */
+  #poolwrap { position: relative; width: 100%; height: max(320px, calc(100vh - 290px)); }
   #pool { width: 100%; height: 100%; display: block; border-radius: 8px; background: #000; }
   #empty { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted);
     text-align: center; padding: 24px; pointer-events: none; }
@@ -77,7 +77,7 @@
   .tb i.sg::after { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(255,255,255,.4); }
   @media (max-width: 820px) {
     main { grid-template-columns: 1fr; padding: 12px 16px; }
-    #poolwrap { max-width: 100%; }
+    #poolwrap { height: min(100vw, 70vh); }
     aside { max-height: none; }
   }
 

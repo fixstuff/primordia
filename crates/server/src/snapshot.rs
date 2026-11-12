@@ -108,6 +108,7 @@ pub fn build(game: &Game, history_after: Option<u64>) -> Snapshot {
             "players": game.player_names(),
             "body_evolution": w.cfg.body_mutation,
         },
+        "match": game.match_info(),
         "lineages": lineages,
         "species": species_bodies,
         "history": history,

@@ -139,6 +139,15 @@ impl Game {
         g
     }
 
+    /// The match as the viewer needs it: how long, whether it has started or
+    /// ended. None outside an arena.
+    pub fn match_info(&self) -> Option<Value> {
+        let a = self.arena.as_ref()?;
+        Some(json!({"match_ticks": a.cfg.match_ticks, "started": a.started, "over": a.over,
+                    "window": a.window, "realtime": a.cfg.realtime,
+                    "joined": self.players.len(), "seats": a.cfg.players}))
+    }
+
     /// When the current window closes, if a match is running.
     pub fn arena_deadline(&self) -> Option<Instant> {
         self.arena.as_ref().and_then(|a| {
